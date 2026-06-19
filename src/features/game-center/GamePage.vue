@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, defineAsyncComponent } from 'vue'
 import { useRoute } from 'vue-router'
 import AppLayout from '@/components/layout/AppLayout.vue'
 import CalcArcade from './games/calc-arcade/CalcArcade.vue'
@@ -7,9 +7,30 @@ import CalcArcade from './games/calc-arcade/CalcArcade.vue'
 const route = useRoute()
 const gameId = computed(() => route.params.id as string)
 
+const TwentyFourGame = defineAsyncComponent(() =>
+  import('./games/twenty-four/TwentyFourGame.vue')
+)
+const NumberSlideGame = defineAsyncComponent(() =>
+  import('./games/number-slide/NumberSlideGame.vue')
+)
+const MemoryCardGame = defineAsyncComponent(() =>
+  import('./games/memory-card/MemoryCardGame.vue')
+)
+const MatchstickGame = defineAsyncComponent(() =>
+  import('./games/matchstick/MatchstickGame.vue')
+)
+const SudokuGame = defineAsyncComponent(() =>
+  import('./games/sudoku/Sudoku.vue')
+)
+
 const gameComponents: Record<string, any> = {
   'calc-arcade': CalcArcade,
-  // 其他游戏组件可以在这里添加
+  'twenty-four': TwentyFourGame,
+  'point24': TwentyFourGame,
+  'number-slide': NumberSlideGame,
+  'memory-card': MemoryCardGame,
+  'matchstick': MatchstickGame,
+  'sudoku': SudokuGame
 }
 
 const currentGame = computed(() => gameComponents[gameId.value])
@@ -17,9 +38,12 @@ const currentGame = computed(() => gameComponents[gameId.value])
 const gameInfo = computed(() => {
   const infos: Record<string, { name: string; icon: string }> = {
     'calc-arcade': { name: '计算街机', icon: '🧮' },
-    'sudoku': { name: '数独探险', icon: '🔢' },
+    'twenty-four': { name: '24点挑战', icon: '🃏' },
     'point24': { name: '24点挑战', icon: '🃏' },
-    'matchstick': { name: '火柴棒谜题', icon: '📍' }
+    'number-slide': { name: '数字华容道', icon: '🔢' },
+    'memory-card': { name: '数学记忆卡', icon: '🧠' },
+    'matchstick': { name: '火柴棒谜题', icon: '📍' },
+    'sudoku': { name: '数独探险', icon: '🔣' }
   }
   return infos[gameId.value] || { name: '游戏', icon: '🎮' }
 })

@@ -38,6 +38,11 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/features/tools/ToolboxPage.vue')
   },
   {
+    path: '/tools/:id',
+    name: 'tool',
+    component: () => import('@/features/tools/ToolPage.vue')
+  },
+  {
     path: '/profile',
     name: 'profile',
     component: () => import('@/features/profile/ProfilePage.vue')

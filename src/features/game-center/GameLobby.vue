@@ -11,7 +11,7 @@ interface GameInfo {
   icon: string
   desc: string
   difficulty: 1 | 2 | 3 | 4 | 5
-  category: 'calc' | 'logic' | 'puzzle'
+  category: 'calc' | 'logic' | 'puzzle' | 'memory'
   players: number
 }
 
@@ -20,37 +20,55 @@ const games: GameInfo[] = [
     id: 'calc-arcade',
     name: '计算街机',
     icon: '🧮',
-    desc: '限时速算挑战，考验你的计算速度',
+    desc: '限时速算挑战，考验计算速度与准确度',
     difficulty: 2,
     category: 'calc',
     players: 12580
   },
   {
-    id: 'sudoku',
-    name: '数独探险',
-    icon: '🔢',
-    desc: '经典数独 puzzle，锻炼逻辑思维',
-    difficulty: 3,
-    category: 'logic',
-    players: 8920
-  },
-  {
-    id: 'point24',
+    id: 'twenty-four',
     name: '24点挑战',
     icon: '🃏',
-    desc: '用四张牌算出24点',
+    desc: '用四张牌和加减乘除算出24点',
     difficulty: 3,
     category: 'calc',
+    players: 8640
+  },
+  {
+    id: 'number-slide',
+    name: '数字华容道',
+    icon: '🔢',
+    desc: '滑动数字方块，按顺序排列完成谜题',
+    difficulty: 3,
+    category: 'puzzle',
     players: 6540
+  },
+  {
+    id: 'memory-card',
+    name: '数学记忆卡',
+    icon: '🧠',
+    desc: '翻牌配对算式与答案，锻炼记忆与心算',
+    difficulty: 2,
+    category: 'memory',
+    players: 5430
   },
   {
     id: 'matchstick',
     name: '火柴棒谜题',
     icon: '📍',
-    desc: '移动火柴棒使等式成立',
+    desc: '移动/添加/移除火柴棒使等式成立',
     difficulty: 4,
     category: 'puzzle',
     players: 4320
+  },
+  {
+    id: 'sudoku',
+    name: '数独探险',
+    icon: '🔣',
+    desc: '经典数独逻辑游戏，锻炼推理能力',
+    difficulty: 3,
+    category: 'logic',
+    players: 8920
   }
 ]
 
@@ -58,7 +76,8 @@ const categories = [
   { id: 'all', label: '全部' },
   { id: 'calc', label: '计算' },
   { id: 'logic', label: '逻辑' },
-  { id: 'puzzle', label: '益智' }
+  { id: 'puzzle', label: '益智' },
+  { id: 'memory', label: '记忆' }
 ]
 
 const selectedCategory = ref('all')
