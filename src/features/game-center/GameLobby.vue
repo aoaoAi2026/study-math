@@ -69,6 +69,15 @@ const games: GameInfo[] = [
     difficulty: 3,
     category: 'logic',
     players: 8920
+  },
+  {
+    id: 'tangram',
+    name: '七巧板',
+    icon: '🧩',
+    desc: '拖拽七块板拼出目标图形，锻炼空间想象力',
+    difficulty: 3,
+    category: 'puzzle',
+    players: 3210
   }
 ]
 

@@ -22,6 +22,9 @@ const MatchstickGame = defineAsyncComponent(() =>
 const SudokuGame = defineAsyncComponent(() =>
   import('./games/sudoku/Sudoku.vue')
 )
+const TangramGame = defineAsyncComponent(() =>
+  import('./games/tangram/TangramGame.vue')
+)
 
 const gameComponents: Record<string, any> = {
   'calc-arcade': CalcArcade,
@@ -30,7 +33,8 @@ const gameComponents: Record<string, any> = {
   'number-slide': NumberSlideGame,
   'memory-card': MemoryCardGame,
   'matchstick': MatchstickGame,
-  'sudoku': SudokuGame
+  'sudoku': SudokuGame,
+  'tangram': TangramGame
 }
 
 const currentGame = computed(() => gameComponents[gameId.value])
@@ -43,7 +47,8 @@ const gameInfo = computed(() => {
     'number-slide': { name: '数字华容道', icon: '🔢' },
     'memory-card': { name: '数学记忆卡', icon: '🧠' },
     'matchstick': { name: '火柴棒谜题', icon: '📍' },
-    'sudoku': { name: '数独探险', icon: '🔣' }
+    'sudoku': { name: '数独探险', icon: '🔣' },
+    'tangram': { name: '七巧板', icon: '🧩' }
   }
   return infos[gameId.value] || { name: '游戏', icon: '🎮' }
 })
