@@ -1,0 +1,22 @@
+/* 太空主题 */
+[data-theme="space"] {
+  --bg-page: #0a0a1a;
+  --bg-card: #12122a;
+  --bg-hover: #1a1a3a;
+  --bg-active: #252550;
+  --bg-overlay: rgba(0, 0, 0, 0.8);
+
+  --color-primary: #8b5cf6;
+  --color-primary-light: #a78bfa;
+  --color-primary-dark: #7c3aed;
+
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-tertiary: #64748b;
+  --text-inverse: #0a0a1a;
+
+  --border-color: #2d2d5a;
+  --border-color-light: #1a1a3a;
+
+  --shadow-color: rgba(139, 92, 246, 0.2);
+}

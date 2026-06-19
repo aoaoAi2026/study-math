@@ -1,0 +1,20 @@
+/* 魔法主题 */
+[data-theme="magic"] {
+  --bg-page: #1a0a2e;
+  --bg-card: #2d1b4e;
+  --bg-hover: #3d2b5e;
+  --bg-active: #4d3b6e;
+  --bg-overlay: rgba(0, 0, 0, 0.7);
+
+  --color-primary: #c084fc;
+  --color-primary-light: #d8b4fe;
+  --color-primary-dark: #a855f7;
+
+  --text-primary: #f5f3ff;
+  --text-secondary: #ddd6fe;
+  --text-tertiary: #c4b5fd;
+  --text-inverse: #1a0a2e;
+
+  --border-color: #7c3aed;
+  --border-color-light: #2d1b4e;
+}

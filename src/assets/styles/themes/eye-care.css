@@ -1,0 +1,18 @@
+/* 护眼主题（浅色变体） */
+[data-theme="eye-care"] {
+  --bg-page: #f5f0e6;
+  --bg-card: #faf7f0;
+  --bg-hover: #ebe5d8;
+  --bg-active: #e0d9c8;
+
+  --color-primary: #52796f;
+  --color-primary-light: #84a98c;
+  --color-primary-dark: #354f52;
+
+  --text-primary: #2d3436;
+  --text-secondary: #636e72;
+  --text-tertiary: #b2bec3;
+
+  --border-color: #d4cdc0;
+  --border-color-light: #ebe5d8;
+}
