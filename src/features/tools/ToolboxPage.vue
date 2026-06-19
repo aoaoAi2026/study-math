@@ -1,257 +1,199 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
 import AppLayout from '@/components/layout/AppLayout.vue'
-import SegmentDiagram from './tools/SegmentDiagram.vue'
 
-const segments = ref([1, 4])
-const total = ref(30)
-const labels = ref(['小红', '小明'])
-const isInteractive = ref(true)
+const router = useRouter()
 
-const presets = [
-  { name: '和倍问题', segments: [1, 4], total: 30, labels: ['小红(1份)', '小明(4份)'] },
-  { name: '差倍问题', segments: [1, 3], total: 20, labels: ['小', '大'] },
-  { name: '和差问题', segments: [1, 1], total: 50, labels: ['小', '大'] },
-  { name: '三个量和倍', segments: [1, 2, 3], total: 60, labels: ['乙', '甲', '丙'] }
+interface ToolInfo {
+  id: string
+  name: string
+  icon: string
+  desc: string
+  category: 'geometry' | 'algebra' | 'visual'
+}
+
+const tools: ToolInfo[] = [
+  {
+    id: 'segment-diagram',
+    name: '线段图生成器',
+    icon: '📊',
+    desc: '可视化线段图，解决和差倍问题',
+    category: 'visual'
+  },
+  {
+    id: 'geoboard',
+    name: '几何画板',
+    icon: '📐',
+    desc: '绘制几何图形，探索图形性质',
+    category: 'geometry'
+  },
+  {
+    id: 'coordinate',
+    name: '坐标系工具',
+    icon: '📈',
+    desc: '直角坐标系，绘制函数图像',
+    category: 'algebra'
+  },
+  {
+    id: 'fraction-pie',
+    name: '分数饼图',
+    icon: '🥧',
+    desc: '可视化分数，理解分数概念',
+    category: 'visual'
+  }
 ]
 
-function applyPreset(preset: typeof presets[0]) {
-  segments.value = [...preset.segments]
-  total.value = preset.total
-  labels.value = [...preset.labels]
-}
+const categories = [
+  { id: 'all', label: '全部' },
+  { id: 'geometry', label: '几何' },
+  { id: 'algebra', label: '代数' },
+  { id: 'visual', label: '可视化' }
+]
 
-function updateTotal(newTotal: number) {
-  total.value = newTotal
-}
+const selectedCategory = ref('all')
 
-const oneUnit = computed(() => {
-  const sum = segments.value.reduce((a, b) => a + b, 0)
-  return sum > 0 ? (total.value / sum).toFixed(2) : 0
+const filteredTools = computed(() => {
+  if (selectedCategory.value === 'all') return tools
+  return tools.filter(t => t.category === selectedCategory.value)
 })
+
+function useTool(id: string) {
+  router.push('/tools/' + id)
+}
 </script>
 
 <template>
   <AppLayout>
-    <div class="tool-page">
-      <div class="tool-page__header">
-        <h1>📊 线段图生成器</h1>
-        <p>可视化展示倍数、和差等数量关系</p>
+    <div class="toolbox-page">
+      <header class="tb-header">
+        <h1>🛠️ 教具工具箱</h1>
+        <p class="muted">数学学习的好帮手</p>
+      </header>
+
+      <div class="category-tabs">
+        <button
+          v-for="c in categories"
+          :key="c.id"
+          class="category-tab"
+          :class="{ active: selectedCategory === c.id }"
+          @click="selectedCategory = c.id"
+        >
+          {{ c.label }}
+        </button>
       </div>
 
-      <div class="tool-page__presets">
-        <h3>预设模板</h3>
-        <div class="tool-page__preset-list">
-          <button
-            v-for="preset in presets"
-            :key="preset.name"
-            class="tool-page__preset-btn"
-            @click="applyPreset(preset)"
-          >
-            {{ preset.name }}
-          </button>
-        </div>
-      </div>
-
-      <div class="tool-page__controls">
-        <div class="tool-page__control-group">
-          <label>总数</label>
-          <input
-            type="number"
-            :value="total"
-            min="1"
-            @input="updateTotal(Number(($event.target as HTMLInputElement).value))"
-          />
-        </div>
-        <div class="tool-page__control-group">
-          <label>
-            <input v-model="isInteractive" type="checkbox" />
-            交互模式
-          </label>
-        </div>
-      </div>
-
-      <SegmentDiagram
-        v-model:segments="segments"
-        :total="total"
-        :labels="labels"
-        :interactive="isInteractive"
-        :show-values="true"
-      />
-
-      <div class="tool-page__formula">
-        <h3>公式推导</h3>
-        <div class="tool-page__formula-content">
-          <div class="tool-page__formula-step">
-            <span class="step-num">1</span>
-            <span>总份数 = {{ segments.join(' + ') }} = {{ segments.reduce((a, b) => a + b, 0) }}</span>
+      <div class="tools-grid">
+        <div
+          v-for="tool in filteredTools"
+          :key="tool.id"
+          class="tool-card"
+          @click="useTool(tool.id)"
+        >
+          <div class="tool-icon">{{ tool.icon }}</div>
+          <div class="tool-info">
+            <h3 class="tool-name">{{ tool.name }}</h3>
+            <p class="tool-desc">{{ tool.desc }}</p>
           </div>
-          <div class="tool-page__formula-step">
-            <span class="step-num">2</span>
-            <span>1份量 = {{ total }} ÷ {{ segments.reduce((a, b) => a + b, 0) }} = {{ oneUnit }}</span>
-          </div>
-          <div class="tool-page__formula-result">
-            <span v-for="(seg, i) in segments" :key="i">
-              {{ labels[i] || `段${i+1}` }} = {{ oneUnit }} × {{ seg }} = {{ (Number(oneUnit) * seg).toFixed(2) }}
-            </span>
-          </div>
+          <button class="use-btn">使用</button>
         </div>
-      </div>
-
-      <div class="tool-page__tips">
-        <h3>💡 使用提示</h3>
-        <ul>
-          <li>点击线段图上的"+" "-"按钮可以调整各部分的大小</li>
-          <li>预设模板可以帮助快速生成常见题型</li>
-          <li>在"交互模式"下可以拖动调整数值</li>
-          <li>右侧会实时显示计算公式</li>
-        </ul>
       </div>
     </div>
   </AppLayout>
 </template>
 
 <style scoped>
-.tool-page {
-  max-width: 800px;
+.toolbox-page {
+  max-width: 900px;
   margin: 0 auto;
+  padding: 16px;
 }
 
-.tool-page__header {
+.tb-header {
   text-align: center;
-  margin-bottom: var(--space-6);
+  margin-bottom: 24px;
+}
+.tb-header h1 {
+  font-size: 28px;
+  color: #2C3E50;
+  margin-bottom: 6px;
+}
+.muted {
+  color: #9AA5B1;
+  font-size: 14px;
 }
 
-.tool-page__header h1 {
-  margin-bottom: var(--space-2);
-}
-
-.tool-page__header p {
-  color: var(--text-secondary);
-}
-
-.tool-page__presets {
-  background: var(--bg-card);
-  border-radius: var(--radius-xl);
-  padding: var(--space-4);
-  margin-bottom: var(--space-4);
-}
-
-.tool-page__presets h3 {
-  font-size: var(--text-base);
-  margin-bottom: var(--space-3);
-}
-
-.tool-page__preset-list {
+.category-tabs {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
+  gap: 8px;
+  margin-bottom: 20px;
 }
-
-.tool-page__preset-btn {
-  padding: var(--space-2) var(--space-3);
-  background: var(--bg-hover);
-  border-radius: var(--radius-lg);
-  font-size: var(--text-sm);
-  transition: all var(--transition-fast);
+.category-tab {
+  padding: 10px 20px;
+  border: 2px solid #E2E8F0;
+  border-radius: 12px;
+  background: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
 }
-
-.tool-page__preset-btn:hover {
-  background: var(--color-primary);
+.category-tab.active {
+  background: #4F7DF8;
+  border-color: #4F7DF8;
   color: white;
 }
 
-.tool-page__controls {
-  display: flex;
-  gap: var(--space-4);
-  margin-bottom: var(--space-4);
-  align-items: center;
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
 }
-
-.tool-page__control-group {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-}
-
-.tool-page__control-group label {
-  font-size: var(--text-sm);
-  color: var(--text-secondary);
-}
-
-.tool-page__control-group input[type="number"] {
-  width: 100px;
-  padding: var(--space-2);
-  text-align: center;
-}
-
-.tool-page__formula {
-  background: var(--bg-card);
-  border-radius: var(--radius-xl);
-  padding: var(--space-4);
-  margin-top: var(--space-4);
-}
-
-.tool-page__formula h3 {
-  font-size: var(--text-base);
-  margin-bottom: var(--space-3);
-}
-
-.tool-page__formula-step {
+.tool-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  border: 2px solid #E2E8F0;
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-2) 0;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.15s;
 }
-
-.step-num {
-  width: 24px;
-  height: 24px;
-  border-radius: var(--radius-full);
-  background: var(--color-primary);
-  color: white;
+.tool-card:hover {
+  border-color: #4F7DF8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.tool-icon {
+  font-size: 40px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--text-sm);
-  flex-shrink: 0;
+  background: #F8FAFC;
+  border-radius: 14px;
 }
-
-.tool-page__formula-result {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4);
-  padding: var(--space-3);
-  background: rgba(99, 102, 241, 0.1);
-  border-radius: var(--radius-lg);
-  margin-top: var(--space-3);
-  font-weight: 600;
-  color: var(--color-primary);
+.tool-info {
+  flex: 1;
 }
-
-.tool-page__tips {
-  background: var(--bg-card);
-  border-radius: var(--radius-xl);
-  padding: var(--space-4);
-  margin-top: var(--space-4);
+.tool-name {
+  font-size: 16px;
+  color: #2C3E50;
+  margin-bottom: 4px;
 }
-
-.tool-page__tips h3 {
-  font-size: var(--text-base);
-  margin-bottom: var(--space-3);
+.tool-desc {
+  font-size: 13px;
+  color: #6B7785;
 }
-
-.tool-page__tips ul {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  color: var(--text-secondary);
-  font-size: var(--text-sm);
-}
-
-.tool-page__tips li::before {
-  content: '•';
-  margin-right: var(--space-2);
-  color: var(--color-primary);
+.use-btn {
+  padding: 8px 16px;
+  background: #4F7DF8;
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
 }
 </style>

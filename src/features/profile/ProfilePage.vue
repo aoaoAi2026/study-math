@@ -1,49 +1,79 @@
 <script setup lang="ts">
+import { computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import AppLayout from '@/components/layout/AppLayout.vue'
 import { useUserStore } from '@/stores/userStore'
+import AppLayout from '@/components/layout/AppLayout.vue'
 
 const router = useRouter()
 const userStore = useUserStore()
+
+onMounted(() => {
+  userStore.init()
+})
+
+const petStage = computed(() => {
+  const stages: Record<string, { name: string; icon: string }> = {
+    baby: { name: '幼年期', icon: '🥚' },
+    child: { name: '成长期', icon: '🐣' },
+    teen: { name: '少年期', icon: '🐥' },
+    adult: { name: '成年期', icon: '🐔' }
+  }
+  return stages[userStore.pet.stage] || stages.baby
+})
+
+const nextLevelExp = computed(() => userStore.level * 100)
+
+function goto(path: string) {
+  router.push(path)
+}
 </script>
 
 <template>
   <AppLayout>
     <div class="profile-page">
-      <div class="profile-page__header">
-        <div class="profile-page__avatar">{{ userStore.nickname?.[0] || '我' }}</div>
-        <h1 class="profile-page__name">{{ userStore.nickname }}</h1>
-        <p class="profile-page__meta">Lv.{{ userStore.level }} · {{ userStore.experience }} EXP</p>
+      <header class="pf-header">
+        <div class="avatar">{{ userStore.nickname?.[0] || '我' }}</div>
+        <div class="info">
+          <h1 class="name">{{ userStore.nickname }}</h1>
+          <div class="level-bar">
+            <div class="level-fill" :style="{ width: (userStore.experience / nextLevelExp * 100) + '%' }"></div>
+          </div>
+          <span class="level-text">Lv.{{ userStore.level }} · {{ userStore.experience }}/{{ nextLevelExp }} EXP</span>
+        </div>
+      </header>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-value">{{ userStore.correctTotal }}</span>
+          <span class="stat-label">答对题数</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{ userStore.checkInDays }}</span>
+          <span class="stat-label">学习天数</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{{ userStore.gems }}</span>
+          <span class="stat-label">宝石</span>
+        </div>
       </div>
 
-      <div class="profile-page__stats">
-        <div class="profile-page__stat">
-          <span class="profile-page__stat-value">{{ userStore.correctTotal }}</span>
-          <span class="profile-page__stat-label">答对题数</span>
+      <div class="menu-list">
+        <div class="menu-item" @click="goto('/profile/achievements')">
+          <span class="menu-icon">🏆</span>
+          <span class="menu-label">成就墙</span>
+          <span class="menu-arrow">→</span>
         </div>
-        <div class="profile-page__stat">
-          <span class="profile-page__stat-value">{{ userStore.checkInDays }}</span>
-          <span class="profile-page__stat-label">学习天数</span>
+        <div class="menu-item" @click="goto('/profile/pet')">
+          <span class="menu-icon">{{ petStage.icon }}</span>
+          <span class="menu-label">宠物小π</span>
+          <span class="menu-badge">{{ petStage.name }}</span>
+          <span class="menu-arrow">→</span>
         </div>
-        <div class="profile-page__stat">
-          <span class="profile-page__stat-value">{{ userStore.achievements.length }}</span>
-          <span class="profile-page__stat-label">成就数量</span>
+        <div class="menu-item" @click="goto('/profile/wrong-book')">
+          <span class="menu-icon">📝</span>
+          <span class="menu-label">错题本</span>
+          <span class="menu-arrow">→</span>
         </div>
-      </div>
-
-      <div class="profile-page__menu">
-        <router-link to="/profile/achievements" class="profile-page__menu-item">
-          <span>🏆</span> 成就墙
-        </router-link>
-        <router-link to="/profile/pet" class="profile-page__menu-item">
-          <span>🐱</span> 宠物小π
-        </router-link>
-        <router-link to="/profile/wrong-book" class="profile-page__menu-item">
-          <span>📝</span> 错题本
-        </router-link>
-        <router-link to="/parent" class="profile-page__menu-item">
-          <span>👪</span> 家长控制
-        </router-link>
       </div>
     </div>
   </AppLayout>
@@ -51,83 +81,119 @@ const userStore = useUserStore()
 
 <style scoped>
 .profile-page {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
+  padding: 16px;
 }
 
-.profile-page__header {
-  text-align: center;
-  margin-bottom: var(--space-6);
+.pf-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
 }
-
-.profile-page__avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: var(--radius-full);
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4F7DF8, #7B93FF);
   color: white;
-  font-size: 36px;
-  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto var(--space-4);
+  font-size: 24px;
+  font-weight: 600;
+}
+.info {
+  flex: 1;
+}
+.name {
+  font-size: 20px;
+  color: #2C3E50;
+  margin-bottom: 8px;
+}
+.level-bar {
+  height: 8px;
+  background: #E2E8F0;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.level-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4F7DF8, #52C41A);
+  transition: width 0.5s;
+}
+.level-text {
+  font-size: 12px;
+  color: #6B7785;
 }
 
-.profile-page__name {
-  font-size: var(--text-xl);
-  color: var(--text-primary);
-  margin-bottom: var(--space-2);
-}
-
-.profile-page__meta {
-  color: var(--text-secondary);
-}
-
-.profile-page__stats {
+.stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-4);
-  margin-bottom: var(--space-6);
+  gap: 12px;
+  margin-bottom: 24px;
 }
-
-.profile-page__stat {
-  background: var(--bg-card);
-  border-radius: var(--radius-xl);
-  padding: var(--space-4);
+.stat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
   text-align: center;
-  box-shadow: var(--shadow-sm);
 }
-
-.profile-page__stat-value {
+.stat-value {
   display: block;
-  font-size: var(--text-2xl);
+  font-size: 24px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: #4F7DF8;
+  margin-bottom: 4px;
+}
+.stat-label {
+  font-size: 12px;
+  color: #6B7785;
 }
 
-.profile-page__stat-label {
-  font-size: var(--text-xs);
-  color: var(--text-tertiary);
-}
-
-.profile-page__menu {
-  background: var(--bg-card);
-  border-radius: var(--radius-xl);
+.menu-list {
+  background: #fff;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
 }
-
-.profile-page__menu-item {
+.menu-item {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-4);
-  color: var(--text-primary);
-  border-bottom: 1px solid var(--border-color);
+  gap: 12px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-bottom: 1px solid #F1F5F9;
 }
-
-.profile-page__menu-item:last-child {
+.menu-item:last-child {
   border-bottom: none;
+}
+.menu-item:hover {
+  background: #F8FAFC;
+}
+.menu-icon {
+  font-size: 24px;
+  width: 32px;
+  text-align: center;
+}
+.menu-label {
+  flex: 1;
+  font-size: 16px;
+  color: #2C3E50;
+}
+.menu-badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: #FEF3C7;
+  color: #D97706;
+  border-radius: 20px;
+}
+.menu-arrow {
+  color: #9AA5B1;
 }
 </style>
