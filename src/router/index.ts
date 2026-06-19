@@ -71,6 +71,16 @@ const routes: RouteRecordRaw[] = [
     path: '/challenge/daily',
     name: 'daily-challenge',
     component: () => import('@/features/challenge/DailyChallenge.vue')
+  },
+  {
+    path: '/workshop',
+    name: 'workshop',
+    component: () => import('@/features/workshop/WorkshopHome.vue')
+  },
+  {
+    path: '/newspaper',
+    name: 'newspaper',
+    component: () => import('@/features/newspaper/NewspaperGenerator.vue')
   }
 ]
 
