@@ -1,12 +1,23 @@
 import { defineStore } from 'pinia'
 import { localDb } from '@/services/localDb'
 
-const DEFAULT_ACHIEVEMENTS = [
-  { id: 'first-learn', name: '初次启程', description: '完成第一个知识点的学习', icon: '🌟', category: 'persistence' as const, progress: 0, target: 1 },
-  { id: 'streak-3', name: '三连星', description: '连续学习3天', icon: '⭐', category: 'persistence' as const, progress: 0, target: 3 },
-  { id: 'master-1', name: '掌握一个专题', description: '任一知识点掌握度达到5级', icon: '🏅', category: 'mastery' as const, progress: 0, target: 1 },
-  { id: 'quiz-10', name: '小试牛刀', description: '累计答对10道练习题', icon: '🎯', category: 'challenge' as const, progress: 0, target: 10 },
-  { id: 'game-score-100', name: '计算达人', description: '计算街机得分达到100', icon: '🎮', category: 'challenge' as const, progress: 0, target: 100 }
+interface Achievement {
+  id: string
+  name: string
+  description: string
+  icon: string
+  category: 'persistence' | 'mastery' | 'challenge'
+  progress: number
+  target: number
+  unlockedAt?: number
+}
+
+const DEFAULT_ACHIEVEMENTS: Achievement[] = [
+  { id: 'first-learn', name: '初次启程', description: '完成第一个知识点的学习', icon: '🌟', category: 'persistence', progress: 0, target: 1 },
+  { id: 'streak-3', name: '三连星', description: '连续学习3天', icon: '⭐', category: 'persistence', progress: 0, target: 3 },
+  { id: 'master-1', name: '掌握一个专题', description: '任一知识点掌握度达到5级', icon: '🏅', category: 'mastery', progress: 0, target: 1 },
+  { id: 'quiz-10', name: '小试牛刀', description: '累计答对10道练习题', icon: '🎯', category: 'challenge', progress: 0, target: 10 },
+  { id: 'game-score-100', name: '计算达人', description: '计算街机得分达到100', icon: '🎮', category: 'challenge', progress: 0, target: 100 }
 ]
 
 export const useUserStore = defineStore('user', {
@@ -43,7 +54,7 @@ export const useUserStore = defineStore('user', {
       this.save()
     },
     bumpAchievement(id: string, delta = 1) {
-      const a = this.achievements.find(x => x.id === id)
+      const a = this.achievements.find((x: Achievement) => x.id === id)
       if (!a || a.progress >= a.target) return
       a.progress = Math.min(a.target, a.progress + delta)
       if (a.progress >= a.target && !a.unlockedAt) {

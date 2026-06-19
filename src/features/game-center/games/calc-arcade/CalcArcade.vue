@@ -141,7 +141,7 @@ onUnmounted(() => {
   }
 })
 
-const result = computed(() => formatResult(gameState.value))
+const result = computed(() => selectedConfig.value ? formatResult(gameState.value, selectedConfig.value) : { accuracy: 0, avgTime: 0, bestStreak: 0, grade: 'F' })
 </script>
 
 <template>

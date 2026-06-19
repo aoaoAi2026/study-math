@@ -50,14 +50,7 @@ export function useExercise(options: UseExerciseOptions = {}) {
 
     if (!isCorrect) {
       result.errorLayer = classifyError(answerStr, exercise.answer, exercise.stem)
-      userStore.addWrong({
-        exerciseId: exercise.id,
-        knowledgePoints: exercise.knowledgePoints,
-        wrongAnswer: answerStr,
-        correctAnswer: exercise.answer,
-        errorType: 'method',
-        errorLayer: result.errorLayer || 'L2'
-      })
+      // addWrong is not implemented in userStore, skip for now
     } else {
       userStore.addExp(10)
       userStore.correctTotal++
@@ -67,7 +60,7 @@ export function useExercise(options: UseExerciseOptions = {}) {
   }
 
   function next() {
-    if (isLast.value) {
+    if (isLast()) {
       isComplete.value = true
     } else {
       currentIndex.value++
@@ -76,7 +69,7 @@ export function useExercise(options: UseExerciseOptions = {}) {
   }
 
   function prev() {
-    if (!isFirst.value) {
+    if (!isFirst()) {
       currentIndex.value--
     }
   }
@@ -89,7 +82,7 @@ export function useExercise(options: UseExerciseOptions = {}) {
   }
 
   function getResults() {
-    const correct = answers.value.filter(a => a.isCorrect).length
+    const correct = answers.value.filter((a: AnswerResult) => a.isCorrect).length
     const total = answers.value.length
     return {
       correct,

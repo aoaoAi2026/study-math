@@ -168,7 +168,7 @@ export function getDifficultyLevel(grade: number): GameConfig[] {
   return configs[grade] || configs[3]
 }
 
-export function formatResult(state: GameState): {
+export function formatResult(state: GameState, config: GameConfig): {
   accuracy: number
   avgTime: number
   bestStreak: number
@@ -178,7 +178,7 @@ export function formatResult(state: GameState): {
     ? (state.correctCount / state.totalCount) * 100
     : 0
   const avgTime = state.totalCount > 0
-    ? state.timeLimit / state.totalCount
+    ? config.timeLimit / state.totalCount
     : 0
 
   let grade = 'F'

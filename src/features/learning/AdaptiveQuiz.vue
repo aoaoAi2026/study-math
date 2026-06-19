@@ -14,7 +14,7 @@ const pool = computed(() => {
   <div class="aq">
     <button class="back" onclick="history.back()">← 返回</button>
     <h1 class="title">{{ title || '自适应练习' }}</h1>
-    <QuizEngine :knowledge-id="knowledgeId" :pool="pool" />
+    <QuizEngine :exercises="pool" />
   </div>
 </template>
 

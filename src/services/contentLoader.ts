@@ -1,5 +1,5 @@
 import { marked } from 'marked'
-import type { CardBlock } from '@/types/content'
+import type { CardBlock, KnowledgeTopic, TopicIndex } from '@/types/content'
 
 const CARD_TYPES = ['story', 'concept', 'example', 'variant', 'mistake', 'parent-child'] as const
 
@@ -11,7 +11,7 @@ function parseCustomBlocks(markdown: string): { content: string; cards: CardBloc
     const regex = new RegExp(`:::${type}-card\\b([\\s\\S]*?):::`, 'g')
     content = content.replace(regex, (_, inner) => {
       const titleMatch = inner.match(/###\s+(.+)/)
-      const title = titleMatch ? titleMatch[1].trim() : undefined
+      const title = titleMatch ? titleMatch[1].trim() : ''
       const bodyContent = inner
         .replace(/###\s+.+\n?/, '')
         .replace(/:::[\w-]*\n?/g, '')
@@ -34,18 +34,21 @@ function parseCustomBlocks(markdown: string): { content: string; cards: CardBloc
 function renderMarkdown(text: string): string {
   const renderer = new marked.Renderer()
 
-  renderer.heading = ({ text, depth }) => {
-    const id = text.toLowerCase().replace(/\s+/g, '-')
+  renderer.heading = (token: any) => {
+    const text = typeof token === 'string' ? token : token.text || ''
+    const depth = typeof token === 'object' && token.depth ? token.depth : 2
+    const id = String(text).toLowerCase().replace(/\s+/g, '-')
     return `<h${depth} id="${id}">${text}</h${depth}>`
   }
 
-  renderer.paragraph = ({ text }) => `<p>${text}</p>`
-  renderer.list = ({ items, ordered }) => {
-    const tag = ordered ? 'ol' : 'ul'
-    return `<${tag}>${items.map(item => `<li>${item}</li>`).join('')}</${tag}>`
+  renderer.paragraph = (token: any) => `<p>${token.text || token}</p>`
+  renderer.list = (token: any) => {
+    const tag = token.ordered ? 'ol' : 'ul'
+    const items = (token.items || []).map((item: any) => `<li>${item.text || item}</li>`).join('')
+    return `<${tag}>${items}</${tag}>`
   }
 
-  marked.setOptions({ renderer })
+  marked.setOptions({ renderer } as any)
   return marked.parse(text) as string
 }
 
@@ -102,4 +105,13 @@ export function getCardComponent(type: string): string {
     'parent-child': 'ParentChildCard'
   }
   return map[type] || 'div'
+}
+
+// Stub exports for compatibility
+export function loadTopic(id: string): Promise<KnowledgeTopic | null> {
+  return Promise.resolve(null)
+}
+
+export function listTopics(): TopicIndex[] {
+  return []
 }

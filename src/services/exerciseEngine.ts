@@ -17,6 +17,11 @@ export interface PickOptions {
   count?: number
 }
 
+interface ExerciseWithProb {
+  exercise: Exercise
+  p: number
+}
+
 export function pickExercises(pool: Exercise[], ability: number, opts: PickOptions = {}): Exercise[] {
   let list = pool.slice()
   if (opts.knowledgePoints && opts.knowledgePoints.length) {
@@ -24,9 +29,9 @@ export function pickExercises(pool: Exercise[], ability: number, opts: PickOptio
   }
   if (opts.minDiff) list = list.filter(e => e.difficulty >= opts.minDiff!)
   if (opts.maxDiff) list = list.filter(e => e.difficulty <= opts.maxDiff!)
-  list = list.map(e => ({ e, p: irtProbability(ability, e.irtParams.a, e.irtParams.b, e.irtParams.c) }))
+  const withProb: ExerciseWithProb[] = list.map(e => ({ exercise: e, p: irtProbability(ability, e.irtParams.a, e.irtParams.b, e.irtParams.c) }))
     .sort((x, y) => Math.abs(x.p - 0.6) - Math.abs(y.p - 0.6))
-  return list.slice(0, opts.count ?? 5).map(x => x.e)
+  return withProb.slice(0, opts.count ?? 5).map(x => x.exercise)
 }
 
 export function classifyError(userAnswer: string, correct: string, stem: string): 'L1' | 'L2' | 'L3' | 'L4' {
