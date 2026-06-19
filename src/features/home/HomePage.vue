@@ -30,7 +30,11 @@ const quickLinks = [
   { path: '/map', icon: '🗺️', label: '知识地图', desc: '探索所有知识点' },
   { path: '/diagnosis', icon: '🔬', label: '智能诊断', desc: '发现薄弱环节' },
   { path: '/challenge/daily', icon: '⚡', label: '每日挑战', desc: '赢取奖励' },
-  { path: '/profile/wrong-book', icon: '📝', label: '错题本', desc: '巩固易错点' }
+  { path: '/profile/wrong-book', icon: '📝', label: '错题本', desc: '巩固易错点' },
+  { path: '/workshop', icon: '✏️', label: '出题工坊', desc: '自定义练习题' },
+  { path: '/parent-academy', icon: '👨‍👩‍👧', label: '家长学院', desc: '辅导方法指南' },
+  { path: '/newspaper', icon: '📰', label: '数学小报', desc: '创作数学小报' },
+  { path: '/profile/timeline', icon: '📜', label: '学习历程', desc: '回顾成长足迹' }
 ]
 
 const gradeTopics = [

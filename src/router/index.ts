@@ -81,6 +81,21 @@ const routes: RouteRecordRaw[] = [
     path: '/newspaper',
     name: 'newspaper',
     component: () => import('@/features/newspaper/NewspaperGenerator.vue')
+  },
+  {
+    path: '/parent-academy',
+    name: 'parent-academy',
+    component: () => import('@/features/parent-academy/AcademyHome.vue')
+  },
+  {
+    path: '/parent-dashboard',
+    name: 'parent-dashboard',
+    component: () => import('@/features/admin/ParentCoachingDashboard.vue')
+  },
+  {
+    path: '/profile/timeline',
+    name: 'timeline',
+    component: () => import('@/features/profile/Timeline.vue')
   }
 ]
 
