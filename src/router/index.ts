@@ -96,6 +96,26 @@ const routes: RouteRecordRaw[] = [
     path: '/profile/timeline',
     name: 'timeline',
     component: () => import('@/features/profile/Timeline.vue')
+  },
+  {
+    path: '/profile/report',
+    name: 'report',
+    component: () => import('@/features/profile/ReportPage.vue')
+  },
+  {
+    path: '/profile/theme',
+    name: 'theme-settings',
+    component: () => import('@/features/profile/ThemeSettings.vue')
+  },
+  {
+    path: '/diagnosis/result',
+    name: 'diagnosis-result',
+    component: () => import('@/features/diagnosis/ResultReport.vue')
+  },
+  {
+    path: '/learning-path',
+    name: 'learning-path',
+    component: () => import('@/features/learning/LearningPath.vue')
   }
 ]
 

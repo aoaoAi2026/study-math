@@ -74,6 +74,21 @@ function goto(path: string) {
           <span class="menu-label">错题本</span>
           <span class="menu-arrow">→</span>
         </div>
+        <div class="menu-item" @click="goto('/profile/report')">
+          <span class="menu-icon">📊</span>
+          <span class="menu-label">学习报告</span>
+          <span class="menu-arrow">→</span>
+        </div>
+        <div class="menu-item" @click="goto('/profile/timeline')">
+          <span class="menu-icon">📜</span>
+          <span class="menu-label">学习历程</span>
+          <span class="menu-arrow">→</span>
+        </div>
+        <div class="menu-item" @click="goto('/profile/theme')">
+          <span class="menu-icon">🎨</span>
+          <span class="menu-label">主题设置</span>
+          <span class="menu-arrow">→</span>
+        </div>
       </div>
     </div>
   </AppLayout>
