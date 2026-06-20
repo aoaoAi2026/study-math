@@ -1,190 +1,264 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import AppLayout from '@/components/layout/AppLayout.vue'
-import { loadTopicContent, parseTopicMarkdown } from '@/services/contentLoader'
-import type { ParsedContent } from '@/services/contentLoader'
+import { loadTopic } from '@/services/contentLoader'
+import type { KnowledgeTopic, CardBlock } from '@/types/content'
+import StoryCard from '@/components/cards/StoryCard.vue'
+import ConceptCard from '@/components/cards/ConceptCard.vue'
+import ExampleCard from '@/components/cards/ExampleCard.vue'
+import VariantCard from '@/components/cards/VariantCard.vue'
+import MistakeCard from '@/components/cards/MistakeCard.vue'
+import ParentChildCard from '@/components/cards/ParentChildCard.vue'
 
 const route = useRoute()
 const router = useRouter()
 
-const topicId = computed(() => route.params.id as string)
-const content = ref<ParsedContent | null>(null)
+const topicId = computed(() => (route.params.topicId as string) || (route.params.id as string))
+const topic = ref<KnowledgeTopic | null>(null)
 const loading = ref(true)
-const error = ref(false)
+const error = ref<string | null>(null)
 
-// 面包屑：从 topicId 推断年级
 const gradeLabel = computed(() => {
-  const match = topicId.value.match(/^g(\d)/)
-  if (match) return `${match[1]}年级`
-  return '三年级'
+  if (topic.value) return `${topic.value.grade}年级`
+  const m = topicId.value.match(/^g(\d)/)
+  if (m) return `${m[1]}年级`
+  return '学习内容'
 })
 
-const topicTitle = computed(() => content.value?.title ?? topicId.value)
+const difficultyStars = computed(() => {
+  if (!topic.value) return ''
+  return '★'.repeat(topic.value.difficulty) + '☆'.repeat(5 - topic.value.difficulty)
+})
 
-async function fetchContent() {
+const cardComponentMap: Record<CardBlock['type'], unknown> = {
+  story: StoryCard,
+  concept: ConceptCard,
+  example: ExampleCard,
+  variant: VariantCard,
+  mistake: MistakeCard,
+  'parent-child': ParentChildCard
+}
+
+async function fetchTopic() {
+  if (!topicId.value) return
   loading.value = true
-  error.value = false
-  content.value = null
-
+  error.value = null
+  topic.value = null
   try {
-    content.value = await loadTopicContent(topicId.value)
-  } catch {
-    error.value = true
+    const result = await loadTopic(topicId.value)
+    if (!result) {
+      error.value = '未找到该专题'
+    } else {
+      topic.value = result
+    }
+  } catch (err) {
+    console.error('[TopicDetail] 加载失败:', err)
+    error.value = '内容加载失败，请稍后重试'
   } finally {
     loading.value = false
   }
-}
-
-function goToQuiz() {
-  router.push(`/learning/quiz/${topicId.value}`)
 }
 
 function goBack() {
   router.push('/learning')
 }
 
-onMounted(fetchContent)
-watch(topicId, fetchContent)
+function goToQuiz() {
+  if (!topicId.value) return
+  router.push(`/quiz/${topicId.value}`)
+}
+
+function goToPostTest() {
+  if (!topicId.value) return
+  router.push(`/post-test/${topicId.value}`)
+}
+
+function renderCardProps(card: CardBlock) {
+  const base = { title: card.title || '', content: card.content || '' }
+  switch (card.type) {
+    case 'example':
+      return { ...base, stem: card.content || '', steps: [], formula: '' }
+    case 'variant':
+      return { ...base, stem: card.content || '', variantIndex: card.variantIndex }
+    case 'mistake':
+      return { ...base, mistakes: [] }
+    case 'parent-child':
+      return { ...base, script: card.content || '' }
+    default:
+      return base
+  }
+}
+
+onMounted(fetchTopic)
+watch(topicId, fetchTopic)
 </script>
 
 <template>
-  <AppLayout>
-    <div class="topic-detail">
-      <!-- 面包屑导航 -->
-      <nav class="breadcrumb">
-        <a class="breadcrumb-link" @click="goBack">知识地图</a>
-        <span class="breadcrumb-sep">/</span>
-        <span class="breadcrumb-link">{{ gradeLabel }}</span>
-        <span class="breadcrumb-sep">/</span>
-        <span class="breadcrumb-current">{{ topicTitle }}</span>
-      </nav>
+  <div class="topic-detail">
+    <nav class="breadcrumb">
+      <a class="breadcrumb-link" @click="goBack">知识地图</a>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-link">{{ gradeLabel }}</span>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-current">{{ topic?.title || '加载中...' }}</span>
+    </nav>
 
-      <!-- 加载中 -->
-      <div v-if="loading" class="status-box">
-        <div class="spinner" />
-        <p>课件加载中...</p>
-      </div>
+    <div v-if="loading" class="status-box" role="status" aria-live="polite">
+      <div class="spinner" aria-hidden="true" />
+      <p>课件加载中...</p>
+    </div>
 
-      <!-- 加载失败占位 -->
-      <div v-else-if="error" class="status-box placeholder">
-        <div class="placeholder-icon">🚧</div>
-        <h2>内容开发中</h2>
-        <p>该专题的课件正在精心编写中，敬请期待！</p>
+    <div v-else-if="error" class="status-box placeholder" role="alert">
+      <div class="placeholder-icon">🚧</div>
+      <h2>{{ error }}</h2>
+      <p>该专题的课件正在精心编写中，敬请期待！</p>
+      <div class="placeholder-actions">
+        <button class="btn-back" @click="fetchTopic">重新加载</button>
         <button class="btn-back" @click="goBack">返回专题列表</button>
       </div>
-
-      <!-- 正常内容 -->
-      <template v-else-if="content">
-        <article class="topic-content" v-html="content.html" />
-
-        <!-- 卡片区域 -->
-        <section v-if="content.cards.length" class="cards-section">
-          <div
-            v-for="(card, idx) in content.cards"
-            :key="idx"
-            class="card-block"
-            :class="`card-${card.type}`"
-          >
-            <h3 v-if="card.title" class="card-title">{{ card.title }}</h3>
-            <div class="card-body" v-html="card.content" />
-          </div>
-        </section>
-
-        <!-- 底部练习按钮 -->
-        <div class="action-bar">
-          <button class="btn-practice" @click="goToQuiz">
-            开始练习
-          </button>
-        </div>
-      </template>
     </div>
-  </AppLayout>
+
+    <template v-else-if="topic">
+      <header class="topic-head">
+        <div class="topic-head__meta">
+          <span class="tag tag-grade">{{ topic.grade }}年级</span>
+          <span class="tag" :class="topic.category === 'basic' ? 'tag-basic' : 'tag-olympiad'">
+            {{ topic.category === 'basic' ? '校内基础' : '奥数专题' }}
+          </span>
+          <span class="tag tag-diff" :title="`难度 ${topic.difficulty}/5`">
+            {{ difficultyStars }}
+          </span>
+        </div>
+        <h1 class="topic-head__title">{{ topic.title }}</h1>
+        <p class="topic-head__summary" v-if="topic.summary">{{ topic.summary }}</p>
+      </header>
+
+      <section class="cards-section">
+        <component
+          v-for="(card, idx) in topic.cards"
+          :key="`${card.type}-${idx}`"
+          :is="cardComponentMap[card.type]"
+          v-bind="renderCardProps(card)"
+          class="card-block"
+          :class="`card-${card.type}`"
+        />
+
+        <div v-if="topic.cards.length === 0" class="card-block card-empty">
+          <h3>暂无学习卡片</h3>
+          <p>该专题的学习卡片正在编写中，敬请期待。</p>
+        </div>
+      </section>
+
+      <section class="action-bar">
+        <button class="action-btn action-btn--primary" @click="goToQuiz">
+          <span class="action-btn__icon">✏️</span>
+          <span class="action-btn__text">
+            <strong>开始练习</strong>
+            <small>通过题目巩固知识点</small>
+          </span>
+        </button>
+        <button class="action-btn action-btn--secondary" @click="goToPostTest">
+          <span class="action-btn__icon">🎯</span>
+          <span class="action-btn__text">
+            <strong>掌握测验</strong>
+            <small>检测是否真正理解</small>
+          </span>
+        </button>
+      </section>
+    </template>
+  </div>
 </template>
 
 <style scoped>
 .topic-detail {
-  max-width: var(--content-max-width);
+  max-width: var(--content-max-width, 900px);
   margin: 0 auto;
-  padding: var(--space-6) var(--space-4);
+  padding: var(--space-6, 24px) var(--space-4, 16px);
 }
 
-/* 面包屑 */
 .breadcrumb {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  margin-bottom: var(--space-6);
-  font-size: var(--text-sm);
-  color: var(--text-tertiary);
+  gap: var(--space-2, 8px);
+  margin-bottom: var(--space-6, 24px);
+  font-size: var(--text-sm, 14px);
+  color: var(--text-tertiary, #6b7280);
+  flex-wrap: wrap;
 }
 .breadcrumb-link {
   cursor: pointer;
-  color: var(--text-secondary);
-  transition: color var(--transition-fast);
+  color: var(--text-secondary, #4b5563);
+  transition: color var(--transition-fast, .15s);
 }
 .breadcrumb-link:hover {
-  color: var(--color-primary);
+  color: var(--color-primary, #6366f1);
+  text-decoration: underline;
 }
 .breadcrumb-sep {
-  color: var(--text-tertiary);
+  color: var(--text-tertiary, #6b7280);
 }
 .breadcrumb-current {
-  color: var(--text-primary);
-  font-weight: 500;
+  color: var(--text-primary, #1f2937);
+  font-weight: 600;
 }
 
-/* 状态占位 */
 .status-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 300px;
-  color: var(--text-secondary);
-  gap: var(--space-4);
+  color: var(--text-secondary, #4b5563);
+  gap: var(--space-4, 16px);
 }
 .placeholder {
-  background: var(--bg-card);
-  border: 2px dashed var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: var(--space-12) var(--space-6);
+  background: var(--bg-card, #ffffff);
+  border: 2px dashed var(--border-color, #e5e7eb);
+  border-radius: var(--radius-xl, 16px);
+  padding: var(--space-12, 48px) var(--space-6, 24px);
   text-align: center;
 }
 .placeholder-icon {
   font-size: 48px;
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-2, 8px);
 }
 .placeholder h2 {
-  font-size: var(--text-2xl);
-  color: var(--text-primary);
-  margin-bottom: var(--space-2);
+  font-size: var(--text-2xl, 24px);
+  color: var(--text-primary, #1f2937);
+  margin: 0 0 var(--space-2, 8px);
 }
 .placeholder p {
-  color: var(--text-secondary);
-  margin-bottom: var(--space-6);
+  color: var(--text-secondary, #4b5563);
+  margin: 0 0 var(--space-6, 24px);
+}
+.placeholder-actions {
+  display: flex;
+  gap: var(--space-3, 12px);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .btn-back {
-  padding: var(--space-3) var(--space-6);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  background: var(--bg-card);
-  color: var(--text-primary);
+  padding: var(--space-3, 12px) var(--space-6, 24px);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: var(--radius-lg, 12px);
+  background: var(--bg-card, #ffffff);
+  color: var(--text-primary, #1f2937);
   cursor: pointer;
-  font-size: var(--text-sm);
-  transition: all var(--transition-fast);
+  font-size: var(--text-sm, 14px);
+  font-weight: 500;
+  transition: all var(--transition-fast, .15s);
 }
 .btn-back:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  border-color: var(--color-primary, #6366f1);
+  color: var(--color-primary, #6366f1);
+  background: rgba(99, 102, 241, .05);
 }
 
-/* 加载动画 */
 .spinner {
-  width: 32px;
-  height: 32px;
-  border: 3px solid var(--border-color);
-  border-top-color: var(--color-primary);
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border-color, #e5e7eb);
+  border-top-color: var(--color-primary, #6366f1);
   border-radius: 50%;
   animation: spin 0.6s linear infinite;
 }
@@ -192,94 +266,154 @@ watch(topicId, fetchContent)
   to { transform: rotate(360deg); }
 }
 
-/* 文章内容 */
-.topic-content {
-  line-height: var(--leading-relaxed);
-  color: var(--text-primary);
-  font-size: var(--text-base);
+.topic-head {
+  background: var(--bg-card, #ffffff);
+  border-radius: var(--radius-xl, 16px);
+  padding: var(--space-6, 24px);
+  margin-bottom: var(--space-6, 24px);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,.05));
+  border-top: 4px solid var(--color-primary, #6366f1);
 }
-.topic-content :deep(h1) {
-  font-size: var(--text-3xl);
-  margin-bottom: var(--space-4);
-}
-.topic-content :deep(h2) {
-  font-size: var(--text-2xl);
-  margin-top: var(--space-8);
-  margin-bottom: var(--space-4);
-  color: var(--text-primary);
-}
-.topic-content :deep(p) {
-  margin-bottom: var(--space-4);
-}
-.topic-content :deep(strong) {
-  color: var(--color-primary-dark);
-}
-
-/* 卡片区域 */
-.cards-section {
-  margin-top: var(--space-8);
+.topic-head__meta {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-6);
+  flex-wrap: wrap;
+  gap: var(--space-2, 8px);
+  margin-bottom: var(--space-3, 12px);
 }
-.card-block {
-  background: var(--bg-card);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  box-shadow: var(--shadow-sm);
-  border-left: 4px solid var(--color-primary);
+.topic-head__title {
+  font-size: var(--text-3xl, 28px);
+  color: var(--text-primary, #1f2937);
+  margin: 0 0 var(--space-3, 12px);
+  line-height: 1.3;
 }
-.card-block.card-story { border-left-color: var(--color-secondary); }
-.card-block.card-concept { border-left-color: var(--color-info); }
-.card-block.card-example { border-left-color: var(--color-success); }
-.card-block.card-variant { border-left-color: var(--color-primary); }
-.card-block.card-mistake { border-left-color: var(--color-error); }
-.card-block.card-parent-child { border-left-color: var(--color-warning); }
-
-.card-title {
-  font-size: var(--text-lg);
-  margin-bottom: var(--space-3);
-  color: var(--text-primary);
-}
-.card-body {
-  color: var(--text-secondary);
-  line-height: var(--leading-relaxed);
+.topic-head__summary {
+  color: var(--text-secondary, #4b5563);
+  line-height: var(--leading-relaxed, 1.6);
+  font-size: var(--text-base, 16px);
+  margin: 0;
 }
 
-/* 底部操作栏 */
-.action-bar {
-  margin-top: var(--space-10);
-  text-align: center;
-}
-.btn-practice {
+.tag {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-4) var(--space-10);
-  background: var(--color-primary);
-  color: var(--text-inverse);
+  padding: var(--space-1, 4px) var(--space-2, 8px);
+  border-radius: var(--radius-sm, 6px);
+  font-size: var(--text-xs, 12px);
+  font-weight: 500;
+  background: var(--bg-page, #f3f4f6);
+  color: var(--text-secondary, #4b5563);
+}
+.tag-grade {
+  background: rgba(99, 102, 241, .1);
+  color: var(--color-primary, #6366f1);
+}
+.tag-basic {
+  background: rgba(59, 130, 246, .1);
+  color: var(--color-info, #3b82f6);
+}
+.tag-olympiad {
+  background: rgba(245, 158, 11, .1);
+  color: var(--color-warning-dark, #b45309);
+}
+.tag-diff {
+  color: var(--color-warning, #f59e0b);
+  letter-spacing: 1px;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6, 24px);
+  margin-bottom: var(--space-10, 40px);
+}
+
+.card-block {
+  display: block;
+}
+
+.card-empty {
+  background: var(--bg-card, #ffffff);
+  border-radius: var(--radius-xl, 16px);
+  padding: var(--space-8, 32px);
+  text-align: center;
+  color: var(--text-tertiary, #6b7280);
+  border: 2px dashed var(--border-color, #e5e7eb);
+}
+.card-empty h3 {
+  color: var(--text-primary, #1f2937);
+  margin: 0 0 var(--space-2, 8px);
+}
+.card-empty p {
+  margin: 0;
+}
+
+.action-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4, 16px);
+}
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4, 16px);
+  padding: var(--space-5, 20px) var(--space-5, 20px);
   border: none;
-  border-radius: var(--radius-full);
-  font-size: var(--text-lg);
-  font-weight: 600;
+  border-radius: var(--radius-xl, 16px);
   cursor: pointer;
-  transition: background var(--transition-fast), transform var(--transition-fast);
-  box-shadow: var(--shadow-md);
+  text-align: left;
+  transition: transform var(--transition-fast, .15s), box-shadow var(--transition-fast, .15s);
 }
-.btn-practice:hover {
-  background: var(--color-primary-dark);
-  transform: translateY(-1px);
+.action-btn:hover {
+  transform: translateY(-2px);
 }
-.btn-practice:active {
-  transform: translateY(0);
+.action-btn--primary {
+  background: linear-gradient(135deg, var(--color-primary, #6366f1), var(--color-primary-dark, #4338ca));
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, .35);
+}
+.action-btn--primary:hover {
+  box-shadow: 0 8px 24px rgba(99, 102, 241, .45);
+}
+.action-btn--secondary {
+  background: linear-gradient(135deg, var(--color-success, #10b981), #047857);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, .35);
+}
+.action-btn--secondary:hover {
+  box-shadow: 0 8px 24px rgba(16, 185, 129, .45);
+}
+.action-btn__icon {
+  font-size: var(--text-3xl, 28px);
+  flex-shrink: 0;
+}
+.action-btn__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.3;
+}
+.action-btn__text strong {
+  font-size: var(--text-lg, 18px);
+  font-weight: 700;
+}
+.action-btn__text small {
+  font-size: var(--text-sm, 14px);
+  opacity: .9;
+  font-weight: 400;
 }
 
 @media (max-width: 640px) {
   .topic-detail {
-    padding: var(--space-4) var(--space-3);
+    padding: var(--space-4, 16px) var(--space-3, 12px);
   }
-  .card-block {
-    padding: var(--space-4);
+  .topic-head {
+    padding: var(--space-5, 20px);
+  }
+  .topic-head__title {
+    font-size: var(--text-2xl, 24px);
+  }
+  .action-bar {
+    grid-template-columns: 1fr;
   }
 }
 </style>

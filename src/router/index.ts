@@ -116,6 +116,26 @@ const routes: RouteRecordRaw[] = [
     path: '/learning-path',
     name: 'learning-path',
     component: () => import('@/features/learning/LearningPath.vue')
+  },
+  {
+    path: '/quiz/:topicId',
+    name: 'quiz',
+    component: () => import('@/features/learning/QuizPage.vue')
+  },
+  {
+    path: '/pre-assessment/:topicId',
+    name: 'pre-assessment',
+    component: () => import('@/features/learning/PreAssessment.vue')
+  },
+  {
+    path: '/post-test/:topicId',
+    name: 'post-test',
+    component: () => import('@/features/learning/PostTest.vue')
+  },
+  {
+    path: '/learning/topic/:topicId',
+    name: 'topic-detail',
+    component: () => import('@/features/learning/TopicDetail.vue')
   }
 ]
 
