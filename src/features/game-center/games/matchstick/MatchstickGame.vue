@@ -8,15 +8,20 @@ interface Level {
   display: string
   answer: string
   hint: string
+  difficulty: 1 | 2 | 3
 }
 
 const LEVELS: Level[] = [
-  { id: 1, display: '1 + 2 = 4', answer: '7-2=5', hint: '把加号的竖火柴移到数字 1 上' },
-  { id: 2, display: '5 - 2 = 2', answer: '5-3=2', hint: '从第一个 2 中移动一根火柴，让它变成 3' },
-  { id: 3, display: '3 - 3 = 6', answer: '3+3=6', hint: '给减号加一根竖火柴' },
-  { id: 4, display: '6 + 5 = 4', answer: '6-5=1', hint: '把加号的竖火柴移到数字 4 上' },
-  { id: 5, display: '8 - 1 = 6', answer: '9-1=8', hint: '让 8 和 6 互换身份' },
-  { id: 6, display: '1 + 1 = 3', answer: '1+1=2', hint: '从 3 中拿走一根火柴，变成 2' }
+  { id: 1, display: '1 + 2 = 4', answer: '7-2=5', hint: '把加号的竖火柴移到数字 1 上', difficulty: 1 },
+  { id: 2, display: '5 - 2 = 2', answer: '5-3=2', hint: '从第一个 2 中移动一根火柴，让它变成 3', difficulty: 1 },
+  { id: 3, display: '3 - 3 = 6', answer: '3+3=6', hint: '给减号加一根竖火柴', difficulty: 1 },
+  { id: 4, display: '6 + 5 = 4', answer: '6-5=1', hint: '把加号的竖火柴移到数字 4 上', difficulty: 2 },
+  { id: 5, display: '8 - 1 = 6', answer: '9-1=8', hint: '让 8 和 6 互换身份', difficulty: 2 },
+  { id: 6, display: '1 + 1 = 3', answer: '1+1=2', hint: '从 3 中拿走一根火柴，变成 2', difficulty: 1 },
+  { id: 7, display: '9 - 5 = 12', answer: '9-5=4', hint: '移动 12 中的一根火柴让它变成 4', difficulty: 3 },
+  { id: 8, display: '2 + 2 = 7', answer: '7-2=5', hint: '把加号的竖火柴移到第一个 2 上', difficulty: 2 },
+  { id: 9, display: '4 + 3 = 8', answer: '4+3=7', hint: '从 8 中拿走一根火柴变成 7', difficulty: 2 },
+  { id: 10, display: '5 + 5 = 9', answer: '5+4=9', hint: '把一个 5 改成 4', difficulty: 3 }
 ]
 
 const userStore = useUserStore()
@@ -109,7 +114,13 @@ function handleKeydown(e: KeyboardEvent) {
       <div v-else class="mg__main">
         <div class="mg__header">
           <h1 class="mg__title">🔥 火柴棒谜题</h1>
-          <p class="mg__level">第 {{ currentLevelIndex + 1 }} / {{ LEVELS.length }} 关</p>
+          <p class="mg__level">
+            第 {{ currentLevelIndex + 1 }} / {{ LEVELS.length }} 关 ·
+            <span class="mg__difficulty" :class="`mg__difficulty--${currentLevel.difficulty}`">
+              {{ currentLevel.difficulty === 1 ? '简单' : currentLevel.difficulty === 2 ? '中等' : '挑战' }}
+              {{ '⭐'.repeat(currentLevel.difficulty) }}
+            </span>
+          </p>
         </div>
 
         <div class="mg__progress">
@@ -189,6 +200,13 @@ function handleKeydown(e: KeyboardEvent) {
 .mg__title { font-size: var(--text-2xl); margin-bottom: var(--space-2); }
 .mg__header { margin-bottom: var(--space-4); }
 .mg__level { color: var(--text-secondary); font-size: var(--text-sm); }
+.mg__difficulty {
+  display: inline-block; padding: 2px 8px; border-radius: var(--radius-md);
+  margin-left: var(--space-2); font-size: var(--text-xs); font-weight: 600;
+}
+.mg__difficulty--1 { background: rgba(16, 185, 129, 0.15); color: var(--color-success); }
+.mg__difficulty--2 { background: rgba(251, 191, 36, 0.15); color: var(--color-warning); }
+.mg__difficulty--3 { background: rgba(239, 68, 68, 0.15); color: var(--color-error); }
 
 .mg__progress { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4); }
 .mg__progress-bar { flex: 1; height: 6px; background: var(--bg-hover); border-radius: var(--radius-full); overflow: hidden; }
