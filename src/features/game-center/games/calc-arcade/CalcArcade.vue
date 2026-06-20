@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useRouter } from 'vue-router'
-import AppLayout from '@/components/layout/AppLayout.vue'
 import {
   generateProblem,
   checkAnswer,
@@ -13,10 +11,6 @@ import {
   type GameState,
   type Problem
 } from './gameLogic'
-import { useUserStore } from '@/stores/userStore'
-
-const router = useRouter()
-const userStore = useUserStore()
 
 const gameState = ref<GameState>(createInitialState({} as GameConfig))
 const currentProblem = ref<Problem | null>(null)
@@ -70,10 +64,6 @@ function submitAnswer() {
   showFeedback.value = true
 
   gameState.value = updateState(gameState.value, isCorrectAnswer.value, currentProblem.value)
-
-  if (isCorrectAnswer.value) {
-    userStore.addExp(5)
-  }
 
   setTimeout(() => {
     if (!selectedConfig.value) return
@@ -145,8 +135,7 @@ const result = computed(() => selectedConfig.value ? formatResult(gameState.valu
 </script>
 
 <template>
-  <AppLayout>
-    <div class="calc-arcade">
+  <div class="calc-arcade">
       <!-- Menu State -->
       <div v-if="gameMode === 'menu'" class="calc-arcade__menu">
         <h1 class="calc-arcade__title">🧮 计算街机</h1>
@@ -285,8 +274,7 @@ const result = computed(() => selectedConfig.value ? formatResult(gameState.valu
           </button>
         </div>
       </div>
-    </div>
-  </AppLayout>
+  </div>
 </template>
 
 <style scoped>

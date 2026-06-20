@@ -11,25 +11,48 @@ const emit = defineEmits<{
   (e: 'answer', result: { answer: string; isCorrect: boolean }): void
 }>()
 
-const selected = ref<string | null>(null)
+const selectedIndex = ref<number | null>(null)
 
-function selectOption(option: string) {
+const isAnswerIndex = computed(() => /^\d+$/.test(props.answer))
+
+const correctAnswerText = computed(() => {
+  if (isAnswerIndex.value) {
+    const idx = parseInt(props.answer, 10)
+    return props.options[idx] ?? ''
+  }
+  return props.answer
+})
+
+const correctIndex = computed(() => {
+  if (isAnswerIndex.value) {
+    return parseInt(props.answer, 10)
+  }
+  return props.options.indexOf(props.answer)
+})
+
+function selectOption(option: string, index: number) {
   if (props.showFeedback) return
-  selected.value = option
+  selectedIndex.value = index
+  const isCorrect = isAnswerIndex.value
+    ? parseInt(props.answer, 10) === index
+    : option === props.answer
   emit('answer', {
     answer: option,
-    isCorrect: option === props.answer
+    isCorrect
   })
 }
 
-function getOptionClass(option: string) {
+function getOptionClass(option: string, index: number) {
+  const isSelected = selectedIndex.value === index
+  const isCorrectOption = index === correctIndex.value || option === correctAnswerText.value
+
   if (!props.showFeedback) {
-    return selected.value === option ? 'choice-question__option--selected' : ''
+    return isSelected ? 'choice-question__option--selected' : ''
   }
-  if (option === props.answer) {
+  if (isCorrectOption) {
     return 'choice-question__option--correct'
   }
-  if (option === selected.value && option !== props.answer) {
+  if (isSelected && !isCorrectOption) {
     return 'choice-question__option--wrong'
   }
   return ''
@@ -42,8 +65,8 @@ function getOptionClass(option: string) {
       v-for="(option, index) in options"
       :key="index"
       class="choice-question__option"
-      :class="getOptionClass(option)"
-      @click="selectOption(option)"
+      :class="getOptionClass(option, index)"
+      @click="selectOption(option, index)"
     >
       <span class="choice-question__letter">{{ ['A', 'B', 'C', 'D', 'E', 'F'][index] }}</span>
       <span class="choice-question__text" v-html="option"></span>

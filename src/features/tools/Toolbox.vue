@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import AppLayout from '@/components/layout/AppLayout.vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
 </script>
 
 <template>
-  <div class="tools-page">
+  <AppLayout>
+    <div class="tools-page">
     <header class="t-head">
       <h1>🧰 教具工具箱</h1>
       <p class="muted">动手操作，可视化理解数学概念</p>
@@ -35,7 +37,7 @@ const router = useRouter()
         <button class="btn btn-outline small" disabled>敬请期待</button>
       </div>
     </div>
-  </div>
+  </AppLayout>
 </template>
 
 <style scoped>

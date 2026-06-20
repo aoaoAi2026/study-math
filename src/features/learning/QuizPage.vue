@@ -17,22 +17,25 @@ const engineKey = ref(0)
 const topicName = computed(() => {
   const id = topicId.value
   const map: Record<string, string> = {
+    'g1-addition-within-20': '20以内加减法',
+    'g1-word-problem-1st': '一年级应用题',
+    'g1-counting-game': '趣味数数',
+    'g2-multiplication-table': '乘法口诀',
     'g3-sum-multiple': '和倍问题',
     'g3-diff-multiple': '差倍问题',
     'g3-sum-diff': '和差问题',
-    'g3-arithmetic-seq': '等差数列',
-    'g3-plant': '植树问题',
-    'g3-age': '年龄问题',
-    'g4-chicken-rabbit': '鸡兔同笼',
+    'g3-planting-trees': '植树问题',
+    'g3-chicken-rabbit': '鸡兔同笼',
+    'g4-age-problem': '年龄问题',
     'g4-area-perimeter': '面积与周长',
-    'g4-profit-loss': '盈亏问题',
-    'g5-fraction-split': '分数裂项',
-    'g5-simple-eq': '简易方程',
-    'g5-fraction-add': '分数加减法',
-    'g6-number-theory': '数论与质数',
-    'g6-geometry-model': '几何蝴蝶模型',
-    'g6-motion': '行程问题',
-    'g6-circle': '圆'
+    'g5-profit-loss': '利润与亏损',
+    'g5-simple-equation': '简易方程',
+    'g5-fraction-split': '分数的拆分',
+    'g5-fraction-add-sub': '分数加减法',
+    'g5-number-theory': '数论初步',
+    'g5-geometry-model': '几何模型',
+    'g6-travel-problem': '行程问题',
+    'g6-circle-area': '圆的周长与面积'
   }
   return map[id] || id
 })

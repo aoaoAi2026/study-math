@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import AppLayout from '@/components/layout/AppLayout.vue'
-import { useUserStore } from '@/stores/userStore'
 
 interface Level {
   id: number
@@ -24,7 +22,6 @@ const LEVELS: Level[] = [
   { id: 10, display: '5 + 5 = 9', answer: '5+4=9', hint: '把一个 5 改成 4', difficulty: 3 }
 ]
 
-const userStore = useUserStore()
 const currentLevelIndex = ref(0)
 const userAnswer = ref('')
 const showFeedback = ref(false)
@@ -61,7 +58,6 @@ function submitAnswer() {
   isCorrect.value = a === b || validateExpression(userAnswer.value)
   if (isCorrect.value) {
     solvedLevels.value.add(currentLevel.value.id)
-    userStore.addExp(3)
   }
   showFeedback.value = true
 }
@@ -103,8 +99,7 @@ function handleKeydown(e: KeyboardEvent) {
 </script>
 
 <template>
-  <AppLayout>
-    <div class="mg">
+  <div class="mg">
       <div v-if="gameCompleted" class="mg__completed">
         <h1 class="mg__title">🎉 恭喜通关！</h1>
         <p class="mg__desc">你已完成全部 {{ LEVELS.length }} 个火柴棒谜题</p>
@@ -191,8 +186,7 @@ function handleKeydown(e: KeyboardEvent) {
           </button>
         </div>
       </div>
-    </div>
-  </AppLayout>
+  </div>
 </template>
 
 <style scoped>

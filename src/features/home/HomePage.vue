@@ -146,7 +146,7 @@ onMounted(() => {
             <h3 class="home__continue-title">和倍问题</h3>
             <p class="home__continue-desc">三年级 · 奥数专题 · 第3步</p>
           </div>
-          <button class="home__continue-btn" @click="$router.push('/learning/sum-multiple')">
+          <button class="home__continue-btn" @click="$router.push('/learning/topic/g3-sum-multiple')">
             继续 →
           </button>
         </div>

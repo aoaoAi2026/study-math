@@ -3,6 +3,7 @@ import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { loadTopic } from '@/services/contentLoader'
 import type { KnowledgeTopic, CardBlock } from '@/types/content'
+import type { SolutionStep, CommonMistake } from '@/types/exercise'
 import StoryCard from '@/components/cards/StoryCard.vue'
 import ConceptCard from '@/components/cards/ConceptCard.vue'
 import ExampleCard from '@/components/cards/ExampleCard.vue'
@@ -39,6 +40,297 @@ const cardComponentMap: Record<CardBlock['type'], unknown> = {
   'parent-child': ParentChildCard
 }
 
+// -------------------------------
+// 文本辅助函数
+// -------------------------------
+
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
+
+function renderInline(text: string): string {
+  let safe = escapeHtml(text)
+  safe = safe.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+  return safe
+}
+
+/**
+ * 简单的 Markdown -> HTML
+ * - 以空行（\n\n 或 \r\n\r\n）分隔为多个段落，每段包在 <p> 中
+ * - 段内的每一行如果以 '- ' 开头，放入 <ul><li>
+ * - **xxx** -> <strong>xxx</strong>
+ * - $公式$ 保留原样（KaTeX 在页面渲染）
+ * - 普通行在段落内保留为换行
+ */
+function markdownToHtml(text: string): string {
+  if (!text) return ''
+
+  const normalized = text.replace(/\r\n/g, '\n')
+  const paragraphs = normalized.split(/\n\s*\n/).map((p) => p.trim()).filter((p) => p.length > 0)
+
+  return paragraphs
+    .map((para) => {
+      const lines = para.split('\n')
+      const listItems: string[] = []
+      const plainLines: string[] = []
+
+      for (const line of lines) {
+        if (/^\s*[-*+]\s+/.test(line)) {
+          listItems.push(line.replace(/^\s*[-*+]\s+/, ''))
+        } else {
+          plainLines.push(line)
+        }
+      }
+
+      const parts: string[] = []
+
+      if (plainLines.length > 0) {
+        const plainHtml = plainLines.map(renderInline).join('<br/>')
+        parts.push(`<p>${plainHtml}</p>`)
+      }
+
+      if (listItems.length > 0) {
+        const liHtml = listItems.map((l) => `<li>${renderInline(l)}</li>`).join('')
+        parts.push(`<ul>${liHtml}</ul>`)
+      }
+
+      return parts.join('')
+    })
+    .join('')
+}
+
+// -------------------------------
+// example-card 解析
+// -------------------------------
+
+interface ParseExampleResult {
+  stem: string
+  steps: SolutionStep[]
+  formula: string
+}
+
+function extractFormula(lines: string[]): string {
+  const idx = lines.findIndex((l) => /公式|核心公式|公式：|公式:/.test(l))
+  if (idx === -1) return ''
+  const parts: string[] = []
+  if (lines[idx].includes('：') || lines[idx].includes(':')) {
+    const after = lines[idx].split(/[：:]/, 2)[1]
+    if (after && after.trim()) parts.push(after.trim())
+  }
+  for (let i = idx + 1; i < lines.length; i++) {
+    if (/第[一二三四五六七八九十百0-9]+步|步骤[一二三四五六七八九十百0-9]+|^\s*[0-9]+\s*[.、)\s]/.test(lines[i])) break
+    if (lines[i].trim()) parts.push(lines[i].trim())
+  }
+  return parts.join(' ')
+}
+
+function detectErrorLayer(text: string): CommonMistake['errorLayer'] {
+  const m = text.match(/L[1-4]/i)
+  if (m) return (m[0].toUpperCase() as CommonMistake['errorLayer'])
+  return 'L2'
+}
+
+function parseExampleCard(content: string): ParseExampleResult {
+  const rawLines = content.replace(/\r\n/g, '\n').split('\n')
+  const lines = rawLines.map((l) => l.trim())
+
+  let formula = extractFormula(lines)
+
+  const stepPattern = /^第[一二三四五六七八九十百0-9]+步[：:.]?\s*|^步骤[一二三四五六七八九十百0-9]+[：:.]?\s*|^[0-9]+[.、)]\s*/
+
+  const stepStartIdx: number[] = []
+  for (let i = 0; i < lines.length; i++) {
+    if (!lines[i]) continue
+    if (stepPattern.test(lines[i])) {
+      stepStartIdx.push(i)
+    } else if (/公式|核心公式/.test(lines[i]) && i > 0) {
+      // 公式行不算步骤
+      continue
+    }
+  }
+
+  const steps: SolutionStep[] = []
+
+  if (stepStartIdx.length === 0) {
+    const nonEmpty = lines.filter((l) => l)
+    if (nonEmpty.length > 0) {
+      steps.push({ description: nonEmpty.join(' ') })
+    }
+    return {
+      stem: markdownToHtml(rawLines.join('\n')),
+      steps,
+      formula
+    }
+  }
+
+  // stem：第一行或第一个步骤之前的所有内容
+  const beforeFirstStep = lines.slice(0, stepStartIdx[0]).filter((l) => l)
+  const firstStepLine = lines[stepStartIdx[0]].replace(stepPattern, '').trim()
+  const stemHtml = markdownToHtml(
+    beforeFirstStep.length > 0
+      ? beforeFirstStep.join('\n')
+      : firstStepLine
+  )
+
+  // 解析每个步骤
+  for (let i = 0; i < stepStartIdx.length; i++) {
+    const start = stepStartIdx[i]
+    const end = i + 1 < stepStartIdx.length ? stepStartIdx[i + 1] : lines.length
+    const stepLines = lines.slice(start, end)
+    const cleanedStepLine = stepPattern.test(stepLines[0])
+      ? stepLines[0].replace(stepPattern, '').trim()
+      : stepLines[0]
+
+    const restLines = stepLines.slice(1).filter((l) => l && !/公式|核心公式/.test(l))
+
+    const allDescParts: string[] = [cleanedStepLine, ...restLines]
+    const description = allDescParts.filter((l) => l).join(' ')
+
+    const expression = description.match(/\$[^$]+\$/)?.[0] || ''
+
+    steps.push({ description, expression: expression || undefined })
+  }
+
+  // 去除 stem 文本中多余的步骤/公式内容（以避免重复）
+  return { stem: stemHtml, steps, formula }
+}
+
+// -------------------------------
+// mistake-card 解析
+// -------------------------------
+
+interface ParseMistakeResult {
+  mistakes: CommonMistake[]
+}
+
+function parseMistakeCard(content: string): ParseMistakeResult {
+  const rawLines = content.replace(/\r\n/g, '\n').split('\n')
+  const lines = rawLines.map((l) => l.trim())
+
+  const mistakes: CommonMistake[] = []
+
+  const mistakeIdx: number[] = []
+  for (let i = 0; i < lines.length; i++) {
+    if (/^错误[：:.\s]|^错误\d+|^错误\s*[一二三四五六七八九十]/i.test(lines[i])) {
+      mistakeIdx.push(i)
+    }
+  }
+
+  if (mistakeIdx.length === 0) {
+    // 按 reason/correction 关键词尝试提取一组
+    const reasonIdx = lines.findIndex((l) => /原因[：:]|^原因/i.test(l))
+    const correctionIdx = lines.findIndex((l) => /纠正[：:]|^纠正/i.test(l))
+    if (reasonIdx !== -1 && correctionIdx !== -1) {
+      const reason = (lines[reasonIdx].split(/[：:]/, 2)[1] || lines[reasonIdx]).trim()
+      const correction = (lines[correctionIdx].split(/[：:]/, 2)[1] || lines[correctionIdx]).trim()
+      const mistake = lines.slice(0, reasonIdx).filter((l) => l && !/原因|纠正/.test(l)).join(' ')
+      mistakes.push({
+        mistake: mistake || '未提供',
+        reason,
+        correction,
+        errorLayer: detectErrorLayer(lines.join(' '))
+      })
+    }
+    return { mistakes }
+  }
+
+  for (let i = 0; i < mistakeIdx.length; i++) {
+    const start = mistakeIdx[i]
+    const end = i + 1 < mistakeIdx.length ? mistakeIdx[i + 1] : lines.length
+    const block = lines.slice(start, end)
+
+    let mistake = ''
+    let reason = ''
+    let correction = ''
+
+    let currentKey: 'mistake' | 'reason' | 'correction' = 'mistake'
+    const buckets: Record<string, string[]> = { mistake: [], reason: [], correction: [] }
+
+    for (const line of block) {
+      if (/^错误[：:.\s]|^错误\d+/i.test(line)) {
+        currentKey = 'mistake'
+        const rest = line.replace(/^错误[：:.\s\d一二三四五六七八九十]*/i, '').trim()
+        if (rest) buckets[currentKey].push(rest)
+      } else if (/^原因[：:.\s]|^原因/i.test(line)) {
+        currentKey = 'reason'
+        const rest = line.replace(/^原因[：:.\s]*/i, '').trim()
+        if (rest) buckets[currentKey].push(rest)
+      } else if (/^纠正[：:.\s]|^纠正|^正确|^修正/i.test(line)) {
+        currentKey = 'correction'
+        const rest = line.replace(/^(纠正|正确|修正)[：:.\s]*/i, '').trim()
+        if (rest) buckets[currentKey].push(rest)
+      } else if (line) {
+        buckets[currentKey].push(line)
+      }
+    }
+
+    mistake = buckets.mistake.join(' ') || '未说明错误'
+    reason = buckets.reason.join(' ') || '未说明原因'
+    correction = buckets.correction.join(' ') || '未提供正确做法'
+
+    const layerText = block.join(' ')
+    const errorLayer = detectErrorLayer(layerText)
+
+    mistakes.push({ mistake, reason, correction, errorLayer })
+  }
+
+  return { mistakes }
+}
+
+// -------------------------------
+// 主渲染函数
+// -------------------------------
+
+function renderCardProps(card: CardBlock) {
+  const base = { title: card.title || '' }
+
+  switch (card.type) {
+    case 'example': {
+      const { stem, steps, formula } = parseExampleCard(card.content || '')
+      return {
+        ...base,
+        content: markdownToHtml(card.content || ''),
+        stem,
+        steps,
+        formula
+      }
+    }
+    case 'variant': {
+      return {
+        ...base,
+        content: markdownToHtml(card.content || ''),
+        stem: markdownToHtml(card.content || ''),
+        variantIndex: card.variantIndex
+      }
+    }
+    case 'mistake': {
+      const { mistakes } = parseMistakeCard(card.content || '')
+      return {
+        ...base,
+        content: markdownToHtml(card.content || ''),
+        mistakes
+      }
+    }
+    case 'parent-child': {
+      return {
+        ...base,
+        content: markdownToHtml(card.content || ''),
+        script: card.content || ''
+      }
+    }
+    default:
+      return {
+        ...base,
+        content: markdownToHtml(card.content || '')
+      }
+  }
+}
+
 async function fetchTopic() {
   if (!topicId.value) return
   loading.value = true
@@ -71,22 +363,6 @@ function goToQuiz() {
 function goToPostTest() {
   if (!topicId.value) return
   router.push(`/post-test/${topicId.value}`)
-}
-
-function renderCardProps(card: CardBlock) {
-  const base = { title: card.title || '', content: card.content || '' }
-  switch (card.type) {
-    case 'example':
-      return { ...base, stem: card.content || '', steps: [], formula: '' }
-    case 'variant':
-      return { ...base, stem: card.content || '', variantIndex: card.variantIndex }
-    case 'mistake':
-      return { ...base, mistakes: [] }
-    case 'parent-child':
-      return { ...base, script: card.content || '' }
-    default:
-      return base
-  }
 }
 
 onMounted(fetchTopic)

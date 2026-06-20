@@ -1,41 +1,32 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import QuizEngine, { type AnswerResult } from '@/components/practice/QuizEngine.vue'
 import { findByKnowledge, EXERCISE_POOL, randomPick } from '@/stores/exerciseData'
 import type { Exercise } from '@/types/exercise'
 
-const props = defineProps<{ knowledgeId: string }>()
-const emit = defineEmits<{ (e: 'continue'): void }>()
+const route = useRoute()
+const router = useRouter()
+const knowledgeId = computed(() => String(route.params.topicId || ''))
 
 const allTopics: Record<string, string> = {
-  'g1-number': '认识数字', 'g1-add-sub': '20以内加减法', 'g1-shape': '认识图形',
-  'g1-compare': '比多少', 'g1-queue': '排队问题', 'g1-match': '趣味搭配', 'g1-logic': '简单推理',
-  'g2-table': '乘法口诀', 'g2-division': '表内除法', 'g2-angle': '角的初步认识',
-  'g2-interval': '间隔问题', 'g2-age': '年龄问题', 'g2-move': '移多补少',
-  'g2-number-arr': '数字谜', 'g2-count': '数数图形',
-  'g3-multi-digit': '多位数乘除', 'g3-fraction': '分数初步', 'g3-area': '面积计算',
-  'sum-multiple': '和倍问题', 'diff-multiple': '差倍问题', 'sum-diff': '和差问题',
-  'g3-arithmetic': '等差数列', 'g3-plant': '植树问题', 'g3-cycle': '周期问题',
-  'g3-square': '方阵问题',
-  'g4-decimal': '小数运算', 'g4-angle-calc': '角的度量', 'g4-triangle': '三角形',
-  'chicken-rabbit': '鸡兔同笼', 'profit-loss': '盈亏问题', 'g4-average': '平均数问题',
-  'g4-meet': '相遇问题', 'g4-chase': '追及问题', 'g4-count-geo': '几何计数',
-  'g4-define': '定义新运算',
-  'g5-decimal-calc': '小数混合运算', 'g5-equation': '简易方程',
-  'g5-area-poly': '多边形面积', 'g5-train': '火车过桥', 'g5-boat': '流水行船',
-  'g5-work': '工程问题', 'fraction-split': '分数裂项', 'g5-ratio': '比和比例',
-  'g5-circular': '圆与扇形', 'g5-pigeon': '抽屉原理', 'g5-inclusion': '容斥原理',
-  'g6-percent': '百分数', 'g6-cylinder': '圆柱圆锥', 'g6-ratio-app': '比例应用',
-  'travel-problem': '行程问题综合', 'g6-concentration': '浓度问题',
-  'g6-economic': '经济问题', 'g6-combination': '组合计数',
-  'g6-number-theory': '数论初步', 'g6-geometry': '几何变换'
+  'g1-addition-within-20': '20以内加减法', 'g1-word-problem-1st': '一年级应用题',
+  'g1-counting-game': '趣味数数',
+  'g2-multiplication-table': '乘法口诀',
+  'g3-sum-multiple': '和倍问题', 'g3-diff-multiple': '差倍问题', 'g3-sum-diff': '和差问题',
+  'g3-planting-trees': '植树问题', 'g3-chicken-rabbit': '鸡兔同笼',
+  'g4-age-problem': '年龄问题', 'g4-area-perimeter': '面积与周长',
+  'g5-profit-loss': '利润与亏损', 'g5-simple-equation': '简易方程',
+  'g5-fraction-split': '分数的拆分', 'g5-fraction-add-sub': '分数加减法',
+  'g5-number-theory': '数论初步', 'g5-geometry-model': '几何模型',
+  'g6-travel-problem': '行程问题', 'g6-circle-area': '圆的周长与面积'
 }
 
-const topicTitle = computed(() => allTopics[props.knowledgeId] ?? props.knowledgeId)
-const STORAGE_KEY = () => `post-test-best:${props.knowledgeId}`
+const topicTitle = computed(() => allTopics[knowledgeId.value] ?? knowledgeId.value)
+const STORAGE_KEY = computed(() => `post-test-best:${knowledgeId.value}`)
 
 const exercises = computed((): Exercise[] => {
-  const pool = findByKnowledge(props.knowledgeId)
+  const pool = findByKnowledge(knowledgeId.value)
   return pool.length ? randomPick(pool, 3) : randomPick(EXERCISE_POOL, 3)
 })
 
@@ -74,7 +65,7 @@ const answerDetails = computed(() => {
 
 onMounted(() => {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY())
+    const raw = localStorage.getItem(STORAGE_KEY.value)
     if (raw) bestScore.value = parseInt(raw, 10) || null
   } catch {}
 })
@@ -88,7 +79,7 @@ function handleComplete(rs: AnswerResult[]) {
   results.value = rs
   if (accuracy.value > (bestScore.value ?? 0)) {
     bestScore.value = accuracy.value
-    try { localStorage.setItem(STORAGE_KEY(), String(accuracy.value)) } catch {}
+    try { localStorage.setItem(STORAGE_KEY.value, String(accuracy.value)) } catch {}
   }
   stage.value = 'result'
 }
@@ -99,7 +90,7 @@ function retake() {
 }
 
 function continueLearning() {
-  emit('continue')
+  router.push(`/learning/topic/${knowledgeId.value}`)
 }
 
 function goBack() {

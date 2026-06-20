@@ -24,5 +24,6 @@ export interface TopicIndex {
   category: 'basic' | 'olympiad'
   difficulty: 1 | 2 | 3 | 4 | 5
   summary: string
+  icon: string
   path: string
 }

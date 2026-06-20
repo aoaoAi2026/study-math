@@ -1,122 +1,54 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
-import { useUserStore } from '@/stores/userStore'
-import { useLearningStore } from '@/features/learning/learningStore'
+import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
+import { listTopics } from '@/services/contentLoader'
+import type { TopicIndex } from '@/types/content'
 import AppLayout from '@/components/layout/AppLayout.vue'
 
 const router = useRouter()
-const route = useRoute()
-const userStore = useUserStore()
-const learningStore = useLearningStore()
 
-onMounted(async () => {
-  await userStore.init()
-  await learningStore.init()
-})
-
-const selectedGrade = ref(Number(route.query.grade) || userStore.grade || 3)
+const topics = ref<TopicIndex[]>(listTopics())
+const selectedGrade = ref<number | 'all'>('all')
 const selectedCategory = ref<'all' | 'basic' | 'olympiad'>('all')
 
-const grades = [1, 2, 3, 4, 5, 6]
-
-const categories = [
-  { id: 'all' as const, label: '全部' },
-  { id: 'basic' as const, label: '校内基础' },
-  { id: 'olympiad' as const, label: '奥数专题' }
+const gradeOptions = [
+  { value: 'all' as const, label: '全部' },
+  { value: 1, label: '一年级' },
+  { value: 2, label: '二年级' },
+  { value: 3, label: '三年级' },
+  { value: 4, label: '四年级' },
+  { value: 5, label: '五年级' },
+  { value: 6, label: '六年级' }
 ]
 
-// 完整的知识点数据
-const allTopics = [
-  // 一年级
-  { id: 'g1-number', title: '认识数字', grade: 1, category: 'basic' as const, difficulty: 1 as const, summary: '1-100数的认识、读写、比较大小' },
-  { id: 'g1-add-sub', title: '20以内加减法', grade: 1, category: 'basic' as const, difficulty: 1 as const, summary: '进位加法、退位减法' },
-  { id: 'g1-shape', title: '认识图形', grade: 1, category: 'basic' as const, difficulty: 1 as const, summary: '长方形、正方形、圆形、三角形' },
-  { id: 'g1-compare', title: '比多少', grade: 1, category: 'olympiad' as const, difficulty: 1 as const, summary: '一一对应、移多补少' },
-  { id: 'g1-queue', title: '排队问题', grade: 1, category: 'olympiad' as const, difficulty: 2 as const, summary: '从前数、从后数、中间有几人' },
-  { id: 'g1-match', title: '趣味搭配', grade: 1, category: 'olympiad' as const, difficulty: 1 as const, summary: '简单的排列组合' },
-  { id: 'g1-logic', title: '简单推理', grade: 1, category: 'olympiad' as const, difficulty: 2 as const, summary: '图文算式、等量代换' },
-  
-  // 二年级
-  { id: 'g2-table', title: '乘法口诀', grade: 2, category: 'basic' as const, difficulty: 1 as const, summary: '1-9乘法口诀表' },
-  { id: 'g2-division', title: '表内除法', grade: 2, category: 'basic' as const, difficulty: 2 as const, summary: '平均分、包含除' },
-  { id: 'g2-angle', title: '角的初步认识', grade: 2, category: 'basic' as const, difficulty: 1 as const, summary: '直角、锐角、钝角' },
-  { id: 'g2-interval', title: '间隔问题', grade: 2, category: 'olympiad' as const, difficulty: 2 as const, summary: '植树问题、锯木头、爬楼梯' },
-  { id: 'g2-age', title: '年龄问题', grade: 2, category: 'olympiad' as const, difficulty: 2 as const, summary: '年龄差不变' },
-  { id: 'g2-move', title: '移多补少', grade: 2, category: 'olympiad' as const, difficulty: 2 as const, summary: '平均分配、相差倍数' },
-  { id: 'g2-number-arr', title: '数字谜', grade: 2, category: 'olympiad' as const, difficulty: 3 as const, summary: '竖式谜、横式谜' },
-  { id: 'g2-count', title: '数数图形', grade: 2, category: 'olympiad' as const, difficulty: 2 as const, summary: '数线段、数角、数三角形' },
-  
-  // 三年级
-  { id: 'g3-multi-digit', title: '多位数乘除', grade: 3, category: 'basic' as const, difficulty: 2 as const, summary: '两位数乘法、除数是一位数的除法' },
-  { id: 'g3-fraction', title: '分数初步', grade: 3, category: 'basic' as const, difficulty: 2 as const, summary: '认识分数、比较大小、简单计算' },
-  { id: 'g3-area', title: '面积计算', grade: 3, category: 'basic' as const, difficulty: 2 as const, summary: '长方形、正方形面积' },
-  { id: 'sum-multiple', title: '和倍问题', grade: 3, category: 'olympiad' as const, difficulty: 3 as const, summary: '已知和与倍数，求两数' },
-  { id: 'diff-multiple', title: '差倍问题', grade: 3, category: 'olympiad' as const, difficulty: 3 as const, summary: '已知差与倍数，求两数' },
-  { id: 'sum-diff', title: '和差问题', grade: 3, category: 'olympiad' as const, difficulty: 2 as const, summary: '已知和与差，求两数' },
-  { id: 'g3-arithmetic', title: '等差数列', grade: 3, category: 'olympiad' as const, difficulty: 3 as const, summary: '通项公式、求和公式' },
-  { id: 'g3-plant', title: '植树问题', grade: 3, category: 'olympiad' as const, difficulty: 2 as const, summary: '两端都植、一端植、环形' },
-  { id: 'g3-cycle', title: '周期问题', grade: 3, category: 'olympiad' as const, difficulty: 3 as const, summary: '找规律、余数应用' },
-  { id: 'g3-square', title: '方阵问题', grade: 3, category: 'olympiad' as const, difficulty: 3 as const, summary: '实心方阵、空心方阵' },
-  
-  // 四年级
-  { id: 'g4-decimal', title: '小数运算', grade: 4, category: 'basic' as const, difficulty: 2 as const, summary: '小数加减乘除' },
-  { id: 'g4-angle-calc', title: '角的度量', grade: 4, category: 'basic' as const, difficulty: 2 as const, summary: '量角器使用、角度计算' },
-  { id: 'g4-triangle', title: '三角形', grade: 4, category: 'basic' as const, difficulty: 2 as const, summary: '分类、内角和、三边关系' },
-  { id: 'chicken-rabbit', title: '鸡兔同笼', grade: 4, category: 'olympiad' as const, difficulty: 4 as const, summary: '假设法、抬脚法、方程法' },
-  { id: 'profit-loss', title: '盈亏问题', grade: 4, category: 'olympiad' as const, difficulty: 4 as const, summary: '一盈一亏、两次盈、两次亏' },
-  { id: 'g4-average', title: '平均数问题', grade: 4, category: 'olympiad' as const, difficulty: 3 as const, summary: '移多补少、基准数法' },
-  { id: 'g4-meet', title: '相遇问题', grade: 4, category: 'olympiad' as const, difficulty: 3 as const, summary: '相向而行、速度和×时间=路程' },
-  { id: 'g4-chase', title: '追及问题', grade: 4, category: 'olympiad' as const, difficulty: 4 as const, summary: '同向而行、速度差×时间=路程差' },
-  { id: 'g4-count-geo', title: '几何计数', grade: 4, category: 'olympiad' as const, difficulty: 3 as const, summary: '数长方形、数正方形' },
-  { id: 'g4-define', title: '定义新运算', grade: 4, category: 'olympiad' as const, difficulty: 3 as const, summary: '理解新运算规则并计算' },
-  
-  // 五年级
-  { id: 'g5-decimal-calc', title: '小数混合运算', grade: 5, category: 'basic' as const, difficulty: 3 as const, summary: '运算定律推广到小数' },
-  { id: 'g5-equation', title: '简易方程', grade: 5, category: 'basic' as const, difficulty: 3 as const, summary: '用字母表示数、解方程' },
-  { id: 'g5-area-poly', title: '多边形面积', grade: 5, category: 'basic' as const, difficulty: 3 as const, summary: '平行四边形、三角形、梯形' },
-  { id: 'g5-train', title: '火车过桥', grade: 5, category: 'olympiad' as const, difficulty: 4 as const, summary: '火车长度+桥长=总路程' },
-  { id: 'g5-boat', title: '流水行船', grade: 5, category: 'olympiad' as const, difficulty: 4 as const, summary: '顺水速度、逆水速度、静水速度' },
-  { id: 'g5-work', title: '工程问题', grade: 5, category: 'olympiad' as const, difficulty: 4 as const, summary: '工作效率、合作完成' },
-  { id: 'fraction-split', title: '分数裂项', grade: 5, category: 'olympiad' as const, difficulty: 5 as const, summary: '裂项相消法求和' },
-  { id: 'g5-ratio', title: '比和比例', grade: 5, category: 'olympiad' as const, difficulty: 3 as const, summary: '按比例分配、比例应用' },
-  { id: 'g5-circular', title: '圆与扇形', grade: 5, category: 'olympiad' as const, difficulty: 4 as const, summary: '周长、面积、扇形' },
-  { id: 'g5-pigeon', title: '抽屉原理', grade: 5, category: 'olympiad' as const, difficulty: 4 as const, summary: '最不利原则' },
-  { id: 'g5-inclusion', title: '容斥原理', grade: 5, category: 'olympiad' as const, difficulty: 4 as const, summary: '韦恩图、重叠计数' },
-  
-  // 六年级
-  { id: 'g6-percent', title: '百分数', grade: 6, category: 'basic' as const, difficulty: 3 as const, summary: '百分数应用、折扣、利率' },
-  { id: 'g6-cylinder', title: '圆柱圆锥', grade: 6, category: 'basic' as const, difficulty: 3 as const, summary: '表面积、体积计算' },
-  { id: 'g6-ratio-app', title: '比例应用', grade: 6, category: 'basic' as const, difficulty: 3 as const, summary: '正比例、反比例' },
-  { id: 'travel-problem', title: '行程问题综合', grade: 6, category: 'olympiad' as const, difficulty: 5 as const, summary: '多次相遇、变速问题' },
-  { id: 'g6-concentration', title: '浓度问题', grade: 6, category: 'olympiad' as const, difficulty: 5 as const, summary: '溶质、溶剂、浓度关系' },
-  { id: 'g6-economic', title: '经济问题', grade: 6, category: 'olympiad' as const, difficulty: 4 as const, summary: '利润、利润率、打折' },
-  { id: 'g6-combination', title: '组合计数', grade: 6, category: 'olympiad' as const, difficulty: 5 as const, summary: '排列组合、加法原理、乘法原理' },
-  { id: 'g6-number-theory', title: '数论初步', grade: 6, category: 'olympiad' as const, difficulty: 5 as const, summary: '质数、合数、因数、倍数' },
-  { id: 'g6-geometry', title: '几何变换', grade: 6, category: 'olympiad' as const, difficulty: 5 as const, summary: '等积变形、割补法' }
+const categoryOptions = [
+  { value: 'all' as const, label: '全部' },
+  { value: 'basic' as const, label: '校内基础' },
+  { value: 'olympiad' as const, label: '奥数专题' }
 ]
 
 const filteredTopics = computed(() => {
-  return allTopics.filter(t => {
-    const gradeMatch = t.grade === selectedGrade.value
-    const categoryMatch = selectedCategory.value === 'all' || t.category === selectedCategory.value
-    return gradeMatch && categoryMatch
+  return topics.value.filter(t => {
+    const gradeOk = selectedGrade.value === 'all' || t.grade === selectedGrade.value
+    const categoryOk = selectedCategory.value === 'all' || t.category === selectedCategory.value
+    return gradeOk && categoryOk
   })
 })
 
-const stats = computed(() => {
-  const gradeTopics = allTopics.filter(t => t.grade === selectedGrade.value)
-  const basic = gradeTopics.filter(t => t.category === 'basic').length
-  const olympiad = gradeTopics.filter(t => t.category === 'olympiad').length
-  return { basic, olympiad, total: gradeTopics.length }
-})
-
-function gotoTopic(id: string) {
-  router.push('/learning/' + id)
+function goToTopic(id: string) {
+  router.push(`/learning/topic/${id}`)
 }
 
-function changeGrade(grade: number) {
-  selectedGrade.value = grade
+function difficultyStars(d: number) {
+  return '⭐'.repeat(d)
+}
+
+function categoryLabel(c: 'basic' | 'olympiad') {
+  return c === 'basic' ? '基础' : '奥数'
+}
+
+function gradeLabel(g: number) {
+  return `${g}年级`
 }
 </script>
 
@@ -125,66 +57,84 @@ function changeGrade(grade: number) {
     <div class="learning-page">
       <header class="lp-header">
         <h1>📚 专题学习</h1>
-        <p class="muted">选择专题，开启数学探索之旅</p>
+        <p class="muted">选择一个专题，开启数学探索之旅</p>
       </header>
 
       <!-- 年级选择 -->
-      <div class="grade-tabs">
-        <button
-          v-for="g in grades"
-          :key="g"
-          class="grade-tab"
-          :class="{ active: selectedGrade === g }"
-          @click="changeGrade(g)"
-        >
-          {{ g }}年级
-        </button>
+      <div class="filter-section">
+        <div class="filter-label">按年级</div>
+        <div class="chip-group">
+          <button
+            v-for="opt in gradeOptions"
+            :key="opt.value"
+            class="chip"
+            :class="{ active: selectedGrade === opt.value }"
+            @click="selectedGrade = opt.value"
+          >
+            {{ opt.label }}
+          </button>
+        </div>
       </div>
 
       <!-- 分类筛选 -->
-      <div class="category-tabs">
-        <button
-          v-for="c in categories"
-          :key="c.id"
-          class="category-tab"
-          :class="{ active: selectedCategory === c.id }"
-          @click="selectedCategory = c.id"
-        >
-          {{ c.label }}
-        </button>
+      <div class="filter-section">
+        <div class="filter-label">按分类</div>
+        <div class="chip-group">
+          <button
+            v-for="opt in categoryOptions"
+            :key="opt.value"
+            class="chip"
+            :class="[
+              { active: selectedCategory === opt.value },
+              opt.value !== 'all' ? `chip--${opt.value}` : ''
+            ]"
+            @click="selectedCategory = opt.value"
+          >
+            {{ opt.label }}
+          </button>
+        </div>
       </div>
 
       <!-- 统计 -->
       <div class="stats-bar">
-        <span>校内基础: {{ stats.basic }}个</span>
-        <span>奥数专题: {{ stats.olympiad }}个</span>
-        <span>总计: {{ stats.total }}个</span>
+        <span>共 <strong>{{ filteredTopics.length }}</strong> 个专题</span>
       </div>
 
       <!-- 专题列表 -->
       <div class="topic-grid">
-        <div
+        <article
           v-for="topic in filteredTopics"
           :key="topic.id"
           class="topic-card"
-          :class="[`diff-${topic.difficulty}`, topic.category]"
-          @click="gotoTopic(topic.id)"
+          :class="`topic-card--${topic.category}`"
+          tabindex="0"
+          role="button"
+          @click="goToTopic(topic.id)"
+          @keydown.enter.space.prevent="goToTopic(topic.id)"
         >
-          <div class="topic-header">
-            <span class="topic-badge">{{ topic.category === 'basic' ? '基础' : '奥数' }}</span>
-            <span class="topic-stars">{{ '⭐'.repeat(topic.difficulty) }}</span>
+          <div class="topic-card__head">
+            <span class="topic-card__icon">{{ topic.icon || '📖' }}</span>
+            <div class="topic-card__meta">
+              <span class="topic-card__badge">{{ gradeLabel(topic.grade) }}</span>
+              <span class="topic-card__badge" :class="`badge--${topic.category}`">{{ categoryLabel(topic.category) }}</span>
+            </div>
           </div>
-          <h3 class="topic-title">{{ topic.title }}</h3>
-          <p class="topic-summary">{{ topic.summary }}</p>
-          <div class="topic-footer">
-            <span class="mastery-level">掌握度: Lv.{{ learningStore.masteryLevel(topic.id) }}/5</span>
-            <span class="arrow">→</span>
+          <h3 class="topic-card__title">{{ topic.title }}</h3>
+          <p class="topic-card__summary">{{ topic.summary }}</p>
+          <div class="topic-card__footer">
+            <span class="topic-card__stars" :title="`难度 ${topic.difficulty}/5`">
+              {{ difficultyStars(topic.difficulty) }}
+            </span>
+            <span class="topic-card__arrow">进入学习 →</span>
           </div>
-        </div>
+        </article>
       </div>
 
       <div v-if="filteredTopics.length === 0" class="empty">
-        <p>该分类下暂无专题</p>
+        <p>🔍 没有符合筛选条件的专题</p>
+        <button class="btn-reset" @click="selectedGrade = 'all'; selectedCategory = 'all'">
+          重置筛选
+        </button>
       </div>
     </div>
   </AppLayout>
@@ -192,165 +142,226 @@ function changeGrade(grade: number) {
 
 <style scoped>
 .learning-page {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 16px;
+  padding: var(--space-6, 24px) var(--space-4, 16px);
 }
 
 .lp-header {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: var(--space-8, 32px);
 }
 .lp-header h1 {
-  font-size: 28px;
-  color: #2C3E50;
-  margin-bottom: 6px;
+  font-size: var(--text-3xl, 32px);
+  color: var(--text-primary, #1f2937);
+  margin-bottom: var(--space-2, 8px);
 }
 .muted {
-  color: #9AA5B1;
-  font-size: 14px;
+  color: var(--text-tertiary, #9aa0a6);
+  font-size: var(--text-base, 16px);
 }
 
-.grade-tabs {
+.filter-section {
+  background: var(--bg-card, #ffffff);
+  border-radius: var(--radius-xl, 16px);
+  padding: var(--space-4, 16px);
+  margin-bottom: var(--space-4, 16px);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,.05));
   display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
-  overflow-x: auto;
-  padding-bottom: 4px;
+  gap: var(--space-4, 16px);
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.grade-tab {
-  padding: 10px 20px;
-  border: 2px solid #E2E8F0;
-  border-radius: 12px;
-  background: #fff;
+
+.filter-label {
+  font-size: var(--text-sm, 14px);
+  color: var(--text-secondary, #4b5563);
+  font-weight: 600;
+  min-width: 56px;
+  padding-top: var(--space-1, 4px);
+}
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2, 8px);
+}
+
+.chip {
+  padding: var(--space-2, 8px) var(--space-4, 16px);
+  border-radius: var(--radius-full, 9999px);
+  border: 1px solid var(--border-color, #e5e7eb);
+  background: var(--bg-hover, #f3f4f6);
+  color: var(--text-secondary, #4b5563);
+  font-size: var(--text-sm, 14px);
   font-weight: 500;
-  white-space: nowrap;
-  transition: all 0.15s;
   cursor: pointer;
+  transition: all 0.15s;
 }
-.grade-tab.active {
-  background: #4F7DF8;
-  border-color: #4F7DF8;
+.chip:hover {
+  border-color: var(--color-primary, #6366f1);
+  color: var(--color-primary, #6366f1);
+}
+.chip.active {
+  background: var(--color-primary, #6366f1);
+  border-color: var(--color-primary, #6366f1);
   color: white;
 }
-
-.category-tabs {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
+.chip.chip--basic.active {
+  background: var(--color-info, #3b82f6);
+  border-color: var(--color-info, #3b82f6);
 }
-.category-tab {
-  flex: 1;
-  padding: 12px;
-  border: 2px solid #E2E8F0;
-  border-radius: 12px;
-  background: #fff;
-  font-weight: 500;
-  transition: all 0.15s;
-  cursor: pointer;
-}
-.category-tab.active {
-  background: rgba(79, 125, 248, 0.1);
-  border-color: #4F7DF8;
-  color: #4F7DF8;
+.chip.chip--olympiad.active {
+  background: var(--color-warning, #f59e0b);
+  border-color: var(--color-warning, #f59e0b);
 }
 
 .stats-bar {
   display: flex;
-  gap: 16px;
-  margin-bottom: 20px;
-  padding: 12px 16px;
-  background: #F8FAFC;
-  border-radius: 12px;
-  font-size: 14px;
-  color: #6B7785;
+  gap: var(--space-4, 16px);
+  margin-bottom: var(--space-5, 20px);
+  padding: var(--space-3, 12px) var(--space-4, 16px);
+  background: var(--bg-hover, #f3f4f6);
+  border-radius: var(--radius-lg, 12px);
+  font-size: var(--text-sm, 14px);
+  color: var(--text-secondary, #4b5563);
+}
+.stats-bar strong {
+  color: var(--color-primary, #6366f1);
+  font-size: var(--text-lg, 18px);
+  margin: 0 var(--space-1, 4px);
 }
 
 .topic-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px;
+  gap: var(--space-4, 16px);
 }
+
 .topic-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  border: 2px solid #E2E8F0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card, #ffffff);
+  border-radius: var(--radius-xl, 16px);
+  padding: var(--space-5, 20px);
+  border: 2px solid transparent;
+  border-left: 4px solid var(--color-primary, #6366f1);
   cursor: pointer;
-  transition: all 0.15s;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,.05));
 }
-.topic-card:hover {
-  border-color: #4F7DF8;
+.topic-card:hover,
+.topic-card:focus {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-color: var(--color-primary, #6366f1);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,.08));
+  outline: none;
 }
-.topic-card.olympiad {
-  border-left: 4px solid #F59E0B;
+.topic-card--basic {
+  border-left-color: var(--color-info, #3b82f6);
 }
-.topic-card.basic {
-  border-left: 4px solid #52C41A;
+.topic-card--basic:hover,
+.topic-card--basic:focus {
+  border-color: var(--color-info, #3b82f6);
+}
+.topic-card--olympiad {
+  border-left-color: var(--color-warning, #f59e0b);
+}
+.topic-card--olympiad:hover,
+.topic-card--olympiad:focus {
+  border-color: var(--color-warning, #f59e0b);
 }
 
-.topic-header {
+.topic-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3, 12px);
+}
+.topic-card__icon {
+  font-size: var(--text-2xl, 24px);
+}
+.topic-card__meta {
+  display: flex;
+  gap: var(--space-2, 8px);
+  flex-wrap: wrap;
+}
+
+.topic-card__badge {
+  font-size: var(--text-xs, 12px);
+  padding: 2px var(--space-2, 8px);
+  border-radius: var(--radius-sm, 6px);
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--color-primary, #6366f1);
+  font-weight: 500;
+}
+.badge--basic {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--color-info, #3b82f6);
+}
+.badge--olympiad {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-warning, #b45309);
+}
+
+.topic-card__title {
+  font-size: var(--text-lg, 18px);
+  color: var(--text-primary, #1f2937);
+  margin: 0 0 var(--space-2, 8px);
+  font-weight: 700;
+}
+
+.topic-card__summary {
+  color: var(--text-secondary, #4b5563);
+  font-size: var(--text-sm, 14px);
+  line-height: 1.6;
+  margin: 0 0 var(--space-4, 16px);
+  flex: 1;
+}
+
+.topic-card__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  padding-top: var(--space-3, 12px);
+  border-top: 1px dashed var(--border-color, #e5e7eb);
 }
-.topic-badge {
-  font-size: 12px;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-weight: 500;
+.topic-card__stars {
+  font-size: var(--text-sm, 14px);
 }
-.olympiad .topic-badge {
-  background: #FEF3C7;
-  color: #D97706;
-}
-.basic .topic-badge {
-  background: #DCFCE7;
-  color: #16A34A;
-}
-.topic-stars {
-  font-size: 12px;
-}
-
-.topic-title {
-  font-size: 18px;
-  color: #2C3E50;
-  margin-bottom: 8px;
-}
-.topic-summary {
-  font-size: 13px;
-  color: #6B7785;
-  line-height: 1.5;
-  margin-bottom: 16px;
-}
-
-.topic-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.mastery-level {
-  font-size: 12px;
-  color: #4F7DF8;
-  font-weight: 500;
-}
-.arrow {
-  color: #9AA5B1;
-  font-size: 18px;
+.topic-card__arrow {
+  color: var(--color-primary, #6366f1);
+  font-size: var(--text-sm, 14px);
+  font-weight: 600;
 }
 
 .empty {
   text-align: center;
-  padding: 60px 20px;
-  color: #9AA5B1;
+  padding: var(--space-16, 64px) var(--space-4, 16px);
+  color: var(--text-tertiary, #9aa0a6);
+}
+.empty p {
+  margin-bottom: var(--space-4, 16px);
+  font-size: var(--text-lg, 18px);
+}
+.btn-reset {
+  padding: var(--space-3, 12px) var(--space-6, 24px);
+  border: 1px solid var(--color-primary, #6366f1);
+  background: transparent;
+  color: var(--color-primary, #6366f1);
+  border-radius: var(--radius-lg, 12px);
+  font-size: var(--text-base, 16px);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-reset:hover {
+  background: var(--color-primary, #6366f1);
+  color: white;
 }
 
 @media (max-width: 640px) {
-  .topic-grid {
-    grid-template-columns: 1fr;
-  }
+  .topic-grid { grid-template-columns: 1fr; }
+  .filter-section { flex-direction: column; }
 }
 </style>
