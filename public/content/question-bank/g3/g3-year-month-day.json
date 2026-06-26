@@ -1,0 +1,438 @@
+{
+  "topicId": "g3-year-month-day",
+  "topicName": "年月日",
+  "grade": 3,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g3-ymd-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一年有多少个月？",
+      "image": "",
+      "options": ["10", "11", "12", "13"],
+      "answer": "2",
+      "acceptableAnswers": ["12"],
+      "solution": [
+        "一年有 12 个月"
+      ],
+      "hints": [
+        "一年有12个月",
+        "1月到12月"
+      ],
+      "commonMistakes": [
+        {"mistake": "选10", "reason": "混淆了月份和其他概念", "correction": "一年有12个月", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["年的认识"],
+      "estimatedTime": 30,
+      "irtParams": {"a": 1.0, "b": -1.5, "c": 0.25},
+      "tags": ["认识"]
+    },
+    {
+      "id": "g3-ymd-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "3 月有多少天？",
+      "image": "",
+      "options": ["28", "29", "30", "31"],
+      "answer": "3",
+      "acceptableAnswers": ["31"],
+      "solution": [
+        "3 月是大月，有 31 天"
+      ],
+      "hints": [
+        "大月31天：1、3、5、7、8、10、12月",
+        "3月是大月，31天"
+      ],
+      "commonMistakes": [
+        {"mistake": "选30", "reason": "把3月当成小月", "correction": "3月是大月，31天", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["大小月"],
+      "estimatedTime": 30,
+      "irtParams": {"a": 1.0, "b": -1.4, "c": 0.25},
+      "tags": ["大小月"]
+    },
+    {
+      "id": "g3-ymd-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "平年一年有 ____ 天，闰年一年有 ____ 天。",
+      "image": "",
+      "options": [],
+      "answer": "365,366",
+      "acceptableAnswers": ["365,366", "365 366"],
+      "solution": [
+        "平年 2 月有 28 天，一年共 365 天",
+        "闰年 2 月有 29 天，一年共 366 天"
+      ],
+      "hints": [
+        "平年 365 天，闰年 366 天",
+        "区别在 2 月，平年28天，闰年29天"
+      ],
+      "commonMistakes": [
+        {"mistake": "写反了", "reason": "记混", "correction": "平年少1天，365天", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["平年闰年"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -1.3, "c": 0.25},
+      "tags": ["平年", "闰年"]
+    },
+    {
+      "id": "g3-ymd-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下面哪个月份是小月（30天）？",
+      "image": "",
+      "options": ["1月", "6月", "7月", "8月"],
+      "answer": "1",
+      "acceptableAnswers": ["6月"],
+      "solution": [
+        "小月是 4、6、9、11 月，每月 30 天",
+        "1、7、8 月都是大月（31天）",
+        "所以选 6 月"
+      ],
+      "hints": [
+        "小月：4、6、9、11月，每月30天",
+        "大月：1、3、5、7、8、10、12月，31天"
+      ],
+      "commonMistakes": [
+        {"mistake": "选7月", "reason": "7月是大月", "correction": "7月有31天，是大月", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["大小月"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -1.2, "c": 0.25},
+      "tags": ["小月"]
+    },
+    {
+      "id": "g3-ymd-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2024 年是闰年还是平年？",
+      "image": "",
+      "options": ["平年", "闰年", "无法确定", "是平年也是闰年"],
+      "answer": "1",
+      "acceptableAnswers": ["闰年"],
+      "solution": [
+        "判断方法：公历年份是 4 的倍数一般是闰年",
+        "2024 ÷ 4 = 506，没有余数",
+        "2024 是 4 的倍数，所以是闰年"
+      ],
+      "hints": [
+        "除以4，没有余数就是闰年",
+        "2024÷4=506，整除，所以是闰年",
+        "整百年要除以400，2024不是整百"
+      ],
+      "commonMistakes": [
+        {"mistake": "选平年", "reason": "计算错误或判断错误", "correction": "2024能被4整除，是闰年", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["平年闰年判断"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.8, "c": 0.25},
+      "tags": ["闰年"]
+    },
+    {
+      "id": "g3-ymd-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1 星期 = ____ 天，1 天 = ____ 小时，1 小时 = ____ 分钟。",
+      "image": "",
+      "options": ["7, 24, 60", "6, 24, 60", "7, 12, 60", "7, 24, 30"],
+      "answer": "0",
+      "acceptableAnswers": ["7, 24, 60"],
+      "solution": [
+        "1 星期 = 7 天",
+        "1 天 = 24 小时",
+        "1 小时 = 60 分钟"
+      ],
+      "hints": [
+        "星期7天，1天24小时",
+        "1小时60分钟，1分钟60秒"
+      ],
+      "commonMistakes": [
+        {"mistake": "1天=12小时", "reason": "把12小时计时法的12搞混", "correction": "1天24小时", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["时间单位"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -0.6, "c": 0.25},
+      "tags": ["单位"]
+    },
+    {
+      "id": "g3-ymd-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小红的生日是 5 月 1 日，小丽的生日是 5 月 15 日，小丽比小红晚几天？",
+      "image": "",
+      "options": ["13", "14", "15", "16"],
+      "answer": "1",
+      "acceptableAnswers": ["14"],
+      "solution": [
+        "同一天内的日期差 = 15 - 1 = 14 天",
+        "所以小丽比小红晚 14 天"
+      ],
+      "hints": [
+        "同月的天数差 = 日期相减",
+        "15 - 1 = 14"
+      ],
+      "commonMistakes": [
+        {"mistake": "选15", "reason": "直接用了15这个数字", "correction": "应该15-1=14", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["日期计算"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["日期"]
+    },
+    {
+      "id": "g3-ymd-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2 年 = ____ 个月，3 日 = ____ 时，48 时 = ____ 日",
+      "image": "",
+      "options": [],
+      "answer": "24,72,2",
+      "acceptableAnswers": ["24,72,2", "24 72 2"],
+      "solution": [
+        "2 年 = 2 × 12 = 24 个月",
+        "3 日 = 3 × 24 = 72 小时",
+        "48 时 = 48 ÷ 24 = 2 日"
+      ],
+      "hints": [
+        "1年=12个月，2年=24个月",
+        "1日=24时，3日=72时",
+        "48时÷24=2日"
+      ],
+      "commonMistakes": [
+        {"mistake": "3日=60时", "reason": "用错了进率", "correction": "1日=24时，3×24=72", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["时间单位换算"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.3, "c": 0.25},
+      "tags": ["换算"]
+    },
+    {
+      "id": "g3-ymd-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2023 年第一季度（1-3月）一共有多少天？",
+      "image": "",
+      "options": ["89", "90", "91", "92"],
+      "answer": "1",
+      "acceptableAnswers": ["90"],
+      "solution": [
+        "第一步：2023 不是 4 的倍数，是平年，2 月有 28 天",
+        "第二步：1 月 31 天，2 月 28 天，3 月 31 天",
+        "第三步：31 + 28 + 31 = 90 天"
+      ],
+      "hints": [
+        "先判断2023是平年还是闰年",
+        "2023÷4有余数，是平年，2月28天",
+        "31+28+31=90"
+      ],
+      "commonMistakes": [
+        {"mistake": "选91", "reason": "把2月当29天算了", "correction": "2023是平年，2月28天", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["季度天数", "平年判断"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["季度"]
+    },
+    {
+      "id": "g3-ymd-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "学校从 7 月 5 日开始放暑假，8 月 31 日结束，暑假一共有多少天？",
+      "image": "",
+      "options": ["56", "57", "58", "59"],
+      "answer": "2",
+      "acceptableAnswers": ["58"],
+      "solution": [
+        "第一步：7 月共有 31 天，7 月 5 日到 7 月 31 日 = 31 - 5 + 1 = 27 天",
+        "第二步：8 月 1 日到 8 月 31 日 = 31 天",
+        "第三步：一共 27 + 31 = 58 天"
+      ],
+      "hints": [
+        "分两个月来算",
+        "7月有31天，从5日到31日=31-5+1=27天",
+        "8月整月31天",
+        "27+31=58"
+      ],
+      "commonMistakes": [
+        {"mistake": "31-5=26，26+31=57", "reason": "没有+1", "correction": "5日当天也要算，31-5+1=27", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["跨月日期计算"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.0, "b": 0.2, "c": 0.25},
+      "tags": ["日期", "应用"]
+    },
+    {
+      "id": "g3-ymd-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "2024 年 2 月有多少天？这一年全年有多少天？",
+      "image": "",
+      "options": ["28,365", "29,366", "28,366", "29,365"],
+      "answer": "1",
+      "acceptableAnswers": ["29,366"],
+      "solution": [
+        "第一步：2024 ÷ 4 = 506，整除，2024 是闰年",
+        "第二步：闰年 2 月有 29 天",
+        "第三步：闰年全年有 366 天"
+      ],
+      "hints": [
+        "2024÷4=506，整除，是闰年",
+        "闰年2月29天，全年366天"
+      ],
+      "commonMistakes": [
+        {"mistake": "选28,365", "reason": "判断错了", "correction": "2024是闰年，2月29天全年366", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["平年闰年判断"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.5, "c": 0.25},
+      "tags": ["闰年"]
+    },
+    {
+      "id": "g3-ymd-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明下午 2:30 到博物馆参观，参观了 1 小时 40 分钟，小明离开博物馆的时间是下午 ____ 时 ____ 分。",
+      "image": "",
+      "options": [],
+      "answer": "4,10",
+      "acceptableAnswers": ["4,10", "4 10"],
+      "solution": [
+        "第一步：2 时 30 分 + 1 时 40 分",
+        "第二步：30 + 40 = 70 分 = 1 时 10 分",
+        "第三步：2 + 1 + 1 = 4 时",
+        "第四步：所以是 4 时 10 分"
+      ],
+      "hints": [
+        "小时加小时，分钟加分钟",
+        "30+40=70分，70分=1时10分",
+        "2时+1时+1时=4时，剩10分",
+        "结果：4时10分"
+      ],
+      "commonMistakes": [
+        {"mistake": "3时70分", "reason": "没有把70分转化", "correction": "70分=1时10分，最终4时10分", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["时间计算"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["时间", "应用"]
+    },
+    {
+      "id": "g3-ymd-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "今天是 2024 年 3 月 15 日，过 20 天后是几月几日？",
+      "image": "",
+      "options": ["4月3日", "4月4日", "4月5日", "3月31日"],
+      "answer": "1",
+      "acceptableAnswers": ["4月4日"],
+      "solution": [
+        "第一步：3 月有 31 天",
+        "第二步：3 月 15 日到 3 月 31 日 = 31 - 15 = 16 天",
+        "第三步：20 - 16 = 4 天",
+        "第四步：剩下的 4 天就是 4 月 4 日"
+      ],
+      "hints": [
+        "先算3月还剩多少天",
+        "3月有31天，31-15=16天",
+        "20-16=4天，就是4月4日"
+      ],
+      "commonMistakes": [
+        {"mistake": "15+20=35，35-31=4，得出4月4日", "reason": "虽然结果对，但可以更清晰地计算", "correction": "分步理解更好", "errorLayer": "L2"},
+        {"mistake": "选4月3日", "reason": "少算了一天", "correction": "31-15=16，20-16=4", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["跨月日期推算"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["日期", "推算"]
+    },
+    {
+      "id": "g3-ymd-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明今年 8 岁，但他只过了 2 个生日，他的生日是哪天？",
+      "image": "",
+      "options": ["2月28日", "2月29日", "1月1日", "12月31日"],
+      "answer": "1",
+      "acceptableAnswers": ["2月29日"],
+      "solution": [
+        "8 岁只过了 2 个生日，说明每 4 年才有那一天",
+        "只有 2 月 29 日是 4 年才出现一次（闰年才有）",
+        "所以小明的生日是 2 月 29 日"
+      ],
+      "hints": [
+        "想一想：8年才过2次生日，说明生日4年才有一次",
+        "只有2月29日是4年出现一次",
+        "平年没有2月29日，只有闰年才有"
+      ],
+      "commonMistakes": [
+        {"mistake": "选2月28日", "reason": "不理解题意", "correction": "2月28日每年都有，应该每年过生日", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["闰年应用", "特殊日期"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.5, "b": 1.2, "c": 0.25},
+      "tags": ["2月29日"]
+    },
+    {
+      "id": "g3-ymd-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "2023 年 5 月 1 日是星期一，那么 2023 年 6 月 1 日是星期几？",
+      "image": "",
+      "options": ["星期三", "星期四", "星期五", "星期二"],
+      "answer": "1",
+      "acceptableAnswers": ["星期四"],
+      "solution": [
+        "第一步：5 月有 31 天，从 5 月 1 日到 6 月 1 日共经过 31 天",
+        "第二步：31 ÷ 7 = 4 余 3",
+        "第三步：星期一往后推 3 天 = 星期四"
+      ],
+      "hints": [
+        "5月有31天，经过了31天",
+        "31÷7=4周余3天",
+        "星期一+3天=星期四"
+      ],
+      "commonMistakes": [
+        {"mistake": "算成星期二", "reason": "31-30=1，余1天", "correction": "5月有31天，31÷7余3", "errorLayer": "L3"},
+        {"mistake": "算经过30天", "reason": "算成5月30天", "correction": "5月是大月31天", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["星期推算"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 1.8, "c": 0.25},
+      "tags": ["星期", "推算"]
+    }
+  ]
+}

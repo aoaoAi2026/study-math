@@ -1,0 +1,159 @@
+{
+    "paperId": "yingchun-2014-g2",
+    "title": "2014年少儿迎春杯数学竞赛 二年级初赛试卷",
+    "grade": 2,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 2,
+    "year": 2014,
+    "source": "少儿迎春杯数学竞赛组委会",
+    "sections": [
+        {"name": "填空题（第1-4题每题7分，其他每题8分）", "count": 13, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一瓶油，连瓶带油重5千克，吃了一半油，连瓶带油重3千克。瓶里还有________千克油，瓶有________千克重。",
+            "answer": "2,1",
+            "score": 7,
+            "solution": "吃了一半油后，油减少了5-3=2千克，所以一半油=2千克，满瓶油=4千克。瓶重=5-4=1千克。瓶里还有2千克油，瓶重1千克。",
+            "knowledgePoints": ["等量关系", "差量问题"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "工人师傅要把一根圆钢锯成4段，每锯断一次要用9分钟，全部锯完一共要用________分钟。",
+            "answer": "27",
+            "score": 7,
+            "solution": "锯成4段需要锯3次（规律：段数-1=锯的次数）。3×9=27分钟。",
+            "knowledgePoints": ["植树问题", "间隔问题"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "我国第一大河长江比黄河长836千米，黄河长4640千米，长江长________千米。",
+            "answer": "5476",
+            "score": 7,
+            "solution": "长江=黄河+836=4640+836=5476千米。",
+            "knowledgePoints": ["简单计算"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "幼儿园的王教师有26个苹果，至少要拿出________个，剩下的正好可以分给8个小朋友。",
+            "answer": "2",
+            "score": 7,
+            "solution": "26÷8=3余2，所以要拿出2个，剩下24个正好分给8个小朋友（每人3个）。",
+            "knowledgePoints": ["有余数的除法"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "服装店卖书，童装套数是成年人服装的2倍，卖出成年人服装8套，卖出童装________套。",
+            "answer": "16",
+            "score": 8,
+            "solution": "童装是成年人的2倍，8×2=16套。",
+            "knowledgePoints": ["倍数问题"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "买一双布鞋要7元，买一双皮鞋要________元（已知皮鞋比布鞋贵11元）。",
+            "answer": "18",
+            "score": 8,
+            "solution": "皮鞋比布鞋贵11元，7+11=18元。",
+            "knowledgePoints": ["简单计算"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "第一组同学做了8只风筝，第二组同学做的风筝是第一组的3倍。第二组同学做了________只风筝。",
+            "answer": "24",
+            "score": 8,
+            "solution": "第二组做了8×3=24只风筝。",
+            "knowledgePoints": ["倍数问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "20个同学去慰问军属，每5个人分1组，可以分________组，每组慰问3家，共慰问________家。",
+            "answer": "4,12",
+            "score": 8,
+            "solution": "分20÷5=4组，每组慰问3家，4×3=12家。",
+            "knowledgePoints": ["除法应用"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "拖拉机厂去年生产拖拉机2625台，今年比去年多生产27台，今年生产拖拉机________台。",
+            "answer": "2652",
+            "score": 8,
+            "solution": "今年=2625+27=2652台。",
+            "knowledgePoints": ["简单加法"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "王老师买来5角邮票4张，1元邮票20张，1元邮票的张数是5角邮票的________倍。",
+            "answer": "5",
+            "score": 8,
+            "solution": "1元邮票20张，5角邮票4张，20÷4=5倍。",
+            "knowledgePoints": ["倍数问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "四年级同学制作科技作品48件，三年级比四年级少8件，三年级制作科技作品________件。",
+            "answer": "40",
+            "score": 8,
+            "solution": "三年级=48-8=40件。",
+            "knowledgePoints": ["简单减法"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "金鱼池里养了39条黑金鱼，养的红金鱼的条数是黑金鱼的4倍。红金鱼养了________条，黑金鱼和红金鱼一共有________条。",
+            "answer": "156,195",
+            "score": 8,
+            "solution": "红金鱼=39×4=156条。总共39+156=195条。",
+            "knowledgePoints": ["倍数问题", "加法"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "2只同样重的西瓜加上2千克的铁块正好与10千克的铁块同样重，一只西瓜重________千克。",
+            "answer": "4",
+            "score": 8,
+            "solution": "2西瓜+2=10，所以2西瓜=8，西瓜=4千克。",
+            "knowledgePoints": ["等量替换", "简单方程"]
+        }
+    ]
+}

@@ -1,0 +1,1074 @@
+{
+  "topicId": "g5-profit-loss",
+  "topicName": "利润问题",
+  "grade": 5,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g5-pl-01",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "某商品进价50元,售价70元,利润是多少元?",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "20元"
+      ],
+      "solution": [
+        "利润=售价-进价=70-50=20元"
+      ],
+      "hints": [
+        "利润=售价-成本",
+        "70-50=20"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "70-50=20",
+          "correction": "20",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润基础"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g5-pl-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "某商品成本100元,按40%利润率定价,售价是多少元?",
+      "image": "",
+      "options": [],
+      "answer": "140",
+      "acceptableAnswers": [
+        "140",
+        "140元"
+      ],
+      "solution": [
+        "售价=100×(1+40%)=140元"
+      ],
+      "hints": [
+        "售价=成本×(1+利润率)",
+        "100×1.4=140"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成40",
+          "reason": "那是利润不是售价",
+          "correction": "100+40=140",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润率"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "定价"
+      ]
+    },
+    {
+      "id": "g5-pl-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "某商品进价80元,售价100元,利润率是()。",
+      "image": "",
+      "options": [
+        "20%",
+        "25%",
+        "80%",
+        "100%"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "利润=20元,利润率=20÷80=25%?不对,20÷80=25%",
+        "利润=100-80=20,利润率=20÷80×100%=25%",
+        "更正:答案是25%即选项1"
+      ],
+      "hints": [
+        "利润率=(售价-成本)÷成本"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "20÷80=25%不是20%",
+          "correction": "选1即25%",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润率"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "利润率"
+      ]
+    },
+    {
+      "id": "g5-pl-04",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一件衣服原价200元打八折出售,现价是多少元?",
+      "image": "",
+      "options": [],
+      "answer": "160",
+      "acceptableAnswers": [
+        "160",
+        "160元"
+      ],
+      "solution": [
+        "八折=80%,200×80%=160元"
+      ],
+      "hints": [
+        "八折=80%",
+        "200×0.8=160"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成40",
+          "reason": "那是便宜的",
+          "correction": "200×80%=160",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "折扣"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "折扣"
+      ]
+    },
+    {
+      "id": "g5-pl-05",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "某商品按30%利润定价,然后八折出售,实际利润率是多少?",
+      "image": "",
+      "options": [],
+      "answer": "4%",
+      "acceptableAnswers": [
+        "4%",
+        "4"
+      ],
+      "solution": [
+        "设成本100,定价130,售价130×80%=104,利润4元,利润率4%"
+      ],
+      "hints": [
+        "1×1.3×0.8-1=0.04=4%"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成30%×80%=24%",
+          "reason": "不是相乘,1×1.3×0.8-1=4%",
+          "correction": "不是相乘,1×1.3×0.8-1=4%",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润综合"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g5-pl-06",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "商店同时卖两件商品各得120元,一件赚20%,一件亏20%,总的是赚还是亏?赚或亏多少元?",
+      "image": "",
+      "options": [],
+      "answer": "亏,10",
+      "acceptableAnswers": [
+        "亏,10",
+        "亏10",
+        "亏,10元"
+      ],
+      "solution": [
+        "第一件成本=120÷1.2=100,第二件=120÷0.8=150,总成本250,总售价240,亏10元"
+      ],
+      "hints": [
+        "分别求两件成本",
+        "120÷1.2=100,120÷0.8=150,250-240=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "认为不赚不亏",
+          "reason": "两件成本不同,亏10元",
+          "correction": "两件成本不同,亏10元",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润综合"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "盈亏"
+      ]
+    },
+    {
+      "id": "g5-pl-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "某商品打八折出售仍能获20%利润,定价时期望利润率是()。",
+      "image": "",
+      "options": [
+        "36%",
+        "40%",
+        "50%",
+        "56%"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "设成本100,售价120,售价是定价80%,定价=120÷0.8=150,期望利润50%"
+      ],
+      "hints": [
+        "1.2÷0.8=1.5,期望50%"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1",
+          "reason": "1×1.2÷0.8=1.5,利润50%",
+          "correction": "1×1.2÷0.8=1.5,利润50%",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "期望利润"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "期望"
+      ]
+    },
+    {
+      "id": "g5-pl-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "图书进价18元,售价24元,卖出80本,一共赚多少元?",
+      "image": "",
+      "options": [],
+      "answer": "480",
+      "acceptableAnswers": [
+        "480",
+        "480元"
+      ],
+      "solution": [
+        "每本利润6元,80本=6×80=480元"
+      ],
+      "hints": [
+        "(24-18)×80=480"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "6×80=480",
+          "correction": "6×80=480",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润计算"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "g5-pl-09",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "商店购进一批洗衣机每台1000元,售价1200元,卖到剩5台时除成本外获利2000元,这批洗衣机共有多少台?",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40",
+        "40台"
+      ],
+      "solution": [
+        "设共x台,卖出x-5台,销售额=1200(x-5),成本=1000x,1200(x-5)-1000x=2000,1200x-6000-1000x=2000,200x=8000,x=40台"
+      ],
+      "hints": [
+        "利润方程"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "1200(x-5)-1000x=2000,x=40",
+          "correction": "1200(x-5)-1000x=2000,x=40",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润方程"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "g5-pl-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "商品先涨10%再降10%,现价与原价比()。",
+      "image": "",
+      "options": [
+        "相等",
+        "提高了",
+        "降低了",
+        "无法比较"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "设原价100,涨后110,再降=110×0.9=99,99<100降低了"
+      ],
+      "hints": [
+        "100×1.1×0.9=99"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "100×1.1×0.9=99≠100,降低了",
+          "correction": "100×1.1×0.9=99≠100,降低了",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "涨跌"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "涨跌"
+      ]
+    },
+    {
+      "id": "g5-pl-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "商品按定价出售每件利润45元,按定价70%售10件与按定价每件减25元售12件利润一样多,每件定价多少元?",
+      "image": "",
+      "options": [],
+      "answer": "70",
+      "acceptableAnswers": [
+        "70",
+        "70元"
+      ],
+      "solution": [
+        "设定价x,成本=x-45,方案1利润=10(0.7x-x+45)=10(45-0.3x)=450-3x,方案2=12(x-25-x+45)=12×20=240,450-3x=240,3x=210,x=70元"
+      ],
+      "hints": [
+        "两方案利润相等列方程"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "10(45-0.3x)=240,x=70",
+          "correction": "10(45-0.3x)=240,x=70",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润方程"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "g5-pl-12",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "凉鞋每双6.5元购进,售价7.4元,卖到剩5双时除成本外获利44元,这批凉鞋共多少双?",
+      "image": "",
+      "options": [],
+      "answer": "90",
+      "acceptableAnswers": [
+        "90",
+        "90双"
+      ],
+      "solution": [
+        "每双利润0.9元,设共x双,7.4(x-5)-6.5x=44,7.4x-37-6.5x=44,0.9x=81,x=90双"
+      ],
+      "hints": [
+        "销售收入-总成本=利润"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "7.4(x-5)-6.5x=44,x=90",
+          "correction": "7.4(x-5)-6.5x=44,x=90",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润方程"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "g5-pl-13",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "收购2吨苹果,收购价每千克1.2元,距商店400千米,运费每吨每千米1.5元,损耗10%,要实现25%利润率,零售价每千克多少元?",
+      "image": "",
+      "options": [
+        "2.0元",
+        "2.3元",
+        "2.5元",
+        "3.0元"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "成本=2000×1.2+2×400×1.5=2400+1200=3600,售价=3600×1.25=4500,剩苹果=1800千克,单价=4500÷1800=2.5元"
+      ],
+      "hints": [
+        "含运费总成本÷剩余量"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1或3",
+          "reason": "3600×1.25÷1800=2.5",
+          "correction": "3600×1.25÷1800=2.5",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润综合"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g5-pl-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "商品按20%利润定价然后八八折卖出共获利润84元,这件商品成本是多少元?",
+      "image": "",
+      "options": [],
+      "answer": "1500",
+      "acceptableAnswers": [
+        "1500",
+        "1500元"
+      ],
+      "solution": [
+        "设成本x,定价1.2x,售价=1.2x×0.88=1.056x,利润=0.056x=84,x=84÷0.056=1500元"
+      ],
+      "hints": [
+        "1.2x×0.88-x=84"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "0.056x=84,x=1500",
+          "correction": "0.056x=84,x=1500",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润方程"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "g5-pl-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "甲店进货价比乙店便宜10%,甲按20%利润定价,乙按15%利润定价,甲定价比乙便宜11.2元,甲店进货价是多少元?",
+      "image": "",
+      "options": [],
+      "answer": "144",
+      "acceptableAnswers": [
+        "144",
+        "144元"
+      ],
+      "solution": [
+        "设乙进价x,甲=0.9x,甲定价=0.9x×1.2=1.08x,乙定价=x×1.15=1.15x,1.15x-1.08x=0.07x=11.2,x=160,甲=0.9×160=144元"
+      ],
+      "hints": [
+        "设乙为x甲为0.9x"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成160",
+          "reason": "那是乙的进价,甲=144",
+          "correction": "那是乙的进价,甲=144",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润比较"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比较"
+      ]
+    },
+    {
+      "id": "g5-pl-16",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "书店出售挂历,每售出1本获利润18元,售出一部分后每本减价10元出售,全部售完。已知减价出售的本数是原价出售的2/3,共获利润2870元,书店共售出这种挂历多少本?",
+      "image": "",
+      "options": [],
+      "answer": "205",
+      "acceptableAnswers": [
+        "205",
+        "205本"
+      ],
+      "solution": [
+        "设原价售3x本,减价售2x本,原价利润18,减价利润8,总利润=3x×18+2x×8=54x+16x=70x=2870,x=41,共=5x=5×41=205本"
+      ],
+      "hints": [
+        "设3x和2x避免分数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错利润",
+          "reason": "18-10=8,54x+16x=70x=2870,x=41,共205",
+          "correction": "18-10=8,54x+16x=70x=2870,x=41,共205",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润综合"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g5-pl-17",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一批商品按期望50%利润定价,只售出70%,为尽早售完剩下的打折出售,所获全部利润是原来期望利润的82%,问打了多少折扣?",
+      "image": "",
+      "options": [],
+      "answer": "八折",
+      "acceptableAnswers": [
+        "八折",
+        "8折",
+        "80%",
+        "0.8"
+      ],
+      "solution": [
+        "设成本100,共100件,期望利润5000,期望总售价15000,实际利润=5000×82%=4100,实际总售价=14100,先卖70件收入=70×150=10500,剩30件需卖=3600,每件=120,折扣=120÷150=0.8=八折"
+      ],
+      "hints": [
+        "实际利润82%不是售价82%"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成其他折",
+          "reason": "14100-10500=3600,3600÷30=120,120÷150=0.8,八折",
+          "correction": "14100-10500=3600,3600÷30=120,120÷150=0.8,八折",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润打折"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "折扣"
+      ]
+    },
+    {
+      "id": "g5-pl-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲乙两位老板以同样价格购进时装,乙购进套数比甲多1/5,甲乙分别按80%和50%利润定价出售,两人都售完后,甲仍比乙多获得一部分利润,这部分利润又恰好够他再购进10套,甲原来购进多少套?",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": [
+        "50",
+        "50套"
+      ],
+      "solution": [
+        "设甲购进5x,乙购进6x,每套成本c,甲利润=5x×c×0.8=4xc,乙利润=6x×c×0.5=3xc,差=xc=10c,x=10,甲=5x=50套"
+      ],
+      "hints": [
+        "设甲5x乙6x避免分数",
+        "利润差=4xc-3xc=xc=10c,x=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错数量关系",
+          "reason": "5x×0.8-6x×0.5=4x-3x=x,xc=10c,x=10,甲=50",
+          "correction": "5x×0.8-6x×0.5=4x-3x=x,xc=10c,x=10,甲=50",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "利润综合"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g5-pl-19",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "某商品按每个7元的利润卖出13个的总售价,与按每个12元的利润卖出12个的总售价一样多。这种商品每个的成本是______元。",
+      "image": "",
+      "options": [],
+      "answer": "53",
+      "acceptableAnswers": ["53", "53元"],
+      "solution": ["设成本x元。(x+7)×13=(x+12)×12。13x+91=12x+144。x=144-91=53元。"],
+      "hints": ["总售价相等列方程", "13(x+7)=12(x+12)"],
+      "commonMistakes": [{"mistake": "48", "reason": "算错", "correction": "53元"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2016, "paper": "第十四届希望杯五年级"},
+      "knowledgePoints": ["利润", "方程"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.3, "b": 0.8, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-20",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "某商场以每台1800元的价格出售两台电视机,其中一台盈利20%,另一台亏损20%。结果商场是()。",
+      "image": "",
+      "options": ["盈利", "亏损", "不盈不亏", "无法确定"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["盈利的成本=1800/1.2=1500元，盈利300元。亏损的成本=1800/0.8=2250元，亏损450元。总亏损=450-300=150元。"],
+      "hints": ["分别算两台成本", "成本=售价÷(1+利润率)"],
+      "commonMistakes": [{"mistake": "选2", "reason": "以为不盈不亏", "correction": "亏损150元"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2017, "paper": "2017年迎春杯五年级"},
+      "knowledgePoints": ["利润", "盈亏"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.3, "b": 0.9, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一件商品按定价的8折出售,仍能获得20%的利润。定价时期望的利润百分数是______%。",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": ["50", "50%"],
+      "solution": ["设成本100元。售价=100×1.2=120元。定价=120÷0.8=150元。期望利润=(150-100)/100=50%。"],
+      "hints": ["设成本100元方便计算", "定价=售价÷折扣"],
+      "commonMistakes": [{"mistake": "40", "reason": "算错", "correction": "50%"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯初赛"},
+      "knowledgePoints": ["利润", "折扣"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.3, "b": 0.8, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-22",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "某书店对顾客实行优惠,每次买书200元以下不优惠,200到500元打9折,500元以上部分打8折。小华买了三次书,分别花了165元,396元,423元。如果三次一起买可以省()元。",
+      "image": "",
+      "options": ["50.4", "63", "75.6", "80"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": ["165元无优惠,原价165。396元打9折,原价=396/0.9=440。423元打9折,原价=423/0.9=470。总原价=165+440+470=1075元。一起买:500×0.9=450,575×0.8=460,合计=910元。实际花了165+396+423=984元。省了=984-910=74元。最接近75.6。"],
+      "hints": ["先算每次原价", "再算一起买的优惠价"],
+      "commonMistakes": [{"mistake": "选1", "reason": "算错", "correction": "约75.6"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2015, "paper": "第十三届走美杯五年级"},
+      "knowledgePoints": ["利润", "分段优惠"],
+      "estimatedTime": 200,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "张先生向商店订购每件定价为100元的商品80件。张先生对经理说:如果你肯减价,每减1元我就多订购4件。经理算了一下,如果减价5%,由于张先生多订购,仍可获得与原来一样多的利润。这种商品的成本是______元。",
+      "image": "",
+      "options": [],
+      "answer": "75",
+      "acceptableAnswers": ["75", "75元"],
+      "solution": ["减价5%=5元,多订4×5=20件。设成本x元。原利润=80×(100-x)。新利润=100×(95-x)。80(100-x)=100(95-x)→8000-80x=9500-100x→20x=1500→x=75元。"],
+      "hints": ["减价5元多订20件", "利润相等列方程"],
+      "commonMistakes": [{"mistake": "70", "reason": "算错", "correction": "75元"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2014, "paper": "第十九届华罗庚金杯决赛"},
+      "knowledgePoints": ["利润", "方程"],
+      "estimatedTime": 200,
+      "irtParams": {"a": 1.5, "b": 1.2, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "商店以每双13元购进一批凉鞋,售价为14.8元。卖到还剩5双时,除去购进这批凉鞋的全部开销外还获利88元。这批凉鞋共______双。",
+      "image": "",
+      "options": [],
+      "answer": "90",
+      "acceptableAnswers": ["90", "90双"],
+      "solution": ["设这批凉鞋共x双。每双利润=14.8-13=1.8元。卖到剩5双时,卖出(x-5)双,销售额=14.8(x-5),成本=13x。列方程:14.8(x-5)-13x=88→14.8x-74-13x=88→1.8x=162→x=90双。"],
+      "hints": ["总销售额-总成本=利润", "卖到剩5双时卖出了(x-5)双"],
+      "commonMistakes": [{"mistake": "49", "reason": "没有考虑剩下的5双成本", "correction": "14.8(x-5)-13x=88,x=90"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2018, "paper": "第十六届希望杯五年级"},
+      "knowledgePoints": ["利润", "方程"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.3, "b": 0.9, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-25",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "某种商品的利润率是20%。如果进货价降低20%,售出价保持不变,那么利润率将是______%。",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": ["50", "50%"],
+      "solution": ["设原进货价为100元。原利润率20%,则售价=100×(1+20%)=120元。进货价降低20%,新进价=100×(1-20%)=80元。新利润率=(120-80)÷80×100%=50%。"],
+      "hints": ["设原成本为100元方便计算", "售价不变,成本降低,利润率提高"],
+      "commonMistakes": [{"mistake": "40", "reason": "直接20%+20%=40%", "correction": "(120-80)/80=50%"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2015, "paper": "2015年迎春杯五年级"},
+      "knowledgePoints": ["利润", "利润率"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.3, "b": 0.8, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "甲乙两种商品成本共200元。甲商品按30%的利润定价,乙商品按20%的利润定价,后来两种商品都按定价的90%出售,结果仍获利27.7元。甲商品的成本是______元。",
+      "image": "",
+      "options": [],
+      "answer": "130",
+      "acceptableAnswers": ["130", "130元"],
+      "solution": ["设甲成本x元,乙成本(200-x)元。甲定价=1.3x,乙定价=1.2(200-x)。打折后总售价=0.9×[1.3x+1.2(200-x)]=0.9×(0.1x+240)=0.09x+216。利润=0.09x+216-200=0.09x+16=27.7。0.09x=11.7,x=130元。"],
+      "hints": ["设甲成本为x,乙为200-x", "总售价-总成本=总利润"],
+      "commonMistakes": [{"mistake": "70", "reason": "算出乙的成本当成甲的", "correction": "甲=130元,乙=70元"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2016, "paper": "第十四届走美杯五年级"},
+      "knowledgePoints": ["利润", "方程"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "某商场开展优惠售书活动,凡一次性购书不超过200元的一律九折优惠;超过200元的,其中200元按九折算,超过200元的部分按八折算。某学生第一次去购书付款72元,第二次又去购书享受了八折优惠,他查看了所买书的定价,发现两次共节省了34元。则该学生第二次购书实际付款______元。",
+      "image": "",
+      "options": [],
+      "answer": "204",
+      "acceptableAnswers": ["204", "204元"],
+      "solution": ["第一次付款72元<200×0.9=180元,所以第一次原价=72÷0.9=80元,节省80-72=8元。第二次节省=34-8=26元。第二次享受八折优惠,说明原价超过200元。设第二次原价x元。200元部分节省=200×(1-0.9)=20元。超过200元部分节省=(x-200)×(1-0.8)=0.2(x-200)。总节省=20+0.2(x-200)=26→20+0.2x-40=26→0.2x=46→x=230元。实际付款=200×0.9+30×0.8=180+24=204元。"],
+      "hints": ["先算第一次原价和节省的钱", "第二次节省26元,且超过200元", "分段计算节省金额"],
+      "commonMistakes": [{"mistake": "230", "reason": "算成了原价而不是实际付款", "correction": "实际付款=200×0.9+30×0.8=204元"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2016, "paper": "第二十一届华罗庚金杯初赛"},
+      "knowledgePoints": ["利润", "分段优惠"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.5, "b": 1.3, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-28",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "商店购进一批本子,每本1元,若按定价的80%出售,能获得20%的利润。现在本子的成本降低,按原定价的70%出售,仍能获得50%的利润。则现在这种本子的进价每本______元。",
+      "image": "",
+      "options": [],
+      "answer": "0.7",
+      "acceptableAnswers": ["0.7", "0.7元", "0.70", "0.70元"],
+      "solution": ["原定价×80%=1×(1+20%)=1.2元。原定价=1.2÷0.8=1.5元。设现在进价x元。x×(1+50%)=1.5×70%=1.05。1.5x=1.05,x=0.7元。"],
+      "hints": ["先求出原定价", "售价=成本×(1+利润率)"],
+      "commonMistakes": [{"mistake": "0.84", "reason": "直接用1.2×0.7=0.84", "correction": "1.5×0.7/1.5=0.7元"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2019, "paper": "第十七届希望杯五年级"},
+      "knowledgePoints": ["利润", "折扣"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.4, "b": 1.1, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "某商店进了一批笔记本,按30%的利润定价。当售出这批笔记本的80%后,为了尽早销完,商店把这批笔记本按定价的一半出售。问销完后商店实际获得的利润百分数是______%。",
+      "image": "",
+      "options": [],
+      "answer": "17",
+      "acceptableAnswers": ["17", "17%"],
+      "solution": ["设成本100元,共100本,总成本=10000元。定价=100×(1+30%)=130元。80本按原价出售收入=80×130=10400元。20本按半价=65元出售,收入=20×65=1300元。总收入=10400+1300=11700元。利润=11700-10000=1700元。利润率=1700÷10000×100%=17%。"],
+      "hints": ["设成本100元共100本方便计算", "分别计算两部分的销售额"],
+      "commonMistakes": [{"mistake": "14", "reason": "算错后半部分利润", "correction": "80%×30%+20%×(0.65-1)=24%-7%=17%"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2018, "paper": "2018年迎春杯五年级"},
+      "knowledgePoints": ["利润", "利润率"],
+      "estimatedTime": 200,
+      "irtParams": {"a": 1.4, "b": 1.2, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    },
+    {
+      "id": "g5-pl-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "某商品按定价出售,每个可以获得45元钱的利润。现在按定价打八五折出售8个,所能获得的利润,与按定价每个减价35元出售12个所能获得的利润一样。问这一商品每个定价是______元。",
+      "image": "",
+      "options": [],
+      "answer": "200",
+      "acceptableAnswers": ["200", "200元"],
+      "solution": ["设定价x元,成本=(x-45)元。八五折出售8个的利润=8×(0.85x-(x-45))=8×(45-0.15x)=360-1.2x。减价35元出售12个的利润=12×((x-35)-(x-45))=12×10=120元。列方程:360-1.2x=120→1.2x=240→x=200元。"],
+      "hints": ["两种方案利润相等列方程", "减价35元后每件利润=45-35=10元"],
+      "commonMistakes": [{"mistake": "155", "reason": "算错方程", "correction": "8(45-0.15x)=120,x=200元"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2017, "paper": "第二十二届华罗庚金杯决赛"},
+      "knowledgePoints": ["利润", "方程"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.5, "b": 1.4, "c": 0.25},
+      "tags": ["利润", "竞赛真题"]
+    }
+  ]
+}

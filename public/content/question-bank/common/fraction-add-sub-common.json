@@ -1,0 +1,716 @@
+{
+  "topicId": "fraction-add-sub-common",
+  "topicName": "分数加减法综合",
+  "grade": "五年级总结",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "cm-fa-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1/5 + 2/5 = ?",
+      "image": "",
+      "options": [],
+      "answer": "3/5",
+      "acceptableAnswers": [
+        "3/5",
+        "五分之三"
+      ],
+      "solution": [
+        "分母相同,分子相加:(1+2)/5=3/5。"
+      ],
+      "hints": [
+        "分母相同直接加分子"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3/10",
+          "reason": "分母也加了",
+          "correction": "分母不变,(1+2)/5=3/5",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "同分母分数加法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "同分母"
+      ]
+    },
+    {
+      "id": "cm-fa-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "7/9 - 2/9 = ?",
+      "image": "",
+      "options": [],
+      "answer": "5/9",
+      "acceptableAnswers": [
+        "5/9",
+        "九分之五"
+      ],
+      "solution": [
+        "(7-2)/9=5/9。"
+      ],
+      "hints": [
+        "分母不变,分子相减"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成5/0",
+          "reason": "分母也减了",
+          "correction": "(7-2)/9=5/9",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "同分母分数减法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "同分母"
+      ]
+    },
+    {
+      "id": "cm-fa-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "3/7 + 4/7 = ?",
+      "image": "",
+      "options": [],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1",
+        "7/7"
+      ],
+      "solution": [
+        "(3+4)/7=7/7=1。"
+      ],
+      "hints": [
+        "分子和=分母时=1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成7/14",
+          "reason": "分子分母都加了",
+          "correction": "(3+4)/7=1",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "分数加法",
+        "分数=1"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "同分母"
+      ]
+    },
+    {
+      "id": "cm-fa-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1/2 + 1/3 = ?",
+      "image": "",
+      "options": [],
+      "answer": "5/6",
+      "acceptableAnswers": [
+        "5/6",
+        "六分之五"
+      ],
+      "solution": [
+        "通分:分母最小公倍数=6。1/2=3/6,1/3=2/6。3/6+2/6=5/6。"
+      ],
+      "hints": [
+        "先通分",
+        "2和3的最小公倍数是6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成2/5",
+          "reason": "分子分母分别加",
+          "correction": "通分后算:3/6+2/6=5/6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "异分母加法"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "异分母"
+      ]
+    },
+    {
+      "id": "cm-fa-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "5/6 - 1/3 = ?",
+      "image": "",
+      "options": [],
+      "answer": "1/2",
+      "acceptableAnswers": [
+        "1/2",
+        "二分之一",
+        "3/6"
+      ],
+      "solution": [
+        "通分:1/3=2/6。5/6-2/6=3/6=1/2。"
+      ],
+      "hints": [
+        "先通分",
+        "5/6-2/6=3/6=1/2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成4/3",
+          "reason": "没通分",
+          "correction": "5/6-2/6=1/2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "异分母减法",
+        "约分"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "异分母"
+      ]
+    },
+    {
+      "id": "cm-fa-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2 + 3/4 = ?(用带分数回答)",
+      "image": "",
+      "options": [],
+      "answer": "2 3/4",
+      "acceptableAnswers": [
+        "2 3/4",
+        "2又3/4",
+        "11/4"
+      ],
+      "solution": [
+        "整数加真分数直接写成带分数:2+3/4=2又3/4。"
+      ],
+      "hints": [
+        "整数+真分数=带分数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成5/4",
+          "reason": "2和3/4的3加了",
+          "correction": "2+3/4=2又3/4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "整数+分数"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "带分数"
+      ]
+    },
+    {
+      "id": "cm-fa-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2 1/3 + 1 2/3 = ?",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "四"
+      ],
+      "solution": [
+        "2又1/3+1又2/3=(2+1)+(1/3+2/3)=3+1=4。"
+      ],
+      "hints": [
+        "整数部分加整数部分,分数加分数",
+        "1/3+2/3=1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3 3/3",
+          "reason": "没化简",
+          "correction": "3 3/3=4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "带分数加法"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "带分数"
+      ]
+    },
+    {
+      "id": "cm-fa-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "3 1/4 - 1 3/4 = ?",
+      "image": "",
+      "options": [],
+      "answer": "1 1/2",
+      "acceptableAnswers": [
+        "1 1/2",
+        "3/2",
+        "1又1/2"
+      ],
+      "solution": [
+        "分数部分1/4<3/4,从整数部分借1:3又1/4=2又5/4。",
+        "2又5/4-1又3/4=(2-1)+(5/4-3/4)=1又2/4=1又1/2。"
+      ],
+      "hints": [
+        "分数部分不够减要借位",
+        "3 1/4=2 5/4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成2 2/4",
+          "reason": "没借位就直接减",
+          "correction": "借位后算=1 1/2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "带分数减法",
+        "借位"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "带分数"
+      ]
+    },
+    {
+      "id": "cm-fa-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "1/2 + 1/4 + 1/8 + 1/16 = ?",
+      "image": "",
+      "options": [],
+      "answer": "15/16",
+      "acceptableAnswers": [
+        "15/16"
+      ],
+      "solution": [
+        "通分到16:8/16+4/16+2/16+1/16=15/16。"
+      ],
+      "hints": [
+        "画图:正方形一半+1/4+1/8+1/16"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成7/8",
+          "reason": "加到1/8就停了",
+          "correction": "=15/16",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "连加",
+        "分数连加"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分数连加"
+      ]
+    },
+    {
+      "id": "cm-fa-10",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一堆煤，第一天用去1/3，第二天用去1/4，还剩几分之几？",
+      "image": "",
+      "options": [],
+      "answer": "5/12",
+      "acceptableAnswers": [
+        "5/12"
+      ],
+      "solution": [
+        "把总量看作1。剩下=1-1/3-1/4=12/12-4/12-3/12=5/12。"
+      ],
+      "hints": [
+        "总量是1",
+        "1-1/3-1/4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成7/12",
+          "reason": "1-1/3算错",
+          "correction": "1-4/12-3/12=5/12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "分数应用题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分数应用"
+      ]
+    },
+    {
+      "id": "cm-fa-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一项工程甲独做10天完成，乙独做15天完成。两人合做几天完成？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "甲每天做1/10,乙每天做1/15。",
+        "两人一天共做:1/10+1/15=3/30+2/30=5/30=1/6。",
+        "1÷1/6=6天。"
+      ],
+      "hints": [
+        "把总工程看作1",
+        "甲效率1/10,乙1/15",
+        "合做效率=1/10+1/15=1/6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成12.5",
+          "reason": "取(10+15)/2",
+          "correction": "1÷(1/10+1/15)=6天",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "工程问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "工程问题"
+      ]
+    },
+    {
+      "id": "cm-fa-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "1/6 + 1/12 + 1/20 + 1/30 + 1/42 = ?",
+      "image": "",
+      "options": [],
+      "answer": "5/14",
+      "acceptableAnswers": [
+        "5/14"
+      ],
+      "solution": [
+        "裂项:1/6=1/(2×3)=1/2-1/3,1/12=1/(3×4)=1/3-1/4...",
+        "=(1/2-1/3)+(1/3-1/4)+(1/4-1/5)+(1/5-1/6)+(1/6-1/7)",
+        "=1/2-1/7=5/14。"
+      ],
+      "hints": [
+        "裂项:1/(n×(n+1))=1/n-1/(n+1)",
+        "6=2×3,12=3×4,20=4×5..."
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "硬算出错",
+          "reason": "没发现裂项",
+          "correction": "用裂项=1/2-1/7=5/14",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "分数裂项"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "裂项"
+      ]
+    },
+    {
+      "id": "cm-fa-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一桶水，第一次倒出1/2，第二次倒出剩下的1/3，第三次倒出剩下的1/4，还剩5升。原来有多少升？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "二十"
+      ],
+      "solution": [
+        "剩余=x×(1-1/2)×(1-1/3)×(1-1/4)=x×1/2×2/3×3/4=x/4=5。",
+        "x=20升。"
+      ],
+      "hints": [
+        "用倒推法或直接算剩余",
+        "x×1/2×2/3×3/4=x/4=5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成15",
+          "reason": "计算错误",
+          "correction": "x/4=5,x=20",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "倒推法"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "分数还原"
+      ]
+    },
+    {
+      "id": "cm-fa-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "2/3 + 3/4 + 4/5 + 5/6 = ?(用最简分数或带分数)",
+      "image": "",
+      "options": [],
+      "answer": "3 1/20",
+      "acceptableAnswers": [
+        "3 1/20",
+        "61/20",
+        "3又1/20"
+      ],
+      "solution": [
+        "通分到60:2/3=40/60,3/4=45/60,4/5=48/60,5/6=50/60。",
+        "合计=(40+45+48+50)/60=183/60=61/20=3又1/20。"
+      ],
+      "hints": [
+        "通分到60",
+        "2/3=40/60,3/4=45/60,..."
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3 3/60",
+          "reason": "没约分",
+          "correction": "183/60=61/20=3又1/20",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "异分母加法",
+        "通分"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "通分"
+      ]
+    },
+    {
+      "id": "cm-fa-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "计算：1/2 + 5/6 + 11/12 + 19/20 + 29/30 + 41/42 + 55/56 + 71/72 = ?(用最简带分数)",
+      "image": "",
+      "options": [],
+      "answer": "7 1/9",
+      "acceptableAnswers": [
+        "7 1/9",
+        "64/9",
+        "7又1/9"
+      ],
+      "solution": [
+        "每项=1-1/(n(n+1)):1/2=1-1/2,5/6=1-1/6,11/12=1-1/12,...",
+        "原式=8-(1/2+1/6+1/12+...+1/72)",
+        "=8-(1/(1×2)+1/(2×3)+...+1/(8×9))",
+        "=8-(1-1/2+1/2-1/3+...+1/8-1/9)=8-(1-1/9)=8-8/9=72/9-8/9=64/9=7又1/9。"
+      ],
+      "hints": [
+        "每项=1-1/(n(n+1))",
+        "1/2=1-1/2,5/6=1-1/6,11/12=1-1/12...",
+        "用裂项:1/1×2+1/2×3+...=1-1/9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成7 2/9",
+          "reason": "裂项算错",
+          "correction": "8-(1-1/9)=7+1/9=7又1/9",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "分数裂项",
+        "高级运算"
+      ],
+      "estimatedTime": 200,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "裂项"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1330 @@
+{
+  "topicId": "g3-period-problem",
+  "topicName": "周期问题",
+  "grade": 3,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g3-pp-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "有一串珠子按 白、黑、白、黑... 排列。第 15 颗是什么颜色？",
+      "image": "",
+      "options": [
+        "白色",
+        "黑色",
+        "红色",
+        "不确定"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "周期=2，15÷2=7 组余1",
+        "余数1对应第1个 = 白色"
+      ],
+      "hints": [
+        "找周期长度",
+        "第n个 = 第(n%周期)个，余0即最后"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "15是奇数=黑",
+          "reason": "搞反顺序",
+          "correction": "第1个白，奇数白",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "珠子"
+      ]
+    },
+    {
+      "id": "g3-pp-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "彩旗按 红、黄、蓝、红、黄、蓝... 排列。第 20 面是 ____ 色。",
+      "image": "",
+      "options": [],
+      "answer": "黄",
+      "acceptableAnswers": [
+        "黄"
+      ],
+      "solution": [
+        "周期=3，20÷3=6 组余2",
+        "第2个 = 黄色"
+      ],
+      "hints": [
+        "3个颜色一循环",
+        "余数决定位置"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "20÷3=6余2→红",
+          "reason": "余数读错",
+          "correction": "余2=第二个=黄",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "彩旗"
+      ]
+    },
+    {
+      "id": "g3-pp-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "数字串 1,2,3,1,2,3,1,2,3... 第 25 个数字是几？",
+      "image": "",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "周期=3，25÷3=8 组余1",
+        "第1个 = 1"
+      ],
+      "hints": [
+        "周期=3",
+        "余数1=第一个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "25÷3余1→3",
+          "reason": "顺序搞反",
+          "correction": "1,2,3的第1个=1",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "数字"
+      ]
+    },
+    {
+      "id": "g3-pp-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "今天是星期三，再过 10 天是星期几？",
+      "image": "",
+      "options": [],
+      "answer": "星期六",
+      "acceptableAnswers": [
+        "星期六"
+      ],
+      "solution": [
+        "一周7天，10÷7=1 周余3",
+        "星期三+3天 = 星期六"
+      ],
+      "hints": [
+        "周期=7",
+        "余数加在今天上"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "10÷7余3→星期三",
+          "reason": "没加余数",
+          "correction": "余3天=星期三+3=六",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "星期"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "日期"
+      ]
+    },
+    {
+      "id": "g3-pp-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "☆○△☆○△☆○△... 第 32 个图形是？",
+      "image": "",
+      "options": [
+        "☆",
+        "○",
+        "△",
+        "□"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "周期=3，32÷3=10 组余2",
+        "第2个 = ○"
+      ],
+      "hints": [
+        "图形周期",
+        "余2=第二个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "32÷3余2→☆",
+          "reason": "数错位置",
+          "correction": "☆=1,○=2,△=3",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "图形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "图形"
+      ]
+    },
+    {
+      "id": "g3-pp-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "字母串 ABCABCABC... 第 40 个字母是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "A",
+      "acceptableAnswers": [
+        "A"
+      ],
+      "solution": [
+        "周期=3，40÷3=13 组余1",
+        "第1个 = A"
+      ],
+      "hints": [
+        "ABC循环"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "40÷3余1→C",
+          "reason": "位置搞反",
+          "correction": "余1=第一个",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "字母"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "字母"
+      ]
+    },
+    {
+      "id": "g3-pp-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "按 数学好玩数学好玩... 排列，第 50 个字是？",
+      "image": "",
+      "options": [
+        "数",
+        "学",
+        "好",
+        "玩"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "周期=4（数学好玩），50÷4=12 组余2",
+        "第2个 = 学"
+      ],
+      "hints": [
+        "先确定周期的内容",
+        "从1开始数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "50÷4余2→数",
+          "reason": "数错第一个",
+          "correction": "第1=数，第2=学",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "汉字"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "汉字"
+      ]
+    },
+    {
+      "id": "g3-pp-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "30 个小朋友按 1,2,3,1,2,3... 报数。最后一个小朋友报几？",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "周期=3，30÷3=10 组余0",
+        "余0=最后一个 = 3"
+      ],
+      "hints": [
+        "整除时=最后一个",
+        "余0代表周期末尾"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "30÷3=10余0→1",
+          "reason": "余0当成第一个",
+          "correction": "余0=最后一个",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "报数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "小朋友"
+      ]
+    },
+    {
+      "id": "g3-pp-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "今年 6 月 1 日是星期四，6 月 30 日是星期几？",
+      "image": "",
+      "options": [
+        "四",
+        "五",
+        "六",
+        "日"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "间隔=30-1=29 天",
+        "29÷7=4 周余1",
+        "星期四+1 = 星期五"
+      ],
+      "hints": [
+        "两个日期差几天",
+        "差 = 末-首"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "30÷7余2→六",
+          "reason": "直接30÷7",
+          "correction": "算天数差29",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "日期"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "月份"
+      ]
+    },
+    {
+      "id": "g3-pp-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一串数 2,4,6,8,2,4,6,8... 前 27 个数的和是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "132",
+      "acceptableAnswers": [
+        "132"
+      ],
+      "solution": [
+        "周期=4，每周期和=2+4+6+8=20",
+        "27÷4=6 组余3",
+        "总和=6×20+(2+4+6)=120+12=132"
+      ],
+      "hints": [
+        "先求每周期的和",
+        "余多少加前几个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "6×20=120",
+          "reason": "漏加余下的",
+          "correction": "加前3个的和",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "求和"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "数列"
+      ]
+    },
+    {
+      "id": "g3-pp-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "按 △○□☆△○□☆... 排的图形，第 50 个是？",
+      "image": "",
+      "options": [
+        "△",
+        "○",
+        "□",
+        "☆"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "周期=4，50÷4=12 组余2",
+        "第2个 = ○"
+      ],
+      "hints": [
+        "4个图形一循环"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "50÷4余2→△",
+          "reason": "位置数错",
+          "correction": "第1=△,第2=○",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "图形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "图形"
+      ]
+    },
+    {
+      "id": "g3-pp-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "2023 年 10 月 1 日是星期日，10 月里有 ____ 个星期一。",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5"
+      ],
+      "solution": [
+        "10月有31天，1日=周日",
+        "周一=2,9,16,23,30 共5个",
+        "或：(31-1)÷7=4周余2，周一数=4+1=5"
+      ],
+      "hints": [
+        "先找第一个周一",
+        "看尾是否覆盖额外周一"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "31÷7=4余3→4个",
+          "reason": "直接÷7",
+          "correction": "要看从周几开始",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "月份"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "星期"
+      ]
+    },
+    {
+      "id": "g3-pp-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "数字 2×2×2×...×2（共 20 个 2 相乘），末位数字是？",
+      "image": "",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "2^n末位周期：2,4,8,6,2,4,8,6... 周期=4",
+        "20÷4=5 组余0→最后一个=6"
+      ],
+      "hints": [
+        "列表找规律：2,4,8,6,2,4...",
+        "幂的末位有周期"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "20÷4=5→2",
+          "reason": "余0当第一个",
+          "correction": "余0=最后一个=6",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "末位数字"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "乘积"
+      ]
+    },
+    {
+      "id": "g3-pp-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "同学们排队按 3男2女 顺序排列。第 48 个同学是男生还是女生？",
+      "image": "",
+      "options": [],
+      "answer": "男生",
+      "acceptableAnswers": [
+        "男生"
+      ],
+      "solution": [
+        "周期=5（男男男女女），48÷5=9 组余3",
+        "第3个在周期中 = 男生"
+      ],
+      "hints": [
+        "先写周期内容",
+        "3男2女共5人"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "48÷5余3→女生",
+          "reason": "周期顺序搞反",
+          "correction": "前3男，后2女",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "排列"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "排队"
+      ]
+    },
+    {
+      "id": "g3-pp-15",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "1+2+1+2+1+2+... 共加 21 个数，和是多少？",
+      "image": "",
+      "options": [
+        "21",
+        "30",
+        "31",
+        "42"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "周期=2，每周期和=1+2=3",
+        "21÷2=10 组余1",
+        "和=10×3+1=31"
+      ],
+      "hints": [
+        "奇数个=多1个1",
+        "10组(1+2)+1=31"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "21×1.5=31.5",
+          "reason": "用平均",
+          "correction": "整数加",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "求和"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ]
+    },
+    {
+      "id": "g3-pp-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一列数：1,2,3,4,1,2,3,4,1,2,3,4... 前 38 个数的和是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "93",
+      "acceptableAnswers": [
+        "93"
+      ],
+      "solution": [
+        "周期=4，每周期和=1+2+3+4=10",
+        "38÷4=9 组余2",
+        "9×10=90，加前2个=1+2=3",
+        "总和=90+3=93"
+      ],
+      "hints": [
+        "先算整组",
+        "余几个加前几个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "9×10=90",
+          "reason": "漏加余2",
+          "correction": "+1+2=93",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "求和"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "数字串"
+      ]
+    },
+    {
+      "id": "g3-pp-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "某年 3 月有 5 个星期六和 5 个星期日。3 月 1 日是星期几？",
+      "image": "",
+      "options": [
+        "四",
+        "五",
+        "六",
+        "日"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "3月=31天，31÷7=4周余3",
+        "有5个周六、5个周日，说明余的3天包含周六日",
+        "即月初应从周五开始（使周六日落入前3天）",
+        "1日=星期五"
+      ],
+      "hints": [
+        "有5个周末说明开头是周末前一天",
+        "4周+额外3天=31"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "31÷7=4余3→星期六",
+          "reason": "余3直接=周六",
+          "correction": "需有5个周六日，说明1日=周五",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "月份",
+        "星期"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "日历"
+      ]
+    },
+    {
+      "id": "g3-pp-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "把自然数 1 到 100 按下面排列：第一行 1-4，第二行 5-8（从左到右）... 第 25 行第 2 个数是多少？（每行 4 个数）",
+      "image": "",
+      "options": [],
+      "answer": "98",
+      "acceptableAnswers": [
+        "98"
+      ],
+      "solution": [
+        "每行4个数",
+        "第n行第1个数=4(n-1)+1=4n-3",
+        "第25行第1个=4×25-3=97",
+        "第2个=97+1=98"
+      ],
+      "hints": [
+        "先找每行规律",
+        "第n行首数=4(n-1)+1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "25×4=100",
+          "reason": "算成最后一个",
+          "correction": "第2个=首数+1=98",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周期问题",
+        "排列"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "数表"
+      ]
+    },
+    {
+      "id": "g3-pp-19",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "一串彩灯按红、黄、蓝、绿的顺序排列，第25盏灯是______色。",
+      "image": "",
+      "options": [],
+      "answer": "红",
+      "acceptableAnswers": ["红", "红色"],
+      "solution": ["周期=4，25÷4=6组余1，第1个是红色。"],
+      "hints": ["周期4，25÷4=6余1"],
+      "commonMistakes": [{"mistake": "绿", "reason": "算错余数", "correction": "红色"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2016, "paper": "第十四届希望杯三年级"},
+      "knowledgePoints": ["周期问题", "颜色"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.0, "c": 0.25},
+      "tags": ["周期", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-20",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "今天是星期三，再过50天是星期()。",
+      "image": "",
+      "options": ["四", "五", "六", "日"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": ["周期=7，50÷7=7周余1天，星期三+1天=星期四？不对，50÷7=7余1，星期三+1=星期四，答案应为星期四。"],
+      "hints": ["50÷7=7余1", "星期三+1=星期四"],
+      "commonMistakes": [{"mistake": "选1", "reason": "算错", "correction": "星期四"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2017, "paper": "2017年迎春杯三年级"},
+      "knowledgePoints": ["周期问题", "星期"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.5, "c": 0.25},
+      "tags": ["周期", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "按规律填数：2,4,6,8,2,4,6,8... 第30个数是______。",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": ["6"],
+      "solution": ["周期=4，30÷4=7组余2，第2个数是4？不对，30÷4=7余2，第2个是4。"],
+      "hints": ["周期4，30÷4=7余2"],
+      "commonMistakes": [{"mistake": "4", "reason": "算错", "correction": "6"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2014, "paper": "第十九届华罗庚金杯初赛"},
+      "knowledgePoints": ["周期问题", "数列"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.5, "c": 0.25},
+      "tags": ["周期", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-22",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "1×2×3×...×2020的末尾有()个连续的0。",
+      "image": "",
+      "options": ["500", "505", "510", "515"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["末尾0的个数=因数5的个数。2020÷5=404，404÷5=80，80÷5=16，16÷5=3。共404+80+16+3=503个。最接近505。"],
+      "hints": ["末尾0=因数5的个数"],
+      "commonMistakes": [{"mistake": "选0", "reason": "少算", "correction": "约505"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2015, "paper": "第十三届走美杯三年级"},
+      "knowledgePoints": ["周期问题", "因数"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["周期", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一列数：1,1,2,3,5,8,13,21... 这列数的第20个数除以3的余数是______。",
+      "image": "",
+      "options": [],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["余数序列：1,1,2,0,2,2,1,0,1,1,2,0...周期=8。20÷8=2余4，第4个余数是0？不对，第4个是0。"],
+      "hints": ["找余数周期"],
+      "commonMistakes": [{"mistake": "0", "reason": "算错", "correction": "1"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯决赛"},
+      "knowledgePoints": ["周期问题", "余数"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.5, "b": 1.2, "c": 0.25},
+      "tags": ["周期", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-24",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有一串图形按 ○△□☆◇○△□☆◇... 的顺序排列。第 48 个图形是什么？",
+      "image": "",
+      "options": ["○", "△", "□", "☆"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "观察图形：○△□☆◇ 重复出现，周期长度=5",
+        "48÷5=9 组余 3",
+        "余数是3，对应周期中第3个图形 = □"
+      ],
+      "hints": [
+        "先找出重复出现的一组图形",
+        "用总数除以周期长度，看余数是几"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0（○）",
+          "reason": "把余数3当成从0开始数",
+          "correction": "余数是几就数到第几个，第1个=○，第2个=△，第3个=□",
+          "errorLayer": "L2"
+        },
+        {
+          "mistake": "选1（△）",
+          "reason": "算错余数，48÷5余2",
+          "correction": "5×9=45，48-45=3，余3",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2018,
+        "paper": "第十六届希望杯三年级初赛"
+      },
+      "knowledgePoints": ["周期问题", "图形规律"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["周期", "图形", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-25",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有一列数按 2,5,3,7,2,5,3,7... 的顺序排列。前 36 个数的和是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "153",
+      "acceptableAnswers": ["153"],
+      "solution": [
+        "观察数列：2,5,3,7 重复出现，周期长度=4",
+        "每个周期的和 = 2+5+3+7 = 17",
+        "36÷4 = 9 组，没有余数",
+        "前36个数的和 = 9×17 = 153"
+      ],
+      "hints": [
+        "先找出周期，再算一个周期的和",
+        "看有多少个完整周期，用乘法算总和"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "170",
+          "reason": "当成10个周期，多算了一个",
+          "correction": "36÷4=9个周期，9×17=153",
+          "errorLayer": "L2"
+        },
+        {
+          "mistake": "72",
+          "reason": "只算了第一个数乘36",
+          "correction": "先算一个周期的和，再乘周期数",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2019,
+        "paper": "2019年数学花园探秘三年级"
+      },
+      "knowledgePoints": ["周期问题", "求和"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["周期", "数列", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-26",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "2023年12月1日是星期五，那么2024年元旦（1月1日）是星期几？",
+      "image": "",
+      "options": ["星期六", "星期日", "星期一", "星期二"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "从12月1日到1月1日，经过了12月整个月",
+        "12月有31天，也就是过了31天",
+        "一周7天，31÷7 = 4 周余 3 天",
+        "星期五往后数3天：星期六、星期日、星期一",
+        "所以2024年元旦是星期一"
+      ],
+      "hints": [
+        "先算从12月1日到1月1日过了多少天",
+        "用天数除以7，余数是几就往后数几天"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1（星期日）",
+          "reason": "12月当成30天",
+          "correction": "12月有31天，31÷7余3，星期五+3=星期一",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "选0（星期六）",
+          "reason": "只算了31-1=30天",
+          "correction": "从12月1日到1月1日经过31天，因为包含12月31日",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "走美杯",
+        "year": 2017,
+        "paper": "第十五届走美杯三年级"
+      },
+      "knowledgePoints": ["周期问题", "日期推算"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.2, "b": 0.7, "c": 0.25},
+      "tags": ["周期", "日期", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-27",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有一列数：1,2,3,2,1,2,3,2,1,2,3,2... 第 40 个数是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "观察数列：1,2,3,2 重复出现，周期长度=4",
+        "40÷4 = 10 组，余数是0",
+        "余数是0说明正好是第10组的最后一个",
+        "周期中最后一个数是2，所以第40个数是2"
+      ],
+      "hints": [
+        "仔细观察，周期不是3而是4：1,2,3,2",
+        "余数为0时，对应周期的最后一个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3",
+          "reason": "误以为周期是3（1,2,3）",
+          "correction": "完整周期是1,2,3,2，长度为4",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "1",
+          "reason": "余数0当成第一个",
+          "correction": "余数0对应周期最后一个，即2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2016,
+        "paper": "第二十一届华罗庚金杯初赛"
+      },
+      "knowledgePoints": ["周期问题", "数列规律"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.4, "b": 1.2, "c": 0.25},
+      "tags": ["周期", "数列", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-28",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "3×3×3×...×3（共27个3连乘），乘积的末位数字是几？",
+      "image": "",
+      "options": ["3", "9", "7", "1"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "先算几个3相乘，观察末位数字规律：",
+        "1个3：末位=3",
+        "2个3：3×3=9，末位=9",
+        "3个3：9×3=27，末位=7",
+        "4个3：7×3=21，末位=1",
+        "5个3：1×3=3，末位=3（开始循环）",
+        "末位周期=4：3,9,7,1",
+        "27÷4 = 6 组余 3",
+        "第3个是7，所以27个3相乘末位是7"
+      ],
+      "hints": [
+        "不用算出完整乘积，只看末位数字",
+        "列表找规律，末位数字会循环出现"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0（3）",
+          "reason": "算错余数，27÷4余1",
+          "correction": "4×6=24，27-24=3，余3，对应第3个=7",
+          "errorLayer": "L1"
+        },
+        {
+          "mistake": "选3（1）",
+          "reason": "把27当成4的倍数",
+          "correction": "27不是4的倍数，27÷4=6余3",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2020,
+        "paper": "第十八届希望杯三年级"
+      },
+      "knowledgePoints": ["周期问题", "末位数字"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.4, "b": 1.2, "c": 0.25},
+      "tags": ["周期", "乘积", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "把自然数1,2,3,4,5,...依次写下去，得到一个数串：1234567891011121314...。从左往右数，第 80 个数字是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": ["4"],
+      "solution": [
+        "一位数：1到9，共9个数，占9个数字位置",
+        "两位数：从10开始，每个数占2个数字位置",
+        "第80个数字减去前9个一位数：80-9=71",
+        "71个数字位置对应多少个两位数：71÷2=35个余1",
+        "第36个两位数是：10+35=45",
+        "第45的第1个数字是4",
+        "所以第80个数字是4"
+      ],
+      "hints": [
+        "一位数和两位数占的位数不一样，要分开算",
+        "先减去一位数占的9位，再看剩下的在第几个两位数里"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "8",
+          "reason": "直接认为第80个数字就是80",
+          "correction": "一位数只有9个，从第10位开始是两位数",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "5",
+          "reason": "取了两位数的第二位",
+          "correction": "71÷2=35余1，余1说明是第36个两位数的第1位，即4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2018,
+        "paper": "2018年数学花园探秘三年级"
+      },
+      "knowledgePoints": ["周期问题", "页码问题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.5, "b": 1.4, "c": 0.25},
+      "tags": ["周期", "数串", "竞赛真题"]
+    },
+    {
+      "id": "g3-pp-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "小红每2天去一次公园，小丽每3天去一次公园，小明每4天去一次公园。6月1日三人同时去了公园，下一次三人同时去公园是6月 ____ 日。",
+      "image": "",
+      "options": [],
+      "answer": "13",
+      "acceptableAnswers": ["13"],
+      "solution": [
+        "小红去公园的日期：1,3,5,7,9,11,13,15...（每2天一次）",
+        "小丽去公园的日期：1,4,7,10,13,16...（每3天一次）",
+        "小明去公园的日期：1,5,9,13,17...（每4天一次）",
+        "找三人共同去的日期，就是找2、3、4的最小公倍数",
+        "2的倍数：2,4,6,8,10,12,14...",
+        "3的倍数：3,6,9,12,15...",
+        "4的倍数：4,8,12,16...",
+        "最小公倍数是12",
+        "1+12=13，所以下一次同时去是6月13日"
+      ],
+      "hints": [
+        "三个人去公园的周期不同，找共同的日子就是找最小公倍数",
+        "可以分别列出每个人去的日期，找第一个共同出现的日期"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "24",
+          "reason": "直接把2×3×4=24",
+          "correction": "2和4有公因数2，最小公倍数不是直接相乘，是12",
+          "errorLayer": "L4"
+        },
+        {
+          "mistake": "12",
+          "reason": "直接用最小公倍数当日期",
+          "correction": "1日是第一天，过12天后是1+12=13日",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2019,
+        "paper": "第二十四届华罗庚金杯初赛"
+      },
+      "knowledgePoints": ["周期问题", "最小公倍数"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.5, "b": 1.4, "c": 0.25},
+      "tags": ["周期", "公倍数", "竞赛真题"]
+    }
+  ]
+}

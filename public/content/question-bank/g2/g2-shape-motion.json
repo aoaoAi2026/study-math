@@ -1,0 +1,233 @@
+{
+    "topicId": "g2-shape-motion",
+    "title": "图形运动",
+    "grade": 2,
+    "category": "基础",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "stem": "汽车在笔直的公路上行驶，车身的运动是______现象。",
+            "answer": "平移",
+            "solution": "平移是指物体在平面内沿着某个方向移动，保持形状和大小不变。汽车行驶时车身整体移动，属于平移现象",
+            "knowledgePoints": ["平移", "平移现象"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 1,
+            "stem": "风扇的扇叶转动是______现象。",
+            "answer": "旋转",
+            "solution": "旋转是指物体绕着一个固定点转动。风扇扇叶绕中心轴转动，属于旋转现象",
+            "knowledgePoints": ["旋转", "旋转现象"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 1,
+            "stem": "电梯上下运行是______现象。",
+            "answer": "平移",
+            "solution": "电梯沿着垂直方向上下移动，保持形状不变，属于平移现象",
+            "knowledgePoints": ["平移"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 1,
+            "stem": "钟表的指针转动是______现象。",
+            "answer": "旋转",
+            "solution": "钟表指针绕中心点转动，属于旋转现象",
+            "knowledgePoints": ["旋转"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "推拉抽屉是______现象。",
+            "answer": "平移",
+            "solution": "抽屉沿着直线方向前后移动，属于平移现象",
+            "knowledgePoints": ["平移"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "荡秋千是______现象。",
+            "answer": "旋转",
+            "solution": "秋千绕着固定点摆动，属于旋转现象",
+            "knowledgePoints": ["旋转"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "升国旗时，国旗的运动是______现象。",
+            "answer": "平移",
+            "solution": "国旗沿着旗杆向上移动，保持形状不变，属于平移现象",
+            "knowledgePoints": ["平移"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "下列图形中，是轴对称图形的是______（填序号）。\n① 正方形 ② 长方形 ③ 平行四边形",
+            "answer": "①②",
+            "solution": "正方形和长方形都有对称轴，平行四边形没有对称轴，所以是轴对称图形的是①和②",
+            "knowledgePoints": ["轴对称图形"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "长方形有______条对称轴。",
+            "answer": "2",
+            "solution": "长方形有两条对称轴，分别是对边中点连线所在的直线",
+            "knowledgePoints": ["对称轴"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "正方形有______条对称轴。",
+            "answer": "4",
+            "solution": "正方形有四条对称轴：两条对角线和两条对边中点连线",
+            "knowledgePoints": ["对称轴"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "圆形有______条对称轴。",
+            "answer": "无数",
+            "solution": "圆形的任意直径所在的直线都是对称轴，所以有无数条",
+            "knowledgePoints": ["对称轴", "圆形"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "下面哪些是平移现象？哪些是旋转现象？\n① 风车转动 ② 滑梯 ③ 拧水龙头 ④ 算盘上拨珠子\n平移：______ 旋转：______",
+            "answer": "②④,①③",
+            "solution": "滑梯和拨珠子是平移；风车转动和拧水龙头是旋转",
+            "knowledgePoints": ["平移与旋转区分"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "小明向左平移3格，再向上平移2格，最后向右平移3格，相当于直接向______平移______格。",
+            "answer": "上,2",
+            "solution": "向左3格再向右3格相互抵消，只剩下向上2格",
+            "knowledgePoints": ["平移的组合"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "一个图形绕某点旋转180度后能与自身重合，这个点叫做______。",
+            "answer": "对称中心",
+            "solution": "绕某点旋转180度后能与自身重合的图形叫中心对称图形，这个点叫对称中心",
+            "knowledgePoints": ["中心对称"]
+        },
+        {
+            "id": "q15",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "判断：平移只改变物体的位置，不改变物体的形状和大小。______（填对或错）",
+            "answer": "对",
+            "solution": "平移的特点就是只改变位置，不改变形状、大小和方向",
+            "knowledgePoints": ["平移的性质"]
+        },
+        {
+            "id": "q16",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "等边三角形有______条对称轴。",
+            "answer": "3",
+            "solution": "等边三角形有三条对称轴，分别是从顶点到对边中点的连线",
+            "knowledgePoints": ["对称轴", "等边三角形"]
+        },
+        {
+            "id": "q17",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "把一个图形向左平移4格，就是把图形上的每个点都向______平移4格。",
+            "answer": "左",
+            "solution": "平移的方向要和题目一致，向左平移就是每个点都向左移动",
+            "knowledgePoints": ["平移"]
+        },
+        {
+            "id": "q18",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "下面哪种现象是旋转？______（填序号）\n① 拉抽屉 ② 转动的风车 ③ 滑滑梯 ④ 拧开水龙头",
+            "answer": "②④",
+            "solution": "风车转动和拧水龙头都是绕着一个固定点转动，属于旋转",
+            "knowledgePoints": ["旋转"]
+        },
+        {
+            "id": "q19",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "等腰三角形有______条对称轴。",
+            "answer": "1",
+            "solution": "等腰三角形有一条对称轴，是从顶点到底边中点的连线所在的直线",
+            "knowledgePoints": ["对称轴", "等腰三角形"]
+        },
+        {
+            "id": "q20",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "判断：旋转不改变图形的形状和大小，只改变图形的位置。______（填对或错）",
+            "answer": "对",
+            "solution": "旋转的特点就是只改变位置和方向，不改变形状和大小",
+            "knowledgePoints": ["旋转的性质"]
+        },
+        {
+            "id": "q21",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "将一个图形先向上平移3格，再向下平移3格，结果是______（填位置变化或不变）。",
+            "answer": "不变",
+            "solution": "向上3格再向下3格相互抵消，图形位置不变",
+            "knowledgePoints": ["平移的组合"]
+        },
+        {
+            "id": "q22",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "菱形有______条对称轴。",
+            "answer": "2",
+            "solution": "菱形有两条对称轴，是对角线所在的直线",
+            "knowledgePoints": ["对称轴", "菱形"]
+        },
+        {
+            "id": "q23",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "下面的字母中，是轴对称图形的有______（填序号）。\n① A ② B ③ H ④ G",
+            "answer": "①③",
+            "solution": "A和H都有对称轴，B和G不是轴对称图形",
+            "knowledgePoints": ["轴对称图形"]
+        },
+        {
+            "id": "q24",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "把一个长方形先向左平移4格，再向右平移4格，最后向下平移2格，结果是______（填图形位置变化）。",
+            "answer": "向下平移2格",
+            "solution": "向左4格再向右4格抵消，只剩下向下平移2格",
+            "knowledgePoints": ["平移的组合"]
+        },
+        {
+            "id": "q25",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "一个图形绕中心点旋转______度后能与自身重合，这个图形叫做中心对称图形。",
+            "answer": "180",
+            "solution": "绕中心点旋转180度后能与自身重合的图形叫中心对称图形",
+            "knowledgePoints": ["中心对称"]
+        }
+    ]
+}

@@ -1,0 +1,463 @@
+{
+  "topicId": "g3-fraction-intro",
+  "topicName": "分数初步认识",
+  "grade": 3,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g3-fr-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "把一个西瓜平均分成 4 份，每份是这个西瓜的几分之几？",
+      "image": "",
+      "options": ["1/2", "1/4", "1/3", "4/1"],
+      "answer": "1",
+      "acceptableAnswers": ["1/4", "四分之一"],
+      "solution": [
+        "第一步：平均分用分数表示",
+        "第二步：分母是平均分的份数（4份）",
+        "第三步：分子是取的份数（1份）",
+        "第四步：每份是 1/4"
+      ],
+      "hints": [
+        "平均分成几份，分母就是几",
+        "取几份，分子就是几",
+        "这里分4份，取1份，是1/4"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1/2", "reason": "把分母看成2了", "correction": "分的是4份，分母是4", "errorLayer": "L1"},
+        {"mistake": "选4/1", "reason": "分子分母写反了", "correction": "分母在下，分子在上", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数的意义"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -1.5, "c": 0.25},
+      "tags": ["分数", "认识"]
+    },
+    {
+      "id": "g3-fr-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "3/5 读作 ____，表示把一个物体平均分成 ____ 份，取了其中的 ____ 份。",
+      "image": "",
+      "options": [],
+      "answer": "五分之三,5,3",
+      "acceptableAnswers": ["五分之三,5,3", "五分之三 5 3"],
+      "solution": [
+        "第一步：3/5 读作五分之三",
+        "第二步：分母 5 表示平均分成 5 份",
+        "第三步：分子 3 表示取了 3 份"
+      ],
+      "hints": [
+        "先读分母，再读分之，再读分子",
+        "分母表示分几份",
+        "分子表示取几份"
+      ],
+      "commonMistakes": [
+        {"mistake": "读作三分之五", "reason": "读反了", "correction": "从分母读起：五分之三", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数的读法", "分数的意义"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -1.4, "c": 0.25},
+      "tags": ["读写"]
+    },
+    {
+      "id": "g3-fr-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下面哪个分数表示的是阴影部分（假设一个圆平均分成8份，阴影占3份）？",
+      "image": "",
+      "options": ["3/8", "8/3", "5/8", "3/5"],
+      "answer": "0",
+      "acceptableAnswers": ["3/8"],
+      "solution": [
+        "第一步：平均分了 8 份，分母 = 8",
+        "第二步：阴影占 3 份，分子 = 3",
+        "第三步：分数是 3/8"
+      ],
+      "hints": [
+        "先数一共分几份（分母）",
+        "再数阴影占几份（分子）",
+        "分8份阴影3份，就是3/8"
+      ],
+      "commonMistakes": [
+        {"mistake": "选5/8", "reason": "数的是空白部分", "correction": "看的是阴影部分", "errorLayer": "L1"},
+        {"mistake": "选8/3", "reason": "分子分母写反", "correction": "分母在下，分子在上", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数的表示"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -1.3, "c": 0.25},
+      "tags": ["图形"]
+    },
+    {
+      "id": "g3-fr-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1/2 和 1/3 比较大小，哪个大？",
+      "image": "",
+      "options": ["1/2", "1/3", "一样大", "不能比较"],
+      "answer": "0",
+      "acceptableAnswers": ["1/2"],
+      "solution": [
+        "第一步：同样大的物体，分的份数越少，每份越大",
+        "第二步：1/2 是分成 2 份取 1 份",
+        "第三步：1/3 是分成 3 份取 1 份",
+        "第四步：分成 2 份的每份更大，所以 1/2 > 1/3"
+      ],
+      "hints": [
+        "分子相同看分母",
+        "分母越大，分数越小",
+        "同样的东西，分2份比分3份的每份大"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1/3", "reason": "以为数字越大分数越大", "correction": "分母越大分的越多每份越小", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数大小比较", "分子相同"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -1.2, "c": 0.25},
+      "tags": ["大小比较"]
+    },
+    {
+      "id": "g3-fr-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2/4 和 4/4 比较，哪个大？",
+      "image": "",
+      "options": ["2/4", "4/4", "一样大", "不能比较"],
+      "answer": "1",
+      "acceptableAnswers": ["4/4"],
+      "solution": [
+        "第一步：分母相同，比较分子",
+        "第二步：2 < 4",
+        "第三步：所以 2/4 < 4/4",
+        "第四步：或者想：2 份小于 4 份（每份同样大）"
+      ],
+      "hints": [
+        "分母相同比分子",
+        "分子大的分数大",
+        "4/4 就是整个物体"
+      ],
+      "commonMistakes": [
+        {"mistake": "选2/4", "reason": "误以为分子小的大", "correction": "分母相同，分子大的大", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数大小比较", "分母相同"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -0.8, "c": 0.25},
+      "tags": ["大小比较"]
+    },
+    {
+      "id": "g3-fr-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2/7 + 3/7 = ____",
+      "image": "",
+      "options": [],
+      "answer": "5/7",
+      "acceptableAnswers": ["5/7", "七分之五"],
+      "solution": [
+        "第一步：分母相同的分数相加，分母不变",
+        "第二步：分子相加：2 + 3 = 5",
+        "第三步：结果是 5/7",
+        "第四步：想：2个1/7加3个1/7=5个1/7=5/7"
+      ],
+      "hints": [
+        "分母相同，分母不变",
+        "把分子加起来",
+        "2+3=5，答案是5/7"
+      ],
+      "commonMistakes": [
+        {"mistake": "5/14", "reason": "把分母也加起来了", "correction": "分母不变，只加分子", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["同分母分数加法"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -0.6, "c": 0.25},
+      "tags": ["加法"]
+    },
+    {
+      "id": "g3-fr-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小明看一本故事书，第一天看了全书的 2/9，第二天看了全书的 3/9，两天一共看了全书的几分之几？",
+      "image": "",
+      "options": ["5/18", "5/9", "6/9", "1/9"],
+      "answer": "1",
+      "acceptableAnswers": ["5/9"],
+      "solution": [
+        "第一步：两天一共看的 = 第一天 + 第二天",
+        "第二步：2/9 + 3/9",
+        "第三步：分母不变，分子相加：2+3=5",
+        "第四步：答案是 5/9"
+      ],
+      "hints": [
+        "一共就是加起来",
+        "2/9 + 3/9",
+        "分母相同加分子"
+      ],
+      "commonMistakes": [
+        {"mistake": "选5/18", "reason": "把分母也加起来了", "correction": "分母9不变，分子2+3=5", "errorLayer": "L2"},
+        {"mistake": "选6/9", "reason": "算错3×2=6", "correction": "应该是2+3=5", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["同分母分数加法", "应用"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["应用"]
+    },
+    {
+      "id": "g3-fr-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "5/8 - 2/8 = ?",
+      "image": "",
+      "options": ["3/8", "3/0", "7/8", "2/8"],
+      "answer": "0",
+      "acceptableAnswers": ["3/8"],
+      "solution": [
+        "第一步：分母相同的分数相减，分母不变",
+        "第二步：分子相减：5 - 2 = 3",
+        "第三步：结果是 3/8"
+      ],
+      "hints": [
+        "分母相同，分母不变",
+        "分子相减",
+        "5-2=3"
+      ],
+      "commonMistakes": [
+        {"mistake": "选7/8", "reason": "用了加法", "correction": "题目是减法", "errorLayer": "L2"},
+        {"mistake": "选3/0", "reason": "分子分母都减了", "correction": "分母不变，只减分子", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["同分母分数减法"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -0.4, "c": 0.25},
+      "tags": ["减法"]
+    },
+    {
+      "id": "g3-fr-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一条绳子用去了 4/7，还剩几分之几？",
+      "image": "",
+      "options": [],
+      "answer": "3/7",
+      "acceptableAnswers": ["3/7"],
+      "solution": [
+        "第一步：把整条绳子看作 1，即 7/7",
+        "第二步：剩下的 = 1 - 4/7 = 7/7 - 4/7",
+        "第三步：分母不变，分子相减：7 - 4 = 3",
+        "第四步：答案是 3/7"
+      ],
+      "hints": [
+        "整体可以用 1 或 7/7 表示",
+        "用减法：1 - 4/7",
+        "7/7 - 4/7 = 3/7"
+      ],
+      "commonMistakes": [
+        {"mistake": "1-4=3直接写3", "reason": "忘了分母", "correction": "应该用7/7-4/7=3/7", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["1减几分之几", "分数应用"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.2, "c": 0.25},
+      "tags": ["1减分数", "应用"]
+    },
+    {
+      "id": "g3-fr-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把 1 个蛋糕平均分成 6 份，每份是这个蛋糕的几分之几？3 份是这个蛋糕的几分之几？",
+      "image": "",
+      "options": ["1/6 和 3/6", "1/3 和 2/3", "6/1 和 3/6", "1/6 和 6/3"],
+      "answer": "0",
+      "acceptableAnswers": ["1/6 和 3/6"],
+      "solution": [
+        "第一步：1 份就是 1/6",
+        "第二步：3 份就是 3 个 1/6，即 3/6",
+        "第三步：所以答案是 1/6 和 3/6"
+      ],
+      "hints": [
+        "分母都是 6（分 6 份）",
+        "1 份分子是 1",
+        "3 份分子是 3"
+      ],
+      "commonMistakes": [
+        {"mistake": "分子分母写反", "reason": "概念不清", "correction": "分母在下，表示份数", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数的意义"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["应用"]
+    },
+    {
+      "id": "g3-fr-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "下列分数按从小到大排列，正确的是？（比较 1/5, 1/2, 1/8）",
+      "image": "",
+      "options": ["1/8 < 1/5 < 1/2", "1/2 < 1/5 < 1/8", "1/5 < 1/8 < 1/2", "1/8 < 1/2 < 1/5"],
+      "answer": "0",
+      "acceptableAnswers": ["1/8 < 1/5 < 1/2"],
+      "solution": [
+        "第一步：分子都是 1，比较分母",
+        "第二步：分母越大，分数越小",
+        "第三步：8 > 5 > 2",
+        "第四步：所以 1/8 < 1/5 < 1/2"
+      ],
+      "hints": [
+        "分子相同看分母",
+        "分母大的分数反而小",
+        "同样大的物体，分8份最小"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1/2<1/5<1/8", "reason": "以为分母大的分数大", "correction": "分子相同，分母大的分数小", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数大小比较"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.5, "c": 0.25},
+      "tags": ["排序"]
+    },
+    {
+      "id": "g3-fr-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "3/8 + ( )/8 = 7/8，括号里填 ____",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": ["4"],
+      "solution": [
+        "第一步：分母相同，分子相加",
+        "第二步：3 + ? = 7",
+        "第三步：? = 7 - 3 = 4",
+        "第四步：括号里填 4"
+      ],
+      "hints": [
+        "分母都是8不变",
+        "看分子：3+?=7",
+        "7-3=4"
+      ],
+      "commonMistakes": [
+        {"mistake": "填10", "reason": "用了3+7", "correction": "应该是7-3", "errorLayer": "L2"},
+        {"mistake": "填7", "reason": "直接写右边的分子", "correction": "要计算3+?=7", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数填空", "同分母加法"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["填空"]
+    },
+    {
+      "id": "g3-fr-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把一根绳子对折后再对折，每段是这根绳子的几分之几？",
+      "image": "",
+      "options": ["1/2", "1/3", "1/4", "1/8"],
+      "answer": "2",
+      "acceptableAnswers": ["1/4"],
+      "solution": [
+        "第一步：对折 1 次 = 平均分成 2 份",
+        "第二步：对折 2 次 = 2×2 = 平均分成 4 份",
+        "第三步：每段 = 1/4"
+      ],
+      "hints": [
+        "对折1次分2份",
+        "对折2次分4份",
+        "1份就是1/4"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1/2", "reason": "只对折一次算", "correction": "对折两次是4份", "errorLayer": "L3"},
+        {"mistake": "选1/8", "reason": "2+2+4=8", "correction": "对折两次2×2=4", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数应用", "对折问题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["对折"]
+    },
+    {
+      "id": "g3-fr-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一杯果汁，小明先喝了它的 1/3，然后加满水，又喝了 1/3，又加满水，最后全部喝完。小明喝的果汁多还是水多？",
+      "image": "",
+      "options": ["果汁多", "水多", "一样多", "不能确定"],
+      "answer": "0",
+      "acceptableAnswers": ["果汁多"],
+      "solution": [
+        "第一步：果汁自始至终没有再加，所以喝了 1 杯果汁 = 3/3",
+        "第二步：加的水：第一次加 1/3，第二次加 1/3，共加 1/3 + 1/3 = 2/3",
+        "第三步：喝水 = 2/3 杯",
+        "第四步：1（即3/3）> 2/3，所以果汁多"
+      ],
+      "hints": [
+        "果汁始终是1杯没再加",
+        "加了两次水，每次1/3",
+        "水=1/3+1/3=2/3，比1小"
+      ],
+      "commonMistakes": [
+        {"mistake": "选一样多", "reason": "没考虑只加两次水", "correction": "水=2/3，果汁=1=3/3", "errorLayer": "L4"},
+        {"mistake": "选水多", "reason": "概念错误", "correction": "果汁没加过，只有1杯", "errorLayer": "L4"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数应用", "1的理解"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 1.2, "c": 0.25},
+      "tags": ["应用", "思考"]
+    },
+    {
+      "id": "g3-fr-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "把一张长方形纸连续对折 3 次后，沿折痕剪下，每份是这张纸的几分之几？",
+      "image": "",
+      "options": ["1/3", "1/6", "1/8", "1/9"],
+      "answer": "2",
+      "acceptableAnswers": ["1/8"],
+      "solution": [
+        "第一步：对折 1 次 = 2 份 = 2^1",
+        "第二步：对折 2 次 = 4 份 = 2^2",
+        "第三步：对折 3 次 = 8 份 = 2^3",
+        "第四步：每份是 1/8"
+      ],
+      "hints": [
+        "每对折一次份数翻倍",
+        "对折3次：2×2×2=8",
+        "1份就是1/8"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1/6", "reason": "用3×2=6", "correction": "应该是2×2×2=8", "errorLayer": "L4"},
+        {"mistake": "选1/9", "reason": "用3×3=9", "correction": "每对折一次翻倍，不是乘3", "errorLayer": "L4"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["分数应用", "对折问题"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 1.8, "c": 0.25},
+      "tags": ["拔高", "对折"]
+    }
+  ]
+}

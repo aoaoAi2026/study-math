@@ -1,0 +1,766 @@
+{
+  "topicId": "g1-word-problem-1st",
+  "topicName": "一年级应用题",
+  "grade": 1,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g1-wp-01",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "小明有 3 颗糖，妈妈又给了他 4 颗。小明现在有多少颗糖？",
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "七",
+        "7颗"
+      ],
+      "solution": [
+        "原来有 3 颗，又给了 4 颗就是加上。",
+        "3 + 4 = 7 颗。"
+      ],
+      "hints": [
+        "先看原来有多少",
+        "\"又给了\"就是加",
+        "3+4=7"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 8",
+          "reason": "加法算错",
+          "correction": "3+4=7",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "加法应用题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "加法",
+        "应用题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "花园里有 8 只蝴蝶，飞走了 5 只。还剩几只蝴蝶？",
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三",
+        "3只"
+      ],
+      "solution": [
+        "原来有 8 只，飞走了 5 只。",
+        "\"飞走了\"就是减去，8 - 5 = 3 只。"
+      ],
+      "hints": [
+        "\"飞走\"是减",
+        "8-5=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 13",
+          "reason": "把减看成加",
+          "correction": "飞走是变少，要减",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "减法应用题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "减法",
+        "应用题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "停车场有 6 辆小汽车，又开来了 3 辆。现在停车场有几辆小汽车？",
+      "options": [
+        "7 辆",
+        "8 辆",
+        "9 辆",
+        "10 辆"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "原来 6 辆，开来 3 辆就是加上。",
+        "6 + 3 = 9 辆。"
+      ],
+      "hints": [
+        "\"开来\"是加",
+        "6+3=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 8 辆",
+          "reason": "6+3算错",
+          "correction": "6+3=9",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "加法应用题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "小红有 10 本书，借给同学 4 本。小红还剩几本书？",
+      "options": [
+        "4 本",
+        "5 本",
+        "6 本",
+        "7 本"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "solution": [
+        "原来 10 本，借出 4 本。",
+        "10 - 4 = 6 本。"
+      ],
+      "hints": [
+        "\"借出\"是减",
+        "10-4=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 7 本",
+          "reason": "数错了",
+          "correction": "10-4=6",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "减法应用题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "减法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-05",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "树上有 7 只小鸟，飞来了 8 只，又飞走了 5 只。现在树上有几只小鸟？",
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十",
+        "10只"
+      ],
+      "solution": [
+        "先加飞来的：7 + 8 = 15 只。",
+        "再减飞走的：15 - 5 = 10 只。"
+      ],
+      "hints": [
+        "飞来加，飞走减",
+        "先 7+8=15",
+        "再 15-5=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 15",
+          "reason": "只算了加法",
+          "correction": "还要再减 5",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "连加连减应用题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "连加连减"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-06",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "弟弟有 5 个玻璃球，哥哥有 9 个。他们一共有多少个玻璃球？",
+      "answer": "14",
+      "acceptableAnswers": [
+        "14",
+        "十四",
+        "14个"
+      ],
+      "solution": [
+        "\"一共\"就是加起来。",
+        "5 + 9 = 14 个。"
+      ],
+      "hints": [
+        "\"一共\"是加",
+        "5+9=?",
+        "9+1=10，10+4=14"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 13",
+          "reason": "5+9算错",
+          "correction": "5+9=14",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "加法应用题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一本故事书有 18 页，小军已经看了 9 页。还剩多少页没看？",
+      "options": [
+        "7 页",
+        "8 页",
+        "9 页",
+        "10 页"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "总共 18 页，看了 9 页，剩下的就是 18 - 9。",
+        "18 - 9 = 9 页。"
+      ],
+      "hints": [
+        "总共 - 看过的",
+        "18-9=?",
+        "想 9+?=18"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 10 页",
+          "reason": "计算错误",
+          "correction": "18-9=9",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "减法应用题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "减法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "妈妈买了一些苹果，小强吃了 6 个，还剩 8 个。妈妈原来买了多少个苹果？",
+      "answer": "14",
+      "acceptableAnswers": [
+        "14",
+        "十四",
+        "14个"
+      ],
+      "solution": [
+        "吃了 6 个，还剩 8 个。原来的就是吃了的加剩下的。",
+        "6 + 8 = 14 个。"
+      ],
+      "hints": [
+        "吃了的 + 剩下的 = 原来的",
+        "6+8=?",
+        "8+2=10，10+4=14"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 8-6=2",
+          "reason": "用错方法",
+          "correction": "求原来的要加",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "加法应用题",
+        "逆向思考"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "逆向"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "有 12 个小朋友在玩捉迷藏游戏，已经找到了 5 个。还有几个小朋友没找到？",
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "七",
+        "7个"
+      ],
+      "solution": [
+        "总共 12 个，找到了 5 个。",
+        "12 - 5 = 7 个。"
+      ],
+      "hints": [
+        "总共 12，减去找到的 5",
+        "12-5=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 17",
+          "reason": "把减看成加",
+          "correction": "没找到的变少了，是减法",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "减法应用题"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "减法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小猫钓了 13 条鱼，送给奶奶 7 条。小猫还剩几条鱼？",
+      "options": [
+        "5 条",
+        "6 条",
+        "7 条",
+        "8 条"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "solution": [
+        "钓了 13 条，送出 7 条。",
+        "13 - 7 = 6 条。"
+      ],
+      "hints": [
+        "\"送出去\"是减",
+        "13-7=?",
+        "想 7+?=13"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 7 条",
+          "reason": "13-7算错",
+          "correction": "13-7=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "减法应用题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "减法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明有 5 张邮票，小丽有 8 张。他们一共有多少张？小明比小丽少几张？",
+      "answer": "13",
+      "acceptableAnswers": [
+        "13",
+        "3",
+        "13和3"
+      ],
+      "solution": [
+        "一共：5 + 8 = 13 张。",
+        "小明比小丽少：8 - 5 = 3 张。"
+      ],
+      "hints": [
+        "一共是加",
+        "比谁少是减",
+        "5+8=13，8-5=3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "第2题写成 13",
+          "reason": "没看清问题",
+          "correction": "第2题是\"少几张\"，8-5=3",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "加法应用题",
+        "比多少"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "比多少"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一（1）班有男生 9 人，女生 8 人。每人发一本练习本，一共需要多少本？",
+      "options": [
+        "15 本",
+        "16 本",
+        "17 本",
+        "18 本"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "17"
+      ],
+      "solution": [
+        "男生 9 人 + 女生 8 人 = 17 人。",
+        "每人一本，需要 17 本。"
+      ],
+      "hints": [
+        "先算总人数",
+        "9+8=?",
+        "凑十：9+1=10，10+7=17"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 16 本",
+          "reason": "9+8算错",
+          "correction": "9+8=17",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "加法应用题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-13",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "车上原来有 16 人，到站后下车 7 人，又上车 9 人。现在车上有多少人？",
+      "answer": "18",
+      "acceptableAnswers": [
+        "18",
+        "十八",
+        "18人"
+      ],
+      "solution": [
+        "下车 7 人后：16 - 7 = 9 人。",
+        "又上车 9 人：9 + 9 = 18 人。"
+      ],
+      "hints": [
+        "下车减，上车加",
+        "先 16-7=9",
+        "再 9+9=18"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 16",
+          "reason": "中间步骤算错",
+          "correction": "16-7=9，9+9=18",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "混合运算应用题"
+      ],
+      "estimatedTime": 140,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "混合运算"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "超市里有 15 袋薯片，上午卖了 6 袋，下午又运来了 8 袋。现在超市有多少袋薯片？",
+      "options": [
+        "15 袋",
+        "16 袋",
+        "17 袋",
+        "18 袋"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "17"
+      ],
+      "solution": [
+        "15 - 6 = 9（上午后）。",
+        "9 + 8 = 17（下午后）。"
+      ],
+      "hints": [
+        "卖掉的要减",
+        "运来的要加",
+        "15-6+8=17"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 16 袋",
+          "reason": "计算错误",
+          "correction": "15-6=9，9+8=17",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "混合运算应用题"
+      ],
+      "estimatedTime": 140,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "混合运算"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-wp-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一桶油连桶共重 15 千克，用去一半油后连桶重 8 千克。原来桶里有多少千克油？",
+      "answer": "14",
+      "acceptableAnswers": [
+        "14",
+        "十四",
+        "14千克"
+      ],
+      "solution": [
+        "连桶重 15 千克，用去一半油后连桶重 8 千克。",
+        "减少的重量就是一半油：15 - 8 = 7 千克。",
+        "整桶油就是 7 + 7 = 14 千克。"
+      ],
+      "hints": [
+        "减少的就是一半油",
+        "15-8=7（一半）",
+        "7+7=14"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 7",
+          "reason": "以为 7 是全部",
+          "correction": "7 是一半，全部是 14",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "智力应用题",
+        "一半"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "智力题",
+        "拔高"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    }
+  ]
+}

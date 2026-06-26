@@ -1,107 +1,154 @@
 :root {
-  /* 基础颜色 - 亮色主题 */
-  --color-primary: #6366f1;
-  --color-primary-light: #818cf8;
-  --color-primary-dark: #4f46e5;
-  --color-secondary: #f59e0b;
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
-  --color-error: #ef4444;
-  --color-info: #3b82f6;
+  /* === 主色调：橙黄温暖系 === */
+  --color-primary: #FF8C42;           /* 温暖橙 */
+  --color-primary-dark: #F37522;      /* 深一点的橙（按压态） */
+  --color-primary-light: #FFB07C;     /* 浅橙 */
+  --color-primary-soft: #FFF1E1;      /* 极浅橙（背景） */
 
-  /* 背景色 */
-  --bg-page: #f8fafc;
-  --bg-card: #ffffff;
-  --bg-hover: #f1f5f9;
-  --bg-active: #e2e8f0;
-  --bg-overlay: rgba(0, 0, 0, 0.5);
+  --color-accent: #5EC9A5;            /* 薄荷绿（强调） */
+  --color-accent-2: #7FA8F5;          /* 天蓝 */
+  --color-accent-3: #F5B4D1;          /* 嫩粉 */
+  --color-accent-4: #FFD56A;          /* 暖黄 */
 
-  /* 文字颜色 */
-  --text-primary: #1e293b;
-  --text-secondary: #64748b;
-  --text-tertiary: #94a3b8;
-  --text-inverse: #ffffff;
+  --color-success: #4CAF7E;
+  --color-error: #F06A6A;
+  --color-warning: #F5A623;
 
-  /* 边框颜色 */
-  --border-color: #e2e8f0;
-  --border-color-light: #f1f5f9;
+  /* === 文字色 === */
+  --text-primary: #3A3A3A;            /* 主文字 - 深灰不刺眼 */
+  --text-secondary: #8C8C8C;          /* 次要文字 */
+  --text-muted: #B8B8B8;              /* 提示文字 */
+  --text-inverse: #FFFFFF;
 
-  /* 阴影 */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  /* === 背景 === */
+  --bg-page: #FFF8EE;                 /* 暖米色纸张 */
+  --bg-page-gradient: radial-gradient(circle at 20% 10%, #FFE8CC 0%, transparent 40%),
+                      radial-gradient(circle at 80% 80%, #FFE1E1 0%, transparent 40%),
+                      #FFF8EE;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FFF4E4;
+  --bg-overlay: rgba(58, 45, 35, 0.45);
 
-  /* 圆角 */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  --radius-full: 9999px;
+  /* === 功能彩色卡片（6色） === */
+  --card-orange-bg: #FFE8CC;  --card-orange-text: #D85F10;
+  --card-pink-bg:   #FFE1EC;  --card-pink-text:   #C7417F;
+  --card-blue-bg:   #E4EEFF;  --card-blue-text:   #3A6AC4;
+  --card-green-bg:  #DFF3E8;  --card-green-text:  #2F8C5D;
+  --card-yellow-bg: #FFF2CC;  --card-yellow-text: #C98A10;
+  --card-purple-bg: #ECE3F5;  --card-purple-text: #7849B8;
+  --card-teal-bg:   #D7F0EE;  --card-teal-text:   #2B8A85;
 
-  /* 间距 */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
+  /* === 边框 & 分隔 === */
+  --border-color: #F2E6D4;
+  --border-color-strong: #E8D8BC;
+  --border-radius-xs: 8px;
+  --border-radius-sm: 12px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 28px;
+  --border-radius-pill: 999px;
 
-  /* 字体 */
-  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', monospace;
+  /* === 阴影 === */
+  --shadow-xs: 0 1px 2px rgba(150, 110, 60, 0.06);
+  --shadow-sm: 0 2px 6px rgba(150, 110, 60, 0.08);
+  --shadow-md: 0 6px 18px rgba(150, 110, 60, 0.10);
+  --shadow-lg: 0 12px 32px rgba(150, 110, 60, 0.14);
+  --shadow-primary: 0 6px 16px rgba(255, 140, 66, 0.35);
+  --shadow-card: 0 4px 14px rgba(200, 160, 110, 0.12);
+  --shadow-card-hover: 0 10px 24px rgba(200, 160, 110, 0.20);
 
-  /* 字体大小 */
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
+  /* === 尺寸 === */
+  --top-nav-height: 68px;
+  --bottom-nav-height: 64px;
+  --content-max-width: 1120px;
 
-  /* 行高 */
-  --leading-none: 1;
-  --leading-tight: 1.25;
-  --leading-normal: 1.5;
-  --leading-relaxed: 1.75;
-
-  /* 过渡 */
-  --transition-fast: 150ms ease;
-  --transition-normal: 250ms ease;
-  --transition-slow: 350ms ease;
-
-  /* Z-index */
-  --z-dropdown: 100;
-  --z-sticky: 200;
-  --z-modal: 300;
-  --z-toast: 400;
-  --z-tooltip: 500;
-
-  /* 布局 */
-  --sidebar-width: 280px;
-  --topnav-height: 60px;
-  --bottomnav-height: 64px;
-  --content-max-width: 1200px;
+  /* === 过渡 === */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 暗色主题变量 */
-[data-theme="dark"] {
-  --bg-page: #0f172a;
-  --bg-card: #1e293b;
-  --bg-hover: #334155;
-  --bg-active: #475569;
-  --bg-overlay: rgba(0, 0, 0, 0.7);
-
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-tertiary: #64748b;
-  --text-inverse: #0f172a;
-
-  --border-color: #334155;
-  --border-color-light: #1e293b;
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei",
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+               "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-page-gradient);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
+
+a { color: var(--color-primary); text-decoration: none; }
+a:hover { color: var(--color-primary-dark); }
+
+button {
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+}
+
+input, textarea {
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+
+img { max-width: 100%; display: block; }
+
+h1, h2, h3, h4 { margin: 0; color: var(--text-primary); font-weight: 700; }
+p { margin: 0; }
+
+/* === 滚动条（桌面） === */
+@media (min-width: 769px) {
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-color-strong);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-primary-light); background-clip: padding-box; }
+}
+
+/* === 通用动画 === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.85); }
+  60% { opacity: 1; transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+@keyframes confetti {
+  0% { transform: translateY(-10vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 140, 66, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(255, 140, 66, 0); }
+}
+
+.fade-in { animation: fadeIn 0.4s ease both; }
+.pop-in { animation: popIn 0.35s ease both; }

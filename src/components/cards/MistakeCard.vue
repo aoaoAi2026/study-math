@@ -10,9 +10,14 @@ defineProps<{
 <template>
   <div class="mistake-card">
     <div class="mistake-card__header">
-      <span class="mistake-card__icon">⚠️</span>
-      <h3 v-if="title" class="mistake-card__title">{{ title }}</h3>
-      <span v-else class="mistake-card__title">常见错误</span>
+      <div class="mistake-card__icon-wrap">
+        <span class="mistake-card__icon">⚠️</span>
+      </div>
+      <div class="mistake-card__title-wrap">
+        <span class="mistake-card__label">常见误区</span>
+        <h2 v-if="title" class="mistake-card__title">{{ title }}</h2>
+        <h2 v-else class="mistake-card__title">容易出错的地方</h2>
+      </div>
     </div>
 
     <div class="mistake-card__list">
@@ -22,21 +27,25 @@ defineProps<{
         class="mistake-card__item"
       >
         <div class="mistake-card__item-header">
-          <span class="mistake-card__error-label">错误</span>
+          <span class="mistake-card__num">{{ index + 1 }}</span>
           <span class="mistake-card__layer" :class="`mistake-card__layer--${mistake.errorLayer.toLowerCase()}`">
             {{ mistake.errorLayer }}
           </span>
         </div>
-        <p class="mistake-card__error-text">{{ mistake.mistake }}</p>
 
-        <div class="mistake-card__reason">
-          <span class="mistake-card__reason-icon">❓</span>
-          <span>原因：{{ mistake.reason }}</span>
+        <div class="mistake-card__block mistake-card__block--error">
+          <span class="mistake-card__block-label">❌ 错误做法</span>
+          <p class="mistake-card__block-text">{{ mistake.mistake }}</p>
         </div>
 
-        <div class="mistake-card__correction">
-          <span class="mistake-card__correction-icon">✓</span>
-          <span>纠正：{{ mistake.correction }}</span>
+        <div class="mistake-card__block mistake-card__block--reason">
+          <span class="mistake-card__block-label">💭 原因</span>
+          <p class="mistake-card__block-text">{{ mistake.reason }}</p>
+        </div>
+
+        <div class="mistake-card__block mistake-card__block--correct">
+          <span class="mistake-card__block-label">✅ 正确做法</span>
+          <p class="mistake-card__block-text">{{ mistake.correction }}</p>
         </div>
       </div>
     </div>
@@ -45,93 +54,153 @@ defineProps<{
 
 <style scoped>
 .mistake-card {
-  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  border: 2px solid #fca5a5;
+  background: var(--bg-card);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
 }
 
 .mistake-card__header {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  margin-bottom: var(--space-4);
+  gap: 18px;
+  padding: 28px 32px 20px;
+  background: linear-gradient(135deg, var(--card-red-bg) 0%, rgba(254, 226, 226, 0.8) 50%, var(--card-red-bg) 100%);
+  border-bottom: 1px solid rgba(239, 68, 68, 0.15);
 }
 
-.mistake-card__icon {
-  font-size: var(--text-2xl);
+.mistake-card__icon-wrap {
+  width: 60px;
+  height: 60px;
+  background: var(--bg-card);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+  flex-shrink: 0;
+}
+
+.mistake-card__icon { font-size: 28px; }
+.mistake-card__title-wrap { flex: 1; min-width: 0; }
+
+.mistake-card__label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-danger);
+  background: rgba(185, 28, 28, 0.12);
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
 }
 
 .mistake-card__title {
-  font-size: var(--text-xl);
-  color: #991b1b;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
   margin: 0;
+  line-height: 1.3;
 }
 
 .mistake-card__list {
+  padding: 24px 32px 28px;
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: 20px;
 }
 
 .mistake-card__item {
-  background: white;
-  border-radius: var(--radius-lg);
-  padding: var(--space-4);
+  background: var(--bg-hover);
+  border-radius: 20px;
+  padding: 20px 22px;
+  border: 2px solid var(--border-color);
 }
 
 .mistake-card__item-header {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  margin-bottom: var(--space-2);
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
-.mistake-card__error-label {
-  font-weight: 600;
-  color: #991b1b;
-  font-size: var(--text-sm);
+.mistake-card__num {
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--color-danger) 0%, #dc2626 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.25);
 }
 
 .mistake-card__layer {
-  padding: 2px 8px;
-  border-radius: var(--radius-sm);
-  font-size: var(--text-xs);
-  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.mistake-card__layer--l1 { background: linear-gradient(135deg, var(--color-primary), #2563eb); }
+.mistake-card__layer--l2 { background: linear-gradient(135deg, var(--color-warning), #d97706); }
+.mistake-card__layer--l3 { background: linear-gradient(135deg, var(--color-danger), #dc2626); }
+.mistake-card__layer--l4 { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+
+.mistake-card__block {
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+}
+.mistake-card__block:last-child { margin-bottom: 0; }
+
+.mistake-card__block--error {
+  background: rgba(239, 68, 68, 0.1);
+  border-left: 4px solid var(--color-danger);
+}
+.mistake-card__block--reason {
+  background: rgba(245, 158, 11, 0.1);
+  border-left: 4px solid var(--color-warning);
+}
+.mistake-card__block--correct {
+  background: rgba(16, 185, 129, 0.1);
+  border-left: 4px solid var(--color-success);
 }
 
-.mistake-card__layer--l1 { background: #3b82f6; }
-.mistake-card__layer--l2 { background: #f59e0b; }
-.mistake-card__layer--l3 { background: #ef4444; }
-.mistake-card__layer--l4 { background: #8b5cf6; }
+.mistake-card__block-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.mistake-card__block--error .mistake-card__block-label { color: var(--color-danger); }
+.mistake-card__block--reason .mistake-card__block-label { color: var(--color-warning); }
+.mistake-card__block--correct .mistake-card__block-label { color: var(--color-success); }
 
-.mistake-card__error-text {
-  color: #7f1d1d;
+.mistake-card__block-text {
+  font-size: 15px;
   font-weight: 500;
-  margin: 0 0 var(--space-3);
+  line-height: 1.7;
+  color: var(--text-primary);
+  margin: 0;
 }
 
-.mistake-card__reason,
-.mistake-card__correction {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-2);
-  font-size: var(--text-sm);
-  margin-bottom: var(--space-2);
-}
-
-.mistake-card__reason {
-  color: #92400e;
-}
-
-.mistake-card__correction {
-  color: #065f46;
-  font-weight: 500;
-}
-
-.mistake-card__reason-icon,
-.mistake-card__correction-icon {
-  flex-shrink: 0;
+@media (max-width: 640px) {
+  .mistake-card__header { padding: 22px 22px 16px; }
+  .mistake-card__list { padding: 20px 22px 22px; }
+  .mistake-card__icon-wrap { width: 52px; height: 52px; }
+  .mistake-card__title { font-size: 18px; }
+  .mistake-card__item { padding: 16px; }
 }
 </style>

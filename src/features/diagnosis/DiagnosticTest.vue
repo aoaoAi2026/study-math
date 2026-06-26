@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, computed, onUnmounted } from 'vue'
-import AppLayout from '@/components/layout/AppLayout.vue'
 
 type Phase = 'welcome' | 'testing' | 'result'
 interface Question {
@@ -85,79 +84,77 @@ onUnmounted(() => { if (timer) clearInterval(timer) })
 </script>
 
 <template>
-  <AppLayout>
-    <div class="diag">
-      <!-- 欢迎页 -->
-      <div v-if="phase === 'welcome'" class="diag__welcome">
-        <div class="diag__icon">🔬</div>
-        <h1 class="diag__title">智能诊断</h1>
-        <p class="diag__desc">通过 10 道精选题目，快速评估你在计算、应用题、几何、数论、计数五大模块的能力水平</p>
-        <ul class="diag__features">
-          <li>涵盖 5 大数学模块</li>
-          <li>约 5 分钟完成</li>
-          <li>即时生成能力报告</li>
-        </ul>
-        <button class="diag__btn diag__btn--primary" @click="startTest">开始诊断</button>
-      </div>
+  <div class="diag">
+    <!-- 欢迎页 -->
+    <div v-if="phase === 'welcome'" class="diag__welcome">
+      <div class="diag__icon">🔬</div>
+      <h1 class="diag__title">智能诊断</h1>
+      <p class="diag__desc">通过 10 道精选题目，快速评估你在计算、应用题、几何、数论、计数五大模块的能力水平</p>
+      <ul class="diag__features">
+        <li>涵盖 5 大数学模块</li>
+        <li>约 5 分钟完成</li>
+        <li>即时生成能力报告</li>
+      </ul>
+      <button class="diag__btn diag__btn--primary" @click="startTest">开始诊断</button>
+    </div>
 
-      <!-- 答题页 -->
-      <div v-if="phase === 'testing'" class="diag__test">
-        <div class="diag__header">
-          <div class="diag__progress-wrap">
-            <div class="diag__progress" :style="{ width: progress + '%' }"></div>
-          </div>
-          <div class="diag__meta">
-            <span>第 {{ currentIdx + 1 }} / {{ questions.length }} 题</span>
-            <span class="diag__timer">{{ formatTime(elapsed) }}</span>
-          </div>
+    <!-- 答题页 -->
+    <div v-if="phase === 'testing'" class="diag__test">
+      <div class="diag__header">
+        <div class="diag__progress-wrap">
+          <div class="diag__progress" :style="{ width: progress + '%' }"></div>
         </div>
-        <div class="diag__card">
-          <span class="diag__tag">{{ currentQ.module }}</span>
-          <h2 class="diag__question">{{ currentQ.text }}</h2>
-          <div class="diag__options">
-            <button
-              v-for="(opt, i) in currentQ.options" :key="i"
-              class="diag__option"
-              :class="{ 'diag__option--selected': answers[currentQ.id] === i }"
-              @click="selectOption(i)"
-            >
-              <span class="diag__option-label">{{ String.fromCharCode(65 + i) }}</span>
-              <span>{{ opt }}</span>
-            </button>
-          </div>
+        <div class="diag__meta">
+          <span>第 {{ currentIdx + 1 }} / {{ questions.length }} 题</span>
+          <span class="diag__timer">{{ formatTime(elapsed) }}</span>
         </div>
       </div>
-
-      <!-- 结果页 -->
-      <div v-if="phase === 'result'" class="diag__result">
-        <h1 class="diag__title">诊断报告</h1>
-        <div class="diag__score-card">
-          <div class="diag__score-num">{{ totalCorrect }}<small>/{{ questions.length }}</small></div>
-          <div class="diag__score-label">正确题数 · 用时 {{ formatTime(elapsed) }}</div>
+      <div class="diag__card">
+        <span class="diag__tag">{{ currentQ.module }}</span>
+        <h2 class="diag__question">{{ currentQ.text }}</h2>
+        <div class="diag__options">
+          <button
+            v-for="(opt, i) in currentQ.options" :key="i"
+            class="diag__option"
+            :class="{ 'diag__option--selected': answers[currentQ.id] === i }"
+            @click="selectOption(i)"
+          >
+            <span class="diag__option-label">{{ String.fromCharCode(65 + i) }}</span>
+            <span>{{ opt }}</span>
+          </button>
         </div>
-
-        <div class="diag__radar">
-          <h3>各模块得分</h3>
-          <div class="diag__bars">
-            <div v-for="m in moduleScores" :key="m.module" class="diag__bar-row">
-              <span class="diag__bar-label">{{ m.module }}</span>
-              <div class="diag__bar-track">
-                <div class="diag__bar-fill" :style="{ width: m.score + '%' }"></div>
-              </div>
-              <span class="diag__bar-val">{{ m.score }}%</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="diag__path" :style="{ borderColor: recommendedPath.color }">
-          <h3>推荐学习路径：<span :style="{ color: recommendedPath.color }">{{ recommendedPath.label }}</span></h3>
-          <p>{{ recommendedPath.desc }}</p>
-        </div>
-
-        <button class="diag__btn diag__btn--primary" @click="restart">重新诊断</button>
       </div>
     </div>
-  </AppLayout>
+
+    <!-- 结果页 -->
+    <div v-if="phase === 'result'" class="diag__result">
+      <h1 class="diag__title">诊断报告</h1>
+      <div class="diag__score-card">
+        <div class="diag__score-num">{{ totalCorrect }}<small>/{{ questions.length }}</small></div>
+        <div class="diag__score-label">正确题数 · 用时 {{ formatTime(elapsed) }}</div>
+      </div>
+
+      <div class="diag__radar">
+        <h3>各模块得分</h3>
+        <div class="diag__bars">
+          <div v-for="m in moduleScores" :key="m.module" class="diag__bar-row">
+            <span class="diag__bar-label">{{ m.module }}</span>
+            <div class="diag__bar-track">
+              <div class="diag__bar-fill" :style="{ width: m.score + '%' }"></div>
+            </div>
+            <span class="diag__bar-val">{{ m.score }}%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="diag__path" :style="{ borderColor: recommendedPath.color }">
+        <h3>推荐学习路径：<span :style="{ color: recommendedPath.color }">{{ recommendedPath.label }}</span></h3>
+        <p>{{ recommendedPath.desc }}</p>
+      </div>
+
+      <button class="diag__btn diag__btn--primary" @click="restart">重新诊断</button>
+    </div>
+  </div>
 </template>
 
 <style scoped>

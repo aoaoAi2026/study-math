@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import AppLayout from '@/components/layout/AppLayout.vue'
 
 const router = useRouter()
 
@@ -92,81 +91,79 @@ function goBack() { router.back() }
 </script>
 
 <template>
-  <AppLayout>
-    <div class="report-page">
-      <div class="page-header">
-        <button class="back-btn" @click="goBack">&larr; 返回</button>
-        <h1 class="page-title">学习报告</h1>
-        <p class="page-subtitle">每周学习进度与掌握趋势</p>
-      </div>
-
-      <!-- 周报概览 -->
-      <section class="card overview-grid">
-        <div class="ov-item" v-for="(label, key) in { studyDays: '学习天数', questions: '完成题目', accuracy: '正确率', duration: '学习时长' }" :key="key">
-          <span class="ov-value">
-            {{ key === 'accuracy' ? thisWeek[key as keyof WeeklyData] + '%' : key === 'duration' ? fmtDuration(thisWeek[key as keyof WeeklyData] as number) : thisWeek[key as keyof WeeklyData] }}
-            <span class="ov-change" :class="{ up: changes[key as keyof typeof changes].up, down: !changes[key as keyof typeof changes].up }">
-              {{ changes[key as keyof typeof changes].up ? '↑' : '↓' }}{{ changes[key as keyof typeof changes].value }}
-            </span>
-          </span>
-          <span class="ov-label">{{ label }}</span>
-        </div>
-      </section>
-
-      <!-- 模块掌握度 -->
-      <section class="card">
-        <h2 class="section-title">模块掌握度</h2>
-        <div class="module-list">
-          <div class="module-row" v-for="mod in thisWeek.modules" :key="mod.name">
-            <span class="mod-name">{{ mod.name }}</span>
-            <div class="mod-bar-bg">
-              <div class="mod-bar-fill" :style="{ width: mod.mastery + '%', background: barColor(mod.mastery) }"></div>
-            </div>
-            <span class="mod-pct">{{ mod.mastery }}%</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- 本周进步 -->
-      <section class="card">
-        <h2 class="section-title">本周进步</h2>
-        <div class="progress-list">
-          <div class="prog-item" v-for="mod in thisWeek.modules" :key="mod.name">
-            <span class="prog-name">{{ mod.name }}</span>
-            <span class="prog-val" :class="{ up: true }">
-              {{ (() => { const d = mod.mastery - (lastWeek.modules.find(m => m.name === mod.name)?.mastery ?? 0); return d >= 0 ? `↑${d}%` : `↓${Math.abs(d)}%` })() }}
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <!-- 学习建议 -->
-      <section class="card">
-        <h2 class="section-title">学习建议</h2>
-        <ul class="suggest-list">
-          <li class="suggest-item" v-for="(s, i) in suggestions" :key="i">
-            <span class="suggest-icon">💡</span>
-            <span class="suggest-text">{{ s }}</span>
-          </li>
-        </ul>
-      </section>
-
-      <!-- 知识点排行 -->
-      <section class="card">
-        <h2 class="section-title">知识点掌握排行</h2>
-        <ol class="rank-list">
-          <li class="rank-item" v-for="(t, i) in thisWeek.topTopics" :key="t.name">
-            <span class="rank-num" :class="'rank-' + (i + 1)">{{ i + 1 }}</span>
-            <span class="rank-name">{{ t.name }}</span>
-            <span class="rank-bar-bg">
-              <span class="rank-bar-fill" :style="{ width: t.mastery + '%', background: barColor(t.mastery) }"></span>
-            </span>
-            <span class="rank-pct">{{ t.mastery }}%</span>
-          </li>
-        </ol>
-      </section>
+  <div class="report-page">
+    <div class="page-header">
+      <button class="back-btn" @click="goBack">&larr; 返回</button>
+      <h1 class="page-title">学习报告</h1>
+      <p class="page-subtitle">每周学习进度与掌握趋势</p>
     </div>
-  </AppLayout>
+
+    <!-- 周报概览 -->
+    <section class="card overview-grid">
+      <div class="ov-item" v-for="(label, key) in { studyDays: '学习天数', questions: '完成题目', accuracy: '正确率', duration: '学习时长' }" :key="key">
+        <span class="ov-value">
+          {{ key === 'accuracy' ? thisWeek[key as keyof WeeklyData] + '%' : key === 'duration' ? fmtDuration(thisWeek[key as keyof WeeklyData] as number) : thisWeek[key as keyof WeeklyData] }}
+          <span class="ov-change" :class="{ up: changes[key as keyof typeof changes].up, down: !changes[key as keyof typeof changes].up }">
+            {{ changes[key as keyof typeof changes].up ? '↑' : '↓' }}{{ changes[key as keyof typeof changes].value }}
+          </span>
+        </span>
+        <span class="ov-label">{{ label }}</span>
+      </div>
+    </section>
+
+    <!-- 模块掌握度 -->
+    <section class="card">
+      <h2 class="section-title">模块掌握度</h2>
+      <div class="module-list">
+        <div class="module-row" v-for="mod in thisWeek.modules" :key="mod.name">
+          <span class="mod-name">{{ mod.name }}</span>
+          <div class="mod-bar-bg">
+            <div class="mod-bar-fill" :style="{ width: mod.mastery + '%', background: barColor(mod.mastery) }"></div>
+          </div>
+          <span class="mod-pct">{{ mod.mastery }}%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 本周进步 -->
+    <section class="card">
+      <h2 class="section-title">本周进步</h2>
+      <div class="progress-list">
+        <div class="prog-item" v-for="mod in thisWeek.modules" :key="mod.name">
+          <span class="prog-name">{{ mod.name }}</span>
+          <span class="prog-val" :class="{ up: true }">
+            {{ (() => { const d = mod.mastery - (lastWeek.modules.find(m => m.name === mod.name)?.mastery ?? 0); return d >= 0 ? `↑${d}%` : `↓${Math.abs(d)}%` })() }}
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 学习建议 -->
+    <section class="card">
+      <h2 class="section-title">学习建议</h2>
+      <ul class="suggest-list">
+        <li class="suggest-item" v-for="(s, i) in suggestions" :key="i">
+          <span class="suggest-icon">💡</span>
+          <span class="suggest-text">{{ s }}</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 知识点排行 -->
+    <section class="card">
+      <h2 class="section-title">知识点掌握排行</h2>
+      <ol class="rank-list">
+        <li class="rank-item" v-for="(t, i) in thisWeek.topTopics" :key="t.name">
+          <span class="rank-num" :class="'rank-' + (i + 1)">{{ i + 1 }}</span>
+          <span class="rank-name">{{ t.name }}</span>
+          <span class="rank-bar-bg">
+            <span class="rank-bar-fill" :style="{ width: t.mastery + '%', background: barColor(t.mastery) }"></span>
+          </span>
+          <span class="rank-pct">{{ t.mastery }}%</span>
+        </li>
+      </ol>
+    </section>
+  </div>
 </template>
 
 <style scoped>

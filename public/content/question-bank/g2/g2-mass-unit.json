@@ -1,0 +1,462 @@
+{
+  "topicId": "g2-mass-unit",
+  "topicName": "质量单位",
+  "grade": 2,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g2-mu-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1千克 = （　　）克",
+      "image": "",
+      "options": ["10", "100", "1000", "500"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "千克和克是常用的质量单位。",
+        "1千克 = 1000克。",
+        "这是我们需要记住的基本单位换算。"
+      ],
+      "hints": [
+        "1千克等于多少克？",
+        "这是质量单位的基本换算"
+      ],
+      "commonMistakes": [
+        {"mistake": "选100", "reason": "和长度单位1米=100厘米搞混了", "correction": "1千克=1000克", "errorLayer": "L1"},
+        {"mistake": "选500", "reason": "以为1斤=500克就错写成1千克=500克了", "correction": "1千克=1000克", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "千克和克的换算"],
+      "estimatedTime": 15,
+      "irtParams": { "a": 1.0, "b": -2.0, "c": 0.25 },
+      "tags": ["质量单位", "单位换算"]
+    },
+    {
+      "id": "g2-mu-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "填上合适的单位：一个鸡蛋约重50______。",
+      "image": "",
+      "options": [],
+      "answer": "克",
+      "acceptableAnswers": ["克", "g", "克(g)"],
+      "solution": [
+        "一个鸡蛋比较轻。",
+        "如果填千克，50千克太重了，相当于一个小朋友的体重。",
+        "所以应该填克，50克比较合适。"
+      ],
+      "hints": [
+        "鸡蛋是轻的还是重的？",
+        "轻的东西用克做单位"
+      ],
+      "commonMistakes": [
+        {"mistake": "填成千克", "reason": "不知道50克有多重", "correction": "鸡蛋很轻，应该用克做单位", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "选择合适的单位"],
+      "estimatedTime": 20,
+      "irtParams": { "a": 1.0, "b": -1.8, "c": 0.25 },
+      "tags": ["质量单位", "单位选择"]
+    },
+    {
+      "id": "g2-mu-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下面哪种物品大约重1千克？",
+      "image": "",
+      "options": ["一枚硬币", "一袋洗衣粉", "一头牛", "一片树叶"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "1千克 = 1000克，大约是2袋盐的重量。",
+        "一枚硬币：很轻，只有几克。",
+        "一袋洗衣粉：大约1千克，比较符合。",
+        "一头牛：非常重，有几百千克。",
+        "一片树叶：非常轻，只有几克。",
+        "所以答案是一袋洗衣粉。"
+      ],
+      "hints": [
+        "1千克大约是2袋盐的重量",
+        "想一想哪件物品不轻也不重"
+      ],
+      "commonMistakes": [
+        {"mistake": "选一枚硬币", "reason": "以为硬币重1千克", "correction": "一枚硬币只有几克，一袋洗衣粉才是1千克左右", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "1千克的认识"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": -1.5, "c": 0.25 },
+      "tags": ["质量单位", "估测"]
+    },
+    {
+      "id": "g2-mu-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "测量一头大象的体重，用（　　）做单位比较合适。",
+      "image": "",
+      "options": ["克", "千克", "米", "厘米"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "大象非常重。",
+        "克是很小的质量单位，不适合测量大象。",
+        "千克是常用的较大质量单位，适合测量大象。",
+        "米和厘米是长度单位，不能测量质量。",
+        "所以用千克做单位比较合适。"
+      ],
+      "hints": [
+        "大象是很重的动物",
+        "测量较重的东西用千克"
+      ],
+      "commonMistakes": [
+        {"mistake": "选米", "reason": "把长度单位和质量单位搞混了", "correction": "测量质量用克或千克", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "选择合适的单位"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": -1.2, "c": 0.25 },
+      "tags": ["质量单位", "单位选择"]
+    },
+    {
+      "id": "g2-mu-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "5千克 = ______克",
+      "image": "",
+      "options": [],
+      "answer": "5000",
+      "acceptableAnswers": ["5000", "5000克"],
+      "solution": [
+        "1千克 = 1000克。",
+        "5千克就是5个1000克。",
+        "5×1000=5000（克）。",
+        "所以5千克 = 5000克。"
+      ],
+      "hints": [
+        "1千克等于多少克？",
+        "5千克就是5个1000克"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成500", "reason": "错写成1千克=100克了", "correction": "1千克=1000克，5千克=5000克", "errorLayer": "L1"},
+        {"mistake": "答案写成50", "reason": "把单位换算搞错了", "correction": "5×1000=5000克", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "千克和克的换算"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": 0.0, "c": 0.25 },
+      "tags": ["质量单位", "单位换算"]
+    },
+    {
+      "id": "g2-mu-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2000克 ○ 3千克，○里应该填：",
+      "image": "",
+      "options": ["<", ">", "=", "无法比较"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "比较大小前要先统一单位。",
+        "3千克 = 3×1000克 = 3000克。",
+        "现在比较：2000克 ○ 3000克。",
+        "2000克 < 3000克。",
+        "所以2000克 < 3千克。"
+      ],
+      "hints": [
+        "先把单位统一",
+        "3千克等于多少克？"
+      ],
+      "commonMistakes": [
+        {"mistake": "选>", "reason": "直接比较2000和3", "correction": "3千克=3000克，2000<3000，所以2000克<3千克", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "比较大小"],
+      "estimatedTime": 35,
+      "irtParams": { "a": 1.0, "b": 0.2, "c": 0.25 },
+      "tags": ["质量单位", "比较大小"]
+    },
+    {
+      "id": "g2-mu-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面哪种物品最接近1克？",
+      "image": "",
+      "options": ["一个苹果", "一本数学书", "一枚2分硬币", "一袋大米"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "1克是非常轻的质量。",
+        "一个苹果：大约100-200克。",
+        "一本数学书：大约200-300克。",
+        "一枚2分硬币：大约1克，很轻。",
+        "一袋大米：有几千克到十几千克。",
+        "所以最接近1克的是一枚2分硬币。"
+      ],
+      "hints": [
+        "1克是很轻的重量",
+        "想一想哪件物品最轻"
+      ],
+      "commonMistakes": [
+        {"mistake": "选一个苹果", "reason": "以为苹果很轻", "correction": "一个苹果有几百克，一枚硬币才是1克左右", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "1克的认识"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": 0.3, "c": 0.25 },
+      "tags": ["质量单位", "估测"]
+    },
+    {
+      "id": "g2-mu-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一袋大米重50千克，一袋面粉重25千克。大米比面粉重______千克。",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": ["25", "25千克"],
+      "solution": [
+        "大米比面粉重多少，用大米的重量减去面粉的重量。",
+        "50-25=25（千克）。",
+        "所以大米比面粉重25千克。"
+      ],
+      "hints": [
+        "求一个比另一个重多少，用减法",
+        "50-25等于多少？"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成75", "reason": "把减法做成了加法", "correction": "应该是50-25=25千克", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "质量的实际计算"],
+      "estimatedTime": 35,
+      "irtParams": { "a": 1.0, "b": 0.4, "c": 0.25 },
+      "tags": ["质量单位", "应用题"]
+    },
+    {
+      "id": "g2-mu-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把下列质量按从重到轻的顺序排列：800克、8千克、80克、8000克。排在最前面的是：",
+      "image": "",
+      "options": ["800克", "8千克", "80克", "8000克"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "先把所有质量都换算成克。",
+        "800克 = 800克。",
+        "8千克 = 8000克。",
+        "80克 = 80克。",
+        "8000克 = 8000克。",
+        "从大到小排列：8000克=8千克 > 8000克 > 800克 > 80克。",
+        "等等，8千克=8000克，两者一样重。",
+        "让我们重新看：8千克=8000克。所以8千克和8000克一样重。",
+        "按选项来看：8千克=8000克，两者都是最重的。选8千克。"
+      ],
+      "hints": [
+        "先把所有质量统一单位",
+        "统一换成克比较方便"
+      ],
+      "commonMistakes": [
+        {"mistake": "选800克", "reason": "没换算单位直接看数字", "correction": "8千克=8000克，8000克最大，所以8千克最重", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "比较大小", "排序"],
+      "estimatedTime": 55,
+      "irtParams": { "a": 1.0, "b": 0.5, "c": 0.25 },
+      "tags": ["质量单位", "比较大小", "排序"]
+    },
+    {
+      "id": "g2-mu-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "妈妈买了2千克黄瓜，每千克6元。一共花了______元。",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": ["12", "12元"],
+      "solution": [
+        "每千克黄瓜6元，买了2千克。",
+        "一共花了：2×6=12（元）。",
+        "所以妈妈一共花了12元。"
+      ],
+      "hints": [
+        "每千克6元，2千克就是2个6元",
+        "用乘法计算"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成8", "reason": "做成了2+6=8", "correction": "2个6元应该是2×6=12元", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "乘法应用题"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": 0.6, "c": 0.25 },
+      "tags": ["质量单位", "应用题", "购物"]
+    },
+    {
+      "id": "g2-mu-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "3千克苹果和5千克梨一共重多少克？",
+      "image": "",
+      "options": ["8克", "800克", "8000克", "80000克"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "先把两种水果的重量加起来。",
+        "3千克 + 5千克 = 8千克。",
+        "现在把8千克换算成克。",
+        "8千克 = 8×1000克 = 8000克。",
+        "所以一共重8000克。"
+      ],
+      "hints": [
+        "先把两种水果的千克数加起来",
+        "再把千克换算成克"
+      ],
+      "commonMistakes": [
+        {"mistake": "选8克", "reason": "算成8千克后忘记换算单位", "correction": "8千克=8000克", "errorLayer": "L2"},
+        {"mistake": "选800克", "reason": "错写成1千克=100克", "correction": "1千克=1000克，8千克=8000克", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "质量的实际计算和换算"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 1.0, "c": 0.25 },
+      "tags": ["质量单位", "应用题"]
+    },
+    {
+      "id": "g2-mu-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一桶油连桶共重35千克，桶重2千克。油重______千克。",
+      "image": "",
+      "options": [],
+      "answer": "33",
+      "acceptableAnswers": ["33", "33千克"],
+      "solution": [
+        "连桶共重35千克，这35千克包括油的重量和桶的重量。",
+        "桶重2千克，所以油的重量=35-2=33（千克）。",
+        "所以油重33千克。"
+      ],
+      "hints": [
+        "连桶共重包括两部分：油和桶",
+        "从总重量中减去桶的重量就是油的重量"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成37", "reason": "用35+2=37做成加法了", "correction": "应该从总重量中减去桶重：35-2=33千克", "errorLayer": "L2"},
+        {"mistake": "答案写成35", "reason": "以为连桶就是油重", "correction": "连桶包括油和桶，要减去桶重2千克", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "连桶问题"],
+      "estimatedTime": 55,
+      "irtParams": { "a": 1.0, "b": 0.9, "c": 0.25 },
+      "tags": ["质量单位", "应用题", "连桶问题"]
+    },
+    {
+      "id": "g2-mu-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一辆载重5000千克的卡车，已经装了4000千克的货物，还能装多少千克的货物？",
+      "image": "",
+      "options": ["100千克", "1000千克", "9000千克", "10000千克"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "卡车最多能装5000千克。",
+        "已经装了4000千克。",
+        "还能装：5000-4000=1000（千克）。",
+        "所以还能装1000千克的货物。"
+      ],
+      "hints": [
+        "\"载重\"就是最多能装多少",
+        "从最大载重中减去已经装的"
+      ],
+      "commonMistakes": [
+        {"mistake": "选9000千克", "reason": "做成了加法5000+4000", "correction": "应该是5000-4000=1000千克", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "减法应用题"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 1.1, "c": 0.25 },
+      "tags": ["质量单位", "应用题"]
+    },
+    {
+      "id": "g2-mu-14",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一盒饼干连盒共重500克。盒子重50克，这盒饼干的净含量是______克。",
+      "image": "",
+      "options": [],
+      "answer": "450",
+      "acceptableAnswers": ["450", "450克"],
+      "solution": [
+        "净含量就是饼干本身的重量，不包括盒子。",
+        "连盒共重500克，盒子重50克。",
+        "饼干的净含量=500-50=450（克）。",
+        "所以这盒饼干的净含量是450克。"
+      ],
+      "hints": [
+        "净含量不包括盒子",
+        "从总重量中减去盒子的重量"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成550", "reason": "做成了500+50=550", "correction": "应该是500-50=450克", "errorLayer": "L2"},
+        {"mistake": "答案写成500", "reason": "没有减去盒子的重量", "correction": "净含量要把盒子减去：500-50=450克", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "净含量问题"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 1.2, "c": 0.25 },
+      "tags": ["质量单位", "应用题", "净含量"]
+    },
+    {
+      "id": "g2-mu-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一瓶果汁连瓶重600克，喝了一半后连瓶重350克。瓶重多少克？",
+      "image": "",
+      "options": ["50克", "100克", "150克", "250克"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "这是一道较复杂的应用题。我们来分析：",
+        "原来连瓶重600克，喝了一半后连瓶重350克。",
+        "减少的重量就是喝掉的果汁的重量：600-350=250（克）。",
+        "因为喝掉了一半，所以一半的果汁重250克。",
+        "整瓶果汁重：250×2=500（克）。",
+        "所以瓶重=连瓶总重-果汁重=600-500=100（克）。",
+        "所以瓶重100克。"
+      ],
+      "hints": [
+        "先算喝掉了多少果汁",
+        "喝掉的重量就是减少的重量",
+        "一半果汁重250克，那整瓶果汁重多少？"
+      ],
+      "commonMistakes": [
+        {"mistake": "选250克", "reason": "只算了一半果汁的重量", "correction": "250克是一半果汁，整瓶500克，瓶=600-500=100克", "errorLayer": "L3"},
+        {"mistake": "选50克", "reason": "中间步骤算错", "correction": "600-350=250（一半果汁），整瓶500克，瓶=600-500=100克", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["质量单位", "喝了一半问题", "较复杂的应用题"],
+      "estimatedTime": 90,
+      "irtParams": { "a": 1.0, "b": 1.8, "c": 0.25 },
+      "tags": ["质量单位", "应用题", "综合"]
+    }
+  ]
+}

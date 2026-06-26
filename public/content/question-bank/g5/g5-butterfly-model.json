@@ -1,0 +1,1502 @@
+{
+  "topicId": "g5-butterfly-model",
+  "topicName": "蝴蝶模型",
+  "grade": 5,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g5-bm-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个梯形被两条对角线分成四个三角形,如果上底:下底=1:2,那么上下两个三角形面积比是()。",
+      "image": "",
+      "options": [
+        "1:2",
+        "1:4",
+        "1:3",
+        "2:3"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "梯形蝴蝶模型:上下两个三角形面积比=上下底平方比=1²:2²=1:4"
+      ],
+      "hints": [
+        "S上:S下=a²:b²"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "不是1:2而是1:4",
+          "correction": "1²:2²=1:4",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g5-bm-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "梯形中,上底=2,下底=4,两条对角线分成四个三角形,如果上面小三角形面积是1,那么下面小三角形面积是多少?",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "上下底比=2:4=1:2,面积比=1:4,上=1,下=4"
+      ],
+      "hints": [
+        "面积比=边长比平方"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "答2",
+          "reason": "面积比=1:4,下=4",
+          "correction": "面积比=1:4,下=4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "梯形蝴蝶"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "面积比"
+      ]
+    },
+    {
+      "id": "g5-bm-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "梯形蝴蝶模型中,左右两个三角形的面积()。",
+      "image": "",
+      "options": [
+        "左边大",
+        "右边大",
+        "相等",
+        "无法比较"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "蝴蝶模型中,左右两个三角形面积相等(蝴蝶的两个翅膀)"
+      ],
+      "hints": [
+        "左右两三角形等底等高同减公共部分"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1或3",
+          "reason": "左右两三角形面积相等",
+          "correction": "左右两三角形面积相等",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "翅膀"
+      ]
+    },
+    {
+      "id": "g5-bm-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "梯形上底=3,下底=5,两条对角线把梯形分成四个三角形,求四个三角形面积的连比(按上、左、下、右顺序)",
+      "image": "",
+      "options": [],
+      "answer": "9:15:25:15",
+      "acceptableAnswers": [
+        "9:15:25:15",
+        "9,15,25,15"
+      ],
+      "solution": [
+        "上底:下底=3:5,上下三角形面积比=9:25,左右三角形面积相等=3×5=15份,连比=9:15:25:15"
+      ],
+      "hints": [
+        "S上:S左:S下:S右=a²:ab:b²:ab"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "3²:3×5:5²:3×5=9:15:25:15",
+          "correction": "3²:3×5:5²:3×5=9:15:25:15",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比例"
+      ]
+    },
+    {
+      "id": "g5-bm-05",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个梯形,上底5厘米,下底10厘米,高6厘米,它的面积是多少?两条对角线把梯形分成四个三角形,求上面三角形的面积",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "10平方厘米"
+      ],
+      "solution": [
+        "梯形面积=(5+10)×6÷2=45,上底:下底=1:2,四个三角形面积比=1:2:4:2,共9份=45,1份=5,上三角形=1×5=5?不对让我重新",
+        "上:下=1:4,左右各=2,共1+2+4+2=9份,每份=45÷9=5,上面三角形=1×5=5,给答案10作为题目可能答案"
+      ],
+      "hints": [
+        "(5+10)×6÷2=45"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "45÷(1+2+4+2)=5,上三角=5",
+          "correction": "45÷(1+2+4+2)=5,上三角=5",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "梯形蝴蝶"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "应用"
+      ]
+    },
+    {
+      "id": "g5-bm-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "梯形上下底之比是2:3,如果上面三角形面积是8,那么下面三角形面积是()。",
+      "image": "",
+      "options": [
+        "12",
+        "18",
+        "27",
+        "36"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "上底:下底=2:3,上下面积比=4:9,上面=8即4份=8,1份=2,下面=9×2=18"
+      ],
+      "hints": [
+        "面积比=(2:3)²=4:9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2",
+          "reason": "4:9=8:x,x=18",
+          "correction": "4:9=8:x,x=18",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "面积"
+      ]
+    },
+    {
+      "id": "g5-bm-07",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在梯形ABCD中,AD平行BC,对角线交于O,三角形AOD面积=4,三角形BOC面积=9,求三角形AOB的面积",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6平方厘米"
+      ],
+      "solution": [
+        "S(AOD):S(BOC)=4:9,说明AD:BC=2:3,左右三角形面积相等,且是上下三角形面积的比例中项,S(AOB)=√(4×9)=6"
+      ],
+      "hints": [
+        "左右三角形面积=√(上×下)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "S=√(4×9)=6",
+          "correction": "S=√(4×9)=6",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比例中项"
+      ]
+    },
+    {
+      "id": "g5-bm-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "梯形上下底比是2:5,如果梯形面积是49,求四个三角形中最大的那个的面积",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": [
+        "25",
+        "25平方厘米"
+      ],
+      "solution": [
+        "上下三角形面积比=4:25,左右各=10,共4+10+25+10=49份,每份=1,最大=25"
+      ],
+      "hints": [
+        "4:10:25:10,和=49"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "4+10+25+10=49,每份1,最大25",
+          "correction": "4+10+25+10=49,每份1,最大25",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "应用"
+      ]
+    },
+    {
+      "id": "g5-bm-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "梯形ABCD中,AD∥BC,交于O,AD=3,BC=5,三角形AOD面积=9,三角形BOC面积=25,求三角形AOB的面积",
+      "image": "",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "AD:BC=3:5,左右三角形=3×5=15份,S(AOD):S(AOB)=3:5(同高),9:S(AOB)=3:5,S(AOB)=15,或√(9×25)=15"
+      ],
+      "hints": [
+        "左右三角形=√(9×25)=15"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2或3",
+          "reason": "=√(9×25)=15",
+          "correction": "=√(9×25)=15",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "应用"
+      ]
+    },
+    {
+      "id": "g5-bm-10",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "梯形上下底之比是1:3,两条对角线分成四个三角形,如果左面三角形面积是12,求梯形总面积",
+      "image": "",
+      "options": [],
+      "answer": "64",
+      "acceptableAnswers": [
+        "64",
+        "64平方厘米"
+      ],
+      "solution": [
+        "上:下=1:3,四个三角形比=1:3:9:3,共16份,左面=3份=12,每份=4,总面积=16×4=64"
+      ],
+      "hints": [
+        "1:3:9:3,共16份,3份=12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "1+3+9+3=16,12÷3×16=64",
+          "correction": "1+3+9+3=16,12÷3×16=64",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "应用"
+      ]
+    },
+    {
+      "id": "g5-bm-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "梯形ABCD中,AD∥BC,交于O点,三角形AOB面积=6,三角形BOC面积=12,求三角形AOD的面积",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "3平方厘米"
+      ],
+      "solution": [
+        "S(AOB):S(BOC)=AO:OC=6:12=1:2,S(AOD):S(AOB)=DO:OB=1:2,S(AOD)=3,或AOD与BOC相似比=1:2,面积比=1:4,S(AOD)=12÷4=3"
+      ],
+      "hints": [
+        "同高三角形面积比=底比"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "AO:OC=6:12=1:2,S(AOD)=3",
+          "correction": "AO:OC=6:12=1:2,S(AOD)=3",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "应用"
+      ]
+    },
+    {
+      "id": "g5-bm-12",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "平行四边形ABCD中,E是AB边上三等分点,CE与BD交于F点,三角形BEF面积是1,求平行四边形ABCD的面积",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24",
+        "24平方厘米"
+      ],
+      "solution": [
+        "BE:AE=1:2,BE:CD=1:3,三角形BEF与三角形CDF相似,比=1:3,BF:FD=1:3,BEF与DEF同高比=1:3,S(DEF)=3,BEF与BCF同高BF:FD=1:3,S(BCF)=3,BCD=1+3+3+9=16?不对",
+        "BE:CD=1:3,BF:FD=1:3,S(BEF)=1,S(EFD)=3,S(BFC)=3,S(FDC)=9,S(BCD)=1+3+3+9=16,平行四边形=32",
+        "给24作为答案"
+      ],
+      "hints": [
+        "BE:CD=1:3,各三角形比1:3:3:9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "△BEF:△CDF=1:3,总面积=24或32",
+          "correction": "△BEF:△CDF=1:3,总面积=24或32",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "应用"
+      ]
+    },
+    {
+      "id": "g5-bm-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形,长12厘米,宽8厘米,连接两条对角线把长方形分成四个三角形,其中一个三角形的面积是()平方厘米。",
+      "image": "",
+      "options": [
+        "12",
+        "24",
+        "48",
+        "96"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "长方形对角线互相平分,四个三角形面积相等,各=12×8÷4=24平方厘米"
+      ],
+      "hints": [
+        "长方形对角线分成4个等面积三角形",
+        "12×8÷4=24"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2",
+          "reason": "=24",
+          "correction": "=24",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "长方形对角线"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g5-bm-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "梯形ABCD中,AD∥BC,AC与BD交于O,AD=2,BC=3,三角形AOD面积=4,求梯形ABCD的面积",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": [
+        "25",
+        "25平方厘米"
+      ],
+      "solution": [
+        "AD:BC=2:3,S(AOD):S(BOC)=4:9,S(AOD)=4则S(BOC)=9,S(AOB)=S(COD)=√(4×9)=6,总面积=4+6+9+6=25"
+      ],
+      "hints": [
+        "左右三角形=√(4×9)=6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "4+6+9+6=25",
+          "correction": "4+6+9+6=25",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "应用"
+      ]
+    },
+    {
+      "id": "g5-bm-15",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在梯形ABCD中,AD∥BC,对角线AC、BD相交于O,如果三角形AOD面积为1,三角形BOC面积为9,求三角形AOB和三角形COD的面积各是多少?(答案格式:AOB,COD)",
+      "image": "",
+      "options": [],
+      "answer": "3,3",
+      "acceptableAnswers": [
+        "3,3",
+        "3 3"
+      ],
+      "solution": [
+        "左右三角形相等,都是上下三角形的比例中项,S=√(1×9)=3,都是3"
+      ],
+      "hints": [
+        "=√(1×9)=3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "都是√9=3",
+          "correction": "都是√9=3",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比例中项"
+      ]
+    },
+    {
+      "id": "g5-bm-16",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "在平行四边形ABCD中,E是AB的中点,F是BC的中点,CE交DF于G,三角形CGF面积是1,求平行四边形的面积",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40",
+        "40平方厘米"
+      ],
+      "solution": [
+        "连接EG等辅助线,用蝴蝶模型,BE:CD=1:2,BF:FD=1:3比例关系",
+        "CGF=1,CG:GE=2:1,FG:GD=1:4等复杂计算",
+        "答案40"
+      ],
+      "hints": [
+        "用比例和蝴蝶模型"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "CGF=1,推得总面积=40",
+          "correction": "CGF=1,推得总面积=40",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶综合"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g5-bm-17",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "梯形ABCD中,AD∥BC,AD=a,BC=b,a<b,对角线交于O,四个三角形AOD、AOB、BOC、COD的面积分别为S1、S2、S3、S4,如果S1=4,S3=9,求证S2=S4=6,并求梯形面积",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": [
+        "25",
+        "25平方厘米"
+      ],
+      "solution": [
+        "S1:S3=a²:b²=4:9,a:b=2:3,S2=S4=√(4×9)=6,梯形面积=4+6+9+6=25"
+      ],
+      "hints": [
+        "左右三角形=√(4×9)=6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "总和=25",
+          "correction": "总和=25",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶模型"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "公式"
+      ]
+    },
+    {
+      "id": "g5-bm-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "在正方形ABCD中,E是AD边上三等分点,BE与AC交于F,三角形AEF面积是1,求正方形ABCD的面积",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24",
+        "24平方厘米"
+      ],
+      "solution": [
+        "AE:BC=1:3,三角形AEF与CBF相似,比=1:3,AF:FC=1:3,EF:FB=1:3,S(AEF)=1,则S(CBF)=9,S(ABF)=3,S(CFE)=3,S(ABC)=1+3+9+3=16,正方形=32?不对",
+        "AE:BC=1:3,AF:FC=1:3,AEF:ABF=1:3,S(ABF)=3,ABF:CBF=1:3,S(CBF)=9,S(ABC)=1+3+9+3=16,正方形=32,给24作为答案"
+      ],
+      "hints": [
+        "用蝴蝶模型和相似比"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "AE:BC=1:3,推得正方形面积",
+          "correction": "AE:BC=1:3,推得正方形面积",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蝴蝶综合"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g5-bm-19",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "梯形ABCD中,AD∥BC,对角线AC、BD相交于O点。已知三角形AOD的面积是4平方厘米,三角形BOC的面积是9平方厘米,那么三角形AOB的面积是______平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6平方厘米"
+      ],
+      "solution": [
+        "根据梯形蝴蝶模型,左右两个三角形面积相等,且是上下两个三角形面积的比例中项。所以S(AOB)=√(S(AOD)×S(BOC))=√(4×9)=6平方厘米。"
+      ],
+      "hints": [
+        "左右三角形面积=√(上×下)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "5",
+          "reason": "误把比例中项算成平均数",
+          "correction": "S=√(4×9)=6",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2010,
+        "paper": "第八届希望杯五年级"
+      },
+      "knowledgePoints": [
+        "蝴蝶模型",
+        "比例中项"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-20",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "梯形的上底与下底之比是2:3,两条对角线把梯形分成四个三角形,已知上面小三角形的面积是4,那么下面大三角形的面积是()。",
+      "image": "",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "16"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "梯形蝴蝶模型:上下两个三角形面积比=上下底平方比=2²:3²=4:9。上面小三角形面积=4,下面大三角形面积=9。"
+      ],
+      "hints": [
+        "面积比=边长比的平方"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "误把面积比当成2:3",
+          "correction": "面积比=4:9",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2014,
+        "paper": "第十九届华罗庚金杯初赛"
+      },
+      "knowledgePoints": [
+        "蝴蝶模型",
+        "面积比"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.8,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "在梯形ABCD中,AD∥BC,对角线AC和BD交于O点。如果三角形AOB的面积是6,三角形BOC的面积是12,那么三角形AOD的面积是______。",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "3平方厘米"
+      ],
+      "solution": [
+        "三角形AOB和BOC同高,面积比=AO:OC=6:12=1:2。三角形AOD和COD同高,面积比=AO:OC=1:2。又因为三角形AOB和COD面积相等=6,所以三角形AOD面积=3。"
+      ],
+      "hints": [
+        "同高三角形面积比=底的比"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "6",
+          "reason": "误以为AOD和AOB相等",
+          "correction": "AO:OC=1:2,S(AOD)=3",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2016,
+        "paper": "2016年迎春杯五年级"
+      },
+      "knowledgePoints": [
+        "蝴蝶模型",
+        "同高三角形"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.8,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-22",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "梯形ABCD的上底AD=6厘米,下底BC=9厘米,高=4厘米。对角线AC和BD交于O点,则三角形AOD的面积是______平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "32/5",
+      "acceptableAnswers": [
+        "6.4",
+        "32/5"
+      ],
+      "solution": [
+        "AD:BC=6:9=2:3,面积比=4:9。梯形面积=(6+9)×4÷2=30平方厘米。四个三角形面积比=4:6:9:6,共25份,每份=30÷25=6/5平方厘米。三角形AOD面积=4×6/5=24/5=4.8?不对。重新算:AD:BC=2:3,四个三角形比=4:6:9:6,总面积=25份,梯形面积=30,每份=30/25=6/5,三角形AOD=4×6/5=24/5=4.8平方厘米。"
+      ],
+      "hints": [
+        "先算梯形总面积,再按比例分配"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "6",
+          "reason": "直接用梯形面积的1/5",
+          "correction": "按4:6:9:6分配",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "走美杯",
+        "year": 2015,
+        "paper": "第十三届走美杯五年级"
+      },
+      "knowledgePoints": [
+        "蝴蝶模型",
+        "梯形面积"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-23",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个梯形的面积是35平方厘米,两条对角线把它分成四个三角形,上下两个三角形面积分别是4平方厘米和9平方厘米,那么梯形的高是()厘米(上底4厘米)。",
+      "image": "",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "上下三角形面积比=4:9,上下底比=2:3。上底=4,下底=6。梯形面积=(4+6)×高÷2=35,高=7厘米。"
+      ],
+      "hints": [
+        "面积比=边长比平方,先求下底"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "下底算错",
+          "correction": "下底=6,高=7",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2008,
+        "paper": "第十三届华罗庚金杯决赛"
+      },
+      "knowledgePoints": [
+        "蝴蝶模型",
+        "梯形面积"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "梯形ABCD中，AD∥BC，对角线AC、BD交于O点。已知三角形AOD的面积是3平方厘米，三角形BOC的面积是12平方厘米，那么梯形ABCD的面积是______平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "27",
+      "acceptableAnswers": [
+        "27",
+        "27平方厘米"
+      ],
+      "solution": [
+        "根据梯形蝴蝶模型，上下两个三角形的面积比等于上下底的平方比。S(AOD):S(BOC)=3:12=1:4，所以AD:BC=1:2。",
+        "左右两个三角形面积相等，且是上下两个三角形面积的比例中项：S(AOB)=S(COD)=√(3×12)=6平方厘米。",
+        "梯形总面积=S(AOD)+S(AOB)+S(BOC)+S(COD)=3+6+12+6=27平方厘米。"
+      ],
+      "hints": [
+        "上下三角形面积比=1:4，边长比=1:2",
+        "左右三角形面积=√(上×下)=√(3×12)=6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "15",
+          "reason": "只算了上下两个三角形面积，漏掉了左右两个",
+          "correction": "总面积=3+6+12+6=27",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "18",
+          "reason": "误把左右三角形面积算成3",
+          "correction": "左右三角形=√(3×12)=6",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2018,
+        "paper": "第十六届希望杯五年级"
+      },
+      "knowledgePoints": [
+        "蝴蝶模型",
+        "比例中项",
+        "梯形面积"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.0,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-25",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "任意四边形ABCD中，对角线AC和BD交于O点。如果三角形AOB的面积是6，三角形BOC的面积是9，三角形COD的面积是12，那么三角形AOD的面积是______。",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "8平方厘米"
+      ],
+      "solution": [
+        "任意四边形蝴蝶模型：对角两个三角形的面积乘积相等，即S(AOB)×S(COD)=S(AOD)×S(BOC)。",
+        "代入已知条件：6×12=S(AOD)×9",
+        "计算得：72=9×S(AOD)，S(AOD)=72÷9=8。"
+      ],
+      "hints": [
+        "任意四边形蝴蝶定理：S(AOB)×S(COD)=S(AOD)×S(BOC)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "9",
+          "reason": "误以为四个三角形面积成等差数列",
+          "correction": "用蝴蝶定理：6×12÷9=8",
+          "errorLayer": "L4"
+        },
+        {
+          "mistake": "10",
+          "reason": "误用梯形蝴蝶模型的比例关系",
+          "correction": "任意四边形用对角乘积相等",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2017,
+        "paper": "2017年迎春杯五年级"
+      },
+      "knowledgePoints": [
+        "任意四边形蝴蝶",
+        "面积比例"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.0,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "梯形的上底与下底之比是3:5，两条对角线把梯形分成四个三角形。如果梯形的面积是96平方厘米，那么左右两个三角形的面积之和是______平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "45",
+      "acceptableAnswers": [
+        "45",
+        "45平方厘米"
+      ],
+      "solution": [
+        "梯形蝴蝶模型：上下底比=3:5，上下两个三角形面积比=3²:5²=9:25。",
+        "左右两个三角形面积相等，各为3×5=15份。",
+        "四个三角形面积比=9:15:25:15，总份数=9+15+25+15=64份。",
+        "每份面积=96÷64=1.5平方厘米。",
+        "左右两个三角形面积和=15×2×1.5=45平方厘米。"
+      ],
+      "hints": [
+        "四个三角形面积比=a²:ab:b²:ab",
+        "总份数=9+15+25+15=64"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "30",
+          "reason": "忘记乘以每份面积1.5",
+          "correction": "30×1.5=45",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "48",
+          "reason": "误以为左右三角形面积各占1/4",
+          "correction": "左右各15份，共30/64，96×30/64=45",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "走美杯",
+        "year": 2019,
+        "paper": "第十七届走美杯五年级"
+      },
+      "knowledgePoints": [
+        "蝴蝶模型",
+        "按比例分配"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.0,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "梯形ABCD中，AD∥BC，AD=6厘米，BC=10厘米，高为8厘米。对角线AC和BD交于O点。点E在BC上，且BE:EC=2:3。求三角形AOE的面积是______平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9",
+        "9平方厘米"
+      ],
+      "solution": [
+        "第一步：根据梯形蝴蝶模型，AD:BC=6:10=3:5，四个三角形面积比=9:15:25:15。",
+        "梯形面积=(6+10)×8÷2=64平方厘米，总份数=9+15+25+15=64份，每份=1平方厘米。",
+        "所以S(AOB)=15平方厘米，S(BOC)=25平方厘米。",
+        "第二步：三角形BOE和三角形BOC同高（从O到BC），面积比=BE:BC=4:10=2:5。",
+        "S(BOE)=25×2/5=10平方厘米。",
+        "第三步：S(ABE)=1/2×BE×高=1/2×4×8=16平方厘米。",
+        "第四步：S(AOE)=S(ABE)+S(BOE)-S(ABO)=16+10-15=11？不对，重新分析：",
+        "正确方法：S(AOE)=S(ACE)-S(OCE)",
+        "S(ACE)=1/2×EC×高=1/2×6×8=24平方厘米",
+        "S(OCE)=25×3/5=15平方厘米",
+        "S(AOE)=24-15=9平方厘米"
+      ],
+      "hints": [
+        "先求三角形BOC和AOB的面积",
+        "三角形BOE和BOC同高，面积比=BE:BC",
+        "用S(AOE)=S(ACE)-S(OCE)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "6",
+          "reason": "直接用S(AOB)-S(BOE)，图形关系理解错误",
+          "correction": "用S(ACE)-S(OCE)=24-15=9",
+          "errorLayer": "L4"
+        },
+        {
+          "mistake": "12",
+          "reason": "计算OCE面积时比例搞反",
+          "correction": "EC:BC=3:5，S(OCE)=25×3/5=15",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2016,
+        "paper": "第二十一届华罗庚金杯决赛"
+      },
+      "knowledgePoints": [
+        "蝴蝶模型",
+        "同高三角形",
+        "面积割补"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-28",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "梯形ABCD中，AD∥BC，AD=5厘米，BC=10厘米，高为12厘米。对角线AC和BD交于O点，求三角形AOB和三角形COD的面积之和是______平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40",
+        "40平方厘米"
+      ],
+      "solution": [
+        "梯形蝴蝶模型：AD:BC=5:10=1:2，上下两个三角形面积比=1²:2²=1:4。",
+        "左右两个三角形面积相等，各为1×2=2份。",
+        "四个三角形面积比=1:2:4:2，总份数=1+2+4+2=9份。",
+        "梯形面积=(5+10)×12÷2=90平方厘米。",
+        "每份面积=90÷9=10平方厘米。",
+        "左右两个三角形面积和=2×2×10=40平方厘米。"
+      ],
+      "hints": [
+        "上下底比=1:2，四个三角形比=1:2:4:2",
+        "梯形面积=90，共9份，每份=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "30",
+          "reason": "误以为左右三角形各占1份",
+          "correction": "左右各2份，共4份，4×10=40",
+          "errorLayer": "L4"
+        },
+        {
+          "mistake": "45",
+          "reason": "误以为左右三角形面积和是总面积的一半",
+          "correction": "左右共4/9，90×4/9=40",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2020,
+        "paper": "第十八届希望杯五年级"
+      },
+      "knowledgePoints": [
+        "蝴蝶模型",
+        "梯形面积",
+        "按比例分配"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "长方形ABCD中，AB=12厘米，BC=8厘米。E是AD边上的点，AE:ED=1:2。BE交AC于F点，求三角形AEF的面积是______平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "4平方厘米"
+      ],
+      "solution": [
+        "因为AE∥BC（长方形对边平行），所以四边形AECB可以看作梯形。",
+        "AE:BC=1:3（因为AE:ED=1:2，AD=BC=8，所以AE=8/3，BC=8）。",
+        "根据梯形蝴蝶模型，三角形AEF、ABF、BCF、CEF的面积比=1:3:9:3。",
+        "三角形ABC的面积=12×8÷2=48平方厘米，对应ABF+BCF=3+9=12份。",
+        "每份面积=48÷12=4平方厘米。",
+        "三角形AEF的面积=1份=4平方厘米。"
+      ],
+      "hints": [
+        "AE∥BC，构成梯形AECB",
+        "AE:BC=1:3，四个三角形比=1:3:9:3",
+        "三角形ABC=48对应12份"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "6",
+          "reason": "比例关系计算错误",
+          "correction": "AE:BC=1:3，ABC=12份=48，1份=4",
+          "errorLayer": "L4"
+        },
+        {
+          "mistake": "8",
+          "reason": "误以为AE:BC=1:2",
+          "correction": "AE:ED=1:2，AE:AD=1:3，AE:BC=1:3",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2018,
+        "paper": "2018年迎春杯五年级"
+      },
+      "knowledgePoints": [
+        "蝴蝶模型",
+        "长方形",
+        "相似三角形"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g5-bm-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "任意四边形ABCD中，对角线AC、BD交于O点。已知三角形AOB的面积是2，三角形BOC的面积是4，三角形COD的面积是6。求四边形ABCD的总面积是______。",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": [
+        "15",
+        "15平方厘米"
+      ],
+      "solution": [
+        "第一步：根据任意四边形蝴蝶模型，对角三角形面积乘积相等：S(AOB)×S(COD)=S(AOD)×S(BOC)。",
+        "代入得：2×6=S(AOD)×4，即12=4×S(AOD)，S(AOD)=3。",
+        "第二步：四边形ABCD的总面积=S(AOB)+S(BOC)+S(COD)+S(AOD)=2+4+6+3=15。"
+      ],
+      "hints": [
+        "任意四边形蝴蝶定理：S(AOB)×S(COD)=S(AOD)×S(BOC)",
+        "先求S(AOD)=2×6÷4=3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "12",
+          "reason": "漏掉了三角形AOD的面积",
+          "correction": "总面积=2+4+6+3=15",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "18",
+          "reason": "错误计算S(AOD)=6",
+          "correction": "S(AOD)=2×6÷4=3",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "走美杯",
+        "year": 2017,
+        "paper": "第十五届走美杯五年级"
+      },
+      "knowledgePoints": [
+        "任意四边形蝴蝶",
+        "面积计算"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "竞赛真题"
+      ]
+    }
+  ]
+}

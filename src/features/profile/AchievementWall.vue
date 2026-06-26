@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue'
-import AppLayout from '@/components/layout/AppLayout.vue'
 
 interface Achievement {
   id: string
@@ -93,60 +92,58 @@ const filteredCategories = computed(() =>
 </script>
 
 <template>
-  <AppLayout>
-    <div class="wall">
-      <h1 class="wall__title">🏆 成就墙</h1>
+  <div class="wall">
+    <h1 class="wall__title">🏆 成就墙</h1>
 
-      <div class="wall__stats">
-        <div class="wall__stat">
-          <span class="wall__stat-num">{{ unlockedCount }}/{{ totalCount }}</span>
-          <span class="wall__stat-label">已解锁</span>
-        </div>
-        <div class="wall__stat">
-          <span class="wall__stat-num">{{ percentage }}%</span>
-          <span class="wall__stat-label">完成度</span>
-        </div>
+    <div class="wall__stats">
+      <div class="wall__stat">
+        <span class="wall__stat-num">{{ unlockedCount }}/{{ totalCount }}</span>
+        <span class="wall__stat-label">已解锁</span>
       </div>
-
-      <div class="wall__bar">
-        <div class="wall__bar-fill" :style="{ width: percentage + '%' }"></div>
+      <div class="wall__stat">
+        <span class="wall__stat-num">{{ percentage }}%</span>
+        <span class="wall__stat-label">完成度</span>
       </div>
-
-      <div class="wall__tabs">
-        <button
-          class="wall__tab"
-          :class="{ 'wall__tab--active': !activeCategory }"
-          @click="activeCategory = null"
-        >全部</button>
-        <button
-          v-for="cat in categories"
-          :key="cat.key"
-          class="wall__tab"
-          :class="{ 'wall__tab--active': activeCategory === cat.key }"
-          @click="activeCategory = cat.key"
-        >{{ cat.icon }} {{ cat.label }}</button>
-      </div>
-
-      <section v-for="cat in filteredCategories" :key="cat.key" class="wall__section">
-        <h2 class="wall__cat-title">{{ cat.icon }} {{ cat.label }}</h2>
-        <div class="wall__grid">
-          <div
-            v-for="a in cat.items"
-            :key="a.id"
-            class="card"
-            :class="{ 'card--locked': !a.unlocked, 'card--unlocked': a.unlocked }"
-          >
-            <span class="card__icon">{{ a.icon }}</span>
-            <h3 class="card__name">{{ a.name }}</h3>
-            <p class="card__desc">{{ a.desc }}</p>
-            <p class="card__cond">条件：{{ a.condition }}</p>
-            <span v-if="a.unlocked" class="card__badge">✓ 已解锁</span>
-            <span v-else class="card__progress">{{ a.progress }}</span>
-          </div>
-        </div>
-      </section>
     </div>
-  </AppLayout>
+
+    <div class="wall__bar">
+      <div class="wall__bar-fill" :style="{ width: percentage + '%' }"></div>
+    </div>
+
+    <div class="wall__tabs">
+      <button
+        class="wall__tab"
+        :class="{ 'wall__tab--active': !activeCategory }"
+        @click="activeCategory = null"
+      >全部</button>
+      <button
+        v-for="cat in categories"
+        :key="cat.key"
+        class="wall__tab"
+        :class="{ 'wall__tab--active': activeCategory === cat.key }"
+        @click="activeCategory = cat.key"
+      >{{ cat.icon }} {{ cat.label }}</button>
+    </div>
+
+    <section v-for="cat in filteredCategories" :key="cat.key" class="wall__section">
+      <h2 class="wall__cat-title">{{ cat.icon }} {{ cat.label }}</h2>
+      <div class="wall__grid">
+        <div
+          v-for="a in cat.items"
+          :key="a.id"
+          class="card"
+          :class="{ 'card--locked': !a.unlocked, 'card--unlocked': a.unlocked }"
+        >
+          <span class="card__icon">{{ a.icon }}</span>
+          <h3 class="card__name">{{ a.name }}</h3>
+          <p class="card__desc">{{ a.desc }}</p>
+          <p class="card__cond">条件：{{ a.condition }}</p>
+          <span v-if="a.unlocked" class="card__badge">✓ 已解锁</span>
+          <span v-else class="card__progress">{{ a.progress }}</span>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <style scoped>

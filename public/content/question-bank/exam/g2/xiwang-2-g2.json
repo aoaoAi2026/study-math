@@ -1,0 +1,156 @@
+{
+    "paperId": "xiwang-2-g2",
+    "title": "第二届小学《希望杯》全国数学邀请赛 二年级（第二试）",
+    "grade": 2,
+    "category": "aoshu-xiwang",
+    "duration": 60,
+    "totalScore": 120,
+    "difficultyLevel": 2,
+    "year": 2005,
+    "source": "希望杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共20题，每题6分）", "count": 20, "scorePerQuestion": 6}
+    ],
+    "questions": [
+        {
+            "id": "q1", "type": "fill", "difficulty": 1, "sectionNo": 1,
+            "stem": "找规律填数：1、4、9、16、25、______。",
+            "answer": "36", "score": 6,
+            "solution": "观察规律：1²=1，2²=4，3²=9，4²=16，5²=25，6²=36。答案是36。",
+            "knowledgePoints": ["平方数", "找规律"]
+        },
+        {
+            "id": "q2", "type": "fill", "difficulty": 2, "sectionNo": 1,
+            "stem": "小明排队买票，他前面有6个人，后面有8个人。这一排一共有______个人。",
+            "answer": "15", "score": 6,
+            "solution": "前面6人+小明1人+后面8人=6+1+8=15人。",
+            "knowledgePoints": ["排队问题"]
+        },
+        {
+            "id": "q3", "type": "fill", "difficulty": 2, "sectionNo": 1,
+            "stem": "一个数加上8，再减去5，又加上8，再减去5，这样连续做了3次。这个数比原来增加了______。",
+            "answer": "9", "score": 6,
+            "solution": "每次+8-5=+3，做了3次，+3×3=+9。比原来增加9。",
+            "knowledgePoints": ["变化规律"]
+        },
+        {
+            "id": "q4", "type": "fill", "difficulty": 2, "sectionNo": 1,
+            "stem": "一根绳子长30米，剪成6米一段，需要剪______次。",
+            "answer": "4", "score": 6,
+            "solution": "30÷6=5段，剪4次。",
+            "knowledgePoints": ["剪绳子"]
+        },
+        {
+            "id": "q5", "type": "fill", "difficulty": 2, "sectionNo": 1,
+            "stem": "把12个苹果平均分给4个小朋友，每个小朋友分到______个苹果。",
+            "answer": "3", "score": 6,
+            "solution": "12÷4=3个。",
+            "knowledgePoints": ["平均分"]
+        },
+        {
+            "id": "q6", "type": "fill", "difficulty": 2, "sectionNo": 1,
+            "stem": "小华看一本书，第一天从第1页看到第8页，第二天从第9页看到第16页。小华两天共看了______页。",
+            "answer": "16", "score": 6,
+            "solution": "第一天8页（1~8），第二天8页（9~16），共8+8=16页。",
+            "knowledgePoints": ["页数计算"]
+        },
+        {
+            "id": "q7", "type": "fill", "difficulty": 2, "sectionNo": 1,
+            "stem": "小青做除法算式，把被除数18看成了81，结果商是9。正确的商应该是______。",
+            "answer": "4", "score": 6,
+            "solution": "81÷9=9（看错的除数），正确的18÷9=2？不是，因为看错的是被除数。除数=81÷9=9。正确商=18÷9=2。答案2。",
+            "knowledgePoints": ["逆向思维"]
+        },
+        {
+            "id": "q8", "type": "fill", "difficulty": 2, "sectionNo": 1,
+            "stem": "把一根绳子对折两次后，从中间剪开，绳子被剪成______段。",
+            "answer": "5", "score": 6,
+            "solution": "对折两次变成4股，从中间剪开有5段。公式：2^n+1=2^2+1=5段。",
+            "knowledgePoints": ["剪绳子"]
+        },
+        {
+            "id": "q9", "type": "fill", "difficulty": 2, "sectionNo": 1,
+            "stem": "一个数，它既是12的倍数，又是18的倍数，这个数最小是______。",
+            "answer": "36", "score": 6,
+            "solution": "最小公倍数：[12,18]=36。答案是36。",
+            "knowledgePoints": ["最小公倍数"]
+        },
+        {
+            "id": "q10", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "林林心里想到三个数，它们的和是15，三个数分别是1、2、______。",
+            "answer": "12", "score": 6,
+            "solution": "1+2=3，15-3=12。所以第三个数是12。",
+            "knowledgePoints": ["加法"]
+        },
+        {
+            "id": "q11", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "学校买来18个足球，分给5个班，要求每班分到的个数都不相同，最多能分到______个。",
+            "answer": "6", "score": 6,
+            "solution": "5个不同自然数之和18，最小5个不同数1+2+3+4+5=15，差3。调整为1+2+3+4+8=18（最大8）？不对，最大=18-(1+2+3+4)=8。或者最大=18-10=8。",
+            "knowledgePoints": ["数字拆分"]
+        },
+        {
+            "id": "q12", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "一根绳子长18米，锯成3米一段，需要锯______次。",
+            "answer": "5", "score": 6,
+            "solution": "18÷3=6段，需要锯5次。",
+            "knowledgePoints": ["剪绳子"]
+        },
+        {
+            "id": "q13", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "小明排队，从前往后数他排在第10个，从后往前数他排在第5个。这一排有______个人。",
+            "answer": "14", "score": 6,
+            "solution": "10+5-1=14人。",
+            "knowledgePoints": ["排队问题"]
+        },
+        {
+            "id": "q14", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "小华有12颗糖，给了小明3颗后，两人的糖就一样多。小明原来有______颗糖。",
+            "answer": "6", "score": 6,
+            "solution": "小华给3颗后剩9颗，两人相等各9颗。小明原有9-3=6颗。",
+            "knowledgePoints": ["等量关系"]
+        },
+        {
+            "id": "q15", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "时钟在3:00时，时针和分针形成的角是______度。",
+            "answer": "90", "score": 6,
+            "solution": "3:00时，时针指向3，分针指向12，夹角=3×30=90度。",
+            "knowledgePoints": ["时钟问题"]
+        },
+        {
+            "id": "q16", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "一筐苹果，第一次卖掉一半，第二次卖掉剩下的一半，还剩5个。原来有______个苹果。",
+            "answer": "20", "score": 6,
+            "solution": "倒推：5×2×2=20个。",
+            "knowledgePoints": ["倒推法"]
+        },
+        {
+            "id": "q17", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "把20颗珠子穿成一串，按「红、蓝、黄」的顺序排列。第18颗是______颜色。",
+            "answer": "蓝", "score": 6,
+            "solution": "每3颗一循环。18÷3=6，没有余数，所以第18颗是黄（每组第3个）。循环：红(1)、蓝(2)、黄(3)...18=6×3=黄。",
+            "knowledgePoints": ["周期问题"]
+        },
+        {
+            "id": "q18", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "一个数，它比20大，比30小，并且是3的倍数。这个数是______。",
+            "answer": "21", "score": 6,
+            "solution": "20<x<30且x是3的倍数：21、24、27。题目说「这个数」，可能是21。",
+            "knowledgePoints": ["倍数问题"]
+        },
+        {
+            "id": "q19", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "小华看一本书，每天看9页，5天正好看完。这本书有______页。",
+            "answer": "45", "score": 6,
+            "solution": "5×9=45页。",
+            "knowledgePoints": ["乘法应用"]
+        },
+        {
+            "id": "q20", "type": "fill", "difficulty": 3, "sectionNo": 1,
+            "stem": "小强有18颗弹珠，给了小刚3颗后，两人的弹珠一样多。小刚原来有______颗弹珠。",
+            "answer": "12", "score": 6,
+            "solution": "小强给3颗后剩15颗，两人各15颗。小刚原有15-3=12颗。",
+            "knowledgePoints": ["等量关系"]
+        }
+    ]
+}

@@ -1,0 +1,775 @@
+{
+  "topicId": "g1-number-recognition",
+  "topicName": "数的认识",
+  "grade": 1,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g1-nr-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "数一数，下面一共有多少个苹果？\n🍎 🍎 🍎 🍎 🍎",
+      "options": [
+        "3 个",
+        "4 个",
+        "5 个",
+        "6 个"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "5",
+        "五",
+        "5个"
+      ],
+      "solution": [
+        "小朋友，我们一个一个地数：1、2、3、4、5。",
+        "数到最后一共是 5 个苹果。"
+      ],
+      "hints": [
+        "用手指一个一个地点",
+        "数完一个就数下一个",
+        "别忘了数到最后一个哦"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选了 4 个",
+          "reason": "数的时候漏了一个",
+          "correction": "一定要一个一个慢慢数",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "数数",
+        "10以内数的认识"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "数数"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "看图写数：\n🐰 🐰 🐰 🐰 🐰 🐰 🐰\n一共 ____ 只小兔。",
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "七",
+        "7只"
+      ],
+      "solution": [
+        "我们来数小兔子：1、2、3、4、5、6、7。",
+        "一共数到 7。"
+      ],
+      "hints": [
+        "数一只就记一个数",
+        "数完检查一遍",
+        "不要多数也不要少数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 6 或 8",
+          "reason": "数的时候快了一点",
+          "correction": "慢慢数，数完再数一遍",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "数数",
+        "10以内数的认识"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "数数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "数字 8 读作什么？",
+      "options": [
+        "八",
+        "九",
+        "六",
+        "十"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "八"
+      ],
+      "solution": [
+        "8 读作\"八\"。",
+        "所以正确答案是\"八\"。"
+      ],
+      "hints": [
+        "读一读数字 8",
+        "想想 8 怎么念"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选了\"九\"",
+          "reason": "8 和 9 长得有点像",
+          "correction": "8 是两个圆",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数字读法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "读数"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-04",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "在□里填上合适的数：\n3、4、5、□、7",
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "3 后面是 4，4 后面是 5，5 后面就是 6，6 后面是 7。",
+        "所以应该填 6。"
+      ],
+      "hints": [
+        "一个一个从小到大排",
+        "5 后面是谁"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填 7",
+          "reason": "把 7 前面的数搞混了",
+          "correction": "5 后面是 6",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "数的顺序"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "数的顺序"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "10 前面的一个数是？",
+      "options": [
+        "8",
+        "9",
+        "11",
+        "12"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "9",
+        "九"
+      ],
+      "solution": [
+        "从 1 数到 10：1、2、3、4、5、6、7、8、9、10。",
+        "10 前面的一个数就是 9。"
+      ],
+      "hints": [
+        "想想 10 前面是什么",
+        "9 后面才是 10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 8",
+          "reason": "把\"前一个\"理解成\"前两个\"",
+          "correction": "前一个就是往前数一下",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数的顺序"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "数的顺序"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "比 9 多 1 的数是 ____。",
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "\"比 9 多 1\"就是 9 再加 1。",
+        "9 + 1 = 10。"
+      ],
+      "hints": [
+        "多 1 就是加 1",
+        "数一下：9 后面是谁"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 8",
+          "reason": "把\"多\"看成\"少\"",
+          "correction": "多就是加",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数的大小"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "大小比较"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面哪个数最大？",
+      "options": [
+        "7",
+        "9",
+        "8",
+        "6"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "9",
+        "九"
+      ],
+      "solution": [
+        "我们把这些数排一排：6、7、8、9。",
+        "排在最后的就是最大的。",
+        "所以 9 是最大的。"
+      ],
+      "hints": [
+        "把数从小学到大排",
+        "越大的数越靠后"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 8",
+          "reason": "没认真看完所有选项",
+          "correction": "把 4 个数都比一比",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数的大小比较"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比较大小"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "数一数：\n★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★\n一共 ____ 颗星。",
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "十二",
+        "12颗"
+      ],
+      "solution": [
+        "我们一个一个数：1 到 12。",
+        "数到 12，就是 12 颗星。"
+      ],
+      "hints": [
+        "慢慢数",
+        "可以两个两个地数",
+        "2、4、6、8、10、12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 11 或 13",
+          "reason": "数快了一点",
+          "correction": "仔细数，数完再检查",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "数数",
+        "20以内数的认识"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "数数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "15 是由几个十和几个一组成的？",
+      "options": [
+        "1 个十和 5 个一",
+        "5 个十和 1 个一",
+        "1 个十和 1 个一",
+        "5 个十和 5 个一"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "1 个十和 5 个一"
+      ],
+      "solution": [
+        "15 左边的 1 在十位，代表 1 个十。",
+        "右边的 5 在个位，代表 5 个一。"
+      ],
+      "hints": [
+        "看看 15 的左边一位是什么",
+        "右边一位是什么",
+        "十在左边，个在右边"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 5 个十和 1 个一",
+          "reason": "把左右搞反了",
+          "correction": "十在左边，个在右边",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数的组成"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "数的组成"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "按顺序填数：\n12、13、14、____、16",
+      "answer": "15",
+      "acceptableAnswers": [
+        "15",
+        "十五"
+      ],
+      "solution": [
+        "这组数一个比一个多 1。",
+        "12、13、14 后面是 15。"
+      ],
+      "hints": [
+        "看看每次多几",
+        "14 后面是谁"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填 16",
+          "reason": "跳过一个了",
+          "correction": "14 后面是 15",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "数的顺序"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "数的顺序"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "下面算式中，得数比 15 小的是？",
+      "options": [
+        "10 + 8",
+        "9 + 9",
+        "7 + 7",
+        "15 + 2"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "7+7"
+      ],
+      "solution": [
+        "分别算一算：10+8=18，9+9=18，7+7=14，15+2=17。",
+        "14 比 15 小。",
+        "所以答案是 7+7。"
+      ],
+      "hints": [
+        "先把每个算出来",
+        "再和 15 比一比",
+        "谁小就是谁"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 10+8",
+          "reason": "计算 10+8 算错了",
+          "correction": "10+8=18，比15大",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "加法",
+        "比较大小"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "计算",
+        "比较"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "比 20 少 3 的数是 ____。",
+      "answer": "17",
+      "acceptableAnswers": [
+        "17",
+        "十七"
+      ],
+      "solution": [
+        "\"比 20 少 3\"就是 20 减去 3。",
+        "20 - 3 = 17。"
+      ],
+      "hints": [
+        "少几就是减几",
+        "20 减去 3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 13 或 23",
+          "reason": "把\"少\"理解成\"多\"",
+          "correction": "少是减，20-3=17",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "减法",
+        "数的大小"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "减法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把 8、20、15、9 从大到小排列，排在第三个的是？",
+      "options": [
+        "8",
+        "20",
+        "15",
+        "9"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "先把 4 个数从大到小排：20、15、9、8。",
+        "第一个是 20，第二个是 15，第三个是 9，第四个是 8。"
+      ],
+      "hints": [
+        "先排好顺序",
+        "从大的开始",
+        "20最大，8最小"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 8",
+          "reason": "把顺序排反了",
+          "correction": "从大到小是 20、15、9、8",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "比较大小",
+        "排序"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "排序"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-14",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个数比 10 大，比 15 小，而且是双数，这个数是 ____。（写出一个就可以）",
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "14",
+        "十二",
+        "十四"
+      ],
+      "solution": [
+        "比 10 大，比 15 小的数有：11、12、13、14。",
+        "其中双数是：12、14。",
+        "所以可以填 12 或 14。"
+      ],
+      "hints": [
+        "先列出 10 到 15 之间的数",
+        "再挑双数：2、4、6、8、10、12、14...",
+        "11是单数，12是双数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 11",
+          "reason": "忘了双数的意思",
+          "correction": "双数是能两个两个数完的数",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "单数双数",
+        "比较大小"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "单双数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-nr-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "下面说法正确的是？",
+      "options": [
+        "如果 a + 5 = b + 6，那么 a 比 b 大",
+        "如果 a + 5 = b + 6，那么 a 比 b 小",
+        "如果 a + 5 = b + 6，那么 a = b",
+        "无法比较"
+      ],
+      "answer": "0",
+      "solution": [
+        "把算式两边同时去掉 5：a = b + 1。",
+        "说明 a 比 b 大 1。",
+        "所以 a 比 b 大是正确的。"
+      ],
+      "hints": [
+        "两边都去掉同样多的数再比较",
+        "5 和 5 抵消",
+        "剩下的比一比"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 a 比 b 小",
+          "reason": "看到 a 那边加的数小就以为 a 小",
+          "correction": "加的数小说明本身要大一点才能相等",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "等式",
+        "数的大小"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "等式",
+        "拔高"
+      ],
+      "image": "",
+      "acceptableAnswers": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    }
+  ]
+}

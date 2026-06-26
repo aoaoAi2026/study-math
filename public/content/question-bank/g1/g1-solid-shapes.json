@@ -1,0 +1,791 @@
+{
+  "topicId": "g1-solid-shapes",
+  "topicName": "认识立体图形",
+  "grade": 1,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g1-ss-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "足球是什么形状的？",
+      "options": [
+        "正方体",
+        "长方体",
+        "球",
+        "圆柱"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "球"
+      ],
+      "solution": [
+        "足球是球体。",
+        "球的表面是曲面，没有平面。"
+      ],
+      "hints": [
+        "球可以滚动",
+        "足球是圆滚滚的",
+        "球没有角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 圆柱或正方体",
+          "reason": "对立体图形不熟悉",
+          "correction": "足球是球形的",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "球的认识"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "球"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "正方体有几个面？",
+      "options": [
+        "4 个",
+        "5 个",
+        "6 个",
+        "8 个"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "solution": [
+        "正方体有 6 个面，每个面都是正方形。",
+        "6 个面大小都一样。"
+      ],
+      "hints": [
+        "上下、前后、左右",
+        "数一数正方体的面",
+        "骰子就是正方体，有6个面"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 4个",
+          "reason": "少数了",
+          "correction": "正方体有6个面",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "正方体的特征"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "正方体"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "长方体有 ____ 个面。",
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六",
+        "6个"
+      ],
+      "solution": [
+        "长方体也有 6 个面。",
+        "相对的两个面完全相同。"
+      ],
+      "hints": [
+        "上下、前后、左右各一个面",
+        "共 6 个面",
+        "有的面是长方形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 4",
+          "reason": "少数了",
+          "correction": "长方体 6 个面",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "长方体的特征"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "长方体"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下面哪个物体是圆柱形的？",
+      "options": [
+        "篮球",
+        "魔方",
+        "笔筒",
+        "书本"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "笔筒"
+      ],
+      "solution": [
+        "篮球是球。",
+        "魔方是正方体。",
+        "笔筒上下是圆形，侧面是曲面，是圆柱。",
+        "书本是长方体。"
+      ],
+      "hints": [
+        "圆柱上下两个圆面",
+        "侧面是曲面",
+        "可以滚动"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 篮球",
+          "reason": "以为圆的就是圆柱",
+          "correction": "篮球是球，不是圆柱",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "圆柱的认识"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "圆柱"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "圆柱的上下两个面是 ____ 形。",
+      "answer": "圆",
+      "acceptableAnswers": [
+        "圆",
+        "圆形"
+      ],
+      "solution": [
+        "圆柱上下两个面是大小一样的圆形。",
+        "这两个圆面叫做圆柱的底面。"
+      ],
+      "hints": [
+        "圆柱上下是平的",
+        "而且是圆形的",
+        "两个圆大小一样"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 正方形",
+          "reason": "没认真观察",
+          "correction": "圆柱上下是圆形",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "圆柱的特征"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "圆柱"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把一个正方体展开，可能得到下面哪种图形？",
+      "options": [
+        "6 个正方形",
+        "6 个长方形",
+        "4 个正方形",
+        "4 个长方形"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "6 个正方形"
+      ],
+      "solution": [
+        "正方体有 6 个面，每个面都是正方形。",
+        "展开后就是 6 个正方形连在一起。"
+      ],
+      "hints": [
+        "正方体6个面都是正方形",
+        "展开就是6个正方形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 6个长方形",
+          "reason": "和长方体搞混了",
+          "correction": "正方体展开是6个正方形",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "立体图形展开",
+        "正方体"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "展开图"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个正方体，如果每个面上都涂上不同的颜色，一共需要 ____ 种颜色。",
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "正方体有 6 个面。",
+        "6 个面涂上不同的颜色，就需要 6 种颜色。"
+      ],
+      "hints": [
+        "正方体有几个面",
+        "6个面",
+        "每个面一种颜色就是6种"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 4 或 5",
+          "reason": "少数了面数",
+          "correction": "正方体是6个面",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "正方体的特征"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "正方体"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面哪种物体能站稳又能滚动？",
+      "options": [
+        "正方体",
+        "球",
+        "圆柱",
+        "长方体"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "圆柱"
+      ],
+      "solution": [
+        "正方体和长方体只能站稳，不能滚动。",
+        "球只能滚动，站不稳。",
+        "圆柱倒下可以滚动，立着可以站稳。"
+      ],
+      "hints": [
+        "圆柱立起来是稳的",
+        "放倒可以滚动",
+        "两种都可以"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 球",
+          "reason": "球会滚动但站不稳",
+          "correction": "圆柱既可以滚动也能站稳",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "立体图形的特性",
+        "滚动与稳定"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "特性"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-09",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "至少要用 ____ 个小正方体才能拼成一个更大的正方体。",
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "大正方体的每条棱上至少要有 2 个小正方体。",
+        "这样一层就要 2×2 = 4 个小正方体。",
+        "两层就要 4 + 4 = 8 个小正方体。"
+      ],
+      "hints": [
+        "想象一层有几个",
+        "2×2=4个",
+        "有几层？2层",
+        "4×2=8个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 4",
+          "reason": "只想到一层",
+          "correction": "4个只能拼成长方体",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "拼搭立体图形",
+        "正方体"
+      ],
+      "estimatedTime": 130,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "拼搭"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面哪个物体最容易堆起来？",
+      "options": [
+        "球",
+        "圆柱",
+        "正方体",
+        "圆锥"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "正方体"
+      ],
+      "solution": [
+        "正方体有平平的面，一个摞一个很稳。",
+        "球总是会滚走。",
+        "圆柱和圆锥也没有正方体好堆。"
+      ],
+      "hints": [
+        "平的面越多越容易堆",
+        "正方体六个面都是平的",
+        "最容易堆起来"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 球",
+          "reason": "搞反了",
+          "correction": "球根本堆不起来",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "立体图形的特性",
+        "堆搭"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "特性"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "数一数，下面一共有多少个小正方体？（底层4个，上层1个在中间）",
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五",
+        "5个"
+      ],
+      "solution": [
+        "先数看得见的：底层能看到 3 个，上层 1 个，共 4 个。",
+        "但底层被上层挡住的地方还有 1 个，因为上层那个小正方体需要下面有支撑。",
+        "所以总共是 4 + 1 = 5 个。"
+      ],
+      "hints": [
+        "先数看得见的",
+        "再数被遮住的",
+        "底层要铺满才能稳",
+        "上层那个下面也有1个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 4",
+          "reason": "忘了被挡住的那个",
+          "correction": "上层那个需要下面支撑，底层应该是4个",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "数立体图形",
+        "看不见的部分"
+      ],
+      "estimatedTime": 130,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "数方块"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把一个圆柱的侧面展开，可以得到什么图形？",
+      "options": [
+        "圆",
+        "三角形",
+        "长方形或正方形",
+        "五边形"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "长方形或正方形"
+      ],
+      "solution": [
+        "把圆柱的侧面沿高剪开并展开。",
+        "展开后侧面变成一个长方形（如果底面周长等于高就是正方形）。"
+      ],
+      "hints": [
+        "想象把圆柱侧面剪开",
+        "圆柱侧面展开是长方形",
+        "上下边是曲线变成直线"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 圆",
+          "reason": "把侧面和底面搞混了",
+          "correction": "上下两个底面才是圆形",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "立体图形展开",
+        "圆柱"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "展开图"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-13",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有一堆小正方体，从前面看是3个正方形（底层2个，上层1个靠左），从上面看也是底层2个。这堆小正方体最少有 ____ 个。",
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三个"
+      ],
+      "solution": [
+        "从上面看底层有 2 个，说明底层是 2 个小正方体。",
+        "从前面看上层有 1 个，说明上面还有 1 个。",
+        "最少 2 + 1 = 3 个。"
+      ],
+      "hints": [
+        "底层有2个",
+        "上面有1个",
+        "加起来3个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 4",
+          "reason": "以为上面那个需要单独支撑",
+          "correction": "上层一个下面有一个就行，总共2+1=3",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "三视图",
+        "最少个数"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "三视图"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个大正方体，表面全涂上红色，再切成 8 个小正方体。三面都有红色的小正方体有几个？",
+      "options": [
+        "4 个",
+        "6 个",
+        "8 个",
+        "0 个"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "solution": [
+        "大正方体被切成 8 个小正方体，也就是 2×2×2。",
+        "每个小正方体都在大正方体的角落位置。",
+        "角落位置的小正方体有三个面露在外面，被涂上红色。",
+        "8 个小正方体都在角落，所以 8 个都是三面红色。"
+      ],
+      "hints": [
+        "小正方体在什么位置？",
+        "角落的有三个面露出来",
+        "8个小正方体都在角落",
+        "所以 8 个都有三面红色"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 4个或 0个",
+          "reason": "对位置没概念",
+          "correction": "2×2×2的每个小正方体都在角落",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "涂色问题",
+        "立体图形"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "涂色问题"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ss-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "下面哪种说法是错误的？",
+      "options": [
+        "圆柱有两个圆形的面",
+        "球只有一个面（曲面）",
+        "正方体的面都是正方形",
+        "长方体的面都是长方形"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "长方体的面都是长方形"
+      ],
+      "solution": [
+        "圆柱上下两个底面是圆形，正确。",
+        "球只有一个曲面，正确。",
+        "正方体六个面都是正方形，正确。",
+        "长方体的六个面不一定都是长方形，有的长方体可以有两个面是正方形（如方盒子）。所以这个说法是错误的。"
+      ],
+      "hints": [
+        "长方体有时候有正方形的面",
+        "比如方盒子",
+        "所以说\"都是长方形\"是错的"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 其他正确答案",
+          "reason": "没看清题目选\"错误\"的",
+          "correction": "仔细看题目：找错误的说法",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "立体图形的特征",
+        "概念辨析"
+      ],
+      "estimatedTime": 170,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "概念辨析",
+        "拔高"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    }
+  ]
+}

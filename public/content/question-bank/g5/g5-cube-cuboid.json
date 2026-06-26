@@ -1,0 +1,748 @@
+{
+  "topicId": "g5-cube-cuboid",
+  "topicName": "长方体正方体",
+  "grade": 5,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g5-cc-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个正方体的棱长是3厘米,它的表面积是()平方厘米。",
+      "image": "",
+      "options": [
+        "9",
+        "18",
+        "27",
+        "54"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "正方体有6个面,每个面面积=棱长×棱长",
+        "3×3×6=9×6=54平方厘米"
+      ],
+      "hints": [
+        "正方体6个面都相等",
+        "棱长×棱长×6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "只算1个面",
+          "reason": "忘记×6了",
+          "correction": "3×3×6=54",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "正方体表面积"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "表面积",
+        "棱长"
+      ]
+    },
+    {
+      "id": "g5-cc-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个正方体的棱长是5厘米,它的体积是多少立方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "125",
+      "acceptableAnswers": [
+        "125",
+        "125立方厘米"
+      ],
+      "solution": [
+        "正方体体积=棱长×棱长×棱长",
+        "5×5×5=125立方厘米"
+      ],
+      "hints": [
+        "V=a³",
+        "5×5×5=125"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成15",
+          "reason": "5+5+5=15算错了",
+          "correction": "5×5×5=125",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "正方体体积"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "体积"
+      ]
+    },
+    {
+      "id": "g5-cc-03",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个长方体长8厘米,宽5厘米,高4厘米,它的表面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "184",
+      "acceptableAnswers": [
+        "184",
+        "184平方厘米"
+      ],
+      "solution": [
+        "长方体表面积=(长×宽+长×高+宽×高)×2",
+        "=(8×5+8×4+5×4)×2=(40+32+20)×2=92×2=184平方厘米"
+      ],
+      "hints": [
+        "(ab+ah+bh)×2",
+        "先算三对面之和再×2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "忘×2得92",
+          "reason": "只算了三个面",
+          "correction": "要×2,184",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "长方体表面积"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "表面积"
+      ]
+    },
+    {
+      "id": "g5-cc-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个长方体长6分米,宽3分米,高2分米,体积是多少立方分米?",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": [
+        "36",
+        "36立方分米"
+      ],
+      "solution": [
+        "体积=长×宽×高",
+        "6×3×2=36立方分米"
+      ],
+      "hints": [
+        "V=abh",
+        "6×3×2=36"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成11",
+          "reason": "6+3+2=11错了",
+          "correction": "6×3×2=36",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "长方体体积"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "体积"
+      ]
+    },
+    {
+      "id": "g5-cc-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个正方体的棱长总和是36厘米,它的表面积是()平方厘米。",
+      "image": "",
+      "options": [
+        "27",
+        "54",
+        "36",
+        "81"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "正方体有12条棱,每条棱长=36÷12=3厘米",
+        "表面积=3×3×6=54平方厘米"
+      ],
+      "hints": [
+        "先求棱长=总和÷12",
+        "再求表面积=棱长×棱长×6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "直接用36当棱长",
+          "correction": "36÷12=3,3×3×6=54",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "棱长和与表面积"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "棱长和"
+      ]
+    },
+    {
+      "id": "g5-cc-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "做一个无盖的正方体纸盒,棱长5厘米,至少需要()平方厘米的纸板。",
+      "image": "",
+      "options": [
+        "125",
+        "150",
+        "25",
+        "100"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "无盖即少1个面,只有5个面",
+        "5×5×5=125平方厘米"
+      ],
+      "hints": [
+        "无盖=5个面",
+        "5×5×5=125"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1",
+          "reason": "算成6个面了",
+          "correction": "无盖只有5个面,125",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "正方体无盖"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "无盖"
+      ]
+    },
+    {
+      "id": "g5-cc-07",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方体的长10厘米,宽6厘米,高4厘米,它的棱长总和是多少厘米?",
+      "image": "",
+      "options": [],
+      "answer": "80",
+      "acceptableAnswers": [
+        "80",
+        "80厘米"
+      ],
+      "solution": [
+        "长方体棱长总和=(长+宽+高)×4",
+        "=(10+6+4)×4=20×4=80厘米"
+      ],
+      "hints": [
+        "(长+宽+高)×4",
+        "10+6+4=20,20×4=80"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成20",
+          "reason": "忘×4了",
+          "correction": "20×4=80",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "长方体棱长和"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "棱长和"
+      ]
+    },
+    {
+      "id": "g5-cc-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个水池长8米,宽5米,深2米,这个水池的容积是多少立方米?",
+      "image": "",
+      "options": [],
+      "answer": "80",
+      "acceptableAnswers": [
+        "80",
+        "80立方米"
+      ],
+      "solution": [
+        "容积=长×宽×高",
+        "8×5×2=80立方米"
+      ],
+      "hints": [
+        "容积=体积",
+        "8×5×2=80"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成15",
+          "reason": "8+5+2=15错了",
+          "correction": "8×5×2=80",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "容积"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "容积"
+      ]
+    },
+    {
+      "id": "g5-cc-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个正方体的表面积是54平方分米,它的一个面的面积是多少平方分米?",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9",
+        "9平方分米"
+      ],
+      "solution": [
+        "正方体6个面都相等",
+        "一个面面积=表面积÷6",
+        "=54÷6=9平方分米"
+      ],
+      "hints": [
+        "表面积÷6=一个面的面积",
+        "54÷6=9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成6",
+          "reason": "搞反运算了",
+          "correction": "54÷6=9",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "正方体表面积逆运算"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "逆运算"
+      ]
+    },
+    {
+      "id": "g5-cc-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方体长5分米,宽4分米,高3分米,如果高增加2分米,那么体积增加()立方分米。",
+      "image": "",
+      "options": [
+        "20",
+        "30",
+        "40",
+        "60"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "增加的体积=底面积×增加的高",
+        "=5×4×2=40立方分米",
+        "或:原体积=60,新体积=5×4×5=100,增加=40"
+      ],
+      "hints": [
+        "增加的体积=长×宽×增加的高",
+        "5×4×2=40"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1",
+          "reason": "用错高度计算",
+          "correction": "5×4×2=40",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "体积变化"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "体积变化"
+      ]
+    },
+    {
+      "id": "g5-cc-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把一个棱长6厘米的正方体铁块锻造成一个长9厘米,宽4厘米的长方体,这个长方体的高是多少厘米?",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6厘米"
+      ],
+      "solution": [
+        "体积不变",
+        "正方体体积=6×6×6=216立方厘米",
+        "长方体高=体积÷(长×宽)=216÷(9×4)=216÷36=6厘米"
+      ],
+      "hints": [
+        "锻造前后体积不变",
+        "高=V÷(长×宽)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "216÷36=6",
+          "correction": "6",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "体积不变"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "锻造"
+      ]
+    },
+    {
+      "id": "g5-cc-12",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方体,如果高减少3厘米,就成为一个正方体,并且表面积减少了60平方厘米。原来的长方体的体积是多少立方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "200",
+      "acceptableAnswers": [
+        "200",
+        "200立方厘米"
+      ],
+      "solution": [
+        "高减少3厘米变正方体,说明长=宽,设=a",
+        "减少的是4个相同的长方形,每个面积=3a",
+        "4×3a=60,12a=60,a=5厘米",
+        "原高=5+3=8厘米",
+        "体积=5×5×8=200立方厘米"
+      ],
+      "hints": [
+        "表面积减少=4个3×a的面",
+        "60÷4÷3=5,体积=5×5×8=200"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "不会分析减少的面",
+          "reason": "减少4个长方形面",
+          "correction": "先求a=5再求体积",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "综合问题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "表面积变化"
+      ]
+    },
+    {
+      "id": "g5-cc-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两个棱长都是2厘米的正方体拼成一个长方体,这个长方体的表面积是()平方厘米。",
+      "image": "",
+      "options": [
+        "24",
+        "40",
+        "48",
+        "20"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "拼合后少了2个重合的面",
+        "一个正方体表面积=2×2×6=24,两个共48",
+        "减去2个重合面:2×2×2=8",
+        "长方体表面积=48-8=40",
+        "或:长4宽2高2,表面积=(4×2+4×2+2×2)×2=(8+8+4)×2=40"
+      ],
+      "hints": [
+        "拼合减少2个面",
+        "或直接算长方体表面积"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "没减2个重合面",
+          "correction": "48-8=40",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "拼合问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "拼合"
+      ]
+    },
+    {
+      "id": "g5-cc-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在一个长8分米,宽5分米,高6分米的长方体容器中,水深4分米。将一个棱长3分米的正方体铁块浸没水中,水面上升多少分米?",
+      "image": "",
+      "options": [],
+      "answer": "0.675",
+      "acceptableAnswers": [
+        "0.675",
+        "27/40",
+        "0.68"
+      ],
+      "solution": [
+        "铁块体积=3×3×3=27立方分米",
+        "容器底面积=8×5=40平方分米",
+        "水面上升=铁块体积÷底面积=27÷40=0.675分米"
+      ],
+      "hints": [
+        "上升高度=体积÷容器底面积",
+        "27÷40=0.675"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错底面积",
+          "reason": "用8×6=48错了",
+          "correction": "8×5=40",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "排水法"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "浸没"
+      ]
+    },
+    {
+      "id": "g5-cc-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有一个长方体容器,从里面量长5分米、宽4分米、高6分米,里面注了水,水深3分米。如果把一块棱长2分米的正方体铁块浸入水中,水面上升多少分米?",
+      "image": "",
+      "options": [],
+      "answer": "0.4",
+      "acceptableAnswers": [
+        "0.4",
+        "2/5"
+      ],
+      "solution": [
+        "正方体体积=2×2×2=8立方分米",
+        "容器底面积=5×4=20平方分米",
+        "水面上升=8÷20=0.4分米"
+      ],
+      "hints": [
+        "水面上升=体积÷底面积",
+        "8÷20=0.4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "不会用排水法",
+          "reason": "上升=V铁÷S容",
+          "correction": "8÷20=0.4",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "排水法综合"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "浸没"
+      ]
+    }
+  ]
+}

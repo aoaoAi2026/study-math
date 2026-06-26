@@ -1,0 +1,869 @@
+{
+  "topicId": "sum-diff-common",
+  "topicName": "和差问题综合",
+  "grade": "3-5年级综合",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "id": "cm-sd-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "两个数的和是20，差是8。大数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "14",
+      "acceptableAnswers": [
+        "14",
+        "十四"
+      ],
+      "solution": [
+        "大数=(和+差)÷2=(20+8)÷2=14。小数=(20-8)÷2=6。验证:14+6=20,14-6=8✓"
+      ],
+      "hints": [
+        "大数=(和+差)÷2",
+        "小数=(和-差)÷2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成6",
+          "reason": "算的是小数",
+          "correction": "大数=14",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "基本公式"
+      ],
+      "estimatedTime": 40,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    },
+    {
+      "id": "cm-sd-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "两个数的和是30，差是10。小数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "小数=(30-10)÷2=10。大数=(30+10)÷2=20。验证:20+10=30,20-10=10✓"
+      ],
+      "hints": [
+        "小数=(和-差)÷2=(30-10)÷2=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成20",
+          "reason": "算的是大数",
+          "correction": "小数=10",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题"
+      ],
+      "estimatedTime": 40,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    },
+    {
+      "id": "cm-sd-03",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "两筐水果共重100千克，甲筐比乙筐多20千克。甲筐有多少千克？",
+      "image": "",
+      "options": [
+        "50",
+        "60",
+        "70",
+        "40"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "甲+乙=100,甲-乙=20。甲=(100+20)÷2=60kg,乙=(100-20)÷2=40kg。验证:60+40=100,60-40=20✓"
+      ],
+      "hints": [
+        "甲=(100+20)÷2=60"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成40",
+          "reason": "算的是乙筐",
+          "correction": "甲筐=60kg",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    },
+    {
+      "id": "cm-sd-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小明和小红一共有糖48颗，小明比小红多8颗。小明有多少颗？",
+      "image": "",
+      "options": [],
+      "answer": "28",
+      "acceptableAnswers": [
+        "28",
+        "二十八"
+      ],
+      "solution": [
+        "明+红=48,明-红=8。明=(48+8)÷2=28,红=(48-8)÷2=20。验证:28+20=48,28-20=8✓"
+      ],
+      "hints": [
+        "小明=(48+8)÷2=28"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成20",
+          "reason": "算的是小红",
+          "correction": "小明=28颗",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    },
+    {
+      "id": "cm-sd-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "甲、乙两班共有学生96人，甲班比乙班多4人。乙班有多少人？",
+      "image": "",
+      "options": [],
+      "answer": "46",
+      "acceptableAnswers": [
+        "46",
+        "四十六"
+      ],
+      "solution": [
+        "甲+乙=96,甲-乙=4。甲=(96+4)÷2=50,乙=(96-4)÷2=46。验证:50+46=96,50-46=4✓"
+      ],
+      "hints": [
+        "乙=(96-4)÷2=46"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成50",
+          "reason": "算的是甲班",
+          "correction": "乙班=46人",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    },
+    {
+      "id": "cm-sd-06",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两筐苹果共重90千克，如果从甲筐取出8千克放入乙筐，甲筐还比乙筐多4千克。甲筐原来有多少千克？",
+      "image": "",
+      "options": [],
+      "answer": "55",
+      "acceptableAnswers": [
+        "55",
+        "五十五"
+      ],
+      "solution": [
+        "移完后甲还多4kg。原来甲比乙多8×2+4=20kg。甲+乙=90,甲-乙=20。甲=(90+20)÷2=55,乙=35。验证:甲55-8=47,乙35+8=43,47-43=4✓"
+      ],
+      "hints": [
+        "原来甲比乙多8×2+4=20kg",
+        "甲=(90+20)÷2=55kg"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成35",
+          "reason": "算的是乙筐",
+          "correction": "甲筐=55kg",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "移动问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "移动"
+      ]
+    },
+    {
+      "id": "cm-sd-07",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "书架上下两层共有书180本，如果从上层拿15本放到下层，两层就相等。上层原来有多少本书？",
+      "image": "",
+      "options": [],
+      "answer": "105",
+      "acceptableAnswers": [
+        "105",
+        "一百零五"
+      ],
+      "solution": [
+        "移完各有90本。上层=90+15=105,下层=90-15=75。验证:105+75=180✓"
+      ],
+      "hints": [
+        "移完各有180÷2=90本",
+        "上层=90+15=105"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成75",
+          "reason": "算的是下层",
+          "correction": "上层=105本",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "移动问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "移动"
+      ]
+    },
+    {
+      "id": "cm-sd-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两个连续偶数的和是42。较大的数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "22",
+      "acceptableAnswers": [
+        "22",
+        "二十二"
+      ],
+      "solution": [
+        "连续偶数差为2。大数=(42+2)÷2=22,小数=20。验证:22+20=42,22-20=2✓"
+      ],
+      "hints": [
+        "连续两数差=2",
+        "大数=(42+2)÷2=22"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成20",
+          "reason": "算的是小数",
+          "correction": "大数=22",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "连续数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    },
+    {
+      "id": "cm-sd-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "三个连续自然数的和是60。最大的数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "21",
+      "acceptableAnswers": [
+        "21",
+        "二十一"
+      ],
+      "solution": [
+        "三连续数:设中数=x,则x-1,x,x+1。和=3x=60。x=20。三数=19,20,21。最大=21。验证:19+20+21=60✓"
+      ],
+      "hints": [
+        "三连续数的和=3×中间数",
+        "中间数=60÷3=20,最大=21"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成20",
+          "reason": "算的是中间数",
+          "correction": "最大=21",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "连续数"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    },
+    {
+      "id": "cm-sd-10",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "买5个排球和5个篮球共花600元，已知每个篮球比每个排球贵20元。每个篮球多少元？",
+      "image": "",
+      "options": [],
+      "answer": "70",
+      "acceptableAnswers": [
+        "70",
+        "七十"
+      ],
+      "solution": [
+        "5个篮球+5个排球=600→1个篮球+1个排球=120。设排球=x元,篮球=x+20元。x+x+20=120。2x=100。x=50。排球=50元,篮球=70元。验证:5×50+5×70=250+350=600✓"
+      ],
+      "hints": [
+        "5个篮球+5个排球=600→1个篮球+1个排球=120",
+        "篮球+排球=120,篮球-排球=20",
+        "篮球=(120+20)÷2=70"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成50",
+          "reason": "算的是排球",
+          "correction": "篮球=70元",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "购物"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    },
+    {
+      "id": "cm-sd-11",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "甲、乙两船从相距240千米的两港同时出发相向而行，4小时相遇。甲船比乙船每小时快10千米。乙船每小时行多少千米？",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": [
+        "25",
+        "二十五"
+      ],
+      "solution": [
+        "4小时相遇,两船速度和=240÷4=60km/h。甲-乙=10。乙=(60-10)÷2=25,甲=35。验证:4×35+4×25=140+100=240✓"
+      ],
+      "hints": [
+        "速度和=240÷4=60km/h",
+        "甲+乙=60,甲-乙=10",
+        "乙=(60-10)÷2=25"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成35",
+          "reason": "算的是甲船",
+          "correction": "乙船=25km/h",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "行程问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "行程"
+      ]
+    },
+    {
+      "id": "cm-sd-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一列快车和一列慢车同时从相距600千米的两城相向开出，4小时相遇。快车比慢车每小时多行20千米。慢车每小时行多少千米？",
+      "image": "",
+      "options": [],
+      "answer": "65",
+      "acceptableAnswers": [
+        "65",
+        "六十五"
+      ],
+      "solution": [
+        "速度和=600÷4=150km/h。快-慢=20。慢=(150-20)÷2=65,快=85。验证:4×65+4×85=260+340=600✓"
+      ],
+      "hints": [
+        "速度和=600÷4=150",
+        "慢=(150-20)÷2=65"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成85",
+          "reason": "算的是快车",
+          "correction": "慢车=65km/h",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "相遇问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "行程"
+      ]
+    },
+    {
+      "id": "cm-sd-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "学校买4张桌子和4把椅子共花480元，每张桌子比每把椅子贵40元。每张桌子多少元？",
+      "image": "",
+      "options": [],
+      "answer": "80",
+      "acceptableAnswers": [
+        "80",
+        "八十"
+      ],
+      "solution": [
+        "4桌子+4椅子=480→1桌子+1椅子=120。桌-椅=40。桌=(120+40)÷2=80,椅=40。验证:4×80+4×40=320+160=480✓"
+      ],
+      "hints": [
+        "桌+椅=120,桌-椅=40",
+        "桌=(120+40)÷2=80"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成40",
+          "reason": "算的是椅子",
+          "correction": "桌子=80元",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "购物"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    },
+    {
+      "id": "cm-sd-14",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个两位数，十位数字与个位数字的和是10，差是4。这个两位数可能是多少？(写大的那个)",
+      "image": "",
+      "options": [],
+      "answer": "73",
+      "acceptableAnswers": [
+        "73",
+        "七十三"
+      ],
+      "solution": [
+        "设十位数=a,个位数=b。a+b=10,a-b=4。a=(10+4)÷2=7,b=(10-4)÷2=3。数=73。",
+        "也可b-a=4,则a=3,b=7,数=37。答案写大的=73。验证:7+3=10,7-3=4✓"
+      ],
+      "hints": [
+        "十位+个位=10,十位-个位=4",
+        "十位=(10+4)÷2=7,个位=3",
+        "数=73"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成37",
+          "reason": "写的是小的",
+          "correction": "写大的=73",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "数字问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "数字"
+      ]
+    },
+    {
+      "id": "cm-sd-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲、乙两个工程队共有工人420人，从甲队调30人到乙队后，甲队还比乙队多10人。甲队原来有多少人？",
+      "image": "",
+      "options": [],
+      "answer": "245",
+      "acceptableAnswers": [
+        "245",
+        "二百四十五"
+      ],
+      "solution": [
+        "调完后甲比乙多10人。说明原来甲比乙多30×2+10=70人。甲+乙=420,甲-乙=70。甲=(420+70)÷2=245,乙=(420-70)÷2=175。验证:甲245-30=215,乙175+30=205,215-205=10✓"
+      ],
+      "hints": [
+        "原来甲比乙多30×2+10=70人",
+        "甲=(420+70)÷2=245"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成175",
+          "reason": "算的是乙队",
+          "correction": "甲队=245人",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "调动问题"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "移动"
+      ]
+    },
+    {
+      "id": "cm-sd-16",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "两个数的和是682，其中一个加数的个位是0，若把0去掉，则与另一个加数相同。这两个数中较大的一个是多少？",
+      "image": "",
+      "options": [],
+      "answer": "620",
+      "acceptableAnswers": [
+        "620",
+        "六百二十"
+      ],
+      "solution": [
+        "一个加数是另一个的10倍。设小数=x,大数=10x。x+10x=682。11x=682。x=62。小数=62,大数=620。验证:620+62=682✓,且620去0=62✓"
+      ],
+      "hints": [
+        "一个是另一个的10倍",
+        "11x=682→x=62",
+        "大数=620"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成62",
+          "reason": "算的是小数",
+          "correction": "大数=620",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "倍数关系"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "倍数"
+      ]
+    },
+    {
+      "id": "cm-sd-17",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲、乙两筐共有苹果80千克，从甲筐取出10千克放入乙筐后，甲筐还比乙筐多4千克。甲筐原来有多少千克？",
+      "image": "",
+      "options": [],
+      "answer": "52",
+      "acceptableAnswers": [
+        "52",
+        "五十二"
+      ],
+      "solution": [
+        "移完后甲还多4kg。原来甲比乙多10×2+4=24kg。甲+乙=80,甲-乙=24。甲=(80+24)÷2=52,乙=(80-24)÷2=28。验证:甲52-10=42,乙28+10=38,42-38=4✓"
+      ],
+      "hints": [
+        "原来甲比乙多10×2+4=24kg",
+        "甲=(80+24)÷2=52kg"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成28",
+          "reason": "算的是乙筐",
+          "correction": "甲筐=52kg",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "移动问题"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "移动"
+      ]
+    },
+    {
+      "id": "cm-sd-18",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "三个连续奇数的和是87。最大的数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "31",
+      "acceptableAnswers": [
+        "31",
+        "三十一"
+      ],
+      "solution": [
+        "三连续奇数:设中数=x,则x-2,x,x+2。和=3x=87。x=29。三数=27,29,31。最大=31。验证:27+29+31=87✓"
+      ],
+      "hints": [
+        "三连续奇数和=3×中间数",
+        "中间数=87÷3=29,最大=31"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成29",
+          "reason": "算的是中间数",
+          "correction": "最大=31",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "连续奇数"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "奇数"
+      ]
+    }
+  ]
+}

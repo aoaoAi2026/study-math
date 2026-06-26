@@ -1,0 +1,1002 @@
+{
+  "topicId": "g3-odd-even",
+  "topicName": "奇偶性",
+  "grade": 3,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "id": "g3-oe-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下列哪个数是奇数？",
+      "image": "",
+      "options": [
+        "12",
+        "18",
+        "25",
+        "30"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "奇数是个位为1,3,5,7,9的数",
+        "25的个位是5，是奇数",
+        "12,18,30都是偶数"
+      ],
+      "hints": [
+        "看个位",
+        "1,3,5,7,9是奇数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选30",
+          "reason": "个位是0，是偶数",
+          "correction": "25是奇数",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇数定义"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-oe-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "数字 7, 14, 19, 26, 33 中共有 ____ 个奇数。",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "奇数有：7 (个7), 19 (个9), 33 (个3) = 共3个",
+        "偶数：14(个4), 26(个6)"
+      ],
+      "hints": [
+        "逐个检查个位",
+        "奇数：1,3,5,7,9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2个",
+          "reason": "漏数一个",
+          "correction": "7,19,33 共3个",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇数",
+        "偶数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-oe-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "奇数 + 奇数 = ？",
+      "image": "",
+      "options": [
+        "奇数",
+        "偶数",
+        "质数",
+        "不确定"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "例如：3+5=8（偶数），7+9=16（偶数）",
+        "奇数+奇数=偶数"
+      ],
+      "hints": [
+        "举例子验证",
+        "1+1=2, 3+3=6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "奇数+奇数=奇数",
+          "reason": "凭感觉",
+          "correction": "举例：3+5=8是偶数",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇偶运算"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ]
+    },
+    {
+      "id": "g3-oe-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "偶数 + 偶数 = ？（填 奇数 或 偶数）",
+      "image": "",
+      "options": [],
+      "answer": "偶数",
+      "acceptableAnswers": [
+        "偶数"
+      ],
+      "solution": [
+        "例如：2+4=6（偶数），10+8=18（偶数）",
+        "偶数+偶数=偶数"
+      ],
+      "hints": [
+        "举例子",
+        "2,4,6,8..."
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "奇数",
+          "reason": "混淆",
+          "correction": "偶数+偶数=偶数",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇偶运算"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ]
+    },
+    {
+      "id": "g3-oe-05",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "最小的两位数奇数是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "11",
+      "acceptableAnswers": [
+        "11"
+      ],
+      "solution": [
+        "两位数从10开始",
+        "10是偶数（个位0）",
+        "11是奇数（个位1）"
+      ],
+      "hints": [
+        "从10开始找",
+        "找第一个个位奇数的两位数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "13",
+          "reason": "跳过了11",
+          "correction": "11是最小的两位奇数",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇数",
+        "两位数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-oe-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "奇数 + 偶数 = ？",
+      "image": "",
+      "options": [
+        "奇数",
+        "偶数",
+        "质数",
+        "不确定"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "例如：3+4=7（奇数），5+10=15（奇数）",
+        "奇数+偶数=奇数"
+      ],
+      "hints": [
+        "举例验证",
+        "一奇一偶相加=奇"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "偶数",
+          "reason": "混淆",
+          "correction": "3+4=7是奇数",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇偶运算"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ]
+    },
+    {
+      "id": "g3-oe-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1 + 2 + 3 + 4 + 5 的和是 ____ 数（填奇或偶）。",
+      "image": "",
+      "options": [],
+      "answer": "奇",
+      "acceptableAnswers": [
+        "奇"
+      ],
+      "solution": [
+        "1+2+3+4+5 = 15",
+        "15是奇数",
+        "或：奇数有1,3,5共3个(奇数个奇数相加=奇数)，偶数2,4不影响奇偶性"
+      ],
+      "hints": [
+        "先求和再判断",
+        "或数奇数个数：奇数个奇数相加=奇数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "偶数",
+          "reason": "15算错或判断错",
+          "correction": "15是奇数",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇偶判断"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "求和"
+      ]
+    },
+    {
+      "id": "g3-oe-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "奇数 × 偶数 = ？",
+      "image": "",
+      "options": [
+        "奇数",
+        "偶数",
+        "质数",
+        "不确定"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "例如：3×4=12（偶数），5×2=10（偶数）",
+        "奇×偶=偶"
+      ],
+      "hints": [
+        "有偶数参与相乘，结果一定是偶数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "奇数",
+          "reason": "混淆奇偶",
+          "correction": "3×4=12是偶数",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇偶运算"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "乘法"
+      ]
+    },
+    {
+      "id": "g3-oe-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在 1 到 20 中共有多少个奇数？",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "solution": [
+        "1到20中的奇数：1,3,5,7,9,11,13,15,17,19",
+        "共10个",
+        "也可：20÷2=10"
+      ],
+      "hints": [
+        "每两个数中有1个奇数",
+        "1-20共20个数=10对"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "11个",
+          "reason": "从1数到19数多了",
+          "correction": "10个",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇数",
+        "计数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "1-20"
+      ]
+    },
+    {
+      "id": "g3-oe-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在算式 □ + 5 = 偶数 中，□ 应该填 ____ 数（填奇或偶）。",
+      "image": "",
+      "options": [],
+      "answer": "奇",
+      "acceptableAnswers": [
+        "奇"
+      ],
+      "solution": [
+        "5是奇数",
+        "? + 奇数 = 偶数",
+        "? 必须是奇数，因为奇+奇=偶",
+        "例如：3+5=8(偶数)"
+      ],
+      "hints": [
+        "看等式另一边的奇偶",
+        "从结果反推"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "偶数",
+          "reason": "偶+奇=奇≠偶",
+          "correction": "需要奇数",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇偶运算",
+        "反推"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "等式"
+      ]
+    },
+    {
+      "id": "g3-oe-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两个数相乘的积是奇数。这两个数是什么数？",
+      "image": "",
+      "options": [
+        "都是奇数",
+        "都是偶数",
+        "一奇一偶",
+        "无法确定"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "奇×奇=奇（如3×5=15）",
+        "偶×任何=偶",
+        "所以必须都是奇数"
+      ],
+      "hints": [
+        "只有奇×奇=奇",
+        "有偶数参与则偶"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "一奇一偶",
+          "reason": "2×3=6是偶数",
+          "correction": "必须都奇",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇偶运算",
+        "乘法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "判断"
+      ]
+    },
+    {
+      "id": "g3-oe-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "1 + 2 + 3 + ... + 10 的和是 ____ 数（填奇或偶）。",
+      "image": "",
+      "options": [],
+      "answer": "奇",
+      "acceptableAnswers": [
+        "奇"
+      ],
+      "solution": [
+        "1到10共10个数",
+        "奇数有1,3,5,7,9共5个（奇数个）",
+        "偶数有2,4,6,8,10共5个",
+        "奇数个奇数相加=奇数",
+        "偶数+偶数=偶数",
+        "奇+偶=奇",
+        "所以总和是奇数",
+        "实际求和=(1+10)×10÷2=55，确实是奇数"
+      ],
+      "hints": [
+        "数奇数的个数",
+        "奇数个奇数相加=奇数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "偶数",
+          "reason": "10个数以为是偶对",
+          "correction": "5个奇数=奇数",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇偶判断",
+        "求和"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "连续数"
+      ]
+    },
+    {
+      "id": "g3-oe-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个数是偶数，另一个数是奇数。它们的差是？",
+      "image": "",
+      "options": [
+        "奇数",
+        "偶数",
+        "质数",
+        "无法确定"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "奇-偶=奇，偶-奇=奇，都是奇数",
+        "例如：7-4=3（奇），10-3=7（奇）"
+      ],
+      "hints": [
+        "差的奇偶性与和相同",
+        "奇-偶=奇，偶-奇=奇"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "偶数",
+          "reason": "以为差一定偶",
+          "correction": "7-4=3是奇数",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇偶运算",
+        "减法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "差"
+      ]
+    },
+    {
+      "id": "g3-oe-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一本书共 36 页，小明从第 1 页开始看，每天看奇数页。他能恰好看完整本书吗？（填 能 或 不能）",
+      "image": "",
+      "options": [],
+      "answer": "能",
+      "acceptableAnswers": [
+        "能"
+      ],
+      "solution": [
+        "36是偶数",
+        "如果看两天：每天奇数页，奇+奇=偶，有可能",
+        "例如：17+19=36"
+      ],
+      "hints": [
+        "偶数=奇数+奇数",
+        "可以分成两个奇数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "不能",
+          "reason": "以为奇数加不出偶数",
+          "correction": "奇+奇=偶",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇偶应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "实际"
+      ]
+    },
+    {
+      "id": "g3-oe-15",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "三个连续自然数的和是 24。这三个数中最大的是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "三个连续数的和=24，中间数=24÷3=8",
+        "三个数：7, 8, 9",
+        "最大=9",
+        "检验：7+8+9=24 ✓"
+      ],
+      "hints": [
+        "连续数的和÷个数=中间数",
+        "中间数±1得其他"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "24÷3=8",
+          "reason": "以为8就是答案",
+          "correction": "8是中间数，最大是9",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "连续数",
+        "和差"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "自然数"
+      ]
+    },
+    {
+      "id": "g3-oe-16",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 的和是奇数还是偶数？",
+      "image": "",
+      "options": [],
+      "answer": "奇数",
+      "acceptableAnswers": ["奇数", "奇"],
+      "solution": [
+        "方法一：计算和 = (1+10)×10÷2 = 55，55是奇数",
+        "方法二：数奇数的个数：1,3,5,7,9 共5个奇数",
+        "奇数个奇数相加是奇数，偶数不影响奇偶性",
+        "所以和是奇数"
+      ],
+      "hints": [
+        "看有多少个奇数",
+        "奇数个奇数相加=奇数",
+        "1到10有5个奇数，所以和是奇数"
+      ],
+      "commonMistakes": [
+        {"mistake": "偶数", "reason": "数错奇数个数", "correction": "1到10有5个奇数，和是奇数", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2009, "paper": "第七届希望杯三年级"},
+      "knowledgePoints": ["奇偶性", "连续数求和"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -0.3, "c": 0.25},
+      "tags": ["奇偶性", "竞赛真题"]
+    },
+    {
+      "id": "g3-oe-17",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "一个正方形的边长是奇数，它的周长是（ ）。",
+      "image": "",
+      "options": ["奇数", "偶数", "可能是奇数可能是偶数", "无法确定"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "正方形周长 = 边长×4",
+        "奇数×4 = 奇数×偶数 = 偶数",
+        "所以周长一定是偶数"
+      ],
+      "hints": [
+        "周长=边长×4",
+        "4是偶数",
+        "任何数×偶数=偶数"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0", "reason": "以为奇数×4还是奇数", "correction": "奇数×偶数=偶数", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2010, "paper": "2010年迎春杯三年级"},
+      "knowledgePoints": ["奇偶性", "正方形周长"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["奇偶性", "竞赛真题"]
+    },
+    {
+      "id": "g3-oe-18",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "有一筐苹果，2个2个地数，最后还剩1个；3个3个地数，最后也剩1个。这筐苹果最少有多少个？",
+      "image": "",
+      "options": [],
+      "answer": "7",
+      "acceptableAnswers": ["7", "7个"],
+      "solution": [
+        "2个2个地数剩1个，说明苹果数是奇数（2×? + 1）",
+        "3个3个地数剩1个，说明苹果数 = 3×? + 1",
+        "同时满足：比2的倍数多1，比3的倍数多1",
+        "最少：2和3的最小公倍数+1 = 6+1 = 7个",
+        "检验：7÷2=3余1，7÷3=2余1 ✓"
+      ],
+      "hints": [
+        "都剩1个，说明总数-1既是2的倍数也是3的倍数",
+        "最小：2×3+1=7"
+      ],
+      "commonMistakes": [
+        {"mistake": "5", "reason": "只满足一个条件", "correction": "7同时满足两个条件", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2006, "paper": "第十一届华罗庚金杯初赛"},
+      "knowledgePoints": ["奇偶性", "公倍数", "余数"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.1, "b": 0.4, "c": 0.25},
+      "tags": ["奇偶性", "竞赛真题"]
+    },
+    {
+      "id": "g3-oe-19",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "两个连续自然数的和一定是（ ）。",
+      "image": "",
+      "options": ["奇数", "偶数", "质数", "合数"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "两个连续自然数：一个奇数一个偶数",
+        "奇+偶 = 奇",
+        "例如：3+4=7(奇), 5+6=11(奇)",
+        "所以和一定是奇数"
+      ],
+      "hints": [
+        "连续自然数：一奇一偶",
+        "奇+偶=奇"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1", "reason": "记错规律", "correction": "奇+偶=奇", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2008, "paper": "第六届希望杯三年级"},
+      "knowledgePoints": ["奇偶性", "连续数"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": 0.1, "c": 0.25},
+      "tags": ["奇偶性", "竞赛真题"]
+    },
+    {
+      "id": "g3-oe-20",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "小明从家到学校有两条路，一条路长是偶数，另一条路长是奇数。如果小明每天走不同的路去上学，第 10 天走的路长是奇数还是偶数？（第1天走偶数那条路）",
+      "image": "",
+      "options": [],
+      "answer": "奇数",
+      "acceptableAnswers": ["奇数", "奇"],
+      "solution": [
+        "第1天：偶数路",
+        "第2天：奇数路",
+        "第3天：偶数路",
+        "...",
+        "规律：奇数天走偶数路，偶数天走奇数路",
+        "第10天是偶数天，走奇数路"
+      ],
+      "hints": [
+        "第1天偶数，第2天奇数，交替进行",
+        "偶数天走奇数路",
+        "第10天是偶数天，走奇数路"
+      ],
+      "commonMistakes": [
+        {"mistake": "偶数", "reason": "和第1天一样", "correction": "第10天是偶数天，走奇数路", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2011, "paper": "第九届走美杯三年级"},
+      "knowledgePoints": ["奇偶性", "周期"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.2, "b": 0.7, "c": 0.25},
+      "tags": ["奇偶性", "竞赛真题"]
+    },
+    {
+      "id": "g3-oe-21",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "把 15 个苹果分给 4 个小朋友，要求每个小朋友分得的苹果数都是奇数，能做到吗？",
+      "image": "",
+      "options": ["能", "不能", "无法确定", "以上都不对"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "4个奇数相加：奇+奇+奇+奇",
+        "= (奇+奇)+(奇+奇) = 偶+偶 = 偶",
+        "15是奇数，4个奇数的和是偶数",
+        "所以不能做到"
+      ],
+      "hints": [
+        "4个奇数的和是偶数",
+        "15是奇数",
+        "偶数≠奇数，所以不能"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0", "reason": "以为可以分", "correction": "4个奇数的和是偶数，15是奇数", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2007, "paper": "第十二届华罗庚金杯初赛"},
+      "knowledgePoints": ["奇偶性", "分配问题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["奇偶性", "竞赛真题"]
+    },
+    {
+      "id": "g3-oe-22",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有 10 个连续的奇数，最小的是 1。这 10 个奇数的和是奇数还是偶数？",
+      "image": "",
+      "options": [],
+      "answer": "偶数",
+      "acceptableAnswers": ["偶数", "偶"],
+      "solution": [
+        "10个奇数相加",
+        "两个奇数的和是偶数",
+        "10个奇数 = 5对奇数，每对的和是偶数",
+        "5个偶数相加还是偶数",
+        "所以10个奇数的和是偶数",
+        "验证：1+3+5+...+19 = (1+19)×10÷2 = 100，100是偶数 ✓"
+      ],
+      "hints": [
+        "偶数个奇数相加=偶数",
+        "10是偶数，所以和是偶数"
+      ],
+      "commonMistakes": [
+        {"mistake": "奇数", "reason": "以为奇数相加都是奇数", "correction": "偶数个奇数相加=偶数", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2012, "paper": "2012年迎春杯三年级"},
+      "knowledgePoints": ["奇偶性", "连续奇数"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.2, "b": 0.6, "c": 0.25},
+      "tags": ["奇偶性", "竞赛真题"]
+    },
+    {
+      "id": "g3-oe-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "教室里有 7 盏灯，编号 1 到 7，开始时灯都是关的。7 个同学依次进入教室，第 1 个同学拉一下所有编号是 1 的倍数的灯的开关，第 2 个同学拉一下所有编号是 2 的倍数的灯的开关……第 7 个同学拉一下编号是 7 的倍数的灯的开关。最后有几盏灯是亮的？",
+      "image": "",
+      "options": [],
+      "answer": "2",
+      "acceptableAnswers": ["2", "2盏"],
+      "solution": [
+        "开始都是关的，拉奇数次变亮，拉偶数次还是关的",
+        "每盏灯被拉的次数 = 它的约数个数",
+        "1号灯：约数1 → 拉1次(奇) → 亮",
+        "2号灯：约数1,2 → 拉2次(偶) → 关",
+        "3号灯：约数1,3 → 拉2次(偶) → 关",
+        "4号灯：约数1,2,4 → 拉3次(奇) → 亮",
+        "5号灯：约数1,5 → 拉2次(偶) → 关",
+        "6号灯：约数1,2,3,6 → 拉4次(偶) → 关",
+        "7号灯：约数1,7 → 拉2次(偶) → 关",
+        "所以最后亮着的灯是1号和4号，共2盏",
+        "规律：完全平方数有奇数个约数，所以亮着"
+      ],
+      "hints": [
+        "拉奇数次变亮，拉偶数次还是关",
+        "每盏灯被拉的次数=它的约数个数",
+        "完全平方数有奇数个约数",
+        "1到7中，1和4是完全平方数"
+      ],
+      "commonMistakes": [
+        {"mistake": "7", "reason": "以为所有灯都亮", "correction": "只有约数个数是奇数的灯才亮，即完全平方数", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2010, "paper": "第八届希望杯三年级"},
+      "knowledgePoints": ["奇偶性", "约数", "完全平方数"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.3, "b": 1.3, "c": 0.25},
+      "tags": ["奇偶性", "竞赛真题"]
+    }
+  ]
+}

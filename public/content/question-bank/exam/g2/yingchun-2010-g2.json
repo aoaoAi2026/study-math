@@ -1,0 +1,26 @@
+{
+    "paperId": "yingchun-2010-g2",
+    "title": "2010年少儿迎春杯数学竞赛 二年级初赛试卷",
+    "grade": 2,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 2,
+    "year": 2010,
+    "source": "少儿迎春杯数学竞赛组委会",
+    "sections": [
+        {"name": "填空题（每题10分）", "count": 10, "scorePerQuestion": 10}
+    ],
+    "questions": [
+        {"id": "q1", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "找规律填数：1、3、6、10、15、______。", "answer": "21", "score": 10, "solution": "每次增加的差值为2,3,4,5,6... 15+6=21。", "knowledgePoints": ["等差递增", "找规律"]},
+        {"id": "q2", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "一个笼子里关着鸡和兔，共有8个头和26只脚。笼子里有______只鸡、______只兔。", "answer": "3,5", "score": 10, "solution": "假设全是鸡：8×2=16只脚，多26-16=10只，兔=10÷2=5只，鸡=8-5=3只。", "knowledgePoints": ["鸡兔同笼"]},
+        {"id": "q3", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "一包糖果分给小朋友，每人分3颗则多2颗，每人分4颗则少3颗。这包糖果有______颗。", "answer": "17", "score": 10, "solution": "设为x颗，x-2是3的倍数，x+3是4的倍数。试验：5,8,11,14,17。17-2=15(÷3=5), 17+3=20(÷4=5)。答案是17颗。", "knowledgePoints": ["盈亏问题"]},
+        {"id": "q4", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "小明看一本书，第一天看了9页，第二天看了15页，两天共看了______页。", "answer": "24", "score": 10, "solution": "9+15=24页。", "knowledgePoints": ["加法"]},
+        {"id": "q5", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "一根绳子长36米，剪成6米一段，需要剪______次。", "answer": "5", "score": 10, "solution": "36÷6=6段，剪5次。", "knowledgePoints": ["剪绳子"]},
+        {"id": "q6", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "把20颗糖平均分给4个小朋友，每个小朋友分到______颗糖。", "answer": "5", "score": 10, "solution": "20÷4=5颗。", "knowledgePoints": ["平均分"]},
+        {"id": "q7", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "邮局门前共有5级台阶，若规定一步只能登上一级或两级，上这个台阶共有______种不同的走法。", "answer": "8", "score": 10, "solution": "斐波那契数列：f(1)=1, f(2)=2, f(3)=3, f(4)=5, f(5)=8。", "knowledgePoints": ["斐波那契"]},
+        {"id": "q8", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "一个数，它既是6的倍数，又是8的倍数，这个数最小是______。", "answer": "24", "score": 10, "solution": "最小公倍数[6,8]=24。", "knowledgePoints": ["最小公倍数"]},
+        {"id": "q9", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "把一根绳子对折一次后，从中间剪开，绳子被剪成______段。", "answer": "3", "score": 10, "solution": "对折一次变2股，剪开后有3段。", "knowledgePoints": ["剪绳子"]},
+        {"id": "q10", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "时钟在6:00时，时针和分针形成的角是______度。", "answer": "180", "score": 10, "solution": "6:00时，时针指向6，分针指向12，夹角=6×30=180度。", "knowledgePoints": ["时钟问题"]}
+    ]
+}

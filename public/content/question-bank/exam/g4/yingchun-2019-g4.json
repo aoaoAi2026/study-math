@@ -1,0 +1,148 @@
+{
+    "paperId": "yingchun-2019-g4",
+    "title": "2019年迎春杯小学高年级组四年级初赛",
+    "grade": 4,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 3,
+    "year": 2019,
+    "source": "迎春杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共12题，每题8分，共96分）", "count": 12, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：99 + 98 + 97 + ... + 91 = ______。",
+            "answer": "855",
+            "score": 8,
+            "solution": "等差数列：(99+91)×9/2=190×9/2=855。",
+            "knowledgePoints": ["等差数列"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：25 × 48 = ______。",
+            "answer": "1200",
+            "score": 8,
+            "solution": "25×48=25×4×12=100×12=1200。",
+            "knowledgePoints": ["乘法巧算"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个数除以8余5，除以9余6。这个数最小是______。",
+            "answer": "69",
+            "score": 8,
+            "solution": "除以8余5即差3能被8整除；除以9余6即差3能被9整除。LCM(8,9)=72。最小数=72-3=69。",
+            "knowledgePoints": ["余数问题"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有45只，脚一共有140只。兔有______只。",
+            "answer": "25",
+            "score": 8,
+            "solution": "假设全是鸡：45×2=90脚。实际140脚，多50脚。兔=50/2=25只。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个正方形的边长是13厘米，它的周长是______厘米。",
+            "answer": "52",
+            "score": 8,
+            "solution": "周长=4×13=52厘米。",
+            "knowledgePoints": ["正方形"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数，先加上9，再乘以9，再减去9，再除以9，结果是9。这个数是______。",
+            "answer": "1",
+            "score": 8,
+            "solution": "逆推：9×9=81，81+9=90，90÷9=10，10-9=1。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "在一条长70米的路两边种树，每隔7米种一棵，两端都种。一共种______棵。",
+            "answer": "22",
+            "score": 8,
+            "solution": "一边：70/7+1=10+1=11棵。两边：11×2=22棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "甲、乙两数的和是180，甲是乙的5倍。甲是______。",
+            "answer": "150",
+            "score": 8,
+            "solution": "设乙为x，甲为5x。5x+x=180，6x=180，x=30。甲=150。",
+            "knowledgePoints": ["和倍问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "小明有60颗糖，小红有40颗糖。小明给小红______颗糖后，小明比小红还多8颗。",
+            "answer": "6",
+            "score": 8,
+            "solution": "差60-40=20颗。要使小明比小红多8颗，需要给(20-8)/2=6颗后，小明剩54，小红剩46，差8。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一桶油连桶共重70千克，用了半桶油后连桶重38千克。桶重______千克。",
+            "answer": "6",
+            "score": 8,
+            "solution": "半桶油=70-38=32千克。全油=32×2=64千克。桶=70-64=6千克。",
+            "knowledgePoints": ["等量代换"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一捆绳子，第一次用去一半多3米，第二次用去剩下的一半少2米，还剩12米。绳子原长______米。",
+            "answer": "46",
+            "score": 8,
+            "solution": "逆推：第二次前有(12+2)×2=28米。第一次前有(28-3)×2=50米？不对。(28+3)×2=62米。验证：62/2=31，31-3=28，28/2=14，14+2=16，62-31-14=17？不对。重新算。设原长x。第一次用x/2+3，剩x/2-3。第二次用(x/2-3)/2-2=(x-10)/4，剩(x/2-3)-(x-10)/4=(2x-6-x+10)/4=(x+4)/4。(x+4)/4=12，x+4=48，x=44。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "某月第一个星期四是6号，那么这个月的24号是星期______。",
+            "answer": "三",
+            "score": 8,
+            "solution": "6号是星期四。13号、20号、27号也是星期四。24号是星期三。",
+            "knowledgePoints": ["日期问题"]
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "paperId": "yingchun-2017-g3",
+    "title": "2017年迎春杯小学高年级组三年级初赛",
+    "grade": 3,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 3,
+    "year": 2017,
+    "source": "迎春杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共12题，每题8分，共96分）", "count": 12, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：25 × 4 + 75 × 4 = ______。",
+            "answer": "400",
+            "score": 8,
+            "solution": "25×4+75×4=(25+75)×4=100×4=400。",
+            "knowledgePoints": ["乘法分配律", "巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：1 + 2 + 3 + ... + 10 = ______。",
+            "answer": "55",
+            "score": 8,
+            "solution": "等差数列求和：(1+10)×10/2=55。",
+            "knowledgePoints": ["等差数列"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个数比40多它的1/4，这个数是______。",
+            "answer": "53.33",
+            "score": 8,
+            "solution": "设这个数为x，x-40=x/4，3x/4=40，x=160/3≈53.33。",
+            "knowledgePoints": ["分数应用"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "在一条长100米的路两边种树，每隔5米种一棵，两端都种。一共种______棵。",
+            "answer": "42",
+            "score": 8,
+            "solution": "一侧：100/5+1=21棵。两边：21×2=42棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小明从1楼走到3楼用了30秒，照这样计算，他从1楼走到6楼需要______秒。",
+            "answer": "75",
+            "score": 8,
+            "solution": "从1楼到3楼走了2层，每层15秒。从1楼到6楼走5层，15×5=75秒。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有8只，脚一共有26只。鸡有______只。",
+            "answer": "3",
+            "score": 8,
+            "solution": "假设全是兔：8×4=32脚。实际26脚，少6脚。鸡=6/2=3只，兔=5只。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个正方形花坛，边长8米，在它的四周铺一条1米宽的小路。小路面积是______平方米。",
+            "answer": "36",
+            "score": 8,
+            "solution": "大正方形边长=8+1×2=10米。大面积=100平方米。花坛面积=64平方米。小路=100-64=36平方米。",
+            "knowledgePoints": ["正方形面积"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小华看一本故事书，每天看9页，第5天应该从第______页看起。",
+            "answer": "37",
+            "score": 8,
+            "solution": "前4天看了9×4=36页，第5天从第37页看起。",
+            "knowledgePoints": ["应用题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "计算：100 - 99 + 98 - 97 + ... + 2 - 1 = ______。",
+            "answer": "50",
+            "score": 8,
+            "solution": "每两个数一组，每组和为1。100到1共100个数，50组。50×1=50。",
+            "knowledgePoints": ["找规律"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "小明有20颗糖，小红有12颗糖。小明给小红______颗糖后，两人的糖一样多。",
+            "answer": "4",
+            "score": 8,
+            "solution": "小明比小红多20-12=8颗。给4颗后两人都是16颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一桶油连桶共重50千克，倒出一半油后连桶重27千克。桶重______千克。",
+            "answer": "4",
+            "score": 8,
+            "solution": "半桶油重50-27=23千克。全油重46千克。桶重50-46=4千克。",
+            "knowledgePoints": ["等量代换"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一个长方形，长减少3厘米，宽增加2厘米，得到一个正方形。已知原长方形面积是54平方厘米，正方形边长是______厘米。",
+            "answer": "6",
+            "score": 8,
+            "solution": "设正方形边长为x。则长=x+3，宽=x-2。(x+3)(x-2)=54。x²+x-6=54，x²+x-60=0。(x+6)(x-6)=0，x=6。",
+            "knowledgePoints": ["长方形", "方程"]
+        }
+    ]
+}

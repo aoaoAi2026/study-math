@@ -1,0 +1,236 @@
+{
+    "paperId": "xiwang-1-g2",
+    "title": "第一届小学《希望杯》全国数学邀请赛 二年级（第二试）",
+    "grade": 2,
+    "category": "aoshu-xiwang",
+    "duration": 60,
+    "totalScore": 120,
+    "difficultyLevel": 2,
+    "year": 2004,
+    "source": "希望杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共20题，每题6分）", "count": 20, "scorePerQuestion": 6}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：54-53+52-51+50-49+48-47+46-45+44-43 = ______。",
+            "answer": "6",
+            "score": 6,
+            "solution": "分组计算：每两个数一组，(54-53)+(52-51)+(50-49)+(48-47)+(46-45)+(44-43)=1+1+1+1+1+1=6。",
+            "knowledgePoints": ["巧算", "分组计算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "下图中共有______条线段。",
+            "answer": "30",
+            "score": 6,
+            "solution": "分成5条线，每条线上有3+2+1=6条线段，一共5×6=30条线段。",
+            "knowledgePoints": ["线段计数", "分类枚举"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "下面是3个机器人，每个机器人都有自己的密码（与头、胳膊和上身有关），已知最左边的机器人的密码是2757，中间的机器人的密码是4292，那么最右边的机器人的密码是______。",
+            "answer": "4252",
+            "score": 6,
+            "solution": "观察密码规律：头→左手→身→右手。三角=2，梯形=7，正方形=5，凹槽形=9。最右边的机器人：头=4(三角)，左手=2，正方形=5，右手=2。密码为4252。",
+            "knowledgePoints": ["图形推理", "找规律"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "找规律填数：1、3、7、13、21、______。",
+            "answer": "31",
+            "score": 6,
+            "solution": "规律：每次增加2,4,6,8,10...1+2=3，3+4=7，7+6=13，13+8=21，21+10=31。",
+            "knowledgePoints": ["等差递增", "找规律"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小明有25颗糖，给了小刚8颗，给了小强5颗。小明还剩______颗糖。",
+            "answer": "12",
+            "score": 6,
+            "solution": "送出8+5=13颗，还剩25-13=12颗。",
+            "knowledgePoints": ["连减应用题"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个正方形和一个三角形一共有______条边。",
+            "answer": "7",
+            "score": 6,
+            "solution": "正方形4条边，三角形3条边，4+3=7条边。",
+            "knowledgePoints": ["图形边数"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "时钟敲3下用了6秒，敲9下用了______秒。",
+            "answer": "24",
+            "score": 6,
+            "solution": "敲3下有2个间隔，每个间隔3秒。敲9下有8个间隔，8×3=24秒。",
+            "knowledgePoints": ["间隔问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "把10颗糖平均分给5个小朋友，每个小朋友分到______颗糖。",
+            "answer": "2",
+            "score": 6,
+            "solution": "平均分：10÷5=2颗。",
+            "knowledgePoints": ["平均分"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小华有18颗弹珠，给了小红3颗后，他们两人的弹珠就一样多。原来小红有______颗弹珠。",
+            "answer": "12",
+            "score": 6,
+            "solution": "小华给了小红3颗后，小华剩18-3=15颗，两人相等各15颗。所以小红原有15-3=12颗。",
+            "knowledgePoints": ["等量关系"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小红比小丽多3颗糖，小丽有8颗糖。小红有______颗糖。",
+            "answer": "11",
+            "score": 6,
+            "solution": "小红有8+3=11颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一根绳子对折一次后，从中间剪开，绳子被剪成______段。",
+            "answer": "3",
+            "score": 6,
+            "solution": "对折一次变2股，剪开后有3段（可画图验证）。",
+            "knowledgePoints": ["剪绳子问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小红有15颗糖，第一次吃了5颗，第二次吃了剩下的一半。还剩______颗糖。",
+            "answer": "5",
+            "score": 6,
+            "solution": "第一次吃5颗剩10颗，第二次吃一半（5颗），还剩5颗。",
+            "knowledgePoints": ["连减", "一半问题"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "有两根绳子，第一根比第二根长4米，第一根长12米。两根绳子一共长______米。",
+            "answer": "20",
+            "score": 6,
+            "solution": "第二根=12-4=8米，两根共12+8=20米。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "把18个苹果装进盒子里，每盒装6个，需要______个盒子。",
+            "answer": "3",
+            "score": 6,
+            "solution": "18÷6=3个盒子。",
+            "knowledgePoints": ["除法应用"]
+        },
+        {
+            "id": "q15",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小华从1楼走到3楼，共走了18级台阶。每层楼有______级台阶。",
+            "answer": "9",
+            "score": 6,
+            "solution": "1楼到3楼走了2层，18÷2=9级/层。",
+            "knowledgePoints": ["间隔问题"]
+        },
+        {
+            "id": "q16",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "有3排学生，每排有5人，一共有______人。",
+            "answer": "15",
+            "score": 6,
+            "solution": "3×5=15人。",
+            "knowledgePoints": ["乘法应用"]
+        },
+        {
+            "id": "q17",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "把一根绳子剪成5段，需要剪______次。",
+            "answer": "4",
+            "score": 6,
+            "solution": "剪4次可分成5段（规律：次数=段数-1）。",
+            "knowledgePoints": ["剪绳子"]
+        },
+        {
+            "id": "q18",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小明看一本书，第一天看了8页，第二天看了9页，第三天看了7页。三天共看了______页。",
+            "answer": "24",
+            "score": 6,
+            "solution": "8+9+7=24页。",
+            "knowledgePoints": ["连加"]
+        },
+        {
+            "id": "q19",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "水果店有苹果和梨共30个，苹果比梨多8个。苹果有______个。",
+            "answer": "19",
+            "score": 6,
+            "solution": "设梨为x，苹果=x+8，x+(x+8)=30，2x=22，x=11，苹果=19个。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q20",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "把20颗糖装进盒子里，每盒装6颗，需要______个盒子？还剩______颗？",
+            "answer": "3,2",
+            "score": 6,
+            "solution": "20÷6=3(个)……2(颗)，需要3个盒子，还剩2颗。",
+            "knowledgePoints": ["有余数除法"]
+        }
+    ]
+}

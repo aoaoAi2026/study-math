@@ -1,0 +1,713 @@
+{
+  "topicId": "addition-within-20",
+  "topicName": "20以内加减法",
+  "grade": "低年级核心",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "cm-ad-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "5 + 3 = ?",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "5+3=8"
+      ],
+      "hints": [
+        "数手指:5,6,7,8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成7",
+          "reason": "数错",
+          "correction": "5+3=8",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "加法"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ]
+    },
+    {
+      "id": "cm-ad-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "9 - 4 = ?",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五"
+      ],
+      "solution": [
+        "9-4=5"
+      ],
+      "hints": [
+        "从9倒数4个数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成6",
+          "reason": "数错",
+          "correction": "9-4=5",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "减法"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "减法"
+      ]
+    },
+    {
+      "id": "cm-ad-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "7 + 6 = ?",
+      "image": "",
+      "options": [],
+      "answer": "13",
+      "acceptableAnswers": [
+        "13",
+        "十三"
+      ],
+      "solution": [
+        "7+6=13。凑十法:7+3=10,10+3=13"
+      ],
+      "hints": [
+        "7+3=10,再加3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成12",
+          "reason": "凑十法算错",
+          "correction": "7+3+3=13",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "进位加法",
+        "凑十法"
+      ],
+      "estimatedTime": 40,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "凑十法"
+      ]
+    },
+    {
+      "id": "cm-ad-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "15 - 7 = ?",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "15-7=8。破十法:10-7=3,3+5=8"
+      ],
+      "hints": [
+        "10-7=3,3+5=8",
+        "想7+?=15"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成7",
+          "reason": "退位错误",
+          "correction": "15-7=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "退位减法",
+        "破十法"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "退位减法"
+      ]
+    },
+    {
+      "id": "cm-ad-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "8 + 5 + 2 = ?",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": [
+        "15",
+        "十五"
+      ],
+      "solution": [
+        "8+5+2=15。先算8+2=10凑十,再加5=15"
+      ],
+      "hints": [
+        "先凑十:8+2=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成14",
+          "reason": "计算失误",
+          "correction": "(8+2)+5=15",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "连加",
+        "巧算"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "连加"
+      ]
+    },
+    {
+      "id": "cm-ad-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "17 - 5 - 2 = ?",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "17-5-2=10 或 17-(5+2)=10"
+      ],
+      "hints": [
+        "也可以先算5+2=7",
+        "17-7=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成11",
+          "reason": "17-5算成12",
+          "correction": "17-7=10",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "连减"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "连减"
+      ]
+    },
+    {
+      "id": "cm-ad-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在□里填数：7 + □ = 13",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "□=13-7=6 验证:7+6=13✓"
+      ],
+      "hints": [
+        "13-7=?",
+        "想7加多少等于13"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成5",
+          "reason": "减法算错",
+          "correction": "13-7=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "填空",
+        "方程思想"
+      ],
+      "estimatedTime": 50,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "填空"
+      ]
+    },
+    {
+      "id": "cm-ad-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "巧算：1+2+3+4+5+6+7+8+9+10 = ?",
+      "image": "",
+      "options": [],
+      "answer": "55",
+      "acceptableAnswers": [
+        "55",
+        "五十五"
+      ],
+      "solution": [
+        "首尾配对:1+10=11,2+9=11,...共5对",
+        "11×5=55 或 (1+10)×10÷2=55"
+      ],
+      "hints": [
+        "首尾配对",
+        "每对和相同",
+        "有多少对?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成50",
+          "reason": "对数算错",
+          "correction": "5对×11=55",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "高斯求和",
+        "等差数列"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "高斯求和"
+      ]
+    },
+    {
+      "id": "cm-ad-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一本书共20页，小华第一天看了5页，第二天看了7页。还剩多少页没看？",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "20-5-7=8页 或 20-(5+7)=8页"
+      ],
+      "hints": [
+        "总-第一天-第二天"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成9",
+          "reason": "20-12算错",
+          "correction": "20-12=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "连减应用题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "应用题"
+      ]
+    },
+    {
+      "id": "cm-ad-10",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "哥哥有9颗糖，比弟弟多3颗。弟弟有几颗糖？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "哥哥比弟弟多3颗，弟弟比哥哥少3颗。弟弟=9-3=6颗。"
+      ],
+      "hints": [
+        "比...多=反方向比...少",
+        "哥=弟+3,所以弟=哥-3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成12",
+          "reason": "看到多就加",
+          "correction": "弟弟=9-3=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "比多比少",
+        "应用题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比多比少"
+      ]
+    },
+    {
+      "id": "cm-ad-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明从家到学校要走15分钟。他要在8点到校，最晚几点几分从家出发？",
+      "image": "",
+      "options": [],
+      "answer": "7:45",
+      "acceptableAnswers": [
+        "7:45",
+        "7点45",
+        "7点45分",
+        "7时45分"
+      ],
+      "solution": [
+        "8时-15分=7时45分。"
+      ],
+      "hints": [
+        "用到校时间减走路时间",
+        "8:00-15分钟"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成8:15",
+          "reason": "方向搞反",
+          "correction": "8:00-15分=7:45",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "时间计算"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "时间"
+      ]
+    },
+    {
+      "id": "cm-ad-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "□ + △ = 12，△ - 3 = 5，问□ = ?(回答□的值)",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "四"
+      ],
+      "solution": [
+        "从第二个式子:△-3=5,得△=8。",
+        "代入第一个:□+8=12,得□=4。"
+      ],
+      "hints": [
+        "先求△",
+        "△=5+3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "△算成7",
+          "reason": "5-3=2再乱算",
+          "correction": "△=8,□=4",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "等量代换",
+        "方程组"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "等量代换"
+      ]
+    },
+    {
+      "id": "cm-ad-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一桶油连桶重15千克，倒出一半油后连桶重8千克。原来油重多少千克？(回答油重)",
+      "image": "",
+      "options": [],
+      "answer": "14",
+      "acceptableAnswers": [
+        "14",
+        "十四"
+      ],
+      "solution": [
+        "倒出一半油减少了:15-8=7千克,这就是一半油的重量。",
+        "整桶油:7×2=14千克。"
+      ],
+      "hints": [
+        "减少的重量是一半油",
+        "15-8=7是一半油的重量"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成7",
+          "reason": "把一半当整桶",
+          "correction": "油=2×7=14千克",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "还原问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "还原"
+      ]
+    },
+    {
+      "id": "cm-ad-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一排小朋友从左数小明排第5，从右数小明排第6。这一排共多少人？",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "5+6-1=10人。小明被数了两次，要减1。"
+      ],
+      "hints": [
+        "画个图",
+        "小明被数了两次"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成11",
+          "reason": "忘了减1",
+          "correction": "5+6-1=10",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "排队问题"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "排队"
+      ]
+    },
+    {
+      "id": "cm-ad-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "小明、小红、小刚三人共有糖18颗。小明给小红2颗后，小红再给小刚3颗，小刚再给小明1颗，这时三人糖数相等。问小明原来有多少颗糖？",
+      "image": "",
+      "options": [],
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "七"
+      ],
+      "solution": [
+        "最后三人相等，各有18÷3=6颗。",
+        "用倒推法求小明:最后6颗，之前他收到小刚给的1颗，所以之前是5颗。",
+        "再往前，小明曾给小红2颗，所以原来=5+2=7颗。"
+      ],
+      "hints": [
+        "最后每人6颗",
+        "用倒推:给出去的加回来,收到的减回去",
+        "小明:6-1+2=7"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成6",
+          "reason": "没倒推",
+          "correction": "倒推:6-1+2=7",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "倒推法"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "倒推",
+        "还原"
+      ]
+    }
+  ]
+}

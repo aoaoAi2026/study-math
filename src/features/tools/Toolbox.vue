@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import AppLayout from '@/components/layout/AppLayout.vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
 </script>
 
 <template>
-  <AppLayout>
-    <div class="tools-page">
+  <div class="tools-page">
     <header class="t-head">
       <h1>🧰 教具工具箱</h1>
       <p class="muted">动手操作，可视化理解数学概念</p>
@@ -37,20 +35,20 @@ const router = useRouter()
         <button class="btn btn-outline small" disabled>敬请期待</button>
       </div>
     </div>
-  </AppLayout>
+  </div>
 </template>
 
 <style scoped>
 .tools-page { max-width: 1000px; margin: 0 auto; padding: 16px; }
 .t-head { text-align: center; margin-bottom: 24px; }
-.t-head h1 { font-size: 26px; color: #2C3E50; }
-.muted { color: #9AA5B1; font-size: 14px; }
+.t-head h1 { font-size: 26px; color: var(--text-primary); }
+.muted { color: var(--text-secondary); font-size: 14px; }
 .tool-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
-.tool-card { background: #fff; border-radius: 18px; padding: 28px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,.05); transition: all .2s; }
-.tool-card:hover:not(.coming) { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(79,125,248,.15); cursor: pointer; }
+.tool-card { background: var(--bg-card); border-radius: 18px; padding: 28px; text-align: center; box-shadow: var(--shadow-sm); transition: all .2s; }
+.tool-card:hover:not(.coming) { transform: translateY(-4px); box-shadow: var(--shadow-md); cursor: pointer; }
 .t-emoji { font-size: 56px; margin-bottom: 8px; }
-.tool-card h3 { font-size: 18px; color: #2C3E50; margin-bottom: 6px; }
-.tool-card p { color: #6B7785; font-size: 13px; margin-bottom: 14px; }
+.tool-card h3 { font-size: 18px; color: var(--text-primary); margin-bottom: 6px; }
+.tool-card p { color: var(--text-secondary); font-size: 13px; margin-bottom: 14px; }
 .btn.small { padding: 8px 16px; font-size: 13px; }
 .tool-card.coming { opacity: .7; }
 @media (max-width: 700px) { .tool-grid { grid-template-columns: 1fr; } }

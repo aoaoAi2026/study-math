@@ -1,0 +1,74 @@
+{
+    "paperId": "hmtc-2022-c-g1",
+    "title": "2022 HMTC 国际精英挑战营 一年级 团队战C卷",
+    "grade": 1,
+    "category": "aoshu-hmtc",
+    "duration": 40,
+    "totalScore": 40,
+    "difficultyLevel": 3,
+    "year": 2022,
+    "source": "HMTC 国际精英挑战营组委会",
+    "sections": [
+        {"name": "填空题（共5题）", "count": 5, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "choice",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "下面是冰墩墩的拼图，缺少的是（　　）。",
+            "options": ["A", "B", "C", "D", "E"],
+            "answer": "A",
+            "score": 8,
+            "solution": "观察冰墩墩拼图的已知部分，找出缺失位置的形状特征。分析图中各块拼图的轮廓、颜色和方向，确定缺少的那一块是A选项的图形。",
+            "knowledgePoints": ["图形拼图", "图形识别"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "熊二有5斤蜂蜜，熊大给熊二4斤蜂蜜后，他们的蜂蜜就一样多了。熊大原来有________斤蜂蜜。",
+            "answer": "13",
+            "score": 8,
+            "solution": "熊二原有5斤，得到4斤后变为5+4=9斤，此时与熊大一样多。所以熊大原来也是9斤。但题目说熊大给熊二4斤后一样多，说明熊大原来比9斤多4斤，即熊大原来有9+4=13斤。验证：熊大13-4=9，熊二5+4=9，相等。",
+            "knowledgePoints": ["等量关系", "逆向思维"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "冰墩墩练习滑雪，早上8点开始，下午4点结束，中午休息2小时。冰墩墩这一天练习了________小时。",
+            "answer": "6",
+            "score": 8,
+            "solution": "早上8点到下午4点，总时长8小时（从8到16）。减去中午休息的2小时，实际练习了8-2=6小时。",
+            "knowledgePoints": ["时间计算", "时间应用"]
+        },
+        {
+            "id": "q4",
+            "type": "choice",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "只画一笔，不重复画同一条线，不能画出哪个图？（　　）<br>A. 圆形　B. 正方形　C. 三角形　D. 五角星",
+            "options": ["圆形", "正方形", "三角形", "五角星"],
+            "answer": "B",
+            "score": 8,
+            "solution": "一笔画规律：凡是有偶数个奇点（线条交点中线条数为奇数的点）的图形都可以一笔画。正方形有4个奇点（每个顶点都是2条线的交点），不能一笔画。圆形、三角形、五角星都可以一笔画。",
+            "knowledgePoints": ["一笔画", "奇点问题"]
+        },
+        {
+            "id": "q5",
+            "type": "choice",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "用两个三角形不能拼出哪个图形？（　　）<br>A. 正方形　B. 平行四边形　C. 梯形　D. 菱形",
+            "options": ["正方形", "平行四边形", "梯形", "菱形"],
+            "answer": "D",
+            "score": 8,
+            "solution": "两个完全相同的直角三角形可以拼成正方形、平行四边形、梯形。两个等腰直角三角形可以拼成菱形，但两个普通三角形不一定能拼成菱形。分析可知：两个普通三角形不能保证拼出菱形。",
+            "knowledgePoints": ["图形拼摆", "图形认知"]
+        }
+    ]
+}

@@ -1,0 +1,759 @@
+{
+  "topicId": "g5-polygon-area",
+  "topicName": "多边形面积",
+  "grade": 5,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g5-pa-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "平行四边形的面积公式是()。",
+      "image": "",
+      "options": [
+        "底×高÷2",
+        "底×高",
+        "(上底+下底)×高÷2",
+        "边长×边长"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "平行四边形沿高剪开拼成长方形",
+        "长方形的长=平行四边形的底,宽=高",
+        "面积=底×高"
+      ],
+      "hints": [
+        "平行四边形=底×高,不要除以2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "跟三角形混淆",
+          "correction": "底×高",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "平行四边形"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "面积公式"
+      ]
+    },
+    {
+      "id": "g5-pa-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个平行四边形的底是8厘米,高是5厘米,它的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40",
+        "40平方厘米"
+      ],
+      "solution": [
+        "面积=底×高=8×5=40平方厘米"
+      ],
+      "hints": [
+        "直接代入公式",
+        "8×5=40"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "8×5=40",
+          "correction": "40",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "平行四边形"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "面积"
+      ]
+    },
+    {
+      "id": "g5-pa-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个三角形的底是6厘米,高是4厘米,它的面积是()平方厘米。",
+      "image": "",
+      "options": [
+        "10",
+        "12",
+        "24",
+        "48"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "三角形面积=底×高÷2",
+        "=6×4÷2=12平方厘米"
+      ],
+      "hints": [
+        "底×高÷2",
+        "6×4÷2=12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "忘记÷2",
+          "correction": "12",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "三角形"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "面积公式"
+      ]
+    },
+    {
+      "id": "g5-pa-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "梯形上底4厘米,下底6厘米,高3厘米,面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": [
+        "15",
+        "15平方厘米"
+      ],
+      "solution": [
+        "(上底+下底)×高÷2",
+        "(4+6)×3÷2=10×3÷2=15平方厘米"
+      ],
+      "hints": [
+        "(上底+下底)×高÷2",
+        "(4+6)×3÷2=15"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "忘记÷2",
+          "reason": "(4+6)×3÷2=15",
+          "correction": "15",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "梯形"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "面积公式"
+      ]
+    },
+    {
+      "id": "g5-pa-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个三角形的面积是24平方厘米,底是8厘米,那么高是()厘米。",
+      "image": "",
+      "options": [
+        "3",
+        "6",
+        "12",
+        "48"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "三角形面积=底×高÷2",
+        "24=8×高÷2,高=24×2÷8=6厘米"
+      ],
+      "hints": [
+        "高=2×面积÷底",
+        "2×24÷8=6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "24÷8=3没有×2",
+          "correction": "高=2×24÷8=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "三角形"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "逆运算"
+      ]
+    },
+    {
+      "id": "g5-pa-06",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个梯形的面积是60平方厘米,上底和下底之和是20厘米,高是多少厘米?",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6厘米"
+      ],
+      "solution": [
+        "面积=(上底+下底)×高÷2",
+        "60=20×高÷2,60=10×高",
+        "高=6厘米"
+      ],
+      "hints": [
+        "高=2×面积÷(上底+下底)",
+        "2×60÷20=6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成3",
+          "reason": "60÷20=3忘记×2",
+          "correction": "6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "梯形"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "逆运算"
+      ]
+    },
+    {
+      "id": "g5-pa-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把一个长方形拉成一个平行四边形(底不变),它的()。",
+      "image": "",
+      "options": [
+        "周长不变,面积变小",
+        "周长变小,面积不变",
+        "周长和面积都不变",
+        "都变小"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "四条边长度不变,周长不变",
+        "但高变小了(倾斜了)",
+        "面积=底×高,高变小所以面积变小"
+      ],
+      "hints": [
+        "四条边没变所以周长不变",
+        "高变小面积变小"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1或2或3",
+          "reason": "没考虑高变化",
+          "correction": "周长不变面积变小",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "面积变化"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "周长",
+        "面积"
+      ]
+    },
+    {
+      "id": "g5-pa-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一块三角形菜地,底是20米,高是底的一半。如果每平方米收白菜8千克,这块地一共能收多少千克白菜?",
+      "image": "",
+      "options": [],
+      "answer": "800",
+      "acceptableAnswers": [
+        "800",
+        "800千克"
+      ],
+      "solution": [
+        "高=底÷2=20÷2=10米",
+        "三角形面积=20×10÷2=100平方米",
+        "总产量=100×8=800千克"
+      ],
+      "hints": [
+        "先求高=10,再求面积",
+        "面积×每平方米产量=总产量"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "高算错或面积忘÷2",
+          "reason": "高=10,面积=100,800",
+          "correction": "高=10,面积=100,800",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "三角形应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "应用题"
+      ]
+    },
+    {
+      "id": "g5-pa-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形纸长12厘米,宽8厘米。从中剪去一个最大的正方形,剩下图形的面积是()平方厘米。",
+      "image": "",
+      "options": [
+        "16",
+        "32",
+        "48",
+        "64"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "长方形面积=12×8=96",
+        "最大正方形边长=宽=8厘米,面积=8×8=64",
+        "剩下面积=96-64=32平方厘米",
+        "或:剩下长方形宽=12-8=4,面积=4×8=32"
+      ],
+      "hints": [
+        "最大正方形边长=长方形的宽",
+        "剩下=长×宽-宽×宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "正方形边长取长12",
+          "correction": "边长=8,剩=(12-8)×8=32",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "组合图形"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形",
+        "正方形"
+      ]
+    },
+    {
+      "id": "g5-pa-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在两条平行线之间有几个等底的三角形,它们的面积()。",
+      "image": "",
+      "options": [
+        "都不相等",
+        "可能相等",
+        "都相等",
+        "等于平行四边形面积"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "两条平行线之间距离相等即高相等",
+        "又等底所以底×高÷2都相等",
+        "所以这些三角形面积都相等"
+      ],
+      "hints": [
+        "平行线间距离相等(高相等)",
+        "等底等高面积相等"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1",
+          "reason": "不知道平行线间高相等",
+          "correction": "等底等高的三角形面积相等",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "等底等高"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行线"
+      ]
+    },
+    {
+      "id": "g5-pa-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形长10厘米,宽6厘米,连接它的一条对角线把长方形分成两个三角形,求每个三角形的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30",
+        "30平方厘米"
+      ],
+      "solution": [
+        "长方形对角线分长方形为两个相同三角形",
+        "长方形面积=10×6=60平方厘米",
+        "每个三角形面积=60÷2=30平方厘米"
+      ],
+      "hints": [
+        "对角线分长方形为两个相等三角形",
+        "三角形=长方形÷2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成60",
+          "reason": "忘记÷2",
+          "correction": "10×6÷2=30",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "三角形"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "对角线"
+      ]
+    },
+    {
+      "id": "g5-pa-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个梯形的上底是5厘米,下底是9厘米,如果把上底延长()厘米,它就变成一个平行四边形。",
+      "image": "",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "平行四边形对边相等",
+        "需要上底=下底即9厘米",
+        "延长长度=9-5=4厘米"
+      ],
+      "hints": [
+        "使上底=下底",
+        "9-5=4厘米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "算成(9-5)/2=2",
+          "correction": "只需延长9-5=4厘米",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "梯形与平行四边形"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "梯形"
+      ]
+    },
+    {
+      "id": "g5-pa-13",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个平行四边形的面积是72平方分米,底是9分米,高是多少分米?",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "8分米"
+      ],
+      "solution": [
+        "面积=底×高",
+        "72=9×高",
+        "高=72÷9=8分米"
+      ],
+      "hints": [
+        "高=面积÷底",
+        "72÷9=8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成其他",
+          "reason": "72÷9=8",
+          "correction": "8",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "平行四边形"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "逆运算"
+      ]
+    },
+    {
+      "id": "g5-pa-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一块平行四边形菜地,底30米,高20米。中间有两条交叉小路(一条平行底宽1米,一条平行高宽1米)。实际种菜面积是多少平方米?",
+      "image": "",
+      "options": [],
+      "answer": "551",
+      "acceptableAnswers": [
+        "551",
+        "551平方米"
+      ],
+      "solution": [
+        "把四块种菜区域平移合并成新平行四边形",
+        "新底=30-1=29米,新高=20-1=19米",
+        "实际面积=29×19=551平方米"
+      ],
+      "hints": [
+        "用平移法",
+        "底减1,高减1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成29×20或30×19",
+          "reason": "没考虑两条都减",
+          "correction": "(30-1)(20-1)=551",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "平移法"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "组合图形"
+      ]
+    },
+    {
+      "id": "g5-pa-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个梯形上底8厘米,如果把上底延长4厘米就变成一个平行四边形,这时面积增加了12平方厘米。求原来梯形的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "60平方厘米"
+      ],
+      "solution": [
+        "上底延长4厘米成平行四边形,则下底=8+4=12厘米",
+        "增加部分是一个三角形,底4厘米,面积12平方厘米",
+        "三角形面积=底×高÷2,12=4×高÷2,高=6厘米",
+        "梯形高也是6厘米",
+        "梯形面积=(8+12)×6÷2=20×6÷2=60平方厘米"
+      ],
+      "hints": [
+        "下底=8+4=12",
+        "增加三角形求高:高=2×12÷4=6",
+        "(8+12)×6÷2=60"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "不会利用增加面积求高",
+          "reason": "高=6,(8+12)×6÷2=60",
+          "correction": "高=6,(8+12)×6÷2=60",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "面积变化"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "梯形",
+        "三角形"
+      ]
+    }
+  ]
+}

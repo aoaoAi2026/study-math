@@ -1,0 +1,737 @@
+{
+  "topicId": "g5-fraction-add-sub",
+  "topicName": "分数加减法",
+  "grade": 5,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g5-fa-01",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "计算:1/5 + 2/5",
+      "image": "",
+      "options": [],
+      "answer": "3/5",
+      "acceptableAnswers": [
+        "3/5"
+      ],
+      "solution": [
+        "同分母分数相加,分母不变,分子相加",
+        "1/5+2/5=(1+2)/5=3/5"
+      ],
+      "hints": [
+        "分母不变,分子相加",
+        "(1+2)/5=3/5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "分母也加了",
+          "reason": "分母不变,只加分子",
+          "correction": "3/5",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "同分母加法"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "同分母"
+      ]
+    },
+    {
+      "id": "g5-fa-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "计算:7/8 - 3/8",
+      "image": "",
+      "options": [],
+      "answer": "4/8",
+      "acceptableAnswers": [
+        "4/8",
+        "1/2"
+      ],
+      "solution": [
+        "同分母分数相减,分母不变,分子相减",
+        "7/8-3/8=(7-3)/8=4/8=1/2"
+      ],
+      "hints": [
+        "分母不变分子相减",
+        "4/8可以约分为1/2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "分母8-8=0",
+          "reason": "分母不变,只减分子",
+          "correction": "4/8=1/2",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "同分母减法"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "同分母"
+      ]
+    },
+    {
+      "id": "g5-fa-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "2/3 + 1/3 =()。",
+      "image": "",
+      "options": [
+        "3/6",
+        "1",
+        "3/3",
+        "2/3"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1",
+        "2"
+      ],
+      "solution": [
+        "2/3+1/3=(2+1)/3=3/3=1",
+        "最简答案是1"
+      ],
+      "hints": [
+        "同分母相加",
+        "3/3=1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "分子分母都加",
+          "correction": "3/3=1",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "同分母加法"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "等于1"
+      ]
+    },
+    {
+      "id": "g5-fa-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1 - 3/7",
+      "image": "",
+      "options": [],
+      "answer": "4/7",
+      "acceptableAnswers": [
+        "4/7"
+      ],
+      "solution": [
+        "1=7/7",
+        "1-3/7=7/7-3/7=4/7"
+      ],
+      "hints": [
+        "1写成与减数同分母的分数",
+        "7/7-3/7=4/7"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "1-3/7=2/7",
+          "reason": "把1当1/7了",
+          "correction": "1=7/7",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "1减分数"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "1"
+      ]
+    },
+    {
+      "id": "g5-fa-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1/2 + 1/4 =()。",
+      "image": "",
+      "options": [
+        "2/6",
+        "3/4",
+        "1/3",
+        "2/4"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1",
+        "3"
+      ],
+      "solution": [
+        "分母不同需要通分",
+        "最小公倍数是4",
+        "1/2=2/4",
+        "1/2+1/4=2/4+1/4=3/4"
+      ],
+      "hints": [
+        "先通分再计算",
+        "1/2=2/4,2/4+1/4=3/4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "分子加分子分母加分母",
+          "correction": "先通分后计算,3/4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "异分母加法"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "通分"
+      ]
+    },
+    {
+      "id": "g5-fa-06",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2/3 - 1/6",
+      "image": "",
+      "options": [],
+      "answer": "3/6",
+      "acceptableAnswers": [
+        "3/6",
+        "1/2"
+      ],
+      "solution": [
+        "最小公倍数=6",
+        "2/3=4/6",
+        "4/6-1/6=3/6=1/2"
+      ],
+      "hints": [
+        "3和6最小公倍数=6",
+        "4/6-1/6=3/6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "通分错",
+          "reason": "2/3=4/6不是2/6",
+          "correction": "3/6=1/2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "异分母减法"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "通分"
+      ]
+    },
+    {
+      "id": "g5-fa-07",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "3/4 + 5/6",
+      "image": "",
+      "options": [],
+      "answer": "19/12",
+      "acceptableAnswers": [
+        "19/12",
+        "1又7/12"
+      ],
+      "solution": [
+        "4和6最小公倍数=12",
+        "3/4=9/12,5/6=10/12",
+        "9/12+10/12=19/12=1又7/12"
+      ],
+      "hints": [
+        "先找最小公倍数12",
+        "9+10=19,19/12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成8/10",
+          "reason": "分母24太大也可以但计算繁",
+          "correction": "9/12+10/12=19/12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "异分母加法"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "通分"
+      ]
+    },
+    {
+      "id": "g5-fa-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "5/6 - 1/3",
+      "image": "",
+      "options": [],
+      "answer": "3/6",
+      "acceptableAnswers": [
+        "3/6",
+        "1/2"
+      ],
+      "solution": [
+        "最小公倍数=6",
+        "1/3=2/6",
+        "5/6-2/6=3/6=1/2"
+      ],
+      "hints": [
+        "先通分到6",
+        "5/6-2/6=3/6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成4/6",
+          "reason": "1/3=2/6不是1/6",
+          "correction": "3/6=1/2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "异分母减法"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "通分"
+      ]
+    },
+    {
+      "id": "g5-fa-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2/5 + 1/5 + 3/5",
+      "image": "",
+      "options": [],
+      "answer": "6/5",
+      "acceptableAnswers": [
+        "6/5",
+        "1又1/5"
+      ],
+      "solution": [
+        "同分母连加,分母不变,分子相加",
+        "2/5+1/5+3/5=(2+1+3)/5=6/5=1又1/5"
+      ],
+      "hints": [
+        "分子连加",
+        "(2+1+3)/5=6/5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成5/5",
+          "reason": "2+1+3=6不是5",
+          "correction": "6/5",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "同分母连加"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "连加"
+      ]
+    },
+    {
+      "id": "g5-fa-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1 - 2/5 - 1/5 =()。",
+      "image": "",
+      "options": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "1=5/5",
+        "5/5-2/5-1/5=(5-2-1)/5=2/5"
+      ],
+      "hints": [
+        "1化成分母5的分数",
+        "5-2-1=2,2/5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "1-2/5-1/5=2/5",
+          "correction": "注意符号",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "连减"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "连减"
+      ]
+    },
+    {
+      "id": "g5-fa-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "计算:2又1/3 + 3又1/2",
+      "image": "",
+      "options": [],
+      "answer": "5又5/6",
+      "acceptableAnswers": [
+        "5又5/6",
+        "5 5/6",
+        "35/6"
+      ],
+      "solution": [
+        "整数部分:2+3=5",
+        "分数部分:1/3+1/2=2/6+3/6=5/6",
+        "合起来=5又5/6"
+      ],
+      "hints": [
+        "整数与整数加,分数与分数加",
+        "5+5/6=5又5/6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "分数加错",
+          "reason": "1/3+1/2=5/6不是2/5",
+          "correction": "5又5/6",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "带分数加法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "带分数"
+      ]
+    },
+    {
+      "id": "g5-fa-12",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "计算:5 - 1又3/4",
+      "image": "",
+      "options": [],
+      "answer": "3又1/4",
+      "acceptableAnswers": [
+        "3又1/4",
+        "3 1/4"
+      ],
+      "solution": [
+        "5-1又3/4=4又4/4-1又3/4=3又1/4",
+        "或:5-1-3/4=4-3/4=3又1/4"
+      ],
+      "hints": [
+        "从5中借1变成4/4",
+        "或先减整数再减分数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成4又1/4",
+          "reason": "5-1=4,不是4又0/4减1又3/4",
+          "correction": "5-1又3/4=3又1/4",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "带分数减法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "带分数"
+      ]
+    },
+    {
+      "id": "g5-fa-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个工程队第一天完成全部工程的1/4,第二天完成全部工程的2/5,两天共完成全部工程的()。",
+      "image": "",
+      "options": [
+        "3/9",
+        "13/20",
+        "3/20",
+        "8/20"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "1/4+2/5=5/20+8/20=13/20"
+      ],
+      "hints": [
+        "两天工作量相加",
+        "先通分再计算"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或3",
+          "reason": "1/4+2/5,分母20,5/20+8/20=13/20",
+          "correction": "13/20",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数应用题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "应用题"
+      ]
+    },
+    {
+      "id": "g5-fa-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一根绳子,第一次用去全长的1/3,第二次用去全长的1/4,还剩全长的几分之几?",
+      "image": "",
+      "options": [],
+      "answer": "5/12",
+      "acceptableAnswers": [
+        "5/12"
+      ],
+      "solution": [
+        "把全长看作单位1",
+        "1-1/3-1/4=12/12-4/12-3/12=5/12"
+      ],
+      "hints": [
+        "单位1减去两次用的",
+        "1-1/3-1/4=5/12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "忘通分",
+          "reason": "1-1/3-1/4要通分",
+          "correction": "12/12-4/12-3/12=5/12",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数应用题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "单位1"
+      ]
+    },
+    {
+      "id": "g5-fa-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个长方体容器长8分米、宽5分米、高6分米,里面装满水。先倒出全部水的1/3,再倒出剩下的2/5,还剩多少水?(用分数表示占全部的几分之几)",
+      "image": "",
+      "options": [],
+      "answer": "2/5",
+      "acceptableAnswers": [
+        "2/5"
+      ],
+      "solution": [
+        "第一次倒出1/3,剩1-1/3=2/3",
+        "第二次倒出2/3的2/5即4/15",
+        "剩=2/3-4/15=10/15-4/15=6/15=2/5",
+        "或:剩=2/3×(1-2/5)=2/3×3/5=2/5"
+      ],
+      "hints": [
+        "先算第一次剩",
+        "再算第二次剩"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成1-1/3-2/5",
+          "reason": "第二次不是全部的2/5而是剩下的2/5",
+          "correction": "2/3×3/5=2/5",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数连减"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "单位1变化"
+      ]
+    }
+  ]
+}

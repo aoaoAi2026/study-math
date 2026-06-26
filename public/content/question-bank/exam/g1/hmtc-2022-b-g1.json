@@ -1,0 +1,72 @@
+{
+    "paperId": "hmtc-2022-b-g1",
+    "title": "2022 HMTC 国际精英挑战营 一年级 团队战B卷",
+    "grade": 1,
+    "category": "aoshu-hmtc",
+    "duration": 40,
+    "totalScore": 40,
+    "difficultyLevel": 3,
+    "year": 2022,
+    "source": "HMTC 国际精英挑战营组委会",
+    "sections": [
+        {"name": "填空题（共5题）", "count": 5, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "海尔兄弟一起探险，哥哥的能量棒比弟弟多11个，哥哥分给弟弟3个能量棒后，哥哥的能量棒还比弟弟多________个。",
+            "answer": "5",
+            "score": 8,
+            "solution": "设弟弟原有x个，则哥哥有x+11个。哥哥给弟弟3个后：哥哥变为(x+11-3)=x+8个，弟弟变为x+3个。差值=(x+8)-(x+3)=5个。所以哥哥还比弟弟多5个。",
+            "knowledgePoints": ["简单应用题", "差量变化"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "从图中找规律，「？」=________。",
+            "answer": "2",
+            "score": 8,
+            "solution": "观察图中各图形的数量关系，找出数字之间的规律（如每行/列之和、图形代表的数值等），计算出「？」处的数字。",
+            "knowledgePoints": ["找规律", "图形推理"]
+        },
+        {
+            "id": "q3",
+            "type": "choice",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "最下面的铅笔是哪一支？（　　）<br>A. ①　B. ②　C. ③　D. ④",
+            "options": ["①", "②", "③", "④"],
+            "answer": "B",
+            "score": 8,
+            "solution": "观察铅笔的排列顺序和各支铅笔的特征（颜色、长度、花纹），确定从上往下看时最下面的是哪一支。根据投影和遮挡关系判断选B。",
+            "knowledgePoints": ["图形观察", "空间位置"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "救生员围在一个边长为350米的正方形泳池四周，从泳池的一个角开始，每隔50米有一个救生员。这个泳池四周一共有________个救生员。",
+            "answer": "28",
+            "score": 8,
+            "solution": "正方形泳池周长=350×4=1400米。每隔50米站一个救生员，可以站1400÷50=28个。因为是封闭路线（从角开始站，每隔50米一个，回到起点刚好站满），共有28个救生员。",
+            "knowledgePoints": ["植树问题", "封闭路线"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "用折线一笔连完图中全部的5个点（不重复画同一条线），至少画出________条直线。",
+            "answer": "5",
+            "score": 8,
+            "solution": "用折线（一笔画）连接所有点，不能重复同一条线段。分析点的位置和连线方式，确定最少需要的线段数量。5个点用折线连接最少需要4条线段，但要求至少画出多少条直线，需根据具体图形判断。",
+            "knowledgePoints": ["一笔画", "连线问题"]
+        }
+    ]
+}

@@ -1,0 +1,750 @@
+{
+  "topicId": "counting-game",
+  "topicName": "趣味数数",
+  "grade": "低年级复习",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "cm-cg-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "按规律填数：2、4、6、8、____",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "这是连续的偶数，每次加2。",
+        "8 + 2 = 10。"
+      ],
+      "hints": [
+        "每次多几？",
+        "都是双数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成9",
+          "reason": "以为每次加1",
+          "correction": "每次加2,8+2=10",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "偶数",
+        "数列规律"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律"
+      ]
+    },
+    {
+      "id": "cm-cg-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "按规律填数：10、15、20、25、____",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30",
+        "三十"
+      ],
+      "solution": [
+        "每次加5，都是5的倍数。",
+        "25 + 5 = 30。"
+      ],
+      "hints": [
+        "每次多5",
+        "数一数:10,15,20,25..."
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成35",
+          "reason": "多加了",
+          "correction": "25+5=30",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "倍数",
+        "数列规律"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律"
+      ]
+    },
+    {
+      "id": "cm-cg-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "按规律填数：1、2、4、8、____",
+      "image": "",
+      "options": [],
+      "answer": "16",
+      "acceptableAnswers": [
+        "16",
+        "十六"
+      ],
+      "solution": [
+        "后一个数是前一个数的2倍。",
+        "8 × 2 = 16。"
+      ],
+      "hints": [
+        "每个数是前面的几倍？",
+        "1×2=2,2×2=4..."
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成12",
+          "reason": "误以为每次加4",
+          "correction": "8×2=16",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "等比数列"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律"
+      ]
+    },
+    {
+      "id": "cm-cg-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "按规律填数：1、4、9、16、____、36",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": [
+        "25",
+        "二十五"
+      ],
+      "solution": [
+        "每个数是位置序号的平方。",
+        "1=1×1,4=2×2,9=3×3,16=4×4,5×5=25。"
+      ],
+      "hints": [
+        "1=1×1,4=2×2,9=3×3",
+        "第5个是什么？"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成24",
+          "reason": "误以为每次加5,6,7",
+          "correction": "5×5=25",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "平方数",
+        "数列规律"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平方数"
+      ]
+    },
+    {
+      "id": "cm-cg-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "找规律填数：2、6、12、20、____、42",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30",
+        "三十"
+      ],
+      "solution": [
+        "相邻两数的差是：4、6、8、10、12。",
+        "20 + 10 = 30。",
+        "也可看成：1×2=2,2×3=6,3×4=12,4×5=20,5×6=30。"
+      ],
+      "hints": [
+        "算一算差",
+        "差:4,6,8...",
+        "也可写成n×(n+1)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成28",
+          "reason": "差算成8",
+          "correction": "差是10,20+10=30",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差数列"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律"
+      ]
+    },
+    {
+      "id": "cm-cg-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "找规律填数：1、1、2、3、5、8、____、21",
+      "image": "",
+      "options": [],
+      "answer": "13",
+      "acceptableAnswers": [
+        "13",
+        "十三"
+      ],
+      "solution": [
+        "每个数等于它前面两个数的和。",
+        "5 + 8 = 13。这是斐波那契数列。"
+      ],
+      "hints": [
+        "1+1=2,1+2=3,2+3=5,3+5=8",
+        "接下来5+8=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成11",
+          "reason": "误以为每次加3",
+          "correction": "5+8=13",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "斐波那契数列"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律"
+      ]
+    },
+    {
+      "id": "cm-cg-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一串珠子按白、黑、白、黑排列，第20颗是什么颜色？",
+      "image": "",
+      "options": [
+        "白色",
+        "黑色",
+        "红色",
+        "无法确定"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "2个一循环(白、黑)。",
+        "20 ÷ 2 = 10，没有余数。",
+        "所以是循环的最后一个，即黑色。"
+      ],
+      "hints": [
+        "每几颗重复一次？",
+        "20除以几？",
+        "余数为0时看最后一个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选白色",
+          "reason": "误以为余1",
+          "correction": "20÷2=10余0,对应黑色",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "周期问题"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "周期"
+      ]
+    },
+    {
+      "id": "cm-cg-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "找规律：1、3、6、10、15、____",
+      "image": "",
+      "options": [],
+      "answer": "21",
+      "acceptableAnswers": [
+        "21",
+        "二十一"
+      ],
+      "solution": [
+        "相邻两数的差是2、3、4、5、6。",
+        "15 + 6 = 21。这是三角形数列。"
+      ],
+      "hints": [
+        "差:2,3,4,5...",
+        "15+6=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成20",
+          "reason": "误以为差是5",
+          "correction": "差是6,15+6=21",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "三角形数",
+        "差数列"
+      ],
+      "estimatedTime": 75,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形数"
+      ]
+    },
+    {
+      "id": "cm-cg-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明从1写到100，一共写了多少个数字1？",
+      "image": "",
+      "options": [],
+      "answer": "21",
+      "acceptableAnswers": [
+        "21",
+        "二十一"
+      ],
+      "solution": [
+        "个位上是1的数:1,11,21,...,91共10个。",
+        "十位上是1的数:10,11,...,19共10个。",
+        "百位上是1的数:100，1个。",
+        "合计:10+10+1=21个。"
+      ],
+      "hints": [
+        "分别数:个位的1、十位的1、百位的1",
+        "11中个位和十位都是1,要数两次"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成20",
+          "reason": "漏掉100中的百位1",
+          "correction": "100也算1个1,共21个",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "页码问题",
+        "数字统计"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "页码"
+      ]
+    },
+    {
+      "id": "cm-cg-10",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一串数:1、2、2、3、3、3、4、4、4、4、...第50个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "数字n出现n次。",
+        "前9个数累计:1+2+3+...+9=45。",
+        "前10个数累计:45+10=55。",
+        "第46到55个都是10，所以第50个是10。"
+      ],
+      "hints": [
+        "先算前n个数共有多少个",
+        "1+2+3+...+n=n(n+1)/2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成9",
+          "reason": "算错累计数",
+          "correction": "前9个共45,第50个是10",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数列",
+        "高斯求和"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "计数"
+      ]
+    },
+    {
+      "id": "cm-cg-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把1-9这九个数字填入□，每个数字只用一次，使等式成立：□+□=□+□=□+□=□+□=□。问中间单独的数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五"
+      ],
+      "solution": [
+        "1到9的和是45。",
+        "设单独的数为a，剩下8个数之和=45-a，能分成4对相等的和。",
+        "45-a必须被4整除。",
+        "a=5时:45-5=40，40÷4=10。验证:1+9=2+8=3+7=4+6=10,余5✓"
+      ],
+      "hints": [
+        "先算1+2+...+9=?",
+        "45-a能被4整除",
+        "试一下哪些a可以?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成1或9",
+          "reason": "没有验证每对和是否相等",
+          "correction": "只有5时每对和为10成立",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数字谜",
+        "平均数"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "数字谜"
+      ]
+    },
+    {
+      "id": "cm-cg-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一列数:1、2、3、2、3、4、3、4、5、4、5、6、...前100个数的和是多少？",
+      "image": "",
+      "options": [],
+      "answer": "1815",
+      "acceptableAnswers": [
+        "1815"
+      ],
+      "solution": [
+        "每3个一组:(1,2,3),(2,3,4),(3,4,5),...,每组和是6,9,12,...是首项6公差3的等差数列。",
+        "前99个数=33组，第33组=(33,34,35),和=102。",
+        "33组和=(6+102)×33÷2=1782。",
+        "第100个数=34。总和=1782+33=1815。"
+      ],
+      "hints": [
+        "每3个一组看看",
+        "每组和:6,9,12...是等差数列"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成1782",
+          "reason": "忘了加第100个数",
+          "correction": "前99个=1782,第100个=33,共1815",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数列分组",
+        "等差数列求和"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "分组求和"
+      ]
+    },
+    {
+      "id": "cm-cg-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个数加上3，再乘3，再减3，再除以3，结果还是3。这个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1",
+        "一"
+      ],
+      "solution": [
+        "用倒推法:从3出发。",
+        "除以3之前:3×3=9。",
+        "减3之前:9+3=12。",
+        "乘3之前:12÷3=4。",
+        "加3之前:4-3=1。",
+        "验证:(1+3)×3-3=9,9÷3=3✓"
+      ],
+      "hints": [
+        "倒过来想!",
+        "从结果反推",
+        "加3的反操作是减3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3",
+          "reason": "计算顺序错",
+          "correction": "((3×3)+3)÷3-3=1",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "倒推法",
+        "还原问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "倒推"
+      ]
+    },
+    {
+      "id": "cm-cg-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个数列：1、2、2、3、3、3、4、4、4、4、...中，数20出现多少次？它是第几个数开始？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "二十"
+      ],
+      "solution": [
+        "数n出现n次，所以20出现20次。",
+        "1到19的数出现次数之和是1+2+...+19=190。",
+        "所以20是从第191个数开始出现。"
+      ],
+      "hints": [
+        "数n出现几次？",
+        "1+2+...+19=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成19",
+          "reason": "数错出现次数",
+          "correction": "20出现20次",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数列计数"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "计数"
+      ]
+    },
+    {
+      "id": "cm-cg-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有一个三位数，十位上的数字是百位的2倍，个位上的数字是十位的2倍。这个数可能是多少？(写出最小的那个)",
+      "image": "",
+      "options": [],
+      "answer": "124",
+      "acceptableAnswers": [
+        "124"
+      ],
+      "solution": [
+        "设百位数字为a，则十位=2a，个位=4a。",
+        "每个数字≤9，且百位a≥1。",
+        "a=1时:百=1,十=2,个=4,数=124✓",
+        "a=2时:百=2,十=4,个=8,数=248✓",
+        "最小的数是124。"
+      ],
+      "hints": [
+        "设百位为a",
+        "十位=2a,个位=4a",
+        "每个数字不超过9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成248",
+          "reason": "题目问最小的",
+          "correction": "最小是124",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数字问题",
+        "位值原理"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "数字"
+      ]
+    }
+  ]
+}

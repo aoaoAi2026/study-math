@@ -1,0 +1,26 @@
+{
+    "paperId": "huabei-13-g2",
+    "title": "第十三届华罗庚金杯少年数学邀请赛 小学二年级组决赛",
+    "grade": 2,
+    "category": "aoshu-hualuogeng",
+    "duration": 90,
+    "totalScore": 100,
+    "difficultyLevel": 3,
+    "year": 2008,
+    "source": "华罗庚金杯少年数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共10题，每题10分）", "count": 10, "scorePerQuestion": 10}
+    ],
+    "questions": [
+        {"id": "q1", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "找规律填数：1、1、2、3、5、8、______、21。", "answer": "13", "score": 10, "solution": "斐波那契数列：前两项之和。5+8=13，8+13=21。", "knowledgePoints": ["斐波那契数列"]},
+        {"id": "q2", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "一根绳子对折3次后，每折长4米。这根绳子原来有______米。", "answer": "32", "score": 10, "solution": "对折3次变成8股，8×4=32米。", "knowledgePoints": ["对折问题"]},
+        {"id": "q3", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "小明排队买票，他前面有12人，后面有8人。这一排有______人。", "answer": "21", "score": 10, "solution": "12+1+8=21人。", "knowledgePoints": ["排队问题"]},
+        {"id": "q4", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "一桶油，连桶带油共重20千克，油倒出一半后，连桶带油共重12千克。原来油重______千克。", "answer": "16", "score": 10, "solution": "倒出一半减少20-12=8千克，所以一半油=8千克，油=16千克。", "knowledgePoints": ["等量关系"]},
+        {"id": "q5", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "有一根绳子，剪成3段需要6分钟。剪成6段需要______分钟。", "answer": "15", "score": 10, "solution": "剪成3段需2次，每次3分钟。剪成6段需5次，5×3=15分钟。", "knowledgePoints": ["剪绳子"]},
+        {"id": "q6", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "小华有18颗糖，给了小明3颗后，他们两人的糖就一样多。原来小明有______颗糖。", "answer": "12", "score": 10, "solution": "小华给3颗后剩15颗，两人各15颗。小明原有15-3=12颗。", "knowledgePoints": ["等量关系"]},
+        {"id": "q7", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "一根绳子长24米，剪成4米一段，需要剪______次。", "answer": "5", "score": 10, "solution": "24÷4=6段，剪5次。", "knowledgePoints": ["剪绳子"]},
+        {"id": "q8", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "把15个苹果装进盒子里，每个盒子装4个，需要______个盒子？还剩______个？", "answer": "3,3", "score": 10, "solution": "15÷4=3个……3个。需要3个盒子，还剩3个。", "knowledgePoints": ["有余数除法"]},
+        {"id": "q9", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "时钟在9:00时，时针和分针形成的角是______度。", "answer": "90", "score": 10, "solution": "9:00时，时针指向9，分针指向12，夹角=3×30=90度。", "knowledgePoints": ["时钟问题"]},
+        {"id": "q10", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "有35颗糖，按「甲、乙、丙、丁」的顺序分给4人。第30颗糖分给了______。", "answer": "乙", "score": 10, "solution": "30÷4=7余2，余数2对应乙。", "knowledgePoints": ["周期问题"]}
+    ]
+}

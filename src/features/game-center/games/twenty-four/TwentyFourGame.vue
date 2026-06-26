@@ -28,14 +28,75 @@ function rand(n: number) {
 }
 
 function evalTokens(tokens: Token[]): number | null {
-  const str = tokens.map(t => String(t.value)).join('')
-  if (!/^[0-9+\-*/() ]+$/.test(str)) return null
+  const parts = tokens.map(t => String(t.value))
+  if (parts.length === 0) return null
+  // 简单的加减乘除计算器（含括号支持）
+  const expr = parts.join('')
+  if (!/^[0-9+\-*/()\s]+$/.test(expr)) return null
   try {
-    const result = Function('"use strict";return (' + str + ')')()
-    return typeof result === 'number' && isFinite(result) ? result : null
+    // 用迭代方式计算：先处理括号，再处理乘除，最后处理加减
+    return calculate(expr)
   } catch {
     return null
   }
+}
+
+function calculate(expr: string): number | null {
+  // 递归下降解析器
+  let pos = 0
+  expr = expr.replace(/\s+/g, '')
+  
+  function parseExpr(): number | null {
+    let left = parseTerm()
+    if (left === null) return null
+    while (pos < expr.length && (expr[pos] === '+' || expr[pos] === '-')) {
+      const op = expr[pos++]
+      const right = parseTerm()
+      if (right === null) return null
+      left = op === '+' ? left + right : left - right
+    }
+    return left
+  }
+  
+  function parseTerm(): number | null {
+    let left = parseFactor()
+    if (left === null) return null
+    while (pos < expr.length && (expr[pos] === '*' || expr[pos] === '/')) {
+      const op = expr[pos++]
+      const right = parseFactor()
+      if (right === null) return null
+      if (op === '*') left = left * right
+      else { if (right === 0) return null; left = left / right }
+    }
+    return left
+  }
+  
+  function parseFactor(): number | null {
+    if (pos >= expr.length) return null
+    if (expr[pos] === '(') {
+      pos++
+      const val = parseExpr()
+      if (pos < expr.length && expr[pos] === ')') pos++
+      return val
+    }
+    if (expr[pos] === '-') {
+      pos++
+      const val = parseFactor()
+      return val === null ? null : -val
+    }
+    let num = 0
+    let hasDigit = false
+    while (pos < expr.length && /\d/.test(expr[pos])) {
+      num = num * 10 + parseInt(expr[pos], 10)
+      pos++
+      hasDigit = true
+    }
+    return hasDigit ? num : null
+  }
+  
+  const result = parseExpr()
+  if (result === null || pos < expr.length) return null
+  return result
 }
 
 function generateNumbers() {

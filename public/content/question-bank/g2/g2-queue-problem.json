@@ -1,0 +1,878 @@
+{
+  "topicId": "g2-queue-problem",
+  "topicName": "排队问题",
+  "grade": 2,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g2-qp-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "小朋友排队做游戏。从前面数，小明排第5个；从后面数，小明排第3个。这一队一共有多少个小朋友？",
+      "image": "",
+      "options": ["7个", "8个", "9个", "10个"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "从前面数小明第5个：……小明  （前面有4人+小明=5人）",
+        "从后面数小明第3个：小明……  （小明+后面有2人=3人）",
+        "小明被数了两次！",
+        "总人数 = 5 + 3 - 1 = 7（个）",
+        "画图验证：○○○●○○（●是小明）",
+        "从前面数：第5个是●。从后面数：第3个是●。 ✓"
+      ],
+      "hints": [
+        "从前数+从后数-1（小明被重复数了）",
+        "5+3-1=7"
+      ],
+      "commonMistakes": [
+        {"mistake": "选8个", "reason": "5+3=8，忘记-1", "correction": "小明被数了两次，要减1：5+3-1=7个", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题", "基础排队"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": -1.8, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "同学们排队做操。从前往后数，小红排第8个；从后往前数，小红排第5个。这一队一共有______个同学。",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": ["12"],
+      "solution": [
+        "从前数小红第8个，从后数小红第5个。",
+        "小红被数了两次。",
+        "总人数 = 8 + 5 - 1 = 12（个）"
+      ],
+      "hints": [
+        "8+5-1=12"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成13", "reason": "8+5=13", "correction": "8+5-1=12个", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": -2.0, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "12个小朋友排成一队。从前往后数，小亮排第8个。从后往前数，小亮排第几个？",
+      "image": "",
+      "options": ["第3个", "第4个", "第5个", "第6个"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "总人数12人。",
+        "小亮前面有8-1=7（人）",
+        "小亮后面有12-8=4（人）",
+        "从后面数：4 + 1 = 5（个）",
+        "所以小亮从后数排第5个。",
+        "或者：12 - 8 + 1 = 5"
+      ],
+      "hints": [
+        "从后数 = 总数 - 从前数 + 1",
+        "12-8+1=5"
+      ],
+      "commonMistakes": [
+        {"mistake": "选第4个", "reason": "12-8=4，忘记+1", "correction": "12-8+1=5个", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": -1.5, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-04",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小朋友排成一队。小刚前面有6人，后面有5人。这一队一共有多少人？",
+      "image": "",
+      "options": ["10人", "11人", "12人", "13人"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "小刚前面有6人，后面有5人。",
+        "不要忘记小刚自己！",
+        "总人数 = 6 + 1 + 5 = 12（人）"
+      ],
+      "hints": [
+        "前面的人 + 小刚 + 后面的人",
+        "6+1+5=12"
+      ],
+      "commonMistakes": [
+        {"mistake": "选11人", "reason": "6+5=11，忘记+1（小刚自己）", "correction": "6+1+5=12人", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 0.0, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "15个小朋友排成一排做游戏。小丽前面有9人，小丽后面有______人。",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": ["5"],
+      "solution": [
+        "总人数15人，小丽前面有9人。",
+        "小丽自己是1人。",
+        "小丽后面有 15 - 9 - 1 = 5（人）"
+      ],
+      "hints": [
+        "总数-前面-小丽自己=后面",
+        "15-9-1=5"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成6", "reason": "15-9=6，忘记-1", "correction": "15-9-1=5人", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 0.2, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "同学们排队，从前数小明排第6个，小军排第12个。小明和小军之间有多少个同学？",
+      "image": "",
+      "options": ["4个", "5个", "6个", "7个"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "小明第6个，小军第12个。",
+        "之间的人数 = 12 - 6 - 1 = 5（个）",
+        "画图：○○○○○●小明 ○○○○○●小军",
+        "中间有5个同学。"
+      ],
+      "hints": [
+        "之间=大数-小数-1",
+        "12-6-1=5"
+      ],
+      "commonMistakes": [
+        {"mistake": "选6个", "reason": "12-6=6，忘记-1", "correction": "12-6-1=5个", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题", "中间人数"],
+      "estimatedTime": 55,
+      "irtParams": { "a": 1.0, "b": 0.3, "c": 0.25 },
+      "tags": ["排队问题", "中间"]
+    },
+    {
+      "id": "g2-qp-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个方队，每行每列都有8人。这个方队最外层一共有______人。",
+      "image": "",
+      "options": [],
+      "answer": "28",
+      "acceptableAnswers": ["28"],
+      "solution": [
+        "方队每行8人，每列8人，共8×8=64人。",
+        "外面一圈（最外层）：上下两行各8人=16人",
+        "中间6行，两边各1人=6×2=12人",
+        "最外层 = 16 + 12 = 28（人）",
+        "或：每边8人，4边=8×4=32人，但四角重复数了4人",
+        "最外层 = 32 - 4 = 28（人）"
+      ],
+      "hints": [
+        "每边8人，4边=32人，但四角被数了2次",
+        "8×4-4=28人"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成32", "reason": "8×4=32，忘记-4（四角重复）", "correction": "8×4-4=28人", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题", "方阵"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 0.8, "c": 0.25 },
+      "tags": ["排队问题", "方阵"]
+    },
+    {
+      "id": "g2-qp-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小朋友排成一个正方形队伍。无论是从前、后、左、右数，小明都在第4个。这个方队一共有多少人？",
+      "image": "",
+      "options": ["49人", "64人", "25人", "81人"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "从前数第4个，说明前面3人；从后数第4个，说明后面3人。",
+        "一列共有：3+1+3=7（人）",
+        "同理，一行也有7人。",
+        "这是7×7的方队，共 7×7 = 49（人）"
+      ],
+      "hints": [
+        "每边人数=4+4-1=7人",
+        "共7×7=49人"
+      ],
+      "commonMistakes": [
+        {"mistake": "选64人", "reason": "4+4=8，8×8=64", "correction": "每边=4+4-1=7人，7×7=49人", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题", "方阵"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 0.9, "c": 0.25 },
+      "tags": ["排队问题", "方阵"]
+    },
+    {
+      "id": "g2-qp-09",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "16只小动物围成一圈做游戏。从小兔开始数，顺时针数第8只是小猫，逆时针数第8只是小狗。小兔和小猫之间、小兔和小狗之间各有几只动物？",
+      "image": "",
+      "options": ["6只和6只", "7只和7只", "8只和8只", "5只和5只"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "16只围成一圈。",
+        "顺时针数，小兔是第1只，小猫是第8只。",
+        "之间（不包含小兔和小猫）有8-1-1=6只？",
+        "让我们换个思路：",
+        "顺数第8只是小猫，说明小兔到小猫之间（顺方向）有8-2=6只动物+小猫1只=7只动物在中间",
+        "同理，逆时针数第8只是小狗，小兔到小狗之间（逆方向）有7只动物",
+        "6+1（小猫）+6+1（小狗）+小兔1只=15只…不对",
+        "重新：顺时针数，第1是小兔，第8是小猫，小兔和小猫之间（顺时针）有6只动物（第2至第7）",
+        "逆时针数，第1是小兔，第8是小狗，小兔和小狗之间有6只动物",
+        "但题目问的是小兔和小猫之间、小兔和小狗之间各有几只。",
+        "16只围成一圈，顺数第8和逆数第8就是同一动物（因为8+8-1=15=16-1）",
+        "等等，16只的话，从两边数都是第8，其实是对称的。",
+        "小兔是第1，顺时针到第8是小猫（6只在中间），逆时针第8是小狗（6只在中间）",
+        "答案：小兔和小猫之间（顺时针方向）有6只动物，小兔和小狗之间（逆时针方向）有6只动物。",
+        "但如果算两人位置之间的动物数（不包含端点）是6只。",
+        "若含端点但不含小兔和小猫：是6只。选6只和6只。"
+      ],
+      "hints": [
+        "顺时针：第1是小兔，第8是小猫，中间有8-2=6只",
+        "逆时针：第1是小兔，第8是小狗，中间有6只"
+      ],
+      "commonMistakes": [
+        {"mistake": "选7只和7只", "reason": "8-1=7，数了端点", "correction": "之间是8-2=6只动物", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题", "圆圈"],
+      "estimatedTime": 80,
+      "irtParams": { "a": 1.0, "b": 1.0, "c": 0.25 },
+      "tags": ["排队问题", "圆圈"]
+    },
+    {
+      "id": "g2-qp-10",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "二（1）班的同学排成一个方队。从前数小丽第3，从后数小丽第4，从左数第3，从右数第4。二（1）班一共有多少人？",
+      "image": "",
+      "options": ["30人", "36人", "42人", "49人"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "从前数第3，从后数第4：一列有 3+4-1=6（人）",
+        "从左数第3，从右数第4：一行有 3+4-1=6（人）",
+        "方队总人数 = 6×6 = 36（人）"
+      ],
+      "hints": [
+        "每列=3+4-1=6人，每行=3+4-1=6人",
+        "6×6=36人"
+      ],
+      "commonMistakes": [
+        {"mistake": "选49人", "reason": "(3+4)×(3+4)=49", "correction": "要-1：3+4-1=6，6×6=36人", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题", "方阵"],
+      "estimatedTime": 75,
+      "irtParams": { "a": 1.0, "b": 1.1, "c": 0.25 },
+      "tags": ["排队问题", "方阵"]
+    },
+    {
+      "id": "g2-qp-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "18个小朋友排队买冰淇淋。从前数，小明是第10个。如果从后数，小明是第______个。",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": ["9"],
+      "solution": [
+        "总人数18人。",
+        "从后数 = 18 - 10 + 1 = 9（个）",
+        "所以从后数小明是第9个。"
+      ],
+      "hints": [
+        "从后数=总数-从前数+1",
+        "18-10+1=9"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成8", "reason": "18-10=8，忘记+1", "correction": "18-10+1=9个", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.4, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "同学们排队上车。小明前面有8人，小军在小明后面，小军和小明之间有5人。小军后面有9人。这一队一共有多少人？",
+      "image": "",
+      "options": ["22人", "23人", "24人", "25人"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "画图理解：",
+        "【8人】小明【5人】小军【9人】",
+        "总人数 = 8 + 1(小明) + 5 + 1(小军) + 9 = 24（人）"
+      ],
+      "hints": [
+        "画图：8人+小明+5人+小军+9人",
+        "8+1+5+1+9=24人"
+      ],
+      "commonMistakes": [
+        {"mistake": "选22人", "reason": "8+5+9=22，忘加小明和小军", "correction": "8+1+5+1+9=24人", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 1.2, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-13",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "同学们排成一排。从前往后数小红排第7个，从后往前数小丽排第8个，小红和小丽之间有5人。这一排最多有______个同学。",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": ["20"],
+      "solution": [
+        "最多情况：小红在前，小丽在后（或反过来）",
+        "小红是第7，小红和小丽之间有5人，小丽是第7+5+1=13个",
+        "从后数小丽是第8个，小丽后面有7人",
+        "总人数 = 13 + 7 = 20（人）",
+        "画图：○○○○○○●小红 ○○○○○ ●小丽 ○○○○○○○",
+        "共7+5+1+7=20人 ✓"
+      ],
+      "hints": [
+        "最多的情况是小红在小丽前面",
+        "小红7，小丽7+5+1=13，小丽后7人，共13+7=20人"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成11", "reason": "7+8-4=11", "correction": "画图：7(含小红)+5+1(小丽)+7=20人", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题"],
+      "estimatedTime": 80,
+      "irtParams": { "a": 1.0, "b": 1.3, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-14",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有一队小朋友去春游。从前面数小明是第10个，从后面数小军是第8个，小明和小军之间有3个小朋友。这一队最多有多少个小朋友？",
+      "image": "",
+      "options": ["20个", "21个", "22个", "23个"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "最多的情况是：小明在前，小军在后，两人不重叠。",
+        "从前数小明第10个（小明+前面9人=10人）",
+        "小明和小军之间有3人",
+        "小军是第 10 + 3 + 1 = 14个（含小军）",
+        "从后数小军是第8个，小军后面有7人",
+        "总人数 = 14 + 7 = 21（个）",
+        "画图验证：9人+小明+3人+小军+7人=9+1+3+1+7=21个 ✓"
+      ],
+      "hints": [
+        "最多=小明在前，小军在后",
+        "小明是10，小军是10+3+1=14，小军后面7人，共14+7=21"
+      ],
+      "commonMistakes": [
+        {"mistake": "选20个", "reason": "10+3+8=21，忘记检查", "correction": "10+3+1+7=21个", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题"],
+      "estimatedTime": 80,
+      "irtParams": { "a": 1.0, "b": 1.4, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小朋友排队。从前数小华是第12个，从后数小华是第15个。这一队一共有多少个小朋友？",
+      "image": "",
+      "options": ["26个", "27个", "28个", "29个"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "从前数小华第12个，从后数小华第15个。",
+        "小华被数了两次。",
+        "总人数 = 12 + 15 - 1 = 26（个）"
+      ],
+      "hints": [
+        "从前数+从后数-1",
+        "12+15-1=26"
+      ],
+      "commonMistakes": [
+        {"mistake": "选27个", "reason": "12+15=27", "correction": "12+15-1=26个", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 0.5, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-16",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个方队，最外层每边站8人。最外层一共站______人，这个方队一共______人。",
+      "image": "",
+      "options": [],
+      "answer": "28",
+      "acceptableAnswers": ["28"],
+      "solution": [
+        "最外层：每边8人，4边=8×4=32人，但四角被数了2次",
+        "最外层人数 = 32 - 4 = 28（人）",
+        "方队共 8×8 = 64（人）",
+        "检验：内部 6×6=36人，36+28=64 ✓"
+      ],
+      "hints": [
+        "最外层=8×4-4=28人",
+        "方队=8×8=64人"
+      ],
+      "commonMistakes": [
+        {"mistake": "最外层32人", "reason": "8×4=32", "correction": "8×4-4=28人（四角重复）", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题", "方阵"],
+      "estimatedTime": 80,
+      "irtParams": { "a": 1.0, "b": 1.5, "c": 0.25 },
+      "tags": ["排队问题", "方阵"]
+    },
+    {
+      "id": "g2-qp-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "10只小动物排成一排。从前数小兔是第3个，小狗在小兔后面第4个。从后数小狗是第几个？",
+      "image": "",
+      "options": ["第3个", "第4个", "第5个", "第6个"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "从前数小兔第3个。",
+        "小狗在小兔后面第4个：第4个位置即小兔后面4只。",
+        "小狗的位置（从前数）= 3 + 4 = 7个",
+        "从后数小狗的位置 = 10 - 7 + 1 = 4个",
+        "画图验证：○○●小兔 ○○○○●小狗 ○○○",
+        "从前数：小兔3，小狗7。从后数：小狗=10-7+1=4 ✓"
+      ],
+      "hints": [
+        "小狗的位置=3+4=7（从前数）",
+        "从后数=10-7+1=4个"
+      ],
+      "commonMistakes": [
+        {"mistake": "选第3个", "reason": "10-7=3，忘+1", "correction": "10-7+1=4个", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 1.3, "c": 0.25 },
+      "tags": ["排队问题"]
+    },
+    {
+      "id": "g2-qp-18",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "同学们排队做操。小红前面有8人，后面的人数是前面的2倍。这一排一共有多少人？",
+      "image": "",
+      "options": ["24人", "25人", "26人", "27人"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "小红前面有8人。",
+        "小红后面有 8×2 = 16（人）",
+        "不要忘记小红自己！",
+        "总人数 = 8 + 1 + 16 = 25（人）"
+      ],
+      "hints": [
+        "前面+小红+后面",
+        "后面=8×2=16人，共8+1+16=25人"
+      ],
+      "commonMistakes": [
+        {"mistake": "选24人", "reason": "8+16=24，忘加小红", "correction": "8+1+16=25人", "errorLayer": "L3"},
+        {"mistake": "选26人", "reason": "多加了1人", "correction": "8+1+16=25人", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["排队问题", "倍数"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 1.8, "c": 0.25 },
+      "tags": ["排队问题", "综合"]
+    },
+    {
+      "id": "g2-qp-19",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "同学们排队做操，从前往后数，小明排第6个，从后往前数，小明排第4个。这一队一共有______个同学。",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": ["9", "9个", "9人"],
+      "solution": ["从前数第6+从后数第4-1=6+4-1=9个。小明被数了两次，要减1。"],
+      "hints": ["从前数+从后数-1", "6+4-1=9"],
+      "commonMistakes": [{"mistake": "10", "reason": "没减1", "correction": "9个"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2016, "paper": "第十四届希望杯二年级"},
+      "knowledgePoints": ["排队问题", "基础"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.0, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题"]
+    },
+    {
+      "id": "g2-qp-20",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "小动物们排队。小兔前面有5只动物，后面有7只动物。这一队一共有()只动物。",
+      "image": "",
+      "options": ["11只", "12只", "13只", "14只"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": ["前面5只+小兔+后面7只=5+1+7=13只。"],
+      "hints": ["前面+自己+后面"],
+      "commonMistakes": [{"mistake": "选1", "reason": "5+7=12，忘加自己", "correction": "13只"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2017, "paper": "2017年迎春杯二年级"},
+      "knowledgePoints": ["排队问题", "前后"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.5, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题"]
+    },
+    {
+      "id": "g2-qp-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一队小朋友共15人。从前往后数，小红排第8个。从后往前数，小红排第______个。",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": ["8", "第8"],
+      "solution": ["从后数的位置=总人数-从前数的位置+1=15-8+1=8。"],
+      "hints": ["从后数=总数-从前数+1"],
+      "commonMistakes": [{"mistake": "7", "reason": "15-8=7，忘+1", "correction": "第8个"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2014, "paper": "第十九届华罗庚金杯初赛"},
+      "knowledgePoints": ["排队问题", "位置转换"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.5, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题"]
+    },
+    {
+      "id": "g2-qp-22",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "同学们排队，小明和小红之间有3人。小明排第5个，小红排第()个。",
+      "image": "",
+      "options": ["第8个", "第9个", "第10个", "第11个"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["小明第5，中间3人，小红=5+3+1=9？不对，之间有3人，所以小红=5+1+3=9个。"],
+      "hints": ["之间有3人，小红=小明位置+1+中间人数"],
+      "commonMistakes": [{"mistake": "选2", "reason": "5+3=8", "correction": "第9个"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2015, "paper": "第十三届走美杯二年级"},
+      "knowledgePoints": ["排队问题", "之间"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题"]
+    },
+    {
+      "id": "g2-qp-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "20个小朋友排队，从左往右数，小华排第7个，小华和小明之间有5人。小明排第______个。",
+      "image": "",
+      "options": [],
+      "answer": "13",
+      "acceptableAnswers": ["13", "第13"],
+      "solution": ["小华第7，之间5人，小明=7+1+5=13个。"],
+      "hints": ["小明位置=小华位置+1+之间人数"],
+      "commonMistakes": [{"mistake": "12", "reason": "7+5=12", "correction": "第13个"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯决赛"},
+      "knowledgePoints": ["排队问题", "之间"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题"]
+    },
+    {
+      "id": "g2-qp-24",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "同学们排成一个正方形方队做操，最外层每边站10人。最外层一共有多少人？",
+      "image": "",
+      "options": ["40人", "36人", "38人", "32人"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "最外层每边10人，4条边共有 10×4 = 40 人。",
+        "但是四个角的同学被重复数了一次，每个角多算了1人，4个角共多算了4人。",
+        "所以最外层实际人数 = 40 - 4 = 36（人）。",
+        "验证：去掉最外层后，里面是一个8×8的方队，共64人；整个方队10×10=100人，100-64=36人 ✓"
+      ],
+      "hints": [
+        "每边人数×4 - 4（四个角重复数了）",
+        "10×4-4=36人"
+      ],
+      "commonMistakes": [
+        {"mistake": "选40人", "reason": "10×4=40，忘记减去四个角重复的人数", "correction": "10×4-4=36人", "errorLayer": "L3"},
+        {"mistake": "选38人", "reason": "只减了2个角", "correction": "四个角都重复了，要减4人", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2019, "paper": "第十七届希望杯二年级"},
+      "knowledgePoints": ["排队问题", "方阵", "最外层"],
+      "estimatedTime": 75,
+      "irtParams": {"a": 1.3, "b": 1.6, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题", "方阵"]
+    },
+    {
+      "id": "g2-qp-25",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "16个小朋友排成一队。从前往后数，小明排第6个；从后往前数，小红排第5个。小明和小红之间有______个小朋友。",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": ["5", "5个"],
+      "solution": [
+        "方法一：先算出从后往前数小明排第几。",
+        "从后数小明的位置 = 16 - 6 + 1 = 11（个）",
+        "从后数小红排第5个，小明排第11个。",
+        "两人之间有 11 - 5 - 1 = 5（个）小朋友。",
+        "方法二：画图法",
+        "前6人（含小明）+ 中间？人 + 后5人（含小红）= 16人",
+        "中间人数 = 16 - 6 - 5 = 5（个）",
+        "验证：○○○○○●小明 ○○○○○ ●小红 ○○○○（共6+5+5=16人）✓"
+      ],
+      "hints": [
+        "总数 - 前面（含小明）- 后面（含小红）= 中间人数",
+        "16-6-5=5个"
+      ],
+      "commonMistakes": [
+        {"mistake": "6", "reason": "16-6-5+1=6，多加了1", "correction": "16-6-5=5个", "errorLayer": "L3"},
+        {"mistake": "4", "reason": "多减了1", "correction": "画图验证：6+5+5=16人", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2018, "paper": "2018年迎春杯二年级"},
+      "knowledgePoints": ["排队问题", "之间", "位置转换"],
+      "estimatedTime": 80,
+      "irtParams": {"a": 1.3, "b": 1.5, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题"]
+    },
+    {
+      "id": "g2-qp-26",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "小朋友排队，从前数小刚排第8个，小强排第15个。小刚和小强之间有多少个小朋友？",
+      "image": "",
+      "options": ["6个", "7个", "8个", "9个"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "小刚第8个，小强第15个。",
+        "两人之间的人数 = 15 - 8 - 1 = 6（个）",
+        "为什么要减1？因为15-8把小强也算进去了，而'之间'不包含两端的人。",
+        "画图验证：○○○○○○○●小刚 ○○○○○○ ●小强",
+        "第8         第9~14（共6人） 第15 ✓"
+      ],
+      "hints": [
+        "之间人数 = 大数 - 小数 - 1",
+        "15-8-1=6个"
+      ],
+      "commonMistakes": [
+        {"mistake": "选7个", "reason": "15-8=7，忘记减1", "correction": "15-8-1=6个（之间不包含两端）", "errorLayer": "L2"},
+        {"mistake": "选8个", "reason": "15-8+1=8，完全搞错了", "correction": "之间=大数-小数-1", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2016, "paper": "第十四届走美杯二年级"},
+      "knowledgePoints": ["排队问题", "之间"],
+      "estimatedTime": 65,
+      "irtParams": {"a": 1.2, "b": 1.2, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题", "之间"]
+    },
+    {
+      "id": "g2-qp-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个两层空心方阵，最外层每边有8人。这个方阵一共有______人。",
+      "image": "",
+      "options": [],
+      "answer": "48",
+      "acceptableAnswers": ["48", "48人"],
+      "solution": [
+        "两层空心方阵：外面一层和里面一层。",
+        "最外层每边8人：",
+        "最外层人数 = 8×4 - 4 = 28（人）",
+        "里面一层每边比外面少2人（每边各少1人），即每边6人：",
+        "里层人数 = 6×4 - 4 = 20（人）",
+        "总人数 = 28 + 20 = 48（人）",
+        "验证：实心方阵8×8=64人，空心部分4×4=16人，64-16=48人 ✓"
+      ],
+      "hints": [
+        "两层空心方阵=最外层+里层",
+        "里层每边=8-2=6人",
+        "(8×4-4)+(6×4-4)=28+20=48人"
+      ],
+      "commonMistakes": [
+        {"mistake": "56", "reason": "8×8-4=60或算错层数", "correction": "两层：28+20=48人", "errorLayer": "L4"},
+        {"mistake": "32", "reason": "只算了一层", "correction": "两层空心方阵要算两层人数", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2011, "paper": "第十六届华罗庚金杯初赛"},
+      "knowledgePoints": ["排队问题", "方阵", "空心方阵"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.4, "b": 2.0, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题", "方阵", "空心方阵"]
+    },
+    {
+      "id": "g2-qp-28",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "25个小朋友排队，从左数小明是第12个，从右数小刚是第9个。小明和小刚之间有多少个小朋友？",
+      "image": "",
+      "options": ["4个", "5个", "6个", "7个"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "方法一：先算出从左数小刚排第几。",
+        "从右数小刚第9个，说明小刚右边有8人。",
+        "从左数小刚的位置 = 25 - 9 + 1 = 17（个）",
+        "小明第12个，小刚第17个。",
+        "两人之间有 17 - 12 - 1 = 4（个）小朋友。",
+        "方法二：总数 - 左边（含小明）- 右边（含小刚）= 中间",
+        "中间人数 = 25 - 12 - 9 = 4（个）",
+        "画图验证：11人+●小明+4人+●小刚+8人=11+1+4+1+8=25人 ✓"
+      ],
+      "hints": [
+        "总数 - 左边（含小明）- 右边（含小刚）= 中间人数",
+        "25-12-9=4个"
+      ],
+      "commonMistakes": [
+        {"mistake": "选5个", "reason": "25-12-9+1=5，多加了1", "correction": "25-12-9=4个", "errorLayer": "L3"},
+        {"mistake": "选3个", "reason": "25-12-9-1=3，多减了1", "correction": "画图验证：12+4+9=25", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2020, "paper": "第十八届希望杯二年级"},
+      "knowledgePoints": ["排队问题", "之间", "位置转换"],
+      "estimatedTime": 85,
+      "irtParams": {"a": 1.4, "b": 1.8, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题"]
+    },
+    {
+      "id": "g2-qp-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "同学们排队，从前数小明排第5个，小红排在小明后面第8个。从后数小红排第6个。这一队一共有______个同学。",
+      "image": "",
+      "options": [],
+      "answer": "18",
+      "acceptableAnswers": ["18", "18个", "18人"],
+      "solution": [
+        "先确定小红的位置（从前数）：",
+        "小明第5个，小红在小明后面第8个。",
+        "小红的位置 = 5 + 8 = 13（个）",
+        "（注意：'后面第8个'是指从小明后面第1个开始数第8个，所以直接加8）",
+        "从后数小红排第6个，说明小红后面有5人。",
+        "总人数 = 13 + 5 = 18（个）",
+        "画图验证：4人+●小明+7人+●小红+5人=4+1+7+1+5=18人 ✓",
+        "检验：从后数小红=18-13+1=6个 ✓"
+      ],
+      "hints": [
+        "先求小红的位置：5+8=13（从前数）",
+        "总人数=13+6-1=18个"
+      ],
+      "commonMistakes": [
+        {"mistake": "19", "reason": "13+6=19，忘记减1", "correction": "13+6-1=18个（小红被数了两次）", "errorLayer": "L3"},
+        {"mistake": "17", "reason": "小红位置算错，5+8-1=12", "correction": "'后面第8个'直接加：5+8=13", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2019, "paper": "2019年迎春杯二年级"},
+      "knowledgePoints": ["排队问题", "位置关系", "综合"],
+      "estimatedTime": 85,
+      "irtParams": {"a": 1.4, "b": 1.9, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题", "综合"]
+    },
+    {
+      "id": "g2-qp-30",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "16个小朋友围成一圈做游戏，从小刚开始数，顺时针数第10个是小明。如果从小刚开始逆时针数，小明是第几个？",
+      "image": "",
+      "options": ["第6个", "第7个", "第8个", "第9个"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "16个小朋友围成一圈。",
+        "顺时针数，小刚是第1个，小明是第10个。",
+        "说明顺时针方向，小刚到小明（不包含小刚，包含小明）有9人。",
+        "一圈共16人，逆时针方向的人数 = 16 - 9 = 7人。",
+        "这7人是逆时针方向小刚到小明的人数（不包含小刚，包含小明）。",
+        "所以逆时针数，小明是第 7 + 1 = 8 个？不对，让我们重新想。",
+        "更简单的方法：顺时针位置 + 逆时针位置 = 总数 + 2",
+        "（因为小刚和小明都被数了两次）",
+        "所以逆时针位置 = 16 + 2 - 10 = 8（个）",
+        "验证：顺时针第1（小刚）到第10（小明）共10人，逆时针第1（小刚）到第8（小明）共8人，10+8-2=16人 ✓"
+      ],
+      "hints": [
+        "环形排队：顺时针位置 + 逆时针位置 = 总数 + 2",
+        "16+2-10=8个"
+      ],
+      "commonMistakes": [
+        {"mistake": "选第6个", "reason": "16-10=6", "correction": "16+2-10=8个（两人都被数了两次）", "errorLayer": "L4"},
+        {"mistake": "选第7个", "reason": "16-10+1=7", "correction": "环形公式：顺位置+逆位置=总数+2", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2013, "paper": "第十八届华罗庚金杯决赛"},
+      "knowledgePoints": ["排队问题", "环形排队", "圆圈"],
+      "estimatedTime": 95,
+      "irtParams": {"a": 1.5, "b": 2.2, "c": 0.25},
+      "tags": ["排队问题", "竞赛真题", "环形"]
+    }
+  ]
+}

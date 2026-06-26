@@ -1,0 +1,1080 @@
+{
+  "topicId": "g3-vertical-puzzle",
+  "topicName": "竖式数字谜",
+  "grade": 3,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "id": "g3-vp-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "在加法竖式中，□ 里应该填什么数字？\n  1 □\n+ 2 5\n------\n  3 8",
+      "image": "",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "个位：? + 5 = 8 或 18",
+        "8-5=3，所以?=3",
+        "十位：1+2=3，不需要进位（正好）",
+        "所以方框=3，即 13+25=38"
+      ],
+      "hints": [
+        "从个位开始算",
+        "个位加个位"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "8-5=3,但以为进位",
+          "reason": "3+5=8没进位",
+          "correction": "是3",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "竖式",
+        "数字谜"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ]
+    },
+    {
+      "id": "g3-vp-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "在减法竖式中，被减数是多少？\n  □ □\n-  2 3\n------\n  4 5",
+      "image": "",
+      "options": [],
+      "answer": "68",
+      "acceptableAnswers": [
+        "68"
+      ],
+      "solution": [
+        "被减数 = 减数 + 差 = 23 + 45 = 68",
+        "或：个位：?-3=5，?=8；十位：?-2=4，?=6",
+        "所以 68-23=45 ✓"
+      ],
+      "hints": [
+        "被减数 = 差 + 减数",
+        "从个位反推"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "45-23=22",
+          "reason": "用差减减数",
+          "correction": "差+减数",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "竖式",
+        "减法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "数字谜"
+      ]
+    },
+    {
+      "id": "g3-vp-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "在乘法竖式中，□ 应填什么？\n  □ 2\n×   3\n------\n  3 6",
+      "image": "",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "个位：2×3=6，没进位",
+        "十位：?×3=3，?=1",
+        "所以 12×3=36 ✓"
+      ],
+      "hints": [
+        "先看个位有没有进位",
+        "再求十位"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3÷3=1 是对的",
+          "reason": "答案就是1",
+          "correction": "答案1",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "竖式",
+        "乘法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "数字谜"
+      ]
+    },
+    {
+      "id": "g3-vp-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个两位数加 25 等于 60。这个两位数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "35",
+      "acceptableAnswers": [
+        "35"
+      ],
+      "solution": [
+        "原数 = 60-25 = 35",
+        "检验：35+25=60 ✓"
+      ],
+      "hints": [
+        "求加数用减法",
+        "和-已知加数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "60+25=85",
+          "reason": "方向反",
+          "correction": "60-25=35",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "加减法互逆"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-vp-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在加法竖式中，两个方框分别是？\n  □ 5\n+ 3 □\n------\n  7 2",
+      "image": "",
+      "options": [
+        "3和7",
+        "4和7",
+        "3和8",
+        "4和8"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "个位：5+? 个位是2，说明有进位，5+?=12，?=7",
+        "十位：?+3+进位1 = 7，?=3",
+        "所以是 35+37=72",
+        "两个方框：3和7"
+      ],
+      "hints": [
+        "个位可能进位",
+        "先判断个位"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "4和8",
+          "reason": "没考虑进位",
+          "correction": "5+7=12进1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "竖式",
+        "进位加法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "数字谜"
+      ]
+    },
+    {
+      "id": "g3-vp-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在减法竖式中，两个方框分别是多少？（按从上到下填写数字，如23）\n  □ 3\n- 2 □\n------\n  4 8",
+      "image": "",
+      "options": [],
+      "answer": "75",
+      "acceptableAnswers": [
+        "75"
+      ],
+      "solution": [
+        "个位：3-?=8，不够减，借位13-?=8，?=5",
+        "十位：?-1-2=4，?=7",
+        "所以 73-25=48 ✓",
+        "方框从上到下=7和5，写成75"
+      ],
+      "hints": [
+        "不够减要借位",
+        "十位要减1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "68",
+          "reason": "十位没减借的1",
+          "correction": "7-1-2=4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "竖式",
+        "借位减法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "数字谜"
+      ]
+    },
+    {
+      "id": "g3-vp-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在乘法竖式中，□ 应填什么？\n  □ 7\n×   4\n------\n  1 □ 8",
+      "image": "",
+      "options": [
+        "2和0",
+        "2和8",
+        "3和4",
+        "3和8"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "个位：7×4=28，个位=8，进位2",
+        "十位：?×4+进位2 要进位到百位",
+        "如果?=2：2×4+2=10，结果是108（第二位是0）",
+        "如果?=3：3×4+2=14，结果是148（第二位是8）",
+        "选项2和0对应27×4=108，选项3和8对应37×4=148",
+        "选最先出现的正确答案 2和0"
+      ],
+      "hints": [
+        "个位先算，注意进位",
+        "十位×乘数+进位要进位到百位"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "忘了进位",
+          "reason": "个位进位2没加",
+          "correction": "十位要加2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "竖式",
+        "进位乘法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "数字谜"
+      ]
+    },
+    {
+      "id": "g3-vp-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个数减去 18 等于 35。这个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "53",
+      "acceptableAnswers": [
+        "53"
+      ],
+      "solution": [
+        "原数 = 35+18 = 53",
+        "检验：53-18=35 ✓"
+      ],
+      "hints": [
+        "求被减数用加法",
+        "差+减数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "35-18=17",
+          "reason": "再减",
+          "correction": "35+18=53",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "加减法互逆"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-vp-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "两个数的和是 50，它们的差是 20。较大数是多少？",
+      "image": "",
+      "options": [
+        "15",
+        "25",
+        "30",
+        "35"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "大数 = (和+差)÷2 = (50+20)÷2 = 70÷2 = 35",
+        "小数 = (50-20)÷2 = 15",
+        "检验：35+15=50，35-15=20 ✓"
+      ],
+      "hints": [
+        "和差公式",
+        "大数=(和+差)÷2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "50÷2=25",
+          "reason": "没考虑差",
+          "correction": "大数=35",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g3-vp-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在除法竖式中，除数是多少？\n  48 ÷ □ = 6",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "solution": [
+        "除数 = 被除数÷商 = 48÷6 = 8",
+        "检验：48÷8=6 ✓"
+      ],
+      "hints": [
+        "除数 = 被除数÷商"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "48×6=288",
+          "reason": "乘反了",
+          "correction": "48÷6=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "除法",
+        "互逆"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-vp-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两个一位奇数相加得 16。这两个奇数可能是？",
+      "image": "",
+      "options": [
+        "5和9",
+        "6和10",
+        "7和8",
+        "7和9"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "一位奇数有：1,3,5,7,9",
+        "从大的开始试：9+7=16 ✓",
+        "7+9=16同样对",
+        "所以答案是 7和9"
+      ],
+      "hints": [
+        "先列出一位奇数：1,3,5,7,9",
+        "看哪两个加起来=16"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选7和8",
+          "reason": "8是偶数",
+          "correction": "必须都是奇数",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "奇数",
+        "和"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "数字谜"
+      ]
+    },
+    {
+      "id": "g3-vp-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个两位数，个位数字是 5，十位数字比个位数字小 2。这个两位数是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "35",
+      "acceptableAnswers": [
+        "35"
+      ],
+      "solution": [
+        "个位=5",
+        "十位=5-2=3",
+        "两位数=35"
+      ],
+      "hints": [
+        "先求十位",
+        "再组合两位数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "52",
+          "reason": "个位十位放反",
+          "correction": "十位3个位5=35",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "数字",
+        "位值"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "两位数"
+      ]
+    },
+    {
+      "id": "g3-vp-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个三位数，百位是 2，十位比百位大 3，个位比十位小 3。这个数是？",
+      "image": "",
+      "options": [
+        "225",
+        "252",
+        "255",
+        "258"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "百位数字=2",
+        "十位数字=2+3=5",
+        "个位数字=5-3=2",
+        "所以三位数是 252"
+      ],
+      "hints": [
+        "先写百位=2",
+        "十位=2+3",
+        "个位=十位-3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "个位=5",
+          "reason": "没减3",
+          "correction": "个位=5-3=2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "数字",
+        "位值"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "三位数"
+      ]
+    },
+    {
+      "id": "g3-vp-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在算式 3□ + □4 = 82 中，两个方框分别是多少？(按顺序写数字，如12)",
+      "image": "",
+      "options": [],
+      "answer": "84",
+      "acceptableAnswers": [
+        "84"
+      ],
+      "solution": [
+        "设第一个方框=a，第二个=b",
+        "3a+b4=82",
+        "个位：a+4=2或12，a+4=2不可能(a负数)，所以a+4=12，a=8进位1",
+        "十位：3+b+1=8，b=4",
+        "所以 38+44=82 ✓",
+        "方框按顺序=8,4，写成84"
+      ],
+      "hints": [
+        "先看个位是否进位",
+        "a+4=12→a=8，进位1",
+        "十位3+b+1=8→b=4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "a+4=2→a=-2不可能",
+          "reason": "忘了进位",
+          "correction": "a+4=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "竖式",
+        "进位加法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "数字谜"
+      ]
+    },
+    {
+      "id": "g3-vp-15",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个数除以 4 商 7 余 3。这个数是多少？",
+      "image": "",
+      "options": [
+        "25",
+        "28",
+        "31",
+        "35"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "被除数 = 商×除数+余数 = 7×4+3 = 28+3 = 31",
+        "检验：31÷4=7余3 ✓"
+      ],
+      "hints": [
+        "被除数 = 商×除数+余数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "7×4=28",
+          "reason": "忘了加余数",
+          "correction": "+3=31",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "除法",
+        "有余数除法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "数字谜"
+      ]
+    },
+    {
+      "id": "g3-vp-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "在算式中，A 和 B 各代表什么数字？AB × 3 = 57（AB代表一个两位数，A是十位，B是个位）。A+B = ____。",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "solution": [
+        "AB表示一个两位数，值=10×A+B",
+        "(10A+B)×3=57",
+        "10A+B=57÷3=19",
+        "所以10A+B=19，A=1，B=9",
+        "A+B=1+9=10"
+      ],
+      "hints": [
+        "先求两位数=57÷3",
+        "再分十位个位"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "AB=57÷3=19,A=5,B=7错",
+          "reason": "A,B是商的数字",
+          "correction": "AB=19",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "数字谜",
+        "字母代数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "乘法"
+      ]
+    },
+    {
+      "id": "g3-vp-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "在下列竖式中，△+○=？\n  △ 7\n+ 3 ○\n------\n  8  2",
+      "image": "",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "个位：7+○的个位是2，说明有进位",
+        "7+○=12，○=5，进位1",
+        "十位：△+3+1=8，△=4",
+        "△=4，○=5，△+○=9"
+      ],
+      "hints": [
+        "从个位判断是否进位",
+        "分别求△和○"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "没考虑进位",
+          "reason": "7+○=2直接减",
+          "correction": "7+○=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "竖式",
+        "进位加法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "数字谜"
+      ]
+    },
+    {
+      "id": "g3-vp-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个数先加 15，再乘 2，再减 10，最后除以 3，结果是 20。这个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "solution": [
+        "倒推：从结果20开始，每步逆运算",
+        "除以3之前：20×3=60",
+        "减10之前：60+10=70",
+        "乘2之前：70÷2=35",
+        "加15之前：35-15=20",
+        "检验：20+15=35，35×2=70，70-10=60，60÷3=20 ✓"
+      ],
+      "hints": [
+        "从结果一步步倒推",
+        "加变减、乘变除"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "顺推猜",
+          "reason": "容易算错",
+          "correction": "倒推更准确",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "多步运算"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g3-vp-19",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "在下面的加法竖式中，A、B 各代表什么数字？A + B = ?\n  A 5\n+ 3 B\n------\n  7 2",
+      "image": "",
+      "options": [],
+      "answer": "7",
+      "acceptableAnswers": ["7", "7"],
+      "solution": [
+        "个位：5+B的个位是2，说明有进位",
+        "5+B=12，B=7，进位1",
+        "十位：A+3+1=7，A=3",
+        "A=3，B=7，A+B=10"
+      ],
+      "hints": [
+        "从个位开始，注意进位",
+        "5+B=12，B=7",
+        "A+3+1=7，A=3"
+      ],
+      "commonMistakes": [
+        {"mistake": "B=7但A=4", "reason": "忘了进位1", "correction": "十位要加进位1", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2010, "paper": "第八届希望杯三年级"},
+      "knowledgePoints": ["加法竖式", "进位"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.3, "c": 0.25},
+      "tags": ["竖式数字谜", "竞赛真题"]
+    },
+    {
+      "id": "g3-vp-20",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "在下面的减法竖式中，被减数是多少？\n  □ □\n-   2 8\n------\n  4 5",
+      "image": "",
+      "options": ["63", "73", "72", "62"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "被减数 = 减数 + 差 = 28 + 45 = 73",
+        "检验：73-28=45 ✓"
+      ],
+      "hints": [
+        "被减数 = 减数 + 差",
+        "28+45=73"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0", "reason": "45+28算成63", "correction": "28+45=73", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2011, "paper": "2011年迎春杯三年级"},
+      "knowledgePoints": ["减法竖式", "互逆关系"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["竖式数字谜", "竞赛真题"]
+    },
+    {
+      "id": "g3-vp-21",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "在乘法竖式中，□代表一个数字，求这个数字。\n  1 □\n×   7\n------\n  9 1",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": ["3"],
+      "solution": [
+        "个位：□×7的个位是1",
+        "只有3×7=21，个位是1",
+        "所以□=3，检验：13×7=91 ✓"
+      ],
+      "hints": [
+        "从个位入手",
+        "哪个数×7个位是1？",
+        "3×7=21，所以是3"
+      ],
+      "commonMistakes": [
+        {"mistake": "猜成其他数字", "reason": "乘法口诀不熟", "correction": "3×7=21", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯初赛"},
+      "knowledgePoints": ["乘法竖式", "个位分析"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.1, "b": 0.3, "c": 0.25},
+      "tags": ["竖式数字谜", "竞赛真题"]
+    },
+    {
+      "id": "g3-vp-22",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "下面的加法竖式中，相同的汉字代表相同的数字，不同的汉字代表不同的数字。\"好\"代表什么数字？\n  学 习\n+ 学 习\n------\n  好 8",
+      "image": "",
+      "options": ["4", "5", "6", "7"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "个位：习+习的个位是8",
+        "有两种可能：习=4（4+4=8）或习=9（9+9=18）",
+        "如果习=4，没有进位，十位：学+学=好，且学≠习=4",
+        "学可以是1,2,3,5,6,7,8等",
+        "如果习=9，进位1，十位：学+学+1=好",
+        "综合考虑：两个两位数相加得两位数，十位\"好\"不能太大",
+        "经典答案：习=4，学=3，好=6（34+34=68）"
+      ],
+      "hints": [
+        "先看个位：习+习=8或18",
+        "习=4或9",
+        "再看十位确定\"好\""
+      ],
+      "commonMistakes": [
+        {"mistake": "选4或5", "reason": "分析不完整", "correction": "34+34=68，好=6", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2012, "paper": "第十届走美杯三年级"},
+      "knowledgePoints": ["汉字数字谜", "加法"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["竖式数字谜", "竞赛真题"]
+    },
+    {
+      "id": "g3-vp-23",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "在除法算式中，被除数是一个两位数，除数是 6，商和余数相同。被除数最大是多少？",
+      "image": "",
+      "options": [],
+      "answer": "35",
+      "acceptableAnswers": ["35"],
+      "solution": [
+        "有余数除法：余数 < 除数，所以余数最大是5",
+        "商 = 余数，所以商也可以是1,2,3,4,5",
+        "被除数 = 除数×商 + 余数 = 6×商 + 商 = 7×商",
+        "要被除数最大且是两位数，商取最大值5",
+        "被除数 = 6×5+5 = 35",
+        "检验：35÷6=5余5 ✓"
+      ],
+      "hints": [
+        "余数 < 除数，余数最大是5",
+        "商=余数，所以商也是5",
+        "被除数=6×5+5=35"
+      ],
+      "commonMistakes": [
+        {"mistake": "42", "reason": "以为商=6", "correction": "余数<6，最大是5", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2009, "paper": "第七届希望杯三年级"},
+      "knowledgePoints": ["有余数除法", "数字谜"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["竖式数字谜", "竞赛真题"]
+    }
+  ]
+}

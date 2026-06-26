@@ -1,0 +1,228 @@
+
+{
+    "paperId": "g2-final-2024",
+    "title": "二年级期末考试数学试卷",
+    "grade": 2,
+    "category": "final-exam",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 1,
+    "year": 2024,
+    "source": "小学数学教研组",
+    "sections": [
+        {"name": "一、填空题（每题4分，共40分）", "count": 10, "scorePerQuestion": 4},
+        {"name": "二、计算题（每题5分，共30分）", "count": 6, "scorePerQuestion": 5},
+        {"name": "三、应用题（每题10分，共30分）", "count": 3, "scorePerQuestion": 10}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "5 + 8 = ______",
+            "answer": "13",
+            "score": 4,
+            "solution": "5+8=13。",
+            "knowledgePoints": ["加法"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "24 - 7 = ______",
+            "answer": "17",
+            "score": 4,
+            "solution": "24-7=17。",
+            "knowledgePoints": ["减法"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "6 × 7 = ______",
+            "answer": "42",
+            "score": 4,
+            "solution": "6×7=42。",
+            "knowledgePoints": ["乘法"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "56 ÷ 8 = ______",
+            "answer": "7",
+            "score": 4,
+            "solution": "56÷8=7。",
+            "knowledgePoints": ["除法"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "一个角有______个顶点，______条边。",
+            "answer": "1",
+            "score": 4,
+            "solution": "一个角有1个顶点，2条边。",
+            "knowledgePoints": ["角的认识"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "3米 = ______厘米",
+            "answer": "300",
+            "score": 4,
+            "solution": "3×100=300厘米。",
+            "knowledgePoints": ["单位换算"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "括号里最大能填几？（ ）× 6 < 40",
+            "answer": "6",
+            "score": 4,
+            "solution": "6×6=36<40，7×6=42>40。最大填6。",
+            "knowledgePoints": ["乘法"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "按规律填数：1，4，9，16，______，36。",
+            "answer": "25",
+            "score": 4,
+            "solution": "1²=1，2²=4，3²=9，4²=16，5²=25，6²=36。",
+            "knowledgePoints": ["找规律"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "一个长方形长8厘米，宽5厘米，它的周长是______厘米。",
+            "answer": "26",
+            "score": 4,
+            "solution": "周长=2(8+5)=26厘米。",
+            "knowledgePoints": ["长方形周长"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小明有30块糖，第一天吃了总数的1/5，第一天吃了______块。",
+            "answer": "6",
+            "score": 4,
+            "solution": "30÷5=6块。",
+            "knowledgePoints": ["分数"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 2,
+            "stem": "计算：236 + 185 = ______",
+            "answer": "421",
+            "score": 5,
+            "solution": "236+185=421。",
+            "knowledgePoints": ["加法"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 2,
+            "stem": "计算：500 - 236 = ______",
+            "answer": "264",
+            "score": 5,
+            "solution": "500-236=264。",
+            "knowledgePoints": ["减法"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 2,
+            "stem": "计算：125 × 8 = ______",
+            "answer": "1000",
+            "score": 5,
+            "solution": "125×8=1000。",
+            "knowledgePoints": ["乘法"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 2,
+            "stem": "计算：96 ÷ 4 = ______",
+            "answer": "24",
+            "score": 5,
+            "solution": "96÷4=24。",
+            "knowledgePoints": ["除法"]
+        },
+        {
+            "id": "q15",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 2,
+            "stem": "计算：(125 + 75) × 4 = ______",
+            "answer": "800",
+            "score": 5,
+            "solution": "125+75=200，200×4=800。",
+            "knowledgePoints": ["混合运算"]
+        },
+        {
+            "id": "q16",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 2,
+            "stem": "计算：36 + 48 + 52 + 64 = ______",
+            "answer": "200",
+            "score": 5,
+            "solution": "(36+64)+(48+52)=100+100=200。",
+            "knowledgePoints": ["巧算"]
+        },
+        {
+            "id": "q17",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 3,
+            "stem": "（应用题）商店运来苹果120千克，卖出75千克后，又运来40千克。现在商店有苹果多少千克？",
+            "answer": "85",
+            "score": 10,
+            "solution": "120-75+40=45+40=85千克。",
+            "knowledgePoints": ["应用题"]
+        },
+        {
+            "id": "q18",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 3,
+            "stem": "（应用题）学校图书馆有故事书280本，是科技书的4倍。故事书和科技书一共有多少本？",
+            "answer": "350",
+            "score": 10,
+            "solution": "科技书=280÷4=70本。共有=280+70=350本。",
+            "knowledgePoints": ["应用题"]
+        },
+        {
+            "id": "q19",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 3,
+            "stem": "（应用题）一个长方形的长是12厘米，如果长减少4厘米，就变成了一个正方形。原来长方形的周长是多少厘米？",
+            "answer": "40",
+            "score": 10,
+            "solution": "长12厘米，宽=12-4=8厘米。周长=2(12+8)=40厘米。",
+            "knowledgePoints": ["长方形周长"]
+        }
+    ]
+}

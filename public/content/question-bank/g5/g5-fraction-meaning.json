@@ -1,0 +1,757 @@
+{
+  "topicId": "g5-fraction-meaning",
+  "topicName": "分数意义",
+  "grade": 5,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g5-fm-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "把一个西瓜平均分成4份,每份是这个西瓜的()。",
+      "image": "",
+      "options": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "4"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "把整体1平均分成4份",
+        "每份占1/4"
+      ],
+      "hints": [
+        "分母是份数,分子是取的份数",
+        "1/4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选3",
+          "reason": "忘记分数意义",
+          "correction": "每份是1/4",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数意义"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分数",
+        "单位1"
+      ]
+    },
+    {
+      "id": "g5-fm-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "3/5表示把单位1平均分成()份,取这样的()份。(答案用逗号分隔两个数)",
+      "image": "",
+      "options": [],
+      "answer": "5,3",
+      "acceptableAnswers": [
+        "5,3",
+        "5 3"
+      ],
+      "solution": [
+        "分母5是平均分的份数",
+        "分子3是取的份数"
+      ],
+      "hints": [
+        "分母:份数,分子:取数",
+        "5,3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写反",
+          "reason": "分子分母搞反",
+          "correction": "5,3",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数意义"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分子",
+        "分母"
+      ]
+    },
+    {
+      "id": "g5-fm-03",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "5个1/7是多少?(用分数表示)",
+      "image": "",
+      "options": [],
+      "answer": "5/7",
+      "acceptableAnswers": [
+        "5/7"
+      ],
+      "solution": [
+        "1/7×5=5/7",
+        "5个1/7即5/7"
+      ],
+      "hints": [
+        "分子就是个数,分母不变",
+        "5/7"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成5×1/7=5/7",
+          "reason": "直接写5/7即可",
+          "correction": "5/7",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数单位"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分数单位"
+      ]
+    },
+    {
+      "id": "g5-fm-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下列分数中,分数单位是1/8的是()。",
+      "image": "",
+      "options": [
+        "3/5",
+        "5/8",
+        "8/10",
+        "1/5"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "分数单位由分母决定",
+        "分母是8则分数单位是1/8",
+        "5/8的分数单位是1/8"
+      ],
+      "hints": [
+        "看分母确定分数单位",
+        "5/8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2或3",
+          "reason": "分数单位只看分母",
+          "correction": "5/8",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数单位"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分数单位"
+      ]
+    },
+    {
+      "id": "g5-fm-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "3/4再添上()个它的分数单位就是1。",
+      "image": "",
+      "options": [
+        "1",
+        "4",
+        "3",
+        "2"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "3/4的分数单位是1/4",
+        "1-3/4=1/4",
+        "所以再添1个1/4就是1"
+      ],
+      "hints": [
+        "先求1-3/4=1/4",
+        "1/4就是1个分数单位"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2或3",
+          "reason": "计算1-3/4算错",
+          "correction": "1-3/4=1/4即1个",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数单位"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分数单位"
+      ]
+    },
+    {
+      "id": "g5-fm-06",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把假分数7/3化成带分数。",
+      "image": "",
+      "options": [],
+      "answer": "2又1/3",
+      "acceptableAnswers": [
+        "2又1/3",
+        "2 1/3"
+      ],
+      "solution": [
+        "7÷3=2余1",
+        "整数部分2,分母不变3,余数1做分子",
+        "7/3=2又1/3"
+      ],
+      "hints": [
+        "分子÷分母得商和余数",
+        "商又余数/分母",
+        "7÷3=2余1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3又1/3",
+          "reason": "除法算错",
+          "correction": "7÷3=2余1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "假分数化带分数"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "带分数"
+      ]
+    },
+    {
+      "id": "g5-fm-07",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把带分数3又2/5化成假分数。",
+      "image": "",
+      "options": [],
+      "answer": "17/5",
+      "acceptableAnswers": [
+        "17/5"
+      ],
+      "solution": [
+        "3×5+2=17",
+        "分母不变,分子=整数×分母+分子",
+        "3又2/5=17/5"
+      ],
+      "hints": [
+        "新分子=整数×分母+分子",
+        "3×5+2=17"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成15/5",
+          "reason": "忘记加分子了",
+          "correction": "3×5+2=17",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "带分数化假分数"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "带分数",
+        "假分数"
+      ]
+    },
+    {
+      "id": "g5-fm-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下列说法正确的是()。",
+      "image": "",
+      "options": [
+        "真分数都小于1",
+        "假分数都大于1",
+        "带分数都小于1",
+        "真分数都大于1"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "真分数分子<分母,真分数<1",
+        "假分数分子>=分母,假分数>=1",
+        "带分数=整数+真分数>1"
+      ],
+      "hints": [
+        "真分数<1,假分数>=1",
+        "真分数都小于1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1",
+          "reason": "假分数可以=1",
+          "correction": "真分数都小于1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数分类"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分类"
+      ]
+    },
+    {
+      "id": "g5-fm-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把3米长的绳子平均分成5段,每段是全长的几分之几?每段长多少米?(答案用逗号分隔两个分数)",
+      "image": "",
+      "options": [],
+      "answer": "1/5,3/5",
+      "acceptableAnswers": [
+        "1/5,3/5",
+        "1/5 3/5",
+        "1/5,0.6"
+      ],
+      "solution": [
+        "每段占全长的:1÷5=1/5",
+        "每段的长度:3÷5=3/5米",
+        "注意:分率无单位,长度有单位"
+      ],
+      "hints": [
+        "求分率:1÷段数",
+        "求长度:总长÷段数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "混淆分率和长度",
+          "reason": "分率1/5,长度3/5米",
+          "correction": "1/5,3/5",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数意义应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分率",
+        "具体量"
+      ]
+    },
+    {
+      "id": "g5-fm-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "比较大小:5/7()7/9。",
+      "image": "",
+      "options": [
+        "大于",
+        "小于",
+        "等于",
+        "无法比较"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "通分:5/7=45/63,7/9=49/63",
+        "45/63<49/63",
+        "所以5/7<7/9",
+        "或:与1比较,1-5/7=2/7,1-7/9=2/9,2/7>2/9,5/7离1更远,5/7<7/9"
+      ],
+      "hints": [
+        "通分到63或与1比较",
+        "5/7<7/9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "比较方法错",
+          "correction": "5/7=45/63<7/9=49/63",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数比较"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比较"
+      ]
+    },
+    {
+      "id": "g5-fm-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "2/5=()/10=6/()=()÷15(三个答案用逗号分隔)",
+      "image": "",
+      "options": [],
+      "answer": "4,15,6",
+      "acceptableAnswers": [
+        "4,15,6",
+        "4 15 6"
+      ],
+      "solution": [
+        "2/5=4/10=6/15=6÷15",
+        "所以依次是4、15、6"
+      ],
+      "hints": [
+        "分子分母同时乘相同数",
+        "2/5=4/10=6/15"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "扩倍算错",
+          "reason": "同时乘2、3、3",
+          "correction": "4,15,6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数基本性质"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "基本性质"
+      ]
+    },
+    {
+      "id": "g5-fm-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "下列分数中,能化成有限小数的是()。",
+      "image": "",
+      "options": [
+        "1/3",
+        "5/6",
+        "3/8",
+        "2/7"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "最简分数的分母只含质因数2和5,就能化成有限小数",
+        "1/3分母含3不行,5/6含2×3含3不行,3/8=2³只有2可以,2/7含7不行"
+      ],
+      "hints": [
+        "先约分再看分母质因数",
+        "只含2和5的可以"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1或3",
+          "reason": "不会判断方法",
+          "correction": "3/8=0.375是有限小数",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数化小数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "有限小数"
+      ]
+    },
+    {
+      "id": "g5-fm-13",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把0.6化成最简分数。",
+      "image": "",
+      "options": [],
+      "answer": "3/5",
+      "acceptableAnswers": [
+        "3/5"
+      ],
+      "solution": [
+        "0.6=6/10",
+        "6和10的最大公因数是2",
+        "6/10=3/5"
+      ],
+      "hints": [
+        "一位小数写成十分之几",
+        "再约分"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成6/10",
+          "reason": "没约分",
+          "correction": "6/10=3/5",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "小数化分数"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "约分"
+      ]
+    },
+    {
+      "id": "g5-fm-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个分数,分子比分母小5,约分后得4/9。这个分数原来是多少?(用a/b形式表示)",
+      "image": "",
+      "options": [],
+      "answer": "4/9",
+      "acceptableAnswers": [
+        "4/9"
+      ],
+      "solution": [
+        "设原分数=4x/9x,其中x是约去的因数",
+        "根据题意:9x-4x=5",
+        "5x=5,x=1",
+        "原分数=4/9",
+        "验证:9-4=5正确"
+      ],
+      "hints": [
+        "分子分母相差5份",
+        "9-4=5份对应5,1份=1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "不会设未知数",
+          "reason": "设分子分母同乘x",
+          "correction": "9x-4x=5,x=1,原分数=4/9",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数综合应用"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "约分"
+      ]
+    },
+    {
+      "id": "g5-fm-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个分数的分母比分子大3,如果分子扩大2倍,分母扩大3倍,那么新分数比原分数小1/6。求原分数。(用a/b表示)",
+      "image": "",
+      "options": [],
+      "answer": "3/6",
+      "acceptableAnswers": [
+        "3/6",
+        "1/2"
+      ],
+      "solution": [
+        "设原分数分子=x,分母=x+3,原分数=x/(x+3)",
+        "新分数=2x/(3(x+3))",
+        "原-新=x/(x+3)-2x/(3(x+3))=(3x-2x)/(3(x+3))=x/(3(x+3))=1/6",
+        "x/(3(x+3))=1/6,交叉乘:6x=3x+9,3x=9,x=3",
+        "原分数=3/6=1/2",
+        "验证:新=6/18=1/3,原-新=1/2-1/3=1/6正确"
+      ],
+      "hints": [
+        "设分子=x,分母=x+3",
+        "原-新=1/6列方程求解"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "不会列方程",
+          "reason": "x/(x+3)-2x/(3(x+3))=1/6,x=3",
+          "correction": "3/6",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "分数综合"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    }
+  ]
+}

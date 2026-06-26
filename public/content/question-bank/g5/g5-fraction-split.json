@@ -1,0 +1,737 @@
+{
+  "topicId": "g5-fraction-split",
+  "topicName": "分数裂项",
+  "grade": 5,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g5-fs-01",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "填空: 1/(2×3) = 1/() - 1/()(答案用逗号分隔)",
+      "image": "",
+      "options": [],
+      "answer": "2,3",
+      "acceptableAnswers": [
+        "2,3",
+        "2 3"
+      ],
+      "solution": [
+        "1/(n(n+1))=1/n-1/(n+1)",
+        "1/(2×3)=1/2-1/3"
+      ],
+      "hints": [
+        "分母拆成两个连续数",
+        "1/n-1/(n+1)形式"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写3,2",
+          "reason": "顺序反了",
+          "correction": "2,3",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "裂项公式"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "裂项"
+      ]
+    },
+    {
+      "id": "g5-fs-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "计算: 1/(1×2)+1/(2×3)+1/(3×4)",
+      "image": "",
+      "options": [],
+      "answer": "3/4",
+      "acceptableAnswers": [
+        "3/4"
+      ],
+      "solution": [
+        "裂项展开: =(1-1/2)+(1/2-1/3)+(1/3-1/4)",
+        "中间抵消,剩下首项和末项",
+        "=1-1/4=3/4"
+      ],
+      "hints": [
+        "中间项抵消",
+        "剩1-1/4=3/4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "每项通分计算",
+          "reason": "裂项抵消简便",
+          "correction": "1-1/4=3/4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "裂项求和"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "抵消"
+      ]
+    },
+    {
+      "id": "g5-fs-03",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "计算: 1/2+1/6+1/12+1/20(观察分母: 2=1×2,6=2×3,12=3×4,20=4×5)",
+      "image": "",
+      "options": [],
+      "answer": "4/5",
+      "acceptableAnswers": [
+        "4/5"
+      ],
+      "solution": [
+        "原式=1/(1×2)+1/(2×3)+1/(3×4)+1/(4×5)",
+        "=(1-1/2)+(1/2-1/3)+(1/3-1/4)+(1/4-1/5)",
+        "=1-1/5=4/5"
+      ],
+      "hints": [
+        "观察分母是连续两数乘积",
+        "裂项抵消剩1-1/5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "看不出规律",
+          "reason": "2=1×2,6=2×3,12=3×4,20=4×5",
+          "correction": "1-1/5=4/5",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "裂项求和"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "抵消"
+      ]
+    },
+    {
+      "id": "g5-fs-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1/(1×2)+1/(2×3)+...+1/(9×10)=()。",
+      "image": "",
+      "options": [
+        "1/10",
+        "9/10",
+        "10/11",
+        "1"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "=(1-1/2)+(1/2-1/3)+...+(1/9-1/10)",
+        "=1-1/10=9/10"
+      ],
+      "hints": [
+        "最后一项1/(9×10)=1/9-1/10",
+        "剩1-1/10=9/10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2",
+          "reason": "末项搞反了",
+          "correction": "1-1/10=9/10",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "裂项求和"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "抵消"
+      ]
+    },
+    {
+      "id": "g5-fs-05",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算: 1-1/2-1/4-1/8-1/16",
+      "image": "",
+      "options": [],
+      "answer": "1/16",
+      "acceptableAnswers": [
+        "1/16"
+      ],
+      "solution": [
+        "1-1/2=1/2",
+        "1/2-1/4=1/4",
+        "1/4-1/8=1/8",
+        "1/8-1/16=1/16",
+        "每次减半,最后剩1/16"
+      ],
+      "hints": [
+        "逐步计算或画图思路",
+        "最后剩1/16"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成加了",
+          "reason": "都是减法",
+          "correction": "1-1/2-1/4-1/8-1/16=1/16",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "减半规律"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "画图"
+      ]
+    },
+    {
+      "id": "g5-fs-06",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算: 1/2+1/4+1/8+1/16+1/32",
+      "image": "",
+      "options": [],
+      "answer": "31/32",
+      "acceptableAnswers": [
+        "31/32"
+      ],
+      "solution": [
+        "这是加一半的规律",
+        "离1还差最后一个分数",
+        "1/2+1/4+1/8+1/16+1/32=1-1/32=31/32"
+      ],
+      "hints": [
+        "每次加剩下的一半",
+        "和=1-最后一个分数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "逐项通分",
+          "reason": "利用规律1-1/32简便",
+          "correction": "31/32",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "减半求和"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "规律"
+      ]
+    },
+    {
+      "id": "g5-fs-07",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算: 1+1/2+1/4+1/8(结果用带分数表示)",
+      "image": "",
+      "options": [],
+      "answer": "1又7/8",
+      "acceptableAnswers": [
+        "1又7/8",
+        "15/8",
+        "1 7/8"
+      ],
+      "solution": [
+        "1/2+1/4+1/8=4/8+2/8+1/8=7/8",
+        "1+7/8=1又7/8",
+        "或1/2+1/4+1/8=1-1/8=7/8,1+7/8=1又7/8"
+      ],
+      "hints": [
+        "先算分数部分再+1",
+        "1/2+1/4+1/8=7/8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成2又1/8",
+          "reason": "1+1/2+1/4+1/8=1又7/8",
+          "correction": "1+1/2+1/4+1/8=1又7/8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "带分数"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "带分数"
+      ]
+    },
+    {
+      "id": "g5-fs-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1/2+1/4+1/8+1/16=()。",
+      "image": "",
+      "options": [
+        "15/16",
+        "1",
+        "7/8",
+        "8/16"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "通分到16:8/16+4/16+2/16+1/16=15/16",
+        "或画图:每次加一半剩下一半,最后剩1/16,加了15/16"
+      ],
+      "hints": [
+        "1/2=8/16,1/4=4/16,1/8=2/16,1/16=1/16",
+        "8+4+2+1=15,15/16"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "算到7/8停了",
+          "correction": "到1/16共15/16",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "连加"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "规律"
+      ]
+    },
+    {
+      "id": "g5-fs-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算: 1/(1×2)+1/(2×3)+1/(3×4)+...+1/(n(n+1))=?当n=5时,结果是多少?(用分数表示)",
+      "image": "",
+      "options": [],
+      "answer": "5/6",
+      "acceptableAnswers": [
+        "5/6"
+      ],
+      "solution": [
+        "一般公式:原式=1-1/(n+1)=n/(n+1)",
+        "当n=5时,=1-1/6=5/6",
+        "验证:(1-1/2)+(1/2-1/3)+(1/3-1/4)+(1/4-1/5)+(1/5-1/6)=1-1/6=5/6"
+      ],
+      "hints": [
+        "公式=1-1/(n+1)",
+        "n=5时=1-1/6=5/6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "不知道公式",
+          "reason": "每项裂项中间抵消",
+          "correction": "5/6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "裂项公式"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "公式"
+      ]
+    },
+    {
+      "id": "g5-fs-10",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "填空: 1/(n×(n+1))=1/()-1/()(答案用逗号分隔两个字母或数字)",
+      "image": "",
+      "options": [],
+      "answer": "n,n+1",
+      "acceptableAnswers": [
+        "n,n+1",
+        "n n+1"
+      ],
+      "solution": [
+        "1/(n(n+1))=1/n-1/(n+1)",
+        "因为右边通分:1/n-1/(n+1)=((n+1)-n)/(n(n+1))=1/(n(n+1))=左边"
+      ],
+      "hints": [
+        "1/(n(n+1))=1/n-1/(n+1)",
+        "两个括号填n和n+1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "不理解公式",
+          "reason": "举例验证:1/(2×3)=1/2-1/3=1/6",
+          "correction": "n,n+1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "裂项公式"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "裂项"
+      ]
+    },
+    {
+      "id": "g5-fs-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "计算: 1/(1×3)+1/(3×5)+1/(5×7)+1/(7×9)。(提示:1/(n×(n+2))=(1/2)×(1/n-1/(n+2)))",
+      "image": "",
+      "options": [],
+      "answer": "4/9",
+      "acceptableAnswers": [
+        "4/9"
+      ],
+      "solution": [
+        "用公式:1/(n(n+2))=(1/2)(1/n-1/(n+2))",
+        "原式=(1/2)(1-1/3)+(1/2)(1/3-1/5)+(1/2)(1/5-1/7)+(1/2)(1/7-1/9)",
+        "=(1/2)(1-1/3+1/3-1/5+1/5-1/7+1/7-1/9)",
+        "=(1/2)(1-1/9)=(1/2)(8/9)=4/9"
+      ],
+      "hints": [
+        "每项提1/2再裂项",
+        "中间抵消剩1-1/9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "忘记提1/2",
+          "reason": "每项要×1/2",
+          "correction": "(1/2)(1-1/9)=4/9",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "裂项进阶"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差2"
+      ]
+    },
+    {
+      "id": "g5-fs-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "计算:1/2+1/6+1/12+1/20+1/30+1/42=()。",
+      "image": "",
+      "options": [
+        "5/6",
+        "6/7",
+        "7/8",
+        "1/7"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "=1/(1×2)+1/(2×3)+1/(3×4)+1/(4×5)+1/(5×6)+1/(6×7)",
+        "=(1-1/2)+(1/2-1/3)+(1/3-1/4)+(1/4-1/5)+(1/5-1/6)+(1/6-1/7)",
+        "=1-1/7=6/7"
+      ],
+      "hints": [
+        "每项n×(n+1)到6×7",
+        "=1-1/7=6/7"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "算到第5项停了",
+          "correction": "到6×7,1-1/7=6/7",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "裂项求和"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "抵消"
+      ]
+    },
+    {
+      "id": "g5-fs-13",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "1/3+1/15+1/35+1/63=?提示:分母3=1×3,15=3×5,35=5×7,63=7×9",
+      "image": "",
+      "options": [],
+      "answer": "4/9",
+      "acceptableAnswers": [
+        "4/9"
+      ],
+      "solution": [
+        "=1/(1×3)+1/(3×5)+1/(5×7)+1/(7×9)",
+        "=(1/2)(1-1/3)+(1/2)(1/3-1/5)+(1/2)(1/5-1/7)+(1/2)(1/7-1/9)",
+        "=(1/2)(1-1/9)=(1/2)(8/9)=4/9"
+      ],
+      "hints": [
+        "每项差2要提1/2",
+        "(1-1/9)/2=4/9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "直接通分计算太慢",
+          "reason": "裂项=(1-1/9)/2=4/9",
+          "correction": "裂项=(1-1/9)/2=4/9",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "裂项进阶"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差2"
+      ]
+    },
+    {
+      "id": "g5-fs-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "计算: 1-5/6+7/12-9/20+11/30",
+      "image": "",
+      "options": [],
+      "answer": "5/6",
+      "acceptableAnswers": [
+        "5/6",
+        "2/3"
+      ],
+      "solution": [
+        "观察:5/6=1/2+1/3,7/12=1/3+1/4,9/20=1/4+1/5,11/30=1/5+1/6",
+        "原式=1-(1/2+1/3)+(1/3+1/4)-(1/4+1/5)+(1/5+1/6)",
+        "=1-1/2-1/3+1/3+1/4-1/4-1/5+1/5+1/6",
+        "=1-1/2+1/6=1/2+1/6=3/6+1/6=4/6=2/3"
+      ],
+      "hints": [
+        "先拆项再正负抵消",
+        "1-(1/2+1/3)+(1/3+1/4)-(1/4+1/5)+(1/5+1/6)=2/3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "直接算",
+          "reason": "拆项抵消更简便:2/3",
+          "correction": "2/3",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "拆项抵消"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "拆项"
+      ]
+    },
+    {
+      "id": "g5-fs-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一串分数:1/2,1/6,1/12,1/20,1/30,...按这样的规律,第10个数是多少?前10个数的和是多少?(答案用逗号分隔,用分数表示)",
+      "image": "",
+      "options": [],
+      "answer": "1/110,10/11",
+      "acceptableAnswers": [
+        "1/110,10/11",
+        "1/110 10/11"
+      ],
+      "solution": [
+        "观察:1/2=1/(1×2),1/6=1/(2×3),1/12=1/(3×4),1/20=1/(4×5),1/30=1/(5×6)",
+        "第n个=1/(n(n+1))",
+        "第10个=1/(10×11)=1/110",
+        "前10个和=(1-1/2)+(1/2-1/3)+...+(1/10-1/11)=1-1/11=10/11"
+      ],
+      "hints": [
+        "找规律:第n个=1/(n(n+1))",
+        "前n个和=1-1/(n+1)=n/(n+1)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "找不到规律",
+          "reason": "分母=n(n+1),裂项求和=1-1/11",
+          "correction": "1/110,10/11",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "规律探究"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "数列"
+      ]
+    }
+  ]
+}

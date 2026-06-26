@@ -1,0 +1,161 @@
+{
+    "paperId": "huabei-14-g3",
+    "title": "第十四届华罗庚金杯少年数学邀请赛 决赛试卷（小学组）",
+    "grade": 3,
+    "category": "aoshu-hualuogeng",
+    "duration": 90,
+    "totalScore": 140,
+    "difficultyLevel": 3,
+    "year": 2009,
+    "source": "华罗庚金杯少年数学邀请赛组委会",
+    "sections": [
+        {"name": "一、填空题（每题10分，共70分）", "count": 7, "scorePerQuestion": 10},
+        {"name": "二、解答题（每题10分，共40分）", "count": 4, "scorePerQuestion": 10},
+        {"name": "三、详答题（每题15分，共30分）", "count": 2, "scorePerQuestion": 15}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：2009 - 2008 + 2007 - 2006 + ... + 3 - 2 + 1 = ______。",
+            "answer": "1005",
+            "score": 10,
+            "solution": "每两个数一组，最后剩1。每组和为1，共(2009-1)/2=1004组，加剩下的1。1004+1=1005。",
+            "knowledgePoints": ["找规律"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：125 × 16 = ______。",
+            "answer": "2000",
+            "score": 10,
+            "solution": "125×16=125×8×2=1000×2=2000。",
+            "knowledgePoints": ["乘法巧算"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个数除以7余2，除以8余1。这个数最小是______。",
+            "answer": "57",
+            "score": 10,
+            "solution": "从除以7余2的数中找：2,9,16,23,30,37,44,51,58...找除以8余1的：57。验证：57÷7=8余2，57÷8=7余1。",
+            "knowledgePoints": ["余数问题"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有25只，脚一共有80只。兔有______只。",
+            "answer": "15",
+            "score": 10,
+            "solution": "假设全是鸡：25×2=50脚。实际80脚，多30脚。兔=30/2=15只。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个正方形的面积是81平方厘米，它的边长是______厘米。",
+            "answer": "9",
+            "score": 10,
+            "solution": "边长×边长=81，9×9=81。",
+            "knowledgePoints": ["正方形"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一桶油，第一次倒出一半，第二次倒出剩下的一半，还剩8千克。原有______千克。",
+            "answer": "32",
+            "score": 10,
+            "solution": "设原有x千克。第二次倒出后剩x/4=8，x=32千克。",
+            "knowledgePoints": ["一半问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小明有50颗珠子，给了小红8颗后，两人的珠子一样多。小红原有______颗。",
+            "answer": "34",
+            "score": 10,
+            "solution": "小明剩50-8=42颗。两人一样多说明小红也有42颗，所以小红原有42-8=34颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）一个长方形的周长是36厘米，宽是8厘米。面积是______平方厘米。",
+            "answer": "80",
+            "score": 10,
+            "solution": "长=36/2-8=18-8=10厘米。面积=10×8=80平方厘米。",
+            "knowledgePoints": ["长方形"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）甲、乙两数的和是80，甲是乙的3倍。甲是______。",
+            "answer": "60",
+            "score": 10,
+            "solution": "设乙为x，甲为3x。3x+x=80，4x=80，x=20。甲=60。",
+            "knowledgePoints": ["和倍问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）在一条长60米的路一边种树，每隔6米种一棵，两端都种。需要______棵。",
+            "answer": "11",
+            "score": 10,
+            "solution": "60÷6+1=10+1=11棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）一个数先加上6，再乘以6，再减去6，再除以6，结果是6。这个数是______。",
+            "answer": "1",
+            "score": 10,
+            "solution": "逆推：6×6=36，36+6=42，42÷6=7，7-6=1。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 3,
+            "stem": "（详答题）小明从1楼到4楼用了30秒，照这样计算，他从3楼走到10楼需要多少秒？",
+            "answer": "70",
+            "score": 15,
+            "solution": "1楼到4楼走了3层，每层10秒。3楼到10楼走7层，10×7=70秒。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 3,
+            "stem": "（详答题）某月第一个星期五是7号，那么这个月的22号是星期几？",
+            "answer": "五",
+            "score": 15,
+            "solution": "7号是星期五。14号、21号也是星期五。22号星期六。",
+            "knowledgePoints": ["日期问题"]
+        }
+    ]
+}

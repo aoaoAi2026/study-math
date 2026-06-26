@@ -1,0 +1,703 @@
+{
+  "topicId": "multiplication-table-common",
+  "topicName": "乘法口诀总结",
+  "grade": "二年级总结",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "cm-mt-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "6 × 7 = ?",
+      "image": "",
+      "options": [],
+      "answer": "42",
+      "acceptableAnswers": [
+        "42",
+        "四十二"
+      ],
+      "solution": [
+        "六七四十二"
+      ],
+      "hints": [
+        "六六三十六,加6就是六七"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成48",
+          "reason": "和六八搞混",
+          "correction": "六七四十二",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "乘法口诀"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "乘法"
+      ]
+    },
+    {
+      "id": "cm-mt-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "8 × 9 = ?",
+      "image": "",
+      "options": [],
+      "answer": "72",
+      "acceptableAnswers": [
+        "72",
+        "七十二"
+      ],
+      "solution": [
+        "八九七十二"
+      ],
+      "hints": [
+        "九九八十一减9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成63",
+          "reason": "七九搞混",
+          "correction": "八九七十二",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "乘法口诀"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "乘法"
+      ]
+    },
+    {
+      "id": "cm-mt-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "7 × 8 = ?",
+      "image": "",
+      "options": [],
+      "answer": "56",
+      "acceptableAnswers": [
+        "56",
+        "五十六"
+      ],
+      "solution": [
+        "七八五十六"
+      ],
+      "hints": [
+        "7×7+7=56"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成54",
+          "reason": "和六九搞混",
+          "correction": "七八五十六",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "乘法口诀"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "乘法"
+      ]
+    },
+    {
+      "id": "cm-mt-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "□ × 8 = 56，□ = ?",
+      "image": "",
+      "options": [],
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "七"
+      ],
+      "solution": [
+        "七八五十六,□=7 或 56÷8=7"
+      ],
+      "hints": [
+        "56÷8=?",
+        "想乘法口诀"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成6",
+          "reason": "六八四十八",
+          "correction": "七八五十六,填7",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "乘法填空"
+      ],
+      "estimatedTime": 40,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "填空"
+      ]
+    },
+    {
+      "id": "cm-mt-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "9 × 9 + 9 = ?",
+      "image": "",
+      "options": [],
+      "answer": "90",
+      "acceptableAnswers": [
+        "90",
+        "九十"
+      ],
+      "solution": [
+        "9×9=81,81+9=90 或 10个9相加=90"
+      ],
+      "hints": [
+        "9个9加1个9=10个9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成89",
+          "reason": "81+9算错",
+          "correction": "81+9=90",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "乘加混合"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "混合运算"
+      ]
+    },
+    {
+      "id": "cm-mt-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "36 ÷ 6 × 2 = ?",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "十二"
+      ],
+      "solution": [
+        "按顺序:36÷6=6,6×2=12"
+      ],
+      "hints": [
+        "从左到右",
+        "先除后乘"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3",
+          "reason": "先算6×2",
+          "correction": "从左到右,36÷6×2=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "乘除混合"
+      ],
+      "estimatedTime": 50,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "混合运算"
+      ]
+    },
+    {
+      "id": "cm-mt-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "巧算：25 × 8 = ?",
+      "image": "",
+      "options": [],
+      "answer": "200",
+      "acceptableAnswers": [
+        "200",
+        "二百"
+      ],
+      "solution": [
+        "记住:25×4=100。",
+        "25×8=25×4×2=100×2=200。"
+      ],
+      "hints": [
+        "记住25×4=100",
+        "8=4×2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成180",
+          "reason": "25×8算错",
+          "correction": "25×8=200",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "巧算",
+        "25×4"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "巧算"
+      ]
+    },
+    {
+      "id": "cm-mt-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个星期有7天。5个星期有多少天？",
+      "image": "",
+      "options": [],
+      "answer": "35",
+      "acceptableAnswers": [
+        "35",
+        "三十五"
+      ],
+      "solution": [
+        "7×5=35天,五七三十五"
+      ],
+      "hints": [
+        "7×5=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成28",
+          "reason": "四七二十八",
+          "correction": "五七三十五",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "乘法应用"
+      ],
+      "estimatedTime": 50,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "乘法应用"
+      ]
+    },
+    {
+      "id": "cm-mt-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "每本笔记本5元，小明买了8本还剩3元。他原来有多少钱？",
+      "image": "",
+      "options": [],
+      "answer": "43",
+      "acceptableAnswers": [
+        "43",
+        "四十三"
+      ],
+      "solution": [
+        "8本花了5×8=40元。原来有40+3=43元。"
+      ],
+      "hints": [
+        "先算花了多少钱"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成37",
+          "reason": "5×8算成35",
+          "correction": "5×8+3=43",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "乘加应用"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "乘法应用"
+      ]
+    },
+    {
+      "id": "cm-mt-10",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在括号里最大能填几？6 × ( ) < 32",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五"
+      ],
+      "solution": [
+        "6×5=30<32,6×6=36>32。最大填5。"
+      ],
+      "hints": [
+        "试一下五六三十、六六三十六"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成6",
+          "reason": "36>32不符合",
+          "correction": "最大填5",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "不等式填空"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "不等式"
+      ]
+    },
+    {
+      "id": "cm-mt-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "3只鸡3天下3个蛋，9只鸡9天下几个蛋？",
+      "image": "",
+      "options": [],
+      "answer": "27",
+      "acceptableAnswers": [
+        "27",
+        "二十七"
+      ],
+      "solution": [
+        "3只鸡3天→3个蛋→1只鸡1天→1/3个蛋。",
+        "9只鸡9天:9×9×(1/3)=27个蛋。"
+      ],
+      "hints": [
+        "先求1只鸡1天下几个",
+        "别被绕晕了!"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成9",
+          "reason": "简单放大3倍",
+          "correction": "鸡和天数各×3,蛋×9=27",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "归一问题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "归一"
+      ]
+    },
+    {
+      "id": "cm-mt-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "计算：1+2+3+4+5+6+7+8+9 = ?",
+      "image": "",
+      "options": [],
+      "answer": "45",
+      "acceptableAnswers": [
+        "45",
+        "四十五"
+      ],
+      "solution": [
+        "配对:(1+9)+(2+8)+(3+7)+(4+6)+5=10×4+5=45。",
+        "或9×5=45(中间数5乘9个数)。"
+      ],
+      "hints": [
+        "首尾配对",
+        "每对和10,4对+中间5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成50",
+          "reason": "对数算错",
+          "correction": "4×10+5=45",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "高斯求和"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "高斯求和"
+      ]
+    },
+    {
+      "id": "cm-mt-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "巧算：125 × 8 = ?",
+      "image": "",
+      "options": [],
+      "answer": "1000",
+      "acceptableAnswers": [
+        "1000",
+        "一千"
+      ],
+      "solution": [
+        "记住:125×8=1000,125×4=500。"
+      ],
+      "hints": [
+        "125×8=(100×8)+(25×8)=800+200=1000"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成900",
+          "reason": "计算错误",
+          "correction": "125×8=1000",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "巧算",
+        "特殊乘法"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "巧算"
+      ]
+    },
+    {
+      "id": "cm-mt-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个两位数，十位上的数字是个位的2倍，两个数字的和是9。这个两位数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "63",
+      "acceptableAnswers": [
+        "63"
+      ],
+      "solution": [
+        "设个位数字为x,十位=2x。",
+        "2x+x=9,3x=9,x=3。",
+        "个位=3,十位=6,数=63。"
+      ],
+      "hints": [
+        "设个位为x,十位=2x",
+        "两数字和=3x=9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成36",
+          "reason": "十位个位搞反",
+          "correction": "十位=6,个位=3,所以是63",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "位值原理",
+        "数字问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "数字"
+      ]
+    },
+    {
+      "id": "cm-mt-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个自然数与它自己相加、相减、相乘、相除所得的和、差、积、商加起来恰好是100。这个自然数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9",
+        "九"
+      ],
+      "solution": [
+        "设这个数为x。相加=2x,相减=0,相乘=x²,相除=1。",
+        "总和:x²+2x+0+1=(x+1)²=100。",
+        "x+1=10,x=9。验证:18+0+81+1=100✓"
+      ],
+      "hints": [
+        "设为x,列方程",
+        "相加=2x,相减=0,相乘=x²,相除=1",
+        "x²+2x+1=(x+1)²=100"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成10",
+          "reason": "100是10²,但要(x+1)²=100",
+          "correction": "x+1=10,x=9",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "方程思想",
+        "完全平方"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    }
+  ]
+}

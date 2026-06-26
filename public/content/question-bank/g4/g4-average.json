@@ -1,0 +1,747 @@
+{
+  "topicId": "g4-average",
+  "topicName": "平均数",
+  "grade": 4,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g4-av-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "求平均数的方法是（ ）。",
+      "image": "",
+      "options": [
+        "总数÷份数",
+        "份数÷总数",
+        "总数×份数",
+        "总数-份数"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "平均数=总数÷份数。"
+      ],
+      "hints": [
+        "平均数=总数÷份数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1",
+          "reason": "公式记错",
+          "correction": "平均数=总数÷份数",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数公式"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平均数",
+        "公式"
+      ]
+    },
+    {
+      "id": "g4-av-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "小明三次数学测试的成绩分别是85分、92分、87分，他三次测试的平均成绩是多少分？",
+      "image": "",
+      "options": [],
+      "answer": "88",
+      "acceptableAnswers": [
+        "88",
+        "88分"
+      ],
+      "solution": [
+        "三次测试的总分=85+92+87=264分",
+        "平均成绩=264÷3=88分"
+      ],
+      "hints": [
+        "先求三次成绩的总和",
+        "再用总分除以次数3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成87",
+          "reason": "总分算错",
+          "correction": "85+92+87=264，264÷3=88",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数计算"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平均数",
+        "求和"
+      ]
+    },
+    {
+      "id": "g4-av-03",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "五个数的和是120，这五个数的平均数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24"
+      ],
+      "solution": [
+        "平均数=总数÷份数",
+        "平均数=120÷5=24"
+      ],
+      "hints": [
+        "直接用公式120÷5=24"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成20",
+          "reason": "除法算错",
+          "correction": "120÷5=24",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数计算"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平均数"
+      ]
+    },
+    {
+      "id": "g4-av-04",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "四年级一班有男生22人，平均身高140厘米；女生18人，平均身高138厘米。全班的平均身高是多少厘米？（保留一位小数）",
+      "image": "",
+      "options": [],
+      "answer": "139.1",
+      "acceptableAnswers": [
+        "139.1",
+        "139.1厘米",
+        "139"
+      ],
+      "solution": [
+        "男生总身高=22×140=3080厘米",
+        "女生总身高=18×138=2484厘米",
+        "全班总身高=3080+2484=5564厘米",
+        "全班总人数=22+18=40人",
+        "全班平均身高=5564÷40=139.1厘米"
+      ],
+      "hints": [
+        "不能直接(140+138)÷2",
+        "要先分别求总身高，再除以总人数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成(140+138)÷2=139",
+          "reason": "错误地直接求两个平均数的平均",
+          "correction": "只有人数相同时才能这样做",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "加权平均数"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "加权平均数"
+      ]
+    },
+    {
+      "id": "g4-av-05",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一辆汽车前3小时行驶180千米，后2小时行驶140千米，这辆汽车平均每小时行驶多少千米？",
+      "image": "",
+      "options": [],
+      "answer": "64",
+      "acceptableAnswers": [
+        "64",
+        "64千米"
+      ],
+      "solution": [
+        "总路程=180+140=320千米",
+        "总时间=3+2=5小时",
+        "平均速度=320÷5=64千米/小时"
+      ],
+      "hints": [
+        "平均速度=总路程÷总时间",
+        "不是两个速度的平均"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成(60+70)÷2=65",
+          "reason": "错误地求两个速度的平均",
+          "correction": "320÷5=64",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均速度"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平均速度",
+        "行程问题"
+      ]
+    },
+    {
+      "id": "g4-av-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "五个数的平均数是8，其中四个数的和是30，第五个数是（ ）。",
+      "image": "",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "五个数的总和=8×5=40",
+        "其中四个数的和=30",
+        "第五个数=40-30=10"
+      ],
+      "hints": [
+        "先求五个数的总和",
+        "用总和减去已知四个数的和"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "直接写平均数8",
+          "correction": "8×5=40，40-30=10",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平均数",
+        "求其中一个数"
+      ]
+    },
+    {
+      "id": "g4-av-07",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小方四次跳绳的成绩分别是120下、118下、122下、120下，她平均每次跳多少下？",
+      "image": "",
+      "options": [],
+      "answer": "120",
+      "acceptableAnswers": [
+        "120"
+      ],
+      "solution": [
+        "四次跳绳总数=120+118+122+120=480下",
+        "平均每次=480÷4=120下",
+        "或用移多补少：118比120少2，122比120多2，正好抵消，平均120"
+      ],
+      "hints": [
+        "可以用移多补少方法简化计算"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成121",
+          "reason": "总和算错",
+          "correction": "480÷4=120",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数计算"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "移多补少"
+      ]
+    },
+    {
+      "id": "g4-av-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小明四次英语测验的平均成绩是90分，其中前三次的平均成绩是88分，第四次测验的成绩是（ ）分。",
+      "image": "",
+      "options": [
+        "92",
+        "94",
+        "96",
+        "98"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "四次总分=90×4=360分",
+        "前三次总分=88×3=264分",
+        "第四次=360-264=96分"
+      ],
+      "hints": [
+        "先求四次的总分",
+        "减去前三次的总分得第四次成绩"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "用90+2简单计算",
+          "correction": "90×4-88×3=360-264=96",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数应用"
+      ],
+      "estimatedTime": 75,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平均数",
+        "求其中一个数"
+      ]
+    },
+    {
+      "id": "g4-av-09",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "甲乙两地相距240千米，一辆汽车从甲地到乙地用了3小时，从乙地返回甲地用了5小时。这辆汽车往返的平均速度是多少千米/小时？",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "60千米"
+      ],
+      "solution": [
+        "往返总路程=240×2=480千米",
+        "往返总时间=3+5=8小时",
+        "往返平均速度=480÷8=60千米/小时"
+      ],
+      "hints": [
+        "平均速度=总路程÷总时间",
+        "往返路程是2×240千米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成(80+48)÷2=64",
+          "reason": "错误地求两个速度的平均",
+          "correction": "480÷8=60",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均速度"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "往返平均速度"
+      ]
+    },
+    {
+      "id": "g4-av-10",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "某商店五天的营业额：周一800元，周二600元，周三900元，周四700元，周五1000元。这五天平均每天的营业额是多少元？",
+      "image": "",
+      "options": [],
+      "answer": "800",
+      "acceptableAnswers": [
+        "800",
+        "800元"
+      ],
+      "solution": [
+        "五天总营业额=800+600+900+700+1000=4000元",
+        "平均每天=4000÷5=800元"
+      ],
+      "hints": [
+        "先求总和再除以天数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成900",
+          "reason": "总和算错",
+          "correction": "4000÷5=800",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数计算"
+      ],
+      "estimatedTime": 75,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平均数"
+      ]
+    },
+    {
+      "id": "g4-av-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有5个数，前4个数的平均数是12，第5个数是17，这5个数的平均数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "13",
+      "acceptableAnswers": [
+        "13"
+      ],
+      "solution": [
+        "前4个数的总和=12×4=48",
+        "5个数的总和=48+17=65",
+        "5个数的平均数=65÷5=13"
+      ],
+      "hints": [
+        "先求前4个数的和",
+        "加第5个数得总和再除以5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成(12+17)÷2=14.5",
+          "reason": "错误地用两个数平均",
+          "correction": "65÷5=13",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数应用"
+      ],
+      "estimatedTime": 75,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "加权平均"
+      ]
+    },
+    {
+      "id": "g4-av-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明前三次数学测试的平均成绩是85分，要使四次测试的平均成绩达到88分，第四次测试至少要考多少分？",
+      "image": "",
+      "options": [
+        "91",
+        "94",
+        "97",
+        "100"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "四次总分要达到88×4=352分",
+        "前三次总分=85×3=255分",
+        "第四次至少要考352-255=97分"
+      ],
+      "hints": [
+        "先求四次需要的总分",
+        "减去前三次的总分"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "用88+3=91计算",
+          "correction": "352-255=97",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数应用"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平均数",
+        "目标分数"
+      ]
+    },
+    {
+      "id": "g4-av-13",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一辆汽车前2小时平均每小时行驶75千米，后3小时共行驶了240千米。这辆汽车平均每小时行驶多少千米？",
+      "image": "",
+      "options": [],
+      "answer": "78",
+      "acceptableAnswers": [
+        "78"
+      ],
+      "solution": [
+        "前2小时行驶=75×2=150千米",
+        "总路程=150+240=390千米",
+        "总时间=2+3=5小时",
+        "平均速度=390÷5=78千米/小时"
+      ],
+      "hints": [
+        "平均速度=总路程÷总时间"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成(75+80)÷2=77.5",
+          "reason": "错误地求两个速度的平均",
+          "correction": "390÷5=78",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均速度"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平均速度"
+      ]
+    },
+    {
+      "id": "g4-av-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "甲乙丙三人的平均身高是142厘米，丁的身高是138厘米，四个人的平均身高是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "141",
+      "acceptableAnswers": [
+        "141",
+        "141厘米"
+      ],
+      "solution": [
+        "甲乙丙三人总身高=142×3=426厘米",
+        "四人总身高=426+138=564厘米",
+        "四人平均身高=564÷4=141厘米"
+      ],
+      "hints": [
+        "先求三人总身高",
+        "加上丁的身高再除以4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成(142+138)÷2=140",
+          "reason": "错误地用两人平均",
+          "correction": "564÷4=141",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数应用"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平均数"
+      ]
+    },
+    {
+      "id": "g4-av-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有甲、乙、丙三个数，甲、乙两数的平均数是25，乙、丙两数的平均数是35，甲、丙两数的平均数是30。这三个数的平均数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30"
+      ],
+      "solution": [
+        "甲+乙=25×2=50",
+        "乙+丙=35×2=70",
+        "甲+丙=30×2=60",
+        "三式相加：2(甲+乙+丙)=50+70+60=180",
+        "甲+乙+丙=90",
+        "三个数的平均数=90÷3=30"
+      ],
+      "hints": [
+        "把三个条件相加",
+        "每个数出现两次",
+        "和=25×2+35×2+30×2=180",
+        "三个数的和=180÷2=90"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成(25+35+30)÷3=30",
+          "reason": "虽然答案对但思路不对，本题巧合",
+          "correction": "正确：(50+70+60)÷2=90，90÷3=30",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数综合应用"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "综合",
+        "代数思想"
+      ]
+    }
+  ]
+}

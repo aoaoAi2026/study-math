@@ -1,0 +1,891 @@
+{
+  "topicId": "planting-trees-common",
+  "topicName": "植树问题总结",
+  "grade": "三年级核心",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "id": "cm-pt-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一条100米长的道路两旁从头到尾每隔5米种1棵树。一共要种多少棵树？",
+      "image": "",
+      "options": [],
+      "answer": "42",
+      "acceptableAnswers": [
+        "42",
+        "四十二"
+      ],
+      "solution": [
+        "一旁:段数=100÷5=20段,棵数=段数+1=21棵。两旁:21×2=42棵。"
+      ],
+      "hints": [
+        "段数=总长÷间距",
+        "棵数=段数+1",
+        "两旁要×2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成40",
+          "reason": "忘了+1",
+          "correction": "=42棵",
+          "errorLayer": "L1"
+        },
+        {
+          "mistake": "写成21",
+          "reason": "忘了两旁",
+          "correction": "两旁=42棵",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "直线两端都植"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "两端都植"
+      ]
+    },
+    {
+      "id": "cm-pt-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一条长120米的小路一边从头到尾每隔3米种一棵柳树，共种多少棵树？",
+      "image": "",
+      "options": [],
+      "answer": "41",
+      "acceptableAnswers": [
+        "41",
+        "四十一"
+      ],
+      "solution": [
+        "段数=120÷3=40段,棵数=40+1=41棵。"
+      ],
+      "hints": [
+        "段数=120÷3=40",
+        "棵数=段数+1=41"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成40",
+          "reason": "忘了+1",
+          "correction": "=41棵",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "两端都植"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "两端都植"
+      ]
+    },
+    {
+      "id": "cm-pt-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "圆形池塘周长60米，沿四周每隔3米种一棵杨树。要种多少棵杨树？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "二十"
+      ],
+      "solution": [
+        "封闭图形:棵数=段数=60÷3=20棵。"
+      ],
+      "hints": [
+        "封闭图形:棵数=段数",
+        "=60÷3=20棵"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成21",
+          "reason": "错误+1",
+          "correction": "=20棵",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "封闭图形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "封闭"
+      ]
+    },
+    {
+      "id": "cm-pt-04",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在一条长200米的公路两旁每隔5米植树一棵。一共需要多少棵树？",
+      "image": "",
+      "options": [
+        "80",
+        "41",
+        "82",
+        "40"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "一旁:段数=200÷5=40段,棵数=40+1=41棵。两旁=41×2=82棵。"
+      ],
+      "hints": [
+        "一旁棵数=200÷5+1=41",
+        "两旁=82棵"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成80",
+          "reason": "忘了+1",
+          "correction": "=82棵",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "两端都植"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "两端都植"
+      ]
+    },
+    {
+      "id": "cm-pt-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一座桥长160米，在桥的两侧栏杆上每隔8米装一盏路灯，两头都装。一共要装多少盏路灯？",
+      "image": "",
+      "options": [],
+      "answer": "42",
+      "acceptableAnswers": [
+        "42",
+        "四十二"
+      ],
+      "solution": [
+        "一旁:160÷8+1=21盏。两侧:21×2=42盏。"
+      ],
+      "hints": [
+        "一旁=160÷8+1=21盏",
+        "两侧=42盏"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成40",
+          "reason": "忘了+1",
+          "correction": "=42盏",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "两端都植"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树"
+      ]
+    },
+    {
+      "id": "cm-pt-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个正方形水池周长100米，在周围每隔4米种一棵柳树。共种多少棵树？",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": [
+        "25",
+        "二十五"
+      ],
+      "solution": [
+        "封闭图形:棵数=100÷4=25棵。"
+      ],
+      "hints": [
+        "正方形周长=100米,封闭图形",
+        "棵数=段数=25棵"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成26",
+          "reason": "错误+1",
+          "correction": "=25棵",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "封闭图形"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "封闭"
+      ]
+    },
+    {
+      "id": "cm-pt-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一条马路的一边每隔4米插一面彩旗，从头到尾一共插了21面。这条马路长多少米？",
+      "image": "",
+      "options": [],
+      "answer": "80",
+      "acceptableAnswers": [
+        "80",
+        "八十"
+      ],
+      "solution": [
+        "段数=棵数-1=21-1=20段。长=20×4=80米。"
+      ],
+      "hints": [
+        "段数=21-1=20段",
+        "总长=20×4=80米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成84",
+          "reason": "用21×4",
+          "correction": "段数=20,总长=80米",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "逆算总长"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "逆算"
+      ]
+    },
+    {
+      "id": "cm-pt-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在一条公路的一边每隔5米种一棵树，共种了101棵。这条公路长多少米？",
+      "image": "",
+      "options": [],
+      "answer": "500",
+      "acceptableAnswers": [
+        "500",
+        "五百"
+      ],
+      "solution": [
+        "段数=101-1=100段。长=100×5=500米。"
+      ],
+      "hints": [
+        "段数=101-1=100段",
+        "总长=100×5=500米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成505",
+          "reason": "用101×5",
+          "correction": "=500米",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "逆算总长"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "逆算"
+      ]
+    },
+    {
+      "id": "cm-pt-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个人匀速走一段路，每分钟走40米。他从第1根电线杆走到第11根电线杆用了5分钟。每两根电线杆相距多少米？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "二十"
+      ],
+      "solution": [
+        "从第1根到第11根,共走了11-1=10段间隔。5分钟走了5×40=200米。10段=200米。每段=200÷10=20米。"
+      ],
+      "hints": [
+        "1到11共10个间隔",
+        "共走了5×40=200米",
+        "每段=200÷10=20米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "用11段",
+          "reason": "忘了段数=棵数-1",
+          "correction": "段数=10,每段=20米",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "间隔问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "间隔"
+      ]
+    },
+    {
+      "id": "cm-pt-10",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一根木料，锯成5段需要8分钟。如果锯成10段，需要多少分钟？",
+      "image": "",
+      "options": [],
+      "answer": "18",
+      "acceptableAnswers": [
+        "18",
+        "十八"
+      ],
+      "solution": [
+        "锯5段=锯4次=8分钟。每次=8÷4=2分钟。锯10段=锯9次=9×2=18分钟。"
+      ],
+      "hints": [
+        "段数=次数+1,次数=段数-1",
+        "锯5段=4次=8分钟,每次2分钟",
+        "锯10段=9次=18分钟"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成16",
+          "reason": "把段数当次数",
+          "correction": "次数=段数-1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "锯木问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "锯木"
+      ]
+    },
+    {
+      "id": "cm-pt-11",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一座大桥长2400米。一列火车以每分钟900米的速度通过大桥，从车头开上桥到车尾离开桥共需要3分钟。这列火车长多少米？",
+      "image": "",
+      "options": [],
+      "answer": "300",
+      "acceptableAnswers": [
+        "300",
+        "三百"
+      ],
+      "solution": [
+        "火车3分钟行驶距离=3×900=2700米。这段距离=桥长+火车长。火车长=2700-2400=300米。"
+      ],
+      "hints": [
+        "行驶距离=桥长+火车长",
+        "火车走了3×900=2700米",
+        "火车长=2700-2400=300米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成2700",
+          "reason": "忘了减桥长",
+          "correction": "火车长=300米",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "火车过桥"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "火车过桥"
+      ]
+    },
+    {
+      "id": "cm-pt-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一列火车通过一座长1800米的大桥需要60秒，火车开过路旁的电线杆只要12秒。求火车的长度。",
+      "image": "",
+      "options": [],
+      "answer": "450",
+      "acceptableAnswers": [
+        "450",
+        "四百五十"
+      ],
+      "solution": [
+        "开过电线杆的时间=走火车长=12秒,速度=火车长/12。过桥:60秒走的距离=桥长+火车长=1800+火车长。",
+        "设火车速度=v,火车长=L。过杆:12v=L。过桥:60v=1800+L。代入:60v=1800+12v。48v=1800。v=37.5。L=12×37.5=450米。验证:60×37.5=2250=1800+450✓。火车长=450米。"
+      ],
+      "hints": [
+        "开过杆=走火车长=12秒",
+        "过桥=走桥长+火车长",
+        "60v=1800+12v,v=37.5,L=450米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算非整数",
+          "reason": "数字设计",
+          "correction": "火车长=450米",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "火车过桥"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "火车过桥"
+      ]
+    },
+    {
+      "id": "cm-pt-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个环形操场周长400米，在周围每隔8米插一面红旗。一共要插多少面红旗？",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": [
+        "50",
+        "五十"
+      ],
+      "solution": [
+        "封闭图形:棵数=段数=400÷8=50面。"
+      ],
+      "hints": [
+        "封闭图形棵数=段数",
+        "=400÷8=50面"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成51",
+          "reason": "错误+1",
+          "correction": "=50面",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "封闭图形"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "封闭"
+      ]
+    },
+    {
+      "id": "cm-pt-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "在长60米的走廊两侧，每隔3米放一盆花，两端都放。一共放多少盆花？",
+      "image": "",
+      "options": [],
+      "answer": "42",
+      "acceptableAnswers": [
+        "42",
+        "四十二"
+      ],
+      "solution": [
+        "一侧:60÷3+1=21盆。两侧:21×2=42盆。"
+      ],
+      "hints": [
+        "一侧=60÷3+1=21盆",
+        "两侧=42盆"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成40",
+          "reason": "忘了两端+1",
+          "correction": "=42盆",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "两端都植"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "植树"
+      ]
+    },
+    {
+      "id": "cm-pt-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一座公路桥长4589米。一列火车如果每分钟行600米。这列火车从车头到车尾离桥共需要8分钟。求火车长多少米？",
+      "image": "",
+      "options": [],
+      "answer": "211",
+      "acceptableAnswers": [
+        "211",
+        "二百一十一"
+      ],
+      "solution": [
+        "8分钟走了8×600=4800米。桥长+火车长=4800。火车长=4800-4589=211米。"
+      ],
+      "hints": [
+        "走了8×600=4800米",
+        "火车长=4800-4589=211米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成4800",
+          "reason": "忘了减桥长",
+          "correction": "火车长=211米",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "火车过桥"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "火车过桥"
+      ]
+    },
+    {
+      "id": "cm-pt-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "在一条240米长的道路两旁种10米高的大树，从头到尾每隔多少米种一棵才能种完50棵？",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "两旁共50棵,一旁25棵。段数=25-1=24段。间距=240÷24=10米。"
+      ],
+      "hints": [
+        "一旁=25棵,段数=24",
+        "间距=240÷24=10米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成9.6",
+          "reason": "直接240÷25",
+          "correction": "段数=棵数-1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "逆算间距"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "逆算"
+      ]
+    },
+    {
+      "id": "cm-pt-17",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲火车长290米，每秒行20米；乙火车长250米，每秒行25米。两车在平行的轨道上同向而行，从甲车的车头追上乙车的车尾，到甲车的车尾超过乙车的车头，共需多少秒？",
+      "image": "",
+      "options": [],
+      "answer": "108",
+      "acceptableAnswers": [
+        "108",
+        "一百零八"
+      ],
+      "solution": [
+        "追及距离=甲车长+乙车长=290+250=540米。速度差=25-20=5m/s。时间=540÷5=108秒。"
+      ],
+      "hints": [
+        "从追上到超过:追及距离=两车车长之和",
+        "=290+250=540米",
+        "时间=540÷5=108秒"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "只加一辆车长",
+          "reason": "忘记需两车车长之和",
+          "correction": "=108秒",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "火车追及"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "火车追及"
+      ]
+    },
+    {
+      "id": "cm-pt-18",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "两列火车相向而行，甲车每小时行36千米，乙车每小时行54千米。两车错车时，甲车上一乘客发现：从乙车车头经过他的车窗时开始到乙车车尾经过他的车窗共用了14秒。求乙车的车长。",
+      "image": "",
+      "options": [],
+      "answer": "350",
+      "acceptableAnswers": [
+        "350",
+        "三百五十"
+      ],
+      "solution": [
+        "甲速度=36km/h=36000/3600=10m/s。乙速度=54km/h=54000/3600=15m/s。相向而行速度和=10+15=25m/s。14秒经过的距离=乙车长=14×25=350米。"
+      ],
+      "hints": [
+        "甲=36km/h=10m/s",
+        "乙=54km/h=15m/s",
+        "相向速度和=25m/s",
+        "乙车长=14×25=350米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "单位换算错误",
+          "reason": "km/h→m/s除以3.6",
+          "correction": "乙车长=350米",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "火车错车"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "植树",
+        "火车错车"
+      ]
+    }
+  ]
+}

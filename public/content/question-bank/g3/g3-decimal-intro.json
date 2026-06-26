@@ -1,0 +1,467 @@
+{
+  "topicId": "g3-decimal-intro",
+  "topicName": "小数初步认识",
+  "grade": 3,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g3-dc-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "0.5 读作？",
+      "image": "",
+      "options": ["零五", "零点五", "五", "点零五"],
+      "answer": "1",
+      "acceptableAnswers": ["零点五"],
+      "solution": [
+        "小数读法：整数部分按整数读，小数点读作点，小数部分依次读出每个数字",
+        "0.5 读作 零点五"
+      ],
+      "hints": [
+        "小数点读作点",
+        "0读零，小数点读点，5读五",
+        "就是 零点五"
+      ],
+      "commonMistakes": [
+        {"mistake": "读作零五", "reason": "忘了读小数点", "correction": "小数点要读出来：零点五", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数的读法"],
+      "estimatedTime": 30,
+      "irtParams": {"a": 1.0, "b": -1.5, "c": 0.25},
+      "tags": ["读法"]
+    },
+    {
+      "id": "g3-dc-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1 元 = ____ 角，1 角 = ____ 元（填小数）",
+      "image": "",
+      "options": [],
+      "answer": "10,0.1",
+      "acceptableAnswers": ["10,0.1", "10 0.1"],
+      "solution": [
+        "1 元 = 10 角",
+        "把 1 元平均分成 10 份，每份是 1 角",
+        "1 角 = 0.1 元"
+      ],
+      "hints": [
+        "1元=10角",
+        "1角就是十分之一元",
+        "十分之一 = 0.1"
+      ],
+      "commonMistakes": [
+        {"mistake": "1角=0.01元", "reason": "混淆成元分了", "correction": "1角=0.1元，1分=0.01元", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数的意义", "单位换算"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -1.4, "c": 0.25},
+      "tags": ["人民币"]
+    },
+    {
+      "id": "g3-dc-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1 分米 = ____ 米（填小数）",
+      "image": "",
+      "options": ["0.1", "0.01", "1", "10"],
+      "answer": "0",
+      "acceptableAnswers": ["0.1"],
+      "solution": [
+        "1 米 = 10 分米",
+        "把 1 米平均分成 10 份，每份是 1 分米",
+        "1 分米 = 0.1 米"
+      ],
+      "hints": [
+        "1米=10分米",
+        "1分米就是十分之一米",
+        "十分之一=0.1"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0.01", "reason": "和厘米混淆", "correction": "1厘米=0.01米，1分米=0.1米", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数的意义", "长度单位"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -1.3, "c": 0.25},
+      "tags": ["长度"]
+    },
+    {
+      "id": "g3-dc-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "0.3 和 0.5 比较大小，哪个大？",
+      "image": "",
+      "options": ["0.3", "0.5", "一样大", "不能比较"],
+      "answer": "1",
+      "acceptableAnswers": ["0.5"],
+      "solution": [
+        "0.3 表示十分之三，0.5 表示十分之五",
+        "十分之五 > 十分之三",
+        "所以 0.5 > 0.3"
+      ],
+      "hints": [
+        "0.3是3个0.1，0.5是5个0.1",
+        "5个0.1比3个0.1大",
+        "小数部分大的那个数大"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0.3", "reason": "以为3比5小但小数小", "correction": "0.3<0.5，0.5大", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数大小比较"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -1.2, "c": 0.25},
+      "tags": ["比较"]
+    },
+    {
+      "id": "g3-dc-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "0.2 + 0.3 = ____",
+      "image": "",
+      "options": [],
+      "answer": "0.5",
+      "acceptableAnswers": ["0.5", ".5"],
+      "solution": [
+        "方法一：0.2 是 2 个 0.1，0.3 是 3 个 0.1",
+        "2 个 0.1 + 3 个 0.1 = 5 个 0.1 = 0.5",
+        "方法二：小数点对齐，2+3=5，0.2+0.3=0.5"
+      ],
+      "hints": [
+        "0.2=2个0.1，0.3=3个0.1",
+        "2+3=5，5个0.1=0.5",
+        "小数点对齐，低位加起"
+      ],
+      "commonMistakes": [
+        {"mistake": "0.2+0.3=0.23", "reason": "数位理解错", "correction": "2+3=5，小数点后是5", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数加法"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -0.8, "c": 0.25},
+      "tags": ["加法"]
+    },
+    {
+      "id": "g3-dc-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "3.5 + 2.3 = ?",
+      "image": "",
+      "options": ["5.8", "5.5", "5.3", "5.2"],
+      "answer": "0",
+      "acceptableAnswers": ["5.8"],
+      "solution": [
+        "3.5 元 = 3 元 5 角，2.3 元 = 2 元 3 角",
+        "3 元 + 2 元 = 5 元，5 角 + 3 角 = 8 角",
+        "5 元 8 角 = 5.8 元",
+        "或直接列竖式：3.5 + 2.3 = 5.8"
+      ],
+      "hints": [
+        "小数点对齐",
+        "5+3=8（小数部分）",
+        "3+2=5（整数部分）",
+        "结果=5.8"
+      ],
+      "commonMistakes": [
+        {"mistake": "选5.5", "reason": "小数部分算错", "correction": "5+3=8", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数加法"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.6, "c": 0.25},
+      "tags": ["加法"]
+    },
+    {
+      "id": "g3-dc-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一支铅笔 1.5 元，一本练习本 0.8 元，共花多少元？",
+      "image": "",
+      "options": ["1.3", "2.3", "2.5", "3.3"],
+      "answer": "1",
+      "acceptableAnswers": ["2.3"],
+      "solution": [
+        "1.5 + 0.8",
+        "5 + 8 = 13，小数部分写 3 向个位进 1",
+        "1 + 0 + 1 = 2，整数部分写 2",
+        "结果 = 2.3 元"
+      ],
+      "hints": [
+        "1.5元+0.8元",
+        "5角+8角=13角=1元3角",
+        "1元+0元+1元=2元",
+        "共2元3角=2.3元"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1.3", "reason": "把1.5+0.8算成1+0.3=1.3", "correction": "1+0+进位1=2", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数加法", "应用"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["购物", "应用"]
+    },
+    {
+      "id": "g3-dc-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "0.8 - 0.2 = ____",
+      "image": "",
+      "options": [],
+      "answer": "0.6",
+      "acceptableAnswers": ["0.6", ".6"],
+      "solution": [
+        "0.8 = 8 个 0.1，0.2 = 2 个 0.1",
+        "8 个 0.1 - 2 个 0.1 = 6 个 0.1 = 0.6"
+      ],
+      "hints": [
+        "8-2=6",
+        "有0.1作单位，0.6",
+        "小数点对齐"
+      ],
+      "commonMistakes": [
+        {"mistake": "写成0.06", "reason": "对小数位数理解错", "correction": "8个0.1-2个0.1=6个0.1=0.6", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数减法"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -0.3, "c": 0.25},
+      "tags": ["减法"]
+    },
+    {
+      "id": "g3-dc-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "5.6 - 2.3 = ?",
+      "image": "",
+      "options": ["3.3", "3.9", "2.3", "7.9"],
+      "answer": "0",
+      "acceptableAnswers": ["3.3"],
+      "solution": [
+        "小数点对齐：",
+        "  5.6",
+        "- 2.3",
+        "------",
+        "  3.3"
+      ],
+      "hints": [
+        "整数部分5-2=3",
+        "小数部分6-3=3",
+        "结果3.3"
+      ],
+      "commonMistakes": [
+        {"mistake": "选3.9", "reason": "算成加法了", "correction": "这是减法", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数减法"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -0.2, "c": 0.25},
+      "tags": ["减法"]
+    },
+    {
+      "id": "g3-dc-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小明有 10 元钱，买了一支 3.5 元的笔，还剩多少元？",
+      "image": "",
+      "options": ["6.5", "7.5", "13.5", "6.5元"],
+      "answer": "0",
+      "acceptableAnswers": ["6.5"],
+      "solution": [
+        "10 - 3.5",
+        "把 10 看成 10.0",
+        "10.0 - 3.5 = 6.5",
+        "答案：6.5 元"
+      ],
+      "hints": [
+        "10元 - 3.5元",
+        "把10写成10.0",
+        "10.0-3.5=6.5"
+      ],
+      "commonMistakes": [
+        {"mistake": "选7.5", "reason": "10-3算成7，忘了后面.5", "correction": "10-3.5=6.5", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数减法", "应用"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["购物", "应用"]
+    },
+    {
+      "id": "g3-dc-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把 1 米平均分成 100 份，每份是多少米？25 份是多少米？",
+      "image": "",
+      "options": ["0.1, 0.25", "0.01, 0.25", "0.01, 2.5", "0.1, 2.5"],
+      "answer": "1",
+      "acceptableAnswers": ["0.01, 0.25"],
+      "solution": [
+        "1 米 = 100 厘米",
+        "平均分成 100 份，每份是 1 厘米",
+        "1 厘米 = 0.01 米",
+        "25 份 = 25 厘米 = 0.25 米"
+      ],
+      "hints": [
+        "1米=100厘米",
+        "1份=1厘米=0.01米",
+        "25份=25厘米=0.25米"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0.1和0.25", "reason": "把100份看成10份了", "correction": "100份每份是0.01米", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数的意义", "百分位"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.5, "c": 0.25},
+      "tags": ["意义"]
+    },
+    {
+      "id": "g3-dc-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "1.5 米 = ____ 米 ____ 分米 = ____ 分米",
+      "image": "",
+      "options": [],
+      "answer": "1,5,15",
+      "acceptableAnswers": ["1,5,15", "1 5 15"],
+      "solution": [
+        "1.5 米 = 1 米 + 0.5 米",
+        "0.5 米 = 5 分米",
+        "所以 1.5 米 = 1 米 5 分米",
+        "1 米 = 10 分米，10 分米 + 5 分米 = 15 分米"
+      ],
+      "hints": [
+        "1.5米=1米+0.5米",
+        "0.5米=5分米",
+        "1米5分米=15分米"
+      ],
+      "commonMistakes": [
+        {"mistake": "1.5米=1.5分米", "reason": "理解错了", "correction": "1.5米=15分米", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数单位换算"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["换算"]
+    },
+    {
+      "id": "g3-dc-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "0.35 + 0.27 = ?",
+      "image": "",
+      "options": ["0.62", "0.52", "0.512", "0.61"],
+      "answer": "0",
+      "acceptableAnswers": ["0.62"],
+      "solution": [
+        "列竖式：",
+        "  0.35",
+        "+ 0.27",
+        "------",
+        "  0.62",
+        "5+7=12，小数部分第二位写2进1，3+2+1=6"
+      ],
+      "hints": [
+        "小数点对齐",
+        "5+7=12，写2进1",
+        "3+2+1=6",
+        "结果0.62"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0.52", "reason": "没进位，3+2=5", "correction": "5+7=12要进位1，3+2+1=6", "errorLayer": "L2"},
+        {"mistake": "选0.512", "reason": "把结果直接连写", "correction": "应该用竖式规范计算", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数加法", "进位"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["加法", "进位"]
+    },
+    {
+      "id": "g3-dc-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一条绳子长 8.5 米，用去了 3.7 米，还剩多少米？",
+      "image": "",
+      "options": ["4.8", "5.2", "5.8", "12.2"],
+      "answer": "0",
+      "acceptableAnswers": ["4.8"],
+      "solution": [
+        "8.5 - 3.7",
+        "列竖式：",
+        "  8.5",
+        "- 3.7",
+        "------",
+        "  4.8",
+        "5-7不够减，向个位借1当10，15-7=8；8-1-3=4"
+      ],
+      "hints": [
+        "剩下的=原来的-用去的",
+        "8.5-3.7",
+        "5-7不够借1，8变成7，5变成15",
+        "15-7=8，7-3=4"
+      ],
+      "commonMistakes": [
+        {"mistake": "选5.2", "reason": "忘了借位后，8变成7", "correction": "8-1-3=4", "errorLayer": "L3"},
+        {"mistake": "选12.2", "reason": "用了加法", "correction": "问剩下的，应该用减法", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数减法", "借位"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.5, "b": 1.2, "c": 0.25},
+      "tags": ["减法", "借位", "应用"]
+    },
+    {
+      "id": "g3-dc-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小马虎在计算一道小数加法时，把一个加数 2.3 看成了 3.2，结果算出来是 8.5，正确的结果是多少？",
+      "image": "",
+      "options": ["6.2", "7.6", "6.3", "9.4"],
+      "answer": "1",
+      "acceptableAnswers": ["7.6"],
+      "solution": [
+        "方法一：先求另一个加数",
+        "看错的算式：? + 3.2 = 8.5，所以 ? = 8.5 - 3.2 = 5.3",
+        "正确的算式：5.3 + 2.3 = 7.6",
+        "方法二：把多加的部分减去",
+        "3.2 - 2.3 = 0.9（多加了 0.9）",
+        "正确答案：8.5 - 0.9 = 7.6"
+      ],
+      "hints": [
+        "先求另一个加数：8.5-3.2=5.3",
+        "再用正确的加数算：5.3+2.3=7.6",
+        "或者：多加了0.9，从错误结果中减去0.9"
+      ],
+      "commonMistakes": [
+        {"mistake": "8.5+2.3-3.2=7.6", "reason": "思路对但容易算错", "correction": "一步步来：8.5-3.2=5.3, 5.3+2.3=7.6", "errorLayer": "L3"},
+        {"mistake": "选6.2", "reason": "计算错误", "correction": "仔细计算", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["小数加减法", "错中求解"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 1.8, "c": 0.25},
+      "tags": ["拔高", "错中求解"]
+    }
+  ]
+}

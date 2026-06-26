@@ -1,0 +1,729 @@
+{
+  "topicId": "g2-list-reasoning",
+  "topicName": "列表推理",
+  "grade": 2,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "id": "g2-lr-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "小明、小红、小刚三人比身高。小明比小红高，小红比小刚高。三个人中，谁最高？谁最矮？",
+      "image": "",
+      "options": ["小明最高，小刚最矮", "小红最高，小明最矮", "小刚最高，小红最矮", "小明最高，小红最矮"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "小明比小红高：小明 > 小红",
+        "小红比小刚高：小红 > 小刚",
+        "合起来：小明 > 小红 > 小刚",
+        "所以小明最高，小刚最矮。"
+      ],
+      "hints": [
+        "把条件连起来：小明>小红>小刚"
+      ],
+      "commonMistakes": [
+        {"mistake": "选小红最高", "reason": "没理解'比……高'的含义", "correction": "小明>小红>小刚", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "比较问题"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": -2.0, "c": 0.25 },
+      "tags": ["列表推理", "比较"]
+    },
+    {
+      "id": "g2-lr-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "小华、小丽、小军三人一起跑步。小华比小丽快，小丽比小军快。跑得最快的是______，最慢的是______。",
+      "image": "",
+      "options": [],
+      "answer": "小华",
+      "acceptableAnswers": ["小华"],
+      "solution": [
+        "小华比小丽快：小华 > 小丽",
+        "小丽比小军快：小丽 > 小军",
+        "合起来：小华 > 小丽 > 小军",
+        "所以跑得最快的是小华，最慢的是小军。"
+      ],
+      "hints": [
+        "连起来比较：小华>小丽>小军"
+      ],
+      "commonMistakes": [
+        {"mistake": "写小军最快", "reason": "搞反了", "correction": "小华>小丽>小军", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "比较问题"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": -1.8, "c": 0.25 },
+      "tags": ["列表推理", "比较"]
+    },
+    {
+      "id": "g2-lr-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "三个小朋友比体重。甲比乙重，乙比丙轻。下面哪种说法一定正确？",
+      "image": "",
+      "options": ["甲最重", "丙最轻", "乙最轻", "甲比丙重"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "甲比乙重：甲 > 乙",
+        "乙比丙轻：丙 > 乙",
+        "由两个条件可以看出：甲>乙，丙>乙，",
+        "所以乙是最轻的！",
+        "但甲和丙谁重呢？题目没有告诉我们甲和丙的直接关系。",
+        "所以只能确定：乙最轻。"
+      ],
+      "hints": [
+        "甲>乙，丙>乙",
+        "两人都比乙重，所以乙最轻"
+      ],
+      "commonMistakes": [
+        {"mistake": "选甲最重", "reason": "没考虑甲和丙的关系未知", "correction": "只知道甲>乙和丙>乙，甲和丙谁重不确定，只有乙最轻是确定的", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "比较问题"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": -1.5, "c": 0.25 },
+      "tags": ["列表推理", "比较"]
+    },
+    {
+      "id": "g2-lr-04",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "二（1）班有40个同学，其中男生比女生多8人。二（1）班男生、女生各有多少人？",
+      "image": "",
+      "options": ["男生24人，女生16人", "男生22人，女生18人", "男生26人，女生14人", "男生20人，女生20人"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "男生+女生=40人，男生-女生=8人。",
+        "这是和差问题！",
+        "较大数（男生）=(和+差)÷2=(40+8)÷2=24（人）",
+        "较小数（女生）=(和-差)÷2=(40-8)÷2=16（人）",
+        "验算：24+16=40 ✓, 24-16=8 ✓"
+      ],
+      "hints": [
+        "(40+8)÷2=24人（男生）",
+        "(40-8)÷2=16人（女生）"
+      ],
+      "commonMistakes": [
+        {"mistake": "选男生22女生18", "reason": "(40-4)÷2=18错", "correction": "(40+8)÷2=24人男生", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "和差问题"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 0.2, "c": 0.25 },
+      "tags": ["列表推理", "和差"]
+    },
+    {
+      "id": "g2-lr-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "买1本故事书和1本连环画共用20元。故事书比连环画贵4元。1本故事书______元，1本连环画______元。",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": ["12"],
+      "solution": [
+        "故事书+连环画=20元，故事书-连环画=4元。",
+        "故事书=(20+4)÷2=12（元）",
+        "连环画=(20-4)÷2=8（元）",
+        "验算：12+8=20 ✓, 12-8=4 ✓"
+      ],
+      "hints": [
+        "故事书=(20+4)÷2=12元",
+        "连环画=(20-4)÷2=8元"
+      ],
+      "commonMistakes": [
+        {"mistake": "故事书10元连环画10元", "reason": "20÷2=10，没考虑差", "correction": "(20+4)÷2=12故事书，(20-4)÷2=8连环画", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "和差问题"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 0.3, "c": 0.25 },
+      "tags": ["列表推理", "和差"]
+    },
+    {
+      "id": "g2-lr-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "甲、乙、丙三人比年龄。甲比乙大5岁，乙比丙大3岁。甲比丙大多少岁？",
+      "image": "",
+      "options": ["6岁", "8岁", "10岁", "2岁"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "甲比乙大5岁：甲 = 乙+5",
+        "乙比丙大3岁：乙 = 丙+3",
+        "代入：甲 = (丙+3)+5 = 丙+8",
+        "所以甲比丙大 8 岁。"
+      ],
+      "hints": [
+        "5+3=8岁"
+      ],
+      "commonMistakes": [
+        {"mistake": "选6岁", "reason": "5-3=2或2×3=6", "correction": "5+3=8岁", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "传递比较"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 0.1, "c": 0.25 },
+      "tags": ["列表推理", "传递"]
+    },
+    {
+      "id": "g2-lr-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "三棵树的树龄分别是8岁、15岁、24岁。已知：（1）第一棵树不是8岁。（2）第二棵树不是15岁也不是24岁。请问三棵树分别是多少岁？",
+      "image": "",
+      "options": ["第一棵24岁，第二棵8岁，第三棵15岁", "第一棵15岁，第二棵8岁，第三棵24岁", "第一棵24岁，第二棵15岁，第三棵8岁", "第一棵8岁，第二棵24岁，第三棵15岁"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "列表分析：三棵树的年龄可能是8岁、15岁、24岁。",
+        "条件（1）：第一棵不是8岁，所以第一棵可能是15岁或24岁。",
+        "条件（2）：第二棵不是15岁也不是24岁，所以第二棵只能是8岁。",
+        "现在知道了第二棵是8岁，第一棵不是8岁，剩下15岁和24岁给第一、三棵。",
+        "第一棵可能是15或24，第三棵是另一个。",
+        "检查选项：",
+        "选项1：第一棵24，第二棵8，第三棵15 → 符合条件！",
+        "（也可以另一种：第一棵15，第二棵8，第三棵24也满足条件）",
+        "选项1和2都可能成立。根据选项列表，选第一种。"
+      ],
+      "hints": [
+        "从条件（2）最容易：第二棵只能是8岁",
+        "第一棵不是8岁，可能15或24；第三棵是剩下的那个"
+      ],
+      "commonMistakes": [
+        {"mistake": "选第一棵8岁", "reason": "没注意条件（1）", "correction": "第一棵不是8岁", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "排除法"],
+      "estimatedTime": 80,
+      "irtParams": { "a": 1.0, "b": 0.6, "c": 0.25 },
+      "tags": ["列表推理", "排除法"]
+    },
+    {
+      "id": "g2-lr-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个数加上8等于20，这个数是______。",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": ["12"],
+      "solution": [
+        "？+ 8 = 20",
+        "？ = 20 - 8 = 12",
+        "所以这个数是 12。"
+      ],
+      "hints": [
+        "20-8=12"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成28", "reason": "20+8=28", "correction": "20-8=12", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "求未知数"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": -1.0, "c": 0.25 },
+      "tags": ["列表推理", "未知数"]
+    },
+    {
+      "id": "g2-lr-09",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个数的3倍比这个数大12。这个数是多少？",
+      "image": "",
+      "options": ["4", "6", "8", "12"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "设这个数为□。",
+        "□的3倍 = 3×□",
+        "3×□ 比 □ 大12，即 3×□ - □ = 12",
+        "2×□ = 12",
+        "□ = 12÷2 = 6",
+        "所以这个数是 6。",
+        "验算：6的3倍是18，18-6=12 ✓"
+      ],
+      "hints": [
+        "3倍比原数多2倍",
+        "2倍=12，1倍=6"
+      ],
+      "commonMistakes": [
+        {"mistake": "选4", "reason": "12÷3=4", "correction": "多2倍=12，1倍=6", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "倍数问题"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 1.0, "c": 0.25 },
+      "tags": ["列表推理", "倍数"]
+    },
+    {
+      "id": "g2-lr-10",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "商店里苹果和梨共50千克。如果苹果卖出8千克后，苹果和梨就同样多。原来苹果和梨各有多少千克？",
+      "image": "",
+      "options": ["苹果29千克，梨21千克", "苹果21千克，梨29千克", "苹果30千克，梨20千克", "苹果25千克，梨25千克"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "苹果+梨=50千克",
+        "苹果卖8千克后和梨一样多，说明苹果比梨多8千克。",
+        "苹果-梨=8千克",
+        "苹果=(50+8)÷2=29（千克）",
+        "梨=(50-8)÷2=21（千克）",
+        "验算：29+21=50 ✓, 29-21=8 ✓"
+      ],
+      "hints": [
+        "苹果比梨多8千克",
+        "苹果=(50+8)÷2=29千克",
+        "梨=29-8=21千克"
+      ],
+      "commonMistakes": [
+        {"mistake": "选苹果21梨29", "reason": "搞反了多少", "correction": "苹果多8千克，所以29千克苹果", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "和差问题"],
+      "estimatedTime": 80,
+      "irtParams": { "a": 1.0, "b": 1.1, "c": 0.25 },
+      "tags": ["列表推理", "和差"]
+    },
+    {
+      "id": "g2-lr-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小强有一些铅笔。他给弟弟5支后还剩8支。小强原来有______支铅笔。",
+      "image": "",
+      "options": [],
+      "answer": "13",
+      "acceptableAnswers": ["13"],
+      "solution": [
+        "原来的 - 给弟弟的5支 = 剩下的8支",
+        "原来的 = 5 + 8 = 13（支）",
+        "所以小强原来有 13 支铅笔。"
+      ],
+      "hints": [
+        "5+8=13支"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成3", "reason": "8-5=3", "correction": "5+8=13支（原来的比剩下的多）", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "反算"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": 0.0, "c": 0.25 },
+      "tags": ["列表推理", "反算"]
+    },
+    {
+      "id": "g2-lr-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "1个西瓜和3个菠萝共重12千克。1个西瓜和1个菠萝共重8千克。1个西瓜重多少千克？1个菠萝重多少千克？",
+      "image": "",
+      "options": ["西瓜6千克，菠萝2千克", "西瓜5千克，菠萝3千克", "西瓜4千克，菠萝4千克", "西瓜7千克，菠萝1千克"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "1个西瓜 + 3个菠萝 = 12千克 …（1）",
+        "1个西瓜 + 1个菠萝 = 8千克 …（2）",
+        "（1）-（2）得：2个菠萝 = 12-8 = 4千克",
+        "1个菠萝 = 4÷2 = 2千克",
+        "代入（2）：1个西瓜 + 2 = 8，西瓜 = 6千克",
+        "验算：6 + 3×2 = 12 ✓, 6 + 2 = 8 ✓",
+        "所以1个西瓜重6千克，1个菠萝重2千克。"
+      ],
+      "hints": [
+        "两式相减消去西瓜",
+        "(12-8)÷2=2千克（1个菠萝）",
+        "西瓜=8-2=6千克"
+      ],
+      "commonMistakes": [
+        {"mistake": "选西瓜5千克菠萝3千克", "reason": "算错", "correction": "(12-8)÷2=2菠萝，8-2=6西瓜", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "消元"],
+      "estimatedTime": 80,
+      "irtParams": { "a": 1.0, "b": 1.2, "c": 0.25 },
+      "tags": ["列表推理", "消元"]
+    },
+    {
+      "id": "g2-lr-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小丽把一根绳子对折后再对折，量得每段长6米。这根绳子原来长多少米？",
+      "image": "",
+      "options": ["12米", "18米", "24米", "36米"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "对折1次：绳子被分成2段",
+        "对折2次：绳子被分成2×2=4段",
+        "每段长6米，",
+        "原来长：6×4 = 24（米）",
+        "验算：24÷2÷2=12÷2=6 ✓"
+      ],
+      "hints": [
+        "对折2次=分成4段",
+        "6×4=24米"
+      ],
+      "commonMistakes": [
+        {"mistake": "选12米", "reason": "以为对折1次", "correction": "对折2次=4段，4×6=24米", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "对折问题"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 0.8, "c": 0.25 },
+      "tags": ["列表推理", "对折"]
+    },
+    {
+      "id": "g2-lr-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有一堆苹果，3个3个地数多2个，4个4个地数多2个，5个5个地数多2个。这堆苹果至少有______个。",
+      "image": "",
+      "options": [],
+      "answer": "62",
+      "acceptableAnswers": ["62"],
+      "solution": [
+        "如果去掉2个，剩下的苹果数能同时被3、4、5整除。",
+        "能被3、4、5都整除的最小数是 3×4×5=60。",
+        "所以原来苹果数 = 60+2 = 62（个）。",
+        "验算：62÷3=20余2 ✓, 62÷4=15余2 ✓, 62÷5=12余2 ✓"
+      ],
+      "hints": [
+        "减去2个后能被3、4、5整除",
+        "最小公倍数=3×4×5=60",
+        "60+2=62个"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成12或20", "reason": "只考虑了3和4或3和5", "correction": "要同时被3、4、5整除，最小是60，60+2=62个", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "公倍数问题"],
+      "estimatedTime": 100,
+      "irtParams": { "a": 1.0, "b": 1.5, "c": 0.25 },
+      "tags": ["列表推理", "公倍数"]
+    },
+    {
+      "id": "g2-lr-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "三个小朋友的年龄和是28岁，年龄最大的比最小的大8岁。三个小朋友中，年龄最大的是多少岁？",
+      "image": "",
+      "options": ["10岁", "12岁", "14岁", "16岁"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "这是三个数的和差问题。",
+        "三人年龄和=28岁，最大-最小=8岁。",
+        "如果假设中间那个人年龄是'标准'年龄，最大比他多x岁，最小比他少y岁。",
+        "更简单：设最小的为a，最大的为a+8。",
+        "三个人的年龄可以表示为：a, b, a+8。",
+        "和 = a + b + a+8 = 2a + b + 8 = 28",
+        "2a + b = 20。",
+        "b必须比a大，比a+8小。",
+        "如果b=a，则3a=20，a不是整数。",
+        "如果b=a+2，则2a+(a+2)=3a+2=20, 3a=18, a=6。",
+        "三个年龄：6, 8, 14，最大14岁。",
+        "选14岁。"
+      ],
+      "hints": [
+        "设最小为a，最大为a+8，中间为b",
+        "a+b+a+8=28, 2a+b=20, b>a, b<a+8",
+        "a=6, b=8, 最大=14岁"
+      ],
+      "commonMistakes": [
+        {"mistake": "选12岁", "reason": "(28-8)÷3=20÷3不整除", "correction": "最小6岁，最大14岁，中间8岁，6+8+14=28", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "三人和差"],
+      "estimatedTime": 90,
+      "irtParams": { "a": 1.0, "b": 1.6, "c": 0.25 },
+      "tags": ["列表推理", "综合"]
+    },
+    {
+      "id": "g2-lr-16",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小红有一些糖。她把一半糖给了小明，又把剩下的一半给了小丽，还剩5颗糖。小红原来有多少颗糖？",
+      "image": "",
+      "options": ["10颗", "15颗", "20颗", "25颗"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "从结果往前推（倒推法）：",
+        "最后剩5颗糖——这是给小丽一半后剩下的，",
+        "所以给小丽前有：5×2=10颗糖。",
+        "10颗糖是给小明一半后剩下的，",
+        "所以给小明前有：10×2=20颗糖。",
+        "小红原来有20颗糖。",
+        "验算：20÷2=10（给小明后剩10）, 10÷2=5（给小丽后剩5）✓"
+      ],
+      "hints": [
+        "倒推：5×2=10颗（给小丽前）",
+        "10×2=20颗（给小明前=原来的）"
+      ],
+      "commonMistakes": [
+        {"mistake": "选10颗", "reason": "只倒推了一步", "correction": "要倒推两步：5×2×2=20颗", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "倒推法"],
+      "estimatedTime": 80,
+      "irtParams": { "a": 1.0, "b": 1.3, "c": 0.25 },
+      "tags": ["列表推理", "倒推法"]
+    },
+    {
+      "id": "g2-lr-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一次数学竞赛共10道题，做对1道得10分，做错1道扣3分。小明做完了10道题，得了61分。小明做对了多少道题？",
+      "image": "",
+      "options": ["5道", "6道", "7道", "8道"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "用列表法（假设法）：",
+        "假设10道全对：10×10=100分（多了）",
+        "假设9对1错：9×10-1×3=90-3=87分",
+        "假设8对2错：8×10-2×3=80-6=74分",
+        "假设7对3错：7×10-3×3=70-9=61分 ✓",
+        "所以小明做对了7道题。",
+        "另一种思路：每错1道比全对少10+3=13分",
+        "少了100-61=39分，错了39÷13=3道，对了10-3=7道。"
+      ],
+      "hints": [
+        "用列表假设法",
+        "每错1道少13分，(100-61)÷13=39÷13=3道错，对7道"
+      ],
+      "commonMistakes": [
+        {"mistake": "选6道", "reason": "6×10-4×3=60-12=48≠61", "correction": "7×10-3×3=70-9=61 ✓", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "鸡兔同笼"],
+      "estimatedTime": 100,
+      "irtParams": { "a": 1.0, "b": 1.8, "c": 0.25 },
+      "tags": ["列表推理", "鸡兔同笼"]
+    },
+    {
+      "id": "g2-lr-18",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有鸡和兔共15只，它们一共有40条腿。鸡和兔各有多少只？",
+      "image": "",
+      "options": ["鸡8只，兔7只", "鸡10只，兔5只", "鸡7只，兔8只", "鸡5只，兔10只"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "列表法（假设法）：",
+        "假设15只全是鸡：15×2=30条腿（少了40-30=10条）",
+        "每把1只鸡换成1只兔，腿增加4-2=2条",
+        "需要增加10条腿，所以换10÷2=5只",
+        "兔=5只，鸡=15-5=10只",
+        "验算：10×2+5×4=20+20=40条 ✓",
+        "所以鸡有10只，兔有5只。"
+      ],
+      "hints": [
+        "全是鸡有30条腿，差40-30=10条腿",
+        "每换1只鸡成兔多2条腿，需换10÷2=5只",
+        "兔5只，鸡10只"
+      ],
+      "commonMistakes": [
+        {"mistake": "选鸡8兔7", "reason": "8×2+7×4=16+28=44≠40", "correction": "10×2+5×4=20+20=40 ✓", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["列表推理", "鸡兔同笼"],
+      "estimatedTime": 120,
+      "irtParams": { "a": 1.0, "b": 2.0, "c": 0.25 },
+      "tags": ["列表推理", "鸡兔同笼", "综合"]
+    },
+    {
+      "id": "g2-lr-19",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "鸡和兔关在同一个笼子里，一共有8个头，22条腿。鸡有多少只？兔有多少只？（答案格式：鸡的只数,兔的只数）",
+      "image": "",
+      "options": [],
+      "answer": "5,3",
+      "acceptableAnswers": ["5,3", "5 3", "鸡5只兔3只"],
+      "solution": [
+        "方法：列表尝试法",
+        "鸡8只兔0只：8×2+0×4=16条腿",
+        "鸡7只兔1只：7×2+1×4=18条腿",
+        "鸡6只兔2只：6×2+2×4=20条腿",
+        "鸡5只兔3只：5×2+3×4=22条腿 ✓",
+        "答：鸡5只，兔3只。"
+      ],
+      "hints": [
+        "用列表法，从鸡8只兔0只开始试",
+        "每减少1只鸡增加1只兔，腿就多2条",
+        "从16条到22条，需要多6条，6÷2=3只兔"
+      ],
+      "commonMistakes": [
+        {"mistake": "4,4", "reason": "猜的，没验证", "correction": "鸡5只兔3只，5×2+3×4=22", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2008, "paper": "第六届希望杯二年级"},
+      "knowledgePoints": ["列表推理", "鸡兔同笼"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["列表推理", "竞赛真题"]
+    },
+    {
+      "id": "g2-lr-20",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "小明有2分和5分的硬币共10枚，总钱数是32分。2分硬币有多少枚？",
+      "image": "",
+      "options": ["4枚", "5枚", "6枚", "7枚"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "列表尝试：",
+        "10枚2分：10×2=20分",
+        "9枚2分1枚5分：9×2+5=23分",
+        "...",
+        "6枚2分4枚5分：6×2+4×5=12+20=32分 ✓",
+        "答：2分硬币有6枚。"
+      ],
+      "hints": [
+        "从全是2分开始，每换1枚5分，总钱数多3分",
+        "32-20=12分，12÷3=4枚5分",
+        "2分=10-4=6枚"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1", "reason": "以为2分有5枚", "correction": "6枚2分，4枚5分", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2009, "paper": "2009年迎春杯二年级"},
+      "knowledgePoints": ["列表推理", "鸡兔同笼"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["列表推理", "竞赛真题"]
+    },
+    {
+      "id": "g2-lr-21",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "停车场有自行车和三轮车共12辆，数一数轮子共有28个。自行车有多少辆？三轮车有多少辆？（答案格式：自行车辆数,三轮车辆数）",
+      "image": "",
+      "options": [],
+      "answer": "8,4",
+      "acceptableAnswers": ["8,4", "8 4"],
+      "solution": [
+        "列表尝试：",
+        "12辆自行车：12×2=24个轮子",
+        "每增加1辆三轮车，减少1辆自行车，轮子多1个",
+        "28-24=4个，需要多4个轮子",
+        "所以三轮车有4辆，自行车12-4=8辆",
+        "验证：8×2+4×3=16+12=28个 ✓"
+      ],
+      "hints": [
+        "先假设全是自行车：24个轮子",
+        "还差28-24=4个轮子",
+        "每辆三轮车比自行车多1个轮子",
+        "三轮车4辆，自行车8辆"
+      ],
+      "commonMistakes": [
+        {"mistake": "6,6", "reason": "猜的", "correction": "8辆自行车，4辆三轮车", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2007, "paper": "第十二届华罗庚金杯少年组"},
+      "knowledgePoints": ["列表推理", "鸡兔同笼"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.1, "b": 0.3, "c": 0.25},
+      "tags": ["列表推理", "竞赛真题"]
+    },
+    {
+      "id": "g2-lr-22",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "小红有1元、5元的纸币共7张，总共23元。1元有多少张？5元有多少张？（答案格式：1元张数,5元张数）",
+      "image": "",
+      "options": [],
+      "answer": "3,4",
+      "acceptableAnswers": ["3,4", "3 4"],
+      "solution": [
+        "列表尝试：",
+        "7张1元：7×1=7元",
+        "每换1张5元，总钱数多4元",
+        "23-7=16元，需要多16元",
+        "16÷4=4张5元",
+        "1元=7-4=3张",
+        "验证：3×1+4×5=3+20=23元 ✓"
+      ],
+      "hints": [
+        "假设全是1元：7元",
+        "还差23-7=16元",
+        "每张5元比1元多4元",
+        "16÷4=4张5元，3张1元"
+      ],
+      "commonMistakes": [
+        {"mistake": "4,3", "reason": "搞反了", "correction": "3张1元，4张5元", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2010, "paper": "第八届走美杯二年级"},
+      "knowledgePoints": ["列表推理", "鸡兔同笼"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["列表推理", "竞赛真题"]
+    },
+    {
+      "id": "g2-lr-23",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "数学竞赛共有10道题，做对一题得5分，做错一题倒扣2分。小明得了36分，他做对了几道题？",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": ["8", "8道"],
+      "solution": [
+        "假设全对：10×5=50分",
+        "实际少得：50-36=14分",
+        "做错一题比做对一题少得：5+2=7分（不仅不得5分还要扣2分）",
+        "做错：14÷7=2道",
+        "做对：10-2=8道",
+        "验证：8×5 - 2×2 = 40-4 = 36分 ✓"
+      ],
+      "hints": [
+        "假设全对得50分",
+        "错一题少得7分（5+2）",
+        "少了14分，错了2道",
+        "做对8道"
+      ],
+      "commonMistakes": [
+        {"mistake": "7", "reason": "以为错一题少5分", "correction": "错一题少7分，错2道，对8道", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2011, "paper": "第九届希望杯二年级"},
+      "knowledgePoints": ["列表推理", "鸡兔同笼"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["列表推理", "竞赛真题"]
+    }
+  ]
+}

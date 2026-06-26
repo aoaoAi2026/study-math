@@ -1,0 +1,166 @@
+{
+    "paperId": "zoumei-2015-g1",
+    "title": "2015年《走美杯》全国数学竞赛 一年级初赛",
+    "grade": 1,
+    "category": "aoshu-zoumei",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 3,
+    "year": 2015,
+    "source": "走美杯全国数学竞赛组委会",
+    "sections": [
+        {"name": "选择题（每题5分）", "count": 6, "scorePerQuestion": 5},
+        {"name": "填空题（每题10分）", "count": 7, "scorePerQuestion": 10}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "choice",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "找规律填数：1、3、6、10、______。（　　）<br>A. 12　B. 13　C. 14　D. 15",
+            "options": ["12", "13", "14", "15"],
+            "answer": "D",
+            "score": 5,
+            "solution": "观察规律：每项比前一项多的差值依次为2、3、4、5……1+2=3，3+3=6，6+4=10，10+5=15。所以答案是15。",
+            "knowledgePoints": ["找规律", "等差递增"]
+        },
+        {
+            "id": "q2",
+            "type": "choice",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "下面哪个图形的对称轴最多？（　　）<br>A. 正方形　B. 长方形　C. 等边三角形　D. 圆",
+            "options": ["正方形", "长方形", "等边三角形", "圆"],
+            "answer": "D",
+            "score": 5,
+            "solution": "对称轴数量：圆有无数条对称轴，正方形有4条，长方形有2条，等边三角形有3条。所以圆的对称轴最多。",
+            "knowledgePoints": ["轴对称", "图形认知"]
+        },
+        {
+            "id": "q3",
+            "type": "choice",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个两位数，个位和十位上的数字之和是9，个位比十位大3。这个两位数是（　　）。<br>A. 36　B. 45　C. 54　D. 63",
+            "options": ["36", "45", "54", "63"],
+            "answer": "A",
+            "score": 5,
+            "solution": "设十位为a，个位为b，a+b=9，b-a=3。两式相加：2b=12，b=6，a=3。所以是36。",
+            "knowledgePoints": ["两位数", "和差关系"]
+        },
+        {
+            "id": "q4",
+            "type": "choice",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "把7个苹果分给3个小朋友，至少有一个小朋友分到______个苹果。（　　）<br>A. 2　B. 3　C. 4　D. 5",
+            "options": ["2", "3", "4", "5"],
+            "answer": "B",
+            "score": 5,
+            "solution": "用抽屉原理（最不利原则）：7个苹果分给3人，最均匀是2、2、3，至少有一个分到3个苹果。",
+            "knowledgePoints": ["抽屉原理", "最不利原则"]
+        },
+        {
+            "id": "q5",
+            "type": "choice",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "时钟在3:30时，时针与分针形成的角是（　　）。<br>A. 90度　B. 75度　C. 105度　D. 60度",
+            "options": ["90度", "75度", "105度", "60度"],
+            "answer": "B",
+            "score": 5,
+            "solution": "3:30时分针指向6（180度），时针在3和4之间（90+15=105度）。夹角=180-105=75度。",
+            "knowledgePoints": ["时钟问题", "角度"]
+        },
+        {
+            "id": "q6",
+            "type": "choice",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小明从家到学校有3条路可走，从学校到图书馆有4条路可走。小明从家经过学校到图书馆一共有（　　）种走法。<br>A. 7　B. 12　C. 14　D. 24",
+            "options": ["7", "12", "14", "24"],
+            "answer": "B",
+            "score": 5,
+            "solution": "乘法原理：3×4=12种。",
+            "knowledgePoints": ["乘法原理", "计数"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 2,
+            "stem": "找规律填数：1、5、9、13、______、21。",
+            "answer": "17",
+            "score": 10,
+            "solution": "规律：每次加4。1+4=5，5+4=9，9+4=13，13+4=17，17+4=21。答案是17。",
+            "knowledgePoints": ["等差数列", "找规律"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 2,
+            "stem": "把一根木棍锯成3段需要6分钟，锯成6段需要______分钟。",
+            "answer": "15",
+            "score": 10,
+            "solution": "锯成3段需锯2次，每次6÷2=3分钟。锯成6段需锯5次，5×3=15分钟。",
+            "knowledgePoints": ["植树问题", "间隔问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "小亮今年5岁，妈妈今年35岁。妈妈年龄是小亮年龄的______倍。",
+            "answer": "7",
+            "score": 10,
+            "solution": "35÷5=7倍。",
+            "knowledgePoints": ["倍数问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "按规律填数：1、2、3、5、8、______、21。",
+            "answer": "13",
+            "score": 10,
+            "solution": "斐波那契数列：每个数=前两个数之和。1+2=3，2+3=5，3+5=8，5+8=13，8+13=21。答案是13。",
+            "knowledgePoints": ["斐波那契数列", "找规律"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "15个小朋友站成一排，从左数小强是第8个，从右数小强是第______个。",
+            "answer": "8",
+            "score": 10,
+            "solution": "从左数第8个，从右数也是第15-8+1=8个。",
+            "knowledgePoints": ["排队问题", "对称性"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "小华有一些糖，比10颗多，比20颗少。平均分给3个小朋友或5个小朋友都刚好分完。小华有______颗糖。",
+            "answer": "15",
+            "score": 10,
+            "solution": "10<x<20且x能被3和5整除，即x是15的倍数。在10~20之间只有15。",
+            "knowledgePoints": ["公倍数", "枚举"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "把一个长方形的纸剪去一个角，还剩______个角。",
+            "answer": "5",
+            "score": 10,
+            "solution": "长方形有4个角。剪去一个角的方式有多种：①剪去一个角后剩5个角；②斜剪可能剩3或4个角。最常见的是剩5个角。",
+            "knowledgePoints": ["剪纸问题", "图形认知"]
+        }
+    ]
+}

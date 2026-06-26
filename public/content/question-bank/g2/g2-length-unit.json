@@ -1,0 +1,470 @@
+{
+  "topicId": "g2-length-unit",
+  "topicName": "长度单位",
+  "grade": 2,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g2-lu-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1米 = （　　）厘米",
+      "image": "",
+      "options": ["10", "100", "1000", "50"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "米和厘米是常用的长度单位。",
+        "1米 = 100厘米。",
+        "这是我们需要记住的基本单位换算。"
+      ],
+      "hints": [
+        "1米等于多少厘米？",
+        "这是基本的长度单位换算"
+      ],
+      "commonMistakes": [
+        {"mistake": "选10", "reason": "把分米和厘米搞混了，1米=10分米", "correction": "1米=100厘米", "errorLayer": "L1"},
+        {"mistake": "选1000", "reason": "和毫米搞混了，1米=1000毫米", "correction": "1米=100厘米", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "米和厘米的换算"],
+      "estimatedTime": 15,
+      "irtParams": { "a": 1.0, "b": -2.0, "c": 0.25 },
+      "tags": ["长度单位", "单位换算"]
+    },
+    {
+      "id": "g2-lu-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "填上合适的单位名称：课桌高约70______。",
+      "image": "",
+      "options": [],
+      "answer": "厘米",
+      "acceptableAnswers": ["厘米", "cm", "厘米(cm)"],
+      "solution": [
+        "课桌的高度大约是70厘米。",
+        "如果填米，70米太高了，像一栋楼。",
+        "如果填毫米，70毫米=7厘米，太矮了。",
+        "所以填厘米最合适。"
+      ],
+      "hints": [
+        "课桌有多高？想一想你的身高",
+        "比1米矮，所以用厘米"
+      ],
+      "commonMistakes": [
+        {"mistake": "填成米", "reason": "不知道1米有多长", "correction": "70米非常高，课桌应该是70厘米", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "选择合适的单位"],
+      "estimatedTime": 20,
+      "irtParams": { "a": 1.0, "b": -1.8, "c": 0.25 },
+      "tags": ["长度单位", "单位选择"]
+    },
+    {
+      "id": "g2-lu-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下面哪件物品的长度大约是1厘米？",
+      "image": "",
+      "options": ["一根跳绳", "一支铅笔", "一枚图钉", "一张课桌"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "1厘米是很短的长度，大约是我们手指宽。",
+        "一根跳绳：大约2米，比1厘米长得多。",
+        "一支铅笔：大约十几厘米，不是1厘米。",
+        "一枚图钉：大约1厘米长，符合。",
+        "一张课桌：大约60-70厘米，不对。",
+        "所以答案是一枚图钉。"
+      ],
+      "hints": [
+        "1厘米大约是手指那么宽",
+        "想一想哪件物品很小"
+      ],
+      "commonMistakes": [
+        {"mistake": "选一支铅笔", "reason": "以为铅笔是1厘米", "correction": "铅笔大约十几厘米，图钉才是1厘米左右", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "1厘米的认识"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": -1.5, "c": 0.25 },
+      "tags": ["长度单位", "估测"]
+    },
+    {
+      "id": "g2-lu-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "用米尺测量黑板的长度，最合适的单位是：",
+      "image": "",
+      "options": ["厘米", "米", "毫米", "千克"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "黑板比较长，大约2-4米。",
+        "用厘米做单位的话，黑板大约200-400厘米，数字太大。",
+        "用米做单位更合适。",
+        "千克是重量单位，不能用来测量长度。",
+        "所以选米。"
+      ],
+      "hints": [
+        "黑板是长的还是短的？",
+        "长的东西用米做单位"
+      ],
+      "commonMistakes": [
+        {"mistake": "选千克", "reason": "把长度单位和重量单位搞混了", "correction": "千克是重量单位，测量长度用米或厘米", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "选择合适的单位"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": -1.2, "c": 0.25 },
+      "tags": ["长度单位", "单位选择"]
+    },
+    {
+      "id": "g2-lu-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2米 = ______厘米",
+      "image": "",
+      "options": [],
+      "answer": "200",
+      "acceptableAnswers": ["200", "200厘米"],
+      "solution": [
+        "1米 = 100厘米。",
+        "2米就是2个100厘米。",
+        "2×100=200。",
+        "所以2米 = 200厘米。"
+      ],
+      "hints": [
+        "1米等于多少厘米？",
+        "2米就是2个100厘米"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成20", "reason": "错写成1米=10厘米", "correction": "1米=100厘米，2米=200厘米", "errorLayer": "L1"},
+        {"mistake": "答案写成2", "reason": "直接写2，忘记换算", "correction": "2米=2×100厘米=200厘米", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "米和厘米的换算"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": 0.0, "c": 0.25 },
+      "tags": ["长度单位", "单位换算"]
+    },
+    {
+      "id": "g2-lu-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "比较大小：3米 ○ 30厘米，○里应该填：",
+      "image": "",
+      "options": ["<", ">", "=", "无法比较"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "比较大小前要先把单位统一。",
+        "3米 = 3×100厘米 = 300厘米。",
+        "现在比较：300厘米 ○ 30厘米。",
+        "300厘米 > 30厘米。",
+        "所以3米 > 30厘米。"
+      ],
+      "hints": [
+        "先把单位统一",
+        "3米等于多少厘米？"
+      ],
+      "commonMistakes": [
+        {"mistake": "选=", "reason": "只看数字3和30，没看单位", "correction": "3米=300厘米，300>30，所以3米>30厘米", "errorLayer": "L2"},
+        {"mistake": "选<", "reason": "比较数字大小后错写成<", "correction": "300>30，所以应该是>", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "比较大小"],
+      "estimatedTime": 35,
+      "irtParams": { "a": 1.0, "b": 0.2, "c": 0.25 },
+      "tags": ["长度单位", "比较大小"]
+    },
+    {
+      "id": "g2-lu-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "填上合适的单位：小明的身高是1______35______。",
+      "image": "",
+      "options": [],
+      "answer": "1米35厘米",
+      "acceptableAnswers": ["1米35厘米", "米厘米", "1m35cm"],
+      "solution": [
+        "小朋友的身高一般是1米多。",
+        "1后面填米，因为1厘米太矮了。",
+        "35后面填厘米，表示35厘米。",
+        "所以小明的身高是1米35厘米。"
+      ],
+      "hints": [
+        "你的身高是多少？",
+        "小朋友的身高用米和厘米"
+      ],
+      "commonMistakes": [
+        {"mistake": "写成1厘米35米", "reason": "单位搞反了", "correction": "应该是1米35厘米，米是大单位，厘米是小单位", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "选择合适的单位"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": 0.3, "c": 0.25 },
+      "tags": ["长度单位", "单位选择", "身高"]
+    },
+    {
+      "id": "g2-lu-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一根绳子长1米，用去了35厘米，还剩多少厘米？",
+      "image": "",
+      "options": ["35厘米", "65厘米", "75厘米", "135厘米"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "这道题要先统一单位。",
+        "1米 = 100厘米。",
+        "用去35厘米，还剩：100-35=65（厘米）。",
+        "所以还剩65厘米。"
+      ],
+      "hints": [
+        "先把1米换成100厘米",
+        "再用100减去35"
+      ],
+      "commonMistakes": [
+        {"mistake": "选75厘米", "reason": "100-35计算错误", "correction": "100-35=65", "errorLayer": "L1"},
+        {"mistake": "选35厘米", "reason": "以为还剩35厘米", "correction": "应该是100-35=65厘米", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "长度的实际计算"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.4, "c": 0.25 },
+      "tags": ["长度单位", "应用题"]
+    },
+    {
+      "id": "g2-lu-09",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "45厘米 + 55厘米 = ______米",
+      "image": "",
+      "options": [],
+      "answer": "1",
+      "acceptableAnswers": ["1", "1米"],
+      "solution": [
+        "先计算45+55=100（厘米）。",
+        "然后把厘米换算成米。",
+        "100厘米 = 1米。",
+        "所以答案是1米。"
+      ],
+      "hints": [
+        "先把两个数加起来",
+        "再把厘米换算成米"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成100", "reason": "忘记最后换算成米", "correction": "45+55=100厘米=1米", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "长度的计算和换算"],
+      "estimatedTime": 35,
+      "irtParams": { "a": 1.0, "b": 0.5, "c": 0.25 },
+      "tags": ["长度单位", "单位换算", "计算"]
+    },
+    {
+      "id": "g2-lu-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把下列长度按从小到大的顺序排列：3米、30厘米、130厘米、1米3厘米。排在第二位的是：",
+      "image": "",
+      "options": ["3米", "30厘米", "130厘米", "1米3厘米"],
+      "answer": "3",
+      "acceptableAnswers": ["3"],
+      "solution": [
+        "先把所有长度都换算成厘米。",
+        "3米 = 300厘米。",
+        "30厘米 = 30厘米。",
+        "130厘米 = 130厘米。",
+        "1米3厘米 = 100+3 = 103厘米。",
+        "现在比较：30厘米 < 103厘米 < 130厘米 < 300厘米。",
+        "也就是：30厘米 < 1米3厘米 < 130厘米 < 3米。",
+        "从小到大排，第二位是1米3厘米。"
+      ],
+      "hints": [
+        "先把所有长度统一单位",
+        "统一换成厘米比较方便"
+      ],
+      "commonMistakes": [
+        {"mistake": "选30厘米", "reason": "以为30厘米是第二位", "correction": "30厘米是最小的，排第一位", "errorLayer": "L2"},
+        {"mistake": "选130厘米", "reason": "单位换算错误", "correction": "1米3厘米=103厘米，103<130，所以1米3厘米排在130厘米前面", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "比较大小", "排序"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 0.6, "c": 0.25 },
+      "tags": ["长度单位", "比较大小", "排序"]
+    },
+    {
+      "id": "g2-lu-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明身高1米25厘米，小红身高1米40厘米。小红比小明高多少厘米？",
+      "image": "",
+      "options": ["15厘米", "25厘米", "20厘米", "10厘米"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "小明身高：1米25厘米 = 125厘米。",
+        "小红身高：1米40厘米 = 140厘米。",
+        "小红比小明高：140-125=15（厘米）。",
+        "也可以直接用米和厘米分别比较：",
+        "1米40厘米 - 1米25厘米 = 15厘米。",
+        "所以小红比小明高15厘米。"
+      ],
+      "hints": [
+        "先把身高都换算成厘米",
+        "再用减法求差"
+      ],
+      "commonMistakes": [
+        {"mistake": "选25厘米", "reason": "140-125算成25了", "correction": "140-125=15", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "长度的实际计算"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 1.0, "c": 0.25 },
+      "tags": ["长度单位", "应用题", "身高"]
+    },
+    {
+      "id": "g2-lu-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一根木料长2米，锯成同样长的4段，每段长______厘米。",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": ["50", "50厘米"],
+      "solution": [
+        "先把2米换算成厘米。",
+        "2米 = 200厘米。",
+        "锯成4段，每段长：200÷4=50（厘米）。",
+        "所以每段长50厘米。"
+      ],
+      "hints": [
+        "先把2米换成厘米",
+        "再用除法平均分成4段"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成25", "reason": "200÷4算成25", "correction": "200÷4=50", "errorLayer": "L1"},
+        {"mistake": "答案写成800", "reason": "用了乘法2×400", "correction": "平均分应该用除法", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "长度的实际计算"],
+      "estimatedTime": 55,
+      "irtParams": { "a": 1.0, "b": 0.9, "c": 0.25 },
+      "tags": ["长度单位", "应用题"]
+    },
+    {
+      "id": "g2-lu-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一条路的一边，从起点到终点每隔5米种1棵树，一共种了5棵树。这条路长多少米？",
+      "image": "",
+      "options": ["15米", "20米", "25米", "30米"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "这是一道植树问题。关键是：棵数和间隔数的关系。",
+        "5棵树之间有多少个间隔？画图看看：",
+        "树 5米 树 5米 树 5米 树 5米 树",
+        "5棵树之间有4个间隔（间隔数=棵数-1）。",
+        "每个间隔5米，所以这条路长：4×5=20（米）。",
+        "所以这条路长20米。"
+      ],
+      "hints": [
+        "5棵树之间有几个5米？",
+        "间隔数 = 棵数 - 1",
+        "画个图帮助理解"
+      ],
+      "commonMistakes": [
+        {"mistake": "选25米", "reason": "用5×5=25，以为5个间隔", "correction": "5棵树之间只有4个间隔，4×5=20米", "errorLayer": "L2"},
+        {"mistake": "选15米", "reason": "间隔数算成3个", "correction": "5棵树之间有4个间隔，不是3个", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "植树问题", "间隔问题"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 1.2, "c": 0.25 },
+      "tags": ["长度单位", "应用题", "植树问题"]
+    },
+    {
+      "id": "g2-lu-14",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一根彩带长1米，做花用去了40厘米，做蝴蝶结用去了25厘米。这根彩带短了______厘米。",
+      "image": "",
+      "options": [],
+      "answer": "65",
+      "acceptableAnswers": ["65", "65厘米"],
+      "solution": [
+        "彩带短了多少，就是一共用去了多少。",
+        "做花用去40厘米，做蝴蝶结用去25厘米。",
+        "一共用去：40+25=65（厘米）。",
+        "所以这根彩带短了65厘米。"
+      ],
+      "hints": [
+        "\"短了多少\"就是\"用去了多少\"",
+        "把两次用去的加起来"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成35", "reason": "用减法40-25=15算错了", "correction": "应该把两次用去的加起来：40+25=65厘米", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "长度的实际计算"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 1.1, "c": 0.25 },
+      "tags": ["长度单位", "应用题"]
+    },
+    {
+      "id": "g2-lu-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "把3根长都是50厘米的木条钉成一根长木条。钉在一起的重叠部分都是5厘米。钉成的木条长多少厘米？",
+      "image": "",
+      "options": ["120厘米", "130厘米", "140厘米", "150厘米"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "这是一道重叠问题。我们画个图帮助理解：",
+        "三根木条，每根长50厘米，总长度：3×50=150（厘米）。",
+        "三根木条钉在一起，有几个重叠的地方？（画个图）",
+        "木1 和 木2 重叠5厘米，木2 和 木3 又重叠5厘米。",
+        "所以有2处重叠，每处重叠5厘米，共减少2×5=10（厘米）。",
+        "钉成的木条长：150-10=140（厘米）。",
+        "所以答案是140厘米。"
+      ],
+      "hints": [
+        "重叠的地方被重复计算了，要减去",
+        "3根木条钉在一起有2处重叠",
+        "画图帮助理解"
+      ],
+      "commonMistakes": [
+        {"mistake": "选140厘米", "reason": "计算正确（这就是答案）", "correction": "150-10=140厘米", "errorLayer": "L0"},
+        {"mistake": "选130厘米", "reason": "以为有3处重叠", "correction": "3根木条钉在一起只有2处重叠：150-2×5=140厘米", "errorLayer": "L3"},
+        {"mistake": "选150厘米", "reason": "没有考虑重叠", "correction": "重叠部分要减去：150-10=140厘米", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["长度单位", "重叠问题"],
+      "estimatedTime": 90,
+      "irtParams": { "a": 1.0, "b": 1.8, "c": 0.25 },
+      "tags": ["长度单位", "应用题", "重叠问题"]
+    }
+  ]
+}

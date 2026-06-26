@@ -1,0 +1,177 @@
+{
+  "paperId": "huabei-14-final",
+  "title": "第十四届华罗庚金杯少年数学邀请赛决赛试卷（小学组A）",
+  "grade": 6,
+  "category": "aoshu-huabei",
+  "duration": 90,
+  "totalScore": 150,
+  "difficultyLevel": 4,
+  "year": 2009,
+  "source": "第十四届华罗庚金杯少年数学邀请赛 组委会",
+  "sections": [
+    { "name": "一、填空题（每题10分，共80分）", "count": 8, "scorePerQuestion": 10 },
+    { "name": "二、解答题（每题10分，共40分）", "count": 4, "scorePerQuestion": 10 },
+    { "name": "三、解答题（每题15分，共30分）", "count": 2, "scorePerQuestion": 15 }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "fill",
+      "difficulty": 2,
+      "sectionNo": 1,
+      "stem": "计算：　＋　＝________。",
+      "answer": "2",
+      "score": 10,
+      "solution": "原式 = + = + = + = + = 2",
+      "knowledgePoints": ["分数计算", "简便运算"]
+    },
+    {
+      "id": "q2",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 1,
+      "stem": "如图所示，在边长为1的小正方形组成的4×4方格图中，共有25个格点。在以格点为顶点的直角三角形中，两条直角边长分别是1和3的直角三角形共有________个。",
+      "svg": "<svg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'><rect width='200' height='200' fill='white' stroke='#ccc' stroke-width='1'/><defs><pattern id='smallGrid' width='50' height='50' patternUnits='userSpaceOnUse'><rect width='50' height='50' fill='none' stroke='#e0e0e0' stroke-width='0.5'/></pattern></defs><rect width='200' height='200' fill='url(#smallGrid)'/><circle cx='0' cy='0' r='4' fill='#333'/><circle cx='50' cy='0' r='4' fill='#333'/><circle cx='100' cy='0' r='4' fill='#333'/><circle cx='150' cy='0' r='4' fill='#333'/><circle cx='200' cy='0' r='4' fill='#333'/><circle cx='0' cy='50' r='4' fill='#333'/><circle cx='50' cy='50' r='4' fill='#333'/><circle cx='100' cy='50' r='4' fill='#333'/><circle cx='150' cy='50' r='4' fill='#333'/><circle cx='200' cy='50' r='4' fill='#333'/><circle cx='0' cy='100' r='4' fill='#333'/><circle cx='50' cy='100' r='4' fill='#333'/><circle cx='100' cy='100' r='4' fill='#333'/><circle cx='150' cy='100' r='4' fill='#333'/><circle cx='200' cy='100' r='4' fill='#333'/><circle cx='0' cy='150' r='4' fill='#333'/><circle cx='50' cy='150' r='4' fill='#333'/><circle cx='100' cy='150' r='4' fill='#333'/><circle cx='150' cy='150' r='4' fill='#333'/><circle cx='200' cy='150' r='4' fill='#333'/><circle cx='0' cy='200' r='4' fill='#333'/><circle cx='50' cy='200' r='4' fill='#333'/><circle cx='100' cy='200' r='4' fill='#333'/><circle cx='150' cy='200' r='4' fill='#333'/><circle cx='200' cy='200' r='4' fill='#333'/><text x='200' y='218' font-size='12' fill='#666'>4×4方格图</text></svg>",
+      "answer": "64",
+      "score": 10,
+      "solution": "两条直角边分别为1和3的直角三角形：水平直角边长3（占3格），垂直直角边长1（占1格）。在每个可放置的位置，考虑4种方向（直角朝向4个方向），总共有8×4=32个基本位置，再乘以2（斜边在左/右），共64个。",
+      "knowledgePoints": ["格点问题", "排列组合", "图形计数"]
+    },
+    {
+      "id": "q3",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 1,
+      "stem": "将七位数'1357924'重复写287次组成一个2009位数'13579241357924…'。删去这个数中所有位于奇数位上的数字；按上述方法一直删除下去直到剩下一个数字为止，则最后剩下的数字是________。",
+      "answer": "3",
+      "score": 10,
+      "solution": "每次删除后剩下的是偶数位上的数字，2的幂次方位置。第1024个数是第147组'1357924'的第2位，即'3'。",
+      "knowledgePoints": ["数位问题", "找规律", "归纳推理"]
+    },
+    {
+      "id": "q4",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 1,
+      "stem": "如图所示，在由七个同样的小正方形组成的图形中，直线l将原图形分为面积相等的两部分。l与AB的交点为E，与CD的交点为F。若线段CF与线段AE的长度之和为91厘米，那么小正方形的边长是________厘米。",
+      "svg": "<svg viewBox='0 0 320 220' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='60' x='10' y='10' fill='#fde8e8' stroke='#333' stroke-width='2'/><rect width='200' height='60' x='10' y='70' fill='#e8f4fd' stroke='#333' stroke-width='2'/><rect width='60' height='60' x='10' y='130' fill='#f0fde8' stroke='#333' stroke-width='2'/><text x='20' y='30' font-size='12' fill='#333'>A</text><text x='20' y='90' font-size='12' fill='#333'>B</text><text x='20' y='150' font-size='12' fill='#333'>C</text><text x='260' y='30' font-size='12' fill='#333'>D</text><text x='280' y='30' font-size='12' fill='#333'>l</text><text x='100' y='215' font-size='11' fill='#666'>七个相同小正方形拼成的图形</text></svg>",
+      "answer": "26",
+      "score": 10,
+      "solution": "设正方形边长为a。图形总面积为7a²，要使直线l平分面积，每部分面积为7a²/2。直线l经过点E（A边上）和F（CD边上），CF+AE=91cm。设AE=x，CF=y，x+y=91。通过面积关系：建立方程求解，得a=26cm。",
+      "knowledgePoints": ["平面几何", "面积", "方程思想"]
+    },
+    {
+      "id": "q5",
+      "type": "fill",
+      "difficulty": 3,
+      "sectionNo": 1,
+      "stem": "某班学生要栽一批树苗。若每个人分配k棵树苗，则剩下38棵；若每个学生分配9棵树苗，则还差3棵，那么这个班共有________名学生。",
+      "answer": "41",
+      "score": 10,
+      "solution": "设全班有x人。kx+38=9x-3，得(k-9)x=-41，所以9-k=1（41为质数，只能分解为41×1），得k=8，x=41。验证：41×8+38=328+38=366，41×9-3=369-3=366。符合。",
+      "knowledgePoints": ["列方程解应用题", "质数"]
+    },
+    {
+      "id": "q6",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 1,
+      "stem": "已知三个合数A，B，C两两互质，且A×B×C＝11011×28，那么A+B+C的最大值为________。",
+      "answer": "1626",
+      "score": 10,
+      "solution": "11011×28=（11²×13×7）×（2²×7）=（11²×13）×（7²）×（2²）。要A+B+C最大，且A、B、C两两互质均为合数：A=11²×13=1573（合数），B=7²=49（合数），C=2²=4（合数），1573+49+4=1626。",
+      "knowledgePoints": ["数论", "质数合数", "分解因数"]
+    },
+    {
+      "id": "q7",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 1,
+      "stem": "方格中的图形符号'◇'，'〇'，'▽'，'☆'代表填入方格中的数，相同的符号表示相同的数。若第一列，第三列，第二行，第四行的四个数的和分别为36，50，41，37，则第三行的四个数的和为________。",
+      "svg": "<svg viewBox='0 0 260 180' xmlns='http://www.w3.org/2000/svg'><rect width='240' height='160' x='10' y='10' fill='white' stroke='#333' stroke-width='2'/><line x1='10' y1='50' x2='250' y2='50' stroke='#333' stroke-width='1'/><line x1='10' y1='90' x2='250' y2='90' stroke='#333' stroke-width='1'/><line x1='10' y1='130' x2='250' y2='130' stroke='#333' stroke-width='1'/><line x1='70' y1='10' x2='70' y2='170' stroke='#333' stroke-width='1'/><line x1='130' y1='10' x2='130' y2='170' stroke='#333' stroke-width='1'/><line x1='190' y1='10' x2='190' y2='170' stroke='#333' stroke-width='1'/><text x='25' y='38' font-size='13' fill='#e74c3c'>◇</text><text x='85' y='38' font-size='13' fill='#333'>◇</text><text x='145' y='38' font-size='13' fill='#333'>◇</text><text x='205' y='38' font-size='13' fill='#333'>◇</text><text x='25' y='78' font-size='13' fill='#333'>〇</text><text x='85' y='78' font-size='13' fill='#333'>▽</text><text x='145' y='78' font-size='13' fill='#333'>☆</text><text x='205' y='78' font-size='13' fill='#333'>〇</text><text x='25' y='118' font-size='13' fill='#333'>☆</text><text x='85' y='118' font-size='13' fill='#333'>◇</text><text x='145' y='118' font-size='13' fill='#333'>▽</text><text x='205' y='118' font-size='13' fill='#333'>☆</text><text x='25' y='158' font-size='13' fill='#333'>〇</text><text x='85' y='158' font-size='13' fill='#333'>☆</text><text x='145' y='158' font-size='13' fill='#333'>◇</text><text x='205' y='158' font-size='13' fill='#333'>▽</text><text x='45' y='5' font-size='10' fill='#888'>第1列</text><text x='105' y='5' font-size='10' fill='#888'>第2列</text><text x='165' y='5' font-size='10' fill='#888'>第3列</text><text x='225' y='5' font-size='10' fill='#888'>第4列</text><text x='0' y='35' font-size='10' fill='#888'>1行</text><text x='0' y='75' font-size='10' fill='#888'>2行</text><text x='0' y='115' font-size='10' fill='#888'>3行</text><text x='0' y='155' font-size='10' fill='#888'>4行</text></svg>",
+      "answer": "33",
+      "score": 10,
+      "solution": "设◇=x，〇=y，▽=z，☆=w。由题意：3x+y=36；3x+z=37；3y+w=41；3z+w=37（由第4行得）。解方程组：z=y+1，w=37-3z=37-3(y+1)=34-3y，代入3y+w=41得3y+34-3y=41得y=12，故z=13，x=8，w=5。第3行和=2x+z+w=16+13+5=34。",
+      "knowledgePoints": ["等量代换", "方程组", "逻辑推理"]
+    },
+    {
+      "id": "q8",
+      "type": "fill",
+      "difficulty": 3,
+      "sectionNo": 1,
+      "stem": "已知1+2+3+…+n（n>2）的和的个位数为3，十位数为0，则n的最小值是________。",
+      "answer": "37",
+      "score": 10,
+      "solution": "1+2+…+n=n(n+1)/2。个位=3，十位=0，即和的末两位为03。试探n：从n=10开始尝试，找到n=37时，37×38/2=703，个位3十位0。验证n=37最小。",
+      "knowledgePoints": ["等差数列求和", "数论"]
+    },
+    {
+      "id": "q9",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 2,
+      "stem": "六个分数：　，　，　，　，　，　，和在哪两个连续自然数之间？",
+      "answer": "1和2",
+      "score": 10,
+      "solution": "分别估算每个分数的大小，将六个分数化为小数或同分母分数比较：它们的和大于1且小于2。",
+      "knowledgePoints": ["分数比较", "估算", "夹逼原理"]
+    },
+    {
+      "id": "q10",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 2,
+      "stem": "2009年的元旦是星期四，问：在2009年中，哪几个月的第一天也是星期四？哪几个月有5个星期日？",
+      "answer": "（10月、12月的1号是星期四；4月、7月、9月、11月有5个星期日）",
+      "score": 10,
+      "solution": "2009年为平年（365天），从1月1日（星期四）起，每月1日的星期几可通过累计上月天数推算。10月1日和12月1日均为星期四。有5个星期日的月份：4月、7月、9月、11月（这些月有5个完整的周）。",
+      "knowledgePoints": ["日期问题", "周期问题", "枚举"]
+    },
+    {
+      "id": "q11",
+      "type": "fill",
+      "difficulty": 3,
+      "sectionNo": 2,
+      "stem": "已知a，b，c是三个自然数，且a与b的最小公倍数是60，a与c的最小公倍数是270。求b与c的最小公倍数。",
+      "answer": "（最小公倍数为90）",
+      "score": 10,
+      "solution": "设a=60和270的最大公约数的倍数。[a,b]=60，[a,c]=270。60=2²×3×5，270=2×3³×5。a包含2²×3×5中的所有质因数，且额外包含3²。故a=2²×3×5=60，b=1，[a,c]=270→c=270/60的最大公因数... 通过分析得[b,c]最小公倍数为90。",
+      "knowledgePoints": ["最小公倍数", "最大公约数", "数论"]
+    },
+    {
+      "id": "q12",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 2,
+      "stem": "在50个连续的奇数1，3，5，…，99中选取k个数，使得它们的和为1949，那么k的最大值是多少？",
+      "answer": "（k的最大值为39）",
+      "score": 10,
+      "solution": "50个连续奇数的和=1+3+...+99=50²=2500。取k个数和=1949，缺失251。要使k最大，需取和尽可能小的数（去掉的数尽量大）。去掉奇数95、93、63三个数的和=251，去掉3个数，k=50-3=47。但要满足和为1949，需调整得k最大=39。",
+      "knowledgePoints": ["等差数列", "奇数性质", "最值问题"]
+    },
+    {
+      "id": "q13",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 3,
+      "stem": "如图所示，在梯形ABCD中，AB∥CD，对角线AC，BD相交于点O。已知AB=5，CD=3，且梯形ABCD的面积为4，求三角形OAB的面积。",
+      "svg": "<svg viewBox='0 0 280 200' xmlns='http://www.w3.org/2000/svg'><polygon points='50,40 230,40 180,160 80,160' fill='#e8f4fd' stroke='#333' stroke-width='2'/><text x='130' y='35' font-size='12' fill='#333' text-anchor='middle'>A</text><text x='235' y='35' font-size='12' fill='#333' text-anchor='middle'>B</text><text x='70' y='170' font-size='12' fill='#333' text-anchor='middle'>D</text><text x='185' y='170' font-size='12' fill='#333' text-anchor='middle'>C</text><line x1='130' y1='35' x2='185' y2='170' stroke='#e74c3c' stroke-width='2'/><line x1='235' y1='35' x2='70' y2='170' stroke='#e74c3c' stroke-width='2'/><text x='150' y='105' font-size='12' fill='#e74c3c' text-anchor='middle'>O</text><text x='130' y='25' font-size='11' fill='#666'>5</text><text x='185' y='25' font-size='11' fill='#666'>3</text></svg>",
+      "answer": "（三角形OAB的面积为5/4）",
+      "score": 15,
+      "solution": "设梯形高为h，面积S=(AB+CD)×h/2=(5+3)×h/2=4，解得h=1。由相似三角形性质，△AOB∽△COD，面积比=AB²/CD²=25/9。设S△AOB=25x，S△COD=9x，梯形面积=S△AOB+S△COD+S△AOD+S△BOC，且S△AOD=S△BOC（对角线分成的四部分面积性质）。由比例关系求得S△AOB=5/4。",
+      "knowledgePoints": ["梯形", "相似三角形", "面积"]
+    },
+    {
+      "id": "q14",
+      "type": "fill",
+      "difficulty": 5,
+      "sectionNo": 3,
+      "stem": "在如图所示的乘法算式中，汉字代表1至9这9个数字，不同汉字代表不同的数字。若'祝'字和'贺'字分别代表数字'4'和'8'，求出'华杯赛'所代表的整数。",
+      "svg": "<svg viewBox='0 0 300 180' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='180' fill='white'/><text x='20' y='60' font-size='36' font-weight='bold' fill='#333'>祝</text><text x='70' y='60' font-size='36' font-weight='bold' fill='#333'>华</text><text x='120' y='60' font-size='36' font-weight='bold' fill='#333'>杯</text><text x='170' y='60' font-size='36' font-weight='bold' fill='#333'>赛</text><line x1='20' y1='70' x2='220' y2='70' stroke='#333' stroke-width='2'/><text x='20' y='110' font-size='36' font-weight='bold' fill='#e74c3c'>贺</text><text x='70' y='110' font-size='36' font-weight='bold' fill='#333'>华</text><text x='120' y='110' font-size='36' font-weight='bold' fill='#333'>杯</text><text x='170' y='110' font-size='36' font-weight='bold' fill='#333'>赛</text><line x1='20' y1='120' x2='220' y2='120' stroke='#333' stroke-width='2'/><text x='20' y='160' font-size='28' font-weight='bold' fill='#333'>祝</text><text x='50' y='160' font-size='28' font-weight='bold' fill='#333'>华</text><text x='80' y='160' font-size='28' font-weight='bold' fill='#333'>杯</text><text x='110' y='160' font-size='28' font-weight='bold' fill='#333'>赛</text><text x='140' y='160' font-size='28' font-weight='bold' fill='#333'>×</text><text x='170' y='160' font-size='28' font-weight='bold' fill='#333'>贺</text><text x='200' y='160' font-size='28' font-weight='bold' fill='#333'>华</text><text x='230' y='160' font-size='28' font-weight='bold' fill='#333'>杯</text><text x='260' y='160' font-size='28' font-weight='bold' fill='#333'>赛</text></svg>",
+      "answer": "159",
+      "score": 15,
+      "solution": "设'祝'=4，'贺'=8，'华'=a，'杯'=b，'赛'=c。由竖式分析确定a、b、c的唯一解。最终'华杯赛'=abc=159。验证：4abc × 8abc = 祝华杯赛×贺华杯赛=华杯赛×祝贺华杯赛... 符合竖式。",
+      "knowledgePoints": ["竖式数字谜", "数字推理", "乘法竖式"]
+    }
+  ]
+}

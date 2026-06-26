@@ -1,0 +1,790 @@
+{
+  "topicId": "g1-plane-shapes",
+  "topicName": "认识平面图形",
+  "grade": 1,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g1-ps-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下面哪个图形是圆形？",
+      "options": [
+        "□",
+        "△",
+        "○",
+        "☆"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "○"
+      ],
+      "solution": [
+        "圆形是一条曲线围成的封闭图形，没有角。",
+        "选项中 ○ 是圆形。"
+      ],
+      "hints": [
+        "圆没有尖尖的角",
+        "圆是光滑的曲线",
+        "○ 就是圆"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 □",
+          "reason": "以为方的是圆",
+          "correction": "圆是 ○",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "圆的认识"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "长方形有几条边？",
+      "options": [
+        "3 条",
+        "4 条",
+        "5 条",
+        "6 条"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "长方形是四边形，有 4 条边。",
+        "上下两条一样长，左右两条一样长。"
+      ],
+      "hints": [
+        "数一数边",
+        "长方形有 4 条边",
+        "上下、左右各一对"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 3 条",
+          "reason": "和三角形混了",
+          "correction": "长方形有 4 条边",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "长方形的特征"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "正方形有 ____ 条相等的边。",
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "四",
+        "4条"
+      ],
+      "solution": [
+        "正方形四条边长度都一样。",
+        "正方形也有 4 个直角。"
+      ],
+      "hints": [
+        "正方形四边相等",
+        "四条边一样长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 2",
+          "reason": "以为只有上下或左右相等",
+          "correction": "正方形四边都相等",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "正方形的特征"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "正方形"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "三角形有几个角？",
+      "options": [
+        "2 个",
+        "3 个",
+        "4 个",
+        "5 个"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "三角形有 3 条边和 3 个角。",
+        "三角形\"三\"就是 3。"
+      ],
+      "hints": [
+        "\"三角\"就是 3 个角",
+        "数一数三角形的角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 4 个",
+          "reason": "和长方形混了",
+          "correction": "三角形只有 3 个角",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "三角形的特征"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形，长 5 厘米，宽 3 厘米。它和边长为 ____ 厘米的正方形周长相等。",
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "四"
+      ],
+      "solution": [
+        "长方形周长：5+3+5+3 = 16 厘米。",
+        "正方形 4 条边相等，所以每边 = 16 ÷ 4 = 4 厘米。"
+      ],
+      "hints": [
+        "先算长方形一圈多长",
+        "5+3+5+3=16",
+        "正方形 4 条边一样长",
+        "16÷4=4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 8",
+          "reason": "只算了两条边的和",
+          "correction": "要一圈都算进去，再除以4",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "周长",
+        "长方形",
+        "正方形"
+      ],
+      "estimatedTime": 130,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "周长"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把一个正方形平均分成两个完全一样的图形，可以分成两个？",
+      "options": [
+        "圆形",
+        "三角形",
+        "五边形",
+        "六边形"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "三角形"
+      ],
+      "solution": [
+        "沿着正方形对角线切，可以分成两个三角形。",
+        "沿着中线切，可以分成两个长方形。",
+        "选项中只有三角形可以。"
+      ],
+      "hints": [
+        "想象一下用剪刀剪开",
+        "对角线剪开是三角形",
+        "中线剪开是长方形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 五边形",
+          "reason": "没认真想",
+          "correction": "正方形只能分成三角形、长方形等",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "图形分割",
+        "正方形"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "图形分割"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "数一数下图中有 ____ 个长方形。\n（一个大长方形被一条竖线分成两个）",
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三个"
+      ],
+      "solution": [
+        "有 2 个小长方形。",
+        "这 2 个小长方形合起来是 1 个大长方形。",
+        "2 + 1 = 3 个。"
+      ],
+      "hints": [
+        "先数小的",
+        "再数合起来的大的",
+        "2小+1大=3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 2",
+          "reason": "只数小的",
+          "correction": "别忘了合起来的大长方形",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "数图形",
+        "组合图形"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "数图形"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面哪个图形不能用 4 根同样长的小棒拼成？",
+      "options": [
+        "正方形",
+        "长方形",
+        "平行四边形",
+        "都能"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "长方形"
+      ],
+      "solution": [
+        "正方形 4 条边一样长，用 4 根同样长的小棒可以。",
+        "长方形长和宽不一样长，用 4 根同样长的小棒拼不成长方形。",
+        "平行四边形可以是 4 根同样长的（菱形）。"
+      ],
+      "hints": [
+        "正方形四边相等",
+        "长方形长和宽不等",
+        "4根同样长不能拼成长方形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 正方形",
+          "reason": "把正方形和长方形搞反了",
+          "correction": "正方形4边相等，能用4根",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "拼图形",
+        "小棒"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "拼图形"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-09",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "用同样长的小棒拼一个长方形，最少需要 ____ 根。",
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六",
+        "6根"
+      ],
+      "solution": [
+        "长方形有 2 条长和 2 条宽。",
+        "如果长用 2 根，宽用 1 根，那么总共 2+1+2+1 = 6 根。",
+        "这是最少的情况。"
+      ],
+      "hints": [
+        "长和宽不一样",
+        "长用2根，宽用1根",
+        "2+1+2+1=6根"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 4",
+          "reason": "以为可以用4根",
+          "correction": "4根同样长只能拼成正方形",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "拼图形",
+        "长方形"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "拼图形"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "七巧板中没有哪种图形？",
+      "options": [
+        "三角形",
+        "正方形",
+        "平行四边形",
+        "圆"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "圆"
+      ],
+      "solution": [
+        "七巧板由 5 个三角形、1 个正方形和 1 个平行四边形组成。",
+        "没有圆。"
+      ],
+      "hints": [
+        "七巧板有 7 块",
+        "5 个三角形+1个正方形+1个平行四边形",
+        "没有圆形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 正方形",
+          "reason": "对七巧板不熟悉",
+          "correction": "七巧板里有正方形",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "七巧板",
+        "图形分类"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "七巧板"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "数一数：图中有几个三角形？\n（一个大三角形被两条线分成 4 个小三角形）",
+      "options": [
+        "4 个",
+        "5 个",
+        "6 个",
+        "7 个"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "5"
+      ],
+      "solution": [
+        "小三角形有 4 个。",
+        "4 个小三角形合起来是 1 个大三角形。",
+        "总共 4 + 1 = 5 个。"
+      ],
+      "hints": [
+        "先数小的",
+        "再数大的",
+        "4+1=5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 4 个或 6 个",
+          "reason": "漏数或重复数",
+          "correction": "4小+1大=5",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "数图形",
+        "三角形"
+      ],
+      "estimatedTime": 140,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "数图形"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "用 2 个完全一样的正方形可以拼成一个 ____ 形。",
+      "answer": "长方",
+      "acceptableAnswers": [
+        "长方",
+        "长方形",
+        "矩形"
+      ],
+      "solution": [
+        "把两个正方形边对边拼在一起，就变成了一个长方形。",
+        "这个长方形的长是原来正方形边长的 2 倍。"
+      ],
+      "hints": [
+        "想象两个正方形拼起来",
+        "□□ 拼起来是长方形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 正方形或大正方形",
+          "reason": "两个正方形拼不成更大的正方形",
+          "correction": "两个正方形拼成长方形",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "图形拼合",
+        "正方形",
+        "长方形"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "图形拼合"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形，长 10 厘米，宽 6 厘米。从它的一个角剪下一个最大的正方形，剩下的图形是？",
+      "options": [
+        "正方形",
+        "长方形",
+        "三角形",
+        "不规则图形"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "长方形"
+      ],
+      "solution": [
+        "最大的正方形边长等于宽，也就是 6 厘米。",
+        "剪下后，剩下的部分：长=10-6=4厘米，宽还是6厘米。",
+        "这是一个长 6 厘米、宽 4 厘米的长方形。"
+      ],
+      "hints": [
+        "最大的正方形边长就是宽",
+        "10-6=4",
+        "剩下的是 6×4 的长方形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 正方形",
+          "reason": "以为剩下的也是正方形",
+          "correction": "10-6=4，长和宽不等，是长方形",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "图形分割",
+        "巧求周长"
+      ],
+      "estimatedTime": 160,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "图形分割"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-14",
+      "type": "shape-match",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把图形和特征连起来：\n① 圆\n② 长方形\n③ 正方形\n④ 三角形\nⓐ 四条边都相等\nⓑ 三条边三个角\nⓒ 有四条边，对边相等\nⓓ 曲线图形",
+      "answer": "①-ⓓ ②-ⓒ ③-ⓐ ④-ⓑ",
+      "acceptableAnswers": [
+        "①-ⓓ②-ⓒ③-ⓐ④-ⓑ"
+      ],
+      "solution": [
+        "① 圆是曲线围成的图形，对应 ⓓ。",
+        "② 长方形有四条边，对边相等，对应 ⓒ。",
+        "③ 正方形四条边都相等，对应 ⓐ。",
+        "④ 三角形有三条边三个角，对应 ⓑ。"
+      ],
+      "hints": [
+        "圆是曲线",
+        "长方形对边相等",
+        "正方形四边相等",
+        "三角形三条边"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "把①连ⓐ或②连ⓓ",
+          "reason": "特征没记清",
+          "correction": "圆没有直边，是曲线图形",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "图形特征",
+        "连线匹配"
+      ],
+      "estimatedTime": 140,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "图形特征"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ps-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "把一张正方形纸对折两次后，沿折线剪开，不可能得到下面哪种图形？",
+      "options": [
+        "4 个小正方形",
+        "4 个小长方形",
+        "4 个小三角形",
+        "4 个圆"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "4 个圆"
+      ],
+      "solution": [
+        "沿中线对折两次，能得到 4 个小长方形或小正方形。",
+        "沿对角线对折两次，能得到 4 个小三角形。",
+        "正方形剪不出圆形来。"
+      ],
+      "hints": [
+        "想想折纸的方法",
+        "折完剪开会是什么",
+        "直线剪不出圆形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 4个小三角形",
+          "reason": "以为对角线对折剪不出三角形",
+          "correction": "对角线对折剪开是三角形",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "折纸",
+        "图形分割"
+      ],
+      "estimatedTime": 170,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "折纸",
+        "拔高"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    }
+  ]
+}

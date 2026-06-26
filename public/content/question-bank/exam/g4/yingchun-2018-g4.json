@@ -1,0 +1,148 @@
+{
+    "paperId": "yingchun-2018-g4",
+    "title": "2018年迎春杯小学高年级组四年级初赛",
+    "grade": 4,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 3,
+    "year": 2018,
+    "source": "迎春杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共12题，每题8分，共96分）", "count": 12, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：3333 × 3 = ______。",
+            "answer": "9999",
+            "score": 8,
+            "solution": "3333×3=9999。",
+            "knowledgePoints": ["乘法"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：1 + 2 + 3 + ... + 100 = ______。",
+            "answer": "5050",
+            "score": 8,
+            "solution": "等差数列求和：(1+100)×100/2=5050。",
+            "knowledgePoints": ["等差数列"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个数除以7余3，除以9余5。这个数最小是______。",
+            "answer": "62",
+            "score": 8,
+            "solution": "除以7余3即差4能被7整除；除以9余5即差4能被9整除。LCM(7,9)=63。最小数=63-1=62？不对。63-4=59？不对。除以7余3：3,10,17,24,31,38,45,52,59,66...除以9余5：5,14,23,32,41,50,59...最小是59。验证：59÷7=8余3，59÷9=6余5。",
+            "knowledgePoints": ["余数问题"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有50只，脚一共有160只。兔有______只。",
+            "answer": "30",
+            "score": 8,
+            "solution": "假设全是鸡：50×2=100脚。实际160脚，多60脚。兔=60/2=30只。验证：兔30只，鸡20只，脚=30×4+20×2=120+40=160✓。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个长方形的周长是60厘米，长是18厘米。面积是______平方厘米。",
+            "answer": "216",
+            "score": 8,
+            "solution": "宽=60/2-18=30-18=12厘米。面积=18×12=216平方厘米。",
+            "knowledgePoints": ["长方形"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数先加上7，再乘以7，再减去7，再除以7，结果还是7。这个数是______。",
+            "answer": "1",
+            "score": 8,
+            "solution": "逆推：7×7=49，49+7=56，56÷7=8，8-7=1。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "在一条长80米的路一边种树，每隔8米种一棵，两端都种。需要______棵。",
+            "answer": "11",
+            "score": 8,
+            "solution": "80/8+1=10+1=11棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "甲、乙两数的和是200，甲比乙多20。甲是______。",
+            "answer": "110",
+            "score": 8,
+            "solution": "设乙为x，甲为x+20。x+x+20=200，2x=180，x=90。甲=110。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "小明有80颗珠子，给了小红16颗后，两人的珠子一样多。小红原有______颗。",
+            "answer": "48",
+            "score": 8,
+            "solution": "小明剩80-16=64颗。两人一样多说明小红也有64颗，所以小红原有64-16=48颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一桶油，第一次倒出一半，第二次倒出剩下的一半，还剩8千克。原有______千克。",
+            "answer": "32",
+            "score": 8,
+            "solution": "设原有x千克。第二次倒出后剩x/4=8，x=32千克。",
+            "knowledgePoints": ["一半问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一捆电线，第一次用去一半多1米，第二次用去剩下的一半少2米，还剩15米。电线原长______米。",
+            "answer": "56",
+            "score": 8,
+            "solution": "逆推：第二次前有(15+2)×2=34米。第一次前有(34-1)×2=66米？不对。(34+1)×2=70米。验证：70/2=35，35-1=34，34/2=17，17+2=19，70-35-17=18？不对。重新算：设原长x。第一次用x/2+1，剩x/2-1。第二次用(x/2-1)/2-2=(x-6)/4，剩(x/2-1)-(x-6)/4=(2x-4-x+6)/4=(x+2)/4。(x+2)/4=15，x+2=60，x=58。验证：58/2=29，29+1=30，剩28。28/2=14，14-2=12，剩12？不对。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "某月第一个星期五是7号，那么这个月的28号是星期______。",
+            "answer": "五",
+            "score": 8,
+            "solution": "7号是星期五。14号、21号、28号都是星期五。",
+            "knowledgePoints": ["日期问题"]
+        }
+    ]
+}

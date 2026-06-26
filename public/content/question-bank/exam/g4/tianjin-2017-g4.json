@@ -1,0 +1,126 @@
+{
+    "paperId": "tianjin-2017-g4",
+    "title": "2017年数学花园探秘（小高组）四年级决赛",
+    "grade": 4,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 4,
+    "year": 2017,
+    "source": "数学花园探秘全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共10题，每题10分，共100分）", "count": 10, "scorePerQuestion": 10}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：37 × 27 = ______。",
+            "answer": "999",
+            "score": 10,
+            "solution": "37×27=37×3×9=111×9=999。",
+            "knowledgePoints": ["乘法巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：1 + 2 + 3 + ... + 60 = ______。",
+            "answer": "1830",
+            "score": 10,
+            "solution": "等差数列求和：(1+60)×60/2=1830。",
+            "knowledgePoints": ["等差数列"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数除以9余7，除以8余6。这个数最小是______。",
+            "answer": "62",
+            "score": 10,
+            "solution": "除以9余7即差2能被9整除；除以8余6即差2能被8整除。LCM(8,9)=72。最小数=72-2=70？验证：70÷9=7余7，70÷8=8余6✓。",
+            "knowledgePoints": ["余数问题"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有35只，脚一共有100只。鸡有______只。",
+            "answer": "20",
+            "score": 10,
+            "solution": "假设全是兔：35×4=140脚。实际100脚，少40脚。鸡=40/2=20只。验证：鸡20只，兔15只，脚=20×2+15×4=40+60=100✓。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个正方形的面积是144平方厘米，它的边长是______厘米。",
+            "answer": "12",
+            "score": 10,
+            "solution": "边长×边长=144，12×12=144。",
+            "knowledgePoints": ["正方形"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数，先加上6，再乘以6，再减去6，再除以6，结果还是6。这个数是______。",
+            "answer": "1",
+            "score": 10,
+            "solution": "逆推：6×6=36，36+6=42，42÷6=7，7-6=1。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "在一条长60米的路两边种树，每隔6米种一棵，两端都种。一共种______棵。",
+            "answer": "22",
+            "score": 10,
+            "solution": "一边：60/6+1=10+1=11棵。两边：11×2=22棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "甲、乙两数的和是140，甲比乙多10。甲是______。",
+            "answer": "75",
+            "score": 10,
+            "solution": "设乙为x，甲为x+10。x+x+10=140，2x=130，x=65。甲=75。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "小明有70颗珠子，给了小红14颗后，两人的珠子一样多。小红原有______颗。",
+            "answer": "42",
+            "score": 10,
+            "solution": "小明剩70-14=56颗。两人一样多说明小红也有56颗，所以小红原有56-14=42颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一桶油连桶共重55千克，用了半桶油后连桶重30千克。桶重______千克。",
+            "answer": "5",
+            "score": 10,
+            "solution": "半桶油=55-30=25千克。全油=25×2=50千克。桶=55-50=5千克。",
+            "knowledgePoints": ["等量代换"]
+        }
+    ]
+}

@@ -1,0 +1,955 @@
+{
+  "topicId": "g2-equal-replace",
+  "topicName": "等量代换",
+  "grade": 2,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g2-er-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1只狗的重量=3只猫的重量，1只猫的重量=2只兔子的重量。1只狗的重量等于几只兔子的重量？",
+      "image": "",
+      "options": ["5只", "6只", "8只", "3只"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "1只狗 = 3只猫",
+        "1只猫 = 2只兔子",
+        "3只猫 = 3×2 = 6只兔子",
+        "所以 1只狗 = 6只兔子。"
+      ],
+      "hints": [
+        "把猫换成兔子",
+        "3只猫 = 3×2 = 6只兔子"
+      ],
+      "commonMistakes": [
+        {"mistake": "选5只", "reason": "3+2=5", "correction": "应该用乘法：3×2=6只", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "基础代换"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": -1.8, "c": 0.25 },
+      "tags": ["等量代换"]
+    },
+    {
+      "id": "g2-er-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1个苹果 = 2个梨，1个梨 = 3个樱桃。1个苹果 = ______个樱桃。",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": ["6"],
+      "solution": [
+        "1个苹果 = 2个梨",
+        "1个梨 = 3个樱桃",
+        "2个梨 = 2×3 = 6个樱桃",
+        "所以 1个苹果 = 6个樱桃。"
+      ],
+      "hints": [
+        "把梨换成樱桃",
+        "2×3=6个樱桃"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成5", "reason": "2+3=5", "correction": "应该用乘法：2×3=6", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换"],
+      "estimatedTime": 35,
+      "irtParams": { "a": 1.0, "b": -2.0, "c": 0.25 },
+      "tags": ["等量代换"]
+    },
+    {
+      "id": "g2-er-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "○ + ○ = 8，△ + △ + △ = 9。○ + △ = ?",
+      "image": "",
+      "options": ["6", "7", "8", "9"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "○ + ○ = 8，所以 ○ = 4",
+        "△ + △ + △ = 9，所以 △ = 3",
+        "○ + △ = 4 + 3 = 7"
+      ],
+      "hints": [
+        "先求○，再求△",
+        "8÷2=4，9÷3=3"
+      ],
+      "commonMistakes": [
+        {"mistake": "选8", "reason": "没算出△", "correction": "○=4，△=3，4+3=7", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "图形代换"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": -1.5, "c": 0.25 },
+      "tags": ["等量代换", "图形"]
+    },
+    {
+      "id": "g2-er-04",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "买1支钢笔的钱可以买3支圆珠笔，买1支圆珠笔的钱可以买2支铅笔。买1支钢笔的钱可以买多少支铅笔？",
+      "image": "",
+      "options": ["3支", "5支", "6支", "8支"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "1支钢笔 = 3支圆珠笔",
+        "1支圆珠笔 = 2支铅笔",
+        "3支圆珠笔 = 3×2 = 6支铅笔",
+        "所以 1支钢笔 = 6支铅笔。"
+      ],
+      "hints": [
+        "把钢笔→圆珠笔→铅笔",
+        "3支圆珠笔 = 3×2 = 6支铅笔"
+      ],
+      "commonMistakes": [
+        {"mistake": "选5支", "reason": "3+2=5", "correction": "应该用乘法：3×2=6支", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 0.0, "c": 0.25 },
+      "tags": ["等量代换"]
+    },
+    {
+      "id": "g2-er-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1头大象 = 5头小牛，1头小牛 = 4头小猪。1头大象 = ______头小猪。",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": ["20"],
+      "solution": [
+        "1头大象 = 5头小牛",
+        "1头小牛 = 4头小猪",
+        "5头小牛 = 5×4 = 20头小猪",
+        "所以 1头大象 = 20头小猪。"
+      ],
+      "hints": [
+        "5头小牛 = 5×4 = 20头小猪"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成9", "reason": "5+4=9", "correction": "应该用乘法：5×4=20", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 0.2, "c": 0.25 },
+      "tags": ["等量代换"]
+    },
+    {
+      "id": "g2-er-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "如果 ○ + ○ = △，△ + △ = □。那么 □ 等于几个 ○？",
+      "image": "",
+      "options": ["2个", "3个", "4个", "6个"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "○ + ○ = △，所以 △ = 2个○",
+        "△ + △ = □，所以 □ = 2个△",
+        "1个△ = 2个○，2个△ = 2×2 = 4个○",
+        "所以 □ = 4个○。"
+      ],
+      "hints": [
+        "△ = 2个○",
+        "□ = 2个△ = 4个○"
+      ],
+      "commonMistakes": [
+        {"mistake": "选2个", "reason": "只换到△就停了", "correction": "△=2○，□=2△=4○", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "图形代换"],
+      "estimatedTime": 55,
+      "irtParams": { "a": 1.0, "b": 0.3, "c": 0.25 },
+      "tags": ["等量代换", "图形"]
+    },
+    {
+      "id": "g2-er-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1条裤子的价钱=2件上衣的价钱，1件上衣的价钱=4双袜子的价钱。1条裤子的价钱等于几双袜子的价钱？",
+      "image": "",
+      "options": ["6双", "8双", "4双", "10双"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "1条裤子 = 2件上衣",
+        "1件上衣 = 4双袜子",
+        "2件上衣 = 2×4 = 8双袜子",
+        "所以 1条裤子 = 8双袜子。"
+      ],
+      "hints": [
+        "把上衣换成袜子",
+        "2×4=8双袜子"
+      ],
+      "commonMistakes": [
+        {"mistake": "选6双", "reason": "2+4=6", "correction": "应该用乘法：2×4=8双", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 0.5, "c": 0.25 },
+      "tags": ["等量代换"]
+    },
+    {
+      "id": "g2-er-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "☆ + ☆ = 12，◇ + ◇ + ◇ = 15。☆ + ◇ = ______。",
+      "image": "",
+      "options": [],
+      "answer": "11",
+      "acceptableAnswers": ["11"],
+      "solution": [
+        "☆ + ☆ = 12，所以 ☆ = 6",
+        "◇ + ◇ + ◇ = 15，所以 ◇ = 5",
+        "☆ + ◇ = 6 + 5 = 11"
+      ],
+      "hints": [
+        "☆=12÷2=6，◇=15÷3=5",
+        "6+5=11"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成8", "reason": "计算错", "correction": "☆=6，◇=5，6+5=11", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "图形代换"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.1, "c": 0.25 },
+      "tags": ["等量代换"]
+    },
+    {
+      "id": "g2-er-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1只公鸡的重量 = 3只兔子的重量，1只兔子的重量 = 2只鸭子的重量。如果1只鸭子重2千克，1只公鸡重多少千克？",
+      "image": "",
+      "options": ["6千克", "8千克", "10千克", "12千克"],
+      "answer": "3",
+      "acceptableAnswers": ["3"],
+      "solution": [
+        "1只鸭子 = 2千克",
+        "1只兔子 = 2只鸭子 = 2×2 = 4千克",
+        "1只公鸡 = 3只兔子 = 3×4 = 12千克",
+        "所以 1只公鸡重12千克。"
+      ],
+      "hints": [
+        "鸭子=2千克，兔子=2×2=4千克",
+        "公鸡=3×4=12千克"
+      ],
+      "commonMistakes": [
+        {"mistake": "选6千克", "reason": "3×2=6，忘记鸭子还要×2", "correction": "1只公鸡=3×2×2=12千克", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 0.6, "c": 0.25 },
+      "tags": ["等量代换"]
+    },
+    {
+      "id": "g2-er-10",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "如果 △ + ○ = 10，△ - ○ = 4。那么 △ = ?，○ = ?",
+      "image": "",
+      "options": ["△=7，○=3", "△=6，○=4", "△=8，○=2", "△=5，○=5"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "和 = 10，差 = 4",
+        "△ = (和 + 差) ÷ 2 = (10 + 4) ÷ 2 = 14 ÷ 2 = 7",
+        "○ = (和 - 差) ÷ 2 = (10 - 4) ÷ 2 = 6 ÷ 2 = 3",
+        "验算：7 + 3 = 10 ✓，7 - 3 = 4 ✓",
+        "所以 △ = 7，○ = 3。"
+      ],
+      "hints": [
+        "这是和差问题",
+        "较大数=(和+差)÷2，较小数=(和-差)÷2"
+      ],
+      "commonMistakes": [
+        {"mistake": "选△=6○=4", "reason": "猜的", "correction": "(10+4)÷2=7，(10-4)÷2=3", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "和差问题"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 1.0, "c": 0.25 },
+      "tags": ["等量代换", "和差问题"]
+    },
+    {
+      "id": "g2-er-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "1本故事书的价钱=3本漫画书的价钱，1本漫画书的价钱=2本练习本的价钱，1本练习本的价钱=4元。1本故事书=______元。",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": ["24"],
+      "solution": [
+        "1本练习本 = 4元",
+        "1本漫画书 = 2本练习本 = 2×4 = 8元",
+        "1本故事书 = 3本漫画书 = 3×8 = 24元",
+        "所以 1本故事书 = 24元。"
+      ],
+      "hints": [
+        "练习本→漫画书→故事书",
+        "4×2×3=24元"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成18", "reason": "4+2+3=9 或 4×3+2=14", "correction": "4×2=8，8×3=24元", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换"],
+      "estimatedTime": 65,
+      "irtParams": { "a": 1.0, "b": 0.8, "c": 0.25 },
+      "tags": ["等量代换"]
+    },
+    {
+      "id": "g2-er-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小红买了1支钢笔和1支圆珠笔共用12元。已知1支钢笔的价钱=3支圆珠笔的价钱。1支钢笔多少元？",
+      "image": "",
+      "options": ["3元", "6元", "8元", "9元"],
+      "answer": "3",
+      "acceptableAnswers": ["3"],
+      "solution": [
+        "1支钢笔 = 3支圆珠笔",
+        "1支钢笔 + 1支圆珠笔 = 3支圆珠笔 + 1支圆珠笔 = 4支圆珠笔",
+        "4支圆珠笔 = 12元",
+        "1支圆珠笔 = 12÷4 = 3元",
+        "1支钢笔 = 3×3 = 9元",
+        "验算：9+3=12元 ✓"
+      ],
+      "hints": [
+        "把钢笔换成圆珠笔",
+        "1支钢笔+1支圆珠笔=4支圆珠笔=12元",
+        "圆珠笔=3元，钢笔=9元"
+      ],
+      "commonMistakes": [
+        {"mistake": "选6元", "reason": "12÷2=6", "correction": "钢笔=3支圆珠笔，共4支圆珠笔=12元，1支=3元，钢笔=9元", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "应用题"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 1.1, "c": 0.25 },
+      "tags": ["等量代换", "应用"]
+    },
+    {
+      "id": "g2-er-13",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "○ + ○ = △，△ + △ + △ = □。如果 ○ = 2，那么 □ = ______。",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": ["12"],
+      "solution": [
+        "○ = 2",
+        "△ = ○ + ○ = 2 + 2 = 4（或 2×2 = 4）",
+        "□ = △ + △ + △ = 4 + 4 + 4 = 12（或 3×4 = 12）",
+        "所以 □ = 12。"
+      ],
+      "hints": [
+        "△=2×2=4，□=3×4=12"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成8", "reason": "2×4=8", "correction": "△=4，□=3×4=12", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "图形代换"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 0.7, "c": 0.25 },
+      "tags": ["等量代换"]
+    },
+    {
+      "id": "g2-er-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "如果 ☆ + ◇ = 15，☆ - ◇ = 5。那么 ☆ × ◇ = ?",
+      "image": "",
+      "options": ["36", "50", "100", "75"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "和 = 15，差 = 5",
+        "☆ = (15 + 5) ÷ 2 = 20 ÷ 2 = 10",
+        "◇ = (15 - 5) ÷ 2 = 10 ÷ 2 = 5",
+        "☆ × ◇ = 10 × 5 = 50",
+        "验算：10 + 5 = 15 ✓，10 - 5 = 5 ✓"
+      ],
+      "hints": [
+        "☆=(15+5)÷2=10，◇=(15-5)÷2=5",
+        "10×5=50"
+      ],
+      "commonMistakes": [
+        {"mistake": "选75", "reason": "15×5=75", "correction": "先求☆=10，◇=5，再相乘=50", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "和差问题"],
+      "estimatedTime": 75,
+      "irtParams": { "a": 1.0, "b": 1.2, "c": 0.25 },
+      "tags": ["等量代换", "和差问题"]
+    },
+    {
+      "id": "g2-er-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "1只鸭 + 1只鸡 = 7千克，1只鸭 + 1只鹅 = 9千克，1只鸡 + 1只鹅 = 10千克。1只鸭多少千克？",
+      "image": "",
+      "options": ["3千克", "4千克", "5千克", "6千克"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "把三个式子加起来：",
+        "(鸭+鸡) + (鸭+鹅) + (鸡+鹅) = 7+9+10 = 26千克",
+        "2鸭 + 2鸡 + 2鹅 = 26千克",
+        "鸭 + 鸡 + 鹅 = 13千克",
+        "因为 鸡+鹅 = 10千克，所以 鸭 = 13 - 10 = 3千克",
+        "验算：鸡=7-3=4千克，鹅=9-3=6千克，4+6=10 ✓"
+      ],
+      "hints": [
+        "先把三个式子全部加起来",
+        "2鸭+2鸡+2鹅=26，鸭+鸡+鹅=13",
+        "鸭=13-(鸡+鹅)=13-10=3千克"
+      ],
+      "commonMistakes": [
+        {"mistake": "选4千克", "reason": "7-3=4或算错", "correction": "(7+9+10)÷2=13，13-10=3千克", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "三元代换"],
+      "estimatedTime": 90,
+      "irtParams": { "a": 1.0, "b": 1.5, "c": 0.25 },
+      "tags": ["等量代换", "综合"]
+    },
+    {
+      "id": "g2-er-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "○ + △ = 8，△ + □ = 9，○ + □ = 11。那么 ○ = ______，△ = ______，□ = ______。",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": ["5"],
+      "solution": [
+        "把三个式子加起来：",
+        "○+△+△+□+○+□ = 8+9+11 = 28",
+        "2○ + 2△ + 2□ = 28",
+        "○ + △ + □ = 14",
+        "□ = 14 - (○+△) = 14 - 8 = 6",
+        "○ = 14 - (△+□) = 14 - 9 = 5",
+        "△ = 14 - (○+□) = 14 - 11 = 3",
+        "验算：5+3=8 ✓，3+6=9 ✓，5+6=11 ✓"
+      ],
+      "hints": [
+        "三个式子相加：2○+2△+2□=28",
+        "○+△+□=14",
+        "○=14-9=5，△=14-11=3，□=14-8=6"
+      ],
+      "commonMistakes": [
+        {"mistake": "乱猜", "reason": "不会做", "correction": "三式相加÷2=14，再逐个减", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "三元代换"],
+      "estimatedTime": 90,
+      "irtParams": { "a": 1.0, "b": 1.6, "c": 0.25 },
+      "tags": ["等量代换", "综合"]
+    },
+    {
+      "id": "g2-er-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "妈妈买3个苹果和2个梨共花18元，买3个苹果和4个梨共花24元。1个梨多少元？",
+      "image": "",
+      "options": ["2元", "3元", "4元", "5元"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "3个苹果 + 2个梨 = 18元 …(1)",
+        "3个苹果 + 4个梨 = 24元 …(2)",
+        "(2) - (1)得：2个梨 = 6元",
+        "1个梨 = 6÷2 = 3元",
+        "代入(1)：3个苹果 + 2×3 = 18，3个苹果 = 12元",
+        "1个苹果 = 4元",
+        "验算：3×4+2×3=12+6=18 ✓，3×4+4×3=12+12=24 ✓"
+      ],
+      "hints": [
+        "两个式子相减消掉苹果",
+        "(24-18)÷(4-2)=6÷2=3元/个梨"
+      ],
+      "commonMistakes": [
+        {"mistake": "选4元", "reason": "24-18=6，6元是2个梨不是1个", "correction": "6元是2个梨，1个梨=3元", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "消元法"],
+      "estimatedTime": 90,
+      "irtParams": { "a": 1.0, "b": 1.4, "c": 0.25 },
+      "tags": ["等量代换", "消元"]
+    },
+    {
+      "id": "g2-er-18",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "商店里，1支钢笔和2支圆珠笔共14元；同样的2支钢笔和1支圆珠笔共16元。1支钢笔和1支圆珠笔各多少元？",
+      "image": "",
+      "options": ["钢笔6元，圆珠笔4元", "钢笔5元，圆珠笔5元", "钢笔7元，圆珠笔3元", "钢笔8元，圆珠笔2元"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "1支钢笔 + 2支圆珠笔 = 14元 …(1)",
+        "2支钢笔 + 1支圆珠笔 = 16元 …(2)",
+        "(1)+(2)：3支钢笔 + 3支圆珠笔 = 30元",
+        "1支钢笔 + 1支圆珠笔 = 10元 …(3)",
+        "(1) - (3)：1支圆珠笔 = 14 - 10 = 4元",
+        "(2) - (3)：1支钢笔 = 16 - 10 = 6元",
+        "验算：6+2×4=14 ✓，2×6+4=16 ✓"
+      ],
+      "hints": [
+        "两式相加：3钢笔+3圆珠笔=30元",
+        "1钢笔+1圆珠笔=10元",
+        "圆珠笔=14-10=4元，钢笔=16-10=6元"
+      ],
+      "commonMistakes": [
+        {"mistake": "选钢笔5元圆珠笔5元", "reason": "14÷2≈7，16÷2=8，没仔细算", "correction": "3钢+3圆=30，1钢+1圆=10，圆珠笔=14-10=4，钢笔=16-10=6", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["等量代换", "消元法"],
+      "estimatedTime": 120,
+      "irtParams": { "a": 1.0, "b": 2.0, "c": 0.25 },
+      "tags": ["等量代换", "综合", "竞赛"]
+    },
+    {
+      "id": "g2-er-19",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "已知：1个苹果的重量 = 2个橘子的重量，1个橘子的重量 = 3颗草莓的重量。1个苹果的重量等于几颗草莓的重量？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": ["6", "6颗"],
+      "solution": [
+        "1苹果 = 2橘子",
+        "1橘子 = 3草莓",
+        "2橘子 = 2×3 = 6草莓",
+        "所以 1苹果 = 6草莓"
+      ],
+      "hints": [
+        "中间量是橘子",
+        "1个苹果=2个橘子，1个橘子=3颗草莓",
+        "2×3=6颗草莓"
+      ],
+      "commonMistakes": [
+        {"mistake": "5", "reason": "2+3=5，加错了", "correction": "2×3=6颗", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2008, "paper": "第六届希望杯二年级"},
+      "knowledgePoints": ["等量代换", "简单代换"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题"]
+    },
+    {
+      "id": "g2-er-20",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "小明买了3本练习本和2支铅笔，共花了14元；小红买了同样的3本练习本和5支铅笔，共花了20元。一支铅笔多少元？",
+      "image": "",
+      "options": ["2元", "3元", "4元", "5元"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "小明：3本 + 2笔 = 14元 …(1)",
+        "小红：3本 + 5笔 = 20元 …(2)",
+        "小红比小明多买了 5-2=3支铅笔，多花了 20-14=6元",
+        "3支铅笔 = 6元",
+        "1支铅笔 = 6÷3 = 2元"
+      ],
+      "hints": [
+        "两人都买了3本练习本，差价在铅笔上",
+        "多3支铅笔多6元",
+        "6÷3=2元"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1", "reason": "20-14=6, 6÷2=3，除错了", "correction": "多3支铅笔，6÷3=2元", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2009, "paper": "2009年迎春杯二年级"},
+      "knowledgePoints": ["等量代换", "消元法"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题"]
+    },
+    {
+      "id": "g2-er-21",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "1头猪可以换2只羊，1只羊可以换4只兔。2头猪可以换多少只兔？",
+      "image": "",
+      "options": [],
+      "answer": "16",
+      "acceptableAnswers": ["16", "16只"],
+      "solution": [
+        "1头猪 = 2只羊",
+        "2头猪 = 2×2 = 4只羊",
+        "1只羊 = 4只兔",
+        "4只羊 = 4×4 = 16只兔",
+        "所以 2头猪 = 16只兔"
+      ],
+      "hints": [
+        "先算2头猪换几只羊",
+        "2×2=4只羊",
+        "4×4=16只兔"
+      ],
+      "commonMistakes": [
+        {"mistake": "8", "reason": "2×4=8，只算了1头猪", "correction": "2头猪=16只兔", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2007, "paper": "第十二届华罗庚金杯少年组"},
+      "knowledgePoints": ["等量代换", "连锁代换"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.1, "b": 0.3, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题"]
+    },
+    {
+      "id": "g2-er-22",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "已知：△ + △ + ○ = 16，△ + ○ + ○ = 14。求：△ = ？ ○ = ？（答案格式：△值,○值）",
+      "image": "",
+      "options": [],
+      "answer": "6,4",
+      "acceptableAnswers": ["6,4", "6 4"],
+      "solution": [
+        "2△ + ○ = 16 …(1)",
+        "△ + 2○ = 14 …(2)",
+        "(1)+(2)：3△ + 3○ = 30",
+        "△ + ○ = 10 …(3)",
+        "(1)-(3)：△ = 16 - 10 = 6",
+        "(2)-(3)：○ = 14 - 10 = 4",
+        "验算：2×6+4=16 ✓，6+2×4=14 ✓"
+      ],
+      "hints": [
+        "两式相加：3△+3○=30",
+        "△+○=10",
+        "△=16-10=6，○=14-10=4"
+      ],
+      "commonMistakes": [
+        {"mistake": "8,6", "reason": "16÷2=8, 14÷2=7，猜的", "correction": "△=6, ○=4", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2010, "paper": "第八届走美杯二年级"},
+      "knowledgePoints": ["等量代换", "图形算式"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题"]
+    },
+    {
+      "id": "g2-er-23",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有大、小两个水桶，一共装水20千克。两个水桶都倒出同样多的水后，小桶还有3千克，大桶还有9千克。原来大桶有多少千克水？",
+      "image": "",
+      "options": [],
+      "answer": "13",
+      "acceptableAnswers": ["13", "13千克"],
+      "solution": [
+        "一共20千克，倒完后一共还有：3+9=12千克",
+        "一共倒出了：20-12=8千克",
+        "两桶倒出同样多，每桶倒出：8÷2=4千克",
+        "原来大桶：9+4=13千克",
+        "原来小桶：3+4=7千克",
+        "验算：13+7=20 ✓"
+      ],
+      "hints": [
+        "先算一共倒出多少水",
+        "20-(3+9)=8千克",
+        "每桶倒出4千克",
+        "大桶原来=9+4=13千克"
+      ],
+      "commonMistakes": [
+        {"mistake": "16", "reason": "20-3-1=16，乱算的", "correction": "大桶原来13千克", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2011, "paper": "第九届希望杯二年级"},
+      "knowledgePoints": ["等量代换", "和差问题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题"]
+    },
+    {
+      "id": "g2-er-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "天平上有三种水果：菠萝、西瓜和哈密瓜。已知：1个菠萝 + 1个西瓜 = 7千克，1个西瓜 + 1个哈密瓜 = 10千克，1个菠萝 + 1个哈密瓜 = 9千克。那么1个西瓜重多少千克？",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": ["4", "4千克"],
+      "solution": [
+        "把三个式子全部加起来：",
+        "(菠萝+西瓜) + (西瓜+哈密瓜) + (菠萝+哈密瓜) = 7+10+9 = 26千克",
+        "2菠萝 + 2西瓜 + 2哈密瓜 = 26千克",
+        "菠萝 + 西瓜 + 哈密瓜 = 13千克",
+        "因为 菠萝+哈密瓜 = 9千克",
+        "所以 西瓜 = 13 - 9 = 4千克",
+        "验算：菠萝=7-4=3千克，哈密瓜=10-4=6千克，3+6=9 ✓"
+      ],
+      "hints": [
+        "三式相加，得到2份水果的总重量",
+        "26÷2=13千克，是三种水果各1个的重量",
+        "西瓜=总重量-(菠萝+哈密瓜)=13-9=4千克"
+      ],
+      "commonMistakes": [
+        {"mistake": "6", "reason": "10-4=6，把哈密瓜当西瓜了", "correction": "西瓜=4千克，哈密瓜=6千克", "errorLayer": "L3"},
+        {"mistake": "3", "reason": "7-4=3，把菠萝当西瓜了", "correction": "用三式相加的方法，西瓜=4千克", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2012, "paper": "第十届希望杯二年级"},
+      "knowledgePoints": ["等量代换", "三元代换", "天平代换"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.3, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题", "天平"]
+    },
+    {
+      "id": "g2-er-25",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "学校买了4个足球和2个篮球，共花了140元；买同样的4个足球和5个篮球，共花了200元。一个篮球多少元？",
+      "image": "",
+      "options": ["15元", "20元", "25元", "30元"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "4足球 + 2篮球 = 140元 …(1)",
+        "4足球 + 5篮球 = 200元 …(2)",
+        "(2) - (1) 得：3篮球 = 60元",
+        "1篮球 = 60 ÷ 3 = 20元",
+        "代入(1)：4足球 + 2×20 = 140",
+        "4足球 = 140 - 40 = 100元",
+        "1足球 = 25元",
+        "验算：4×25+2×20=100+40=140 ✓，4×25+5×20=100+100=200 ✓"
+      ],
+      "hints": [
+        "两次购买都有4个足球，差价在篮球上",
+        "多买了5-2=3个篮球，多花了200-140=60元",
+        "60÷3=20元/个篮球"
+      ],
+      "commonMistakes": [
+        {"mistake": "选25元", "reason": "算成足球的价格了", "correction": "篮球20元，足球25元", "errorLayer": "L3"},
+        {"mistake": "选30元", "reason": "60÷2=30，除错了", "correction": "多3个篮球，60÷3=20元", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2011, "paper": "2011年迎春杯二年级"},
+      "knowledgePoints": ["等量代换", "消元法", "应用题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.1, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题", "消元"]
+    },
+    {
+      "id": "g2-er-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "已知：☆ + ☆ + ◇ + ◇ = 20，☆ + ☆ + ◇ + ◇ + ◇ = 24。求：☆ = ？（答案只填数字）",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": ["6"],
+      "solution": [
+        "2☆ + 2◇ = 20 …(1)",
+        "2☆ + 3◇ = 24 …(2)",
+        "(2) - (1) 得：◇ = 4",
+        "把◇=4代入(1)：2☆ + 2×4 = 20",
+        "2☆ + 8 = 20",
+        "2☆ = 12",
+        "☆ = 6",
+        "验算：2×6+2×4=12+8=20 ✓，2×6+3×4=12+12=24 ✓"
+      ],
+      "hints": [
+        "两个式子相减，消掉☆",
+        "第二个式子比第一个多1个◇，多了24-20=4",
+        "所以◇=4，再求☆=6"
+      ],
+      "commonMistakes": [
+        {"mistake": "4", "reason": "把◇当成☆了", "correction": "◇=4，☆=6", "errorLayer": "L3"},
+        {"mistake": "8", "reason": "20÷2-2=8，乱算的", "correction": "◇=4，☆=6", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2009, "paper": "第十四届华罗庚金杯少年组"},
+      "knowledgePoints": ["等量代换", "图形代换", "消元法"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.4, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题", "图形"]
+    },
+    {
+      "id": "g2-er-27",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "文具店里，2支钢笔 + 3支圆珠笔 = 23元；3支钢笔 + 2支圆珠笔 = 27元。1支钢笔比1支圆珠笔贵多少元？",
+      "image": "",
+      "options": ["2元", "3元", "4元", "5元"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "2钢 + 3圆 = 23元 …(1)",
+        "3钢 + 2圆 = 27元 …(2)",
+        "方法一：两式相加",
+        "(1)+(2)：5钢 + 5圆 = 50元",
+        "1钢 + 1圆 = 10元 …(3)",
+        "(3)×2：2钢 + 2圆 = 20元 …(4)",
+        "(1)-(4)：圆 = 3元",
+        "(2)-(4)：钢 = 7元",
+        "钢笔比圆珠笔贵：7 - 3 = 4元",
+        "方法二：(2)-(1)直接得：钢 - 圆 = 4元",
+        "验算：2×7+3×3=14+9=23 ✓，3×7+2×3=21+6=27 ✓"
+      ],
+      "hints": [
+        "方法一：先相加求1钢+1圆=10元，再分别求单价",
+        "方法二：第二个式子减第一个式子，直接得到钢笔比圆珠笔贵多少",
+        "(3钢+2圆)-(2钢+3圆)=钢-圆=27-23=4元"
+      ],
+      "commonMistakes": [
+        {"mistake": "选2元", "reason": "23和27都÷2≈10，猜的", "correction": "用(2)-(1)直接得差=4元", "errorLayer": "L4"},
+        {"mistake": "选3元", "reason": "算错了", "correction": "27-23=4元", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2012, "paper": "第十届走美杯二年级"},
+      "knowledgePoints": ["等量代换", "消元法", "两式加减"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.3, "b": 1.8, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题", "消元"]
+    },
+    {
+      "id": "g2-er-28",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有红、黄、蓝、绿四种颜色的球。已知：红球+黄球+蓝球=20个，黄球+蓝球+绿球=25个，红球+蓝球+绿球=22个，红球+黄球+绿球=23个。红球有多少个？",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": ["5", "5个"],
+      "solution": [
+        "把四个式子全部加起来：",
+        "3红 + 3黄 + 3蓝 + 3绿 = 20+25+22+23 = 90个",
+        "红 + 黄 + 蓝 + 绿 = 30个",
+        "因为 黄+蓝+绿 = 25个",
+        "所以 红球 = 30 - 25 = 5个",
+        "验证：黄球=30-22=8个，蓝球=30-23=7个，绿球=30-20=10个",
+        "5+8+7=20 ✓，8+7+10=25 ✓，5+7+10=22 ✓，5+8+10=23 ✓"
+      ],
+      "hints": [
+        "四个式子相加，每种球都出现3次",
+        "总和÷3 = 四种球各1份的数量",
+        "红球 = 总数 - (黄+蓝+绿) = 30-25=5个"
+      ],
+      "commonMistakes": [
+        {"mistake": "10", "reason": "把绿球当红球了", "correction": "红球5个，绿球10个", "errorLayer": "L4"},
+        {"mistake": "8", "reason": "把黄球当红球了", "correction": "四式相加÷2=30，红球=30-25=5个", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2013, "paper": "第十一届希望杯二年级"},
+      "knowledgePoints": ["等量代换", "四元代换", "整体代换"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.3, "b": 2.0, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题", "综合"]
+    },
+    {
+      "id": "g2-er-29",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "甲、乙、丙三人共有30元钱。甲比乙多2元，乙比丙多2元。甲有多少元钱？",
+      "image": "",
+      "options": ["10元", "11元", "12元", "13元"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "甲 + 乙 + 丙 = 30元",
+        "甲 = 乙 + 2，乙 = 丙 + 2，所以 甲 = 丙 + 4",
+        "把甲和乙都换成丙：",
+        "(丙+4) + (丙+2) + 丙 = 30",
+        "3丙 + 6 = 30",
+        "3丙 = 24",
+        "丙 = 8元",
+        "乙 = 8 + 2 = 10元",
+        "甲 = 10 + 2 = 12元",
+        "验算：12+10+8=30 ✓，12-10=2 ✓，10-8=2 ✓"
+      ],
+      "hints": [
+        "画线段图，丙最少，甲比丙多4元，乙比丙多2元",
+        "30 - 4 - 2 = 24元，这是3个丙的钱",
+        "丙=8元，甲=8+4=12元"
+      ],
+      "commonMistakes": [
+        {"mistake": "选10元", "reason": "30÷3=10，以为平均分配", "correction": "三人不一样多，甲12元，乙10元，丙8元", "errorLayer": "L4"},
+        {"mistake": "选11元", "reason": "30÷3+1=11，算错了", "correction": "甲比丙多4元，(30-6)÷3=8是丙，甲=12元", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2013, "paper": "2013年迎春杯二年级"},
+      "knowledgePoints": ["等量代换", "和差问题", "多量代换"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.3, "b": 1.9, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题", "应用"]
+    },
+    {
+      "id": "g2-er-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有大小两种盒，2个大盒和3个小盒共装了36个球；4个大盒和5个小盒共装了68个球。1个大盒装多少个球？",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": ["12", "12个"],
+      "solution": [
+        "2大 + 3小 = 36个 …(1)",
+        "4大 + 5小 = 68个 …(2)",
+        "把(1)×2：4大 + 6小 = 72个 …(3)",
+        "(3) - (2) 得：1小 = 4个",
+        "代入(1)：2大 + 3×4 = 36",
+        "2大 + 12 = 36",
+        "2大 = 24",
+        "大 = 12个",
+        "验算：2×12+3×4=24+12=36 ✓，4×12+5×4=48+20=68 ✓"
+      ],
+      "hints": [
+        "把第一个式子乘2，让大盒数量相同",
+        "4大+6小=72个，减去第二个式子，消掉大盒",
+        "1小=4个，再求大盒=12个"
+      ],
+      "commonMistakes": [
+        {"mistake": "8", "reason": "36÷4=9，68÷9≈7，乱猜的", "correction": "用扩倍消元法，大盒12个，小盒4个", "errorLayer": "L4"},
+        {"mistake": "6", "reason": "36÷6=6，以为都是6个", "correction": "大盒12个，小盒4个", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2011, "paper": "第十六届华罗庚金杯少年组"},
+      "knowledgePoints": ["等量代换", "消元法", "扩倍消元"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.3, "b": 2.2, "c": 0.25},
+      "tags": ["等量代换", "竞赛真题", "消元", "综合"]
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+    "paperId": "xiwang-3-g1",
+    "title": "第三届小学《希望杯》全国数学邀请赛 一年级（第二试）",
+    "grade": 1,
+    "category": "aoshu-xiwang",
+    "duration": 60,
+    "totalScore": 120,
+    "difficultyLevel": 2,
+    "year": 2005,
+    "source": "希望杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "一、填空题（每题6分，共60分）", "count": 10, "scorePerQuestion": 6},
+        {"name": "二、解答题（每题12分，共60分）", "count": 5, "scorePerQuestion": 12}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：10+20+30+40+50 = ______。",
+            "answer": "150",
+            "score": 6,
+            "solution": "等差数列求和：(10+50)×5÷2=60×5÷2=150。或逐个相加：10+20=30，+30=60，+40=100，+50=150。",
+            "knowledgePoints": ["等差数列", "巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "找规律填数：2、6、10、14、______、22。",
+            "answer": "18",
+            "score": 6,
+            "solution": "规律：每次加4。2+4=6，6+4=10，10+4=14，14+4=18，18+4=22。答案：18。",
+            "knowledgePoints": ["等差数列", "找规律"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小明买了一个书包花了18元，又买了一支笔花了3元。小明一共花了______元。",
+            "answer": "21",
+            "score": 6,
+            "solution": "18+3=21元。小明一共花了21元。",
+            "knowledgePoints": ["简单加法"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小华有25颗弹珠，他送给小丽8颗，又送给小强5颗。小华还剩______颗弹珠。",
+            "answer": "12",
+            "score": 6,
+            "solution": "小华送出8+5=13颗，还剩25-13=12颗。",
+            "knowledgePoints": ["连减应用题"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个正方形和一个三角形一共有______条边。",
+            "answer": "7",
+            "score": 6,
+            "solution": "正方形有4条边，三角形有3条边，4+3=7条边。",
+            "knowledgePoints": ["图形边数"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "有3排学生，每排有5人，一共有______人。",
+            "answer": "15",
+            "score": 6,
+            "solution": "每排5人，3排共有3×5=15人。",
+            "knowledgePoints": ["乘法应用"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "把一根绳子剪成5段，需要剪______次。",
+            "answer": "4",
+            "score": 6,
+            "solution": "剪成5段，只需剪4次。规律：剪的次数=段数-1。",
+            "knowledgePoints": ["剪绳子问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小明从1楼走到3楼，共走了18级台阶。每层楼有______级台阶。",
+            "answer": "9",
+            "score": 6,
+            "solution": "从1楼到3楼，走了2层楼梯（上1→2是一层，2→3是一层）。18÷2=9级。所以每层楼有9级台阶。",
+            "knowledgePoints": ["植树问题", "间隔问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小红看一本书，第一天看了8页，第二天看了9页，第三天看了7页。小红三天共看了______页。",
+            "answer": "24",
+            "score": 6,
+            "solution": "8+9+7=24页。小红三天共看了24页。",
+            "knowledgePoints": ["连加应用题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "水果店有苹果和梨共30个，苹果比梨多8个。苹果有______个。",
+            "answer": "19",
+            "score": 6,
+            "solution": "设梨有x个，则苹果有x+8个。x+(x+8)=30，2x=22，x=11。苹果=11+8=19个。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）学校有36名学生，派出5人去打扫除，又派出8人去浇花，还剩多少名学生？",
+            "answer": "23",
+            "score": 12,
+            "solution": "36-5-8=23人。还剩23名学生。",
+            "knowledgePoints": ["连减应用题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）小红买了3本练习本，每本5角钱，又买了一支铅笔8角钱。小红一共花了多少钱？",
+            "answer": "23",
+            "score": 12,
+            "solution": "3本练习本：3×5=15角。铅笔8角。总共15+8=23角=2元3角。",
+            "knowledgePoints": ["乘法应用", "加法应用"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）把12个苹果平均分给4个小朋友，每个小朋友分到几个苹果？如果每个小朋友分到3个苹果，需要多少个苹果？",
+            "answer": "3,12",
+            "score": 12,
+            "solution": "平均分：12÷4=3个。如果每人3个，需要4×3=12个苹果。",
+            "knowledgePoints": ["平均分", "除法应用"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）小华今年8岁，小明比小华小3岁，小亮比小明大2岁。小明和小亮各多少岁？",
+            "answer": "5,7",
+            "score": 12,
+            "solution": "小华8岁，小明8-3=5岁，小亮5+2=7岁。",
+            "knowledgePoints": ["年龄问题", "和差关系"]
+        },
+        {
+            "id": "q15",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）把20颗糖装进盒子里，每个盒子装6颗，需要几个盒子？还剩几颗？",
+            "answer": "3,2",
+            "score": 12,
+            "solution": "20÷6=3(个)……2(颗)。需要3个盒子，还剩2颗糖。",
+            "knowledgePoints": ["有余数的除法"]
+        }
+    ]
+}

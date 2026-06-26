@@ -1,0 +1,226 @@
+{
+    "paperId": "xiwang-1-g4",
+    "title": "第一届小学《希望杯》全国数学邀请赛 四年级（第二试）",
+    "grade": 4,
+    "category": "aoshu-xiwang",
+    "duration": 90,
+    "totalScore": 120,
+    "difficultyLevel": 2,
+    "year": 2003,
+    "source": "希望杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "一、填空题（每题6分，共90分）", "count": 15, "scorePerQuestion": 6},
+        {"name": "二、解答题（每题15分，共60分）", "count": 4, "scorePerQuestion": 15}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：25 × 32 × 125 = ______。",
+            "answer": "100000",
+            "score": 6,
+            "solution": "25×32×125=25×4×8×125=100×1000=100000。",
+            "knowledgePoints": ["速算与巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：1 + 2 + 3 + ... + 20 = ______。",
+            "answer": "210",
+            "score": 6,
+            "solution": "等差数列求和：(1+20)×20÷2=21×10=210。",
+            "knowledgePoints": ["等差数列"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "规定 a★b = a × b - a + b，那么 5★8 = ______。",
+            "answer": "43",
+            "score": 6,
+            "solution": "5★8=5×8-5+8=40-5+8=43。",
+            "knowledgePoints": ["定义新运算"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小朋友分糖果，如果每人分5颗则多8颗；如果每人分7颗则少4颗。有______位小朋友。",
+            "answer": "6",
+            "score": 6,
+            "solution": "盈亏问题：(8+4)÷(7-5)=12÷2=6位小朋友。糖果数=5×6+8=38颗。",
+            "knowledgePoints": ["盈亏问题"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "鸡和兔关在同一个笼子里，共有头20个，脚56只。兔有______只。",
+            "answer": "8",
+            "score": 6,
+            "solution": "设全是鸡：20×2=40脚。少56-40=16只脚。兔=16÷(4-2)=8只。鸡=12只。验证：8×4+12×2=32+24=56。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "今年爸爸30岁，儿子6岁。______年后爸爸的年龄是儿子的3倍。",
+            "answer": "6",
+            "score": 6,
+            "solution": "年龄差24岁不变。3倍时差2份=24，1份=12。儿子12岁时，是6年后。",
+            "knowledgePoints": ["年龄问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "甲、乙两数的和是84，甲数是乙数的3倍。甲数是______。",
+            "answer": "63",
+            "score": 6,
+            "solution": "和倍问题：乙=84÷(3+1)=21，甲=21×3=63。",
+            "knowledgePoints": ["和差倍"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个数加上8，乘以8，减去8，除以8，结果还是8。这个数是______。",
+            "answer": "1",
+            "score": 6,
+            "solution": "逆推：8×8=64，64+8=72，72÷8=9，9-8=1。验证：((1+8)×8-8)÷8=(72-8)÷8=64÷8=8。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "在一条长120米的小路两旁植树，两端各植一棵，每隔4米植一棵。一共植______棵。",
+            "answer": "62",
+            "score": 6,
+            "solution": "一旁：120÷4+1=31棵。两旁共31×2=62棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个正方形的池塘四周种树，每边种10棵（四个角都种）。四周共种______棵。",
+            "answer": "36",
+            "score": 6,
+            "solution": "方阵问题：每边10棵，四边=(10-1)×4=36棵。",
+            "knowledgePoints": ["方阵问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "甲、乙两地相距360千米。一辆汽车从甲地出发，每小时行60千米，几小时到达乙地？",
+            "answer": "6",
+            "score": 6,
+            "solution": "时间=路程÷速度=360÷60=6小时。",
+            "knowledgePoints": ["行程问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "在下面的加法竖式中，相同的汉字代表相同的数字，不同的汉字代表不同的数字。那么\"希\"+\"望\"+\"杯\"= ______。\n  希 望 望\n+   希 望\n= 杯 希 杯",
+            "answer": "24",
+            "score": 6,
+            "solution": "设希=a，望=b，杯=c。百位只有a+进位=c+10（有进位）。个位2b≡c mod 10。十位b+希+进位≡希 mod 10 → b+进位≡0 mod 10 → b=9，进位1。个位9+9=18，c=8，进位1。十位9+希+1=希+10，进位1到百位。百位希+1=c+10=8+10=18 → 希=7。799+79=878 ✓。和=7+9+8=24。",
+            "knowledgePoints": ["数字谜"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小强、小明、小华三人比身高。小强说：\"我比小明高。\"小明说：\"我比小华矮。\"小华说：\"我比小强高。\"那么最矮的是______。",
+            "answer": "小明",
+            "score": 6,
+            "solution": "由小强>小明，小华>小明，小华>小强。排序：小华>小强>小明。最矮的是小明。",
+            "knowledgePoints": ["逻辑推理"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个班有40人，会下象棋的有25人，会下围棋的有20人，两种棋都会下的有10人。两种棋都不会下的有______人。",
+            "answer": "5",
+            "score": 6,
+            "solution": "会下棋人数=25+20-10=35人。都不会=40-35=5人。",
+            "knowledgePoints": ["容斥原理"]
+        },
+        {
+            "id": "q15",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一副扑克牌去掉大小王后共52张，从中至少抽______张才能保证有3张同花色的牌。",
+            "answer": "9",
+            "score": 6,
+            "solution": "抽屉原理：4种花色各2张共8张，再抽1张必有3张同花色。至少2×4+1=9张。",
+            "knowledgePoints": ["抽屉原理"]
+        },
+        {
+            "id": "q16",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）小明和小红分别从相距800米的A、B两地同时出发，相向而行。小明每分钟走60米，小红每分钟走40米。两人几分钟后相遇？",
+            "answer": "8",
+            "score": 15,
+            "solution": "相遇时间=800÷(60+40)=800÷100=8分钟。",
+            "knowledgePoints": ["行程问题", "相遇问题"]
+        },
+        {
+            "id": "q17",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）一项工程，甲单独做需要12天完成，乙单独做需要18天完成。两人合作几天可以完成这项工程？",
+            "answer": "7.2",
+            "score": 15,
+            "solution": "甲效1/12，乙效1/18。合效=3/36+2/36=5/36。时间=1÷5/36=36/5=7.2天。",
+            "knowledgePoints": ["工程问题"]
+        },
+        {
+            "id": "q18",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）甲、乙两车同时从A城出发去B城。甲车每小时行60千米，乙车每小时行45千米。甲车到达B城后立即返回，途中与乙车相遇。已知A、B两城相距210千米。两车从出发到相遇共用了几小时？",
+            "answer": "4",
+            "score": 15,
+            "solution": "两车共行2×210=420千米。合速度60+45=105千米/时。时间=420÷105=4小时。",
+            "knowledgePoints": ["行程问题", "相遇问题"]
+        },
+        {
+            "id": "q19",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）学校组织春游，原计划每辆车坐30人，还多1人；后来又增加了94人，却比原计划少一辆车，这样每辆车要坐35人，还多出5个空位。原计划租多少辆车？原计划有多少人？（答案只填原计划车辆数）",
+            "answer": "27",
+            "score": 15,
+            "solution": "设原计划x辆车，原人数=30x+1。加94人后=30x+95人，车辆=x-1辆。35(x-1)=30x+95+5=30x+100。35x-35=30x+100，5x=135，x=27。原人数=30×27+1=811人。验证：加94人=905人，26辆×35=910，剩5空位。✓",
+            "knowledgePoints": ["盈亏问题"]
+        }
+    ]
+}

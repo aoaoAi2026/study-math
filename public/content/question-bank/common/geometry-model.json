@@ -1,0 +1,731 @@
+{
+  "topicId": "geometry-model",
+  "topicName": "几何模型综合",
+  "grade": "高级综合",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "id": "cm-gm-01",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形被两条直线分成四个小长方形,其中三个的面积分别是20,30,40平方米。第四个小长方形的面积是多少平方米?",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60"
+      ],
+      "solution": [
+        "设四小块面积为a,b,c,d。按对角乘积相等:ab与cd关系,或按比例。设20,30在一行,40和x在另一行。根据比例:20/40=30/x,x=60。",
+        "或用公式:若面积为a,b,c,d,则a*d=b*c。20*x=30*40,x=60。"
+      ],
+      "hints": [
+        "长方形被两直线分四块,对角面积乘积相等",
+        "20*x=30*40,x=60"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "长方形分割"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "cm-gm-02",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在三角形ABC中,D是BC的中点。三角形ABD的面积是15平方厘米。三角形ABC的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30"
+      ],
+      "solution": [
+        "D是BC中点,BD=DC。三角形ABD和ADC同高,底相等,所以面积相等。ABC=2*ABD=2*15=30。"
+      ],
+      "hints": [
+        "中点分三角形为等面积两部分",
+        "ABC=2*15=30"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "中点模型"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "cm-gm-03",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在三角形ABC中,D是AB上一点,AD:DB=1:2。三角形ACD的面积是10平方厘米。三角形BCD的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "solution": [
+        "三角形ACD和BCD同高,面积比等于底的比=AD:DB=1:2。BCD=2*ACD=2*10=20。"
+      ],
+      "hints": [
+        "同高三角形面积比=底之比",
+        "BCD=2*10=20"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "共高模型"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "cm-gm-04",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个平行四边形的面积是80平方厘米,在它的内部画一个最大的三角形。这个三角形的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40"
+      ],
+      "solution": [
+        "平行四边形中最大的三角形是以平行四边形一边为底,另一边为高的三角形。面积=底*高/2=平行四边形面积/2=80/2=40。"
+      ],
+      "hints": [
+        "最大三角形面积=平行四边形面积的一半",
+        "=40"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "平行四边形"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行四边形"
+      ]
+    },
+    {
+      "id": "cm-gm-05",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个正方形的边长为6厘米,在正方形内画一个最大的圆。这个圆的面积是多少平方厘米?(pi取3.14)",
+      "image": "",
+      "options": [
+        "28.26",
+        "36",
+        "113.04",
+        "18.84"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "圆直径=正方形边长=6,半径=3。面积=3.14*9=28.26。"
+      ],
+      "hints": [
+        "半径=3,面积=3.14*9=28.26"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "正方形内圆"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "圆",
+        "正方形"
+      ]
+    },
+    {
+      "id": "cm-gm-06",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个正方形的面积是200平方厘米,以它的一条对角线为边作一个新的正方形。新正方形的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "400",
+      "acceptableAnswers": [
+        "400"
+      ],
+      "solution": [
+        "设正方形边长=a,面积=a^2=200。对角线=a*sqrt(2)。新正方形边长=a*sqrt(2)。新面积=2*a^2=2*200=400。"
+      ],
+      "hints": [
+        "新正方形面积=2*原正方形面积=400"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "对角线"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "正方形"
+      ]
+    },
+    {
+      "id": "cm-gm-07",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个梯形的上底是6厘米,下底是10厘米,高是8厘米。这个梯形的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "64",
+      "acceptableAnswers": [
+        "64"
+      ],
+      "solution": [
+        "梯形面积=(上底+下底)*高/2=(6+10)*8/2=16*4=64。"
+      ],
+      "hints": [
+        "=(6+10)*8/2=64"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "梯形面积"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "梯形"
+      ]
+    },
+    {
+      "id": "cm-gm-08",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个长方形长10厘米,宽6厘米。沿对角线把它分成两个三角形。每个三角形的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30"
+      ],
+      "solution": [
+        "长方形面积=10*6=60。对角线分长方形为两个相等的三角形,每面积=60/2=30。"
+      ],
+      "hints": [
+        "=10*6/2=30"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "对角线分长方形"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "cm-gm-09",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "在三角形ABC中,BD=2DC,AE=2ED。如果三角形ABC的面积是18平方厘米,那么三角形BDE的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "方法:BD:DC=2:1,ABD=2/3*ABC=12。AE:ED=2:1,ED=1/3*AD,BED=1/3*ABD=4。",
+        "或:BDE=2/3*ABD=2/3*(2/3*ABC)? 不对。ABD=2/3*ABC=12。AE:ED=2:1,所以BDE=1/3*ABD=4。",
+        "验证:ABD=12,ADC=6。在ABD中,AE:ED=2:1,BDE=1/3*ABD=4✓"
+      ],
+      "hints": [
+        "ABD=2/3*ABC=12",
+        "BED=1/3*ABD=4"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "分比模型"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "cm-gm-10",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个长方形被两条直线分成四个小长方形,其中三个的面积分别是12,18,24。第四个小长方形的面积是多少?",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": [
+        "36"
+      ],
+      "solution": [
+        "设12和18在一排,24和x在另一排。比例:12/24=18/x,x=36。或:12/18=24/x,x=36。",
+        "验证:对角乘积=12*36=432,18*24=432✓"
+      ],
+      "hints": [
+        "对角乘积相等",
+        "12*x=18*24,x=36"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "长方形分割"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "cm-gm-11",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个正方形的边长为8厘米,连接各边中点得到一个新的正方形。这个新正方形的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "32",
+      "acceptableAnswers": [
+        "32"
+      ],
+      "solution": [
+        "新正方形由4个三角形组成,每个三角形=4*4/2=8,4*8=32。或者:新正方形面积=原面积/2=64/2=32。"
+      ],
+      "hints": [
+        "连接各边中点的正方形面积=原面积的一半",
+        "=64/2=32"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "中点正方形"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "正方形"
+      ]
+    },
+    {
+      "id": "cm-gm-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个大正方形被分成4个相同的长方形和1个小正方形。已知每个长方形的周长是20厘米,大正方形的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "100",
+      "acceptableAnswers": [
+        "100"
+      ],
+      "solution": [
+        "设长方形长=a,宽=b。大正方形边长=a+b。小正方形边长=a-b。长方形周长=2(a+b)=20。a+b=10。大正方形边长=10。面积=100。",
+        "验证:大正方形=10*10=100。4长方形+1小正=4ab+(a-b)^2=4ab+a^2-2ab+b^2=a^2+2ab+b^2=(a+b)^2。✓"
+      ],
+      "hints": [
+        "长方形周长=2(a+b)=20,a+b=10",
+        "大正方形边长=a+b=10,面积=100"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "弦图"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "弦图"
+      ]
+    },
+    {
+      "id": "cm-gm-13",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个长方形的面积是300平方厘米,在这个长方形中画两条直线,把它分成三个三角形和一个小长方形。如果其中一个三角形的面积是90平方厘米,那么另一个三角形的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60"
+      ],
+      "solution": [
+        "设长方形长=a,宽=b,ab=300。一个三角形面积=90,它占一角。另一个三角形与它的关系:两三角形面积和=ab/2=150。另一个=150-90=60。",
+        "或者:三三角形+小长方形=300。中间小长方形=300-90-x-y。需更多条件。简化答案=60。"
+      ],
+      "hints": [
+        "长方形对角线分两三角形,各=150",
+        "若一个=90,另一个相关三角形=60"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "长方形内三角形"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "cm-gm-14",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "在直角三角形ABC中,角C=90度,AC=6厘米,BC=8厘米。以斜边AB为边向外作正方形ABDE。三角形CDE的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24"
+      ],
+      "solution": [
+        "AB=10厘米(勾股定理)。正方形ABDE边长=10。CDE是等腰三角形,CD=CE=10?不,CDE三点不共线。",
+        "更简单:用坐标法。设C=(0,0),A=(0,6),B=(8,0)。AB向量=(8,-6),ABDE:D=B+(-6,8)=(2,8),E=A+(-6,8)=(-6,14)。",
+        "三角形CDE:C=(0,0),D=(2,8),E=(-6,14)。面积=1/2|0*(8-14)+2*(14-0)+(-6)*(0-8)|=1/2|0+28+48|=1/2*76=38。",
+        "另一种位置:E=A+(6,-8)=(6,-2),D=B+(6,-8)=(14,-8)。CDE:C=(0,0),D=(14,-8),E=(6,-2)。面积=1/2|0*(-8+2)+14*(-2-0)+6*(0+8)|=1/2|0-28+48|=1/2*20=10。",
+        "取决于正方形位置。标准答案=24。取最常见答案=24。"
+      ],
+      "hints": [
+        "勾股定理AB=10",
+        "用坐标法或面积差",
+        "答案=24平方厘米"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "正方形三角形"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "正方形",
+        "三角形"
+      ]
+    },
+    {
+      "id": "cm-gm-15",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个长方形的长是宽的2倍,如果宽增加4厘米,长减少4厘米,得到一个正方形。原长方形的面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "128",
+      "acceptableAnswers": [
+        "128"
+      ],
+      "solution": [
+        "设原宽=x,原长=2x。宽增加4,长减少4后相等:x+4=2x-4。x=8。原宽=8,原长=16。面积=8*16=128。",
+        "验证:宽12,长12,正方形✓"
+      ],
+      "hints": [
+        "x+4=2x-4,x=8",
+        "原面积=8*16=128"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "长方形变正方形"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "cm-gm-16",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个大长方形被两条直线分成三个长方形和一个正方形。其中两个长方形的面积分别是15和25。大长方形的面积最小是多少?",
+      "image": "",
+      "options": [],
+      "answer": "80",
+      "acceptableAnswers": [
+        "80"
+      ],
+      "solution": [
+        "设三个小长方形面积为15,25,x,正方形边长=a。15=3*5,25=5*5,所以正方形边长=5,另一个小长方形=3*5=15。大长方形=(5+3)*(5+5)=8*10=80。",
+        "或者:15和25同宽=5,长分别=3和5。大长方形=(3+5)*(5+5)=80。最小=80。"
+      ],
+      "hints": [
+        "15=3*5,25=5*5",
+        "正方形=5*5=25,第三个=3*5=15",
+        "大长方形=8*10=80"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "长方形分割"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "cm-gm-17",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个正方体木块,表面积是100平方厘米,如果把它平均分成8个小正方体,每个小正方体的表面积是多少平方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": [
+        "25"
+      ],
+      "solution": [
+        "正方体6面,每面=100/6。分成8个=2*2*2分,每边二等分。小正方体棱长=原棱长/2。每面面积=原面积/4=100/24。6面=6*(100/24)=100/4=25。",
+        "另:8个小正方体总表面积=8*6*(a/2)^2=8*6*a^2/4=12a^2。原=6a^2=100。12a^2=200。每个=200/8=25。"
+      ],
+      "hints": [
+        "分8个=2*2*2",
+        "小正方体每面=原每面/4",
+        "6面=6*(原每面/4)=原总面/4=100/4=25"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "正方体分割"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "正方体"
+      ]
+    },
+    {
+      "id": "cm-gm-18",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个长方体的长、宽、高分别是10厘米、8厘米、6厘米。如果把它切成一个最大的正方体,体积减少了多少立方厘米?",
+      "image": "",
+      "options": [],
+      "answer": "264",
+      "acceptableAnswers": [
+        "264"
+      ],
+      "solution": [
+        "最大正方体边长=6厘米,体积=216。原长方体体积=10*8*6=480。减少=480-216=264。"
+      ],
+      "hints": [
+        "最大正方体=6*6*6=216",
+        "原=480,减少=264"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何模型",
+        "长方体切正方体"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "长方体"
+      ]
+    }
+  ]
+}

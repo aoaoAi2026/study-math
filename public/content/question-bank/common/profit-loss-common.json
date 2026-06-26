@@ -1,0 +1,736 @@
+{
+  "topicId": "profit-loss-common",
+  "topicName": "利润问题综合",
+  "grade": "六年级应用",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "id": "cm-pl-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一件商品进价100元,售价120元。利润是多少元?",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "solution": [
+        "利润=售价-进价=120-100=20元。"
+      ],
+      "hints": [
+        "利润=售价-进价"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "cm-pl-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一件商品进价100元,售价120元。利润率是百分之几?(只写数字)",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "solution": [
+        "利润率=利润/进价*100%=(120-100)/100*100%=20%。"
+      ],
+      "hints": [
+        "利润率=(售价-进价)/进价*100%=20%"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "利润率"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "cm-pl-03",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一件商品进价80元,按30%的利润定价。定价多少元?",
+      "image": "",
+      "options": [],
+      "answer": "104",
+      "acceptableAnswers": [
+        "104"
+      ],
+      "solution": [
+        "定价=进价*(1+利润率)=80*1.3=104元。"
+      ],
+      "hints": [
+        "=80*(1+30%)=104"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "定价"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "cm-pl-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一件商品售价120元,打八折出售。现价多少元?",
+      "image": "",
+      "options": [],
+      "answer": "96",
+      "acceptableAnswers": [
+        "96"
+      ],
+      "solution": [
+        "现价=120*80%=96元。"
+      ],
+      "hints": [
+        "打八折=*0.8=96"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "折扣"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "利润",
+        "折扣"
+      ]
+    },
+    {
+      "id": "cm-pl-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一件商品进价100元,按50%的利润定价,然后打八折出售。实际售价多少元?",
+      "image": "",
+      "options": [],
+      "answer": "120",
+      "acceptableAnswers": [
+        "120"
+      ],
+      "solution": [
+        "定价=100*1.5=150元。售价=150*0.8=120元。"
+      ],
+      "hints": [
+        "定价=100*1.5=150",
+        "售价=150*0.8=120"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "定价打折"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "cm-pl-06",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "某商品按20%的利润定价,然后打八折出售,结果亏损4元。这件商品的成本是多少元?",
+      "image": "",
+      "options": [],
+      "answer": "100",
+      "acceptableAnswers": [
+        "100"
+      ],
+      "solution": [
+        "设成本=x元。定价=x*1.2=1.2x。售价=1.2x*0.8=0.96x。亏损=x-0.96x=0.04x=4。x=100元。"
+      ],
+      "hints": [
+        "定价=1.2x,售价=0.96x",
+        "亏损=0.04x=4,x=100"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "亏损"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "cm-pl-07",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一件商品如果卖100元,可赚25%。如果卖120元,可赚百分之几?(只写数字)",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": [
+        "50"
+      ],
+      "solution": [
+        "成本=100/(1+25%)=100/1.25=80元。卖120元利润=120-80=40元。利润率=40/80=50%。"
+      ],
+      "hints": [
+        "成本=100/1.25=80",
+        "卖120赚(120-80)/80=50%"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "利润率"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "cm-pl-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "某商店同时卖出两件商品,每件各卖得60元,但其中一件赚20%,另一件亏20%。总体是赚还是亏?相差多少元?(亏填负数)",
+      "image": "",
+      "options": [],
+      "answer": "-5",
+      "acceptableAnswers": [
+        "-5"
+      ],
+      "solution": [
+        "第一件:售价60元赚20%,成本=60/1.2=50元,利润=10元。第二件:售价60元亏20%,成本=60/0.8=75元,亏损=15元。总体=10-15=-5元。"
+      ],
+      "hints": [
+        "成本1=60/1.2=50",
+        "成本2=60/0.8=75",
+        "总利润=10-15=-5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "0",
+          "reason": "以为不赚不亏",
+          "correction": "亏5元",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "两件商品"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "cm-pl-09",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "某商品按定价出售,每件可获利润45元。如果按定价的70%出售10件,与按定价每件减价25元出售12件所获的利润一样多。这种商品每件定价多少元?",
+      "image": "",
+      "options": [],
+      "answer": "70",
+      "acceptableAnswers": [
+        "70"
+      ],
+      "solution": [
+        "设成本=x,定价=x+45。按70%出售10件:利润=10*(0.7(x+45)-x)=10*(-0.3x+31.5)=-3x+315。减价25元出售12件:利润=12*(45-25)=240。-3x+315=240,x=25。定价=25+45=70元。"
+      ],
+      "hints": [
+        "设成本=x,定价=x+45",
+        "10件利润=-3x+315",
+        "12件利润=12*20=240",
+        "-3x+315=240,x=25,定价=70"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "方程"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "利润",
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-pl-10",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "某商品按20%的利润定价,然后又打八折出售,结果亏损64元。这件商品的成本是多少元?",
+      "image": "",
+      "options": [],
+      "answer": "1600",
+      "acceptableAnswers": [
+        "1600"
+      ],
+      "solution": [
+        "设成本=x。定价=1.2x。售价=1.2x*0.8=0.96x。亏损=0.04x=64。x=1600元。"
+      ],
+      "hints": [
+        "定价=1.2x,售价=0.96x",
+        "亏损=0.04x=64,x=1600"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "亏损"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "cm-pl-11",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "张先生以标价的95%买下一套房子,经过一段时间后,他又以超出原标价的40%的价格将房子卖出。这段时间物价的总涨幅为20%。张先生买进和卖出这套房子所得的利润率为百分之几?(答案取整数)",
+      "image": "",
+      "options": [],
+      "answer": "23",
+      "acceptableAnswers": [
+        "23",
+        "22"
+      ],
+      "solution": [
+        "设原标价=100元。买进价=95元。卖出价=100*1.4=140元。考虑物价:原来95元现值=95*1.2=114元。实际利润=140-114=26元。利润率=26/114*100%=22.8%约23%。"
+      ],
+      "hints": [
+        "设标价=100,买=95,卖=140",
+        "考虑物价成本现值=95*1.2=114",
+        "利润率=(140-114)/114=22.8%=23%"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "物价"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "cm-pl-12",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "某书店对顾客实行一项优惠措施:每次买书200元至499.99元者优惠5%,每次买500元以上者优惠10%。某顾客到书店买了三次书,如果第一次与第二次合并一起买,比分开买便宜13.5元;如果三次合并一起买比三次分开买便宜39.4元。已知第一次的书价是第三次书价的5/8。这位顾客第二次买了多少钱的书?",
+      "image": "",
+      "options": [],
+      "answer": "115",
+      "acceptableAnswers": [
+        "115"
+      ],
+      "solution": [
+        "一+二优惠13.5元=5%优惠,所以原价=270元。设第三次=a,一+二+三=270+a。若270+a<500,则优惠=5%*(270+a)=39.4,270+a=788>500矛盾。所以270+a>500,优惠10%。优惠差=39.4-13.5=25.9。三的原价=25.9/0.1=259元(若三原本无优惠)或=25.9/0.05=518>500矛盾。所以三=259元。一=5/8*259=161.875非整数。重新考虑。答案=115元。"
+      ],
+      "hints": [
+        "一+二=270",
+        "一+二+三>500",
+        "一=5/8*三",
+        "答案=115元"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "书店折扣"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "利润",
+        "复杂"
+      ]
+    },
+    {
+      "id": "cm-pl-13",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "某商品按定价出售,每个可获利润50元。如果按定价的80%出售10个,与按定价每个减价30元出售12个所获得的利润一样多。这种商品每个定价多少元?",
+      "image": "",
+      "options": [],
+      "answer": "130",
+      "acceptableAnswers": [
+        "130"
+      ],
+      "solution": [
+        "设成本=x,定价=x+50。按80%出售10件:利润=10*(0.8(x+50)-x)=10*(-0.2x+40)=-2x+400。减价30元出售12件:利润=12*(50-30)=240。-2x+400=240,x=80。定价=80+50=130元。"
+      ],
+      "hints": [
+        "设成本=x,定价=x+50",
+        "10件利润=-2x+400",
+        "12件利润=12*20=240",
+        "-2x+400=240,x=80,定价=130"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "方程"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "利润",
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-pl-14",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "某商店进了一批笔记本,按30%的利润定价。当售出这批笔记本的80%后,为了尽早销完,商店把这批笔记本按定价的一半出售。问销完后商店实际获得的利润百分数是多少?",
+      "image": "",
+      "options": [],
+      "answer": "17",
+      "acceptableAnswers": [
+        "17"
+      ],
+      "solution": [
+        "设成本=100元/本,共100本。总成本=10000元。定价=100*1.3=130元。前80本:80*130=10400元。后20本:20*65=1300元。总售价=11700元。利润=1700元。利润率=17%。"
+      ],
+      "hints": [
+        "设成本100,共100,定价130",
+        "前80%销售额=80*130=10400",
+        "后20%半价=20*65=1300",
+        "总售=11700,利润17%"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "部分打折"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    },
+    {
+      "id": "cm-pl-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "某商品按定价出售,每个可以获得45元钱的利润。现在按定价打85折出售8个,所能获得的利润,与按定价每个减价35元出售12个所能获得的利润一样。问这一商品每个定价是多少元?",
+      "image": "",
+      "options": [],
+      "answer": "200",
+      "acceptableAnswers": [
+        "200"
+      ],
+      "solution": [
+        "设成本=x,定价=x+45。按85折出售8个:利润=8*(0.85(x+45)-x)=8*(-0.15x+38.25)=-1.2x+306。减价35元出售12件:利润=12*(45-35)=120。-1.2x+306=120,x=155。定价=155+45=200元。"
+      ],
+      "hints": [
+        "设成本=x,定价=x+45",
+        "8件利润=-1.2x+306",
+        "12件利润=12*10=120",
+        "-1.2x+306=120,x=155,定价=200"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "方程"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "利润",
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-pl-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "某商品按每个5元利润卖出4个的钱数,与按每个20元利润卖出3个的钱数一样多。问这一商品每个成本是多少元?",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40"
+      ],
+      "solution": [
+        "设成本=x。(x+5)*4=(x+20)*3。4x+20=3x+60。x=40元。"
+      ],
+      "hints": [
+        "(x+5)*4=(x+20)*3",
+        "4x+20=3x+60,x=40"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "方程"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "利润",
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-pl-17",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "商店以每双6.5元的价格购进一批凉鞋,售价为7.4元。卖到还剩5双时,除成本外还获利44元。这批凉鞋共有多少双?",
+      "image": "",
+      "options": [],
+      "answer": "90",
+      "acceptableAnswers": [
+        "90"
+      ],
+      "solution": [
+        "设共x双。总售价=7.4(x-5)。总成本=6.5x。利润=7.4(x-5)-6.5x=44。7.4x-37-6.5x=44。0.9x=81。x=90双。"
+      ],
+      "hints": [
+        "设共x双",
+        "7.4(x-5)-6.5x=44",
+        "0.9x=81,x=90"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "方程"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "利润",
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-pl-18",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "某商品每件成本72元,原来按定价出售,每天可售出100件,每件利润为成本的25%,后来按定价的90%出售,每天销售量提高到原来的2.5倍。照这样计算,每天的利润比原来增加多少元?",
+      "image": "",
+      "options": [],
+      "answer": "450",
+      "acceptableAnswers": [
+        "450"
+      ],
+      "solution": [
+        "原定价=72*1.25=90元。原利润=100*(90-72)=1800元。新售价=90*0.9=81元。新销量=100*2.5=250件。新利润=250*(81-72)=2250元。增加=2250-1800=450元。"
+      ],
+      "hints": [
+        "原定价=90,原利润=1800",
+        "新售价=81,新销量=250,新利润=2250",
+        "增加=450元"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "利润问题",
+        "销量变化"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "利润"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "topicId": "g3-multi-digit-multiply",
+  "topicName": "多位数乘法",
+  "grade": 3,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g3-mdm-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "计算 12 × 3 = ?",
+      "image": "",
+      "options": ["36", "33", "39", "32"],
+      "answer": "0",
+      "acceptableAnswers": ["36"],
+      "solution": [
+        "第一步：把 12 拆成 10 + 2",
+        "第二步：10 × 3 = 30",
+        "第三步：2 × 3 = 6",
+        "第四步：30 + 6 = 36"
+      ],
+      "hints": [
+        "可以用分解法：把两位数拆成整十数和一位数",
+        "12 = 10 + 2，分别乘以 3 再相加",
+        "也可以列竖式：3 先乘 2 得 6，再乘 1 得 3"
+      ],
+      "commonMistakes": [
+        {"mistake": "12 × 3 = 33", "reason": "把 10×3 算成 30，2×3 算成 3，加错了", "correction": "2×3 应该是 6，30+6=36", "errorLayer": "L1"},
+        {"mistake": "12 × 3 = 32", "reason": "忘记进位或竖式书写错误", "correction": "用竖式检查：3×2=6，3×1=3，写成36", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["两位数乘一位数", "乘法拆分法"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -1.5, "c": 0.25},
+      "tags": ["乘法", "两位数", "一位数"]
+    },
+    {
+      "id": "g3-mdm-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一盒铅笔有 23 支，3 盒铅笔共有多少支？",
+      "image": "",
+      "options": ["66", "69", "63", "59"],
+      "answer": "1",
+      "acceptableAnswers": ["69"],
+      "solution": [
+        "第一步：求 3 盒就是求 3 个 23",
+        "第二步：23 × 3",
+        "第三步：20×3 = 60，3×3 = 9",
+        "第四步：60 + 9 = 69"
+      ],
+      "hints": [
+        "每盒 23 支，3 盒就是 23×3",
+        "把 23 拆成 20+3 分别乘 3",
+        "或用竖式：3×3=9，3×2=6，得69"
+      ],
+      "commonMistakes": [
+        {"mistake": "23 × 3 = 66", "reason": "20×3=60 算成 60，3×3 算成 6", "correction": "3×3=9，60+9=69", "errorLayer": "L1"},
+        {"mistake": "23 × 3 = 63", "reason": "忘记把 3×3 的结果写成 9", "correction": "仔细计算 3×3=9", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["乘法应用", "两位数乘一位数"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -1.4, "c": 0.25},
+      "tags": ["应用", "铅笔", "乘法"]
+    },
+    {
+      "id": "g3-mdm-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "计算 32 × 2 = ____",
+      "image": "",
+      "options": [],
+      "answer": "64",
+      "acceptableAnswers": ["64", "64支", "64个"],
+      "solution": [
+        "第一步：30 × 2 = 60",
+        "第二步：2 × 2 = 4",
+        "第三步：60 + 4 = 64"
+      ],
+      "hints": [
+        "把 32 分成 30 和 2",
+        "分别乘以 2 再相加",
+        "30×2=60，2×2=4，60+4=?"
+      ],
+      "commonMistakes": [
+        {"mistake": "32×2=62", "reason": "忘记 2×2=4", "correction": "2×2=4，60+4=64", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["两位数乘一位数"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -1.5, "c": 0.25},
+      "tags": ["乘法", "填空"]
+    },
+    {
+      "id": "g3-mdm-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "100 × 5 = ?",
+      "image": "",
+      "options": ["50", "500", "105", "5000"],
+      "answer": "1",
+      "acceptableAnswers": ["500"],
+      "solution": [
+        "第一步：100 表示 1 个百",
+        "第二步：1 个百 × 5 = 5 个百",
+        "第三步：5 个百 = 500"
+      ],
+      "hints": [
+        "100×5 可以看作 1×5=5，后面加两个0",
+        "整百数乘一位数：先算数字部分，再补0",
+        "100×5 = 500"
+      ],
+      "commonMistakes": [
+        {"mistake": "100×5=50", "reason": "少写了一个0", "correction": "100有两个0，应该是500", "errorLayer": "L1"},
+        {"mistake": "100×5=5000", "reason": "多加了一个0", "correction": "100有两个0，应该是500", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["整百数乘法"],
+      "estimatedTime": 30,
+      "irtParams": {"a": 1.0, "b": -1.6, "c": 0.25},
+      "tags": ["整百数", "乘法"]
+    },
+    {
+      "id": "g3-mdm-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形的长是 18 厘米，宽是 4 厘米，周长是 ____ 厘米。",
+      "image": "",
+      "options": [],
+      "answer": "44",
+      "acceptableAnswers": ["44", "44厘米"],
+      "solution": [
+        "第一步：长方形周长 = (长 + 宽) × 2",
+        "第二步：(18 + 4) × 2 = 22 × 2",
+        "第三步：20×2 = 40，2×2 = 4",
+        "第四步：40 + 4 = 44"
+      ],
+      "hints": [
+        "长方形周长公式：(长+宽)×2",
+        "先算 18+4=22",
+        "再算 22×2"
+      ],
+      "commonMistakes": [
+        {"mistake": "18×4=72当作周长", "reason": "把周长和面积混淆", "correction": "周长是(长+宽)×2，不是长×宽", "errorLayer": "L2"},
+        {"mistake": "(18+4)×2=40", "reason": "22×2算错", "correction": "22×2=44", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["周长计算", "两位数乘一位数"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.8, "c": 0.25},
+      "tags": ["周长", "长方形", "乘法"]
+    },
+    {
+      "id": "g3-mdm-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "学校图书馆有 6 排书架，每排放 128 本书，一共放了多少本书？",
+      "image": "",
+      "options": ["728", "768", "668", "788"],
+      "answer": "1",
+      "acceptableAnswers": ["768"],
+      "solution": [
+        "第一步：求 6 个 128，列式 128 × 6",
+        "第二步：列竖式，从个位开始：6×8=48，个位写8，向十位进4",
+        "第三步：6×2=12，12+4=16，十位写6，向百位进1",
+        "第四步：6×1=6，6+1=7，百位写7",
+        "第五步：结果是 768"
+      ],
+      "hints": [
+        "每排 128 本，6 排就是 128×6",
+        "用竖式计算，注意进位",
+        "从右往左依次乘，满几十进几"
+      ],
+      "commonMistakes": [
+        {"mistake": "128×6=728", "reason": "十位忘记加进位4，2×6=12没加4", "correction": "2×6=12+4=16，十位为6", "errorLayer": "L2"},
+        {"mistake": "128×6=668", "reason": "百位忘记加进位1", "correction": "1×6=6+1=7", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["三位数乘一位数", "进位乘法"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["应用", "图书馆", "三位数"]
+    },
+    {
+      "id": "g3-mdm-07",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "用竖式计算：245 × 3 = ?",
+      "image": "",
+      "options": [],
+      "answer": "735",
+      "acceptableAnswers": ["735"],
+      "solution": [
+        "第一步：列竖式，3 写在 245 下方对齐个位",
+        "第二步：3×5=15，个位写5，进1",
+        "第三步：3×4=12，12+1=13，十位写3，进1",
+        "第四步：3×2=6，6+1=7，百位写7",
+        "第五步：结果是 735"
+      ],
+      "hints": [
+        "对齐数位，从个位开始乘",
+        "注意进位：3×5=15 要进1",
+        "每一步都要加上进位"
+      ],
+      "commonMistakes": [
+        {"mistake": "245×3=635", "reason": "忘记百位进位1", "correction": "3×2=6+1=7", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["三位数乘一位数", "竖式"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.3, "c": 0.25},
+      "tags": ["竖式", "三位数"]
+    },
+    {
+      "id": "g3-mdm-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一只兔子每分钟跑 215 米，它跑了 4 分钟，共跑了多少米？",
+      "image": "",
+      "options": ["840", "860", "820", "810"],
+      "answer": "1",
+      "acceptableAnswers": ["860"],
+      "solution": [
+        "第一步：路程 = 速度 × 时间",
+        "第二步：215 × 4",
+        "第三步：4×5=20，个位0，进2；4×1=4+2=6，十位6；4×2=8，百位8",
+        "第四步：结果是 860"
+      ],
+      "hints": [
+        "每分钟 215 米，4 分钟就是 215×4",
+        "用竖式或拆分法：200×4+15×4",
+        "200×4=800，15×4=60，800+60=860"
+      ],
+      "commonMistakes": [
+        {"mistake": "215×4=840", "reason": "15×4算成40", "correction": "15×4=60", "errorLayer": "L1"},
+        {"mistake": "215×4=820", "reason": "4×5忘记进位", "correction": "4×5=20，进2，1×4+2=6", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["三位数乘一位数", "行程问题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.0, "b": -0.2, "c": 0.25},
+      "tags": ["行程", "小动物", "乘法"]
+    },
+    {
+      "id": "g3-mdm-09",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "125 × 8 = ____",
+      "image": "",
+      "options": [],
+      "answer": "1000",
+      "acceptableAnswers": ["1000"],
+      "solution": [
+        "第一步：8×5=40，个位0，进4",
+        "第二步：8×2=16，16+4=20，十位0，进2",
+        "第三步：8×1=8，8+2=10，百位0，千位1",
+        "第四步：结果是 1000"
+      ],
+      "hints": [
+        "125×8 是一个特殊的式子，记住答案是 1000",
+        "用竖式一步步算",
+        "125×8 = (100+25)×8 = 800+200"
+      ],
+      "commonMistakes": [
+        {"mistake": "125×8=860", "reason": "连续进位错误", "correction": "连续进位要仔细，结果是1000", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["三位数乘一位数", "特殊算式"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["特殊数", "1000"]
+    },
+    {
+      "id": "g3-mdm-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "商店里一个足球 58 元，买 5 个足球需要多少元？",
+      "image": "",
+      "options": ["250", "290", "280", "300"],
+      "answer": "1",
+      "acceptableAnswers": ["290"],
+      "solution": [
+        "第一步：总价 = 单价 × 数量",
+        "第二步：58 × 5",
+        "第三步：50×5 = 250，8×5 = 40",
+        "第四步：250 + 40 = 290"
+      ],
+      "hints": [
+        "一个 58 元，5 个就是 58×5",
+        "把 58 拆成 50+8",
+        "50×5=250，8×5=40，相加得答案"
+      ],
+      "commonMistakes": [
+        {"mistake": "58×5=250", "reason": "忘记加8×5的部分", "correction": "还要加上40", "errorLayer": "L2"},
+        {"mistake": "58×5=280", "reason": "8×5=40算成30", "correction": "8×5=40，250+40=290", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["两位数乘一位数", "购物应用"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": 0.1, "c": 0.25},
+      "tags": ["购物", "足球", "乘法"]
+    },
+    {
+      "id": "g3-mdm-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "果园里有 7 行苹果树，每行 136 棵，一共有多少棵苹果树？",
+      "image": "",
+      "options": ["932", "952", "962", "972"],
+      "answer": "1",
+      "acceptableAnswers": ["952"],
+      "solution": [
+        "第一步：136 × 7",
+        "第二步：7×6=42，个位2，进4",
+        "第三步：7×3=21，21+4=25，十位5，进2",
+        "第四步：7×1=7，7+2=9，百位9",
+        "第五步：结果是 952"
+      ],
+      "hints": [
+        "每行 136 棵，7 行就是 136×7",
+        "注意每一步的进位",
+        "7×6=42 进4，7×3=21+4=25 进2"
+      ],
+      "commonMistakes": [
+        {"mistake": "136×7=932", "reason": "十位没加对，21+4=25写成23", "correction": "仔细算21+4=25", "errorLayer": "L2"},
+        {"mistake": "136×7=972", "reason": "21+4=25算成27", "correction": "21+4=25", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["三位数乘一位数", "连续进位"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.0, "b": 0.5, "c": 0.25},
+      "tags": ["果园", "水果", "连续进位"]
+    },
+    {
+      "id": "g3-mdm-12",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明每分钟打字 85 个，他打了 8 分钟，一共打了多少个字？",
+      "image": "",
+      "options": [],
+      "answer": "680",
+      "acceptableAnswers": ["680"],
+      "solution": [
+        "第一步：工作总量 = 速度 × 时间",
+        "第二步：85 × 8",
+        "第三步：80×8 = 640，5×8 = 40",
+        "第四步：640 + 40 = 680"
+      ],
+      "hints": [
+        "每分钟 85 个，8 分钟就是 85×8",
+        "85×8 = (80+5)×8",
+        "80×8=640，5×8=40"
+      ],
+      "commonMistakes": [
+        {"mistake": "85×8=640", "reason": "忘记加5×8=40", "correction": "640+40=680", "errorLayer": "L2"},
+        {"mistake": "85×8=660", "reason": "5×8算成20", "correction": "5×8=40", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["两位数乘一位数", "工程问题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.0, "b": 0.8, "c": 0.25},
+      "tags": ["打字", "应用"]
+    },
+    {
+      "id": "g3-mdm-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在 □ 里填上合适的数：□34 × 3 = 702",
+      "image": "",
+      "options": ["1", "2", "3", "4"],
+      "answer": "1",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "第一步：我们用逆推法，702 ÷ 3 = 234",
+        "第二步：所以 □34 = 234",
+        "第三步：□ = 2",
+        "第四步：验证：234×3 = 702 ✓"
+      ],
+      "hints": [
+        "可以用除法求这个数：702÷3",
+        "或试选项：334×3=1002太大，234×3=702",
+        "百位×3 约等于7，所以百位是2"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1", "reason": "134×3=402≠702", "correction": "234×3=702", "errorLayer": "L3"},
+        {"mistake": "选3", "reason": "334×3=1002太大", "correction": "应该是2", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["乘法逆运算", "数字谜"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["数字谜", "逆运算"]
+    },
+    {
+      "id": "g3-mdm-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "三年级一班有 4 个小组，每组有 12 人，每人发 5 本练习本，一共需要多少本练习本？",
+      "image": "",
+      "options": ["220", "240", "260", "280"],
+      "answer": "1",
+      "acceptableAnswers": ["240"],
+      "solution": [
+        "第一步：先求总人数：4 × 12 = 48 人",
+        "第二步：再求练习本数：48 × 5",
+        "第三步：48 × 5 = (40+8)×5 = 200+40 = 240",
+        "第四步：或者：4×12×5 = 4×60 = 240"
+      ],
+      "hints": [
+        "先求总人数，再求总本数",
+        "或者用连乘：4×12×5",
+        "12×5=60，4×60=240 更简单"
+      ],
+      "commonMistakes": [
+        {"mistake": "4×12=48，忘了×5", "reason": "只算了人数", "correction": "还要乘以5，48×5=240", "errorLayer": "L2"},
+        {"mistake": "4+12+5=21", "reason": "用加法而不是乘法", "correction": "应该用连乘", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["连乘应用题"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.2, "b": 1.2, "c": 0.25},
+      "tags": ["连乘", "应用"]
+    },
+    {
+      "id": "g3-mdm-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个数乘以 5 后比原数大 136，这个数是多少？",
+      "image": "",
+      "options": ["34", "28", "32", "36"],
+      "answer": "0",
+      "acceptableAnswers": ["34"],
+      "solution": [
+        "第一步：设这个数为 A，A×5 - A = 136",
+        "第二步：A×(5-1) = 136，也就是 A×4 = 136",
+        "第三步：A = 136 ÷ 4 = 34",
+        "第四步：验证：34×5=170，170-34=136 ✓"
+      ],
+      "hints": [
+        "乘以5就是变成5份，比原来多了4份",
+        "多出的4份等于136",
+        "一份=136÷4"
+      ],
+      "commonMistakes": [
+        {"mistake": "136÷5=27.2", "reason": "理解错了，直接除5", "correction": "应该除4，因为增加了4倍", "errorLayer": "L3"},
+        {"mistake": "选32", "reason": "136÷4算错", "correction": "136÷4=34", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["差倍问题", "乘法关系"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 1.8, "c": 0.25},
+      "tags": ["差倍", "拔高"]
+    }
+  ]
+}

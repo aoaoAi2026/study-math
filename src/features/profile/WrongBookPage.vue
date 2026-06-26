@@ -1,52 +1,43 @@
 <script setup lang="ts">
-import { ref, computed, watch } from 'vue'
-import AppLayout from '@/components/layout/AppLayout.vue'
+import { ref, computed, onMounted } from 'vue'
+import {
+  getWrongItems,
+  markReviewed,
+  clearReviewedItems,
+  getWrongStats,
+  type WrongItem
+} from '@/services/wrongBookStore'
 
-interface WrongItem {
-  id: string
-  stem: string
-  wrongAnswer: string
-  correctAnswer: string
-  knowledgeId: string
-  knowledgeName: string
-  errorLayer: 'L1' | 'L2' | 'L3' | 'L4'
-  reviewed: boolean
-  reviewCount: number
-}
-
-const STORAGE_KEY = 'wrong_book_data'
-
-const defaultData: WrongItem[] = [
-  { id: '1', stem: '小明有30个苹果，小红的苹果是小明的4倍，小红有多少个？', wrongAnswer: '30 + 4 = 34', correctAnswer: '30 × 4 = 120（个）', knowledgeId: 'sum-multiple', knowledgeName: '倍数问题', errorLayer: 'L1', reviewed: false, reviewCount: 0 },
-  { id: '2', stem: '鸡和兔共10只，脚共28只，问鸡和兔各几只？', wrongAnswer: '鸡5只，兔5只', correctAnswer: '鸡6只，兔4只', knowledgeId: 'chicken-rabbit', knowledgeName: '鸡兔同笼', errorLayer: 'L3', reviewed: false, reviewCount: 0 },
-  { id: '3', stem: '一个三角形底边8cm，高5cm，求面积', wrongAnswer: '8 × 5 = 40cm²', correctAnswer: '8 × 5 ÷ 2 = 20cm²', knowledgeId: 'triangle-area', knowledgeName: '三角形面积', errorLayer: 'L2', reviewed: false, reviewCount: 0 },
-  { id: '4', stem: '把一根绳子对折3次后从中间剪一刀，绳子变成几段？', wrongAnswer: '6段', correctAnswer: '9段', knowledgeId: 'logic-thinking', knowledgeName: '逻辑推理', errorLayer: 'L4', reviewed: false, reviewCount: 0 },
-  { id: '5', stem: '125 × 8 = ?', wrongAnswer: '125 × 8 = 900', correctAnswer: '125 × 8 = 1000', knowledgeId: 'calc-multiply', knowledgeName: '乘法计算', errorLayer: 'L3', reviewed: false, reviewCount: 0 },
-  { id: '6', stem: '甲乙两车相向而行，甲速60km/h，乙速80km/h，相距280km，多久相遇？', wrongAnswer: '280 ÷ (60+80) = 3.5h', correctAnswer: '280 ÷ (60+80) = 2h', knowledgeId: 'meeting-problem', knowledgeName: '相遇问题', errorLayer: 'L3', reviewed: false, reviewCount: 0 },
-  { id: '7', stem: '把3/4和2/5通分', wrongAnswer: '3/4 = 6/8，2/5 = 4/8', correctAnswer: '3/4 = 15/20，2/5 = 8/20', knowledgeId: 'fraction-common', knowledgeName: '分数通分', errorLayer: 'L2', reviewed: false, reviewCount: 0 },
-  { id: '8', stem: '一个正方体棱长为3cm，求表面积', wrongAnswer: '3 × 3 × 3 = 27cm²', correctAnswer: '3 × 3 × 6 = 54cm²', knowledgeId: 'cube-surface', knowledgeName: '正方体表面积', errorLayer: 'L2', reviewed: false, reviewCount: 0 },
-  { id: '9', stem: '题目要求求"剩余"数量，却求了"总共"数量', wrongAnswer: '直接计算了总数', correctAnswer: '应计算剩余部分', knowledgeId: 'reading', knowledgeName: '审题能力', errorLayer: 'L1', reviewed: false, reviewCount: 0 },
-  { id: '10', stem: '找规律：2, 6, 12, 20, __，下一个数是？', wrongAnswer: '26', correctAnswer: '30（规律为n(n+1)）', knowledgeId: 'pattern-find', knowledgeName: '规律探索', errorLayer: 'L4', reviewed: false, reviewCount: 0 },
-]
-
-const loadData = (): WrongItem[] => {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    return raw ? JSON.parse(raw) : [...defaultData]
-  } catch { return [...defaultData] }
-}
-
-const wrongBook = ref<WrongItem[]>(loadData())
+const wrongBook = ref<WrongItem[]>([])
 const activeFilter = ref<string>('all')
 
-watch(wrongBook, (val) => {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(val))
-}, { deep: true })
+function reload() {
+  wrongBook.value = getWrongItems()
+}
 
-const layerLabels: Record<string, string> = { all: '全部', L1: 'L1审题', L2: 'L2概念', L3: 'L3计算', L4: 'L4思维' }
+onMounted(() => {
+  reload()
+})
+
+const layerLabels: Record<string, string> = {
+  all: '全部',
+  L1: 'L1 审题',
+  L2: 'L2 概念',
+  L3: 'L3 计算',
+  L4: 'L4 思维'
+}
+
+const layerInfo: Record<string, { emoji: string; text: string; color: string; textColor: string; bg: string }> = {
+  L1: { emoji: '👀', text: '没看清题目', color: 'blue', textColor: '#3A6AC4', bg: '#E8F0FF' },
+  L2: { emoji: '💡', text: '概念记错了', color: 'yellow', textColor: '#C98A10', bg: '#FFF8E1' },
+  L3: { emoji: '🧮', text: '计算出问题', color: 'pink', textColor: '#C7417F', bg: '#FFEEF4' },
+  L4: { emoji: '🧠', text: '思路卡壳了', color: 'purple', textColor: '#7849B8', bg: '#F3ECFF' }
+}
 
 const filtered = computed(() => {
-  const list = activeFilter.value === 'all' ? wrongBook.value : wrongBook.value.filter(i => i.errorLayer === activeFilter.value)
+  const list = activeFilter.value === 'all'
+    ? wrongBook.value
+    : wrongBook.value.filter(i => i.errorLayer === activeFilter.value)
   const groups: Record<string, WrongItem[]> = {}
   list.forEach(item => {
     if (!groups[item.knowledgeName]) groups[item.knowledgeName] = []
@@ -55,128 +46,626 @@ const filtered = computed(() => {
   return groups
 })
 
+const filteredCount = computed(() => Object.values(filtered.value).flat().length)
+
 const stats = computed(() => {
-  const total = wrongBook.value.length
-  const layers = { L1: 0, L2: 0, L3: 0, L4: 0 }
-  wrongBook.value.forEach(i => layers[i.errorLayer]++)
-  return { total, ...layers }
+  const s = getWrongStats()
+  return {
+    total: s.total,
+    L1: s.L1,
+    L2: s.L2,
+    L3: s.L3,
+    L4: s.L4
+  }
 })
 
-const review = (id: string) => {
-  const item = wrongBook.value.find(i => i.id === id)
-  if (item) { item.reviewed = true; item.reviewCount++ }
+function review(id: string) {
+  markReviewed(id)
+  reload()
 }
 
-const clearReviewed = () => {
-  wrongBook.value = wrongBook.value.filter(i => !i.reviewed)
+function clearReviewed() {
+  clearReviewedItems()
+  reload()
+}
+
+function formatTime(timestamp: number): string {
+  const diff = Date.now() - timestamp
+  const mins = Math.floor(diff / 60000)
+  if (mins < 1) return '刚刚'
+  if (mins < 60) return `${mins}分钟前`
+  const hours = Math.floor(mins / 60)
+  if (hours < 24) return `${hours}小时前`
+  const days = Math.floor(hours / 24)
+  return `${days}天前`
 }
 </script>
 
 <template>
-  <AppLayout>
-    <div class="wrong-book">
-      <h1>错题本</h1>
+  <div class="wrong-book">
 
-      <!-- 统计概览 -->
-      <div class="wrong-book__stats">
-        <div class="wrong-book__stat wrong-book__stat--total">
-          <span class="wrong-book__stat-num">{{ stats.total }}</span>
-          <span class="wrong-book__stat-label">总错题</span>
+    <!-- 顶部标题卡 -->
+    <section class="wb-hero">
+      <div class="wb-hero__inner">
+        <div class="wb-hero__icon">📝</div>
+        <div class="wb-hero__text">
+          <h1 class="wb-hero__title">错题本</h1>
+          <p class="wb-hero__subtitle">
+            不怕错，怕不错过～ 把这些小题目搞定，你就更厉害啦！
+          </p>
         </div>
-        <div class="wrong-book__stat wrong-book__stat--l1"><span class="wrong-book__stat-num">{{ stats.L1 }}</span><span class="wrong-book__stat-label">L1审题</span></div>
-        <div class="wrong-book__stat wrong-book__stat--l2"><span class="wrong-book__stat-num">{{ stats.L2 }}</span><span class="wrong-book__stat-label">L2概念</span></div>
-        <div class="wrong-book__stat wrong-book__stat--l3"><span class="wrong-book__stat-num">{{ stats.L3 }}</span><span class="wrong-book__stat-label">L3计算</span></div>
-        <div class="wrong-book__stat wrong-book__stat--l4"><span class="wrong-book__stat-num">{{ stats.L4 }}</span><span class="wrong-book__stat-label">L4思维</span></div>
+        <div class="wb-hero__badge">
+          <span class="wb-hero__badge-num">{{ stats.total }}</span>
+          <span class="wb-hero__badge-text">道题</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计概览卡片 -->
+    <section class="wb-stats">
+      <div class="wb-stat wb-stat--orange" :style="{ animationDelay: '0s' }">
+        <div class="wb-stat__icon">📋</div>
+        <div class="wb-stat__body">
+          <div class="wb-stat__value">{{ stats.total }}</div>
+          <div class="wb-stat__label">总错题</div>
+        </div>
+      </div>
+      <div class="wb-stat wb-stat--blue" :style="{ animationDelay: '0.08s' }">
+        <div class="wb-stat__icon">👀</div>
+        <div class="wb-stat__body">
+          <div class="wb-stat__value">{{ stats.L1 }}</div>
+          <div class="wb-stat__label">L1 审题</div>
+        </div>
+      </div>
+      <div class="wb-stat wb-stat--yellow" :style="{ animationDelay: '0.16s' }">
+        <div class="wb-stat__icon">💡</div>
+        <div class="wb-stat__body">
+          <div class="wb-stat__value">{{ stats.L2 }}</div>
+          <div class="wb-stat__label">L2 概念</div>
+        </div>
+      </div>
+      <div class="wb-stat wb-stat--pink" :style="{ animationDelay: '0.24s' }">
+        <div class="wb-stat__icon">🧮</div>
+        <div class="wb-stat__body">
+          <div class="wb-stat__value">{{ stats.L3 }}</div>
+          <div class="wb-stat__label">L3 计算</div>
+        </div>
+      </div>
+      <div class="wb-stat wb-stat--purple" :style="{ animationDelay: '0.32s' }">
+        <div class="wb-stat__icon">🧠</div>
+        <div class="wb-stat__body">
+          <div class="wb-stat__value">{{ stats.L4 }}</div>
+          <div class="wb-stat__label">L4 思维</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 筛选胶囊 -->
+    <section class="wb-filters">
+      <button
+        v-for="(label, key) in layerLabels"
+        :key="key"
+        class="wb-filter"
+        :class="{ 'wb-filter--active': activeFilter === key }"
+        @click="activeFilter = key"
+      >{{ label }}</button>
+    </section>
+
+    <!-- 操作栏 -->
+    <section class="wb-actions">
+      <span class="wb-actions__count">
+        <span class="wb-actions__count-icon">📚</span>
+        共 <strong>{{ filteredCount }}</strong> 道错题
+      </span>
+      <button v-if="wrongBook.some(i => i.reviewed)" class="wb-actions__clear" @click="clearReviewed">
+        🧹 清除已掌握
+      </button>
+    </section>
+
+    <!-- 按知识点分组 -->
+    <section v-for="(items, groupName) in filtered" :key="groupName" class="wb-group">
+      <div class="wb-group__head">
+        <span class="wb-group__emoji">📖</span>
+        <h3 class="wb-group__title">{{ groupName }}</h3>
+        <span class="wb-group__count">{{ items.length }} 道</span>
       </div>
 
-      <!-- 筛选 -->
-      <div class="wrong-book__filters">
-        <button v-for="(label, key) in layerLabels" :key="key" class="wrong-book__filter" :class="{ 'wrong-book__filter--active': activeFilter === key }" @click="activeFilter = key">{{ label }}</button>
-      </div>
+      <div class="wb-list">
+        <div
+          v-for="(item, idx) in items"
+          :key="item.id"
+          class="wb-item"
+          :class="{ 'wb-item--reviewed': item.reviewed }"
+          :style="{ animationDelay: (idx * 0.06) + 's' }"
+        >
+          <!-- 题目 -->
+          <div class="wb-item__q">
+            <span class="wb-item__q-num">题目</span>
+            <p class="wb-item__q-text">{{ item.stem }}</p>
+          </div>
 
-      <!-- 操作栏 -->
-      <div class="wrong-book__actions">
-        <span class="wrong-book__count">共 {{ Object.values(filtered).flat().length }} 道错题</span>
-        <button class="wrong-book__clear" @click="clearReviewed">清除已掌握</button>
-      </div>
-
-      <!-- 按知识点分组 -->
-      <div v-for="(items, groupName) in filtered" :key="groupName" class="wrong-book__group">
-        <h3 class="wrong-book__group-title">{{ groupName }}（{{ items.length }}）</h3>
-        <div class="wrong-book__list">
-          <div v-for="item in items" :key="item.id" class="wrong-book__item" :class="{ 'wrong-book__item--reviewed': item.reviewed }">
-            <div class="wrong-book__question">{{ item.stem }}</div>
-            <div class="wrong-book__answers">
-              <div class="wrong-book__answer wrong-book__answer--wrong"><span>错误答案</span><span>{{ item.wrongAnswer }}</span></div>
-              <div class="wrong-book__answer wrong-book__answer--correct"><span>正确答案</span><span>{{ item.correctAnswer }}</span></div>
-            </div>
-            <div class="wrong-book__meta">
-              <div class="wrong-book__tags">
-                <span class="wrong-book__layer" :class="`wrong-book__layer--${item.errorLayer.toLowerCase()}`">{{ item.errorLayer }}</span>
-                <span v-if="item.reviewCount" class="wrong-book__review-count">已复习 {{ item.reviewCount }} 次</span>
+          <!-- 答案对比 -->
+          <div class="wb-item__answers">
+            <div class="wb-item__ans wb-item__ans--wrong">
+              <div class="wb-item__ans-head">
+                <span class="wb-item__ans-icon">❌</span>
+                <span class="wb-item__ans-label">你的答案</span>
               </div>
-              <button class="wrong-book__review" @click="review(item.id)">{{ item.reviewed ? '再复习' : '复习' }}</button>
+              <p class="wb-item__ans-text">{{ item.userAnswer }}</p>
             </div>
+            <div class="wb-item__ans wb-item__ans--correct">
+              <div class="wb-item__ans-head">
+                <span class="wb-item__ans-icon">✅</span>
+                <span class="wb-item__ans-label">正确答案</span>
+              </div>
+              <p class="wb-item__ans-text">{{ item.correctAnswer }}</p>
+            </div>
+          </div>
+
+          <!-- 底部信息 -->
+          <div class="wb-item__foot">
+            <div class="wb-item__tags">
+              <span
+                class="wb-item__layer"
+                :style="{ background: layerInfo[item.errorLayer].bg, color: layerInfo[item.errorLayer].textColor }"
+              >
+                {{ layerInfo[item.errorLayer].emoji }} {{ item.errorLayer }}
+              </span>
+              <span v-if="item.reviewCount > 0" class="wb-item__reviewed">
+                已复习 {{ item.reviewCount }} 次
+              </span>
+              <span class="wb-item__time">{{ formatTime(item.timestamp) }}</span>
+            </div>
+            <button class="wb-item__btn" @click="review(item.id)">
+              {{ item.reviewed ? '再看一遍' : '我来复习' }}
+            </button>
           </div>
         </div>
       </div>
+    </section>
 
-      <div v-if="!Object.keys(filtered).length" class="wrong-book__empty">暂无错题数据</div>
+    <!-- 空状态 -->
+    <div v-if="filteredCount === 0" class="wb-empty">
+      <div class="wb-empty__icon">🎉</div>
+      <div class="wb-empty__title">
+        {{ activeFilter === 'all' ? '暂无错题记录' : '这一类没有错题啦' }}
+      </div>
+      <div class="wb-empty__sub">
+        {{ activeFilter === 'all' ? '继续加油，遇到错题会自动记录在这里' : '换一个分类看看吧' }}
+      </div>
     </div>
-  </AppLayout>
+
+  </div>
 </template>
 
 <style scoped>
-.wrong-book { max-width: 640px; margin: 0 auto; padding: var(--space-4); }
-.wrong-book h1 { text-align: center; margin-bottom: var(--space-4); font-size: var(--text-2xl); }
+.wrong-book {
+  position: relative;
+  max-width: var(--content-max-width, 900px);
+  margin: 0 auto;
+  padding: 24px 18px 60px;
+}
 
-/* 统计概览 */
-.wrong-book__stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-2); margin-bottom: var(--space-4); }
-.wrong-book__stat { background: var(--bg-card); border-radius: var(--radius-lg); padding: var(--space-3); text-align: center; box-shadow: var(--shadow-sm); }
-.wrong-book__stat-num { display: block; font-size: var(--text-xl); font-weight: 700; color: var(--color-primary); }
-.wrong-book__stat-label { font-size: var(--text-xs); color: var(--text-secondary); }
-.wrong-book__stat--l1 .wrong-book__stat-num { color: #3b82f6; }
-.wrong-book__stat--l2 .wrong-book__stat-num { color: #f59e0b; }
-.wrong-book__stat--l3 .wrong-book__stat-num { color: #ef4444; }
-.wrong-book__stat--l4 .wrong-book__stat-num { color: #8b5cf6; }
+/* --------- 顶部标题卡 --------- */
+.wb-hero {
+  margin-bottom: 24px;
+}
+.wb-hero__inner {
+  background: linear-gradient(135deg, #FF8C6B 0%, #F06292 55%, #CE93D8 100%);
+  color: #fff;
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 14px 36px rgba(240, 98, 146, 0.28);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.wb-hero__inner::before {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+}
+.wb-hero__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  animation: float 3s ease-in-out infinite;
+}
+.wb-hero__text {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+.wb-hero__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+.wb-hero__subtitle {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 13.5px;
+  line-height: 1.55;
+  margin: 0;
+}
+.wb-hero__badge {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  padding: 10px 16px;
+  text-align: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.wb-hero__badge-num {
+  display: block;
+  font-size: 22px;
+  font-weight: 800;
+  color: #CE5A92;
+  line-height: 1;
+}
+.wb-hero__badge-text {
+  font-size: 11px;
+  color: #B47A9E;
+  margin-top: 4px;
+}
 
-/* 筛选 */
-.wrong-book__filters { display: flex; gap: var(--space-2); margin-bottom: var(--space-4); flex-wrap: wrap; }
-.wrong-book__filter { padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); font-size: var(--text-sm); background: var(--bg-card); color: var(--text-secondary); border: 1px solid var(--border-color); transition: all var(--transition-fast); }
-.wrong-book__filter--active { background: var(--color-primary); color: var(--text-inverse); border-color: var(--color-primary); }
+/* --------- 统计卡片 --------- */
+.wb-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.wb-stat {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 14px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease;
+  animation: fadeIn 0.4s ease both;
+  border: 2px solid transparent;
+}
+.wb-stat:hover { transform: translateY(-2px); }
+.wb-stat__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.wb-stat__value {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+.wb-stat__label {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  margin-top: 3px;
+}
+.wb-stat--orange { border-color: var(--card-orange-bg); }
+.wb-stat--orange .wb-stat__icon { background: var(--card-orange-bg); }
+.wb-stat--orange .wb-stat__value { color: var(--card-orange-text); }
 
-/* 操作栏 */
-.wrong-book__actions { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4); }
-.wrong-book__count { color: var(--text-secondary); font-size: var(--text-sm); }
-.wrong-book__clear { padding: var(--space-1) var(--space-3); font-size: var(--text-sm); color: var(--color-error); background: rgba(239,68,68,0.08); border-radius: var(--radius-lg); }
+.wb-stat--blue { border-color: var(--card-blue-bg); }
+.wb-stat--blue .wb-stat__icon { background: var(--card-blue-bg); }
+.wb-stat--blue .wb-stat__value { color: var(--card-blue-text); }
 
-/* 分组 */
-.wrong-book__group { margin-bottom: var(--space-6); }
-.wrong-book__group-title { font-size: var(--text-base); color: var(--text-secondary); margin-bottom: var(--space-3); padding-left: var(--space-2); border-left: 3px solid var(--color-primary); }
+.wb-stat--yellow { border-color: var(--card-yellow-bg); }
+.wb-stat--yellow .wb-stat__icon { background: var(--card-yellow-bg); }
+.wb-stat--yellow .wb-stat__value { color: var(--card-yellow-text); }
 
-/* 列表 */
-.wrong-book__list { display: flex; flex-direction: column; gap: var(--space-3); }
-.wrong-book__item { background: var(--bg-card); border-radius: var(--radius-xl); padding: var(--space-4); box-shadow: var(--shadow-sm); transition: opacity var(--transition-fast); }
-.wrong-book__item--reviewed { opacity: 0.7; }
-.wrong-book__question { font-weight: 500; color: var(--text-primary); margin-bottom: var(--space-3); line-height: var(--leading-relaxed); }
-.wrong-book__answers { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin-bottom: var(--space-3); }
-.wrong-book__answer { padding: var(--space-3); border-radius: var(--radius-lg); font-size: var(--text-sm); }
-.wrong-book__answer span:first-child { display: block; font-size: var(--text-xs); color: var(--text-tertiary); margin-bottom: var(--space-1); }
-.wrong-book__answer--wrong { background: rgba(239,68,68,0.1); color: var(--color-error); }
-.wrong-book__answer--correct { background: rgba(16,185,129,0.1); color: var(--color-success); }
+.wb-stat--pink { border-color: var(--card-pink-bg); }
+.wb-stat--pink .wb-stat__icon { background: var(--card-pink-bg); }
+.wb-stat--pink .wb-stat__value { color: var(--card-pink-text); }
 
-/* 元信息 */
-.wrong-book__meta { display: flex; justify-content: space-between; align-items: center; }
-.wrong-book__tags { display: flex; align-items: center; gap: var(--space-2); }
-.wrong-book__layer { padding: 2px 8px; border-radius: var(--radius-sm); font-size: var(--text-xs); color: white; }
-.wrong-book__layer--l1 { background: #3b82f6; }
-.wrong-book__layer--l2 { background: #f59e0b; }
-.wrong-book__layer--l3 { background: #ef4444; }
-.wrong-book__layer--l4 { background: #8b5cf6; }
-.wrong-book__review-count { font-size: var(--text-xs); color: var(--color-success); }
-.wrong-book__review { padding: var(--space-1) var(--space-3); background: var(--color-primary); color: white; border-radius: var(--radius-lg); font-size: var(--text-sm); transition: background var(--transition-fast); }
-.wrong-book__review:hover { background: var(--color-primary-dark); }
+.wb-stat--purple { border-color: var(--card-purple-bg); }
+.wb-stat--purple .wb-stat__icon { background: var(--card-purple-bg); }
+.wb-stat--purple .wb-stat__value { color: var(--card-purple-text); }
 
-/* 空状态 */
-.wrong-book__empty { text-align: center; color: var(--text-tertiary); padding: var(--space-12) 0; font-size: var(--text-lg); }
+@media (min-width: 700px) {
+  .wb-stats { grid-template-columns: repeat(5, 1fr); }
+}
+
+/* --------- 筛选胶囊 --------- */
+.wb-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.wb-filter {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 2px solid var(--border-color);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.wb-filter:hover {
+  border-color: var(--color-warning);
+  color: var(--color-warning);
+}
+.wb-filter--active {
+  background: linear-gradient(135deg, var(--color-warning) 0%, var(--color-danger) 100%);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: var(--shadow-primary);
+}
+
+/* --------- 操作栏 --------- */
+.wb-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 2px;
+}
+.wb-actions__count {
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wb-actions__count-icon { font-size: 15px; }
+.wb-actions__count strong {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin: 0 2px;
+}
+.wb-actions__clear {
+  padding: 8px 14px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--card-pink-text);
+  background: var(--card-pink-bg);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+.wb-actions__clear:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* --------- 分组标题 --------- */
+.wb-group { margin-bottom: 28px; }
+.wb-group__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-left: 6px;
+}
+.wb-group__emoji {
+  width: 32px;
+  height: 32px;
+  background: var(--card-orange-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.wb-group__title {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text-primary);
+  flex: 1;
+  margin: 0;
+}
+.wb-group__count {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* --------- 错题卡片 --------- */
+.wb-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.wb-item {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+  animation: fadeIn 0.4s ease both;
+  border: 2px solid transparent;
+  position: relative;
+}
+.wb-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--card-orange-bg);
+}
+.wb-item--reviewed {
+  opacity: 0.72;
+}
+
+/* 题目部分 */
+.wb-item__q {
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px dashed var(--border-color);
+}
+.wb-item__q-num {
+  display: inline-block;
+  background: var(--card-orange-bg);
+  color: var(--card-orange-text);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.wb-item__q-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 答案对比 */
+.wb-item__answers {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.wb-item__ans {
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+.wb-item__ans-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.wb-item__ans-icon { font-size: 14px; }
+.wb-item__ans-label {
+  font-size: 11.5px;
+  font-weight: 700;
+}
+.wb-item__ans-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.55;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.wb-item__ans--wrong {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1.5px solid rgba(239, 68, 68, 0.3);
+}
+.wb-item__ans--wrong .wb-item__ans-label { color: var(--color-danger); }
+.wb-item__ans--wrong .wb-item__ans-text { color: var(--color-danger); }
+
+.wb-item__ans--correct {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1.5px solid rgba(16, 185, 129, 0.3);
+}
+.wb-item__ans--correct .wb-item__ans-label { color: var(--color-success); }
+.wb-item__ans--correct .wb-item__ans-text { color: var(--color-success); }
+
+@media (min-width: 600px) {
+  .wb-item__answers { grid-template-columns: 1fr 1fr; }
+}
+
+/* 底部信息 */
+.wb-item__foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.wb-item__tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.wb-item__layer {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+.wb-item__reviewed {
+  font-size: 11.5px;
+  color: #4CAF7E;
+  font-weight: 600;
+}
+.wb-item__time {
+  font-size: 11px;
+  color: #B8B8B8;
+}
+.wb-item__btn {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #FF8C42 0%, #F37522 100%);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  border: none;
+}
+.wb-item__btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 140, 66, 0.4);
+}
+
+/* --------- 空状态 --------- */
+.wb-empty {
+  text-align: center;
+  padding: 60px 20px;
+}
+.wb-empty__icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  animation: float 3s ease-in-out infinite;
+}
+.wb-empty__title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #3A3A3A;
+  margin-bottom: 8px;
+}
+.wb-empty__sub {
+  font-size: 13px;
+  color: #8C8C8C;
+  line-height: 1.6;
+}
+
+/* --------- 动画 --------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
 </style>

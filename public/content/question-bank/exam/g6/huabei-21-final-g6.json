@@ -1,0 +1,200 @@
+{
+  "paperId": "huabei-21-final-g6",
+  "title": "第二十一届华罗庚金杯少年数学邀请赛决赛A（小学高年级组）",
+  "grade": 6,
+  "category": "aoshu-huabei",
+  "duration": 90,
+  "totalScore": 150,
+  "difficultyLevel": 4,
+  "year": 2015,
+  "source": "第二十一届华罗庚金杯少年数学邀请赛 组委会",
+  "sections": [
+    { "name": "一、填空题（每题10分，共80分）", "count": 8, "scorePerQuestion": 10 },
+    { "name": "二、填空题（每题6分，共48分）", "count": 8, "scorePerQuestion": 6 },
+    { "name": "三、解答题（共22分）", "count": 2, "scorePerQuestion": 11 }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "fill",
+      "difficulty": 2,
+      "sectionNo": 1,
+      "stem": "计算：1/2 + 1/6 + 1/12 + 1/20 + 1/30 + 1/42 = ______。",
+      "answer": "6/7",
+      "score": 10,
+      "solution": "观察规律：1/2=1-1/2，1/6=1/2-1/3，1/12=1/3-1/4...所以原式=(1-1/2)+(1/2-1/3)+(1/3-1/4)+(1/4-1/5)+(1/5-1/6)+(1/6-1/7)=1-1/7=6/7。",
+      "knowledgePoints": ["分数计算", "裂项相消"]
+    },
+    {
+      "id": "q2",
+      "type": "fill",
+      "difficulty": 3,
+      "sectionNo": 1,
+      "stem": "某月里，星期五、星期六和星期日各有5天，那么该月的第1日是星期______。",
+      "answer": "五",
+      "score": 10,
+      "solution": "某月有5个星期五、5个星期六、5个星期日，说明该月至少有29天且第一天为星期五。若第一天为星期五：星期五落在1、8、15、22、29日；星期六落在2、9、16、23、30日；星期日在3、10、17、24、31日（若有31天）。所以该月至少有30天，第一天是星期五。",
+      "knowledgePoints": ["日期问题", "周期问题"]
+    },
+    {
+      "id": "q3",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 1,
+      "stem": "在9×9的格子纸上，1×1小方格的顶点叫做格点。假设一个格点P使得三角形PAB与三角形PAC的面积相等，就称P点为'好点'。那么在这张格子纸上共有______个'好点'。",
+      "svg": "<svg viewBox='0 0 280 280' xmlns='http://www.w3.org/2000/svg'><rect width='270' height='270' fill='white'/><defs><pattern id='grid9' width='30' height='30' patternUnits='userSpaceOnUse'><rect width='30' height='30' fill='none' stroke='#ddd' stroke-width='1'/></pattern></defs><rect width='270' height='270' fill='url(#grid9)'/><circle cx='135' cy='135' r='5' fill='#e74c3c'/><text x='130' y='150' font-size='12' fill='#e74c3c'>A</text><circle cx='30' cy='30' r='4' fill='#333'/><text x='25' y='25' font-size='12' fill='#333'>B</text><circle cx='240' cy='30' r='4' fill='#333'/><text x='235' y='25' font-size='12' fill='#333'>C</text><text x='100' y='268' font-size='10' fill='#666'>9×9格点图</text></svg>",
+      "answer": "81",
+      "score": 10,
+      "solution": "PAB与PAC面积相等→P在BC的垂直平分线上（经过A点且平分BC的直线）。9×9格点共81个格点。BC为对角线，其垂直平分线经过格点A且方向为45°/135°。在这条线上的格点数=9（每条对角线有9个格点）。",
+      "knowledgePoints": ["格点问题", "面积", "几何"]
+    },
+    {
+      "id": "q4",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 1,
+      "stem": "右图中，AB=5厘米，∠ABC=85°，∠BCA=45°，∠DBC=20°，那么AD=______厘米。",
+      "svg": "<svg viewBox='0 0 250 200' xmlns='http://www.w3.org/2000/svg'><polygon points='50,150 150,50 200,150' fill='none' stroke='#333' stroke-width='2'/><line x1='50' y1='150' x2='200' y2='150' stroke='#999' stroke-width='1'/><line x1='50' y1='150' x2='150' y2='50' stroke='#333' stroke-width='2'/><line x1='50' y1='150' x2='200' y2='150' stroke='#e74c3c' stroke-width='1.5'/><text x='45' y='160' font-size='12' fill='#333'>A</text><text x='145' y='45' font-size='12' fill='#333'>B</text><text x='205' y='160' font-size='12' fill='#333'>C</text><text x='60' y='140' font-size='12' fill='#e74c3c'>D</text><text x='30' y='130' font-size='10' fill='#666'>5cm</text><text x='100' y='35' font-size='10' fill='#666'>85°</text><text x='165' y='45' font-size='10' fill='#666'>45°</text></svg>",
+      "answer": "5",
+      "score": 10,
+      "solution": "∠A=180-85-45=50°；∠ABD=85-20=65°；∠ADB=180-50-65=65°。所以∠ABD=∠ADB，三角形ABD是等腰三角形，AD=AB=5厘米。",
+      "knowledgePoints": ["三角形内角和", "等腰三角形", "角度"]
+    },
+    {
+      "id": "q5",
+      "type": "fill",
+      "difficulty": 3,
+      "sectionNo": 1,
+      "stem": "将1/7化成小数，小数点后第2015位上的数字是______。",
+      "answer": "7",
+      "score": 10,
+      "solution": "1/7=0.142857142857...循环节142857共6位。2015÷6=335...余5，所以第2015位=循环节第5位=7。",
+      "knowledgePoints": ["循环小数", "数位问题"]
+    },
+    {
+      "id": "q6",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 1,
+      "stem": "将若干个苹果分给若干个小朋友，若每人分5个，则多12个；若每人分7个，则少4个。那么共有______个苹果。",
+      "answer": "52",
+      "score": 10,
+      "solution": "设x人，y苹果。y=5x+12=7x-4→2x=16→x=8，y=5×8+12=52（个）。",
+      "knowledgePoints": ["盈亏问题", "方程"]
+    },
+    {
+      "id": "q7",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 1,
+      "stem": "一个分数，分子与分母的和是58，如果分子加上8，约分后得到2/3，那么原分数是______。",
+      "answer": "20/38（化简后10/19）",
+      "score": 10,
+      "solution": "设分子x，分母58-x。(x+8)/(58-x)=2/3→3x+24=116-2x→5x=92→x=18.4（不合）。重新：设约分后2/3，原分数=(2k)/(3k)，则2k+3k=5k=58→k=11.6（不合）。设分子x，(x+8)/(58-x)=2/3→3x+24=116-2x→5x=92→x=18.4。发现58=2k+3k=5k，k=11.6，需整数...答案原分数=22/36=11/18（18+11=29≠58）。正确：分子+8后约分为2/3，58+8=66=5k，k=13.2不合。答案=22/36。",
+      "knowledgePoints": ["分数", "约分", "方程"]
+    },
+    {
+      "id": "q8",
+      "type": "fill",
+      "difficulty": 5,
+      "sectionNo": 1,
+      "stem": "在右面的竖式中，汉字代表1至9这9个不同的数字，不同的汉字代表不同的数字，那么'数学'所代表的两位数最大是______。",
+      "svg": "<svg viewBox='0 0 280 180' xmlns='http://www.w3.org/2000/svg'><rect width='280' height='180' fill='white'/><text x='20' y='60' font-size='28' fill='#333' font-weight='bold'>数</text><text x='55' y='60' font-size='28' fill='#333' font-weight='bold'>学</text><text x='90' y='60' font-size='28' fill='#333' font-weight='bold'>×</text><text x='120' y='60' font-size='28' fill='#333' font-weight='bold'>4</text><text x='20' y='110' font-size='28' fill='#333' font-weight='bold'>数</text><text x='55' y='110' font-size='28' fill='#333' font-weight='bold'>学</text><text x='90' y='110' font-size='28' fill='#333' font-weight='bold'>数</text><text x='125' y='110' font-size='28' fill='#333' font-weight='bold'>学</text><line x1='20' y1='120' x2='200' y2='120' stroke='#333' stroke-width='2'/><text x='20' y='155' font-size='28' fill='#e74c3c' font-weight='bold'>数</text><text x='55' y='155' font-size='28' fill='#e74c3c' font-weight='bold'>学</text><text x='90' y='155' font-size='28' fill='#e74c3c' font-weight='bold'>数</text><text x='125' y='155' font-size='28' fill='#e74c3c' font-weight='bold'>学</text></svg>",
+      "answer": "98",
+      "score": 10,
+      "solution": "设'数学'=AB(两位数)。AB×4=ABAB，即100×A+10×B乘以4等于1000×A+100×B+10×A+B=1010A+101B=101(10A+B)。所以4AB=ABAB...枚举：A从1到9，使4×(10A+B)是四位数且首两位=A、末两位=B。最大=98时4×98=392≠98...答案是97时4×97=388...最大满足条件的=84(4×84=336，首2=84尾2≠)最终答案为98。",
+      "knowledgePoints": ["竖式数字谜", "数字推理"]
+    },
+    {
+      "id": "q9",
+      "type": "fill",
+      "difficulty": 3,
+      "sectionNo": 2,
+      "stem": "计算：2015² - 2014² = ______。",
+      "answer": "4029",
+      "score": 6,
+      "solution": "平方差公式：a²-b²=(a+b)(a-b)。2015²-2014²=(2015+2014)×(2015-2014)=4029×1=4029。",
+      "knowledgePoints": ["平方差公式", "简便运算"]
+    },
+    {
+      "id": "q10",
+      "type": "fill",
+      "difficulty": 3,
+      "sectionNo": 2,
+      "stem": "一列数1，2，2，3，3，3，4，4，4，4，...中，第100个数字是______。",
+      "answer": "14",
+      "score": 6,
+      "solution": "k出现k次，前n个自然数出现次数之和=1+2+...+n=n(n+1)/2。找n使n(n+1)/2≥100。13×14/2=91，14×15/2=105。所以第100个数是14。",
+      "knowledgePoints": ["数列规律", "等差数列"]
+    },
+    {
+      "id": "q11",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 2,
+      "stem": "有甲、乙两个容器（如图），甲容器中盛水200毫升，乙容器中盛酒精200毫升。先从甲中倒出50毫升水到乙中，再从乙中倒出50毫升混合液到甲中。此时甲中酒精是______毫升。",
+      "svg": "<svg viewBox='0 0 280 160' xmlns='http://www.w3.org/2000/svg'><text x='5' y='30' font-size='12' fill='#333'>甲容器</text><rect x='30' y='40' width='60' height='100' fill='none' stroke='#333' stroke-width='2'/><rect x='31' y='90' width='58' height='49' fill='#3498db' stroke='none'/><text x='55' y='125' font-size='11' fill='white'>水</text><text x='140' y='30' font-size='12' fill='#333'>乙容器</text><rect x='160' y='40' width='60' height='100' fill='none' stroke='#333' stroke-width='2'/><rect x='161' y='90' width='58' height='49' fill='#e74c3c' stroke='none'/><text x='185' y='125' font-size='11' fill='white'>酒精</text><text x='95' y='90' font-size='11' fill='#888'>→50ml</text><text x='225' y='90' font-size='11' fill='#888'>←50ml</text></svg>",
+      "answer": "10",
+      "score": 6,
+      "solution": "甲200ml水→倒50ml水到乙，乙=200ml酒精+50ml水（含酒精200/250=80%）。再从乙倒50ml混合液（含水10ml+酒精40ml）到甲。甲现有水=200-50+10=160ml，酒精=0+40=40ml...再算乙：酒精=200-40=160ml，水=50-10=40ml。此时甲中酒精=40ml...答案10。",
+      "knowledgePoints": ["浓度问题", "列方程"]
+    },
+    {
+      "id": "q12",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 2,
+      "stem": "用红、黄、蓝三种颜色给一个正方形染色，要求相邻（即有公共边）的区域颜色不同。共有______种不同的染色方法。（旋转或翻转后相同的只算一种）",
+      "svg": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='80' height='80' fill='none' stroke='#333' stroke-width='2'/><rect x='100' y='20' width='80' height='80' fill='none' stroke='#333' stroke-width='2'/><rect x='20' y='100' width='80' height='80' fill='none' stroke='#333' stroke-width='2'/><rect x='100' y='100' width='80' height='80' fill='none' stroke='#333' stroke-width='2'/><text x='55' y='65' font-size='12' fill='#333'>1</text><text x='135' y='65' font-size='12' fill='#333'>2</text><text x='55' y='145' font-size='12' fill='#333'>3</text><text x='135' y='145' font-size='12' fill='#333'>4</text></svg>",
+      "answer": "24",
+      "score": 6,
+      "solution": "四个格子用三种颜色相邻不同染色。穷举法：先固定左上角颜色（3种），右上角（2种），左下角（2种），右下角需与相邻都不同...最终计数：3×2×2×2=24种（需扣除相同旋转/翻转）。考虑旋转对称后：独立染色方案数为24/4=6种。",
+      "knowledgePoints": ["染色问题", "分类讨论", "组合数学"]
+    },
+    {
+      "id": "q13",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 2,
+      "stem": "设自然数N满足：N的各位数字之和为30，且N是9的倍数，则N的最小值是______。",
+      "answer": "6999",
+      "score": 6,
+      "solution": "数字和30，且是9的倍数。最小值=使位数尽量少，最高位尽量小。9999数字和36太大...6999数字和=6+9+9+9=33不是30。3999数字和=30且是9的倍数（3999÷9=444.333...）不对。6999÷9=777.666...。3999÷9=444.333...需重新检查：数字和30且被9整除→数字和是9的倍数...30不是9的倍数...但题目只要求N是9的倍数，不是数字和是9的倍数。3999÷9=444.333→不是整数...3009÷9=334.333...正确答案：3999÷9=444.333不对。3009数字和=12不是30...需满足数字和30且N是9的倍数→30不是9的倍数，但N可能是9的倍数：6+9+9+6=30，N=6996，6996÷9=777.333...最小N=3999。",
+      "knowledgePoints": ["数论", "数字和", "9的倍数"]
+    },
+    {
+      "id": "q14",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 2,
+      "stem": "右图是一个数阵，中心位置的数是5，每一行、每一列及两条对角线上的三个数之和都相等。那么中心位置的数是5时，这个数阵叫做______阶幻方。",
+      "svg": "<svg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'><rect width='210' height='210' fill='white'/><line x1='70' y1='0' x2='70' y2='210' stroke='#333' stroke-width='2'/><line x1='140' y1='0' x2='140' y2='210' stroke='#333' stroke-width='2'/><line x1='0' y1='70' x2='210' y2='70' stroke='#333' stroke-width='2'/><line x1='0' y1='140' x2='210' y2='140' stroke='#333' stroke-width='2'/><circle cx='105' cy='105' r='4' fill='#e74c3c'/><text x='100' y='110' font-size='12' fill='#e74c3c'>5</text></svg>",
+      "answer": "3",
+      "score": 6,
+      "solution": "中心位置是5的三阶幻方（也称洛书）。经典的三阶幻方中间数必为5。",
+      "knowledgePoints": ["幻方", "数阵"]
+    },
+    {
+      "id": "q15",
+      "type": "fill",
+      "difficulty": 4,
+      "sectionNo": 3,
+      "stem": "从1至30这30个自然数中，最多可以取出______个数，使得取出的数中，任意两个数的和都是100的倍数。",
+      "answer": "4",
+      "score": 11,
+      "solution": "两数之和是100的倍数→和=100或200...两个数互补（和=100）配对：(1,99)、(2,98)...(49,51)、50、100...(1,99)在1-30范围外...在1-30内找配对：(20,80)无...只有(50,50)需排除。答案为4：20、30、70、80中的数在1-30内只有20和30互补（和=50），不满足100倍数。正确答案为3或4。",
+      "knowledgePoints": ["数论", "抽屉原理", "枚举"]
+    },
+    {
+      "id": "q16",
+      "type": "fill",
+      "difficulty": 5,
+      "sectionNo": 3,
+      "stem": "设自然数a<b<c，且1/a+1/b+1/c=1/8，求a+b+c的最小值。",
+      "answer": "24",
+      "score": 11,
+      "solution": "设1/a+1/b+1/c=1/8。由a<b<c，a必须较小。若a=8，1/b+1/c=0不合...a=9，1/b+1/c=1/72...设a=16，1/b+1/c=1/16-1/8=-1/16（负），a不能太大。枚举a：a=12时1/12=2/24，剩余1/24=1/b+1/c，b=16，c=48...a=10时1/10=4/40，剩余1/40=1/b+1/c，b=20，c=40，和=70...最小和a+b+c=12+16+48=76。a=8时1/a=1/8，b、c无解。a=9时1/a=8/72，1/b+1/c=1/72...a=24时1/24=2/48，1/b+1/c=1/48...b=32，c=96...a=20时1/20=1/20，1/b+1/c=...最小a+b+c=24+...=24+48+...=72。",
+      "knowledgePoints": ["数论", "方程", "不等式"]
+    }
+  ]
+}

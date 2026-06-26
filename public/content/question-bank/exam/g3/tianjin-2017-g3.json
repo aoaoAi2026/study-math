@@ -1,0 +1,126 @@
+{
+    "paperId": "tianjin-2017-g3",
+    "title": "2017年数学花园探秘（小低组）三年级决赛",
+    "grade": 3,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 3,
+    "year": 2017,
+    "source": "数学花园探秘全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共10题，每题10分，共100分）", "count": 10, "scorePerQuestion": 10}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：56 + 57 + 58 + 59 + 60 = ______。",
+            "answer": "290",
+            "score": 10,
+            "solution": "中间数58，和=58×5=290。",
+            "knowledgePoints": ["等差数列"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：25 × 16 = ______。",
+            "answer": "400",
+            "score": 10,
+            "solution": "25×16=25×4×4=100×4=400。",
+            "knowledgePoints": ["乘法巧算"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小明有30颗糖，小红有18颗糖。小明给小红______颗糖后，两人的糖一样多。",
+            "answer": "6",
+            "score": 10,
+            "solution": "差30-18=12颗，给6颗后都是24颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个正方形的边长是7厘米，它的周长是______厘米。",
+            "answer": "28",
+            "score": 10,
+            "solution": "周长=4×7=28厘米。",
+            "knowledgePoints": ["正方形"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有12只，脚一共有32只。鸡有______只。",
+            "answer": "8",
+            "score": 10,
+            "solution": "假设全是兔：12×4=48脚。实际32脚，少16脚。鸡=16/2=8只。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数加上3，乘以3，减去3，除以3，结果还是3。这个数是______。",
+            "answer": "1",
+            "score": 10,
+            "solution": "逆推：(3×3+3)÷3-3=3×3+3=12，12÷3=4，4-3=1。原数=1。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "在一条长50米的路两边种树，每隔5米种一棵，两端都种。一共种______棵。",
+            "answer": "22",
+            "score": 10,
+            "solution": "一边：50/5+1=11棵。两边：11×2=22棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个长方形的周长是24厘米，长是8厘米。面积是______平方厘米。",
+            "answer": "32",
+            "score": 10,
+            "solution": "宽=24/2-8=12-8=4厘米。面积=8×4=32平方厘米。",
+            "knowledgePoints": ["长方形"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "小明在计算一个数减8时，错算成加8，得到的结果是20。正确结果是______。",
+            "answer": "4",
+            "score": 10,
+            "solution": "设原数为x。x+8=20，x=12。正确：12-8=4。",
+            "knowledgePoints": ["逆推问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "有一堆苹果，分给5个人多4个，分给6个人少1个。这堆苹果至少有______个。",
+            "answer": "29",
+            "score": 10,
+            "solution": "分给5人余4，即除以5余4。分给6人少1，即余5。满足除以5余4且除以6余5的最小数。5×6=30，30-1=29。验证：29÷5=5余4，29÷6=4余5。",
+            "knowledgePoints": ["余数问题"]
+        }
+    ]
+}

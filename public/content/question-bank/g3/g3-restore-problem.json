@@ -1,0 +1,1297 @@
+{
+  "topicId": "g3-restore-problem",
+  "topicName": "还原问题",
+  "grade": 3,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g3-rp-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个数加上 5 得 12，这个数是多少？",
+      "image": "",
+      "options": [
+        "5",
+        "7",
+        "8",
+        "17"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "原数 = 12-5 = 7",
+        "还原：加变减"
+      ],
+      "hints": [
+        "倒着想：+5→-5",
+        "用逆运算"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "12+5=17",
+          "reason": "继续加",
+          "correction": "还原要逆运算",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "逆运算"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-rp-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个数减去 8 得 15，这个数是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "23",
+      "acceptableAnswers": [
+        "23"
+      ],
+      "solution": [
+        "原数 = 15+8 = 23",
+        "倒推：减变加"
+      ],
+      "hints": [
+        "减的倒推是加"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "15-8=7",
+          "reason": "继续减",
+          "correction": "15+8=23",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-rp-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个数乘 4 得 36，这个数是？",
+      "image": "",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "144"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "原数 = 36÷4 = 9",
+        "乘变除"
+      ],
+      "hints": [
+        "×倒推=÷"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "36×4=144",
+          "reason": "继续乘",
+          "correction": "36÷4=9",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "乘除"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-rp-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个数除以 5 得 8，这个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40"
+      ],
+      "solution": [
+        "原数 = 8×5 = 40",
+        "除变乘"
+      ],
+      "hints": [
+        "÷倒推=×"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "8÷5",
+          "reason": "继续除",
+          "correction": "8×5=40",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-rp-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个数加上 12，再减去 8，结果是 25。这个数是？",
+      "image": "",
+      "options": [
+        "15",
+        "21",
+        "29",
+        "45"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "原数 = 25+8-12 = 21",
+        "倒推：+12→-12, -8→+8"
+      ],
+      "hints": [
+        "从结果倒推",
+        "每步做逆运算"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "25-12+8=21(碰巧对)",
+          "reason": "顺序不对",
+          "correction": "正确是25+8-12=21",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "两步"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "加减"
+      ]
+    },
+    {
+      "id": "g3-rp-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个数乘 6，再除以 4 得 12。这个数是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "solution": [
+        "原数 = 12×4÷6 = 48÷6 = 8",
+        "倒推：×6→÷6,÷4→×4",
+        "检验：8×6=48, 48÷4=12 ✓"
+      ],
+      "hints": [
+        "从后往前逆运算"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "12÷4×6=18",
+          "reason": "顺序反",
+          "correction": "12×4÷6=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "乘除"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "两步"
+      ]
+    },
+    {
+      "id": "g3-rp-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "妈妈买了一袋苹果，吃了 15 个还剩 28 个。原来有多少个？",
+      "image": "",
+      "options": [
+        "13",
+        "33",
+        "43",
+        "53"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "原数 = 28+15 = 43 个",
+        "剩+吃=原"
+      ],
+      "hints": [
+        "吃了的倒推是加回来"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "28-15=13",
+          "reason": "再减",
+          "correction": "28+15=43",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "水果"
+      ]
+    },
+    {
+      "id": "g3-rp-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小明有一些贴纸，给了弟弟 12 张后还剩 18 张。小明原来有多少张贴纸？",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30"
+      ],
+      "solution": [
+        "原数 = 18+12 = 30 张",
+        "倒推：给出去的要加回来"
+      ],
+      "hints": [
+        "剩+给=原"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "18-12=6",
+          "reason": "继续减",
+          "correction": "18+12=30",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "贴纸"
+      ]
+    },
+    {
+      "id": "g3-rp-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个数加上 18 是另一个数的 2 倍，另一个数是 25。这个数是？",
+      "image": "",
+      "options": [
+        "32",
+        "43",
+        "50",
+        "68"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "另一个数的2倍 = 25×2 = 50",
+        "原数+18 = 50",
+        "原数 = 50-18 = 32"
+      ],
+      "hints": [
+        "先算\"另一个数的2倍\"",
+        "再倒推"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "25×2+18=68",
+          "reason": "加18方向反",
+          "correction": "50-18=32",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "两步"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "混合"
+      ]
+    },
+    {
+      "id": "g3-rp-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一堆糖果，吃掉一半，再吃 3 颗，还剩 12 颗。原来有 ____ 颗。",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30"
+      ],
+      "solution": [
+        "最后剩12，吃3颗前 = 12+3 = 15",
+        "吃一半前 = 15×2 = 30 颗",
+        "检验：30÷2=15, 15-3=12 ✓"
+      ],
+      "hints": [
+        "从后往前推",
+        "一半倒推=×2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "(12-3)×2=18",
+          "reason": "顺序错",
+          "correction": "12+3=15,再×2=30",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "一半"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "糖果"
+      ]
+    },
+    {
+      "id": "g3-rp-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个数加上 8，乘 3，减 10，得 50。这个数是？",
+      "image": "",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "倒推：(50+10)÷3-8 = 60÷3-8 = 20-8 = 12",
+        "检验：12+8=20, 20×3=60, 60-10=50 ✓"
+      ],
+      "hints": [
+        "从结果开始，每步逆运算",
+        "减→加,乘→除,加→减"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "50-10÷3+8",
+          "reason": "运算顺序错",
+          "correction": "(50+10)÷3-8",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "三步"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "混合运算"
+      ]
+    },
+    {
+      "id": "g3-rp-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明有一些卡片，先给弟弟 8 张，又买了 15 张，现在有 42 张。原来有 ____ 张。",
+      "image": "",
+      "options": [],
+      "answer": "35",
+      "acceptableAnswers": [
+        "35"
+      ],
+      "solution": [
+        "倒推：42-15+8 = 35 张",
+        "检验：35-8=27, 27+15=42 ✓"
+      ],
+      "hints": [
+        "给出去→加回来",
+        "买来→减回去"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "42+15-8=49",
+          "reason": "方向都反了",
+          "correction": "42-15+8=35",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "卡片"
+      ]
+    },
+    {
+      "id": "g3-rp-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一根绳子先剪去一半，再剪去 6 米，还剩 12 米。原来长多少米？",
+      "image": "",
+      "options": [
+        "18",
+        "24",
+        "36",
+        "48"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "倒推：(12+6)×2 = 18×2 = 36 米",
+        "检验：36÷2=18, 18-6=12 ✓"
+      ],
+      "hints": [
+        "\"一半\"要×2回去",
+        "先加再乘"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "12×2+6=30",
+          "reason": "顺序错",
+          "correction": "(12+6)×2=36",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "一半"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "绳子"
+      ]
+    },
+    {
+      "id": "g3-rp-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个书架上下两层共有 60 本书。从上层拿 8 本到下层，两层一样多。原来上层有多少本？",
+      "image": "",
+      "options": [],
+      "answer": "38",
+      "acceptableAnswers": [
+        "38"
+      ],
+      "solution": [
+        "最后一样多 = 60÷2 = 30 本",
+        "倒推：上层原来 = 30+8 = 38 本",
+        "下层 = 30-8 = 22 本",
+        "检验：38+22=60, 38-8=30, 22+8=30 ✓"
+      ],
+      "hints": [
+        "先求最后状态",
+        "再把拿的拿回去"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "60÷2+8=38 对",
+          "reason": "未除以2",
+          "correction": "先÷2再倒推",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "移动"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "书架"
+      ]
+    },
+    {
+      "id": "g3-rp-15",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "甲、乙两筐水果共 50 个。从甲筐拿 5 个到乙筐，甲筐还比乙筐多 4 个。原来甲筐有多少个？",
+      "image": "",
+      "options": [
+        "27",
+        "30",
+        "32",
+        "35"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "最后：甲+乙=50, 甲-乙=4, 甲=(50+4)÷2=27, 乙=23",
+        "原来：甲=27+5=32, 乙=23-5=18",
+        "检验：32+18=50, 32-5-(18+5)=4 ✓"
+      ],
+      "hints": [
+        "先算现在",
+        "再倒推原来"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "50÷2+5=30",
+          "reason": "没考虑最后还多4",
+          "correction": "先求现在的甲=27",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "和差"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "水果"
+      ]
+    },
+    {
+      "id": "g3-rp-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "三个盒子共装 60 个球。从甲拿 5 个到乙，从乙拿 8 个到丙，从丙拿 3 个到甲，现在三盒一样多。原来甲盒有 ____ 个。",
+      "image": "",
+      "options": [],
+      "answer": "22",
+      "acceptableAnswers": [
+        "22"
+      ],
+      "solution": [
+        "最后各 = 60÷3 = 20 个",
+        "甲：原-5+3=20, 原=22",
+        "乙：原+5-8=20, 原=23",
+        "丙：原+8-3=20, 原=15",
+        "检验：22+23+15=60 ✓"
+      ],
+      "hints": [
+        "先求最终各=20",
+        "对每盒单独倒推"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "60÷3=20即原",
+          "reason": "没倒推",
+          "correction": "要把移出的加回，移入的减去",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "多步"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "盒子"
+      ]
+    },
+    {
+      "id": "g3-rp-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个数加上 12，乘 2，减去 16，再除以 3 得 12。这个数是？",
+      "image": "",
+      "options": [
+        "10",
+        "14",
+        "16",
+        "18"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "倒推：(12×3+16)÷2-12 = (36+16)÷2-12 = 52÷2-12 = 26-12 = 14",
+        "检验：14+12=26, 26×2=52, 52-16=36, 36÷3=12 ✓"
+      ],
+      "hints": [
+        "从结果一步步逆推",
+        "注意运算顺序"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "12×3+16÷2-12",
+          "reason": "没加括号",
+          "correction": "(36+16)÷2-12",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "四步"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "混合"
+      ]
+    },
+    {
+      "id": "g3-rp-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一堆桃子，第一只猴子吃了一半又 2 个，第二只猴子吃了剩下的一半又 2 个，第三只猴子吃了再剩下的一半又 2 个，最后剩 4 个。原来有多少个？",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60"
+      ],
+      "solution": [
+        "倒推，每次先加2再×2",
+        "第三只吃之前有：(4+2)×2 = 12 个",
+        "第二只吃之前有：(12+2)×2 = 28 个",
+        "第一只吃之前有：(28+2)×2 = 60 个",
+        "检验：60÷2-2=28, 28÷2-2=12, 12÷2-2=4 ✓"
+      ],
+      "hints": [
+        "从后往前：(剩+又吃的)×2",
+        "每步都倒推"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "(4×2)+2=10然后继续",
+          "reason": "顺序错",
+          "correction": "先+2再×2",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "还原问题",
+        "多步",
+        "一半多几"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "猴子",
+        "桃子"
+      ]
+    },
+    {
+      "id": "g3-rp-19",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "一个数加上 5，乘 3，再减去 6，得 21。这个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": ["4"],
+      "solution": [
+        "倒推：从结果21开始",
+        "减6之前：21+6=27",
+        "乘3之前：27÷3=9",
+        "加5之前：9-5=4",
+        "检验：4+5=9, 9×3=27, 27-6=21 ✓"
+      ],
+      "hints": [
+        "从结果倒推，每步逆运算",
+        "减变加，乘变除，加变减",
+        "(21+6)÷3-5=4"
+      ],
+      "commonMistakes": [
+        {"mistake": "21+6÷3-5", "reason": "运算顺序错", "correction": "(21+6)÷3-5=4", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2008, "paper": "第六届希望杯三年级"},
+      "knowledgePoints": ["还原问题", "三步运算"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -0.3, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题"]
+    },
+    {
+      "id": "g3-rp-20",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "一根绳子，第一次剪去一半，第二次剪去余下的一半，还剩 12 米。这根绳子原来长多少米？",
+      "image": "",
+      "options": ["24米", "36米", "48米", "60米"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "倒推：最后剩12米",
+        "第二次剪之前：12×2=24米",
+        "第一次剪之前：24×2=48米",
+        "检验：48÷2=24, 24÷2=12 ✓"
+      ],
+      "hints": [
+        "每次剪一半，倒推就×2",
+        "12×2×2=48米"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0", "reason": "只乘了一次2", "correction": "要乘两次2：12×2×2=48", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2010, "paper": "2010年迎春杯三年级"},
+      "knowledgePoints": ["还原问题", "一半问题"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": 0.1, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题"]
+    },
+    {
+      "id": "g3-rp-21",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "小明有一些糖，第一天吃了一半多 2 颗，第二天吃了剩下的一半少 1 颗，还剩 5 颗。小明原来有多少颗糖？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": ["20"],
+      "solution": [
+        "倒推：最后剩5颗",
+        "第二天前：(5-1)×2 = 4×2 = 8颗（第二天吃一半少1颗，剩的比一半多1颗，所以-1再×2）",
+        "第一天前：(8+2)×2 = 10×2 = 20颗（第一天吃一半多2颗，剩的比一半少2颗，所以+2再×2）",
+        "检验：20÷2-2=8, 8÷2+1=5 ✓"
+      ],
+      "hints": [
+        "从后往前倒推",
+        "\"吃了一半少1颗\" → 剩的比一半多1颗 → 倒推：(剩-1)×2",
+        "\"吃了一半多2颗\" → 剩的比一半少2颗 → 倒推：(剩+2)×2"
+      ],
+      "commonMistakes": [
+        {"mistake": "(5+1)×2=12", "reason": "少1颗倒推方向搞反", "correction": "(5-1)×2=8", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2007, "paper": "第十二届华罗庚金杯初赛"},
+      "knowledgePoints": ["还原问题", "一半多几少几"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.1, "b": 0.5, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题"]
+    },
+    {
+      "id": "g3-rp-22",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "甲、乙两桶油共重 80 千克。如果从甲桶倒 12 千克到乙桶，那么两桶油重量相等。甲桶原来有油多少千克？",
+      "image": "",
+      "options": [],
+      "answer": "52",
+      "acceptableAnswers": ["52", "52千克"],
+      "solution": [
+        "倒推法：倒完后两桶相等，各有 80÷2 = 40千克",
+        "甲倒出12千克后是40，原来甲 = 40+12 = 52千克",
+        "乙倒入12千克后是40，原来乙 = 40-12 = 28千克",
+        "检验：52+28=80, 52-12=40, 28+12=40 ✓"
+      ],
+      "hints": [
+        "先求倒完后各有多少：80÷2=40",
+        "甲倒出去了，倒推要加回来",
+        "原来甲=40+12=52"
+      ],
+      "commonMistakes": [
+        {"mistake": "甲=40+12=52, 乙=40+12=52", "reason": "乙的方向搞反了", "correction": "乙原来=40-12=28", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2011, "paper": "第九届走美杯三年级"},
+      "knowledgePoints": ["还原问题", "和差问题"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题"]
+    },
+    {
+      "id": "g3-rp-23",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一筐苹果，第一天卖出一半多 3 千克，第二天卖出余下的一半少 2 千克，第三天又卖出余下的一半多 1 千克，这时还剩 6 千克。这筐苹果原来有多少千克？",
+      "image": "",
+      "options": [],
+      "answer": "54",
+      "acceptableAnswers": ["54", "54千克"],
+      "solution": [
+        "倒推：最后剩6千克",
+        "第三天前：(6+1)×2 = 7×2 = 14千克（第三天卖一半多1，剩的比一半少1，所以+1再×2）",
+        "第二天前：(14-2)×2 = 12×2 = 24千克（第二天卖一半少2，剩的比一半多2，所以-2再×2）",
+        "第一天前：(24+3)×2 = 27×2 = 54千克（第一天卖一半多3，剩的比一半少3，所以+3再×2）",
+        "检验：54÷2-3=24, 24÷2+2=14, 14÷2-1=6 ✓"
+      ],
+      "hints": [
+        "从后往前，一步步倒推",
+        "注意多几和少几的方向",
+        "多几：剩=一半-几 → 倒推：(剩+几)×2",
+        "少几：剩=一半+几 → 倒推：(剩-几)×2"
+      ],
+      "commonMistakes": [
+        {"mistake": "方向搞反", "reason": "多几少几容易混", "correction": "画图帮助理解", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2012, "paper": "第十届希望杯三年级"},
+      "knowledgePoints": ["还原问题", "多步一半多几少几"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.3, "b": 1.2, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题"]
+    },
+    {
+      "id": "g3-rp-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "甲、乙、丙三个书架共有图书 120 本。从甲书架拿 15 本到乙书架，再从乙书架拿 10 本到丙书架，最后从丙书架拿 8 本到甲书架，这时三个书架的图书本数相等。甲书架原来有多少本图书？",
+      "image": "",
+      "options": [],
+      "answer": "47",
+      "acceptableAnswers": ["47", "47本"],
+      "solution": [
+        "最后三个书架相等，各有 120÷3 = 40 本",
+        "甲书架：先拿出15本，又放入8本后是40本",
+        "倒推：甲原来 = 40 - 8 + 15 = 47 本",
+        "乙书架：先放入15本，又拿出10本后是40本",
+        "乙原来 = 40 + 10 - 15 = 35 本",
+        "丙书架：先放入10本，又拿出8本后是40本",
+        "丙原来 = 40 + 8 - 10 = 38 本",
+        "检验：47+35+38=120 ✓"
+      ],
+      "hints": [
+        "先求最后每个书架有多少本：120÷3=40",
+        "对甲书架单独倒推：放入的减回去，拿出的加回来",
+        "甲原来 = 40 - 8 + 15 = 47"
+      ],
+      "commonMistakes": [
+        {"mistake": "40+15-8=47（结果对但思路错）", "reason": "方向搞反但碰巧算对", "correction": "拿出的要加回，放入的要减去", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2013, "paper": "第十一届希望杯三年级"},
+      "knowledgePoints": ["还原问题", "多量还原", "多次操作"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.2, "b": 0.9, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题", "书架"]
+    },
+    {
+      "id": "g3-rp-25",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有甲、乙两桶油，一共重 60 千克。先从甲桶倒 12 千克给乙桶，再从乙桶倒 8 千克给甲桶，这时甲桶还比乙桶多 4 千克。甲桶原来有多少千克油？",
+      "image": "",
+      "options": ["30千克", "34千克", "36千克", "40千克"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "最后：甲+乙=60, 甲-乙=4",
+        "最后甲 = (60+4)÷2 = 32 千克，乙 = 28 千克",
+        "倒推：第二次（乙倒给甲8千克）前",
+        "甲 = 32-8 = 24 千克，乙 = 28+8 = 36 千克",
+        "第一次（甲倒给乙12千克）前",
+        "甲原来 = 24+12 = 36 千克，乙原来 = 36-12 = 24 千克",
+        "检验：36-12=24, 24+12=36; 24+8=32, 36-8=28; 32-28=4 ✓"
+      ],
+      "hints": [
+        "先算最后甲乙各有多少（和差问题）",
+        "再从后往前倒推两次",
+        "甲最后32，乙倒给甲8千克前甲=32-8=24",
+        "甲倒给乙12千克前甲=24+12=36"
+      ],
+      "commonMistakes": [
+        {"mistake": "60÷2+4=34", "reason": "直接用和差没倒推", "correction": "先求最后状态，再倒推回原来", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2009, "paper": "2009年迎春杯三年级"},
+      "knowledgePoints": ["还原问题", "和差问题", "两次操作"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题", "倒油"]
+    },
+    {
+      "id": "g3-rp-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "小明做一道加法题时，把一个加数十位上的 3 看成了 5，个位上的 4 看成了 1，结果算出来的和是 89。正确的和应该是多少？",
+      "image": "",
+      "options": [],
+      "answer": "72",
+      "acceptableAnswers": ["72"],
+      "solution": [
+        "十位上3看成5，多加了 50-30 = 20",
+        "个位上4看成1，少加了 4-1 = 3",
+        "总共多加了 20-3 = 17",
+        "正确的和 = 89 - 17 = 72",
+        "或者：看错的加数是51，正确的加数是34",
+        "另一个加数 = 89-51 = 38",
+        "正确的和 = 38+34 = 72 ✓"
+      ],
+      "hints": [
+        "先分析看错的地方：十位多算了20，个位少算了3",
+        "总共多算了17，所以正确答案要减去17",
+        "也可以先求另一个正确的加数，再重新算"
+      ],
+      "commonMistakes": [
+        {"mistake": "89-20+3=72（结果对）", "reason": "方向容易搞混", "correction": "多加的减回去，少加的加回来", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2013, "paper": "第十一届走美杯三年级"},
+      "knowledgePoints": ["还原问题", "错中求解"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.1, "b": 0.8, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题", "错中求解"]
+    },
+    {
+      "id": "g3-rp-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "篮子里有一些梨，小刚取走总数的一半多 1 个，小明取走余下的一半多 2 个，小红取走再余下的一半少 1 个，这时还剩 5 个梨。篮子里原来有多少个梨？",
+      "image": "",
+      "options": [],
+      "answer": "42",
+      "acceptableAnswers": ["42", "42个"],
+      "solution": [
+        "倒推：最后剩5个",
+        "小红取之前：(5-1)×2 = 4×2 = 8 个",
+        "（取一半少1个，剩的比一半多1个，所以-1再×2）",
+        "小明取之前：(8+2)×2 = 10×2 = 20 个",
+        "（取一半多2个，剩的比一半少2个，所以+2再×2）",
+        "小刚取之前（原来）：(20+1)×2 = 21×2 = 42 个",
+        "检验：42÷2-1=20, 20÷2-2=8, 8÷2+1=5 ✓"
+      ],
+      "hints": [
+        "从后往前倒推，注意'多几个'和'少几个'的方向",
+        "取走一半多几 → 剩的比一半少几 → 倒推：(剩+几)×2",
+        "取走一半少几 → 剩的比一半多几 → 倒推：(剩-几)×2"
+      ],
+      "commonMistakes": [
+        {"mistake": "顺序搞混，多几少几方向反了", "reason": "没有理解'一半多几'和剩余的关系", "correction": "画图帮助理解，每次先判断剩的比一半多还是少", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2011, "paper": "第十六届华罗庚金杯初赛"},
+      "knowledgePoints": ["还原问题", "多步一半多几少几"],
+      "estimatedTime": 300,
+      "irtParams": {"a": 1.3, "b": 1.5, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题", "梨"]
+    },
+    {
+      "id": "g3-rp-28",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "三筐苹果共 90 千克。先从甲筐取出 12 千克放入乙筐，再从乙筐取出 15 千克放入丙筐，最后从丙筐取出 8 千克放入甲筐，这时三筐苹果重量相等。乙筐原来有多少千克苹果？",
+      "image": "",
+      "options": ["28千克", "30千克", "33千克", "35千克"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "最后三筐相等，各有 90÷3 = 30 千克",
+        "对乙筐倒推：",
+        "最后乙有30千克",
+        "第二次：乙取出15千克给丙 → 取出前乙 = 30+15 = 45 千克",
+        "第一次：甲放入12千克给乙 → 放入前乙 = 45-12 = 33 千克",
+        "所以乙筐原来有 33 千克",
+        "验证甲：最后30，丙放入8千克前=30-8=22，甲取出12千克前=22+12=34千克",
+        "验证丙：最后30，丙取出8千克前=30+8=38，乙放入15千克前=38-15=23千克",
+        "检验：34+33+23=90 ✓"
+      ],
+      "hints": [
+        "先求最后每筐重量：90÷3=30",
+        "只关注乙筐的变化：先加12，再减15，最后是30",
+        "倒推：30+15-12=33"
+      ],
+      "commonMistakes": [
+        {"mistake": "30-15+12=28", "reason": "倒推方向搞反", "correction": "取出的要加回，放入的要减去：30+15-12=33", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2014, "paper": "第十二届希望杯三年级"},
+      "knowledgePoints": ["还原问题", "多量还原", "三次操作"],
+      "estimatedTime": 300,
+      "irtParams": {"a": 1.3, "b": 1.4, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题", "苹果"]
+    },
+    {
+      "id": "g3-rp-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一堆棋子，第一次拿走一半多 3 枚，第二次拿走余下的一半少 2 枚，第三次又拿走余下的一半多 1 枚，最后还剩 6 枚。这堆棋子原来有多少枚？",
+      "image": "",
+      "options": [],
+      "answer": "54",
+      "acceptableAnswers": ["54", "54枚"],
+      "solution": [
+        "倒推：最后剩6枚",
+        "第三次前（多1枚）：(6+1)×2 = 7×2 = 14 枚",
+        "（拿一半多1枚，剩的比一半少1枚，所以+1再×2）",
+        "第二次前（少2枚）：(14-2)×2 = 12×2 = 24 枚",
+        "（拿一半少2枚，剩的比一半多2枚，所以-2再×2）",
+        "第一次前（多3枚）：(24+3)×2 = 27×2 = 54 枚",
+        "（拿一半多3枚，剩的比一半少3枚，所以+3再×2）",
+        "检验：54÷2-3=24, 24÷2+2=14, 14÷2-1=6 ✓"
+      ],
+      "hints": [
+        "从后往前一步步倒推",
+        "\"多几枚\" → 剩的少 → 倒推先加几再×2",
+        "\"少几枚\" → 剩的多 → 倒推先减几再×2"
+      ],
+      "commonMistakes": [
+        {"mistake": "多几少几的方向搞反", "reason": "没有仔细分析剩余和一半的关系", "correction": "每步都想清楚：剩下的比一半多还是少", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2012, "paper": "2012年迎春杯三年级"},
+      "knowledgePoints": ["还原问题", "多步一半多几少几"],
+      "estimatedTime": 300,
+      "irtParams": {"a": 1.3, "b": 1.6, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题", "棋子"]
+    },
+    {
+      "id": "g3-rp-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "甲、乙、丙、丁四个小朋友共有彩色玻璃球 100 颗。甲给乙 13 颗，乙给丙 18 颗，丙给丁 6 颗，丁给甲 3 颗后，四个人的玻璃球数相等。甲原来有多少颗玻璃球？",
+      "image": "",
+      "options": [],
+      "answer": "35",
+      "acceptableAnswers": ["35", "35颗"],
+      "solution": [
+        "最后四人相等，各有 100÷4 = 25 颗",
+        "对甲倒推：甲给乙13颗，丁给甲3颗后是25颗",
+        "甲原来 = 25 - 3 + 13 = 35 颗",
+        "对乙倒推：甲给乙13颗，乙给丙18颗后是25颗",
+        "乙原来 = 25 + 18 - 13 = 30 颗",
+        "对丙倒推：乙给丙18颗，丙给丁6颗后是25颗",
+        "丙原来 = 25 + 6 - 18 = 13 颗",
+        "对丁倒推：丙给丁6颗，丁给甲3颗后是25颗",
+        "丁原来 = 25 + 3 - 6 = 22 颗",
+        "检验：35+30+13+22=100 ✓"
+      ],
+      "hints": [
+        "先求最后每人有多少颗：100÷4=25",
+        "只关注甲的变化：甲给出13颗，收到3颗",
+        "甲原来 = 25 - 收到的 + 给出的 = 25 - 3 + 13 = 35"
+      ],
+      "commonMistakes": [
+        {"mistake": "25+13-3=35（碰巧对）", "reason": "虽然结果对但思路可能混乱", "correction": "明确：给出的要加回，收到的要减去", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2013, "paper": "第十八届华罗庚金杯初赛"},
+      "knowledgePoints": ["还原问题", "多量还原", "四人操作"],
+      "estimatedTime": 300,
+      "irtParams": {"a": 1.4, "b": 1.5, "c": 0.25},
+      "tags": ["还原问题", "竞赛真题", "玻璃球"]
+    }
+  ]
+}

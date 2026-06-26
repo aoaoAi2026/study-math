@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import AppLayout from '@/components/layout/AppLayout.vue'
 import { ref, computed } from 'vue'
 
 type QuestionType = 'add-sub' | 'mul-div' | 'mixed' | 'compare'
@@ -85,8 +84,7 @@ function printPaper() {
 </script>
 
 <template>
-  <AppLayout>
-    <div class="workshop">
+  <div class="workshop">
     <header class="workshop__header">
       <h1>出题工坊</h1>
       <p>自定义生成数学练习题，打印或在线作答</p>
@@ -144,8 +142,7 @@ function printPaper() {
         </div>
       </div>
     </section>
-    </div>
-  </AppLayout>
+  </div>
 </template>
 
 <style scoped>

@@ -1,5 +1,7 @@
 <script setup lang="ts">
-defineProps<{
+import { computed } from 'vue'
+
+const props = defineProps<{
   title?: string
   script: string
   mode?: 'script' | 'understanding' | 'extension'
@@ -12,153 +14,235 @@ const modeLabels = {
 }
 
 const modeColors = {
-  script: '#10b981',
-  understanding: '#3b82f6',
-  extension: '#8b5cf6'
+  script: { bg: 'linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%)', badge: '#10b981', icon: '#15803d' },
+  understanding: { bg: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)', badge: '#3b82f6', icon: '#1d4ed8' },
+  extension: { bg: 'linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%)', badge: '#8b5cf6', icon: '#6d28d9' }
+}
+
+const scriptLines = computed(() => {
+  return props.script.split('\n')
+    .map(line => line.replace(/^###\s*/, '').trim())
+    .filter(line => line)
+})
+
+function processLine(line: string): string {
+  return line
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+}
+
+function lineClass(line: string): string {
+  if (line.includes('家长') || line.includes('妈妈') || line.includes('爸爸')) return 'line--parent'
+  if (line.includes('孩子') || line.includes('宝贝')) return 'line--child'
+  if (line.startsWith('（') || line.startsWith('(')) return 'line--note'
+  return ''
 }
 </script>
 
 <template>
-  <div class="parent-child-card">
-    <div class="parent-child-card__header">
-      <span class="parent-child-card__icon">👨‍👩‍👧</span>
-      <h3 v-if="title" class="parent-child-card__title">{{ title }}</h3>
-      <span
-        v-if="mode"
-        class="parent-child-card__mode"
-        :style="{ background: modeColors[mode] }"
-      >
-        {{ modeLabels[mode] }}
-      </span>
-    </div>
-
-    <div class="parent-child-card__intro">
-      <p>和孩子一起完成这道题！按照下面的对话脚本，引导孩子自己思考和表达。</p>
-    </div>
-
-    <div class="parent-child-card__script">
-      <div
-        v-for="(line, index) in script.split('\n')"
-        :key="index"
-        class="parent-child-card__line"
-        :class="{
-          'parent-child-card__line--parent': line.includes('家长'),
-          'parent-child-card__line--child': line.includes('孩子'),
-          'parent-child-card__line--note': line.startsWith('（')
-        }"
-      >
-        {{ line }}
+  <div class="parent-card">
+    <div class="parent-card__header" :style="{ background: modeColors[mode || 'script'].bg }">
+      <div class="parent-card__icon-wrap">
+        <span class="parent-card__icon">👨‍👩‍👧</span>
+      </div>
+      <div class="parent-card__title-wrap">
+        <span class="parent-card__label">亲子互动</span>
+        <h2 v-if="title" class="parent-card__title">{{ title }}</h2>
+        <h2 v-else class="parent-card__title">和孩子一起思考</h2>
+        <span
+          v-if="mode"
+          class="parent-card__mode"
+          :style="{ background: modeColors[mode].badge }"
+        >
+          {{ modeLabels[mode] }}
+        </span>
       </div>
     </div>
 
-    <div class="parent-child-card__tips">
-      <div class="parent-child-card__tip">
-        <span class="parent-child-card__tip-icon">💡</span>
+    <div class="parent-card__intro">
+      <p>按照下面的对话脚本引导孩子自己思考和表达 —— <strong>少说答案，多问问题</strong>。</p>
+    </div>
+
+    <div class="parent-card__script">
+      <div
+        v-for="(line, index) in scriptLines"
+        :key="index"
+        class="parent-card__line"
+        :class="lineClass(line)"
+      >
+        <span class="parent-card__line-dot"></span>
+        <span class="parent-card__line-content" v-html="processLine(line)"></span>
+      </div>
+    </div>
+
+    <div class="parent-card__tips">
+      <div class="parent-card__tip">
+        <span class="parent-card__tip-icon">💡</span>
         <span>等待至少 30 秒再给提示</span>
       </div>
-      <div class="parent-child-card__tip">
-        <span class="parent-child-card__tip-icon">🎯</span>
+      <div class="parent-card__tip">
+        <span class="parent-card__tip-icon">🎯</span>
         <span>让孩子自己说出答案</span>
       </div>
-      <div class="parent-child-card__tip">
-        <span class="parent-child-card__tip-icon">🌟</span>
-        <span>完成后询问"你是怎么想到的"</span>
+      <div class="parent-card__tip">
+        <span class="parent-card__tip-icon">🌟</span>
+        <span>完成后问：「你是怎么想到的？」</span>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.parent-child-card {
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  border: 2px solid #86efac;
+.parent-card {
+  background: var(--bg-card);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
 }
 
-.parent-child-card__header {
+.parent-card__header {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  margin-bottom: var(--space-4);
+  gap: 18px;
+  padding: 28px 32px 20px;
+  background: linear-gradient(135deg, var(--card-green-bg) 0%, rgba(187, 247, 208, 0.8) 50%, var(--card-green-bg) 100%);
+  border-bottom: 1px solid rgba(16, 185, 129, 0.15);
 }
 
-.parent-child-card__icon {
-  font-size: var(--text-2xl);
+.parent-card__icon-wrap {
+  width: 60px;
+  height: 60px;
+  background: var(--bg-card);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  flex-shrink: 0;
 }
 
-.parent-child-card__title {
-  font-size: var(--text-xl);
-  color: #166534;
-  margin: 0;
-  flex: 1;
+.parent-card__icon { font-size: 28px; }
+.parent-card__title-wrap { flex: 1; min-width: 0; }
+
+.parent-card__label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-success);
+  background: rgba(21, 128, 61, 0.12);
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  margin-right: 8px;
 }
 
-.parent-child-card__mode {
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full);
+.parent-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.parent-card__mode {
+  padding: 4px 12px;
+  border-radius: 999px;
   color: white;
-  font-size: var(--text-xs);
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 700;
 }
 
-.parent-child-card__intro {
-  color: #166534;
-  margin-bottom: var(--space-4);
+.parent-card__intro {
+  padding: 20px 32px;
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  font-size: 15px;
+  line-height: 1.7;
+  border-bottom: 1px solid var(--border-color);
+}
+.parent-card__intro p { margin: 0; }
+.parent-card__intro strong { color: var(--color-success); font-weight: 700; }
+
+.parent-card__script {
+  padding: 24px 32px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.parent-child-card__intro p {
-  margin: 0;
+.parent-card__line {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
-.parent-child-card__script {
-  background: white;
-  border-radius: var(--radius-lg);
-  padding: var(--space-4);
-  font-family: var(--font-mono);
-  font-size: var(--text-sm);
-  line-height: var(--leading-relaxed);
+.parent-card__line-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+  background: var(--border-color-strong);
 }
 
-.parent-child-card__line {
-  padding: var(--space-2) 0;
-  border-bottom: 1px dashed var(--border-color);
-}
+.parent-card__line-content { flex: 1; min-width: 0; }
 
-.parent-child-card__line:last-child {
-  border-bottom: none;
+.line--parent {
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 3px solid var(--color-primary);
+  color: var(--text-primary);
 }
+.line--parent .parent-card__line-dot { background: var(--color-primary); }
 
-.parent-child-card__line--parent {
-  color: #1d4ed8;
-  font-weight: 500;
+.line--child {
+  background: rgba(16, 185, 129, 0.1);
+  border-left: 3px solid var(--color-success);
+  color: var(--text-primary);
 }
+.line--child .parent-card__line-dot { background: var(--color-success); }
 
-.parent-child-card__line--child {
-  color: #059669;
-}
-
-.parent-child-card__line--note {
-  color: var(--text-tertiary);
+.line--note {
+  background: var(--bg-hover);
+  border-left: 3px dashed var(--border-color-strong);
+  color: var(--text-secondary);
   font-style: italic;
-  font-size: var(--text-xs);
 }
+.line--note .parent-card__line-dot { background: var(--border-color-strong); }
 
-.parent-child-card__tips {
+.parent-card__tips {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-3);
-  margin-top: var(--space-4);
+  gap: 12px;
+  padding: 16px 32px 28px;
 }
 
-.parent-child-card__tip {
+.parent-card__tip {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) var(--space-3);
+  gap: 10px;
+  padding: 10px 16px;
   background: rgba(16, 185, 129, 0.1);
-  border-radius: var(--radius-lg);
-  font-size: var(--text-sm);
-  color: #166534;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-success);
+}
+
+.parent-card__tip-icon { font-size: 16px; }
+
+@media (max-width: 640px) {
+  .parent-card__header { padding: 22px 22px 16px; }
+  .parent-card__intro { padding: 18px 22px; }
+  .parent-card__script { padding: 20px 22px 8px; }
+  .parent-card__tips { padding: 12px 22px 22px; }
+  .parent-card__icon-wrap { width: 52px; height: 52px; }
+  .parent-card__title { font-size: 18px; }
 }
 </style>

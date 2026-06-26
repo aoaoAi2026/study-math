@@ -1,0 +1,700 @@
+{
+  "topicId": "word-problem-1st",
+  "topicName": "一年级应用题入门",
+  "grade": "低年级复习",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "cm-wp-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "小明有5支铅笔，小红有3支铅笔。他们一共有多少支铅笔？",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "5+3=8支"
+      ],
+      "hints": [
+        "一共→加法"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成2",
+          "reason": "误用减法",
+          "correction": "一共用加法,5+3=8",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "加法应用题"
+      ],
+      "estimatedTime": 50,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "一共"
+      ]
+    },
+    {
+      "id": "cm-wp-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "树上有10只鸟，飞走了4只。还剩多少只？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "10-4=6只"
+      ],
+      "hints": [
+        "还剩→减法"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成14",
+          "reason": "误用加法",
+          "correction": "还剩用减法,10-4=6",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "减法应用题"
+      ],
+      "estimatedTime": 50,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "还剩"
+      ]
+    },
+    {
+      "id": "cm-wp-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "妈妈买了8个苹果，爸爸又买了7个。现在一共有多少个苹果？",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": [
+        "15",
+        "十五"
+      ],
+      "solution": [
+        "8+7=15个"
+      ],
+      "hints": [
+        "一共→加法"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成14",
+          "reason": "8+7算成14",
+          "correction": "8+7=15",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "加法应用题"
+      ],
+      "estimatedTime": 50,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "一共"
+      ]
+    },
+    {
+      "id": "cm-wp-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一本书有18页，小亮已经看了9页。还剩多少页没看？",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9",
+        "九"
+      ],
+      "solution": [
+        "18-9=9页"
+      ],
+      "hints": [
+        "总页数-看了的=没看的"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成8",
+          "reason": "18-9算错",
+          "correction": "18-9=9",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "减法应用题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "还剩"
+      ]
+    },
+    {
+      "id": "cm-wp-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "停车场有15辆车，开走了7辆，又开来了3辆。现在停车场有多少辆车？",
+      "image": "",
+      "options": [],
+      "answer": "11",
+      "acceptableAnswers": [
+        "11",
+        "十一"
+      ],
+      "solution": [
+        "15-7+3=11辆"
+      ],
+      "hints": [
+        "开走-开来+"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成12",
+          "reason": "15-7算成9",
+          "correction": "15-7+3=11",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "加减混合应用题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "加减混合"
+      ]
+    },
+    {
+      "id": "cm-wp-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "红花有8朵，黄花比红花多5朵。黄花有多少朵？",
+      "image": "",
+      "options": [],
+      "answer": "13",
+      "acceptableAnswers": [
+        "13",
+        "十三"
+      ],
+      "solution": [
+        "黄花=红花+5=8+5=13朵"
+      ],
+      "hints": [
+        "比...多→加"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成11",
+          "reason": "8+5算错",
+          "correction": "8+5=13",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "比多比少"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比多比少"
+      ]
+    },
+    {
+      "id": "cm-wp-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "哥哥有9颗糖，比弟弟多3颗。弟弟有几颗糖？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "哥哥比弟弟多3颗,弟弟=9-3=6颗。"
+      ],
+      "hints": [
+        "哥比弟多→弟比哥少",
+        "弟=哥-3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成12",
+          "reason": "看到多就加",
+          "correction": "弟弟=9-3=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "比多比少"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比多比少"
+      ]
+    },
+    {
+      "id": "cm-wp-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小军有17个玻璃球，送给小刚几个后还剩9个。他送给小刚多少个？",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "17-9=8个"
+      ],
+      "hints": [
+        "原来-送出=剩下"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成7",
+          "reason": "17-9算错",
+          "correction": "17-9=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "减法应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "还剩"
+      ]
+    },
+    {
+      "id": "cm-wp-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一本书共20页，小华第一天看了5页，第二天看了7页。还剩多少页没看？",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "20-5-7=8页,或20-(5+7)=8页"
+      ],
+      "hints": [
+        "总-第一天-第二天"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成9",
+          "reason": "20-12算错",
+          "correction": "20-12=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "连减应用题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "连减"
+      ]
+    },
+    {
+      "id": "cm-wp-10",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有16个同学去划船，每条船坐4人。需要几条船？",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "四"
+      ],
+      "solution": [
+        "16÷4=4条"
+      ],
+      "hints": [
+        "就是求16里有几个4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成20",
+          "reason": "误用乘法",
+          "correction": "除法,16÷4=4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "除法应用"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "除法"
+      ]
+    },
+    {
+      "id": "cm-wp-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "每本笔记本5元，小明买了8本还剩3元。他原来有多少钱？",
+      "image": "",
+      "options": [],
+      "answer": "43",
+      "acceptableAnswers": [
+        "43",
+        "四十三"
+      ],
+      "solution": [
+        "8本花了5×8=40元",
+        "原来有40+3=43元。"
+      ],
+      "hints": [
+        "先算花了多少钱"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成37",
+          "reason": "5×8算成35",
+          "correction": "5×8+3=43",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "乘加应用"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "乘法应用"
+      ]
+    },
+    {
+      "id": "cm-wp-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一排小朋友从左数小明排第5，从右数小明排第6。这一排共多少人？",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "5+6-1=10人。小明被数了两次,要减1。"
+      ],
+      "hints": [
+        "画个图",
+        "小明被数了两次"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成11",
+          "reason": "忘了减1",
+          "correction": "5+6-1=10",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "排队问题"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "排队"
+      ]
+    },
+    {
+      "id": "cm-wp-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "把一根绳子对折后再对折，从中间剪一刀。绳子被剪成了几段？",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五"
+      ],
+      "solution": [
+        "对折两次后有4层,从中间剪一刀。",
+        "两端各1段,中间被折点相连,共5段。",
+        "公式:对折n次,从中间剪1刀→2^n+1段。2²+1=5段。"
+      ],
+      "hints": [
+        "拿根绳子试试或画图",
+        "对折2次后有4层"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成4",
+          "reason": "以为每层一刀",
+          "correction": "对折2次剪一刀=5段",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "剪绳子",
+        "折剪问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "折剪"
+      ]
+    },
+    {
+      "id": "cm-wp-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "3只鸡3天下3个蛋，9只鸡9天下几个蛋？",
+      "image": "",
+      "options": [],
+      "answer": "27",
+      "acceptableAnswers": [
+        "27",
+        "二十七"
+      ],
+      "solution": [
+        "3只鸡3天→3个蛋→1只鸡3天→1个蛋→1只鸡1天→1/3个蛋。",
+        "9只鸡9天:9×9×(1/3)=27个蛋。",
+        "或:鸡数×3,天数×3,蛋数×9倍。3×9=27个。"
+      ],
+      "hints": [
+        "先求1只鸡1天下几个",
+        "别被绕晕了!",
+        "鸡和天数各放大3倍,蛋×9倍"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成9",
+          "reason": "简单放大3倍",
+          "correction": "鸡和天数各×3,蛋×9=27",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "归一问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "归一"
+      ]
+    },
+    {
+      "id": "cm-wp-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "小朋友排队做早操，从前面数小红排第8，从后面数小红排第9。这一队一共多少人？如果每两人之间相隔1米，这一队从头到尾共多少米？(回答米数)",
+      "image": "",
+      "options": [],
+      "answer": "16",
+      "acceptableAnswers": [
+        "16",
+        "十六"
+      ],
+      "solution": [
+        "人数=8+9-1=16人。",
+        "16人之间有16-1=15个间隔,每个1米,共15米。"
+      ],
+      "hints": [
+        "总人数=从前数+从后数-1(小红被数2次)",
+        "n人有n-1个间隔"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成16米",
+          "reason": "人数与间隔数混淆",
+          "correction": "人数16,间隔数=16-1=15米",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "排队问题",
+        "植树问题思想"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "排队",
+        "植树"
+      ]
+    }
+  ]
+}

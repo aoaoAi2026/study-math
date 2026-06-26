@@ -1,0 +1,1152 @@
+{
+  "topicId": "g3-planting-trees",
+  "topicName": "植树问题",
+  "grade": 3,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g3-pt-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "在一条 20 米长的小路一边种树，每隔 4 米种 1 棵（两端都种）。一共要种多少棵？",
+      "image": "",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "段数 = 20÷4 = 5 段",
+        "两端都种：棵数 = 段数+1 = 5+1 = 6 棵"
+      ],
+      "hints": [
+        "两端都种 = 段数+1",
+        "先算段数 = 总长÷间距"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "20÷4=5",
+          "reason": "忘记+1",
+          "correction": "两端都种要+1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "两端都种"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "小路"
+      ]
+    },
+    {
+      "id": "g3-pt-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "在 15 米的走廊一边挂灯笼，每隔 3 米挂 1 个（两端都挂）。一共挂 ____ 个灯笼。",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "solution": [
+        "段数 = 15÷3 = 5 段",
+        "两端都挂：个数 = 段数+1 = 5+1 = 6 个"
+      ],
+      "hints": [
+        "点 = 段+1",
+        "画图更清楚"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "15÷3=5",
+          "reason": "忘+1",
+          "correction": "两端都挂要+1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "灯笼"
+      ]
+    },
+    {
+      "id": "g3-pt-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一条马路长 30 米，在一边插彩旗，每隔 5 米插 1 面（两端都不插）。需要多少面？",
+      "image": "",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "段数 = 30÷5 = 6 段",
+        "两端不插：面数 = 段数-1 = 6-1 = 5 面"
+      ],
+      "hints": [
+        "两端不插 = 段数-1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "30÷5=6",
+          "reason": "没-1",
+          "correction": "两端不插要-1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "两端不种"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "彩旗"
+      ]
+    },
+    {
+      "id": "g3-pt-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "在圆形池塘周围每隔 2 米种 1 棵树，池塘周长 20 米。一共种多少棵？",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "solution": [
+        "封闭图形：棵数 = 段数",
+        "段数 = 20÷2 = 10 段",
+        "棵数 = 10 棵"
+      ],
+      "hints": [
+        "封闭图形（圆/方）：棵数 = 段数",
+        "不用+1也不用-1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "20÷2+1=11",
+          "reason": "用了两端都种公式",
+          "correction": "封闭图形 = 段数",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "封闭图形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "池塘"
+      ]
+    },
+    {
+      "id": "g3-pt-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在长 36 米的小路一边种树，每隔 4 米种 1 棵（一端种一端不种）。种多少棵？",
+      "image": "",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "段数 = 36÷4 = 9 段",
+        "一端种一端不种：棵数 = 段数 = 9 棵"
+      ],
+      "hints": [
+        "一端种一端不种：棵数 = 段数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "9+1=10",
+          "reason": "多加1",
+          "correction": "一端种不加1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "一端种"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "小路"
+      ]
+    },
+    {
+      "id": "g3-pt-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一栋楼房每上一层要走 18 级台阶。小明从 1 楼走到 5 楼，一共要走 ____ 级台阶。",
+      "image": "",
+      "options": [],
+      "answer": "72",
+      "acceptableAnswers": [
+        "72"
+      ],
+      "solution": [
+        "1 楼到 5 楼，实际走 5-1 = 4 层",
+        "台阶数 = 4×18 = 72 级"
+      ],
+      "hints": [
+        "楼层数-1 = 楼梯段数",
+        "1 楼不用爬"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "5×18=90",
+          "reason": "按5层算",
+          "correction": "只爬4层",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "上楼问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "楼梯"
+      ]
+    },
+    {
+      "id": "g3-pt-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把一根木头锯成 5 段，每锯 1 次要 3 分钟。一共需要多少分钟？",
+      "image": "",
+      "options": [
+        "9",
+        "12",
+        "15",
+        "18"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "锯成 5 段需要锯 5-1 = 4 次",
+        "时间 = 4×3 = 12 分钟"
+      ],
+      "hints": [
+        "锯的次数 = 段数-1",
+        "类似两端不种"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "5×3=15",
+          "reason": "按段数算",
+          "correction": "次数 = 段数-1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "锯木头"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "木头"
+      ]
+    },
+    {
+      "id": "g3-pt-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在正方形操场四周插彩旗，每边插 8 面（四角都插）。一共插多少面？",
+      "image": "",
+      "options": [],
+      "answer": "28",
+      "acceptableAnswers": [
+        "28"
+      ],
+      "solution": [
+        "每边 8 面，四角重复计算",
+        "四边 = 4×8 = 32",
+        "减重复 4 角 = 32-4 = 28 面",
+        "或：每边中间 6 个×4 + 4 角 = 28"
+      ],
+      "hints": [
+        "四角的旗被两边共享",
+        "每边点数×边数 - 角数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "4×8=32",
+          "reason": "四角重复算",
+          "correction": "减4或每边中间数+角",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "正方形",
+        "封闭"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "操场"
+      ]
+    },
+    {
+      "id": "g3-pt-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "时钟 3 点敲 3 下，2 秒敲完。5 点敲 5 下，几秒敲完？",
+      "image": "",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "敲 3 下有 3-1 = 2 个间隔，2 秒÷2 = 1 秒/间隔",
+        "敲 5 下有 5-1 = 4 个间隔，4×1 = 4 秒"
+      ],
+      "hints": [
+        "间隔数 = 次数-1",
+        "类似两端都种"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2÷3×5",
+          "reason": "按比例错算",
+          "correction": "要算间隔",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "敲钟"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "时钟"
+      ]
+    },
+    {
+      "id": "g3-pt-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在 48 米的小路两边种树，每隔 6 米种 1 棵（两端都种）。两边一共种 ____ 棵。",
+      "image": "",
+      "options": [],
+      "answer": "18",
+      "acceptableAnswers": [
+        "18"
+      ],
+      "solution": [
+        "一边：段 = 48÷6 = 8，棵 = 8+1 = 9 棵",
+        "两边 = 9×2 = 18 棵"
+      ],
+      "hints": [
+        "注意\"两边\"要×2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "48÷6+1=9",
+          "reason": "只算一边",
+          "correction": "两边要×2",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "两边"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "小路"
+      ]
+    },
+    {
+      "id": "g3-pt-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一条路长 60 米，在路两边从头到尾每隔 5 米种 1 棵树。一共种多少棵？",
+      "image": "",
+      "options": [
+        "12",
+        "13",
+        "24",
+        "26"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "一边：段 = 60÷5 = 12，棵 = 12+1 = 13 棵",
+        "两边 = 13×2 = 26 棵"
+      ],
+      "hints": [
+        "两端都种 = 段+1",
+        "两边×2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "60÷5=12",
+          "reason": "只算段数",
+          "correction": "+1再×2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "两边"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "道路"
+      ]
+    },
+    {
+      "id": "g3-pt-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明从 1 楼到 3 楼用了 20 秒。照这样的速度，从 1 楼到 6 楼要用 ____ 秒。",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": [
+        "50"
+      ],
+      "solution": [
+        "1→3 楼：3-1 = 2 层，20 秒÷2 = 10 秒/层",
+        "1→6 楼：6-1 = 5 层，5×10 = 50 秒"
+      ],
+      "hints": [
+        "楼层差 = 楼梯段数",
+        "先求每层时间"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "20÷3×6",
+          "reason": "按楼层比例",
+          "correction": "按层数差",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "上楼"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "楼梯"
+      ]
+    },
+    {
+      "id": "g3-pt-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在圆形花坛周围摆花，周长 36 米，每隔 3 米摆 1 盆红花，每两盆红花之间摆 2 盆黄花。一共摆多少盆？",
+      "image": "",
+      "options": [
+        "12",
+        "24",
+        "36",
+        "48"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "红花盆数 = 段数 = 36÷3 = 12 盆",
+        "每段 2 盆黄，黄花 = 12×2 = 24 盆",
+        "共 12+24 = 36 盆"
+      ],
+      "hints": [
+        "封闭：红花 = 段数",
+        "黄花 = 段数×每段黄花数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "36÷3+1=13",
+          "reason": "红花错+1",
+          "correction": "封闭图形不用+1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "封闭",
+        "搭配"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "花坛"
+      ]
+    },
+    {
+      "id": "g3-pt-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把一根钢管锯成 6 段需要 20 分钟。如果锯成 8 段需要多少分钟？",
+      "image": "",
+      "options": [],
+      "answer": "28",
+      "acceptableAnswers": [
+        "28"
+      ],
+      "solution": [
+        "锯 6 段：6-1 = 5 次，20÷5 = 4 分/次",
+        "锯 8 段：8-1 = 7 次，7×4 = 28 分钟"
+      ],
+      "hints": [
+        "段-1 = 次数",
+        "先求每次时间"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "20÷6×8",
+          "reason": "按段数比例",
+          "correction": "按次数算",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "锯木头"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "钢管"
+      ]
+    },
+    {
+      "id": "g3-pt-15",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一条路长 80 米，在路边每 8 米立 1 根电线杆（一端立一端不立）。需要多少根？",
+      "image": "",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "段数 = 80÷8 = 10 段",
+        "一端立一端不立：根数 = 段数 = 10 根"
+      ],
+      "hints": [
+        "一端种 = 段数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "10+1=11",
+          "reason": "错+1",
+          "correction": "一端种不加1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "一端种"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "电线杆"
+      ]
+    },
+    {
+      "id": "g3-pt-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有一个正方形池塘，边长 24 米。沿四周每隔 3 米种 1 棵树（四角都种）。一共种 ____ 棵。",
+      "image": "",
+      "options": [],
+      "answer": "32",
+      "acceptableAnswers": [
+        "32"
+      ],
+      "solution": [
+        "周长 = 24×4 = 96 米",
+        "封闭：棵数 = 段数 = 96÷3 = 32 棵",
+        "或：每边 24÷3+1 = 9 棵，4×9-4 = 32 棵 ✓"
+      ],
+      "hints": [
+        "正方形封闭图形 = 周长÷间距",
+        "或每边算×4-4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "24÷3+1=9每边，4×9=36",
+          "reason": "没减重复角",
+          "correction": "36-4=32",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "正方形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "池塘"
+      ]
+    },
+    {
+      "id": "g3-pt-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一座桥长 100 米，在桥两边每隔 10 米装 1 盏路灯（两端都装）。每盏灯 80 元，一共要花多少元？",
+      "image": "",
+      "options": [
+        "880",
+        "960",
+        "1600",
+        "1760"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "一边：段 = 100÷10 = 10，盏 = 10+1 = 11 盏",
+        "两边 = 11×2 = 22 盏",
+        "钱 = 22×80 = 1760 元"
+      ],
+      "hints": [
+        "两端都装 = 段+1",
+        "两边×2再×单价"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "100÷10=10盏",
+          "reason": "忘+1也忘两边",
+          "correction": "(10+1)×2=22盏",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "路灯",
+        "桥"
+      ]
+    },
+    {
+      "id": "g3-pt-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个车队共 20 辆车，每辆车长 4 米，两车之间相隔 8 米。这个车队从头到尾共长多少米？",
+      "image": "",
+      "options": [],
+      "answer": "232",
+      "acceptableAnswers": [
+        "232"
+      ],
+      "solution": [
+        "车身总长 = 20×4 = 80 米",
+        "间隔数 = 20-1 = 19，间隔长 = 19×8 = 152 米",
+        "总长 = 80+152 = 232 米"
+      ],
+      "hints": [
+        "20 辆车有 19 个间隔",
+        "车队长 = 车身和 + 间隔和"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "20×(4+8)=240",
+          "reason": "多算一个间隔",
+          "correction": "间隔数 = 车数-1",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "植树问题",
+        "车队"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "车辆"
+      ]
+    },
+    {
+      "id": "g3-pt-19",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "一条公路长120米，在公路的一侧每隔6米栽一棵杨树（两端都栽）。一共要栽______棵树。",
+      "image": "",
+      "options": [],
+      "answer": "21",
+      "acceptableAnswers": ["21", "21棵"],
+      "solution": ["段数=120÷6=20段，棵数=20+1=21棵。"],
+      "hints": ["两端都栽：棵数=段数+1"],
+      "commonMistakes": [{"mistake": "20", "reason": "没加1", "correction": "21棵"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2016, "paper": "第十四届希望杯三年级"},
+      "knowledgePoints": ["植树问题", "两端栽"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.0, "c": 0.25},
+      "tags": ["植树", "竞赛真题"]
+    },
+    {
+      "id": "g3-pt-20",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "在一个周长为400米的圆形池塘边植树，每隔10米植一棵。一共需要()棵树。",
+      "image": "",
+      "options": ["39", "40", "41", "80"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["封闭图形：棵数=段数=400÷10=40棵。"],
+      "hints": ["封闭图形：棵数=段数"],
+      "commonMistakes": [{"mistake": "选2", "reason": "多加1", "correction": "40棵"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2017, "paper": "2017年迎春杯三年级"},
+      "knowledgePoints": ["植树问题", "封闭"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.5, "c": 0.25},
+      "tags": ["植树", "竞赛真题"]
+    },
+    {
+      "id": "g3-pt-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "把一根木头锯成5段需要8分钟。如果锯成10段，需要______分钟。",
+      "image": "",
+      "options": [],
+      "answer": "18",
+      "acceptableAnswers": ["18", "18分钟"],
+      "solution": ["锯5段需4次，每次=8÷4=2分钟。锯10段需9次，时间=9×2=18分钟。"],
+      "hints": ["段数=次数+1", "次数=段数-1"],
+      "commonMistakes": [{"mistake": "20", "reason": "用5段时间直接算", "correction": "18分钟"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2014, "paper": "第十九届华罗庚金杯初赛"},
+      "knowledgePoints": ["植树问题", "锯木头"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["植树", "竞赛真题"]
+    },
+    {
+      "id": "g3-pt-22",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一座楼房每上一层要走18级台阶，到小敏家要走72级台阶。小敏家住在()楼。",
+      "image": "",
+      "options": ["4", "5", "6", "7"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["层数=72÷18=4层，楼层=4+1=5楼。"],
+      "hints": ["楼层=层数+1"],
+      "commonMistakes": [{"mistake": "选0", "reason": "没加1", "correction": "5楼"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2015, "paper": "第十三届走美杯三年级"},
+      "knowledgePoints": ["植树问题", "楼梯"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.5, "c": 0.25},
+      "tags": ["植树", "竞赛真题"]
+    },
+    {
+      "id": "g3-pt-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "在一条长100米的小路两侧植树，每隔5米植一棵（两端都植）。一共要植______棵树。",
+      "image": "",
+      "options": [],
+      "answer": "42",
+      "acceptableAnswers": ["42", "42棵"],
+      "solution": ["一侧：段数=100÷5=20，棵数=21棵。两侧=21×2=42棵。"],
+      "hints": ["先算一侧再×2"],
+      "commonMistakes": [{"mistake": "40", "reason": "没加1或没×2", "correction": "42棵"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯决赛"},
+      "knowledgePoints": ["植树问题", "两侧"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["植树", "竞赛真题"]
+    },
+    {
+      "id": "g3-pt-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "把一根木料锯成4段需要12分钟。如果每锯一段的时间相同，那么锯成7段需要______分钟。",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": ["24", "24分钟"],
+      "solution": ["锯4段需要锯4-1=3次，每次时间=12÷3=4分钟。", "锯7段需要锯7-1=6次，总时间=6×4=24分钟。"],
+      "hints": ["锯的次数=段数-1", "先求每锯一次的时间"],
+      "commonMistakes": [
+        {"mistake": "21", "reason": "按段数比例直接算12÷4×7", "correction": "要按次数算，次数=段数-1", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2018, "paper": "第十六届希望杯三年级"},
+      "knowledgePoints": ["植树问题", "锯木头"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.3, "b": 0.8, "c": 0.25},
+      "tags": ["植树", "竞赛真题", "锯木头"]
+    },
+    {
+      "id": "g3-pt-25",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "时钟4点敲4下，6秒敲完。那么8点敲8下，几秒敲完？",
+      "image": "",
+      "options": ["12", "14", "16", "18"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["敲4下有4-1=3个间隔，每个间隔=6÷3=2秒。", "敲8下有8-1=7个间隔，总时间=7×2=14秒。"],
+      "hints": ["间隔数=次数-1", "时间花在间隔上，不是敲的动作上"],
+      "commonMistakes": [
+        {"mistake": "选0", "reason": "按比例6÷4×8=12", "correction": "要算间隔数，不是按次数比例", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2019, "paper": "2019年迎春杯三年级"},
+      "knowledgePoints": ["植树问题", "敲钟"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.3, "b": 0.8, "c": 0.25},
+      "tags": ["植树", "竞赛真题", "时钟"]
+    },
+    {
+      "id": "g3-pt-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "在两座楼之间的小路一侧种树，小路长48米，每隔6米种一棵（楼的位置不种树）。一共要种______棵树。",
+      "image": "",
+      "options": [],
+      "answer": "7",
+      "acceptableAnswers": ["7", "7棵"],
+      "solution": ["两端是楼，相当于两端都不种。", "段数=48÷6=8段，棵数=8-1=7棵。"],
+      "hints": ["楼的位置不种树=两端都不种", "两端不种：棵数=段数-1"],
+      "commonMistakes": [
+        {"mistake": "8", "reason": "只算了段数，没减1", "correction": "两端不种要减1", "errorLayer": "L2"},
+        {"mistake": "9", "reason": "错用两端都种加了1", "correction": "两端是楼不能种树，要减1", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2016, "paper": "第十三届走美杯三年级"},
+      "knowledgePoints": ["植树问题", "两端不种"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["植树", "竞赛真题", "楼房"]
+    },
+    {
+      "id": "g3-pt-27",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个圆形花坛周长60米，沿周围每隔3米摆一盆红花，每两盆红花之间摆2盆黄花。一共摆了多少盆花？",
+      "image": "",
+      "options": ["40", "50", "60", "70"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": ["封闭图形：红花盆数=段数=60÷3=20盆。", "每段摆2盆黄花，黄花=20×2=40盆。", "总盆数=20+40=60盆。"],
+      "hints": ["封闭图形棵数=段数", "黄花盆数=段数×每段黄花数"],
+      "commonMistakes": [
+        {"mistake": "选0", "reason": "黄花算成20盆，总共40盆", "correction": "每段2盆黄花，20段共40盆黄花", "errorLayer": "L3"},
+        {"mistake": "选3", "reason": "红花多加1变成21盆", "correction": "封闭图形不用加1", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2020, "paper": "第十八届希望杯三年级"},
+      "knowledgePoints": ["植树问题", "封闭", "搭配"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.4, "b": 1.2, "c": 0.25},
+      "tags": ["植树", "竞赛真题", "花坛"]
+    },
+    {
+      "id": "g3-pt-28",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个车队有12辆车，每辆车长4米，前后两车相隔8米。这个车队从头到尾一共长______米。",
+      "image": "",
+      "options": [],
+      "answer": "136",
+      "acceptableAnswers": ["136", "136米"],
+      "solution": ["车身总长=12×4=48米。", "间隔数=12-1=11个，间隔总长=11×8=88米。", "车队总长=48+88=136米。"],
+      "hints": ["车队长=车身和+间隔和", "间隔数=车数-1"],
+      "commonMistakes": [
+        {"mistake": "144", "reason": "12×(4+8)=144，多算了一个间隔", "correction": "间隔数=车数-1=11个", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2017, "paper": "第二十二届华罗庚金杯初赛"},
+      "knowledgePoints": ["植树问题", "车队"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.4, "b": 1.3, "c": 0.25},
+      "tags": ["植树", "竞赛真题", "车辆"]
+    },
+    {
+      "id": "g3-pt-29",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "小明和小红比赛爬楼梯，小明爬到4楼时，小红刚好爬到3楼。照这样的速度，小明爬到10楼时，小红爬到几楼？",
+      "image": "",
+      "options": ["6", "7", "8", "9"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["小明爬到4楼时爬了4-1=3层，小红爬到3楼时爬了3-1=2层。", "速度比：小明:小红=3:2。", "小明爬到10楼时爬了10-1=9层。", "小红爬了9÷3×2=6层，小红在6+1=7楼。"],
+      "hints": ["爬的层数=楼层-1", "先算速度比，再算楼层"],
+      "commonMistakes": [
+        {"mistake": "选2", "reason": "按楼层比4:3，10÷4×3≈7.5取整错", "correction": "要按层数比3:2来算", "errorLayer": "L4"},
+        {"mistake": "选0", "reason": "算到6层直接当6楼，没加1", "correction": "楼层=层数+1", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2021, "paper": "2021年迎春杯三年级"},
+      "knowledgePoints": ["植树问题", "楼梯", "比例"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.4, "b": 1.5, "c": 0.25},
+      "tags": ["植树", "竞赛真题", "楼梯"]
+    },
+    {
+      "id": "g3-pt-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "在一条公路的两侧每隔8米栽一棵树，起点和终点都栽，一共栽了102棵树。这条公路长______米。",
+      "image": "",
+      "options": [],
+      "answer": "400",
+      "acceptableAnswers": ["400", "400米"],
+      "solution": ["一侧栽树=102÷2=51棵。", "两端都栽：段数=棵数-1=51-1=50段。", "公路长=50×8=400米。"],
+      "hints": ["先算一侧棵数", "两端都栽：段数=棵数-1"],
+      "commonMistakes": [
+        {"mistake": "816", "reason": "直接102×8=816，没除以2也没减1", "correction": "先除以2得一侧棵数，再减1得段数", "errorLayer": "L3"},
+        {"mistake": "408", "reason": "102÷2=51，51×8=408，没减1", "correction": "两端都栽段数=棵数-1", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2019, "paper": "第二十四届华罗庚金杯决赛"},
+      "knowledgePoints": ["植树问题", "两侧", "逆推"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.4, "b": 1.4, "c": 0.25},
+      "tags": ["植树", "竞赛真题", "逆推"]
+    }
+  ]
+}

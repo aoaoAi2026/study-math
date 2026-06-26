@@ -1,0 +1,723 @@
+{
+  "topicId": "equation-intro",
+  "topicName": "方程入门",
+  "grade": "五年级总结",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "cm-eq-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "x + 5 = 12，x = ?",
+      "image": "",
+      "options": [],
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "七"
+      ],
+      "solution": [
+        "x=12-5=7。"
+      ],
+      "hints": [
+        "两边同时减5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成17",
+          "reason": "把5加过去了",
+          "correction": "x=12-5=7",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "一元一次方程"
+      ],
+      "estimatedTime": 40,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-eq-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "x - 8 = 6，x = ?",
+      "image": "",
+      "options": [],
+      "answer": "14",
+      "acceptableAnswers": [
+        "14",
+        "十四"
+      ],
+      "solution": [
+        "x=6+8=14。"
+      ],
+      "hints": [
+        "两边同时加8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成2",
+          "reason": "8-6=2",
+          "correction": "x=6+8=14",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "一元一次方程"
+      ],
+      "estimatedTime": 40,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-eq-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "4x = 20，x = ?",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五"
+      ],
+      "solution": [
+        "x=20÷4=5。"
+      ],
+      "hints": [
+        "两边同时除以4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成16",
+          "reason": "20-4=16",
+          "correction": "x=20÷4=5",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "一元一次方程"
+      ],
+      "estimatedTime": 40,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-eq-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2x + 5 = 15，x = ?",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五"
+      ],
+      "solution": [
+        "2x=15-5=10。x=10÷2=5。"
+      ],
+      "hints": [
+        "先移项:2x=15-5",
+        "再除以2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成10",
+          "reason": "忘了除以2",
+          "correction": "2x=10,x=5",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "一元一次方程"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-eq-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "3x - 7 = 8，x = ?",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五"
+      ],
+      "solution": [
+        "3x=8+7=15。x=15÷3=5。"
+      ],
+      "hints": [
+        "先移项:3x=8+7",
+        "再除以3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成1/3",
+          "reason": "移项错误",
+          "correction": "3x=15,x=5",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "一元一次方程"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-eq-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "5(x - 3) = 15，x = ?",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "x-3=15÷5=3。x=3+3=6。"
+      ],
+      "hints": [
+        "先两边除以5",
+        "或者展开:5x-15=15,5x=30,x=6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3",
+          "reason": "只算到x-3=3",
+          "correction": "x=3+3=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "一元一次方程",
+        "括号"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-eq-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "x/4 + 3 = 7，x = ?",
+      "image": "",
+      "options": [],
+      "answer": "16",
+      "acceptableAnswers": [
+        "16",
+        "十六"
+      ],
+      "solution": [
+        "x/4=7-3=4。x=4×4=16。"
+      ],
+      "hints": [
+        "先移项:x/4=7-3",
+        "再乘以4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成4",
+          "reason": "忘了乘4",
+          "correction": "x/4=4,x=16",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "一元一次方程",
+        "分数"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-eq-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "4x + 8 = 2x + 14，x = ?",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三"
+      ],
+      "solution": [
+        "4x-2x=14-8。2x=6。x=3。"
+      ],
+      "hints": [
+        "把x移到一边,数移到另一边",
+        "4x-2x=14-8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成6",
+          "reason": "忘了除以2",
+          "correction": "2x=6,x=3",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "一元一次方程",
+        "两边都有x"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-eq-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个数的3倍比它的2倍多15，这个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": [
+        "15",
+        "十五"
+      ],
+      "solution": [
+        "设这个数为x。3x-2x=15。x=15。"
+      ],
+      "hints": [
+        "设这个数为x",
+        "它的3倍=3x,它的2倍=2x",
+        "3x-2x=15"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成5",
+          "reason": "3x+2x=15",
+          "correction": "3x-2x=15,x=15",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "列方程解应用题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程应用"
+      ]
+    },
+    {
+      "id": "cm-eq-10",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明买了5本练习本和一支2元的铅笔，一共花了17元。每本练习本多少元？",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三"
+      ],
+      "solution": [
+        "设每本练习本x元。5x+2=17。5x=15,x=3元。"
+      ],
+      "hints": [
+        "5本练习本+1支铅笔=17元",
+        "5x+2=17"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3.8",
+          "reason": "(17-2)/5算错",
+          "correction": "5x=15,x=3",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "列方程解应用题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程应用"
+      ]
+    },
+    {
+      "id": "cm-eq-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个两位数，十位数字是个位数字的2倍，如果把十位数字与个位数字对调，得到的新数比原数小27。求原两位数。",
+      "image": "",
+      "options": [],
+      "answer": "63",
+      "acceptableAnswers": [
+        "63"
+      ],
+      "solution": [
+        "设个位数字为x,则十位数字为2x。原数=10×2x+x=21x。对调后新数=10x+2x=12x。",
+        "21x-12x=27,9x=27,x=3。原数=63。验证:63-36=27✓"
+      ],
+      "hints": [
+        "设个位为x,十位为2x",
+        "原数=10×2x+x=21x",
+        "新数=10x+2x=12x"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成36",
+          "reason": "十位个位搞反",
+          "correction": "原数=63",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数字问题",
+        "方程"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程",
+        "数字"
+      ]
+    },
+    {
+      "id": "cm-eq-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小明的储蓄罐里有1角和5角的硬币共35枚，总值11元5角。问1角硬币有多少枚？",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": [
+        "15",
+        "十五"
+      ],
+      "solution": [
+        "设1角硬币有x枚,则5角硬币有(35-x)枚。",
+        "总值:1×x+5×(35-x)=115角。",
+        "x+175-5x=115。-4x=-60,x=15。",
+        "所以1角硬币15枚,5角硬币20枚。"
+      ],
+      "hints": [
+        "设1角有x枚,5角有35-x枚",
+        "列方程:x+5(35-x)=115",
+        "注意单位统一"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成20",
+          "reason": "方程列错或解错",
+          "correction": "x=15",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "方程应用"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-eq-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "父亲今年32岁，儿子今年8岁。多少年后父亲的年龄是儿子的3倍？",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "四"
+      ],
+      "solution": [
+        "设x年后父亲年龄是儿子的3倍。32+x=3×(8+x)。",
+        "32+x=24+3x。32-24=3x-x。8=2x,x=4。",
+        "验证:36岁和12岁,36÷12=3✓"
+      ],
+      "hints": [
+        "设x年后",
+        "父亲32+x,儿子8+x",
+        "(32+x)=3(8+x)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成8",
+          "reason": "32/8=4被直接当成答案",
+          "correction": "解方程得x=4",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "年龄问题",
+        "方程"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "方程",
+        "年龄"
+      ]
+    },
+    {
+      "id": "cm-eq-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个长方形的长是宽的2倍，周长是30厘米。求面积。(回答平方厘米数)",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": [
+        "50",
+        "五十"
+      ],
+      "solution": [
+        "设宽为x,长=2x。周长=2(长+宽)=2(2x+x)=6x=30。x=5厘米。",
+        "宽=5厘米,长=10厘米。面积=10×5=50平方厘米。"
+      ],
+      "hints": [
+        "设宽为x,长=2x",
+        "周长=2(x+2x)=6x=30",
+        "面积=长×宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成100",
+          "reason": "2x×2x",
+          "correction": "长=10,宽=5,面积=50",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "几何应用",
+        "方程"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "方程",
+        "几何"
+      ]
+    },
+    {
+      "id": "cm-eq-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有一些鸡和兔在同一个笼子里，从上面数有20个头，从下面数有56只脚。问鸡有多少只？",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "十二"
+      ],
+      "solution": [
+        "设鸡有x只,兔有(20-x)只。鸡脚2x,兔脚4(20-x)。",
+        "脚总数:2x+4(20-x)=56。2x+80-4x=56。-2x=-24,x=12。",
+        "鸡12只,兔8只。验证:12×2+8×4=24+32=56✓"
+      ],
+      "hints": [
+        "设鸡有x只,兔=20-x",
+        "每只鸡2脚,每只兔4脚",
+        "2x+4(20-x)=56"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成8",
+          "reason": "把兔数当成鸡数",
+          "correction": "鸡=12,兔=8",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "方程应用"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "方程",
+        "鸡兔同笼"
+      ]
+    }
+  ]
+}

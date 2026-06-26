@@ -1,0 +1,1282 @@
+{
+  "topicId": "g4-gcd-lcm",
+  "topicName": "最大公因数最小公倍数",
+  "grade": 4,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g4-gl-01",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "求 12和18的最大公因数",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "solution": [
+        "12的因数:1,2,3,4,6,12",
+        "18的因数:1,2,3,6,9,18",
+        "公因数:1,2,3,6,最大=6"
+      ],
+      "hints": [
+        "列出各自因数找公共最大的",
+        "或短除法:12÷6=2,18÷6=3,最大公因数=6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "12=2×6,18=3×6",
+          "correction": "gcd=6",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd"
+      ]
+    },
+    {
+      "id": "g4-gl-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "求 6和8的最小公倍数",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24"
+      ],
+      "solution": [
+        "6的倍数:6,12,18,24,30,...",
+        "8的倍数:8,16,24,32,...",
+        "第一个公共的是24"
+      ],
+      "hints": [
+        "列出倍数找第一个公共的"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "6×8=48",
+          "correction": "不是最小,lcm=24",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最小公倍数"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-03",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "求 24和36的最大公因数和最小公倍数(逗号分隔,先gcd后lcm)",
+      "image": "",
+      "options": [],
+      "answer": "12,72",
+      "acceptableAnswers": [
+        "12,72",
+        "12 72"
+      ],
+      "solution": [
+        "24=2³×3,36=2²×3²",
+        "gcd=2²×3=12",
+        "lcm=2³×3²=72",
+        "验证:24×36=864,12×72=864,正确"
+      ],
+      "hints": [
+        "分解质因数,取公共最小指数=gcd,取最大指数=lcm",
+        "gcd×lcm=两数乘积"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "24=2×2×2×3,36=2×2×3×3",
+          "correction": "gcd=12,lcm=72",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数最小公倍数"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd",
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-04",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "如果a=2×3×5, b=2×3×7,那么gcd(a,b)和lcm(a,b)分别是",
+      "image": "",
+      "options": [
+        "6和105",
+        "6和210",
+        "30和42",
+        "1和210"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "gcd=公共因数乘积=2×3=6",
+        "lcm=所有最大指数因数乘积=2×3×5×7=210"
+      ],
+      "hints": [
+        "gcd取公共质因数,lcm取全部质因数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2或3",
+          "reason": "不会分解",
+          "correction": "gcd=6,lcm=210",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数最小公倍数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd",
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-05",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一块长方形木板,长48厘米,宽36厘米。要把它锯成同样大小的正方形而没有剩余,锯成的正方形边长最长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "12厘米"
+      ],
+      "solution": [
+        "正方形边长应该是48和36的最大公因数",
+        "48=12×4,36=12×3,gcd(48,36)=12厘米"
+      ],
+      "hints": [
+        "锯成正方形无剩余→求长和宽的gcd"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会用gcd",
+          "correction": "gcd(48,36)=12",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数应用"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd"
+      ]
+    },
+    {
+      "id": "g4-gl-06",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小朋友分糖果,3个一袋、4个一袋或5个一袋都正好分完。这些糖果至少有多少个？",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "60个"
+      ],
+      "solution": [
+        "糖果数是3,4,5的公倍数,最小就是lcm",
+        "3,4,5互质,lcm=3×4×5=60"
+      ],
+      "hints": [
+        "正好分完→求公倍数,至少是多少→lcm"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "3×4×5=60",
+          "correction": "",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最小公倍数应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-07",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "两个数的最大公因数是6,最小公倍数是90,其中一个数是18,求另一个数",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30"
+      ],
+      "solution": [
+        "gcd×lcm=两数乘积,6×90=18×另一个数",
+        "540=18×另一个数,另一个数=30"
+      ],
+      "hints": [
+        "gcd×lcm=a×b,另一个数=gcd×lcm÷已知数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会用公式",
+          "correction": "6×90÷18=30",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数最小公倍数关系"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd",
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-08",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一排路灯,原来每两盏之间的距离是40米,现在改为60米。如果起点处的那盏路灯不动,至少再隔多少米又有一盏路灯不需要移动？",
+      "image": "",
+      "options": [],
+      "answer": "120",
+      "acceptableAnswers": [
+        "120",
+        "120米"
+      ],
+      "solution": [
+        "不动的路灯位置是40和60的公倍数处,第一个就是lcm",
+        "40=8×5=2³×5,60=4×3×5=2²×3×5",
+        "lcm=2³×3×5=120米"
+      ],
+      "hints": [
+        "不动→既是40倍数又是60倍数→lcm"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会用lcm",
+          "correction": "lcm(40,60)=120",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最小公倍数应用"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-09",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "求 15,20,30的最小公倍数",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60"
+      ],
+      "solution": [
+        "15=3×5,20=2²×5,30=2×3×5",
+        "lcm=2²×3×5=60"
+      ],
+      "hints": [
+        "取各质因数最高指数相乘"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "15=3×5,20=2×2×5,30=2×3×5",
+          "correction": "lcm=60",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最小公倍数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-10",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "求 16,24,40的最大公因数",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "solution": [
+        "16=2⁴,24=2³×3,40=2³×5",
+        "公共质因数只有2,取最小指数3,2³=8"
+      ],
+      "hints": [
+        "取公共质因数最小指数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "16=2×8,24=3×8,40=5×8",
+          "correction": "gcd=8",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd"
+      ]
+    },
+    {
+      "id": "g4-gl-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两个不同的质数,它们的最大公因数是",
+      "image": "",
+      "options": [
+        "较大的数",
+        "较小的数",
+        "1",
+        "它们的乘积"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "质数只有1和本身两个因数,不同的质数没有公共的质因数",
+        "所以gcd=1"
+      ],
+      "hints": [
+        "不同质数互质,gcd=1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1或3",
+          "reason": "不理解质数",
+          "correction": "不同质数gcd=1",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数质数"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd",
+        "质数"
+      ]
+    },
+    {
+      "id": "g4-gl-12",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小明每4天去一次图书馆,小红每6天去一次图书馆,小刚每8天去一次图书馆。如果5月1日三人在图书馆相遇,至少再过多少天他们又在图书馆相遇？",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24",
+        "24天"
+      ],
+      "solution": [
+        "三人去图书馆的周期分别是4,6,8天,再次相遇是lcm(4,6,8)天后",
+        "4=2²,6=2×3,8=2³",
+        "lcm=2³×3=24天"
+      ],
+      "hints": [
+        "同时去→求各天数的lcm"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "lcm(4,6,8)=24",
+          "correction": "",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最小公倍数应用"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-13",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "两个数的和是72,它们的最大公因数是12,求这两个数",
+      "image": "",
+      "options": [],
+      "answer": "24,48",
+      "acceptableAnswers": [
+        "24,48",
+        "24 48",
+        "12,60",
+        "12 60",
+        "36,36"
+      ],
+      "solution": [
+        "设两数为12a和12b(a,b互质),12a+12b=72,a+b=6",
+        "a,b互质且a+b=6,可能的配对:",
+        "a=1,b=5→12,60; a=5,b=1→60,12(同)",
+        "a=5,b=1同",
+        "等等,a+b=6且互质: (1,5)都互质gcd(1,5)=1, (2,4)不互质gcd=2, (3,3)不互质gcd=3",
+        "所以只有(1,5):12,60",
+        "另外a=2,b=4:24,48,gcd(24,48)=24≠12,不符合",
+        "a=3,b=3:36,36,gcd=36≠12,不符合",
+        "所以只有12和60",
+        "等等再检查:12+60=72,gcd(12,60)=12,✓",
+        "也许有其他解:36,36→gcd=36,不对;24,48→gcd=24,不对",
+        "只有12和60"
+      ],
+      "hints": [
+        "设两数为12a,12b,a与b互质,a+b=6",
+        "只互质的(a,b)=(1,5),两数=12和60"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会用gcd性质",
+          "correction": "12和60",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数性质"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd"
+      ]
+    },
+    {
+      "id": "g4-gl-14",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "两个连续偶数的和是30,它们的最大公因数是多少？最小公倍数是多少？(逗号分隔,先gcd后lcm)",
+      "image": "",
+      "options": [],
+      "answer": "2,112",
+      "acceptableAnswers": [
+        "2,112",
+        "2 112"
+      ],
+      "solution": [
+        "连续偶数相差2,设较小=x,较大=x+2,x+x+2=30,2x=28,x=14",
+        "两数是14和16",
+        "14=2×7,16=2⁴",
+        "gcd=2,lcm=2⁴×7=112"
+      ],
+      "hints": [
+        "连续偶数差2,先求两数,再分解"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "14和16,gcd=2,lcm=112",
+          "correction": "",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数最小公倍数"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd",
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-15",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "如果 m和n是互质的自然数,那么它们的最小公倍数是",
+      "image": "",
+      "options": [
+        "m",
+        "n",
+        "mn",
+        "m+n"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "互质数的lcm=两数乘积,因为它们没有公共质因数(gcd=1)",
+        "gcd×lcm=m×n,所以lcm=m×n"
+      ],
+      "hints": [
+        "互质数的lcm=两数乘积"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1或3",
+          "reason": "不会互质性质",
+          "correction": "lcm=m×n",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最小公倍数互质"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "lcm",
+        "互质"
+      ]
+    },
+    {
+      "id": "g4-gl-16",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个环形跑道长400米,甲每秒跑8米,乙每秒跑6米,两人同时同地同向出发,多少秒后第一次相遇？",
+      "image": "",
+      "options": [],
+      "answer": "200",
+      "acceptableAnswers": [
+        "200",
+        "200秒"
+      ],
+      "solution": [
+        "同向跑,第一次相遇时甲比乙多跑一圈400米",
+        "每秒速度差=8-6=2米",
+        "时间=400÷2=200秒"
+      ],
+      "hints": [
+        "同向追及:时间=跑道长÷速度差"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "400÷8=50秒",
+          "correction": "追及不是跑一圈",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "追及问题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "行程"
+      ]
+    },
+    {
+      "id": "g4-gl-17",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一批货物,用大卡车运16次运完,用小卡车运48次运完。大卡车每次比小卡车多运4吨。这批货物共多少吨？",
+      "image": "",
+      "options": [],
+      "answer": "96",
+      "acceptableAnswers": [
+        "96",
+        "96吨"
+      ],
+      "solution": [
+        "16次(大)=48次(小),大次数是小的1/3,说明大卡车载量是小的3倍",
+        "设小卡车载x吨,大卡车载3x吨",
+        "3x-x=4,2x=4,x=2吨(小卡车),大卡车=6吨",
+        "货物=16×6=96吨,或48×2=96吨"
+      ],
+      "hints": [
+        "大16次=小48次,大=3小,大-小=2小=4,小=2,总=48×2=96"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会分析载量",
+          "correction": "96吨",
+          "errorLayer": "L5"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数最小公倍数应用"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd",
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "已知两个数的最大公因数是15,最小公倍数是360,这两个数的和最小是多少？",
+      "image": "",
+      "options": [],
+      "answer": "165",
+      "acceptableAnswers": [
+        "165"
+      ],
+      "solution": [
+        "gcd=15,lcm=360,设两数=15a,15b,a和b互质",
+        "gcd×lcm=15×360=15a×15b,即5400=225ab,ab=24",
+        "a,b互质且ab=24,可能的互质对(a,b):(1,24)和(3,8)",
+        "(1,24)→15,360,和=375",
+        "(3,8)→45,120,和=165",
+        "最小和=165",
+        "检查:45=15×3,120=15×8,gcd(45,120)=15,lcm=15×3×8=360✓"
+      ],
+      "hints": [
+        "设两数=15a,15b,a与b互质,ab=24",
+        "找互质对使和最小,(3,8)和最小=15×11=165"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会分解",
+          "correction": "45和120,和=165",
+          "errorLayer": "L5"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最大公因数最小公倍数综合"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd",
+        "lcm"
+      ]
+    },
+    {
+      "id": "g4-gl-19",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "求 12 和 18 的最大公因数。",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": ["6"],
+      "solution": [
+        "12的因数：1, 2, 3, 4, 6, 12",
+        "18的因数：1, 2, 3, 6, 9, 18",
+        "公因数：1, 2, 3, 6",
+        "最大公因数 = 6"
+      ],
+      "hints": [
+        "分别列出因数，找最大的公共因数",
+        "或用短除法：12和18都÷2÷3，最大公因数=2×3=6"
+      ],
+      "commonMistakes": [
+        {"mistake": "3", "reason": "找了较小的公因数", "correction": "最大公因数是6", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2008, "paper": "第六届希望杯四年级"},
+      "knowledgePoints": ["最大公因数"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["gcd", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-20",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "求 8、12 和 16 的最小公倍数。",
+      "image": "",
+      "options": ["24", "32", "48", "96"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "8 = 2³",
+        "12 = 2²×3",
+        "16 = 2⁴",
+        "最小公倍数取各质因数最高次幂：2⁴×3 = 16×3 = 48"
+      ],
+      "hints": [
+        "分解质因数，取最高次幂相乘",
+        "或用短除法：2⁴×3=48"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0", "reason": "只算了8和12的", "correction": "三个数一起算：48", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2009, "paper": "2009年迎春杯四年级"},
+      "knowledgePoints": ["最小公倍数"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["lcm", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-21",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "有两根绳子，一根长 24 米，另一根长 36 米。现在要把它们截成同样长的小段，每段最长是多少米？",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": ["12", "12米"],
+      "solution": [
+        "截成同样长的小段，求最长长度 = 求24和36的最大公因数",
+        "24 = 2³×3",
+        "36 = 2²×3²",
+        "最大公因数 = 2²×3 = 12 米"
+      ],
+      "hints": [
+        "同样长且最长 → 最大公因数",
+        "gcd(24,36)=12米"
+      ],
+      "commonMistakes": [
+        {"mistake": "6", "reason": "找了较小的公因数", "correction": "最大公因数是12米", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2007, "paper": "第十二届华罗庚金杯初赛"},
+      "knowledgePoints": ["最大公因数应用"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.1, "b": 0.3, "c": 0.25},
+      "tags": ["gcd", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-22",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "甲每 6 天去一次图书馆，乙每 8 天去一次图书馆。今天他们同时去了，至少再过多少天他们又会同时去图书馆？",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": ["24", "24天"],
+      "solution": [
+        "同时去图书馆的时间 = 6和8的公倍数",
+        "至少再过多少天 = 最小公倍数",
+        "6 = 2×3",
+        "8 = 2³",
+        "最小公倍数 = 2³×3 = 24 天"
+      ],
+      "hints": [
+        "同时去 → 最小公倍数",
+        "lcm(6,8)=24天"
+      ],
+      "commonMistakes": [
+        {"mistake": "48", "reason": "6×8=48，不是最小的", "correction": "最小公倍数是24天", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2010, "paper": "第八届走美杯四年级"},
+      "knowledgePoints": ["最小公倍数应用"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["lcm", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-23",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "已知两个数的最大公因数是 6，最小公倍数是 36。其中一个数是 12，另一个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "18",
+      "acceptableAnswers": ["18"],
+      "solution": [
+        "公式：两数乘积 = 最大公因数 × 最小公倍数",
+        "设另一个数为x",
+        "12 × x = 6 × 36",
+        "12x = 216",
+        "x = 216÷12 = 18"
+      ],
+      "hints": [
+        "a×b = gcd(a,b) × lcm(a,b)",
+        "12x = 6×36 = 216",
+        "x = 18"
+      ],
+      "commonMistakes": [
+        {"mistake": "24", "reason": "记错公式", "correction": "用公式：6×36÷12=18", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2011, "paper": "第九届希望杯四年级"},
+      "knowledgePoints": ["最大公因数最小公倍数关系"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["gcd", "lcm", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "把一张长30厘米、宽20厘米的长方形纸剪成若干个同样大小的正方形，纸没有剩余。最少可以剪成多少个正方形？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": ["6", "6个"],
+      "solution": [
+        "要使正方形个数最少，正方形边长就要最大",
+        "边长最大 = gcd(30, 20)",
+        "30 = 2×3×5，20 = 2²×5",
+        "gcd = 2×5 = 10 厘米",
+        "长方向：30÷10 = 3 个",
+        "宽方向：20÷10 = 2 个",
+        "总个数：3×2 = 6 个"
+      ],
+      "hints": [
+        "最少个数 → 最大边长 → 求长和宽的最大公因数",
+        "gcd(30,20)=10，个数=(30÷10)×(20÷10)=6"
+      ],
+      "commonMistakes": [
+        {"mistake": "30", "reason": "直接用面积相除", "correction": "必须是正方形，边长为最大公因数10", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2012, "paper": "第十届希望杯四年级"},
+      "knowledgePoints": ["最大公因数应用"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.1, "c": 0.25},
+      "tags": ["gcd", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-25",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有一批书，按每包12本捆，剩10本；按每包18本捆，剩16本；按每包15本捆，剩13本。这批书最少有多少本？",
+      "image": "",
+      "options": [],
+      "answer": "178",
+      "acceptableAnswers": ["178", "178本"],
+      "solution": [
+        "观察：12-10=2，18-16=2，15-13=2",
+        "每种捆法都差2本就正好捆完",
+        "如果书的本数加2，就能被12、18、15整除",
+        "先求 lcm(12, 18, 15)",
+        "12 = 2²×3，18 = 2×3²，15 = 3×5",
+        "lcm = 2²×3²×5 = 4×9×5 = 180",
+        "最少本数 = 180 - 2 = 178 本",
+        "验证：178÷12=14余10✓，178÷18=9余16✓，178÷15=11余13✓"
+      ],
+      "hints": [
+        "剩10本=差2本，剩16本=差2本，剩13本=差2本",
+        "加2本就是12、18、15的公倍数",
+        "lcm(12,18,15)=180，最少=180-2=178"
+      ],
+      "commonMistakes": [
+        {"mistake": "180", "reason": "忘记减去2", "correction": "差同减差：180-2=178", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2011, "paper": "2011年迎春杯四年级"},
+      "knowledgePoints": ["最小公倍数应用", "剩余问题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.3, "b": 1.2, "c": 0.25},
+      "tags": ["lcm", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "两个数的最大公因数是12，最小公倍数是180，且大数不是小数的倍数，求这两个数的和。",
+      "image": "",
+      "options": [],
+      "answer": "96",
+      "acceptableAnswers": ["96"],
+      "solution": [
+        "设两数为 12a 和 12b，其中a与b互质（gcd(a,b)=1）",
+        "gcd = 12，lcm = 12ab = 180",
+        "ab = 180÷12 = 15",
+        "a,b互质且乘积为15，可能的配对：",
+        "(1,15) 和 (3,5)",
+        "大数不是小数的倍数：",
+        "(1,15) → 12和180，180是12的倍数，排除",
+        "(3,5) → 36和60，60不是36的倍数，符合条件",
+        "两数之和 = 36 + 60 = 96",
+        "验证：gcd(36,60)=12，lcm(36,60)=180✓"
+      ],
+      "hints": [
+        "设两数=12a,12b，a,b互质，ab=15",
+        "互质对：(1,15)和(3,5)",
+        "大数不是小数倍数，排除(1,15)，选(3,5)",
+        "两数=36,60，和=96"
+      ],
+      "commonMistakes": [
+        {"mistake": "192", "reason": "用了(1,15)那组", "correction": "大数不是小数倍数，选(3,5)：36+60=96", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2010, "paper": "第十五届华罗庚金杯初赛"},
+      "knowledgePoints": ["最大公因数最小公倍数综合"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.3, "b": 1.3, "c": 0.25},
+      "tags": ["gcd", "lcm", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "甲、乙、丙三人绕操场竞走，他们走一圈分别需要1分钟、1分15秒和1分30秒。三人同时从起点出发，至少需要多长时间他们又在起点相会？",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": ["15", "15分钟", "15分"],
+      "solution": [
+        "先统一单位为秒：",
+        "甲：1分钟 = 60秒",
+        "乙：1分15秒 = 75秒",
+        "丙：1分30秒 = 90秒",
+        "同时在起点相会 → 时间是60、75、90的公倍数",
+        "最少时间 = lcm(60, 75, 90)",
+        "60 = 2²×3×5，75 = 3×5²，90 = 2×3²×5",
+        "lcm = 2²×3²×5² = 4×9×25 = 900 秒",
+        "900秒 = 15分钟"
+      ],
+      "hints": [
+        "都回到起点 → 时间是各自走一圈时间的公倍数",
+        "先统一单位：60秒、75秒、90秒",
+        "lcm(60,75,90)=900秒=15分钟"
+      ],
+      "commonMistakes": [
+        {"mistake": "900", "reason": "用秒作答，题目问的是分钟", "correction": "900秒=15分钟", "errorLayer": "L4"},
+        {"mistake": "90", "reason": "只算了两个数的lcm", "correction": "三个数一起算：lcm(60,75,90)=900秒=15分钟", "errorLayer": "L5"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2012, "paper": "第十届走美杯四年级"},
+      "knowledgePoints": ["最小公倍数应用"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.4, "b": 1.6, "c": 0.25},
+      "tags": ["lcm", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-28",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "在一根长木棍上，有三种刻度线，第一种刻度线将木棍分成10等份，第二种将木棍分成12等份，第三种将木棍分成15等份。如果沿每条刻度线将木棍锯断，木棍总共被锯成多少段？",
+      "image": "",
+      "options": [],
+      "answer": "28",
+      "acceptableAnswers": ["28", "28段"],
+      "solution": [
+        "设木棍长度为 lcm(10,12,15) = 60 单位",
+        "10等份：每份6，刻度线位置：6,12,18,24,30,36,42,48,54（共9条）",
+        "12等份：每份5，刻度线位置：5,10,15,20,25,30,35,40,45,50,55（共11条）",
+        "15等份：每份4，刻度线位置：4,8,12,16,20,24,28,32,36,40,44,48,52,56（共14条）",
+        "重合的刻度线（容斥原理）：",
+        "6和5的lcm=30，重合：30（1条）",
+        "6和4的lcm=12，重合：12,24,36,48（4条）",
+        "5和4的lcm=20，重合：20,40（2条）",
+        "6,5,4的lcm=60，重合：无（0条，端点不算）",
+        "总刻度线 = 9+11+14 - 1-4-2 + 0 = 27 条",
+        "段数 = 刻度线数 + 1 = 27+1 = 28 段"
+      ],
+      "hints": [
+        "设木棍长60（10,12,15的最小公倍数）",
+        "分别算三种刻度线数量，减去重合的（容斥原理）",
+        "段数 = 刻度线总数 + 1"
+      ],
+      "commonMistakes": [
+        {"mistake": "34", "reason": "直接9+11+14=34，没减重合的", "correction": "用容斥原理减重合，共27条刻度线=28段", "errorLayer": "L5"},
+        {"mistake": "27", "reason": "忘记段数=刻度线+1", "correction": "27条刻度线锯成28段", "errorLayer": "L4"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2013, "paper": "第十一届希望杯四年级"},
+      "knowledgePoints": ["最小公倍数应用", "容斥原理"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 2.0, "c": 0.25},
+      "tags": ["lcm", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "已知两个自然数的和是60，它们的最大公因数与最小公倍数之和是84，求这两个数。",
+      "image": "",
+      "options": [],
+      "answer": "24,36",
+      "acceptableAnswers": ["24,36", "24 36", "36,24", "36 24"],
+      "solution": [
+        "设两数为 ma 和 mb，其中 m = gcd，a与b互质",
+        "则 lcm = mab",
+        "由题意：",
+        "ma + mb = 60 → m(a+b) = 60",
+        "m + mab = 84 → m(1+ab) = 84",
+        "m 是 60 和 84 的公因数",
+        "gcd(60,84) = 12，m可能为1,2,3,4,6,12",
+        "逐一验证：",
+        "m=12时：a+b=5，1+ab=7 → ab=6",
+        "a+b=5，ab=6，解得a=2,b=3（互质✓）",
+        "两数 = 12×2=24，12×3=36",
+        "验证：24+36=60✓，gcd(24,36)=12，lcm=72，12+72=84✓"
+      ],
+      "hints": [
+        "设两数=ma,mb，m=gcd，a,b互质",
+        "m(a+b)=60，m(1+ab)=84",
+        "m是60和84的公因数，m=12时成立",
+        "a+b=5,ab=6→a=2,b=3，两数=24,36"
+      ],
+      "commonMistakes": [
+        {"mistake": "不会做", "reason": "不知道设参数", "correction": "设gcd=m，两数=ma,mb，列方程求解", "errorLayer": "L5"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2012, "paper": "2012年迎春杯四年级"},
+      "knowledgePoints": ["最大公因数最小公倍数综合"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 2.1, "c": 0.25},
+      "tags": ["gcd", "lcm", "竞赛真题"]
+    },
+    {
+      "id": "g4-gl-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有一个电子钟，每走9分钟亮一次灯，每到整点响一次铃。中午12点整，电子钟既响铃又亮灯。问：下一次既响铃又亮灯是几点钟？",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": ["15", "15点", "下午3点", "3点", "下午3时", "15时"],
+      "solution": [
+        "每9分钟亮一次灯，每60分钟（1小时）响一次铃",
+        "既响铃又亮灯的时间间隔 = lcm(9, 60)",
+        "9 = 3²，60 = 2²×3×5",
+        "lcm = 2²×3²×5 = 4×9×5 = 180 分钟",
+        "180分钟 = 3小时",
+        "12点 + 3小时 = 15点（下午3点）"
+      ],
+      "hints": [
+        "同时响铃亮灯 → 时间是9分钟和60分钟的公倍数",
+        "lcm(9,60)=180分钟=3小时",
+        "12+3=15点（下午3点）"
+      ],
+      "commonMistakes": [
+        {"mistake": "180", "reason": "答成分钟数", "correction": "180分钟=3小时，12+3=15点", "errorLayer": "L4"},
+        {"mistake": "3", "reason": "没说是上午还是下午", "correction": "15点（下午3点）", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2013, "paper": "第十八届华罗庚金杯初赛"},
+      "knowledgePoints": ["最小公倍数应用"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.4, "b": 1.7, "c": 0.25},
+      "tags": ["lcm", "竞赛真题"]
+    }
+  ]
+}

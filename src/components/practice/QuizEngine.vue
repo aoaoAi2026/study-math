@@ -2,10 +2,47 @@
 import { ref, computed, watch, onMounted } from 'vue'
 import type { Exercise } from '@/types/exercise'
 import { classifyError } from '@/services/exerciseEngine'
+import { addWrongItem } from '@/services/wrongBookStore'
 import { useUserStore } from '@/stores/userStore'
 import ChoiceQuestion from './ChoiceQuestion.vue'
 import FillQuestion from './FillQuestion.vue'
 import InputQuestion from './InputQuestion.vue'
+import ShapeIllustration from './ShapeIllustration.vue'
+
+// 火柴棒可视化 - 根据字符返回 SVG
+function matchSegment(ch: string): string {
+  const segments: Record<string, string[]> = {
+    '0': ['top', 'ul', 'ur', 'dl', 'dr', 'bot'],
+    '1': ['ur', 'dr'],
+    '2': ['top', 'ur', 'mid', 'dl', 'bot'],
+    '3': ['top', 'ur', 'mid', 'dr', 'bot'],
+    '4': ['ul', 'ur', 'mid', 'dr'],
+    '5': ['top', 'ul', 'mid', 'dr', 'bot'],
+    '6': ['top', 'ul', 'mid', 'dl', 'dr', 'bot'],
+    '7': ['top', 'ur', 'dr'],
+    '8': ['top', 'ul', 'ur', 'mid', 'dl', 'dr', 'bot'],
+    '9': ['top', 'ul', 'ur', 'mid', 'dr', 'bot'],
+    '+': ['mid', 'vbar'],
+    '-': ['mid'],
+    '=': ['eqTop', 'eqBot']
+  }
+  const segs = segments[ch] || []
+  const wood = '#8B4513'
+  const tip = '#D2691E'
+  let svg = `<svg viewBox="0 0 60 100" xmlns="http://www.w3.org/2000/svg" style="width:44px;height:72px;">`
+  if (segs.includes('top')) svg += `<rect x="8" y="6" width="44" height="7" rx="3" fill="${wood}"/><circle cx="6" cy="9.5" r="3.5" fill="${tip}"/><circle cx="54" cy="9.5" r="3.5" fill="${tip}"/>`
+  if (segs.includes('mid')) svg += `<rect x="8" y="46" width="44" height="7" rx="3" fill="${wood}"/><circle cx="6" cy="49.5" r="3.5" fill="${tip}"/><circle cx="54" cy="49.5" r="3.5" fill="${tip}"/>`
+  if (segs.includes('bot')) svg += `<rect x="8" y="86" width="44" height="7" rx="3" fill="${wood}"/><circle cx="6" cy="89.5" r="3.5" fill="${tip}"/><circle cx="54" cy="89.5" r="3.5" fill="${tip}"/>`
+  if (segs.includes('ul')) svg += `<rect x="3" y="10" width="7" height="36" rx="3" fill="${wood}"/><circle cx="6.5" cy="7" r="3.5" fill="${tip}"/><circle cx="6.5" cy="49" r="3.5" fill="${tip}"/>`
+  if (segs.includes('ur')) svg += `<rect x="50" y="10" width="7" height="36" rx="3" fill="${wood}"/><circle cx="53.5" cy="7" r="3.5" fill="${tip}"/><circle cx="53.5" cy="49" r="3.5" fill="${tip}"/>`
+  if (segs.includes('dl')) svg += `<rect x="3" y="54" width="7" height="36" rx="3" fill="${wood}"/><circle cx="6.5" cy="51" r="3.5" fill="${tip}"/><circle cx="6.5" cy="93" r="3.5" fill="${tip}"/>`
+  if (segs.includes('dr')) svg += `<rect x="50" y="54" width="7" height="36" rx="3" fill="${wood}"/><circle cx="53.5" cy="51" r="3.5" fill="${tip}"/><circle cx="53.5" cy="93" r="3.5" fill="${tip}"/>`
+  if (segs.includes('vbar')) svg += `<rect x="26" y="6" width="7" height="88" rx="3" fill="${wood}"/><circle cx="29.5" cy="3" r="3.5" fill="${tip}"/><circle cx="29.5" cy="97" r="3.5" fill="${tip}"/>`
+  if (segs.includes('eqTop')) svg += `<rect x="5" y="30" width="50" height="7" rx="3" fill="${wood}"/><circle cx="3" cy="33.5" r="3.5" fill="${tip}"/><circle cx="57" cy="33.5" r="3.5" fill="${tip}"/>`
+  if (segs.includes('eqBot')) svg += `<rect x="5" y="63" width="50" height="7" rx="3" fill="${wood}"/><circle cx="3" cy="66.5" r="3.5" fill="${tip}"/><circle cx="57" cy="66.5" r="3.5" fill="${tip}"/>`
+  svg += '</svg>'
+  return svg
+}
 
 const props = defineProps<{
   exercises: Exercise[]
@@ -37,6 +74,40 @@ const showHints = ref(false)
 const currentExercise = computed(() => props.exercises[currentIndex.value])
 const progress = computed(() => ((currentIndex.value + 1) / props.exercises.length) * 100)
 const isLast = computed(() => currentIndex.value === props.exercises.length - 1)
+
+// 判断是否为火柴棒题目（等式类，需要显示火柴棒布局）
+const isMatchstickEquation = computed(() => {
+  if (!currentExercise.value) return false
+  const stem = currentExercise.value.stem || ''
+  // 必须同时包含"火柴"和明确的等式模式（数字+运算符+等号+数字）
+  if (!stem.includes('火柴')) return false
+  // 匹配等式模式：如 "7 + 7 = 1"、"1+2=4"、"5-2=2"
+  // 要求至少有一个运算符(+、-、×、÷、*)和等号，两侧都有数字
+  const equationMatch = stem.match(/\d+\s*[+\-×÷*]\s*\d+\s*=\s*\d+/)
+  if (equationMatch) return true
+  // 或匹配 "XX=YY" 且在"移动火柴"语境下
+  const simpleEqMatch = stem.match(/(?:使|让|让等式|等式).*\d+\s*[+\-×÷*]?\s*\d+\s*=\s*\d+/)
+  return !!simpleEqMatch
+})
+
+// 从题干提取火柴等式（如 '7 + 7 = 1'）
+const matchstickChars = computed(() => {
+  if (!isMatchstickEquation.value || !currentExercise.value) return []
+  const stem = currentExercise.value.stem || ''
+  // 优先提取完整等式：数字 + 运算符 + 数字 = 数字
+  const m = stem.match(/\d+\s*[+\-×÷*]\s*\d+\s*=\s*\d+/)
+  if (m) {
+    return m[0].replace(/[^\d+\-=]/g, '').split('')
+  }
+  return []
+})
+
+const matchstickHtml = computed(() => {
+  if (!isMatchstickEquation.value) return ''
+  const chars = matchstickChars.value
+  if (chars.length === 0) return ''
+  return chars.map(ch => `<span class="match-char">${matchSegment(ch)}</span>`).join('')
+})
 
 const correctAnswerText = computed(() => {
   const exercise = currentExercise.value
@@ -82,6 +153,13 @@ function handleAnswer(result: { answer: string; isCorrect: boolean }) {
       result.answer,
       currentExercise.value.answer,
       currentExercise.value.stem
+    )
+    // 自动保存到错题本
+    addWrongItem(
+      currentExercise.value,
+      result.answer,
+      answerResult.errorLayer,
+      'practice'
     )
     emit('wrong', currentExercise.value, answerResult)
   } else {
@@ -146,6 +224,20 @@ onMounted(() => {
       </div>
 
       <div class="quiz-engine__stem" v-html="currentExercise.stem"></div>
+
+      <!-- 火柴棒可视化（仅等式类火柴棒题显示） -->
+      <div v-if="isMatchstickEquation && matchstickHtml" class="quiz-engine__matchstick">
+        <div class="quiz-engine__matchstick-box">
+          <div class="quiz-engine__matchstick-row" v-html="matchstickHtml"></div>
+          <div class="quiz-engine__matchstick-hint">⬆ 用火柴棒摆出的等式，移动一根使其成立</div>
+        </div>
+      </div>
+
+      <ShapeIllustration
+        v-if="currentExercise.image && !isMatchstickEquation"
+        :shape="currentExercise.image"
+        :size="200"
+      />
 
       <div v-if="!showFeedback && currentExercise.hints && currentExercise.hints.length > 0" class="quiz-engine__hints">
         <div v-for="(hint, idx) in currentHints" :key="idx" class="quiz-engine__hint-item">
@@ -246,180 +338,264 @@ onMounted(() => {
 
 <style scoped>
 .quiz-engine {
-  max-width: 600px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
+/* 进度条 */
 .quiz-engine__progress {
-  margin-bottom: var(--space-6);
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem;
 }
 
 .quiz-engine__progress-bar {
   height: 8px;
-  background: var(--bg-hover);
-  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, #e5e7eb, #d1d5db);
+  border-radius: 8px;
   overflow: hidden;
-  margin-bottom: var(--space-2);
+  margin-bottom: 0.75rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .quiz-engine__progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
-  border-radius: var(--radius-full);
-  transition: width var(--transition-normal);
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 8px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
 }
 
 .quiz-engine__progress-text {
   text-align: center;
-  font-size: var(--text-sm);
-  color: var(--text-secondary);
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
 }
 
+/* 题目容器 */
 .quiz-engine__question {
   background: var(--bg-card);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  margin-bottom: var(--space-4);
-  box-shadow: var(--shadow-md);
+  border-radius: 24px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
 }
 
+/* 题目元信息 */
 .quiz-engine__meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-4);
+  margin-bottom: 1.5rem;
 }
 
 .quiz-engine__diff {
-  color: var(--color-warning);
+  display: flex;
+  gap: 2px;
 }
+
+.quiz-engine__diff::before {
+  content: '';
+}
+
+.quiz-engine__diff--1 { color: #10b981; }
+.quiz-engine__diff--2 { color: #3b82f6; }
+.quiz-engine__diff--3 { color: #f59e0b; }
+.quiz-engine__diff--4 { color: #ef4444; }
+.quiz-engine__diff--5 { color: #8b5cf6; }
 
 .quiz-engine__time {
-  font-size: var(--text-sm);
-  color: var(--text-tertiary);
+  font-size: 0.875rem;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
+/* 题干 */
 .quiz-engine__stem {
-  font-size: var(--text-lg);
-  color: var(--text-primary);
-  line-height: var(--leading-relaxed);
-  margin-bottom: var(--space-6);
+  font-size: 1.25rem;
+  color: #111827;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-weight: 500;
 }
 
+/* 火柴棒 */
+.quiz-engine__matchstick {
+  margin: 1.5rem 0;
+}
+
+.quiz-engine__matchstick-box {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border-radius: 16px;
+  padding: 1.5rem 1rem;
+  border: 2px dashed #d97706;
+}
+
+.quiz-engine__matchstick-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.quiz-engine__matchstick-hint {
+  margin-top: 1rem;
+  text-align: center;
+  color: #92400e;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+/* 提示区域 */
 .quiz-engine__hints {
-  margin-bottom: var(--space-4);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .quiz-engine__hint-item {
   display: flex;
   align-items: flex-start;
-  gap: var(--space-2);
-  background: var(--bg-hover);
-  border-left: 3px solid var(--color-primary);
-  padding: var(--space-3) var(--space-4);
-  border-radius: var(--radius-md);
-  margin-bottom: var(--space-2);
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  border-left: 4px solid #6366f1;
+  padding: 1rem 1.25rem;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 0.75rem;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 .quiz-engine__hint-bulb {
-  font-size: var(--text-base);
+  font-size: 1.25rem;
   flex-shrink: 0;
 }
 
 .quiz-engine__hint-text {
-  font-size: var(--text-sm);
-  color: var(--text-secondary);
-  line-height: var(--leading-normal);
+  font-size: 0.9375rem;
+  color: #4b5563;
+  line-height: 1.6;
 }
 
 .quiz-engine__hint-btn {
-  display: inline-block;
-  padding: var(--space-2) var(--space-4);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
   background: transparent;
-  border: 1px dashed var(--color-primary);
-  color: var(--color-primary);
-  border-radius: var(--radius-md);
-  font-size: var(--text-sm);
-  margin-top: var(--space-2);
+  border: 2px dashed #a5b4fc;
+  color: #6366f1;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .quiz-engine__hint-btn:hover {
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(99, 102, 241, 0.05);
+  border-color: #6366f1;
 }
 
+/* 反馈区域 */
 .quiz-engine__feedback {
   background: var(--bg-card);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
+  border-radius: 24px;
+  padding: 2rem;
   text-align: center;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
   border: 2px solid var(--color-warning);
-  margin-bottom: var(--space-4);
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 .quiz-engine__feedback--correct {
   border-color: var(--color-success);
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), transparent);
+  background: var(--bg-card);
 }
 
 .quiz-engine__feedback--wrong {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), transparent);
+  border-color: var(--color-warning);
+  background: var(--bg-card);
 }
 
 .quiz-engine__feedback-icon {
-  font-size: 48px;
-  margin-bottom: var(--space-3);
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 .quiz-engine__feedback-text {
-  font-size: var(--text-xl);
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: var(--space-4);
+  margin-bottom: 1.5rem;
 }
 
+/* 答案区域 */
 .quiz-engine__solution {
   background: var(--bg-hover);
-  border-radius: var(--radius-lg);
-  padding: var(--space-4);
-  margin-bottom: var(--space-4);
-  text-align: left;
+  border-radius: 16px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
 }
 
 .quiz-engine__solution-label {
-  font-size: var(--text-xs);
-  color: var(--text-tertiary);
-  margin-bottom: var(--space-2);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .quiz-engine__solution-answer {
-  font-size: var(--text-lg);
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--color-success);
 }
 
+/* 解析步骤 */
 .quiz-engine__solution-steps {
-  background: #ffffff;
-  border-radius: var(--radius-lg);
-  padding: var(--space-4);
-  margin-bottom: var(--space-4);
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
   text-align: left;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
 }
 
 .quiz-engine__solution-steps-title {
-  font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: var(--space-3);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quiz-engine__solution-steps-title::before {
+  content: '📝';
 }
 
 .quiz-engine__solution-step {
   display: flex;
-  gap: var(--space-3);
-  padding: var(--space-3) 0;
-  border-top: 1px solid var(--bg-hover);
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #f3f4f6;
 }
 
 .quiz-engine__solution-step:first-of-type {
@@ -429,16 +605,17 @@ onMounted(() => {
 
 .quiz-engine__solution-step-num {
   flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  background: var(--color-primary);
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: white;
-  border-radius: 50%;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--text-sm);
-  font-weight: 600;
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
 }
 
 .quiz-engine__solution-step-body {
@@ -447,50 +624,57 @@ onMounted(() => {
 }
 
 .quiz-engine__solution-step-desc {
-  font-size: var(--text-base);
-  color: var(--text-primary);
-  line-height: var(--leading-normal);
-  margin-bottom: var(--space-2);
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
 }
 
 .quiz-engine__solution-step-expr {
-  font-family: 'Courier New', monospace;
-  font-size: var(--text-sm);
-  color: var(--color-primary);
-  background: var(--bg-hover);
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-md);
-  margin-bottom: var(--space-2);
+  font-family: 'SF Mono', 'Monaco', monospace;
+  font-size: 0.9375rem;
+  color: #6366f1;
+  background: #eef2ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
   display: inline-block;
 }
 
 .quiz-engine__solution-step-why {
-  font-size: var(--text-sm);
-  color: var(--text-tertiary);
-  line-height: var(--leading-normal);
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25rem;
 }
 
+/* 常见错误 */
 .quiz-engine__mistakes {
-  background: rgba(245, 158, 11, 0.08);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  border-radius: var(--radius-lg);
-  padding: var(--space-4);
-  margin-bottom: var(--space-4);
+  background: linear-gradient(135deg, #fffbeb, #fef3c7);
+  border: 1px solid #fcd34d;
+  border-radius: 16px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
   text-align: left;
 }
 
 .quiz-engine__mistakes-title {
-  font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--color-warning);
-  margin-bottom: var(--space-3);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #b45309;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .quiz-engine__mistake-item {
-  background: #ffffff;
-  border-radius: var(--radius-md);
-  padding: var(--space-3) var(--space-4);
-  margin-bottom: var(--space-2);
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .quiz-engine__mistake-item:last-child {
@@ -500,63 +684,93 @@ onMounted(() => {
 .quiz-engine__mistake-header {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  margin-bottom: var(--space-2);
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .quiz-engine__mistake-layer {
   display: inline-block;
-  background: var(--color-warning);
+  background: linear-gradient(135deg, #f59e0b, #d97706);
   color: white;
-  font-size: var(--text-xs);
-  font-weight: 600;
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
   flex-shrink: 0;
 }
 
 .quiz-engine__mistake-mistake {
-  font-size: var(--text-sm);
-  color: var(--text-primary);
-  font-weight: 500;
+  font-size: 0.875rem;
+  color: #92400e;
+  font-weight: 600;
 }
 
 .quiz-engine__mistake-row {
-  font-size: var(--text-sm);
-  color: var(--text-secondary);
-  line-height: var(--leading-normal);
-  margin-top: var(--space-1);
+  font-size: 0.875rem;
+  color: #78716c;
+  line-height: 1.5;
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.25rem;
 }
 
 .quiz-engine__mistake-label {
-  color: var(--text-tertiary);
+  color: #a8a29e;
+  flex-shrink: 0;
 }
 
 .quiz-engine__mistake-value {
-  color: var(--text-primary);
+  color: #57534e;
 }
 
+/* 下一题按钮 */
 .quiz-engine__next-btn {
   width: 100%;
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-primary);
+  padding: 1.125rem 2rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: white;
-  border-radius: var(--radius-lg);
-  font-weight: 600;
-  font-size: var(--text-base);
+  border: none;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
+.quiz-engine__next-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(99, 102, 241, 0.4);
+}
+
+/* 底部操作 */
 .quiz-engine__actions {
   display: flex;
   justify-content: center;
-  gap: var(--space-4);
+  gap: 1rem;
 }
 
 .quiz-engine__action {
-  padding: var(--space-2) var(--space-4);
-  background: var(--bg-hover);
-  color: var(--text-secondary);
-  border-radius: var(--radius-lg);
-  font-size: var(--text-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #f3f4f6;
+  color: #6b7280;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quiz-engine__action:hover {
+  background: #e5e7eb;
+  color: #4b5563;
 }
 </style>

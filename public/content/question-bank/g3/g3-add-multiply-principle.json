@@ -1,0 +1,1059 @@
+{
+  "topicId": "g3-add-multiply-principle",
+  "topicName": "加法乘法原理",
+  "grade": 3,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "id": "g3-am-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "小明有 2 件不同的上衣和 3 条不同的裤子。他选一件上衣和一条裤子，共有多少种不同的搭配？",
+      "image": "",
+      "options": [
+        "5",
+        "6",
+        "8",
+        "12"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "每件上衣可配3条裤子",
+        "2件上衣共 2×3 = 6 种"
+      ],
+      "hints": [
+        "搭配问题用乘法",
+        "上衣数×裤子数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2+3=5",
+          "reason": "用加法",
+          "correction": "2×3=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "搭配"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-am-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "从 3 种水果和 2 种饮料中各选 1 种，共有 ____ 种不同的选法。",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "solution": [
+        "水果3种，每种可配2种饮料",
+        "共 3×2 = 6 种"
+      ],
+      "hints": [
+        "分类选多种用乘法",
+        "种数相乘"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3+2=5",
+          "reason": "用加法",
+          "correction": "3×2=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-am-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "从 红、黄、蓝 三种颜色中选 1 种，再从 △、○ 两种图形中选 1 种。共有多少种不同的组合？",
+      "image": "",
+      "options": [
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "每种颜色可配2种图形",
+        "3×2 = 6 种"
+      ],
+      "hints": [
+        "颜色数×图形数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3+2=5",
+          "reason": "用加法",
+          "correction": "3×2=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "组合"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-am-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "图书馆有 4 本不同的故事书和 5 本不同的科技书。小明从故事书和科技书中各借 1 本，共有多少种借法？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "solution": [
+        "4种故事书，每本可配5种科技书",
+        "4×5 = 20 种"
+      ],
+      "hints": [
+        "故事书数×科技书数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "4+5=9",
+          "reason": "用加法",
+          "correction": "4×5=20",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-am-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "用数字 1、2、3 可以组成多少个不同的两位数？（数字不能重复）",
+      "image": "",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "十位可选1,2,3共3种",
+        "个位可选剩下2种",
+        "共 3×2 = 6 个",
+        "它们是：12,13,21,23,31,32"
+      ],
+      "hints": [
+        "先选十位再选个位",
+        "不重复时依次减少"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3×3=9",
+          "reason": "忘了不重复",
+          "correction": "3×2=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "排列"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "两位数"
+      ]
+    },
+    {
+      "id": "g3-am-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "用数字 0、1、2 可以组成 ____ 个不同的两位数（数字不重复，0不能在十位）。",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "十位可选1或2，共2种",
+        "对应十位1，个位可选0或2：10,12",
+        "对应十位2，个位可选0或1：20,21",
+        "共 4 个两位数"
+      ],
+      "hints": [
+        "0不能在十位",
+        "先确定十位"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3×2=6",
+          "reason": "包括0在十位",
+          "correction": "2×2=4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "排列",
+        "0的限制"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "两位数"
+      ]
+    },
+    {
+      "id": "g3-am-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "从 4 个人中选 2 个人排成一排，有多少种不同的排法？",
+      "image": "",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "第一个位置4种选择",
+        "选完第一个后剩3人给第二个位置",
+        "共 4×3 = 12 种",
+        "选项中第4个是12",
+        "所以答案是 12"
+      ],
+      "hints": [
+        "第一位×第二位",
+        "依次减少"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "4×2=8",
+          "reason": "用错数",
+          "correction": "4×3=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "排列"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "排队"
+      ]
+    },
+    {
+      "id": "g3-am-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小明有 3 顶不同的帽子和 4 条不同的围巾。一顶帽子配一条围巾，共有多少种搭配方法？",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": [
+        "12"
+      ],
+      "solution": [
+        "每顶帽子可配4条围巾",
+        "3×4 = 12 种"
+      ],
+      "hints": [
+        "帽子数×围巾数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3+4=7",
+          "reason": "用加法",
+          "correction": "3×4=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "搭配"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-am-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个密码箱由两个数字组成，每个数字可以是 1、2、3、4、5。共有多少种不同的密码？（数字可以重复）",
+      "image": "",
+      "options": [
+        "10",
+        "20",
+        "25",
+        "100"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "第一位5种选择",
+        "第二位5种选择（可重复）",
+        "5×5 = 25 种"
+      ],
+      "hints": [
+        "可重复时每位独立",
+        "n×n=n^2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "5×4=20",
+          "reason": "不重复",
+          "correction": "可重复5×5=25",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "可重复排列"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "密码"
+      ]
+    },
+    {
+      "id": "g3-am-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "3 个小朋友见面，每两人握一次手，一共要握 ____ 次手。",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "设三人A、B、C",
+        "A和B握手，A和C握手，B和C握手",
+        "共 3 次",
+        "公式：n(n-1)÷2 = 3×2÷2 = 3"
+      ],
+      "hints": [
+        "画图连线",
+        "每两人算一次"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3×2=6",
+          "reason": "A-B和B-A算两次",
+          "correction": "÷2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "组合",
+        "握手问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-am-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "从 甲地 到 乙地 有 3 条路可走，从 乙地 到 丙地 有 4 条路可走。从甲地经过乙地到丙地，共有多少种走法？",
+      "image": "",
+      "options": [
+        "7",
+        "12",
+        "14",
+        "24"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "甲→乙3条，每条对应乙→丙4条",
+        "共 3×4 = 12 种"
+      ],
+      "hints": [
+        "分步走法用乘法",
+        "前段×后段"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3+4=7",
+          "reason": "用加法",
+          "correction": "3×4=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "路径"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "路线"
+      ]
+    },
+    {
+      "id": "g3-am-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "5 个人两两握手，一共握 ____ 次。",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "solution": [
+        "每个人要和其他4人握手",
+        "5×4 = 20次，但每次握手被两人各算1次",
+        "实际 = 20÷2 = 10 次",
+        "公式：n(n-1)÷2 = 5×4÷2 = 10"
+      ],
+      "hints": [
+        "n(n-1)÷2",
+        "画图连线"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "5×4=20",
+          "reason": "没÷2",
+          "correction": "÷2=10",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "组合",
+        "握手问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "进阶"
+      ]
+    },
+    {
+      "id": "g3-am-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "用 1、3、5、7 可以组成多少个不同的两位数（数字不重复）？",
+      "image": "",
+      "options": [
+        "8",
+        "12",
+        "16",
+        "20"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "十位：4种选择",
+        "个位：3种选择（不重复）",
+        "4×3 = 12 个"
+      ],
+      "hints": [
+        "不重复的两位数=4×3",
+        "先十位后个位"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "4×4=16",
+          "reason": "可重复",
+          "correction": "4×3=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "排列"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "数字"
+      ]
+    },
+    {
+      "id": "g3-am-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有 4 个不同的盒子和 3 个不同的小球。每个盒子最多放 1 个球，把 3 个小球全部放入，共有多少种放法？",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24"
+      ],
+      "solution": [
+        "第一个球：4种选择",
+        "第二个球：3种选择（已用的不能再用）",
+        "第三个球：2种选择",
+        "共 4×3×2 = 24 种"
+      ],
+      "hints": [
+        "依次放入，每放一个盒子少1个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "4×3=12",
+          "reason": "没算第三个球",
+          "correction": "4×3×2=24",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "排列组合"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "进阶"
+      ]
+    },
+    {
+      "id": "g3-am-15",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个两位数，十位数字可以是 1、2、3、4、5，个位数字可以是 0、2、4、6、8。共有多少个这样的两位数？",
+      "image": "",
+      "options": [
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "十位5种，个位5种",
+        "5×5 = 25 个"
+      ],
+      "hints": [
+        "十位×个位，独立选择"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "5+5=10",
+          "reason": "用加法",
+          "correction": "5×5=25",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "搭配"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "数字"
+      ]
+    },
+    {
+      "id": "g3-am-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "从 4 个男生和 3 个女生中各选 1 人当代表，共有 ____ 种不同的选法。",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": [
+        "12"
+      ],
+      "solution": [
+        "男生4种选择",
+        "女生3种选择",
+        "4×3 = 12 种"
+      ],
+      "hints": [
+        "男×女",
+        "独立选择"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "4+3=7",
+          "reason": "用加法",
+          "correction": "4×3=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "搭配"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "选人"
+      ]
+    },
+    {
+      "id": "g3-am-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "用 1、2、3、4、5 可以组成多少个不同的三位数（数字不重复）？",
+      "image": "",
+      "options": [
+        "30",
+        "60",
+        "120",
+        "150"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "百位：5种",
+        "十位：4种（不重复）",
+        "个位：3种",
+        "共 5×4×3 = 60 个"
+      ],
+      "hints": [
+        "从高位到低位选择",
+        "不重复依次减1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "5×5×5=125",
+          "reason": "可重复",
+          "correction": "5×4×3=60",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法原理",
+        "排列"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "三位数"
+      ]
+    },
+    {
+      "id": "g3-am-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有 6 个人参加乒乓球比赛，每两个人之间都要比赛一场。一共要比赛多少场？",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": [
+        "15"
+      ],
+      "solution": [
+        "每人要和其他5人比赛",
+        "6×5 = 30，但每场被两人各算一次",
+        "实际 = 30÷2 = 15 场",
+        "公式：n(n-1)÷2 = 6×5÷2 = 15"
+      ],
+      "hints": [
+        "每两人一次，要÷2",
+        "连线法"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "6×5=30",
+          "reason": "没÷2",
+          "correction": "30÷2=15",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "组合",
+        "比赛问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "进阶"
+      ]
+    },
+    {
+      "id": "g3-am-19",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "从甲地到乙地有 2 条路可走，从乙地到丙地有 3 条路可走。从甲地经过乙地到丙地，共有多少种不同的走法？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": ["6", "6种"],
+      "solution": [
+        "乘法原理：第一步2种，第二步3种",
+        "共 2×3 = 6 种走法"
+      ],
+      "hints": [
+        "分两步走，用乘法原理",
+        "2×3=6"
+      ],
+      "commonMistakes": [
+        {"mistake": "2+3=5", "reason": "用加法了", "correction": "分步用乘法：2×3=6", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2008, "paper": "第六届希望杯三年级"},
+      "knowledgePoints": ["乘法原理", "路线问题"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["加法乘法原理", "竞赛真题"]
+    },
+    {
+      "id": "g3-am-20",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "用 0、1、2、3 可以组成多少个不同的两位数（数字不能重复）？",
+      "image": "",
+      "options": ["6", "8", "9", "12"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "十位不能为0，所以十位有3种选择：1、2、3",
+        "个位可以是剩下的3个数字（包括0）",
+        "共 3×3 = 9 个",
+        "分别是：10,12,13,20,21,23,30,31,32"
+      ],
+      "hints": [
+        "先考虑十位（不能为0）",
+        "十位3种，个位3种",
+        "3×3=9"
+      ],
+      "commonMistakes": [
+        {"mistake": "选3", "reason": "4×3=12，没考虑0不能在十位", "correction": "十位3种，3×3=9", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2010, "paper": "2010年迎春杯三年级"},
+      "knowledgePoints": ["乘法原理", "两位数"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.1, "b": 0.3, "c": 0.25},
+      "tags": ["加法乘法原理", "竞赛真题"]
+    },
+    {
+      "id": "g3-am-21",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "有红、黄、蓝三种颜色的小旗各一面，从中选用 1 面或 2 面升上旗杆，分别用来表示一种信号。一共可以表示多少种不同的信号？（顺序不同表示不同的信号）",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": ["9", "9种"],
+      "solution": [
+        "选1面：3种（红、黄、蓝）",
+        "选2面：3×2 = 6种（第1面3种，第2面2种）",
+        "共 3+6 = 9 种"
+      ],
+      "hints": [
+        "分两类：选1面和选2面",
+        "选1面：3种",
+        "选2面：3×2=6种",
+        "总共：3+6=9种"
+      ],
+      "commonMistakes": [
+        {"mistake": "6", "reason": "只算了选2面的", "correction": "还要加选1面的：3+6=9", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2007, "paper": "第十二届华罗庚金杯初赛"},
+      "knowledgePoints": ["加法原理", "乘法原理", "分类"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.6, "c": 0.25},
+      "tags": ["加法乘法原理", "竞赛真题"]
+    },
+    {
+      "id": "g3-am-22",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有 5 个好朋友见面，每两人握一次手，一共要握多少次手？",
+      "image": "",
+      "options": ["8", "10", "12", "20"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "每人要和其他4人握手",
+        "5×4 = 20，但每次握手被两人各算一次",
+        "实际 = 20÷2 = 10 次",
+        "公式：n(n-1)÷2 = 5×4÷2 = 10"
+      ],
+      "hints": [
+        "每两人一次，要÷2",
+        "5×4÷2=10"
+      ],
+      "commonMistakes": [
+        {"mistake": "选3", "reason": "5×4=20，没除以2", "correction": "20÷2=10", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2011, "paper": "第九届走美杯三年级"},
+      "knowledgePoints": ["组合", "握手问题"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["加法乘法原理", "竞赛真题"]
+    },
+    {
+      "id": "g3-am-23",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "从 3 本不同的故事书和 2 本不同的漫画书中各选 1 本，共有多少种不同的选法？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": ["6", "6种"],
+      "solution": [
+        "选故事书：3种选择",
+        "选漫画书：2种选择",
+        "乘法原理：3×2 = 6 种选法"
+      ],
+      "hints": [
+        "各选1本，分两步，用乘法",
+        "3×2=6"
+      ],
+      "commonMistakes": [
+        {"mistake": "3+2=5", "reason": "用加法了", "correction": "分步用乘法：3×2=6", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2009, "paper": "第七届希望杯三年级"},
+      "knowledgePoints": ["乘法原理", "搭配"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.7, "c": 0.25},
+      "tags": ["加法乘法原理", "竞赛真题"]
+    }
+  ]
+}

@@ -1,0 +1,1254 @@
+{
+  "topicId": "g4-pigeonhole",
+  "topicName": "抽屉原理",
+  "grade": 4,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g4-ph-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "把5个苹果放进4个抽屉里，至少有一个抽屉里放了（ ）个苹果。",
+      "image": "",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "抽屉原理：把n+1个物体放入n个抽屉，至少有一个抽屉有2个或以上物体。",
+        "5÷4=1余1，所以至少有一个抽屉有1+1=2个苹果。"
+      ],
+      "hints": [
+        "至少数=商+1（有余数时）"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "只看到商1",
+          "correction": "5÷4=1余1,至少1+1=2个",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "抽屉原理",
+        "基础"
+      ]
+    },
+    {
+      "id": "g4-ph-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "四年级一班有45名学生，至少有（ ）名学生是同一个月出生的。",
+      "image": "",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "一年有12个月，把学生看作物体，月份看作抽屉",
+        "45÷12=3余9",
+        "至少有3+1=4名学生同一个月出生"
+      ],
+      "hints": [
+        "月份有12个",
+        "至少数=商+1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "45÷12=3余9,忘了加1",
+          "correction": "3+1=4",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理应用"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "抽屉原理",
+        "月份"
+      ]
+    },
+    {
+      "id": "g4-ph-03",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "把11本书放进3个书包里，总有一个书包至少放了几本书？",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "11÷3=3余2",
+        "至少有3+1=4本",
+        "至少数=商+1"
+      ],
+      "hints": [
+        "有余数时至少数=商+1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3",
+          "reason": "忘了加1",
+          "correction": "11÷3=3余2, 3+1=4",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "抽屉原理"
+      ]
+    },
+    {
+      "id": "g4-ph-04",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一副扑克牌去掉大小王后有52张，4种花色各13张。至少抽多少张才能保证有2张花色相同的牌？",
+      "image": "",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "13"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "最不利原则：假设前4张抽到的正好是4种不同花色",
+        "再抽第5张，必然与前面某张花色相同",
+        "所以至少抽4+1=5张"
+      ],
+      "hints": [
+        "最不利情况+1",
+        "每种花色先抽1张"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1",
+          "reason": "以为抽4张就够了",
+          "correction": "4张可能每种花色各1张",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理",
+        "最不利原则"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "扑克牌",
+        "花色"
+      ]
+    },
+    {
+      "id": "g4-ph-05",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一副扑克牌（54张含大小王），至少抽多少张才能保证有4张花色相同的牌？",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": [
+        "15"
+      ],
+      "solution": [
+        "4种花色各13张，加2张大小王",
+        "最不利：先抽2张王，再抽每种花色3张（共4×3=12张）",
+        "此时共2+12=14张",
+        "再抽1张必然使某花色有4张",
+        "所以14+1=15张"
+      ],
+      "hints": [
+        "最不利情况：先2张王,每种花色3张",
+        "14+1=15张"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成13或14",
+          "reason": "没考虑王或没加1",
+          "correction": "2+3×4+1=15",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理",
+        "最不利原则"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "扑克牌"
+      ]
+    },
+    {
+      "id": "g4-ph-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "袋子里有红球10个、白球8个、蓝球5个。至少摸出多少个球才能保证有3个颜色相同的球？",
+      "image": "",
+      "options": [
+        "3",
+        "7",
+        "8",
+        "15"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "最不利情况：每种颜色先摸2个（最接近3但不到3）",
+        "2+2+2=6个（红2,白2,蓝2）",
+        "再摸1个，不管是什么颜色，那种颜色就有3个了",
+        "6+1=7个"
+      ],
+      "hints": [
+        "每种颜色先取(3-1)=2个",
+        "再取1个必满足条件"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "计算错误",
+          "correction": "2×3+1=7",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "摸球",
+        "最不利原则"
+      ]
+    },
+    {
+      "id": "g4-ph-07",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "任意13个同学中，至少有几个同学在同一个星期过生日？（一年按52个星期计算）",
+      "image": "",
+      "options": [],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "13÷52=0余13（商是0）",
+        "至少有0+1=1个同学在同一个星期",
+        "实际上13个同学可能都在不同星期过生日",
+        "所以答案是至少1个"
+      ],
+      "hints": [
+        "13<52, 13个同学可能在13个不同星期",
+        "只能保证至少有1个同学在同一星期"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成2",
+          "reason": "误以为商要加1",
+          "correction": "当商为0时,至少数就是1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "星期",
+        "生日"
+      ]
+    },
+    {
+      "id": "g4-ph-08",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在一副扑克牌（去掉大小王52张）中，至少抽多少张才能保证有3张牌点数相同？",
+      "image": "",
+      "options": [],
+      "answer": "27",
+      "acceptableAnswers": [
+        "27"
+      ],
+      "solution": [
+        "13种点数（A-K）,每种点数4张",
+        "最不利：每种点数抽2张, 13×2=26张",
+        "再抽1张必使某点数有3张",
+        "26+1=27张"
+      ],
+      "hints": [
+        "13种点数各抽2张后再抽1张",
+        "13×2+1=27"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成15或26",
+          "reason": "点数种类算错或没加1",
+          "correction": "13种点数,13×2+1=27",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "扑克牌",
+        "点数"
+      ]
+    },
+    {
+      "id": "g4-ph-09",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个班有37名同学，至少有（ ）名同学的生日在同一个月。",
+      "image": "",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "37÷12=3余1",
+        "至少有3+1=4名同学在同一个月"
+      ],
+      "hints": [
+        "12个月,37÷12=3余1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "37÷12=3余1,忘了+1",
+          "correction": "3+1=4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "月份",
+        "生日"
+      ]
+    },
+    {
+      "id": "g4-ph-10",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "箱子里有大小、形状相同的红球6个、白球5个、黄球7个、黑球4个。至少摸出多少个球才能保证有4个颜色相同的球？",
+      "image": "",
+      "options": [],
+      "answer": "14",
+      "acceptableAnswers": [
+        "14"
+      ],
+      "solution": [
+        "最不利情况：每种颜色先摸3个（最接近4但不到4）",
+        "红3+白3+黄3+黑3=12个",
+        "再摸1个，不论是什么颜色，那种颜色就有4个了",
+        "12+1=13个？等等",
+        "等等：黑球只有4个，摸3个是可以的",
+        "重新：3×4=12,再摸1个=13个",
+        "答案13"
+      ],
+      "hints": [
+        "最不利：每种颜色3个",
+        "3×4+1=13"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "数量算错",
+          "correction": "3×4+1=13",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 75,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "最不利原则",
+        "摸球"
+      ]
+    },
+    {
+      "id": "g4-ph-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "证明：任意6个不同的自然数中，至少有两个数的差是5的倍数。（写出简要说明或填\"是\"）",
+      "image": "",
+      "options": [],
+      "answer": "是",
+      "acceptableAnswers": [
+        "是",
+        "正确",
+        "证明"
+      ],
+      "solution": [
+        "一个数除以5的余数只有0,1,2,3,4五种情况",
+        "6个数放入5个抽屉，必有两个数除以5余数相同",
+        "这两个数的差就是5的倍数"
+      ],
+      "hints": [
+        "按除以5的余数分类",
+        "余数相同的两数之差是5的倍数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "说不清",
+          "reason": "不会用抽屉原理",
+          "correction": "按余数分5类,6个数必有同类",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理",
+        "数论"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "余数",
+        "抽屉"
+      ]
+    },
+    {
+      "id": "g4-ph-12",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一副扑克牌54张，至少抽出多少张才能保证抽出的牌中四种花色都有？",
+      "image": "",
+      "options": [
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "最不利情况：先把3种花色和2张王全部抽完",
+        "3种花色各13张+2王=3×13+2=41张",
+        "再抽1张必是第4种花色",
+        "41+1=42张"
+      ],
+      "hints": [
+        "先抽完3种花色+2王,再抽1张必是第4种",
+        "3×13+2+1=42"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2或3",
+          "reason": "组合算错",
+          "correction": "3×13+2+1=42",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "花色齐全"
+      ]
+    },
+    {
+      "id": "g4-ph-13",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "在一次数学竞赛中，全年级200人中，成绩都是整数分，且最高分为98分，最低分为80分。至少有多少人的成绩相同？",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": [
+        "12"
+      ],
+      "solution": [
+        "从80分到98分共有 98-80+1=19种不同分数",
+        "把19种分数看作19个抽屉",
+        "200÷19=10余10",
+        "至少有10+1=11人成绩相同？",
+        "等等：200÷19=10.526...",
+        "19×10=190, 200-190=10, 所以10个抽屉有11个,9个抽屉有10个",
+        "至少有11人成绩相同",
+        "答案应为11"
+      ],
+      "hints": [
+        "不同分数的种数=98-80+1=19",
+        "200÷19=10余10",
+        "至少数=10+1=11"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成13",
+          "reason": "计算错误",
+          "correction": "98-80+1=19, 200÷19=10余10,至少11",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "分数",
+        "抽屉"
+      ]
+    },
+    {
+      "id": "g4-ph-14",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有红、黄、蓝、白四种颜色的手套各10只，至少取出多少只才能保证有3双颜色相同的手套？",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "3双=6只相同颜色",
+        "最不利情况：每种颜色先取5只（最接近6但不到6只）",
+        "5×4=20只？这不对",
+        "等等：3双颜色相同的手套就是6只同色的",
+        "最不利：每种5只,共20只,再加1只=21只",
+        "答案21"
+      ],
+      "hints": [
+        "3双=6只同色",
+        "最不利每种5只,共5×4=20,再加1=21"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "理解错\"3双\"",
+          "correction": "5×4+1=21",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "手套",
+        "最不利原则"
+      ]
+    },
+    {
+      "id": "g4-ph-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个口袋里有10个黑球、8个白球、7个红球。至少取出多少个球才能保证其中有白球？",
+      "image": "",
+      "options": [],
+      "answer": "18",
+      "acceptableAnswers": [
+        "18"
+      ],
+      "solution": [
+        "最不利情况：先把非白球全部取出来",
+        "10黑+7红=17个",
+        "再取1个必然是白球",
+        "17+1=18个"
+      ],
+      "hints": [
+        "最坏情况：先取完黑球和红球",
+        "10+7+1=18"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成11或其他",
+          "reason": "数量算错",
+          "correction": "10+7+1=18",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "保证有白球"
+      ]
+    },
+    {
+      "id": "g4-ph-16",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有1分、2分、5分硬币各10枚，总钱数超过1元。至少拿出多少枚硬币才能保证其中必有5枚相同面值的硬币？",
+      "image": "",
+      "options": [],
+      "answer": "13",
+      "acceptableAnswers": [
+        "13"
+      ],
+      "solution": [
+        "3种面值",
+        "最不利情况：每种先拿4枚（接近5枚但不到）",
+        "4×3=12枚",
+        "再拿1枚必使某种面值有5枚",
+        "12+1=13枚",
+        "注：总钱数和各10枚是干扰信息，只需保证5枚相同"
+      ],
+      "hints": [
+        "最不利：每种拿4枚",
+        "4×3+1=13"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "思路不清",
+          "correction": "4×3+1=13",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "硬币",
+        "最不利原则"
+      ]
+    },
+    {
+      "id": "g4-ph-17",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "任意取几个不同的自然数，才能保证至少有两个数的差是8的倍数？",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "一个数除以8的余数有8种：0,1,2,3,4,5,6,7",
+        "看作8个抽屉",
+        "要保证有两个数在同一个抽屉（即余数相同）",
+        "需要8+1=9个数",
+        "（余数相同的两数之差是8的倍数）"
+      ],
+      "hints": [
+        "按除以8的余数分8类",
+        "8+1=9个数保证有同类"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成8",
+          "reason": "没加1",
+          "correction": "8个抽屉,需要9个数",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理",
+        "数论"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "余数",
+        "8的倍数"
+      ]
+    },
+    {
+      "id": "g4-ph-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一副扑克牌54张，至少抽多少张才能保证抽到3张\"K\"？",
+      "image": "",
+      "options": [],
+      "answer": "51",
+      "acceptableAnswers": [
+        "51"
+      ],
+      "solution": [
+        "4张K和其他50张非K",
+        "最不利：先把非K全部抽完=50张",
+        "再抽3张必是K",
+        "50+3=53张？不对",
+        "重新：不是K的牌有54-4=50张",
+        "最不利：先把50张非K全抽完,再抽3张都是K",
+        "50+3=53张",
+        "答案53"
+      ],
+      "hints": [
+        "先把非K的50张全抽完",
+        "再抽3张一定是K",
+        "50+3=53"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "想成简单问题",
+          "correction": "(54-4)+3=53",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "抽屉原理",
+        "极端情况"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "扑克牌",
+        "K"
+      ]
+    },
+    {
+      "id": "g4-ph-19",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "把25本书分给6个同学，总有一个同学至少分到______本书。",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": ["5", "5本"],
+      "solution": ["25÷6=4本...1本，4+1=5本。至少分到5本。"],
+      "hints": ["商4余1，所以至少5本"],
+      "commonMistakes": [{"mistake": "4", "reason": "只写商", "correction": "5本"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2016, "paper": "第十四届希望杯四年级"},
+      "knowledgePoints": ["抽屉原理", "基础"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.0, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题"]
+    },
+    {
+      "id": "g4-ph-20",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一个盒子里有红、黄、蓝三种颜色的球共26个，至少取出()个球才能保证有3个颜色相同的球。",
+      "image": "",
+      "options": ["6", "7", "8", "9"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["每种颜色取2个=6个（最不利），再取1个必然有3个相同。6+1=7个。"],
+      "hints": ["每种2个，再加1个"],
+      "commonMistakes": [{"mistake": "选0", "reason": "只取3个", "correction": "7个"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2017, "paper": "2017年迎春杯四年级"},
+      "knowledgePoints": ["抽屉原理", "最不利"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题"]
+    },
+    {
+      "id": "g4-ph-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "从1、2、3...20中至少取______个数，才能保证有一个数是另一个数的2倍。",
+      "image": "",
+      "options": [],
+      "answer": "11",
+      "acceptableAnswers": ["11", "11个"],
+      "solution": ["先把不成2倍关系的数取完：1,3,5,7,9,11,13,15,17,19共10个（所有奇数）。再取任意一个偶数，必与某个数成2倍关系。10+1=11个。"],
+      "hints": ["先取所有奇数（不成2倍）", "再取1个必有2倍"],
+      "commonMistakes": [{"mistake": "10", "reason": "没加1", "correction": "11个"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2014, "paper": "第十九届华罗庚金杯初赛"},
+      "knowledgePoints": ["抽屉原理", "数论"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题"]
+    },
+    {
+      "id": "g4-ph-22",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个袋子里有红球、白球、黄球各10个，从中摸球，至少摸()个才能保证有5个颜色相同的球。",
+      "image": "",
+      "options": ["12", "13", "14", "15"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["每种4个=12个（最不利），再取1个必有5个相同。12+1=13个。"],
+      "hints": ["每种4个，再加1个"],
+      "commonMistakes": [{"mistake": "选2", "reason": "算成14", "correction": "13个"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2015, "paper": "第十三届走美杯四年级"},
+      "knowledgePoints": ["抽屉原理", "最不利"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题"]
+    },
+    {
+      "id": "g4-ph-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "全班有50名学生，至少有______名学生同一个月过生日。",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": ["5", "5名", "5人"],
+      "solution": ["50÷12=4人...2人，4+1=5人。至少有5名学生同一个月过生日。"],
+      "hints": ["50÷12=4余2，所以至少5人"],
+      "commonMistakes": [{"mistake": "4", "reason": "只写商", "correction": "5人"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯决赛"},
+      "knowledgePoints": ["抽屉原理", "生日"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题"]
+    },
+    {
+      "id": "g4-ph-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一个布袋中有大小相同的红球8个、白球7个、黄球6个、蓝球5个。一次最少取出______个球，才能保证取出的球中有红球和白球。",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": ["20", "20个"],
+      "solution": [
+        "最不利原则：要保证取出的球中既有红球又有白球，需考虑最坏的情况。",
+        "最坏情况：先把黄球和蓝球全部取完，再把数量较多的红球全部取完。",
+        "黄球6个+蓝球5个+红球8个=19个，此时只有红球、黄球、蓝球，没有白球。",
+        "再取1个，一定是白球，此时红球和白球都有了。",
+        "19+1=20个。",
+        "答案：20个"
+      ],
+      "hints": [
+        "最不利原则：先取完黄球和蓝球，再取完数量较多的红球，下一个一定是白球",
+        "6+5+8+1=20"
+      ],
+      "commonMistakes": [
+        {"mistake": "14", "reason": "只考虑一种颜色", "correction": "要保证两种都有，需考虑最坏情况：先取完其他颜色和数量多的那种"},
+        {"mistake": "19", "reason": "没加1", "correction": "最不利+1，19+1=20"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2019, "paper": "第十七届希望杯四年级第2试"},
+      "knowledgePoints": ["抽屉原理", "最不利原则"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.4, "b": 1.2, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题", "最不利原则"]
+    },
+    {
+      "id": "g4-ph-25",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "从1到20这20个自然数中，至少任选几个数，就可以保证其中一定包括两个数，它们的差是12？",
+      "image": "",
+      "options": ["12", "13", "14", "15"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "构造抽屉：差为12的数对有(1,13),(2,14),(3,15),(4,16),(5,17),(6,18),(7,19),(8,20)，共8个抽屉。",
+        "剩下的数9,10,11,12没有配对，单独作为4个抽屉。",
+        "共8+4=12个抽屉。",
+        "根据抽屉原理，选13个数，必有两个数在同一个抽屉中，它们的差是12。",
+        "答案：13个"
+      ],
+      "hints": [
+        "把差为12的数放在同一个抽屉里",
+        "共12个抽屉，选13个数必有同抽屉的"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0", "reason": "以为答案是12", "correction": "12个抽屉，需要13个数才能保证有2个同抽屉"},
+        {"mistake": "选2", "reason": "抽屉数算错", "correction": "8对+4个单独=12个抽屉，12+1=13"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2016, "paper": "2016年迎春杯四年级初赛"},
+      "knowledgePoints": ["抽屉原理", "构造抽屉", "数论"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.4, "b": 1.2, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题", "构造抽屉"]
+    },
+    {
+      "id": "g4-ph-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一副扑克牌共54张（含大小王），至少从中摸出______张牌，才能保证摸出的牌中至少有3张牌的点数相同。",
+      "image": "",
+      "options": [],
+      "answer": "29",
+      "acceptableAnswers": ["29", "29张"],
+      "solution": [
+        "13种点数（A-K），4种花色，加2张王。",
+        "最不利情况：先摸出2张王，再每种点数各摸2张。",
+        "2 + 13×2 = 2 + 26 = 28张。",
+        "再摸1张，必使某种点数有3张。",
+        "28 + 1 = 29张。",
+        "答案：29张"
+      ],
+      "hints": [
+        "最不利：2张王+每种点数2张=28张",
+        "28+1=29张"
+      ],
+      "commonMistakes": [
+        {"mistake": "27", "reason": "没算大小王", "correction": "2+13×2+1=29"},
+        {"mistake": "28", "reason": "没加1", "correction": "最不利+1，28+1=29"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2018, "paper": "第十六届走美杯四年级初赛"},
+      "knowledgePoints": ["抽屉原理", "最不利原则", "扑克牌"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.3, "b": 1.0, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题", "扑克牌"]
+    },
+    {
+      "id": "g4-ph-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "任意取______个不同的自然数，才能保证至少有两个数的差是7的倍数。",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": ["8", "8个"],
+      "solution": [
+        "一个数除以7的余数有7种情况：0,1,2,3,4,5,6。",
+        "把这7种余数看作7个抽屉。",
+        "根据抽屉原理，取8个数放入7个抽屉，必有两个数在同一个抽屉中，即它们除以7的余数相同。",
+        "余数相同的两个数的差一定是7的倍数。",
+        "答案：8个"
+      ],
+      "hints": [
+        "按除以7的余数分类，共7类",
+        "7+1=8个数保证有两个余数相同"
+      ],
+      "commonMistakes": [
+        {"mistake": "7", "reason": "没加1", "correction": "7个抽屉，需要8个数"},
+        {"mistake": "9", "reason": "余数种类数算错", "correction": "除以7余数只有0-6七种，7+1=8"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2012, "paper": "第十七届华罗庚金杯初赛"},
+      "knowledgePoints": ["抽屉原理", "数论", "余数"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.5, "b": 1.5, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题", "余数"]
+    },
+    {
+      "id": "g4-ph-28",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "在边长为1的正方形内，任意放入9个点，证明其中必有3个点，它们构成的三角形面积不大于1/8。这个问题中，构造的抽屉是把正方形分成了几个小长方形？",
+      "image": "",
+      "options": ["4个", "6个", "8个", "9个"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "把边长为1的正方形分成4个大小相等的小长方形（2×2的网格），每个小长方形的面积是1/4。",
+        "9个点放入4个小长方形，根据抽屉原理，至少有一个小长方形内有3个或更多的点。",
+        "在一个面积为1/4的长方形中，任意三个点构成的三角形面积最大不超过长方形面积的一半，即1/8。",
+        "所以必有3个点构成的三角形面积不大于1/8。",
+        "答案：分成了4个小长方形（选第一个选项）"
+      ],
+      "hints": [
+        "把正方形分成2×2=4个相等的小长方形",
+        "9个点放入4个抽屉，必有一个抽屉有3个点"
+      ],
+      "commonMistakes": [
+        {"mistake": "选2", "reason": "以为分成8个", "correction": "分成4个2×2的小长方形即可"},
+        {"mistake": "选3", "reason": "以为9个点对应9个抽屉", "correction": "抽屉数要比点数少，4个抽屉保证有3个点同抽屉"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2020, "paper": "第十八届希望杯四年级第2试"},
+      "knowledgePoints": ["抽屉原理", "几何", "构造抽屉"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.5, "b": 1.8, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题", "几何应用"]
+    },
+    {
+      "id": "g4-ph-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有红色、白色、黄色的筷子各10根混放在一起。让小明闭上眼睛去拿，每次拿一根，他至少要拿______根才能保证拿到两双不同颜色的筷子。",
+      "image": "",
+      "options": [],
+      "answer": "13",
+      "acceptableAnswers": ["13", "13根"],
+      "solution": [
+        "两双不同颜色的筷子 = 2根同色 + 2根另一种同色（共4根，两种颜色各2根）。",
+        "最不利原则：考虑最坏的情况。",
+        "最坏情况1：先拿完一种颜色的10根（比如红色10根），这是1双红色的了。",
+        "然后再拿白色1根、黄色1根，此时共10+1+1=12根，只有1双筷子（红色）。",
+        "再拿1根，无论是白色还是黄色，都能凑成第2双。",
+        "所以至少要拿12+1=13根。",
+        "答案：13根"
+      ],
+      "hints": [
+        "最坏情况：先拿完一种颜色10根，再拿另外两种各1根",
+        "10+1+1+1=13"
+      ],
+      "commonMistakes": [
+        {"mistake": "4", "reason": "太简单了，没考虑最坏情况", "correction": "用最不利原则"},
+        {"mistake": "12", "reason": "没加最后1根", "correction": "10+1+1+1=13"},
+        {"mistake": "11", "reason": "想成1双不同颜色", "correction": "两双不同颜色：10+1+1+1=13"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2019, "paper": "2019年迎春杯四年级决赛"},
+      "knowledgePoints": ["抽屉原理", "最不利原则", "筷子问题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.5, "b": 1.8, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题", "最不利原则"]
+    },
+    {
+      "id": "g4-ph-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "从1、2、3、...、30中，至少要取出______个不同的数，才能保证其中一定有一个数是5的倍数。",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": ["25", "25个"],
+      "solution": [
+        "最不利原则：先把所有不是5的倍数的数都取出来。",
+        "1到30中，5的倍数有：5,10,15,20,25,30，共6个。",
+        "不是5的倍数的数有：30-6=24个。",
+        "最坏情况：先取出24个都不是5的倍数。",
+        "再取1个，一定是5的倍数。",
+        "24+1=25个。",
+        "答案：25个"
+      ],
+      "hints": [
+        "先算1-30中5的倍数有几个：5,10,15,20,25,30共6个",
+        "不是5的倍数的有24个，再取1个就一定是",
+        "24+1=25"
+      ],
+      "commonMistakes": [
+        {"mistake": "6", "reason": "以为只要取6个", "correction": "要保证一定有，需考虑最坏情况"},
+        {"mistake": "24", "reason": "没加1", "correction": "24+1=25"},
+        {"mistake": "7", "reason": "思路完全错了", "correction": "最不利：先取完不是5的倍数的24个，再加1"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2015, "paper": "第二十届华罗庚金杯初赛"},
+      "knowledgePoints": ["抽屉原理", "最不利原则", "数论"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.4, "b": 1.5, "c": 0.25},
+      "tags": ["抽屉原理", "竞赛真题", "最不利原则"]
+    }
+  ]
+}

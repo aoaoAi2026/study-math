@@ -1,0 +1,161 @@
+{
+    "paperId": "huabei-13-final-g3",
+    "title": "第十三届华罗庚金杯少年数学邀请赛 决赛试卷（小学组）",
+    "grade": 3,
+    "category": "aoshu-hualuogeng",
+    "duration": 90,
+    "totalScore": 140,
+    "difficultyLevel": 3,
+    "year": 2008,
+    "source": "华罗庚金杯少年数学邀请赛组委会",
+    "sections": [
+        {"name": "一、填空题（每题10分，共70分）", "count": 7, "scorePerQuestion": 10},
+        {"name": "二、解答题（每题10分，共40分）", "count": 4, "scorePerQuestion": 10},
+        {"name": "三、详答题（每题15分，共30分）", "count": 2, "scorePerQuestion": 15}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：2008 - 2007 + 2006 - 2005 + ... + 2 - 1 = ______。",
+            "answer": "1004",
+            "score": 10,
+            "solution": "每两个数一组，共2008/2=1004组。每组和为1。1004×1=1004。",
+            "knowledgePoints": ["找规律"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：2008 × 5 = ______。",
+            "answer": "10040",
+            "score": 10,
+            "solution": "2008×5=10040。",
+            "knowledgePoints": ["乘法"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个数除以8余3，除以9余4。这个数最小是______。",
+            "answer": "67",
+            "score": 10,
+            "solution": "除以8余3即差5能被8整除；除以9余4即差5能被9整除。LCM(8,9)=72。最小数=72-5=67。",
+            "knowledgePoints": ["余数问题"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有30只，脚一共有100只。鸡有______只。",
+            "answer": "10",
+            "score": 10,
+            "solution": "假设全是兔：30×4=120脚。实际100脚，少20脚。鸡=20/2=10只。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个正方形的边长是15厘米，它的周长是______厘米。",
+            "answer": "60",
+            "score": 10,
+            "solution": "周长=4×15=60厘米。",
+            "knowledgePoints": ["正方形"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数加上8，乘以8，减去8，除以8，结果还是8。这个数是______。",
+            "answer": "1",
+            "score": 10,
+            "solution": "逆推：8×8=64，64+8=72，72÷8=9，9-8=1。原数=1。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "在一条长100米的路两边种树，每隔10米种一棵，两端都种。一共种______棵。",
+            "answer": "22",
+            "score": 10,
+            "solution": "一边：100/10+1=11棵。两边：11×2=22棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）小明有60颗糖，给了小红12颗后，两人的糖一样多。小红原有______颗糖。",
+            "answer": "36",
+            "score": 10,
+            "solution": "小明剩60-12=48颗。两人一样多说明小红也有48颗，所以小红原有48-12=36颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）一个长方形的周长是40厘米，长是12厘米。面积是______平方厘米。",
+            "answer": "96",
+            "score": 10,
+            "solution": "宽=40/2-12=20-12=8厘米。面积=12×8=96平方厘米。",
+            "knowledgePoints": ["长方形"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）一桶油连桶共重48千克，用了半桶油后连桶重25千克。桶重______千克。",
+            "answer": "2",
+            "score": 10,
+            "solution": "半桶油=48-25=23千克。全油=23×2=46千克。桶=48-46=2千克。",
+            "knowledgePoints": ["等量代换"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）甲、乙两数的和是90，甲是乙的4倍。甲是______。",
+            "answer": "72",
+            "score": 10,
+            "solution": "设乙为x，甲为4x。4x+x=90，5x=90，x=18。甲=72。",
+            "knowledgePoints": ["和倍问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 3,
+            "stem": "（详答题）小明从1楼走到5楼用了40秒，照这样计算，他从2楼走到8楼需要多少秒？",
+            "answer": "60",
+            "score": 15,
+            "solution": "1楼到5楼走了4层，每层10秒。2楼到8楼走6层，10×6=60秒。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 3,
+            "stem": "（详答题）某月第一个星期三是5号，那么这个月的20号是星期几？",
+            "answer": "一",
+            "score": 15,
+            "solution": "5号是星期三。12号也是星期三（7天后）。19号星期三，20号星期四。",
+            "knowledgePoints": ["日期问题"]
+        }
+    ]
+}

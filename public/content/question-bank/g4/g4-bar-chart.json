@@ -1,0 +1,701 @@
+{
+  "topicId": "g4-bar-chart",
+  "topicName": "条形统计图",
+  "grade": 4,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g4-bc-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "条形统计图的特点是",
+      "image": "",
+      "options": [
+        "能清楚表示数量多少",
+        "能看变化趋势",
+        "能看部分与整体",
+        "以上都可以"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "条形统计图用直条长短表示数量多少,特点是清楚看出各种数量多少"
+      ],
+      "hints": [
+        "条形统计图→比较数量多少"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1",
+          "reason": "混淆折线图",
+          "correction": "折线图看变化趋势",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图特点"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-02",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个条形统计图,用2厘米的直条表示10人,那么表示30人应用多少厘米的直条？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6厘米"
+      ],
+      "solution": [
+        "1厘米表示5人,30人需要30÷5=6厘米,或30是10的3倍,直条也是3倍:2×3=6厘米"
+      ],
+      "hints": [
+        "先求1厘米代表几人,或用倍数关系"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "30÷10×2=6",
+          "correction": "",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图比例"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-03",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "课外活动统计:跳绳15人,踢毽子10人,跑步8人,打球12人。喜欢哪项活动的人最多？",
+      "image": "",
+      "options": [],
+      "answer": "跳绳",
+      "acceptableAnswers": [
+        "跳绳"
+      ],
+      "solution": [
+        "15>12>10>8,跳绳人数最多"
+      ],
+      "hints": [
+        "比较各项人数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "15最大",
+          "correction": "跳绳",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图比较"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-04",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "兴趣小组:书法25人,绘画18人,音乐20人,体育32人,科技15人。参加人数最多的比最少的多多少人？",
+      "image": "",
+      "options": [],
+      "answer": "17",
+      "acceptableAnswers": [
+        "17",
+        "17人"
+      ],
+      "solution": [
+        "最多体育32人,最少科技15人,32-15=17人"
+      ],
+      "hints": [
+        "先找最多最少,再求差"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "32-15=17",
+          "correction": "",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图分析"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-05",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一周销售:周一80,周二75,周三90,周四85,周五100,周六120,周日110(万元)。正确的是",
+      "image": "",
+      "options": [
+        "周一最高",
+        "平均约100万元",
+        "周六最高,周二最低",
+        "周日最低"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "按顺序排列:75,80,85,90,100,110,120,最高周六120,最低周二75"
+      ],
+      "hints": [
+        "最高=120周六,最低=75周二"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1或3",
+          "reason": "比较错",
+          "correction": "周六最高,周二最低",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图分析"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-06",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "各年级人数:一年级120,二年级130,三年级125,四年级135,五年级140,六年级150。全校共多少人？",
+      "image": "",
+      "options": [],
+      "answer": "800",
+      "acceptableAnswers": [
+        "800",
+        "800人"
+      ],
+      "solution": [
+        "120+130+125+135+140+150=250+260+290=800人"
+      ],
+      "hints": [
+        "分组凑整相加"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "计算错误",
+          "correction": "=800",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图求和"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "绘制条形统计图时,如果数据较大,适合采用",
+      "image": "",
+      "options": [
+        "每格代表1个单位",
+        "每格代表多个单位",
+        "不用一格代表",
+        "只画纵轴"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "数据较大时,一格可代表多个单位(如1格代表5人,10人等),画图更简洁"
+      ],
+      "hints": [
+        "数据大→一格代表多个单位"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "图形会太大",
+          "correction": "一格代表多个单位",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图绘制"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-08",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "数学考试成绩:优秀15人,良好20人,及格10人,不及格5人。这个班共有多少人？",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": [
+        "50",
+        "50人"
+      ],
+      "solution": [
+        "15+20+10+5=50人"
+      ],
+      "hints": [
+        "各等级人数相加"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "15+20+10+5=50",
+          "correction": "",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图求和"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-09",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个条形统计图中,用3厘米的直条表示60千克,表示200千克应用多少厘米的直条？",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "10厘米"
+      ],
+      "solution": [
+        "1厘米表示20千克(60÷3),200千克需要200÷20=10厘米"
+      ],
+      "hints": [
+        "先求1厘米代表多少,60÷3=20,200÷20=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "单位换算错",
+          "correction": "10厘米",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图比例"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-10",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一周苹果销量(kg):周一15,周二20,周三18,周四22,周五25,周六30,周日28。平均每天销售多少千克？",
+      "image": "",
+      "options": [],
+      "answer": "22.6",
+      "acceptableAnswers": [
+        "22.6",
+        "22.6kg"
+      ],
+      "solution": [
+        "总量=15+20+18+22+25+30+28=158千克,7天,平均=158÷7≈22.6千克"
+      ],
+      "hints": [
+        "总量÷天数=平均,158÷7≈22.6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "158÷7≈22.6",
+          "correction": "",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-11",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个条形统计图的横轴和纵轴通常分别表示",
+      "image": "",
+      "options": [],
+      "answer": "类别和数量",
+      "acceptableAnswers": [
+        "类别和数量",
+        "项目和数量"
+      ],
+      "solution": [
+        "横轴表示类别(项目),纵轴表示数量"
+      ],
+      "hints": [
+        "通常横轴是类别,纵轴是数量"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "画反了",
+          "correction": "类别/数量",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图构成"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-12",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "四个班图书角:一班85本,二班78本,三班92本,四班88本。平均每个班藏书多少本？",
+      "image": "",
+      "options": [],
+      "answer": "85.75",
+      "acceptableAnswers": [
+        "85.75",
+        "86"
+      ],
+      "solution": [
+        "总数=85+78+92+88=343本,4个班,平均=343÷4=85.75本"
+      ],
+      "hints": [
+        "总数÷班数=平均数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "(85+78+92+88)÷4=85.75",
+          "correction": "",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平均数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "下面哪种情况最适合用条形统计图表示？",
+      "image": "",
+      "options": [
+        "气温变化",
+        "一天体温变化",
+        "各班人数统计",
+        "股票走势"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "条形统计图适合表示不同类别的数量多少,气温变化等适合折线图"
+      ],
+      "hints": [
+        "比较不同类别数量多少→条形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1或3",
+          "reason": "变化趋势用折线图",
+          "correction": "条形图比数量",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图选用"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-14",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "水果店销量:苹果60kg,香蕉45kg,橘子50kg,梨35kg,葡萄25kg。用条形统计图,每格代表5kg,苹果需要画几格？",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "12格"
+      ],
+      "solution": [
+        "60÷5=12格"
+      ],
+      "hints": [
+        "数量÷每格代表的数量=格数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "60÷5=12",
+          "correction": "",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图绘制"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    },
+    {
+      "id": "g4-bc-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "喜欢食物:米饭18人,面条12人,饺子15人,汉堡10人,披萨8人。制成条形统计图(每格2人),直条最长和最短相差几格？",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "5格"
+      ],
+      "solution": [
+        "最长米饭18÷2=9格,最短披萨8÷2=4格,相差9-4=5格",
+        "或(18-8)÷2=5格"
+      ],
+      "hints": [
+        "先各换算格数再求差,(18-8)÷2=5格"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "先÷2再减",
+          "correction": "9-4=5格",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "条形统计图比较"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "统计图"
+      ]
+    }
+  ]
+}

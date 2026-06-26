@@ -4,6 +4,7 @@ import App from './App.vue'
 import router from '@/router'
 import '@/assets/styles/variables.css'
 import '@/assets/styles/base.css'
+import '@/assets/styles/themes/dark.css'
 import 'katex/dist/katex.min.css'
 
 const app = createApp(App)

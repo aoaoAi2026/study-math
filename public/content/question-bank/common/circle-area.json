@@ -1,0 +1,721 @@
+{
+  "topicId": "circle-area",
+  "topicName": "圆的周长与面积",
+  "grade": "六年级核心",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "id": "cm-ca-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个圆的半径是5厘米,它的直径是多少厘米?",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "solution": [
+        "直径=2*半径=2*5=10厘米。"
+      ],
+      "hints": [
+        "直径=2*半径"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "直径半径"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": "cm-ca-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个圆的直径是12厘米,它的周长是多少厘米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "37.68",
+      "acceptableAnswers": [
+        "37.68"
+      ],
+      "solution": [
+        "半径=12/2=6厘米。周长=π*直径=3.14*12=37.68厘米。"
+      ],
+      "hints": [
+        "周长=π*直径=3.14*12=37.68"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "周长"
+      ],
+      "estimatedTime": 40,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": "cm-ca-03",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个圆的半径是7厘米,它的面积是多少平方厘米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "153.86",
+      "acceptableAnswers": [
+        "153.86"
+      ],
+      "solution": [
+        "面积=π*r^2=3.14*7^2=3.14*49=153.86平方厘米。"
+      ],
+      "hints": [
+        "面积=πr^2=3.14*49=153.86"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "面积"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": "cm-ca-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个圆的周长是18.84厘米,它的半径是多少厘米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "周长=2πr=18.84。r=18.84/(2*3.14)=18.84/6.28=3厘米。"
+      ],
+      "hints": [
+        "r=周长/(2π)=18.84/6.28=3"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "逆算半径"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": "cm-ca-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个圆形花坛的直径是10米,沿花坛周围有一条宽1米的小路。小路的面积是多少平方米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "34.54",
+      "acceptableAnswers": [
+        "34.54"
+      ],
+      "solution": [
+        "内圆半径=5米,外圆半径=6米。小路面积=外圆-内圆=π*6^2-π*5^2=36π-25π=11π=34.54平方米。"
+      ],
+      "hints": [
+        "内半径=5,外半径=6",
+        "面积=π(36-25)=11π=34.54"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "圆环"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "圆",
+        "圆环"
+      ]
+    },
+    {
+      "id": "cm-ca-06",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个圆的周长是31.4米,它的面积是多少平方米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "78.5",
+      "acceptableAnswers": [
+        "78.5"
+      ],
+      "solution": [
+        "2πr=31.4。r=31.4/6.28=5。面积=π*25=78.5平方米。"
+      ],
+      "hints": [
+        "先求半径:31.4/6.28=5",
+        "面积=π*25=78.5"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": "cm-ca-07",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个圆的半径扩大3倍,它的周长扩大多少倍?",
+      "image": "",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "2"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "周长与半径成正比,扩大3倍。"
+      ],
+      "hints": [
+        "周长=2πr,与r成正比"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "比例"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "圆",
+        "比例"
+      ]
+    },
+    {
+      "id": "cm-ca-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个圆的半径扩大2倍,它的面积扩大多少倍?",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "原面积=πr^2。新半径=2r,新面积=π(2r)^2=4πr^2。扩大4倍。"
+      ],
+      "hints": [
+        "面积与半径平方成正比,2^2=4倍"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "比例"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "圆",
+        "比例"
+      ]
+    },
+    {
+      "id": "cm-ca-09",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个正方形的周长是24厘米,在它的中间画一个最大的圆。这个圆的面积是多少平方厘米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "28.26",
+      "acceptableAnswers": [
+        "28.26"
+      ],
+      "solution": [
+        "正方形边长=24/4=6厘米。最大圆直径=6厘米,半径=3厘米。面积=π*9=28.26平方厘米。"
+      ],
+      "hints": [
+        "边长=6,圆直径=6,半径=3",
+        "面积=9π=28.26"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "正方形内最大圆"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": "cm-ca-10",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个圆的直径是20厘米,把它平均分成若干份,拼成一个近似的长方形。这个长方形的周长比原来圆的周长多多少厘米?",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "solution": [
+        "拼成长方形的长=圆周长一半=πr,宽=圆半径=r。长方形周长=2(πr+r)=2πr+2r。原圆周长=2πr。多=2r=2*10=20厘米。"
+      ],
+      "hints": [
+        "多出来的=2r=20厘米"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "拼成长方形"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": "cm-ca-11",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个圆的周长是62.8厘米,在这个圆里画一个最大的正方形。正方形的面积是多少平方厘米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "200",
+      "acceptableAnswers": [
+        "200"
+      ],
+      "solution": [
+        "圆直径=62.8/3.14=20厘米=正方形对角线。正方形面积=对角线^2/2=400/2=200平方厘米。"
+      ],
+      "hints": [
+        "直径=20=对角线",
+        "面积=对角线^2/2=400/2=200"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "圆内正方形"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": "cm-ca-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个半圆形的半径是10厘米,它的周长是多少厘米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "51.4",
+      "acceptableAnswers": [
+        "51.4"
+      ],
+      "solution": [
+        "半圆周长=圆周长一半+直径=πr+2r=3.14*10+20=31.4+20=51.4厘米。"
+      ],
+      "hints": [
+        "半圆周长=πr+2r=31.4+20=51.4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "31.4",
+          "reason": "忘了加直径",
+          "correction": "=51.4厘米",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "半圆"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "圆",
+        "半圆"
+      ]
+    },
+    {
+      "id": "cm-ca-13",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个扇形的半径是6厘米,圆心角是60度。这个扇形的面积是多少平方厘米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "18.84",
+      "acceptableAnswers": [
+        "18.84"
+      ],
+      "solution": [
+        "扇形面积=圆面积*(圆心角/360°)=π*6^2*(60/360)=36π/6=6π=18.84平方厘米。"
+      ],
+      "hints": [
+        "=圆面积*60/360=36π/6=18.84"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "扇形"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "圆",
+        "扇形"
+      ]
+    },
+    {
+      "id": "cm-ca-14",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "两个圆的半径分别是4厘米和6厘米,它们的面积比的最简整数比是多少?(只写前项,后项为9)",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "半径比=4:6=2:3。面积比=半径平方比=4:9。"
+      ],
+      "hints": [
+        "面积比=半径平方比=4:9"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "比例"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "圆",
+        "比例"
+      ]
+    },
+    {
+      "id": "cm-ca-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有一个圆环,外圆半径是10厘米,内圆半径是6厘米。这个圆环的面积是多少平方厘米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "200.96",
+      "acceptableAnswers": [
+        "200.96"
+      ],
+      "solution": [
+        "圆环面积=π(R^2-r^2)=3.14*(100-36)=3.14*64=200.96平方厘米。"
+      ],
+      "hints": [
+        "=π*(100-36)=64π=200.96"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "圆环"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "圆",
+        "圆环"
+      ]
+    },
+    {
+      "id": "cm-ca-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个圆形水池直径20米,在它的周围修一条宽1米的小路。小路的面积是多少平方米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "65.94",
+      "acceptableAnswers": [
+        "65.94"
+      ],
+      "solution": [
+        "内半径=10米,外半径=11米。面积=π(11^2-10^2)=π(121-100)=21π=65.94平方米。"
+      ],
+      "hints": [
+        "=π*21=65.94"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "圆环"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "圆",
+        "圆环"
+      ]
+    },
+    {
+      "id": "cm-ca-17",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一根长12.56米的绳子绕一棵树的树干,正好绕了10圈。这棵树的横截面的面积约是多少平方厘米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "1256",
+      "acceptableAnswers": [
+        "1256"
+      ],
+      "solution": [
+        "每圈=树干周长=12.56/10=1.256米=125.6厘米。2πr=125.6,r=20厘米。面积=π*20^2=400π=1256平方厘米。"
+      ],
+      "hints": [
+        "每圈=1.256米=125.6厘米",
+        "2πr=125.6,r=20",
+        "面积=π*400=1256"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "应用"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ]
+    },
+    {
+      "id": "cm-ca-18",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个长方形与一个圆的周长相等。长方形长6.28厘米,宽3.14厘米。圆的面积是多少平方厘米?(π取3.14)",
+      "image": "",
+      "options": [],
+      "answer": "28.26",
+      "acceptableAnswers": [
+        "28.26"
+      ],
+      "solution": [
+        "长方形周长=2*(6.28+3.14)=2*9.42=18.84厘米。圆周长=18.84。2πr=18.84,r=3。面积=π*9=28.26平方厘米。"
+      ],
+      "hints": [
+        "周长=2*(6.28+3.14)=18.84",
+        "2πr=18.84,r=3",
+        "面积=9π=28.26"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "圆",
+        "周长相等"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "圆"
+      ]
+    }
+  ]
+}

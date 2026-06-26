@@ -1,0 +1,1067 @@
+{
+  "topicId": "g5-ratio-proportion",
+  "topicName": "比例问题",
+  "grade": 5,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g5-rp-01",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "甲乙两数的比是3:5,甲数是12,乙数是多少?",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "solution": [
+        "每份=12÷3=4,乙=4×5=20"
+      ],
+      "hints": [
+        "先求1份",
+        "12÷3×5=20"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "12÷3×5=20",
+          "correction": "12÷3×5=20",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例基础"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g5-rp-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "长方形长与宽的比是5:3,长是15厘米,宽是多少厘米?",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9",
+        "9厘米"
+      ],
+      "solution": [
+        "每份=15÷5=3,宽=3×3=9厘米"
+      ],
+      "hints": [
+        "15÷5=3,3×3=9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "15÷5×3=9",
+          "correction": "15÷5×3=9",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例应用"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "长宽比"
+      ]
+    },
+    {
+      "id": "g5-rp-03",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一种盐水,盐与水的比是1:9,盐水浓度是()。",
+      "image": "",
+      "options": [
+        "10%",
+        "9%",
+        "11.1%",
+        "1/9%"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "盐1份,水9份,盐水=10份,浓度=1÷10=10%"
+      ],
+      "hints": [
+        "浓度=盐/(盐+水)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1或2",
+          "reason": "1÷10=10%",
+          "correction": "1÷10=10%",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例浓度"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "浓度"
+      ]
+    },
+    {
+      "id": "g5-rp-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一本书已看与未看的比是2:3,已看60页,这本书共多少页?",
+      "image": "",
+      "options": [],
+      "answer": "150",
+      "acceptableAnswers": [
+        "150",
+        "150页"
+      ],
+      "solution": [
+        "每份=60÷2=30,总=2+3=5份,共30×5=150页"
+      ],
+      "hints": [
+        "总份数=5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成90",
+          "reason": "那是未看的",
+          "correction": "60÷2×5=150",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例总量"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "总量"
+      ]
+    },
+    {
+      "id": "g5-rp-05",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "甲乙两数的比是5:3,两数差是12,求甲乙两数各是多少?(答案格式:甲,乙)",
+      "image": "",
+      "options": [],
+      "answer": "30,18",
+      "acceptableAnswers": [
+        "30,18",
+        "30 18"
+      ],
+      "solution": [
+        "差=5-3=2份对应12,每份=6,甲=5×6=30,乙=3×6=18"
+      ],
+      "hints": [
+        "12÷(5-3)=6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "12÷2=6,甲=30,乙=18",
+          "correction": "12÷2=6,甲=30,乙=18",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "差比问题"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差"
+      ]
+    },
+    {
+      "id": "g5-rp-06",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把90吨货物按3:2:1分配给三辆车,三辆车分别运多少吨?(答案格式:车1,车2,车3)",
+      "image": "",
+      "options": [],
+      "answer": "45,30,15",
+      "acceptableAnswers": [
+        "45,30,15",
+        "45 30 15"
+      ],
+      "solution": [
+        "总份数=6,每份=90÷6=15,三车=15×3=45,15×2=30,15×1=15"
+      ],
+      "hints": [
+        "3+2+1=6份"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错份数",
+          "reason": "90÷6=15,各45,30,15",
+          "correction": "90÷6=15,各45,30,15",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "按比分配"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分配"
+      ]
+    },
+    {
+      "id": "g5-rp-07",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "甲乙丙三人共有钱180元,甲与乙钱数比是2:3,乙与丙钱数比是6:5,甲有多少钱?",
+      "image": "",
+      "options": [
+        "40",
+        "48",
+        "60",
+        "72"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "甲:乙=2:3=4:6,乙:丙=6:5,连比甲:乙:丙=4:6:5,共15份,每份=180÷15=12,甲=4×12=48元"
+      ],
+      "hints": [
+        "统一乙的份数为6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2或3",
+          "reason": "连比4:6:5,甲=48",
+          "correction": "连比4:6:5,甲=48",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "连比"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "连比"
+      ]
+    },
+    {
+      "id": "g5-rp-08",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一班人数比二班多1/5,二班人数比一班少几分之几?",
+      "image": "",
+      "options": [],
+      "answer": "1/6",
+      "acceptableAnswers": [
+        "1/6"
+      ],
+      "solution": [
+        "设二班=5份,一班=5+1=6份,二班比一班少=(6-5)/6=1/6"
+      ],
+      "hints": [
+        "单位1变了",
+        "少=(6-5)/6=1/6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "答1/5",
+          "reason": "单位1不同",
+          "correction": "单位1不同",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "单位1"
+      ]
+    },
+    {
+      "id": "g5-rp-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "某工厂男女工人人数比是4:3,全厂共有工人350人,男女工人各有多少人?(答案格式:男,女)",
+      "image": "",
+      "options": [],
+      "answer": "200,150",
+      "acceptableAnswers": [
+        "200,150",
+        "200 150"
+      ],
+      "solution": [
+        "总份数=4+3=7,每份=350÷7=50,男=4×50=200,女=3×50=150"
+      ],
+      "hints": [
+        "350÷7=50"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "男=200,女=150",
+          "correction": "男=200,女=150",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "按比分配"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分配"
+      ]
+    },
+    {
+      "id": "g5-rp-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "甲乙两数比是2:5,乙数是30,甲数是()。",
+      "image": "",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "60"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "每份=30÷5=6,甲=2×6=12"
+      ],
+      "hints": [
+        "30÷5×2=12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2",
+          "reason": "2:5=x:30,x=12",
+          "correction": "2:5=x:30,x=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例基础"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g5-rp-11",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一堆煤,第一天运走的吨数与总吨数的比是1:4,第二天运走4.5吨后,两天正好运走了总数的1/3,这堆煤共有多少吨?",
+      "image": "",
+      "options": [],
+      "answer": "54",
+      "acceptableAnswers": [
+        "54",
+        "54吨"
+      ],
+      "solution": [
+        "第一天运1/4,两天共运1/3,第二天运=1/3-1/4=4/12-3/12=1/12,总数=4.5÷1/12=54吨"
+      ],
+      "hints": [
+        "1/3-1/4=1/12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "4.5÷(1/3-1/4)=4.5×12=54",
+          "correction": "4.5÷(1/3-1/4)=4.5×12=54",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例应用"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "分数"
+      ]
+    },
+    {
+      "id": "g5-rp-12",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "甲乙两筐苹果重量比是7:5,如果从甲筐取出8千克放入乙筐,那么两筐苹果重量相等,两筐苹果共重多少千克?",
+      "image": "",
+      "options": [],
+      "answer": "96",
+      "acceptableAnswers": [
+        "96",
+        "96千克"
+      ],
+      "solution": [
+        "甲比乙多7-5=2份,甲给乙8千克后相等,说明甲比乙多16千克,2份=16,每份=8,共12份=12×8=96千克"
+      ],
+      "hints": [
+        "甲比乙多=8×2=16"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "8×2÷(7-5)=8,共12×8=96",
+          "correction": "8×2÷(7-5)=8,共12×8=96",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "差倍问题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "g5-rp-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在比例尺是1:5000000的地图上,量得甲乙两地距离是6厘米,甲乙两地实际距离是多少千米?",
+      "image": "",
+      "options": [
+        "30",
+        "150",
+        "300",
+        "3000"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "实际=6×5000000=30000000厘米=300千米"
+      ],
+      "hints": [
+        "1千米=100000厘米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1或3",
+          "reason": "6×5000000=30000000cm=300km",
+          "correction": "6×5000000=30000000cm=300km",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例尺"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比例尺"
+      ]
+    },
+    {
+      "id": "g5-rp-14",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个车间有两个小组,第一小组和第二小组人数比是5:3,如果第一小组调14人到第二小组,那么第一小组与第二小组人数比是1:2,原来两个小组各有多少人?(答案格式:第一,第二)",
+      "image": "",
+      "options": [],
+      "answer": "30,18",
+      "acceptableAnswers": [
+        "30,18",
+        "30 18"
+      ],
+      "solution": [
+        "总人数不变,原来第一组占5/8,后来占1/3,差=5/8-1/3=15/24-8/24=7/24,14人对应7/24,总=14÷7/24=48人,第一=48×5/8=30,第二=18"
+      ],
+      "hints": [
+        "总人数不变,调人占比变化"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "14÷(5/8-1/3)=48,原30,18",
+          "correction": "14÷(5/8-1/3)=48,原30,18",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例变化"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "变化"
+      ]
+    },
+    {
+      "id": "g5-rp-15",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一项工程,甲队独做需要10天,乙队独做需要15天,甲乙两队工作效率的比是多少?",
+      "image": "",
+      "options": [],
+      "answer": "3:2",
+      "acceptableAnswers": [
+        "3:2",
+        "3/2",
+        "3比2"
+      ],
+      "solution": [
+        "甲效率=1/10,乙效率=1/15,比=1/10:1/15=15:10=3:2"
+      ],
+      "hints": [
+        "效率与时间成反比",
+        "1/10:1/15=15:10=3:2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "答2:3",
+          "reason": "效率比与时间比相反",
+          "correction": "3:2",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "效率比"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "工程"
+      ]
+    },
+    {
+      "id": "g5-rp-16",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小明读一本书,已读的和未读的页数比是1:5,如果再读30页,则已读的和未读的页数比为3:5,这本书共有多少页?",
+      "image": "",
+      "options": [],
+      "answer": "144",
+      "acceptableAnswers": [
+        "144",
+        "144页"
+      ],
+      "solution": [
+        "总页数不变,原来已读占1/6,后来占3/8,差=3/8-1/6=9/24-4/24=5/24,30页对应5/24,总=30÷5/24=30×24/5=144页"
+      ],
+      "hints": [
+        "总页数不变,已读从1/6变到3/8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "30÷(3/8-1/6)=30÷5/24=144",
+          "correction": "30÷(3/8-1/6)=30÷5/24=144",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例变化"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "变化"
+      ]
+    },
+    {
+      "id": "g5-rp-17",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲乙两校原有图书本数的比是7:5,如果甲校给乙校650本,甲乙两校图书本数的比就是3:4,原来甲校有图书多少本?",
+      "image": "",
+      "options": [],
+      "answer": "2450",
+      "acceptableAnswers": [
+        "2450",
+        "2450本"
+      ],
+      "solution": [
+        "总数不变,原来甲占7/12,后来占3/7,差=7/12-3/7=49/84-36/84=13/84,650本对应13/84,总数=650÷13/84=650×84/13=4200本,原来甲=4200×7/12=2450本"
+      ],
+      "hints": [
+        "总数不变,甲从7/12变到3/7"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "650÷(7/12-3/7)=4200,甲=4200×7/12=2450",
+          "correction": "650÷(7/12-3/7)=4200,甲=4200×7/12=2450",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例变化"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "变化"
+      ]
+    },
+    {
+      "id": "g5-rp-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有若干堆棋子,每堆棋子数一样多,且每堆中白子都占28%。小明从某堆中拿走一半棋子,而且拿走的都是黑子,现在在所有的棋子中,白子将占32%。问共有多少堆棋子?",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "4堆"
+      ],
+      "solution": [
+        "设有n堆,每堆100个棋子,白子每堆28个,黑子72个,总白子=28n,总棋子=100n,拿走50个黑子后,总棋子=100n-50,白子仍28n,28n/(100n-50)=32%,28n=0.32(100n-50),28n=32n-16,4n=16,n=4堆"
+      ],
+      "hints": [
+        "白子数不变",
+        "28n/(100n-50)=32%"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错方程",
+          "reason": "28n=32n-16,n=4",
+          "correction": "28n=32n-16,n=4",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "比例综合"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g5-rp-19",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "甲、乙两包糖的重量比是4:1,如果从甲包取出10克放入乙包后,甲、乙两包糖的重量比变为7:5,那么两包糖重量的总和是______克。",
+      "image": "",
+      "options": [],
+      "answer": "600/13",
+      "acceptableAnswers": ["600/13", "46又2/13", "46.15"],
+      "solution": ["总重量不变。原来甲占4/5,后来占7/12。减少=4/5-7/12=48/60-35/60=13/60。10克对应13/60,总重=10÷13/60=600/13克。"],
+      "hints": ["总重量不变,甲从4/5变7/12"],
+      "commonMistakes": [{"mistake": "60", "reason": "算错", "correction": "600/13"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2016, "paper": "第十四届希望杯五年级"},
+      "knowledgePoints": ["比例", "变化"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.3, "b": 0.8, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-20",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "某俱乐部男女会员人数之比是3:2,分为甲、乙、丙三组。已知甲、乙、丙三组的人数比是10:8:7,甲组中男女会员的人数之比是3:1,乙组中男女会员的人数之比是5:3。则丙组中男女会员人数之比是()。",
+      "image": "",
+      "options": ["3:4", "5:9", "5:7", "7:9"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["总人数=10+8+7=25份,男=25×3/5=15份,女=10份。甲组10人:男=10×3/4=7.5,女=2.5。乙组8人:男=8×5/8=5,女=3。丙组:男=15-7.5-5=2.5,女=10-2.5-3=4.5。丙组男女比=2.5:4.5=5:9。"],
+      "hints": ["设总人数25份", "甲组男7.5女2.5,乙组男5女3"],
+      "commonMistakes": [{"mistake": "选3", "reason": "算错", "correction": "5:9"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2017, "paper": "2017年迎春杯五年级"},
+      "knowledgePoints": ["比例", "分配"],
+      "estimatedTime": 200,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-21",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有一个长方体,长与宽的比是2:1,宽与高的比是3:2。已知这个长方体的全部棱长之和是220厘米,这个长方体的体积是______立方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "4500",
+      "acceptableAnswers": ["4500", "4500立方厘米"],
+      "solution": ["长:宽=2:1=6:3,宽:高=3:2,所以长:宽:高=6:3:2。棱长和=4×(长+宽+高)=220,长+宽+高=55。总份数=6+3+2=11份,每份=5。长=30,宽=15,高=10。体积=30×15×10=4500立方厘米。"],
+      "hints": ["连比长:宽:高=6:3:2", "棱长和÷4=长+宽+高"],
+      "commonMistakes": [{"mistake": "3000", "reason": "算错", "correction": "4500"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯初赛"},
+      "knowledgePoints": ["比例", "长方体"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.3, "b": 0.8, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-22",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一项工程,甲、乙两队合做10天可以完成,乙、丙两队合做12天可以完成,甲、丙两队合做15天可以完成。如果由三队合做,需要()天完成。",
+      "image": "",
+      "options": ["6天", "7天", "8天", "9天"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": ["甲+乙=1/10,乙+丙=1/12,甲+丙=1/15。三式相加:2(甲+乙+丙)=1/10+1/12+1/15=6/60+5/60+4/60=15/60=1/4。甲+乙+丙=1/8。所以8天完成。"],
+      "hints": ["三式相加求三队效率和", "(1/10+1/12+1/15)÷2=1/8"],
+      "commonMistakes": [{"mistake": "选0", "reason": "6", "correction": "8天"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2015, "paper": "第十三届走美杯五年级"},
+      "knowledgePoints": ["比例", "工程"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.3, "b": 0.9, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "甲、乙两班人数相等,各有一些同学参加了课外小组。甲班参加的人数恰好是乙班没参加人数的1/3,乙班参加的人数恰好是甲班没参加人数的1/4。那么甲班没参加的人数是乙班没参加人数的______分之______。(答案格式:如\"8/9\")",
+      "image": "",
+      "options": [],
+      "answer": "8/9",
+      "acceptableAnswers": ["8/9", "九分之八"],
+      "solution": ["设甲班未参加x人,乙班未参加y人。甲班参加=y/3,乙班参加=x/4。两班人数相等:x+y/3=y+x/4。x-x/4=y-y/3→(3/4)x=(2/3)y→x/y=(2/3)/(3/4)=8/9。"],
+      "hints": ["设甲未参加x,乙未参加y", "x+y/3=y+x/4"],
+      "commonMistakes": [{"mistake": "3/4", "reason": "搞反", "correction": "8/9"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2014, "paper": "第十九届华罗庚金杯决赛"},
+      "knowledgePoints": ["比例", "分数"],
+      "estimatedTime": 200,
+      "irtParams": {"a": 1.5, "b": 1.2, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "商店购进甲乙两种糖果，所用费用之比为2:1，甲种糖果每千克6元，乙种糖果每千克2元。如果把这两种糖果混在一起成为什锦糖，那么这种什锦糖每千克成本是多少元？",
+      "image": "",
+      "options": [],
+      "answer": "3.6",
+      "acceptableAnswers": ["3.6", "3.6元", "18/5", "3又3/5"],
+      "solution": ["设甲糖果费用为2份，乙糖果费用为1份。甲重量=2÷6=1/3份，乙重量=1÷2=1/2份。总费用=2+1=3份，总重量=1/3+1/2=5/6份。什锦糖单价=3÷(5/6)=18/5=3.6元/千克。"],
+      "hints": ["设甲费用2份，乙费用1份", "单价=总费用÷总重量"],
+      "commonMistakes": [{"mistake": "4", "reason": "直接用价格求平均", "correction": "应按总费用÷总重量计算"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2018, "paper": "第十六届希望杯五年级"},
+      "knowledgePoints": ["比例", "平均价格"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.3, "b": 0.8, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-25",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "小明从甲地到乙地，去时每小时走6千米，回来时每小时走9千米，来回共用5小时。小明来回共走了多少千米？",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": ["36", "36千米"],
+      "solution": ["路程相同，速度与时间成反比。去时速度:回时速度=6:9=2:3，去时时间:回时时间=3:2。总时间5小时，去时=5×3/(3+2)=3小时。甲乙距离=6×3=18千米，来回=18×2=36千米。"],
+      "hints": ["路程相同，速度比与时间比相反", "时间比=3:2，去时3小时"],
+      "commonMistakes": [{"mistake": "18", "reason": "只算了单程", "correction": "来回共36千米"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2016, "paper": "2016年迎春杯五年级"},
+      "knowledgePoints": ["比例", "行程"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.3, "b": 0.9, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "甲乙丙三人共有100元钱。甲的钱数是乙丙两人钱数和的1/4，乙的钱数是甲丙两人钱数和的1/3。丙有多少钱？",
+      "image": "",
+      "options": [],
+      "answer": "55",
+      "acceptableAnswers": ["55", "55元"],
+      "solution": ["甲占总数的1/(1+4)=1/5，甲=100×1/5=20元。乙占总数的1/(1+3)=1/4，乙=100×1/4=25元。丙=100-20-25=55元。"],
+      "hints": ["甲是乙丙和的1/4，即甲占总数1/5", "乙是甲丙和的1/3，即乙占总数1/4"],
+      "commonMistakes": [{"mistake": "50", "reason": "算错比例", "correction": "甲20元，乙25元，丙55元"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2017, "paper": "第十五届走美杯五年级"},
+      "knowledgePoints": ["比例", "分数应用"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.3, "b": 0.85, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "甲乙两车分别从A、B两地同时出发相向而行，出发时，甲和乙的速度比是5:4，相遇后，甲的速度减少20%，乙的速度增加20%，这样，当甲到达B地时，乙离A地还有10千米。那么A、B两地相距多少千米？",
+      "image": "",
+      "options": [],
+      "answer": "450",
+      "acceptableAnswers": ["450", "450千米"],
+      "solution": ["相遇时甲乙路程比=5:4，甲走全程5/9，乙走4/9。相遇后速度比：甲=5×(1-20%)=4，乙=4×(1+20%)=4.8，速度比=4:4.8=5:6。甲走完剩下4/9时，乙走了(4/9)×(6/5)=24/45=8/15。乙共走4/9+8/15=20/45+24/45=44/45。剩下1-44/45=1/45对应10千米，全程=10×45=450千米。"],
+      "hints": ["相遇时路程比5:4", "相遇后速度比5:6", "剩下1/45对应10千米"],
+      "commonMistakes": [{"mistake": "400", "reason": "速度变化计算错", "correction": "全程450千米"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2016, "paper": "第二十一届华罗庚金杯决赛"},
+      "knowledgePoints": ["比例", "行程"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.5, "b": 1.3, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-28",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有浓度为30%的盐水若干，加入一定量的水后稀释成浓度为24%的盐水。如果再加入同样多的水，盐水的浓度将变为多少？（答案为百分数，填数字即可，如浓度20%填\"20\"）",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": ["20", "20%", "0.2"],
+      "solution": ["盐的质量不变。设原有盐水100克，盐=100×30%=30克。加水后浓度24%，总重=30÷24%=125克，加水=125-100=25克。再加25克水，总重=150克，浓度=30÷150=20%。"],
+      "hints": ["盐的质量不变", "先算每次加多少水"],
+      "commonMistakes": [{"mistake": "18", "reason": "认为每次减6%", "correction": "浓度=20%"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2019, "paper": "第十七届希望杯五年级"},
+      "knowledgePoints": ["比例", "浓度"],
+      "estimatedTime": 200,
+      "irtParams": {"a": 1.4, "b": 1.1, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "某小学四、五、六年级共有学生615人，已知六年级学生人数的1/2等于五年级学生人数的2/5，等于四年级学生人数的3/7。这三个年级各有多少人？（答案格式：四,五,六）",
+      "image": "",
+      "options": [],
+      "answer": "210,225,180",
+      "acceptableAnswers": ["210,225,180", "210 225 180"],
+      "solution": ["设六年级×1/2=五年级×2/5=四年级×3/7=k。六=2k，五=5k/2，四=7k/3。四:五:六=7/3:5/2:2=14:15:12。总份数=14+15+12=41份，每份=615÷41=15人。四=14×15=210人，五=15×15=225人，六=12×15=180人。"],
+      "hints": ["设相等的量为k", "连比四:五:六=14:15:12"],
+      "commonMistakes": [{"mistake": "200,225,190", "reason": "连比算错", "correction": "210,225,180"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2018, "paper": "2018年迎春杯五年级"},
+      "knowledgePoints": ["比例", "连比"],
+      "estimatedTime": 220,
+      "irtParams": {"a": 1.4, "b": 1.2, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    },
+    {
+      "id": "g5-rp-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个水池，甲乙两管同时开，5小时注满；乙丙两管同时开，4小时注满。现在先开乙管6小时，还需要甲丙两管同时开2小时才能注满。乙管单独开需要多少小时注满？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": ["20", "20小时"],
+      "solution": ["甲+乙=1/5，乙+丙=1/4。设乙效率为x，则甲=1/5-x，丙=1/4-x。由题意：6x+2×(甲+丙)=1，即6x+2×(1/5-x+1/4-x)=1。6x+2×(9/20-2x)=1，6x+9/10-4x=1，2x=1/10，x=1/20。乙单独需20小时。"],
+      "hints": ["设乙效率为x", "甲+丙=1/5+1/4-2x"],
+      "commonMistakes": [{"mistake": "15", "reason": "方程列错", "correction": "乙单独20小时"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2019, "paper": "第二十四届华罗庚金杯初赛"},
+      "knowledgePoints": ["比例", "工程"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.5, "b": 1.4, "c": 0.25},
+      "tags": ["比例", "竞赛真题"]
+    }
+  ]
+}

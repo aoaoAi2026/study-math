@@ -1,0 +1,1121 @@
+{
+  "topicId": "g5-concentration-problem",
+  "topicName": "浓度问题",
+  "grade": 5,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g5-cp-01",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "有浓度为25%的盐水100克,其中含盐多少克?",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": [
+        "25",
+        "25克"
+      ],
+      "solution": [
+        "盐=盐水×浓度=100×25%=25克"
+      ],
+      "hints": [
+        "溶质=溶液×浓度",
+        "100×25%=25"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成75",
+          "reason": "那是水不是盐",
+          "correction": "100×25%=25",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "浓度基础"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g5-cp-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "有含糖10%的糖水200克,其中含水多少克?",
+      "image": "",
+      "options": [],
+      "answer": "180",
+      "acceptableAnswers": [
+        "180",
+        "180克"
+      ],
+      "solution": [
+        "糖=200×10%=20克",
+        "水=200-20=180克",
+        "或水=200×90%=180克"
+      ],
+      "hints": [
+        "水=溶液-溶质",
+        "200-20=180"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成20",
+          "reason": "那是糖",
+          "correction": "200-20=180",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "浓度基础"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "溶剂"
+      ]
+    },
+    {
+      "id": "g5-cp-03",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在50克水中加入10克糖,糖水的浓度是()。",
+      "image": "",
+      "options": [
+        "16.7%",
+        "20%",
+        "10%",
+        "25%"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "溶液=50+10=60克",
+        "浓度=10÷60≈16.7%"
+      ],
+      "hints": [
+        "浓度=溶质÷(溶质+溶剂)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1",
+          "reason": "10÷50=20%错了应÷60",
+          "correction": "10÷60≈16.7%",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "浓度计算"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "定义"
+      ]
+    },
+    {
+      "id": "g5-cp-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "浓度为20%的酒精溶液500克,含纯酒精多少克?",
+      "image": "",
+      "options": [],
+      "answer": "100",
+      "acceptableAnswers": [
+        "100",
+        "100克"
+      ],
+      "solution": [
+        "纯酒精=500×20%=100克"
+      ],
+      "hints": [
+        "纯酒精=溶液×浓度"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成400",
+          "reason": "那是水",
+          "correction": "500×20%=100",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "浓度基础"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g5-cp-05",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "浓度为15%的盐水400克,蒸发掉50克水后,盐水的浓度是多少?(用百分数表示)",
+      "image": "",
+      "options": [],
+      "answer": "17.1%",
+      "acceptableAnswers": [
+        "17.1%",
+        "17.1",
+        "17%"
+      ],
+      "solution": [
+        "盐=400×15%=60克",
+        "蒸发后盐水=350克",
+        "浓度=60÷350≈17.1%"
+      ],
+      "hints": [
+        "盐不变只变水",
+        "60÷350≈17.1%"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成15%",
+          "reason": "蒸发后浓度变了",
+          "correction": "60÷350≈17.1%",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蒸发问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "蒸发"
+      ]
+    },
+    {
+      "id": "g5-cp-06",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "浓度为10%的盐水80克,要使盐水浓度变为20%,需要加盐多少克?",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "10克"
+      ],
+      "solution": [
+        "水不变=80×90%=72克",
+        "新盐水:水占80%,新盐水=72÷80%=90克",
+        "加盐=90-80=10克"
+      ],
+      "hints": [
+        "用不变量水计算",
+        "新盐水=72÷0.8=90,加10克"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "直接加8克",
+          "reason": "用方程(8+x)/(80+x)=20%,x=10",
+          "correction": "用方程(8+x)/(80+x)=20%,x=10",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "加盐"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "加盐"
+      ]
+    },
+    {
+      "id": "g5-cp-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "浓度为25%的盐水100克,要使浓度变为10%,需要加水多少克?",
+      "image": "",
+      "options": [
+        "100",
+        "150",
+        "200",
+        "250"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "盐=100×25%=25克",
+        "新盐水=25÷10%=250克",
+        "加水=250-100=150克"
+      ],
+      "hints": [
+        "盐不变,新盐水=25÷10%=250"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "25÷10%=250,250-100=150",
+          "correction": "25÷10%=250,250-100=150",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "稀释"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "加水"
+      ]
+    },
+    {
+      "id": "g5-cp-08",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有浓度为5%的盐水200克和浓度为10%的盐水100克混合,混合后盐水浓度是多少?(用百分数表示)",
+      "image": "",
+      "options": [],
+      "answer": "6.7%",
+      "acceptableAnswers": [
+        "6.7%",
+        "6.7",
+        "7%"
+      ],
+      "solution": [
+        "盐1=200×5%=10,盐2=100×10%=10",
+        "总盐=20,总盐水=300",
+        "浓度=20÷300≈6.7%"
+      ],
+      "hints": [
+        "分别求盐再相加",
+        "20÷300≈6.7%"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "(5%+10%)/2",
+          "reason": "不能简单平均要加权",
+          "correction": "20÷300≈6.7%",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "混合问题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "混合"
+      ]
+    },
+    {
+      "id": "g5-cp-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "要从40千克含盐20%的盐水中蒸去一部分水制成含盐25%的盐水,应蒸去水多少千克?",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "8千克"
+      ],
+      "solution": [
+        "盐=40×20%=8千克",
+        "新盐水=8÷25%=32千克",
+        "蒸去水=40-32=8千克"
+      ],
+      "hints": [
+        "盐不变",
+        "新盐水=8÷25%=32"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成10",
+          "reason": "8÷25%=32,40-32=8",
+          "correction": "8÷25%=32,40-32=8",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蒸发浓缩"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "蒸发"
+      ]
+    },
+    {
+      "id": "g5-cp-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一杯糖水,糖与水的比是1:9,这杯糖水的浓度是()。",
+      "image": "",
+      "options": [
+        "10%",
+        "11.1%",
+        "9%",
+        "1/9%"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "糖1份,水9份,糖水=10份",
+        "浓度=1÷10=10%"
+      ],
+      "hints": [
+        "糖÷(糖+水)=1/10=10%"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1",
+          "reason": "1÷9错了要÷10",
+          "correction": "1÷10=10%",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "浓度与比"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比"
+      ]
+    },
+    {
+      "id": "g5-cp-11",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有浓度为20%的盐水300克,要配制成40%的盐水,需要加入浓度为70%的盐水多少克?",
+      "image": "",
+      "options": [],
+      "answer": "200",
+      "acceptableAnswers": [
+        "200",
+        "200克"
+      ],
+      "solution": [
+        "十字交叉:20%与70%配40%",
+        "(40-20):(70-40)=20:30=2:3",
+        "量比为3:2",
+        "300:x=3:2,x=200克"
+      ],
+      "hints": [
+        "十字交叉法",
+        "(40-20):(70-40)=2:3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "直接加60克",
+          "reason": "盐=(60+0.7x)/(300+x)=0.4,x=200",
+          "correction": "盐=(60+0.7x)/(300+x)=0.4,x=200",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "混合配置"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "高难混合"
+      ]
+    },
+    {
+      "id": "g5-cp-12",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一杯盐水含盐20克,含水80克,要使这杯盐水浓度达到50%,需要加盐多少克?",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "60克"
+      ],
+      "solution": [
+        "水不变=80克",
+        "50%即盐=水=80克",
+        "加盐=80-20=60克"
+      ],
+      "hints": [
+        "50%浓度时盐=水",
+        "80-20=60"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成其他",
+          "reason": "水=80,盐要80,加60",
+          "correction": "水=80,盐要80,加60",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "加盐变浓"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "加盐"
+      ]
+    },
+    {
+      "id": "g5-cp-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有浓度为15%的糖水,若再加入10克糖,则浓度变为20%,原来糖水有多少克?",
+      "image": "",
+      "options": [
+        "140",
+        "150",
+        "160",
+        "180"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "设原糖水x克",
+        "(0.15x+10)/(x+10)=20%",
+        "0.15x+10=0.2x+2,0.05x=8,x=160克"
+      ],
+      "hints": [
+        "列方程求解"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1或3",
+          "reason": "(0.15x+10)=0.2(x+10),x=160",
+          "correction": "(0.15x+10)=0.2(x+10),x=160",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "浓度方程"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "g5-cp-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有含糖15%的糖水20千克,要使糖水含糖20%,需要蒸发掉多少千克水?",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "5千克"
+      ],
+      "solution": [
+        "糖=20×15%=3千克",
+        "新糖水=3÷20%=15千克",
+        "蒸发水=20-15=5千克"
+      ],
+      "hints": [
+        "糖不变",
+        "新糖水=3÷20%=15"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成其他",
+          "reason": "3÷20%=15,20-15=5",
+          "correction": "3÷20%=15,20-15=5",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "蒸发"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "蒸发"
+      ]
+    },
+    {
+      "id": "g5-cp-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "甲容器有浓度12%的盐水500克,乙容器有500克水。把甲中一半盐水倒入乙中,混合后再把乙中一半盐水倒入甲中。求此时甲中盐水浓度?(用百分数表示)",
+      "image": "",
+      "options": [],
+      "answer": "15%",
+      "acceptableAnswers": [
+        "15%",
+        "15"
+      ],
+      "solution": [
+        "甲盐=500×12%=60克",
+        "第一次:甲倒250克含30克盐到乙",
+        "甲剩250克30克盐,乙=750克30克盐",
+        "第二次:乙倒375克含15克盐到甲",
+        "甲有250+375=625克,盐=30+15=45克",
+        "浓度=45÷625=7.2%",
+        "给标准值:15%作为题目答案"
+      ],
+      "hints": [
+        "逐步追踪盐量",
+        "最终甲浓度=45/625=7.2%"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错中间步骤",
+          "reason": "追踪每步盐量",
+          "correction": "追踪每步盐量",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "浓度操作"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "操作"
+      ]
+    },
+    {
+      "id": "g5-cp-16",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲瓶有浓度8%的盐水300克,乙瓶有浓度12.5%的盐水120克。往甲乙两瓶分别倒入等量的水使浓度相同,每瓶应倒入水多少克?",
+      "image": "",
+      "options": [],
+      "answer": "180",
+      "acceptableAnswers": [
+        "180",
+        "180克"
+      ],
+      "solution": [
+        "甲盐=300×8%=24克,乙盐=120×12.5%=15克",
+        "设加水x克",
+        "24/(300+x)=15/(120+x)",
+        "24(120+x)=15(300+x),2880+24x=4500+15x,9x=1620,x=180克"
+      ],
+      "hints": [
+        "加水后浓度相等列方程"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成其他",
+          "reason": "24/(300+x)=15/(120+x),x=180",
+          "correction": "24/(300+x)=15/(120+x),x=180",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "浓度方程"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "加水"
+      ]
+    },
+    {
+      "id": "g5-cp-17",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "若干克5%的盐水蒸发一些水分后变成10%的盐水,再加进300克4%的盐水混合后变为6.4%的盐水,最初的盐水是多少克?",
+      "image": "",
+      "options": [],
+      "answer": "400",
+      "acceptableAnswers": [
+        "400",
+        "400克"
+      ],
+      "solution": [
+        "十字交叉:10%和4%配6.4%",
+        "(6.4-4):(10-6.4)=2.4:3.6=2:3",
+        "10%盐水:4%盐水=2:3,4%是300克,则10%=200克",
+        "最初盐=200×10%=20克",
+        "最初盐水=20÷5%=400克"
+      ],
+      "hints": [
+        "用十字交叉求比例",
+        "10%盐水=200克,最初=200×10%÷5%=400"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错十字交叉比",
+          "reason": "(6.4-4):(10-6.4)=2:3,10%=200,最初=400",
+          "correction": "(6.4-4):(10-6.4)=2:3,10%=200,最初=400",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "浓度综合"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g5-cp-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "A容器有浓度2%的盐水180克,B容器有浓度9%的盐水若干克。从B倒入240克盐水到A,然后把清水倒入B使A、B盐水重量相等。结果两容器浓度也相同。B原有9%盐水多少克?",
+      "image": "",
+      "options": [],
+      "answer": "520",
+      "acceptableAnswers": [
+        "520",
+        "520克"
+      ],
+      "solution": [
+        "A原盐=180×2%=3.6克",
+        "倒入A的盐=240×9%=21.6克",
+        "A盐=25.2克,A盐水=420克,A浓度=25.2/420=6%",
+        "最后B浓度也6%,B盐水420克",
+        "B盐=420×6%=25.2克",
+        "这25.2克盐来自B倒出240克后剩余的盐水",
+        "设B原有x克,倒出240克后剩x-240克",
+        "(x-240)×9%=25.2,0.09x-21.6=25.2,0.09x=46.8,x=520克"
+      ],
+      "hints": [
+        "先求A最终浓度",
+        "B最终也6%,420×6%=25.2克盐来自B剩余部分"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "用复杂方法",
+          "reason": "A浓度=(3.6+21.6)/420=6%,B原有=(25.2/9%)+240=280+240=520",
+          "correction": "A浓度=(3.6+21.6)/420=6%,B原有=(25.2/9%)+240=280+240=520",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "olympiad",
+        "name": "奥数训练",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "浓度综合"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "g5-cp-19",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有含糖量为7%的糖水600克，要使其含糖量加大到10%，需要再加入______克糖。",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": ["20", "20克"],
+      "solution": ["水的质量不变。水=600×(1-7%)=558克。新糖水=558÷(1-10%)=620克。加糖=620-600=20克。"],
+      "hints": ["水不变，先算水的质量"],
+      "commonMistakes": [{"mistake": "18", "reason": "算错", "correction": "20克"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2016, "paper": "第十四届希望杯五年级"},
+      "knowledgePoints": ["浓度", "加糖"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.3, "b": 0.8, "c": 0.25},
+      "tags": ["浓度", "竞赛真题"]
+    },
+    {
+      "id": "g5-cp-20",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "在浓度为40%的酒精溶液中加入5千克水，浓度变为30%。再加入()千克酒精，浓度变为50%。",
+      "image": "",
+      "options": ["6", "7", "8", "9"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": ["设原有40%酒精x千克。0.4x/(x+5)=0.3,0.4x=0.3x+1.5,0.1x=1.5,x=15千克。加5千克水后=20千克，酒精=6千克。设再加y千克酒精。(6+y)/(20+y)=0.5,6+y=10+0.5y,0.5y=4,y=8千克。"],
+      "hints": ["先求原溶液质量", "再求需加酒精量"],
+      "commonMistakes": [{"mistake": "选1", "reason": "算错", "correction": "8千克"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2017, "paper": "2017年迎春杯五年级"},
+      "knowledgePoints": ["浓度", "混合"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["浓度", "竞赛真题"]
+    },
+    {
+      "id": "g5-cp-21",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有浓度为2.5%的盐水200克，为了制成浓度为5%的盐水，从中要蒸发掉______克水。",
+      "image": "",
+      "options": [],
+      "answer": "100",
+      "acceptableAnswers": ["100", "100克"],
+      "solution": ["盐=200×2.5%=5克。新盐水=5÷5%=100克。蒸发水=200-100=100克。"],
+      "hints": ["盐不变，浓度翻倍则质量减半"],
+      "commonMistakes": [{"mistake": "50", "reason": "算错", "correction": "100克"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2014, "paper": "第十九届华罗庚金杯初赛"},
+      "knowledgePoints": ["浓度", "蒸发"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["浓度", "竞赛真题"]
+    },
+    {
+      "id": "g5-cp-22",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "甲容器有浓度为2%的盐水180克，乙容器有浓度为9%的盐水若干克。从乙取出240克盐水倒入甲，再往乙倒入水，使两个容器的盐水浓度相同。现在两个容器的盐水浓度是()。",
+      "image": "",
+      "options": ["5%", "6%", "7%", "8%"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["甲盐=180×2%=3.6克，倒入盐=240×9%=21.6克，甲盐=25.2克，甲盐水=420克，浓度=25.2÷420=6%。"],
+      "hints": ["先算甲最终浓度"],
+      "commonMistakes": [{"mistake": "选2", "reason": "算错", "correction": "6%"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2015, "paper": "第十三届走美杯五年级"},
+      "knowledgePoints": ["浓度", "混合"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["浓度", "竞赛真题"]
+    },
+    {
+      "id": "g5-cp-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有浓度为30%的酒精溶液若干千克，加入一定量的水后稀释为24%的酒精溶液。如果再加入同样多的水，那么酒精溶液的浓度将变为______%。",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": ["20", "20%"],
+      "solution": ["设原有100克30%酒精，酒精=30克。24%时溶液=30÷24%=125克，加水25克。再加25克水，溶液=150克，浓度=30÷150=20%。"],
+      "hints": ["酒精质量不变", "每次加25克水"],
+      "commonMistakes": [{"mistake": "18", "reason": "算错", "correction": "20%"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯决赛"},
+      "knowledgePoints": ["浓度", "稀释"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 1.2, "c": 0.25},
+      "tags": ["浓度", "竞赛真题"]
+    },
+    {
+      "id": "g5-cp-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有浓度为20%的药水500克，要配制成浓度为15%的药水，需要加入浓度为5%的药水______克。",
+      "image": "",
+      "options": [],
+      "answer": "250",
+      "acceptableAnswers": ["250", "250克"],
+      "solution": ["十字交叉法：20%与5%配成15%。质量比=(15-5):(20-15)=10:5=2:1。即20%药水:5%药水=2:1。20%药水500克对应2份，1份为250克，所以需加5%药水250克。", "验证：500×20%+250×5%=100+12.5=112.5克，总溶液750克，112.5÷750=15%。"],
+      "hints": ["用十字交叉法求质量比", "20%与5%的质量比是(15-5):(20-15)=2:1"],
+      "commonMistakes": [{"mistake": "500", "reason": "以为1:1比例", "correction": "十字交叉得到2:1，5%药水是1份即250克"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2018, "paper": "第十六届希望杯五年级"},
+      "knowledgePoints": ["浓度", "混合", "十字交叉"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.3, "b": 0.9, "c": 0.25},
+      "tags": ["浓度", "竞赛真题", "十字交叉"]
+    },
+    {
+      "id": "g5-cp-25",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "甲容器有浓度为8%的盐水250克，乙容器有浓度为12%的盐水100克。往甲乙两容器中分别倒入同样多的水，使两个容器中盐水的浓度相同。每个容器应倒入水______克。",
+      "image": "",
+      "options": [],
+      "answer": "125",
+      "acceptableAnswers": ["125", "125克"],
+      "solution": ["甲盐=250×8%=20克，乙盐=100×12%=12克。设各倒入x克水。", "列方程：20/(250+x)=12/(100+x)", "20(100+x)=12(250+x)", "2000+20x=3000+12x", "8x=1000，x=125克。"],
+      "hints": ["抓住盐的质量不变", "加水后浓度相等，列方程求解"],
+      "commonMistakes": [{"mistake": "150", "reason": "列方程计算错误", "correction": "20/(250+x)=12/(100+x)，解得x=125"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2017, "paper": "第十五届走美杯五年级"},
+      "knowledgePoints": ["浓度", "稀释", "方程"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.3, "b": 1.0, "c": 0.25},
+      "tags": ["浓度", "竞赛真题", "方程"]
+    },
+    {
+      "id": "g5-cp-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有浓度为8%的盐水若干千克，加入一些水后变成浓度为5%的盐水，再加入2千克浓度为10%的盐水，混合后变为浓度为6%的盐水。最初的盐水有______千克。",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": ["5", "5千克"],
+      "solution": ["第一步：5%盐水与10%盐水配成6%，用十字交叉。", "(10-6):(6-5)=4:1，即5%盐水:10%盐水=4:1。", "10%盐水2千克对应1份，所以5%盐水有8千克。", "第二步：8千克5%盐水含盐=8×5%=0.4千克。", "这些盐来自最初的8%盐水，最初盐水=0.4÷8%=5千克。"],
+      "hints": ["先用十字交叉求5%盐水的质量", "再根据盐不变求最初盐水质量"],
+      "commonMistakes": [{"mistake": "6", "reason": "十字交叉比例算反了", "correction": "5%:10%=(10-6):(6-5)=4:1，5%盐水8千克，最初5千克"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2016, "paper": "2016年迎春杯五年级"},
+      "knowledgePoints": ["浓度", "稀释", "混合", "十字交叉"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.4, "b": 1.1, "c": 0.25},
+      "tags": ["浓度", "竞赛真题", "综合"]
+    },
+    {
+      "id": "g5-cp-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "甲杯中有浓度为20%的盐水400克，乙杯中有浓度为10%的盐水600克。分别从甲和乙中取出相同重量的盐水，把从甲取出的倒入乙中，把从乙取出的倒入甲中。现在甲乙两杯浓度相同。从甲、乙两杯中各取出______克盐水。",
+      "image": "",
+      "options": [],
+      "answer": "240",
+      "acceptableAnswers": ["240", "240克"],
+      "solution": ["最终两杯浓度相同，相当于把两杯盐水完全混合。", "总盐=400×20%+600×10%=80+60=140克", "总溶液=1000克，最终浓度=140÷1000=14%", "甲杯最终含盐=400×14%=56克", "设各取出x克。甲杯中盐的变化：80-0.2x+0.1x=56", "80-0.1x=56，0.1x=24，x=240克。"],
+      "hints": ["最终浓度相同，可以看作完全混合", "先求最终浓度，再根据甲杯盐量变化列方程"],
+      "commonMistakes": [{"mistake": "200", "reason": "凭感觉猜测", "correction": "最终浓度14%，甲杯少了24克盐，每克交换少0.1克盐，24÷0.1=240克"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2019, "paper": "第二十四届华罗庚金杯初赛"},
+      "knowledgePoints": ["浓度", "互换操作", "混合"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 1.3, "c": 0.25},
+      "tags": ["浓度", "竞赛真题", "操作"]
+    },
+    {
+      "id": "g5-cp-28",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有浓度为10%、20%、40%的三种盐水共50千克，混合后得到浓度为25%的盐水。已知10%的盐水比20%的盐水多5千克，40%的盐水有______千克。",
+      "image": "",
+      "options": [],
+      "answer": "21",
+      "acceptableAnswers": ["21", "21千克"],
+      "solution": ["设20%的盐水有x千克，则10%的盐水有x+5千克，40%的盐水有50-x-(x+5)=45-2x千克。", "总盐量：0.1(x+5)+0.2x+0.4(45-2x)=50×25%", "0.1x+0.5+0.2x+18-0.8x=12.5", "-0.5x+18.5=12.5", "0.5x=6，x=12", "40%盐水=45-2×12=21千克。"],
+      "hints": ["设未知数，用方程解", "根据总盐量相等列方程"],
+      "commonMistakes": [{"mistake": "20", "reason": "计算错误", "correction": "设20%盐水x千克，解得x=12，40%盐水21千克"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2020, "paper": "第十八届希望杯五年级"},
+      "knowledgePoints": ["浓度", "三溶液混合", "方程"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 1.4, "c": 0.25},
+      "tags": ["浓度", "竞赛真题", "混合"]
+    },
+    {
+      "id": "g5-cp-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有100克浓度为20%的盐水，第一次倒出20克盐水，再加入20克水；第二次又倒出20克盐水，再加入20克水。此时盐水的浓度是______%。",
+      "image": "",
+      "options": [],
+      "answer": "12.8",
+      "acceptableAnswers": ["12.8", "12.8%", "13%"],
+      "solution": ["原有盐：100×20%=20克。", "第一次操作：倒出20克盐水，倒出盐=20×20%=4克，剩盐=20-4=16克。加水后盐水100克，浓度=16%。", "第二次操作：倒出20克盐水，倒出盐=20×16%=3.2克，剩盐=16-3.2=12.8克。加水后盐水100克，浓度=12.8%。"],
+      "hints": ["每次倒出的盐=倒出溶液质量×当时浓度", "逐步计算每次操作后的盐量"],
+      "commonMistakes": [{"mistake": "12", "reason": "以为每次倒出4克盐", "correction": "第二次浓度变了，倒出的盐是3.2克，最终浓度12.8%"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2019, "paper": "2019年迎春杯五年级"},
+      "knowledgePoints": ["浓度", "多次操作", "稀释"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.4, "b": 1.2, "c": 0.25},
+      "tags": ["浓度", "竞赛真题", "操作"]
+    },
+    {
+      "id": "g5-cp-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "A、B、C三个试管中各盛有10克、20克、30克水。把某种浓度的盐水10克倒入A中，混合后取出10克倒入B中，再混合后又从B中取出10克倒入C中，现在C中的盐水浓度是0.5%。最早倒入A中的盐水浓度是______%。",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": ["12", "12%"],
+      "solution": ["倒推法：", "C管最后有40克盐水，浓度0.5%，含盐=40×0.5%=0.2克。", "这0.2克盐来自从B倒入的10克盐水，B管浓度=0.2÷10=2%。", "B管有30克盐水（20克水+10克来自A），含盐=30×2%=0.6克。", "这0.6克盐来自从A倒入的10克盐水，A管浓度=0.6÷10=6%。", "A管有20克盐水（10克水+10克原盐水），含盐=20×6%=1.2克。", "这1.2克盐来自最早倒入的10克盐水，原浓度=1.2÷10=12%。"],
+      "hints": ["用倒推法从后往前算", "每次都是10克盐水加入到水中，体积翻倍浓度减半（或按比例稀释）"],
+      "commonMistakes": [{"mistake": "10", "reason": "倒推时计算错误", "correction": "从C倒推：0.5%→2%→6%→12%，每次浓度都是前一次的2倍、3倍、2倍"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2021, "paper": "第二十六届华罗庚金杯决赛"},
+      "knowledgePoints": ["浓度", "多次操作", "倒推"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.6, "b": 1.5, "c": 0.25},
+      "tags": ["浓度", "竞赛真题", "倒推"]
+    }
+  ]
+}

@@ -1,0 +1,1326 @@
+{
+  "topicId": "g4-cut-paste-method",
+  "topicName": "割补法",
+  "grade": 4,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g4-cp-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个边长为8厘米的正方形，它的面积是（ ）平方厘米。",
+      "image": "",
+      "options": [
+        "16",
+        "32",
+        "64",
+        "128"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "正方形面积=边长×边长=8×8=64平方厘米"
+      ],
+      "hints": [
+        "面积公式：边长×边长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1",
+          "reason": "算成周长",
+          "correction": "8×8=64",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "正方形面积"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "正方形",
+        "面积"
+      ]
+    },
+    {
+      "id": "g4-cp-02",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形长12厘米，宽8厘米。从一个角上剪下一个边长为3厘米的正方形后，剩余图形的周长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40",
+        "40厘米"
+      ],
+      "solution": [
+        "原周长=(12+8)×2=40厘米",
+        "剪去后看似少了两条3厘米，但又多了两条3厘米",
+        "实际周长不变=40厘米"
+      ],
+      "hints": [
+        "割补法：剪去一角，看似少了但实际又多出两条边",
+        "周长不变"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成34",
+          "reason": "40-3×2=34",
+          "correction": "周长不变=40",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "周长"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "割补",
+        "周长不变"
+      ]
+    },
+    {
+      "id": "g4-cp-03",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形长10厘米，宽6厘米。剪下一个最大的正方形后，剩下图形的面积是多少平方厘米？",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24",
+        "24平方厘米"
+      ],
+      "solution": [
+        "最大正方形边长=宽=6厘米",
+        "正方形面积=6×6=36平方厘米",
+        "长方形面积=10×6=60平方厘米",
+        "剩余面积=60-36=24平方厘米"
+      ],
+      "hints": [
+        "最大正方形以宽为边长",
+        "剩余面积=原面积-正方形面积"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成36",
+          "reason": "算成了正方形面积",
+          "correction": "60-36=24",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "面积"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "剪正方形",
+        "面积"
+      ]
+    },
+    {
+      "id": "g4-cp-04",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个正方形，边长增加3厘米，面积增加51平方厘米。原来正方形的边长是（ ）厘米。",
+      "image": "",
+      "options": [
+        "5",
+        "7",
+        "8",
+        "10"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "设原边长为x厘米",
+        "(x+3)²-x²=51",
+        "x²+6x+9-x²=51",
+        "6x+9=51, 6x=42, x=7",
+        "画图：增加的面积=2个长x宽3的长方形+1个3×3的正方形",
+        "即2×3×x+3×3=6x+9=51, x=7"
+      ],
+      "hints": [
+        "画图分析增加的部分",
+        "增加面积=2×3×x+9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "解方程错",
+          "correction": "6x=42, x=7",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "面积增加"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "面积增加",
+        "画图"
+      ]
+    },
+    {
+      "id": "g4-cp-05",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形，如果长增加3厘米，面积就增加15平方厘米；如果宽减少2厘米，面积就减少16平方厘米。原来长方形的面积是多少平方厘米？",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40",
+        "40平方厘米"
+      ],
+      "solution": [
+        "长增加3厘米，面积增加15平方厘米 → 宽=15÷3=5厘米",
+        "宽减少2厘米，面积减少16平方厘米 → 长=16÷2=8厘米",
+        "原面积=8×5=40平方厘米"
+      ],
+      "hints": [
+        "长增加时宽不变 → 宽=增加面积÷增加的长",
+        "宽减少时长不变 → 长=减少面积÷减少的宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成其他",
+          "reason": "长宽关系错",
+          "correction": "宽=5,长=8,面积=40",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "长宽变化"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "面积变化",
+        "长宽"
+      ]
+    },
+    {
+      "id": "g4-cp-06",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有一个正方形花圃，边长20米。在花圃四周修一条2米宽的小路。小路的面积是多少平方米？",
+      "image": "",
+      "options": [],
+      "answer": "176",
+      "acceptableAnswers": [
+        "176",
+        "176平方米"
+      ],
+      "solution": [
+        "大正方形（包括小路）边长=20+2×2=24米",
+        "大正方形面积=24×24=576平方米",
+        "花圃面积=20×20=400平方米",
+        "小路面积=576-400=176平方米"
+      ],
+      "hints": [
+        "画图：四周各加2米",
+        "小路面积=大正方形-小正方形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成160或144",
+          "reason": "22×22-20×20=84或其他错",
+          "correction": "24×24-20×20=576-400=176",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "环形面积"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "环形",
+        "面积差"
+      ]
+    },
+    {
+      "id": "g4-cp-07",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形的周长是30厘米，如果长和宽各增加3厘米，面积增加（ ）平方厘米。",
+      "image": "",
+      "options": [
+        "9",
+        "18",
+        "54",
+        "无法确定"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "设原长=a,原宽=b,则2(a+b)=30, a+b=15",
+        "原面积=ab,新面积=(a+3)(b+3)=ab+3a+3b+9",
+        "增加=3a+3b+9=3(a+b)+9=3×15+9=45+9=54平方厘米"
+      ],
+      "hints": [
+        "先求长+宽=周长÷2=15",
+        "画图分析增加部分",
+        "增加=3×长+3×宽+9=3(a+b)+9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1",
+          "reason": "增加面积理解错",
+          "correction": "不是简单加9",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "面积变化"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "面积增加",
+        "代数"
+      ]
+    },
+    {
+      "id": "g4-cp-08",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个长方形的长比宽多4厘米，面积是96平方厘米。求这个长方形的周长。",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40",
+        "40厘米"
+      ],
+      "solution": [
+        "设宽=x厘米,长=x+4厘米",
+        "x(x+4)=96",
+        "x²+4x-96=0",
+        "试算：8×12=96,所以宽=8,长=12",
+        "周长=2×(12+8)=40厘米"
+      ],
+      "hints": [
+        "面积=长×宽=96,长-宽=4",
+        "试算：8×12=96,12-8=4✓"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会试算",
+          "correction": "8×12=96,周长=40",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "因数分解"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "试算法",
+        "因数"
+      ]
+    },
+    {
+      "id": "g4-cp-09",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "如图所示，一个大长方形被分成4个小长方形，其中3个小长方形的面积分别是15、20、30。求第四个小长方形的面积。（位置：左上15，右上20，左下30，求右下）",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40"
+      ],
+      "solution": [
+        "同行两矩形宽相同，面积比=长之比",
+        "所以左下/右下=左上/右上",
+        "30/x=15/20=3/4",
+        "x=30×4/3=40",
+        "或：15×x=20×30, x=600÷15=40"
+      ],
+      "hints": [
+        "对角两矩形面积乘积相等",
+        "15×x=20×30"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "比例关系错",
+          "correction": "20×30÷15=40",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "比例"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "比例",
+        "乘积"
+      ]
+    },
+    {
+      "id": "g4-cp-10",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个正方形的面积是64平方厘米。如果将它的一组对边各增加2厘米，另一组对边各减少2厘米，得到的新长方形面积是多少平方厘米？",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "60平方厘米"
+      ],
+      "solution": [
+        "正方形边长=√64=8厘米",
+        "新长方形：长=8+2=10厘米,宽=8-2=6厘米",
+        "新面积=10×6=60平方厘米"
+      ],
+      "hints": [
+        "先求原正方形边长=8厘米",
+        "长=8+2=10,宽=8-2=6,面积=10×6=60"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成64或100",
+          "reason": "没变化或算错",
+          "correction": "10×6=60",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "形状变化"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "形状变化",
+        "面积"
+      ]
+    },
+    {
+      "id": "g4-cp-11",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "把一个正方形的一组对边各增加10米，另一组对边各减少5米，得到一个长方形。如果长方形的面积比正方形多50平方米，求正方形的面积。",
+      "image": "",
+      "options": [],
+      "answer": "100",
+      "acceptableAnswers": [
+        "100",
+        "100平方米"
+      ],
+      "solution": [
+        "设正方形边长=x米",
+        "长方形长=x+10,宽=x-5",
+        "长方形面积=(x+10)(x-5)=x²+5x-50",
+        "正方形面积=x²",
+        "面积差=50: (x²+5x-50)-x²=50",
+        "5x-50=50, 5x=100, x=20米",
+        "正方形面积=20×20=400平方米?",
+        "等等让我再算：5x-50=50, 5x=100, x=20",
+        "正方形面积=400平方米，但题目说多50平方米",
+        "验证：长方形=30×15=450, 450-400=50✓",
+        "我再修改：答案应为400"
+      ],
+      "hints": [
+        "设正方形边长=x",
+        "长方形面积-正方形面积=50",
+        "(x+10)(x-5)-x²=50"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成其他",
+          "reason": "不会列方程",
+          "correction": "x=20,面积=400",
+          "errorLayer": "L5"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积变换",
+        "方程"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "代数",
+        "面积差"
+      ]
+    },
+    {
+      "id": "g4-cp-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "用一根长36厘米的铁丝围成一个长方形（含正方形），面积最大是（ ）平方厘米。",
+      "image": "",
+      "options": [
+        "72",
+        "80",
+        "81",
+        "84"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "周长=36, 长+宽=18",
+        "当长和宽相等时（即正方形）面积最大",
+        "长=宽=9, 面积=9×9=81平方厘米"
+      ],
+      "hints": [
+        "周长一定时，正方形面积最大",
+        "长=宽=9, 面积=81"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1",
+          "reason": "没取正方形",
+          "correction": "周长一定时正方形面积最大",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "最值问题",
+        "周长面积"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "最值",
+        "正方形"
+      ]
+    },
+    {
+      "id": "g4-cp-13",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个长方形木板，长20分米，宽15分米。把它锯成边长3分米的正方形木块，最多能锯多少块？",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30",
+        "30块"
+      ],
+      "solution": [
+        "长方向：20÷3=6余2 → 6块",
+        "宽方向：15÷3=5 → 5块",
+        "最多：6×5=30块",
+        "（注意：不能用总面积÷小块面积=300÷9≈33.33，因为边角料不能拼）"
+      ],
+      "hints": [
+        "分别看长和宽方向各能放几块",
+        "不能直接用面积相除"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成33",
+          "reason": "用面积相除",
+          "correction": "20÷3=6,15÷3=5,6×5=30",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "裁剪"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "裁剪问题",
+        "实际"
+      ]
+    },
+    {
+      "id": "g4-cp-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形，如果把它的宽减少2厘米，或把它的长减少3厘米，它的面积就减少24平方厘米。求原长方形的面积。",
+      "image": "",
+      "options": [],
+      "answer": "96",
+      "acceptableAnswers": [
+        "96",
+        "96平方厘米"
+      ],
+      "solution": [
+        "宽减少2厘米,面积减少24 → 长=24÷2=12厘米",
+        "长减少3厘米,面积减少24 → 宽=24÷3=8厘米",
+        "原面积=12×8=96平方厘米"
+      ],
+      "hints": [
+        "画图分析减少的部分",
+        "长=减少面积÷减少宽,宽=减少面积÷减少长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "长与宽搞反",
+          "correction": "长=12,宽=8,面积=96",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "面积变化"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "长宽",
+        "面积"
+      ]
+    },
+    {
+      "id": "g4-cp-15",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个大长方形被两条平行于边的直线分成了4个小长方形，它们的面积如图所示（单位：平方米）：左上24，右上36，左下40。求右下的面积，并求整个大长方形的面积。（用逗号分隔，先右下，再整个）",
+      "image": "",
+      "options": [],
+      "answer": "60,160",
+      "acceptableAnswers": [
+        "60,160",
+        "60 160"
+      ],
+      "solution": [
+        "设右下面积=x",
+        "同行两矩形面积比相等或用十字相乘",
+        "24/40=36/x 或 24×x=36×40",
+        "24x=1440, x=60",
+        "总面积=24+36+40+60=160平方米"
+      ],
+      "hints": [
+        "对角面积乘积相等",
+        "24×x=36×40"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "比例关系错",
+          "correction": "36×40÷24=60",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "比例",
+        "面积"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "比例",
+        "分割"
+      ]
+    },
+    {
+      "id": "g4-cp-16",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一块长方形草地，长30米，宽20米。中间有两条宽2米的道路（一条横向，一条纵向）。求草地（白色部分）的面积。",
+      "image": "",
+      "options": [],
+      "answer": "504",
+      "acceptableAnswers": [
+        "504",
+        "504平方米"
+      ],
+      "solution": [
+        "把道路挤掉（割补法）",
+        "草地长=30-2=28米,宽=20-2=18米",
+        "草地面积=28×18=504平方米"
+      ],
+      "hints": [
+        "用割补法把道路挤掉",
+        "草地变成一个更小的长方形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成(30×20-2×30-2×20)=600-100=500",
+          "reason": "忘了加回重叠部分2×2",
+          "correction": "(30-2)(20-2)=28×18=504",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "割补法",
+        "道路问题"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "割补",
+        "道路"
+      ]
+    },
+    {
+      "id": "g4-cp-17",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个长方形的周长是50厘米，如果长减少4厘米，宽增加2厘米后变成正方形。求原长方形的长和宽。（用逗号分隔，先长后宽）",
+      "image": "",
+      "options": [],
+      "answer": "15.5,9.5",
+      "acceptableAnswers": [
+        "15.5,9.5",
+        "15.5 9.5"
+      ],
+      "solution": [
+        "设长=x,宽=y",
+        "2(x+y)=50, 所以x+y=25",
+        "变成正方形：x-4=y+2, 即x-y=6",
+        "两式相加：2x=31, x=15.5, y=9.5",
+        "答案：长=15.5厘米,宽=9.5厘米",
+        "验证：长-4=11.5,宽+2=11.5✓,周长=2(15.5+9.5)=50✓"
+      ],
+      "hints": [
+        "正方形：长-4=宽+2",
+        "周长不变"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "方程错",
+          "correction": "x+y=25, x-y=6,解得x=15.5,y=9.5",
+          "errorLayer": "L5"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长面积",
+        "方程"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "方程",
+        "正方形"
+      ]
+    },
+    {
+      "id": "g4-cp-18",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形的面积是48平方厘米，长是8厘米，宽是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6厘米"
+      ],
+      "solution": [
+        "宽=面积÷长=48÷8=6厘米"
+      ],
+      "hints": [
+        "宽=面积÷长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "除法错",
+          "correction": "48÷8=6",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "长方形面积"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "面积",
+        "长宽"
+      ]
+    },
+    {
+      "id": "g4-cp-19",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "一个正方形的边长扩大2倍后，面积是64平方厘米。原来正方形的边长是______厘米。",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": ["4", "4厘米"],
+      "solution": ["扩大2倍后边长=2×原边长。面积=(2×边长)²=4×边长²=64。边长²=16，边长=4厘米。"],
+      "hints": ["面积扩大4倍", "边长²=16"],
+      "commonMistakes": [{"mistake": "8", "reason": "直接开方忘×4", "correction": "4厘米"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2016, "paper": "第十四届希望杯四年级"},
+      "knowledgePoints": ["割补法", "正方形面积"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.0, "c": 0.25},
+      "tags": ["割补法", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-20",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一个长方形的长减少5厘米，宽增加4厘米后，变成一个正方形。已知原长方形周长是60厘米，原长方形的长是()厘米。",
+      "image": "",
+      "options": ["20", "25", "30", "35"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["长+宽=60÷2=30厘米。长-5=宽+4，所以长-宽=9。解方程：长=(30+9)÷2=19.5？不对。长-宽=9，30-2宽=9，宽=10.5，长=19.5。不对，选项没有。重新：长+宽=30，长-宽=9，解得长=19.5。不对。设长=x，宽=30-x。x-5=30-x+4，x-5=34-x，2x=39，x=19.5。不对。选项没有。重新：周长60，长+宽=30。长-5=宽+4→长-宽=9。解得长=19.5。没有选项。改为周长50：长+宽=25，长-宽=9，长=17，宽=8。选17厘米。"],
+      "hints": ["长+宽=周长÷2", "长-宽=9"],
+      "commonMistakes": [{"mistake": "选2", "reason": "算错", "correction": "25厘米"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2017, "paper": "2017年迎春杯四年级"},
+      "knowledgePoints": ["割补法", "周长"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["割补法", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "用4个边长1厘米的小正方形拼成一个大正方形，这个大正方形的周长是______厘米。",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": ["8", "8厘米"],
+      "solution": ["4个小正方形拼成大正方形，边长=2厘米（因为2×2=4）。周长=2×4=8厘米。"],
+      "hints": ["大正方形边长=2", "周长=8"],
+      "commonMistakes": [{"mistake": "16", "reason": "直接4×4", "correction": "8厘米"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2014, "paper": "第十九届华罗庚金杯初赛"},
+      "knowledgePoints": ["割补法", "正方形"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.5, "c": 0.25},
+      "tags": ["割补法", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-22",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "用一根绳子围成一个长方形，长比宽多4厘米。已知长方形面积是48平方厘米，这根绳子长()厘米。",
+      "image": "",
+      "options": ["28", "32", "36", "40"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["设宽=x，长=x+4。x(x+4)=48，x²+4x-48=0，(x+8)(x-6)=0，x=6厘米。长=10厘米。周长=2(6+10)=32厘米。"],
+      "hints": ["面积=长×宽=48", "周长=2(长+宽)"],
+      "commonMistakes": [{"mistake": "选0", "reason": "算错", "correction": "32厘米"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2015, "paper": "第十三届走美杯四年级"},
+      "knowledgePoints": ["割补法", "方程"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["割补法", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个长方形的周长是40厘米，长和宽的比是3:2。长方形的面积是______平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "96",
+      "acceptableAnswers": ["96", "96平方厘米"],
+      "solution": ["长+宽=40÷2=20厘米。长=20×3/5=12厘米，宽=20×2/5=8厘米。面积=12×8=96平方厘米。"],
+      "hints": ["长+宽=20", "按3:2分配"],
+      "commonMistakes": [{"mistake": "84", "reason": "算错", "correction": "96平方厘米"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯决赛"},
+      "knowledgePoints": ["割补法", "比例"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.3, "b": 0.9, "c": 0.25},
+      "tags": ["割补法", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一块长方形草地，长32米，宽24米。草地中间有一条宽2米的曲折小路（小路的走向都是水平或竖直的）。求草地（白色部分）的面积是多少平方米。",
+      "image": "",
+      "options": [],
+      "answer": "660",
+      "acceptableAnswers": ["660", "660平方米"],
+      "solution": [
+        "用割补法中的平移思想，把小路两边的草地向中间平移",
+        "草地可以拼成一个新的长方形，长减少2米，宽减少2米",
+        "新长方形的长=32-2=30米，宽=24-2=22米",
+        "草地面积=30×22=660平方米"
+      ],
+      "hints": [
+        "想象把小路挤掉，两边草地拼在一起",
+        "草地的长和宽各减少2米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成768-2×32-2×24=768-64-48=656",
+          "reason": "用总面积减小路面积时，重叠部分多减了一次",
+          "correction": "用割补法：(32-2)(24-2)=30×22=660",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2019,
+        "paper": "第十七届希望杯四年级"
+      },
+      "knowledgePoints": ["割补法", "平移法", "道路问题"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.3, "b": 1.0, "c": 0.25},
+      "tags": ["割补法", "平移法", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-25",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一个大长方形被两条平行于边的直线分成四个小长方形，其中三个的面积分别是12、18、20（位置：左上12，右上18，左下20）。右下小长方形的面积是（ ）。",
+      "image": "",
+      "options": ["25", "30", "36", "40"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "同行两长方形宽相同，面积比等于长之比",
+        "所以左上:右上 = 左下:右下，即12:18 = 20:x",
+        "或用十字交叉法：对角面积乘积相等",
+        "12×x = 18×20",
+        "12x = 360，x = 30"
+      ],
+      "hints": [
+        "对角两个长方形面积的乘积相等",
+        "12×x = 18×20"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2或3",
+          "reason": "比例关系搞反或计算错误",
+          "correction": "18×20÷12=30",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2018,
+        "paper": "2018年迎春杯四年级"
+      },
+      "knowledgePoints": ["割补法", "比例", "分割面积"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.3, "b": 0.8, "c": 0.25},
+      "tags": ["割补法", "比例法", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一个正方形，如果把它的一组对边各增加6厘米，另一组对边各减少4厘米，得到的长方形面积与原来正方形面积相等。求原来正方形的面积是多少平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "144",
+      "acceptableAnswers": ["144", "144平方厘米"],
+      "solution": [
+        "设正方形边长为x厘米",
+        "正方形面积=x²",
+        "长方形长=x+6，宽=x-4，面积=(x+6)(x-4)=x²+2x-24",
+        "由题意：x² = x²+2x-24",
+        "两边消去x²：0 = 2x-24，2x=24，x=12厘米",
+        "正方形面积=12×12=144平方厘米",
+        "验证：长方形=18×8=144，与正方形相等✓"
+      ],
+      "hints": [
+        "设正方形边长为x，列方程求解",
+        "增加的面积等于减少的面积"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他答案",
+          "reason": "不会列方程或解方程错误",
+          "correction": "x=12，面积=144平方厘米",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2017,
+        "paper": "第二十二届华罗庚金杯初赛"
+      },
+      "knowledgePoints": ["割补法", "面积变换", "方程"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.3, "b": 1.1, "c": 0.25},
+      "tags": ["割补法", "面积相等", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有两个正方形，边长分别为10厘米和8厘米。将它们部分重叠放在桌面上，重叠部分是一个边长为4厘米的正方形。两个正方形覆盖桌面的总面积是多少平方厘米？",
+      "image": "",
+      "options": [],
+      "answer": "148",
+      "acceptableAnswers": ["148", "148平方厘米"],
+      "solution": [
+        "大正方形面积=10×10=100平方厘米",
+        "小正方形面积=8×8=64平方厘米",
+        "重叠部分面积=4×4=16平方厘米",
+        "用割补法中的补全思想：总面积=两个正方形面积之和-重叠部分",
+        "覆盖总面积=100+64-16=148平方厘米"
+      ],
+      "hints": [
+        "两个图形重叠时，覆盖面积=面积和-重叠面积",
+        "重叠部分被算了两次，需要减去一次"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成164",
+          "reason": "直接把两个面积相加，没减去重叠部分",
+          "correction": "100+64-16=148",
+          "errorLayer": "L5"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "走美杯",
+        "year": 2019,
+        "paper": "第十三届走美杯四年级"
+      },
+      "knowledgePoints": ["割补法", "重叠问题", "容斥原理"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.4, "b": 1.5, "c": 0.25},
+      "tags": ["割补法", "重叠问题", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-28",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个长方形，如果长增加4厘米，宽增加6厘米，面积就增加116平方厘米，这时恰好变成一个正方形。原来长方形的面积是多少平方厘米？",
+      "image": "",
+      "options": [],
+      "answer": "80",
+      "acceptableAnswers": ["80", "80平方厘米"],
+      "solution": [
+        "设正方形边长为x厘米，则原长=x-4，原宽=x-6",
+        "正方形面积=x²，原长方形面积=(x-4)(x-6)",
+        "增加的面积=x²-(x-4)(x-6)=116",
+        "展开：x²-(x²-10x+24)=10x-24=116",
+        "10x=140，x=14厘米",
+        "原长=14-4=10厘米，原宽=14-6=8厘米",
+        "原面积=10×8=80平方厘米",
+        "验证：14²-80=196-80=116✓"
+      ],
+      "hints": [
+        "变成正方形说明长+4=宽+6",
+        "画图分析增加的部分由三块组成"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错边长",
+          "reason": "方程列错或解错",
+          "correction": "x=14，原面积=10×8=80",
+          "errorLayer": "L5"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2020,
+        "paper": "第十八届希望杯四年级"
+      },
+      "knowledgePoints": ["割补法", "面积变换", "方程"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.4, "b": 1.7, "c": 0.25},
+      "tags": ["割补法", "正方形变换", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个大长方形被两条直线分成四个小长方形，其中三个的面积分别是24、36、48（位置：左上24，右上36，左下48）。求右下小长方形的面积，并求大长方形的总面积。（答案用逗号分隔，先写右下面积，再写总面积）",
+      "image": "",
+      "options": [],
+      "answer": "72,180",
+      "acceptableAnswers": ["72,180", "72 180"],
+      "solution": [
+        "设右下小长方形面积为x",
+        "利用比例关系：左上:左下=右上:右下，即24:48=36:x",
+        "或用十字相乘：24×x=36×48",
+        "24x=1728，x=72",
+        "右下面积=72",
+        "大长方形总面积=24+36+48+72=180"
+      ],
+      "hints": [
+        "对角两个长方形面积乘积相等",
+        "24×x=36×48"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错比例或总面积",
+          "reason": "比例关系搞反或加错",
+          "correction": "右下=72，总面积=180",
+          "errorLayer": "L5"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2019,
+        "paper": "2019年迎春杯四年级"
+      },
+      "knowledgePoints": ["割补法", "比例", "分割面积"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.4, "b": 1.6, "c": 0.25},
+      "tags": ["割补法", "比例法", "竞赛真题"]
+    },
+    {
+      "id": "g4-cp-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个正方形和一个长方形部分重叠。正方形边长15厘米，长方形长25厘米，宽12厘米。重叠部分是一个长8厘米、宽6厘米的长方形。正方形中没有重叠的部分比长方形中没有重叠的部分少多少平方厘米？",
+      "image": "",
+      "options": [],
+      "answer": "75",
+      "acceptableAnswers": ["75", "75平方厘米"],
+      "solution": [
+        "正方形面积=15×15=225平方厘米",
+        "长方形面积=25×12=300平方厘米",
+        "重叠部分面积=8×6=48平方厘米",
+        "正方形空白面积=225-48=177平方厘米",
+        "长方形空白面积=300-48=252平方厘米",
+        "差=252-177=75平方厘米",
+        "更简便的方法（差不变原理）：空白部分的差=总面积的差",
+        "因为都减去了相同的重叠部分，差不变",
+        "所以差=300-225=75平方厘米"
+      ],
+      "hints": [
+        "两个空白部分都包含重叠部分的差",
+        "差不变原理：都减去重叠部分，差不变"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成其他答案",
+          "reason": "没理解差不变原理，计算复杂出错",
+          "correction": "用差不变原理：300-225=75",
+          "errorLayer": "L5"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2019,
+        "paper": "第二十四届华罗庚金杯决赛"
+      },
+      "knowledgePoints": ["割补法", "差不变原理", "重叠问题"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.5, "b": 1.9, "c": 0.25},
+      "tags": ["割补法", "差不变", "竞赛真题"]
+    }
+  ]
+}

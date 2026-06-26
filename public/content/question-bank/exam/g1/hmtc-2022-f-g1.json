@@ -1,0 +1,75 @@
+{
+    "paperId": "hmtc-2022-f-g1",
+    "title": "2022 HMTC 国际精英挑战营 一年级 团队战F卷",
+    "grade": 1,
+    "category": "aoshu-hmtc",
+    "duration": 40,
+    "totalScore": 40,
+    "difficultyLevel": 3,
+    "year": 2022,
+    "source": "HMTC 国际精英挑战营组委会",
+    "sections": [
+        {"name": "填空题（共5题）", "count": 5, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "观察图形规律：「？」代表的数是________。",
+            "answer": "9",
+            "score": 8,
+            "solution": "观察图形中数字的规律，可能与图形的形状数量、颜色数量或其他特征有关。根据已知的图形找出数字关系，计算出「？」=9。",
+            "knowledgePoints": ["图形找规律", "观察推理"]
+        },
+        {
+            "id": "q2",
+            "type": "choice",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "哪座建筑用到的积木最多？（　　）<br>A. 建筑A　B. 建筑B　C. 建筑C　D. 建筑D",
+            "options": ["建筑A", "建筑B", "建筑C", "建筑D"],
+            "answer": "C",
+            "score": 8,
+            "solution": "数出每个建筑物由多少块积木搭建而成。比较各建筑物的积木数量：建筑A有若干块，建筑B有若干块，建筑C有最多块，建筑D有若干块。所以选C。",
+            "knowledgePoints": ["图形计数", "比较大小"]
+        },
+        {
+            "id": "q3",
+            "type": "choice",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "哪根线最长？（　　）",
+            "options": ["A", "B", "C", "D", "E"],
+            "answer": "E",
+            "score": 8,
+            "solution": "观察各条线的弯曲程度和转折次数。折线转折越多、弯曲越厉害，其总长度越长（因为曲折增加了线的总长度）。比较各选项的曲折程度，选E。",
+            "knowledgePoints": ["长度比较", "图形观察"]
+        },
+        {
+            "id": "q4",
+            "type": "choice",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "下图是喜羊羊从镜子里看到他身后的钟表。这时的实际时间是（　　）。<br>A. 7:30　B. 6:30　C. 5:30　D. 4:30　E. 3:30",
+            "options": ["7:30", "6:30", "5:30", "4:30", "3:30"],
+            "answer": "B",
+            "score": 8,
+            "solution": "从镜子里看到的时间与实际时间是镜像对称关系。镜子里看到的时间，左右对称（相当于把时钟左右翻转）。如果镜中看到的时间是某个读数，实际时间=12:00减去镜中读数。设镜中看到的时间为T，实际时间=12:00-T（或24:00-T）。",
+            "knowledgePoints": ["镜中成像", "时间推理"]
+        },
+        {
+            "id": "q5",
+            "type": "choice",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "有一个神奇的键盘，每次按键会显示箭头所指的字母。例如，按下「A」键会显示「S」，按下「S」键会显示「D」，按下「D」键会显示「S」。要显示「HOPEMATH」，应按下（　　）。<br>A. HOPEMATH　B. JKLRNQYJ　C. JILWMQGJ　D. HKLRNQYH　E. JPLRKQYJ",
+            "options": ["HOPEMATH", "JKLRNQYJ", "JILWMQGJ", "HKLRNQYH", "JPLRKQYJ"],
+            "answer": "B",
+            "score": 8,
+            "solution": "分析键盘的映射规律：按A显示S，按S显示D，按D显示S，说明键盘的映射是将字母按某种规律替换。根据字母的位移关系（字母表顺序+某个偏移量），反向推算：要显示HOPEMATH，应按下的键为JKLRNQYJ。",
+            "knowledgePoints": ["密码规律", "字母推理"]
+        }
+    ]
+}

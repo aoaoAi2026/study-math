@@ -1,0 +1,460 @@
+{
+  "topicId": "g2-division-table",
+  "topicName": "除法口诀",
+  "grade": 2,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g2-dt-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "计算：8÷2=（　　）",
+      "image": "",
+      "options": ["2", "3", "4", "5"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "8÷2的意思是：把8平均分成2份，每份是多少？",
+        "或者：8里面有几个2？",
+        "用乘法口诀想：二（四）得八，所以8÷2=4。"
+      ],
+      "hints": [
+        "想2的乘法口诀",
+        "几乘2等于8？"
+      ],
+      "commonMistakes": [
+        {"mistake": "选3", "reason": "把8÷2算成了8-5=3", "correction": "应该想：2×?=8，所以是4", "errorLayer": "L1"},
+        {"mistake": "选5", "reason": "把除法和加法搞混了", "correction": "8÷2是平均分，不是8-3", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "除法的意义", "2的除法口诀"],
+      "estimatedTime": 15,
+      "irtParams": { "a": 1.0, "b": -2.0, "c": 0.25 },
+      "tags": ["除法口诀", "计算"]
+    },
+    {
+      "id": "g2-dt-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "12个苹果平均分给3个小朋友，每人分到______个。",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": ["4", "4个"],
+      "solution": [
+        "把12个苹果平均分给3个小朋友，就是把12平均分成3份。",
+        "12÷3=?，想乘法口诀：三（四）十二。",
+        "所以12÷3=4，每人分到4个苹果。"
+      ],
+      "hints": [
+        "\"平均分\"要用除法",
+        "想：三（几）十二"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成3", "reason": "错用了三三得九", "correction": "应该是三四十二", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "除法的意义", "平均分"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": -1.5, "c": 0.25 },
+      "tags": ["除法口诀", "应用题", "平均分"]
+    },
+    {
+      "id": "g2-dt-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下面哪个算式表示把10平均分成5份？",
+      "image": "",
+      "options": ["10+5", "10-5", "10×5", "10÷5"],
+      "answer": "3",
+      "acceptableAnswers": ["3"],
+      "solution": [
+        "把一个数平均分成几份，用除法计算。",
+        "把10平均分成5份，就是10÷5。",
+        "10÷5=2，每份是2。"
+      ],
+      "hints": [
+        "\"平均分\"用除法",
+        "除法符号是÷"
+      ],
+      "commonMistakes": [
+        {"mistake": "选10+5", "reason": "没理解平均分要用除法", "correction": "平均分就是除法：总数÷份数=每份数", "errorLayer": "L1"},
+        {"mistake": "选10×5", "reason": "把乘除法搞混了", "correction": "求几个几用乘法，平均分用除法", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法的意义", "除法算式"],
+      "estimatedTime": 20,
+      "irtParams": { "a": 1.0, "b": -1.8, "c": 0.25 },
+      "tags": ["除法口诀", "意义理解"]
+    },
+    {
+      "id": "g2-dt-04",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "被除数是15，除数是3，商是______。",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": ["5"],
+      "solution": [
+        "被除数÷除数=商",
+        "15÷3=?，想乘法口诀：三（五）十五。",
+        "所以商是5。"
+      ],
+      "hints": [
+        "记住：被除数÷除数=商",
+        "想3的乘法口诀"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成3", "reason": "把被除数和除数搞反了", "correction": "15是被除数，3是除数：15÷3=5", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法算式各部分名称", "除法口诀"],
+      "estimatedTime": 20,
+      "irtParams": { "a": 1.0, "b": -1.2, "c": 0.25 },
+      "tags": ["除法口诀", "除法各部分"]
+    },
+    {
+      "id": "g2-dt-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "有20支铅笔，每个小朋友分4支，可以分给几个小朋友？",
+      "image": "",
+      "options": ["4个", "5个", "6个", "8个"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "20支铅笔，每个小朋友分4支，求能分给几个小朋友。",
+        "这是求20里面有几个4，用除法。",
+        "20÷4=?，想：（五）四二十。",
+        "20÷4=5，可以分给5个小朋友。"
+      ],
+      "hints": [
+        "求一个数里有几个另一个数用除法",
+        "想4的乘法口诀"
+      ],
+      "commonMistakes": [
+        {"mistake": "选4个", "reason": "把20÷4算错成4了", "correction": "四五二十，所以20÷4=5", "errorLayer": "L1"},
+        {"mistake": "选8个", "reason": "把除法做成乘法了", "correction": "应该用除法，不是乘法", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "包含除", "解决实际问题"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": 0.0, "c": 0.25 },
+      "tags": ["除法口诀", "应用题"]
+    },
+    {
+      "id": "g2-dt-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "根据乘法口诀\"七八五十六\"，写出两道除法算式：______ 和 ______。",
+      "image": "",
+      "options": [],
+      "answer": "56÷7=8",
+      "acceptableAnswers": ["56÷7=8和56÷8=7", "56÷7=8；56÷8=7", "56÷8=7和56÷7=8"],
+      "solution": [
+        "一道乘法口诀一般可以写出两道除法算式。",
+        "七八五十六，积是56，两个乘数是7和8。",
+        "用积做被除数，两个乘数分别做除数和商：",
+        "56÷7=8 和 56÷8=7。"
+      ],
+      "hints": [
+        "积做被除数",
+        "两个乘数一个做除数，一个做商"
+      ],
+      "commonMistakes": [
+        {"mistake": "写成7×8=56", "reason": "写成乘法算式了", "correction": "题目要求写除法算式，应该是56÷7=8", "errorLayer": "L1"},
+        {"mistake": "写成7÷56=8", "reason": "把被除数和除数的位置放反了", "correction": "积作为被除数，应该是56÷7=8", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "除法算式", "乘除关系"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": 0.2, "c": 0.25 },
+      "tags": ["除法口诀", "改写"]
+    },
+    {
+      "id": "g2-dt-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在○里填上\"+\",\"-\",\"×\"或\"÷\"： 24 ○ 6 = 4",
+      "image": "",
+      "options": ["+", "-", "×", "÷"],
+      "answer": "3",
+      "acceptableAnswers": ["3"],
+      "solution": [
+        "我们一个个试：",
+        "24+6=30，不等于4。",
+        "24-6=18，不等于4。",
+        "24×6=144，不等于4。",
+        "24÷6=4，正好等于4。",
+        "所以填÷。"
+      ],
+      "hints": [
+        "24变成4，是变小了很多",
+        "变小很多可能是除法"
+      ],
+      "commonMistakes": [
+        {"mistake": "选-", "reason": "只看到数字变小了就选减法", "correction": "24-6=18不是4，应该用除法", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "运算符号选择"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": 0.3, "c": 0.25 },
+      "tags": ["除法口诀", "运算符号"]
+    },
+    {
+      "id": "g2-dt-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "36个桃子，每只猴子分4个，可以分给______只猴子。",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": ["9", "9只"],
+      "solution": [
+        "36个桃子，每只猴子分4个，求可以分给几只猴子。",
+        "就是求36里有几个4，用除法：36÷4=?",
+        "想乘法口诀：四（九）三十六。",
+        "36÷4=9，可以分给9只猴子。"
+      ],
+      "hints": [
+        "每只4个，就是以4为一份来分",
+        "想：四（几）三十六"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成8", "reason": "记错乘法口诀，四八三十二", "correction": "记住四九三十六", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "包含除", "解决实际问题"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": 0.4, "c": 0.25 },
+      "tags": ["除法口诀", "应用题"]
+    },
+    {
+      "id": "g2-dt-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面算式中，商最大的是：",
+      "image": "",
+      "options": ["12÷3", "18÷6", "24÷4", "30÷6"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "我们先算出每个算式的商：",
+        "12÷3=4（三四十二）",
+        "18÷6=3（三六十八）",
+        "24÷4=6（四六二十四）",
+        "30÷6=5（五六三十）",
+        "比较：4、3、6、5，最大的商是6。",
+        "所以商最大的是24÷4=6。"
+      ],
+      "hints": [
+        "先算出每个算式的结果",
+        "再比较大小"
+      ],
+      "commonMistakes": [
+        {"mistake": "选30÷6", "reason": "看到30是最大的数就选了，但30÷6=5比6小", "correction": "需要计算出每道题的商再比较", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "比较大小"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.5, "c": 0.25 },
+      "tags": ["除法口诀", "比较"]
+    },
+    {
+      "id": "g2-dt-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一根绳子长18米，把它剪成同样长的几段，剪了2次，每段长______米。",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": ["6", "6米"],
+      "solution": [
+        "这道题的关键是：剪的次数和段数的关系。",
+        "剪1次可以分成2段，剪2次可以分成3段。",
+        "段数=剪的次数+1，所以剪2次分成了3段。",
+        "18米平均分成3段，每段长18÷3=6米。"
+      ],
+      "hints": [
+        "剪2次分成几段？动手画一画试试",
+        "段数比剪的次数多1"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成9", "reason": "以为剪2次分成2段", "correction": "剪2次分成3段：18÷3=6", "errorLayer": "L2"},
+        {"mistake": "答案写成3", "reason": "把段数当成了答案", "correction": "段数是3段，每段长18÷3=6米", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "解决实际问题", "剪绳子问题"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.6, "c": 0.25 },
+      "tags": ["除法口诀", "应用题", "变式"]
+    },
+    {
+      "id": "g2-dt-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有一些糖，比30块多，比40块少。把这些糖平均分给9个小朋友，正好分完。有多少块糖？",
+      "image": "",
+      "options": ["32块", "35块", "36块", "38块"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "糖的数量比30多，比40少，并且能被9整除。",
+        "我们来想9的乘法口诀：",
+        "1×9=9，2×9=18，3×9=27，4×9=36，5×9=45。",
+        "在30和40之间的只有36。",
+        "36÷9=4，正好能分给9个小朋友，每人4块。",
+        "所以有36块糖。"
+      ],
+      "hints": [
+        "能被9整除，就是9的倍数",
+        "想9的乘法口诀，找30和40之间的数"
+      ],
+      "commonMistakes": [
+        {"mistake": "选32块", "reason": "32不能被9整除（32÷9有余数）", "correction": "应该是9的倍数：36", "errorLayer": "L2"},
+        {"mistake": "选38块", "reason": "看到38接近40就选了", "correction": "38÷9有余数，不能正好分完", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "整除", "较复杂的应用题"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 1.0, "c": 0.25 },
+      "tags": ["除法口诀", "应用题", "综合"]
+    },
+    {
+      "id": "g2-dt-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明买了6本同样的笔记本，一共花了48元。每本笔记本______元。",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": ["8", "8元"],
+      "solution": [
+        "6本笔记本48元，求每本多少钱。",
+        "这是把48元平均分成6份，求每份是多少。",
+        "48÷6=?，想：（八）六四十八。",
+        "48÷6=8，每本笔记本8元。"
+      ],
+      "hints": [
+        "总价÷数量=单价",
+        "想6的乘法口诀"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成6", "reason": "把除法和题目中的数字6搞混了", "correction": "48÷6=8，应该想乘法口诀", "errorLayer": "L2"},
+        {"mistake": "答案写成7", "reason": "把48÷6算成了7", "correction": "记住六八四十八", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "单价数量总价", "解决实际问题"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.8, "c": 0.25 },
+      "tags": ["除法口诀", "应用题", "购物"]
+    },
+    {
+      "id": "g2-dt-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "3个面包12元。妈妈买了同样的面包，花了28元。妈妈买了几个面包？",
+      "image": "",
+      "options": ["5个", "6个", "7个", "8个"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "先算出一个面包多少钱。",
+        "3个面包12元，所以1个面包：12÷3=4（元）。",
+        "妈妈花了28元，买了几个？",
+        "28÷4=7（个）。",
+        "所以妈妈买了7个面包。"
+      ],
+      "hints": [
+        "先求一个面包的价格",
+        "再求28元能买几个"
+      ],
+      "commonMistakes": [
+        {"mistake": "选6个", "reason": "算28÷4时算成了6", "correction": "28÷4=7（四七二十八）", "errorLayer": "L1"},
+        {"mistake": "选5个", "reason": "不会做两步应用题", "correction": "先求单价：12÷3=4元，再求数量：28÷4=7个", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "两步应用题", "单价数量总价"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 1.2, "c": 0.25 },
+      "tags": ["除法口诀", "应用题", "两步"]
+    },
+    {
+      "id": "g2-dt-14",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有45颗糖，小红拿了9颗，剩下的平均分给9个小朋友，每人分______颗。",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": ["4", "4颗"],
+      "solution": [
+        "先算剩下多少颗糖：45-9=36（颗）。",
+        "把36颗糖平均分给9个小朋友，用除法。",
+        "36÷9=4（颗），想：（四）九三十六。",
+        "所以每人分4颗糖。"
+      ],
+      "hints": [
+        "先算剩下多少颗",
+        "再平均分给9个小朋友"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成5", "reason": "直接用45÷9=5，忘了减9", "correction": "小红拿了9颗，应该先减9再除", "errorLayer": "L2"},
+        {"mistake": "答案写成3", "reason": "中间计算出错", "correction": "45-9=36，36÷9=4", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "减除混合", "两步应用题"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 1.1, "c": 0.25 },
+      "tags": ["除法口诀", "应用题", "两步"]
+    },
+    {
+      "id": "g2-dt-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小军在做一道除法题时，把除数6看成了9，结果得的商是4。正确的商应该是多少？",
+      "image": "",
+      "options": ["5", "6", "7", "8"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "这是一道\"看错数字\"的题目，我们要先找到不变的量——被除数。",
+        "小军把除数看成9，得到商4，所以被除数=9×4=36。",
+        "正确的除数是6，所以正确的商=36÷6=6。",
+        "所以正确的商应该是6。"
+      ],
+      "hints": [
+        "被除数是没有变的",
+        "用看错的除数和商先求出被除数",
+        "再用正确的除数计算"
+      ],
+      "commonMistakes": [
+        {"mistake": "选5", "reason": "计算错误", "correction": "9×4=36，36÷6=6", "errorLayer": "L2"},
+        {"mistake": "选7", "reason": "没有找到正确的方法", "correction": "先求被除数：9×4=36，再求正确的商：36÷6=6", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["除法口诀", "错中求解", "较复杂的应用题"],
+      "estimatedTime": 90,
+      "irtParams": { "a": 1.0, "b": 1.8, "c": 0.25 },
+      "tags": ["除法口诀", "应用题", "综合"]
+    }
+  ]
+}

@@ -1,0 +1,1283 @@
+{
+  "topicId": "g3-clever-perimeter",
+  "topicName": "巧求周长",
+  "grade": 3,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g3-cp-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个长方形，长 8 厘米，宽 5 厘米。周长是多少厘米？",
+      "image": "",
+      "options": [
+        "13",
+        "20",
+        "26",
+        "40"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "周长 = 2×(长+宽) = 2×(8+5) = 2×13 = 26 cm"
+      ],
+      "hints": [
+        "长方形周长 = 2×(长+宽)",
+        "也可长+长+宽+宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "8+5=13",
+          "reason": "没×2",
+          "correction": "2×13=26",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长",
+        "长方形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-cp-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个正方形，边长 7 厘米。周长是 ____ 厘米。",
+      "image": "",
+      "options": [],
+      "answer": "28",
+      "acceptableAnswers": [
+        "28"
+      ],
+      "solution": [
+        "周长 = 4×边长 = 4×7 = 28 cm"
+      ],
+      "hints": [
+        "正方形周长 = 4×边长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "7×7=49",
+          "reason": "算成面积",
+          "correction": "4×7=28",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长",
+        "正方形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-cp-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个长方形操场，长 50 米，宽 30 米。小明跑一圈，跑了多少米？",
+      "image": "",
+      "options": [
+        "80",
+        "120",
+        "160",
+        "200"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "周长 = 2×(50+30) = 2×80 = 160 米"
+      ],
+      "hints": [
+        "跑一圈 = 周长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "50+30=80",
+          "reason": "没×2",
+          "correction": "160米",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长",
+        "应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "操场"
+      ]
+    },
+    {
+      "id": "g3-cp-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个正方形花坛，边长 12 米。周长是多少米？",
+      "image": "",
+      "options": [],
+      "answer": "48",
+      "acceptableAnswers": [
+        "48"
+      ],
+      "solution": [
+        "周长 = 4×12 = 48 米"
+      ],
+      "hints": [
+        "4边相等"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "12×12=144",
+          "reason": "算面积",
+          "correction": "4×12=48",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长",
+        "正方形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "花坛"
+      ]
+    },
+    {
+      "id": "g3-cp-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "用一根长 48 厘米的铁丝围成一个正方形，边长是多少厘米？",
+      "image": "",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "16"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "边长 = 48÷4 = 12 cm"
+      ],
+      "hints": [
+        "铁丝长 = 周长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "48÷2=24",
+          "reason": "按长方形算",
+          "correction": "正方形÷4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长",
+        "反求"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "铁丝"
+      ]
+    },
+    {
+      "id": "g3-cp-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形，周长 40 厘米，长 12 厘米。宽是 ____ 厘米。",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "solution": [
+        "宽 = 周长÷2-长 = 40÷2-12 = 20-12 = 8 cm",
+        "或：(40-2×12)÷2 = (40-24)÷2 = 8 cm"
+      ],
+      "hints": [
+        "周长÷2 = 长+宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "40-12=28",
+          "reason": "乱减",
+          "correction": "40÷2-12=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长",
+        "反求"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-cp-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把一个正方形平均分成 2 个长方形，每个长方形长 10 厘米，宽 5 厘米。原来正方形的周长是多少厘米？",
+      "image": "",
+      "options": [
+        "30",
+        "40",
+        "50",
+        "60"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "正方形边长 = 10 cm（长 = 正方形边长）",
+        "周长 = 4×10 = 40 cm"
+      ],
+      "hints": [
+        "长方形的长 = 正方形的边长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2×(10+5)=30一个长方形",
+          "reason": "不是正方形",
+          "correction": "正方形=4×10=40",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长",
+        "分割"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "正方形"
+      ]
+    },
+    {
+      "id": "g3-cp-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长 12 厘米、宽 8 厘米的长方形纸片，剪下一个最大的正方形。剩下的长方形周长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24"
+      ],
+      "solution": [
+        "最大正方形边长 = 8 cm",
+        "剩下长方形 = 8 cm × 4 cm",
+        "周长 = 2×(8+4) = 24 cm"
+      ],
+      "hints": [
+        "最大正方形边长 = 宽",
+        "剩下的长 = 原宽，宽 = 原长-原宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2×(12+8)=40",
+          "reason": "算原长方形",
+          "correction": "算剩下的",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长",
+        "剪正方形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-cp-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形，长比宽多 5 厘米，宽 8 厘米。周长是多少厘米？",
+      "image": "",
+      "options": [
+        "21",
+        "32",
+        "42",
+        "52"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "长 = 8+5 = 13 cm",
+        "周长 = 2×(13+8) = 2×21 = 42 cm"
+      ],
+      "hints": [
+        "先求长",
+        "再用公式"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "8+5=13",
+          "reason": "没算周长",
+          "correction": "2×(13+8)=42",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长",
+        "和差"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-cp-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "两个边长 5 厘米的正方形拼成一个长方形。这个长方形的周长是 ____ 厘米。",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30"
+      ],
+      "solution": [
+        "长方形长 = 10 cm，宽 = 5 cm",
+        "周长 = 2×(10+5) = 30 cm",
+        "或：2×4×5-2×5 = 40-10 = 30"
+      ],
+      "hints": [
+        "拼起来后有两条边重合，要减去"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2×4×5=40",
+          "reason": "没减重合边",
+          "correction": "减2×5=10",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "周长",
+        "拼接"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "正方形"
+      ]
+    },
+    {
+      "id": "g3-cp-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形，如果长减少 3 厘米，就变成一个边长 8 厘米的正方形。原来长方形的周长是多少厘米？",
+      "image": "",
+      "options": [
+        "22",
+        "28",
+        "38",
+        "44"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "原来长 = 8+3 = 11 cm，宽 = 8 cm",
+        "周长 = 2×(11+8) = 2×19 = 38 cm"
+      ],
+      "hints": [
+        "\"变成正方形\"意味着宽 = 新边长",
+        "先求原长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "4×8=32",
+          "reason": "算正方形",
+          "correction": "算原长方形",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "巧求周长",
+        "变换"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-cp-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形，如果宽增加 5 厘米，就变成一个边长 15 厘米的正方形。原来长方形的周长是 ____ 厘米。",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": [
+        "50"
+      ],
+      "solution": [
+        "原宽 = 15-5 = 10 cm，原长 = 15 cm",
+        "周长 = 2×(15+10) = 2×25 = 50 cm"
+      ],
+      "hints": [
+        "增加后变成正方形说明：长 = 新边长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2×(15+5)=40",
+          "reason": "算新图形",
+          "correction": "要算原图形",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "巧求周长",
+        "变换"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-cp-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一张长 20 厘米、宽 12 厘米的长方形纸，沿中间对折后剪成两个一样的小长方形。每个小长方形的周长是多少厘米？（沿长边对折）",
+      "image": "",
+      "options": [
+        "32",
+        "44",
+        "52",
+        "64"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "沿长边对折后：长 = 12 cm，宽 = 10 cm",
+        "周长 = 2×(12+10) = 44？重新算：沿长边对折意思是把长折半。新长 = 20÷2 = 10，宽仍=12，周长=2×(10+12)=44=选项1"
+      ],
+      "hints": [
+        "沿长边对折 = 长÷2, 宽不变",
+        "画图理解"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2×(20+12)÷2=32",
+          "reason": "周长不能直接÷2",
+          "correction": "算新图形",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "巧求周长",
+        "对折"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-cp-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "用 3 个边长 4 厘米的正方形拼成一个长方形。这个长方形的周长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "32",
+      "acceptableAnswers": [
+        "32"
+      ],
+      "solution": [
+        "3个拼成长方形：长 = 3×4 = 12 cm，宽 = 4 cm",
+        "周长 = 2×(12+4) = 2×16 = 32 cm"
+      ],
+      "hints": [
+        "拼成长方形后重合的边不算周长",
+        "也可3×4×4-4×4=48-16=32"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3×4×4=48",
+          "reason": "直接3个正方形周长和",
+          "correction": "减重合边",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "巧求周长",
+        "拼接"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "组合"
+      ]
+    },
+    {
+      "id": "g3-cp-15",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形和一个正方形周长相等。长方形长 10 厘米，宽 6 厘米。正方形边长是多少厘米？",
+      "image": "",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "16"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "长方形周长 = 2×(10+6) = 32 cm",
+        "正方形边长 = 32÷4 = 8 cm"
+      ],
+      "hints": [
+        "先求长方形周长",
+        "再÷4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "10+6=16",
+          "reason": "没算完整",
+          "correction": "2×16÷4=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "巧求周长",
+        "等周长"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-cp-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一张长方形纸，长 24 厘米，宽 16 厘米。先剪下一个最大的正方形，再从剩下的纸中剪下一个最大的正方形。最后剩下的图形周长是 ____ 厘米。",
+      "image": "",
+      "options": [],
+      "answer": "32",
+      "acceptableAnswers": [
+        "32"
+      ],
+      "solution": [
+        "第一次剪：最大正方形边长=16 cm，剩下长16宽8的长方形",
+        "第二次剪：最大正方形边长=8 cm，剩下长8宽8的正方形（即边长8的小正方形？不：16-8=8，所以剩8×8的正方形）",
+        "最后剩下的是边长8的正方形",
+        "周长=4×8=32 cm"
+      ],
+      "hints": [
+        "每次最大正方形=当前的宽",
+        "一步步剪"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "直接2×(24-16)=16",
+          "reason": "思路不清",
+          "correction": "要分步计算",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "巧求周长",
+        "多次剪"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "图形"
+      ]
+    },
+    {
+      "id": "g3-cp-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "用 12 个边长 1 厘米的小正方形拼成一个长方形。拼成的长方形中，周长最大是多少厘米？",
+      "image": "",
+      "options": [
+        "14",
+        "26",
+        "28",
+        "52"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "12个小正方形拼长方形，有：1×12, 2×6, 3×4 三种",
+        "1×12：周长=2×(1+12)=26 cm",
+        "2×6：周长=2×(2+6)=16 cm",
+        "3×4：周长=2×(3+4)=14 cm",
+        "最大=26 cm"
+      ],
+      "hints": [
+        "越细长周长越大",
+        "越接近正方形周长越小"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "3×4=14最小",
+          "reason": "选成最小",
+          "correction": "选1×12=26最大",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "巧求周长",
+        "拼接",
+        "最值"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-cp-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个大长方形被分成两个小长方形，其中一个小长方形长 12 厘米、宽 8 厘米，另一个小长方形长 12 厘米、宽 5 厘米。原来大长方形的周长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": [
+        "50"
+      ],
+      "solution": [
+        "两个小长方形都是长12厘米，说明它们并排摆放",
+        "大长方形：长=12 cm，宽=8+5=13 cm",
+        "周长=2×(12+13)=2×25=50 cm"
+      ],
+      "hints": [
+        "先确定大长方形的长宽",
+        "画图帮助理解"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2×(12+8)+2×(12+5)=98",
+          "reason": "加两个小的周长",
+          "correction": "大长12，大宽8+5=13",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "巧求周长",
+        "组合",
+        "拼图"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "图形"
+      ]
+    },
+    {
+      "id": "g3-cp-19",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "一个长方形的长是 15 厘米，宽是 8 厘米。它的周长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "46",
+      "acceptableAnswers": ["46", "46厘米"],
+      "solution": [
+        "长方形周长 = 2×(长+宽)",
+        "= 2×(15+8) = 2×23 = 46 厘米"
+      ],
+      "hints": [
+        "长方形周长公式：(长+宽)×2",
+        "(15+8)×2=46"
+      ],
+      "commonMistakes": [
+        {"mistake": "15+8=23", "reason": "忘乘2", "correction": "要乘2：(15+8)×2=46", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2007, "paper": "第五届希望杯三年级"},
+      "knowledgePoints": ["长方形周长"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题"]
+    },
+    {
+      "id": "g3-cp-20",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "一个正方形的周长是 36 厘米，它的边长是多少厘米？",
+      "image": "",
+      "options": ["6厘米", "8厘米", "9厘米", "12厘米"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "正方形周长 = 4×边长",
+        "边长 = 周长÷4 = 36÷4 = 9 厘米"
+      ],
+      "hints": [
+        "正方形4条边相等",
+        "边长=周长÷4",
+        "36÷4=9"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0", "reason": "36÷6=6，记错公式", "correction": "正方形4条边，36÷4=9", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2009, "paper": "2009年迎春杯三年级"},
+      "knowledgePoints": ["正方形周长"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -0.2, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题"]
+    },
+    {
+      "id": "g3-cp-21",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "用一根长 40 厘米的铁丝围成一个长方形，已知长是 12 厘米，宽是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": ["8", "8厘米"],
+      "solution": [
+        "周长=40厘米，长+宽 = 40÷2 = 20厘米",
+        "宽 = 20-12 = 8厘米",
+        "检验：(12+8)×2=40 ✓"
+      ],
+      "hints": [
+        "周长÷2=长+宽",
+        "20-12=8厘米"
+      ],
+      "commonMistakes": [
+        {"mistake": "40-12=28", "reason": "周长是4条边", "correction": "先除以2再减长", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2006, "paper": "第十一届华罗庚金杯初赛"},
+      "knowledgePoints": ["长方形周长", "逆运算"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.1, "b": 0.2, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题"]
+    },
+    {
+      "id": "g3-cp-22",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "把一个边长为 10 厘米的正方形，剪成两个完全相同的长方形，每个长方形的周长是多少厘米？",
+      "image": "",
+      "options": ["20厘米", "30厘米", "40厘米", "50厘米"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "剪成两个长方形，长方形的长=10cm，宽=10÷2=5cm",
+        "每个长方形周长 = 2×(10+5) = 2×15 = 30厘米"
+      ],
+      "hints": [
+        "画图：正方形中间剪一刀",
+        "长方形长=10，宽=5",
+        "周长=2×(10+5)=30"
+      ],
+      "commonMistakes": [
+        {"mistake": "选2", "reason": "40÷2=20，以为周长也减半", "correction": "剪完后多了两条边，周长不是简单减半", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2010, "paper": "第八届走美杯三年级"},
+      "knowledgePoints": ["巧求周长", "剪切问题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题"]
+    },
+    {
+      "id": "g3-cp-23",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "两个大小相同的正方形，拼成一个长方形后，周长比原来两个正方形周长的和减少了 12 厘米。原来一个正方形的周长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": ["24", "24厘米"],
+      "solution": [
+        "两个正方形拼成长方形，重合了2条边（两条边拼在一起了）",
+        "所以减少的周长就是2条正方形边长",
+        "正方形边长 = 12÷2 = 6厘米",
+        "正方形周长 = 4×6 = 24厘米"
+      ],
+      "hints": [
+        "拼起来后，中间重合了2条边",
+        "减少的周长=2条边长",
+        "边长=12÷2=6，周长=24"
+      ],
+      "commonMistakes": [
+        {"mistake": "12×4=48", "reason": "以为减少的是周长", "correction": "减少的是2条边长，12÷2=6", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2011, "paper": "第九届希望杯三年级"},
+      "knowledgePoints": ["巧求周长", "拼接问题"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题"]
+    },
+    {
+      "id": "g3-cp-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "如图，一个阶梯形图形，每级台阶宽 3 厘米，高 2 厘米。这个图形的周长是多少厘米？（提示：用平移法，把阶梯的横边向上移，竖边向右移）",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": ["50", "50厘米"],
+      "solution": [
+        "用平移法：把所有横向台阶向上平移，所有纵向台阶向右平移",
+        "平移后变成一个长方形，长 = 5×3 = 15 厘米，宽 = 5×2 = 10 厘米",
+        "周长 = 2×(15+10) = 2×25 = 50 厘米"
+      ],
+      "hints": [
+        "平移法：横边向上移，竖边向右移",
+        "平移后变成一个长方形",
+        "有5级台阶：长=5×3，宽=5×2"
+      ],
+      "commonMistakes": [
+        {"mistake": "5×3+5×2=25", "reason": "只算了长和宽，没乘2", "correction": "周长=2×(长+宽)=2×25=50", "errorLayer": "L2"},
+        {"mistake": "数边数错", "reason": "一条一条数容易数漏", "correction": "用平移法更简单", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2012, "paper": "第十届希望杯三年级"},
+      "knowledgePoints": ["巧求周长", "平移法", "阶梯形"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.2, "b": 0.9, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题", "平移法"]
+    },
+    {
+      "id": "g3-cp-25",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一个长方形长 20 厘米，宽 15 厘米。如果在它的四个角上各剪去一个边长为 2 厘米的正方形，剩下图形的周长是多少厘米？",
+      "image": "",
+      "options": ["60厘米", "66厘米", "70厘米", "76厘米"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "在四个角各剪去一个正方形后，原来的周长看起来减少了，但实际上：",
+        "每个角剪去正方形时，去掉了2条边（各2厘米），但又多出了2条边（各2厘米）",
+        "所以周长不变，仍然等于原长方形的周长",
+        "原周长 = 2×(20+15) = 2×35 = 70 厘米"
+      ],
+      "hints": [
+        "画图看看，剪去正方形后周长变了吗？",
+        "每个角：去掉2条边，又多出2条边",
+        "周长不变，还是原来长方形的周长"
+      ],
+      "commonMistakes": [
+        {"mistake": "选0", "reason": "以为剪去后周长减少", "correction": "角上剪正方形，周长不变", "errorLayer": "L3"},
+        {"mistake": "选1", "reason": "70-4×2=62，乱减", "correction": "周长不变，还是70", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2010, "paper": "2010年迎春杯三年级"},
+      "knowledgePoints": ["巧求周长", "角上剪正方形", "凹凸形"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.2, "b": 0.85, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题", "凹凸形"]
+    },
+    {
+      "id": "g3-cp-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "用 5 个边长为 3 厘米的正方形拼成一个\"凸\"字形（下面3个并排，上面中间1个）。这个\"凸\"字形的周长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": ["36", "36厘米"],
+      "solution": [
+        "方法一：平移法",
+        "把凸字形的顶部横边向下平移，左右竖边向中间平移",
+        "可以看出：水平方向总长 = 3×3 = 9 厘米，有上下两条 = 18 厘米",
+        "垂直方向：左边 = 3+3 = 6 厘米，右边 = 3+3 = 6 厘米，中间凹进去的两边各3厘米 = 6厘米",
+        "垂直方向总长 = 6+6+6 = 18 厘米",
+        "总周长 = 18+18 = 36 厘米",
+        "方法二：5个正方形总周长 - 重合边×2",
+        "5个正方形周长和 = 5×4×3 = 60 厘米",
+        "重合的地方有4处（每处2条边重合），共减少 4×2×3 = 24 厘米",
+        "周长 = 60-24 = 36 厘米"
+      ],
+      "hints": [
+        "方法一：平移法，把不规则图形变规则",
+        "方法二：总周长减去重合的边",
+        "5个正方形拼在一起，有4处重合"
+      ],
+      "commonMistakes": [
+        {"mistake": "5×4×3=60", "reason": "没减重合边", "correction": "减去4处重合，每处2条边", "errorLayer": "L3"},
+        {"mistake": "60-3×4=48", "reason": "每处只减了1条边", "correction": "每处重合要减2条边", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2011, "paper": "第九届走美杯三年级"},
+      "knowledgePoints": ["巧求周长", "组合图形", "凸字形"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.2, "b": 0.95, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题", "组合图形"]
+    },
+    {
+      "id": "g3-cp-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个\"凹\"字形图形：外面是一个长 25 厘米、宽 18 厘米的长方形，在上面中间凹进去一个边长为 5 厘米的正方形。这个\"凹\"字形的周长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "96",
+      "acceptableAnswers": ["96", "96厘米"],
+      "solution": [
+        "凹字形周长 = 原长方形周长 + 凹进去的两条竖边",
+        "原长方形周长 = 2×(25+18) = 2×43 = 86 厘米",
+        "凹进去一个正方形，原来的上边少了5厘米，但又多出来3条边（左、下、右各5厘米）",
+        "所以总共增加了 2 条边 = 2×5 = 10 厘米",
+        "凹字形周长 = 86+10 = 96 厘米",
+        "验证：平移法",
+        "把凹进去的底边向上平移，补全长方形",
+        "此时周长 = 长方形周长 + 左右两条竖边 = 86 + 5×2 = 96 厘米 ✓"
+      ],
+      "hints": [
+        "凹字形比长方形多了2条竖边",
+        "平移法：把凹进去的底边向上移",
+        "周长 = 长方形周长 + 2×凹进去的边长"
+      ],
+      "commonMistakes": [
+        {"mistake": "86-5=81", "reason": "以为凹进去周长减少", "correction": "凹进去反而多了2条边", "errorLayer": "L3"},
+        {"mistake": "86+5=91", "reason": "只加了1条边", "correction": "要加2条边：86+10=96", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2009, "paper": "第十四届华罗庚金杯初赛"},
+      "knowledgePoints": ["巧求周长", "平移法", "凹字形"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.3, "b": 1.3, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题", "凹字形"]
+    },
+    {
+      "id": "g3-cp-28",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "用 16 个边长为 1 厘米的小正方形拼成长方形或正方形。拼成的图形中，周长最小是多少厘米？",
+      "image": "",
+      "options": ["16厘米", "18厘米", "20厘米", "34厘米"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "16个小正方形拼成长方形，有以下几种拼法：",
+        "1×16：周长 = 2×(1+16) = 34 厘米",
+        "2×8：周长 = 2×(2+8) = 20 厘米",
+        "4×4：周长 = 4×4 = 16 厘米（正方形是特殊的长方形）",
+        "所以周长最小是 16 厘米",
+        "规律：面积相等时，越接近正方形，周长越小"
+      ],
+      "hints": [
+        "16个正方形可以怎么拼？列出所有可能",
+        "1×16、2×8、4×4",
+        "越接近正方形，周长越小"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1", "reason": "只想到长方形，忘了正方形", "correction": "正方形也是长方形，4×4=16最小", "errorLayer": "L3"},
+        {"mistake": "选3", "reason": "算成最大的了", "correction": "题目问的是最小", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2013, "paper": "第十一届希望杯三年级"},
+      "knowledgePoints": ["巧求周长", "拼接问题", "最值问题"],
+      "estimatedTime": 240,
+      "irtParams": {"a": 1.3, "b": 1.4, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题", "最值问题"]
+    },
+    {
+      "id": "g3-cp-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个\"工\"字形图形：上下两个长方形都是长 12 厘米、宽 3 厘米，中间连接部分是一个长 4 厘米、宽 3 厘米的长方形。这个\"工\"字形的周长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "58",
+      "acceptableAnswers": ["58", "58厘米"],
+      "solution": [
+        "方法一：平移法",
+        "把工字形看作一个大长方形（长12厘米，宽=3+3+3=9厘米）",
+        "大长方形周长 = 2×(12+9) = 42 厘米",
+        "左右两边各凹进去一块，每边多出 2 条横边",
+        "每边多出的长度 = 2×(12-4)÷2 = 8 厘米",
+        "两边共多出 = 8×2 = 16 厘米",
+        "工字形周长 = 42+16 = 58 厘米",
+        "方法二：总周长减重合边",
+        "三个长方形周长和 = 2×2×(12+3) + 2×(4+3) = 60+14 = 74 厘米",
+        "重合处有2处（上下各一处），每处重合2条边，每条边4厘米",
+        "共减少 = 2×2×4 = 16 厘米",
+        "周长 = 74-16 = 58 厘米"
+      ],
+      "hints": [
+        "方法一：平移法，先算大长方形周长再加凹进去的边",
+        "方法二：三个长方形总周长减去重合的边",
+        "重合处有2处，每处重合2条边"
+      ],
+      "commonMistakes": [
+        {"mistake": "直接加三个周长=74", "reason": "忘了减去重合的边", "correction": "减去重合处的边，每处减2条，共减16", "errorLayer": "L3"},
+        {"mistake": "每处只减1条边", "reason": "两个图形拼在一起，各有1条边重合，共2条", "correction": "每处要减2条边的长度", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2012, "paper": "2012年迎春杯三年级"},
+      "knowledgePoints": ["巧求周长", "组合图形", "工字形"],
+      "estimatedTime": 300,
+      "irtParams": {"a": 1.3, "b": 1.5, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题", "组合图形"]
+    },
+    {
+      "id": "g3-cp-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个边长为 20 厘米的大正方形，把它剪成 4 个完全一样的小正方形。这 4 个小正方形的周长之和比原来大正方形的周长增加了多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "80",
+      "acceptableAnswers": ["80", "80厘米"],
+      "solution": [
+        "方法一：分别计算再相减",
+        "大正方形周长 = 4×20 = 80 厘米",
+        "小正方形边长 = 20÷2 = 10 厘米",
+        "1个小正方形周长 = 4×10 = 40 厘米",
+        "4个小正方形周长和 = 4×40 = 160 厘米",
+        "增加了 = 160-80 = 80 厘米",
+        "方法二：看剪开后增加了几条边",
+        "剪成4个小正方形，需要剪2刀（一横一竖）",
+        "每剪1刀，增加2条边（剪开后变成2条边）",
+        "剪2刀共增加 = 2×2 = 4 条边",
+        "每条边长20厘米",
+        "增加的周长 = 4×20 = 80 厘米"
+      ],
+      "hints": [
+        "方法一：先算大正方形周长，再算4个小正方形周长和，相减",
+        "方法二：剪几刀？每刀增加几条边？",
+        "剪1刀增加2条边，剪2刀增加4条边"
+      ],
+      "commonMistakes": [
+        {"mistake": "20×2=40", "reason": "以为只剪了1刀，增加2条边", "correction": "剪2刀（横、竖各1刀），增加4条边", "errorLayer": "L3"},
+        {"mistake": "10×4=40", "reason": "用小正方形边长乘", "correction": "增加的是大正方形的边长，20×4=80", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2011, "paper": "第十六届华罗庚金杯初赛"},
+      "knowledgePoints": ["巧求周长", "剪切问题", "周长变化"],
+      "estimatedTime": 300,
+      "irtParams": {"a": 1.3, "b": 1.6, "c": 0.25},
+      "tags": ["巧求周长", "竞赛真题", "综合题"]
+    }
+  ]
+}

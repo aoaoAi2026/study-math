@@ -1,0 +1,173 @@
+
+{
+    "paperId": "huabei-13-final-g3",
+    "title": "第十三届华罗庚金杯少年数学邀请赛 决赛试卷A（小学组）",
+    "grade": 3,
+    "category": "aoshu-huabei",
+    "duration": 90,
+    "totalScore": 150,
+    "difficultyLevel": 2,
+    "year": 2008,
+    "source": "华罗庚金杯少年数学邀请赛组委会",
+    "sections": [
+        {"name": "一、填空题（每题10分，共80分）", "count": 8, "scorePerQuestion": 10},
+        {"name": "二、解答题（每题10分，共40分）", "count": 4, "scorePerQuestion": 10},
+        {"name": "三、详答题（每题15分，共30分）", "count": 2, "scorePerQuestion": 15}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：12 + 14 + 16 + 18 + 20 = ______。",
+            "answer": "80",
+            "score": 10,
+            "solution": "5项，中间项16，和=16×5=80。或直接加：12+14=26,26+16=42,42+18=60,60+20=80。",
+            "knowledgePoints": ["加法"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：25 × 4 = ______。",
+            "answer": "100",
+            "score": 10,
+            "solution": "25×4=100。",
+            "knowledgePoints": ["乘法"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "一个正方形的边长是6厘米，它的周长是______厘米。",
+            "answer": "24",
+            "score": 10,
+            "solution": "周长=4×6=24厘米。",
+            "knowledgePoints": ["正方形周长"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小红有20元钱，买了3支铅笔，每支铅笔2元。还剩______元。",
+            "answer": "14",
+            "score": 10,
+            "solution": "花了3×2=6元。剩20-6=14元。",
+            "knowledgePoints": ["应用题"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一本书有96页，小华每天看8页，需要______天才能看完。",
+            "answer": "12",
+            "score": 10,
+            "solution": "96÷8=12天。",
+            "knowledgePoints": ["除法"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "在一条长50米的走廊两边，每隔5米放1盆花，两端都放。一共要放______盆花。",
+            "answer": "22",
+            "score": 10,
+            "solution": "一侧：50/5+1=11盆。两侧：11×2=22盆。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个长方形的周长是20厘米，长是6厘米。它的面积是______平方厘米。",
+            "answer": "24",
+            "score": 10,
+            "solution": "长+宽=10，宽=10-6=4厘米。面积=6×4=24平方厘米。",
+            "knowledgePoints": ["长方形"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有10只，脚一共有28只。鸡有______只。",
+            "answer": "6",
+            "score": 10,
+            "solution": "假设全是兔：10×4=40脚。实际28脚，少12。鸡=12/2=6只，兔=4只。验证：6×2+4×4=12+16=28✓。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 2,
+            "stem": "（解答题）小明有36块糖，分给小朋友每人4块，还剩4块。一共分给了多少个小朋友？",
+            "answer": "8",
+            "score": 10,
+            "solution": "分掉36-4=32块。小朋友数=32/4=8个。",
+            "knowledgePoints": ["除法应用"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）甲乙两筐苹果共有120个。如果从甲筐拿10个给乙筐，两筐苹果数相等。原来甲、乙两筐各有多少个苹果？",
+            "answer": "70",
+            "score": 10,
+            "solution": "甲-10=乙+10，甲-乙=20。甲+乙=120。甲=(120+20)/2=70，乙=(120-20)/2=50。原甲70个，乙50个。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）一列火车长300米，通过一座长900米的大桥用了1分钟。这列火车每秒行多少米？",
+            "answer": "20",
+            "score": 10,
+            "solution": "火车过桥共走300+900=1200米。用时60秒。速度=1200/60=20米/秒。",
+            "knowledgePoints": ["火车过桥"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）一个数加上8，再乘以8，再减去8，再除以8，结果还是8。求这个数。",
+            "answer": "1",
+            "score": 10,
+            "solution": "逆推：8×8=64，64+8=72，72/8=9，9-8=1。原数=1。验证：(1+8)×8-8)/8=(72-8)/8=64/8=8✓。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 3,
+            "stem": "（详答题）甲、乙两车同时从A、B两地相向而行，甲车每小时行50千米，乙车每小时行40千米，经过4小时两车相遇。A、B两地相距多少千米？",
+            "answer": "360",
+            "score": 15,
+            "solution": "距离=(50+40)×4=90×4=360千米。",
+            "knowledgePoints": ["相遇问题"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 3,
+            "stem": "（详答题）学校买来4张桌子和6把椅子，共用去1280元。每张桌子比每把椅子贵80元。每张桌子和每把椅子各多少元？",
+            "answer": "176",
+            "score": 15,
+            "solution": "设椅子x元，桌子=x+80。4(x+80)+6x=1280。4x+320+6x=1280，10x=960，x=96。椅子96元，桌子176元。验证：4×176+6×96=704+576=1280✓。",
+            "knowledgePoints": ["方程应用"]
+        }
+    ]
+}

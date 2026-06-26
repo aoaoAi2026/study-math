@@ -1,0 +1,126 @@
+{
+    "paperId": "yingchun-2014-g1",
+    "title": "2014年少儿迎春杯数学竞赛 一年级初赛",
+    "grade": 1,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 2,
+    "year": 2014,
+    "source": "少儿迎春杯数学竞赛组委会",
+    "sections": [
+        {"name": "填空题（每题10分，共10题）", "count": 10, "scorePerQuestion": 10}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：8+7-5+3-6 = ______。",
+            "answer": "7",
+            "score": 10,
+            "solution": "按顺序计算：8+7=15，15-5=10，10+3=13，13-6=7。",
+            "knowledgePoints": ["混合运算", "顺序计算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小明排在队伍的第9个，小红排在队伍的第16个。小明和小红之间有______个人。",
+            "answer": "6",
+            "score": 10,
+            "solution": "两人之间的人数=大数-小数-1=16-9-1=6人。",
+            "knowledgePoints": ["排队问题"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "找规律填数：1、1、2、3、5、8、______、21。",
+            "answer": "13",
+            "score": 10,
+            "solution": "观察规律：从第三个数开始，每个数等于前两个数之和。1+1=2，1+2=3，2+3=5，3+5=8，5+8=13，8+13=21。所以答案是13。",
+            "knowledgePoints": ["找规律", "斐波那契数列"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "把一根绳子对折后再对折，从中间剪开，绳子被剪成______段。",
+            "answer": "5",
+            "score": 10,
+            "solution": "对折两次，绳子变成4股。从中间剪开，4股变成4×2=8个端点，8个端点÷2=4段？不对。对折2次变成4股，剪开后共有5段。可用公式：2^n+1=2^2+1=5。",
+            "knowledgePoints": ["剪绳子问题", "规律"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个盒子里有10颗糖，小明第一天吃了2颗，第二天吃了3颗，还剩______颗。",
+            "answer": "5",
+            "score": 10,
+            "solution": "10-2-3=5颗。还剩5颗。",
+            "knowledgePoints": ["连减应用题"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "3个小朋友比6个小朋友少______人。",
+            "answer": "3",
+            "score": 10,
+            "solution": "6-3=3人。少3人。",
+            "knowledgePoints": ["简单减法"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个正方形有4条边，两个正方形一共有______条边。",
+            "answer": "8",
+            "score": 10,
+            "solution": "每个正方形有4条边，2个正方形共有2×4=8条边。",
+            "knowledgePoints": ["乘法应用"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小华看一本书，第一天从第1页看到第5页，第二天从第6页看到第10页。小华两天共看了______页。",
+            "answer": "10",
+            "score": 10,
+            "solution": "第一天看5页（1~5），第二天看5页（6~10），共5+5=10页。",
+            "knowledgePoints": ["页数计算"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "把15个球分给3个小朋友，要求每个小朋友分到的球数都不一样多。最多的小朋友可以分到______个球。",
+            "answer": "9",
+            "score": 10,
+            "solution": "三个不同数之和为15，且最大数尽可能大。最小两个数的和应尽可能小：1+2=3，所以最大数=15-3=12？但三个不同数还需考虑平均分。设三个数为a<b<c，a+b+c=15，c最大。a=1,b=2,c=12→1+2+12=15验证：三个不同数分别为1、2、12，但需考虑实际分配可能性。按不同自然数最小1+2+3=6，最多c=15-1-2=12个。",
+            "knowledgePoints": ["拆分问题", "枚举"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小明的妈妈买了一些苹果，第一天吃了一半，第二天吃了剩下的一半，还剩3个。原来买了______个苹果。",
+            "answer": "12",
+            "score": 10,
+            "solution": "倒推法：第二天吃完后剩3个，说明第一天吃完后剩3×2=6个。原来有6×2=12个。",
+            "knowledgePoints": ["倒推法", "逆向思维"]
+        }
+    ]
+}

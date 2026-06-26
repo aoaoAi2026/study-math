@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import AppLayout from '@/components/layout/AppLayout.vue'
 
 const router = useRouter()
 
@@ -78,6 +77,15 @@ const games: GameInfo[] = [
     difficulty: 3,
     category: 'puzzle',
     players: 3210
+  },
+  {
+    id: 'monopoly',
+    name: '数学大富翁',
+    icon: '🎲',
+    desc: '投掷骰子前进，答题获得金币奖励',
+    difficulty: 2,
+    category: 'calc',
+    players: 15680
   }
 ]
 
@@ -106,46 +114,44 @@ function getDifficultyStars(n: number) {
 </script>
 
 <template>
-  <AppLayout>
-    <div class="game-lobby">
-      <header class="gl-header">
-        <h1>🎮 游戏中心</h1>
-        <p class="muted">边玩边学，让数学变得有趣</p>
-      </header>
+  <div class="game-lobby">
+    <header class="gl-header">
+      <h1>🎮 游戏中心</h1>
+      <p class="muted">边玩边学，让数学变得有趣</p>
+    </header>
 
-      <div class="category-tabs">
-        <button
-          v-for="c in categories"
-          :key="c.id"
-          class="category-tab"
-          :class="{ active: selectedCategory === c.id }"
-          @click="selectedCategory = c.id"
-        >
-          {{ c.label }}
-        </button>
-      </div>
+    <div class="category-tabs">
+      <button
+        v-for="c in categories"
+        :key="c.id"
+        class="category-tab"
+        :class="{ active: selectedCategory === c.id }"
+        @click="selectedCategory = c.id"
+      >
+        {{ c.label }}
+      </button>
+    </div>
 
-      <div class="games-grid">
-        <div
-          v-for="game in filteredGames"
-          :key="game.id"
-          class="game-card"
-          @click="playGame(game.id)"
-        >
-          <div class="game-icon">{{ game.icon }}</div>
-          <div class="game-info">
-            <h3 class="game-name">{{ game.name }}</h3>
-            <p class="game-desc">{{ game.desc }}</p>
-            <div class="game-meta">
-              <span class="stars">{{ getDifficultyStars(game.difficulty) }}</span>
-              <span class="players">{{ game.players.toLocaleString() }} 人在玩</span>
-            </div>
+    <div class="games-grid">
+      <div
+        v-for="game in filteredGames"
+        :key="game.id"
+        class="game-card"
+        @click="playGame(game.id)"
+      >
+        <div class="game-icon">{{ game.icon }}</div>
+        <div class="game-info">
+          <h3 class="game-name">{{ game.name }}</h3>
+          <p class="game-desc">{{ game.desc }}</p>
+          <div class="game-meta">
+            <span class="stars">{{ getDifficultyStars(game.difficulty) }}</span>
+            <span class="players">{{ game.players.toLocaleString() }} 人在玩</span>
           </div>
-          <button class="play-btn">开始</button>
         </div>
+        <button class="play-btn">开始</button>
       </div>
     </div>
-  </AppLayout>
+  </div>
 </template>
 
 <style scoped>
@@ -176,16 +182,16 @@ function getDifficultyStars(n: number) {
 }
 .category-tab {
   padding: 10px 20px;
-  border: 2px solid #E2E8F0;
+  border: 2px solid var(--border-color);
   border-radius: 12px;
-  background: #fff;
+  background: var(--bg-card);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.15s;
 }
 .category-tab.active {
-  background: #4F7DF8;
-  border-color: #4F7DF8;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: white;
 }
 
@@ -195,10 +201,10 @@ function getDifficultyStars(n: number) {
   gap: 16px;
 }
 .game-card {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 16px;
   padding: 20px;
-  border: 2px solid #E2E8F0;
+  border: 2px solid var(--border-color);
   display: flex;
   align-items: center;
   gap: 16px;
@@ -206,9 +212,9 @@ function getDifficultyStars(n: number) {
   transition: all 0.15s;
 }
 .game-card:hover {
-  border-color: #4F7DF8;
+  border-color: var(--color-primary);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  box-shadow: var(--shadow-md);
 }
 .game-icon {
   font-size: 48px;
@@ -217,7 +223,7 @@ function getDifficultyStars(n: number) {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #F8FAFC;
+  background: var(--bg-hover);
   border-radius: 16px;
 }
 .game-info {
@@ -225,12 +231,12 @@ function getDifficultyStars(n: number) {
 }
 .game-name {
   font-size: 18px;
-  color: #2C3E50;
+  color: var(--text-primary);
   margin-bottom: 4px;
 }
 .game-desc {
   font-size: 13px;
-  color: #6B7785;
+  color: var(--text-secondary);
   margin-bottom: 8px;
 }
 .game-meta {

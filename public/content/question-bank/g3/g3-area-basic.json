@@ -1,0 +1,1046 @@
+{
+  "topicId": "g3-area-basic",
+  "topicName": "面积基础",
+  "grade": 3,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 23,
+  "questions": [
+    {
+      "id": "g3-ab-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个长方形，长 8 厘米，宽 5 厘米。面积是多少平方厘米？",
+      "image": "",
+      "options": [
+        "13",
+        "26",
+        "40",
+        "85"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "面积 = 长×宽 = 8×5 = 40 平方厘米"
+      ],
+      "hints": [
+        "长方形面积 = 长×宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2×(8+5)=26",
+          "reason": "算周长",
+          "correction": "8×5=40",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "长方形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-ab-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个正方形，边长 7 厘米。面积是 ____ 平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "49",
+      "acceptableAnswers": [
+        "49"
+      ],
+      "solution": [
+        "面积 = 边长×边长 = 7×7 = 49 平方厘米"
+      ],
+      "hints": [
+        "正方形面积 = 边长×边长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "4×7=28",
+          "reason": "算周长",
+          "correction": "7×7=49",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "正方形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-ab-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个正方形手帕，边长 20 厘米。面积是多少平方厘米？",
+      "image": "",
+      "options": [
+        "40",
+        "80",
+        "200",
+        "400"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "面积 = 20×20 = 400 平方厘米"
+      ],
+      "hints": [
+        "边长×边长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "4×20=80",
+          "reason": "算周长",
+          "correction": "20×20=400",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "手帕"
+      ]
+    },
+    {
+      "id": "g3-ab-04",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个长方形木板，长 15 米，宽 10 米。面积是多少平方米？",
+      "image": "",
+      "options": [],
+      "answer": "150",
+      "acceptableAnswers": [
+        "150"
+      ],
+      "solution": [
+        "面积 = 15×10 = 150 平方米"
+      ],
+      "hints": [
+        "长×宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2×(15+10)=50",
+          "reason": "算周长",
+          "correction": "15×10=150",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "长方形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "木板"
+      ]
+    },
+    {
+      "id": "g3-ab-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形面积是 72 平方厘米，长是 9 厘米。宽是多少厘米？",
+      "image": "",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "宽 = 面积÷长 = 72÷9 = 8 cm"
+      ],
+      "hints": [
+        "宽 = 面积÷长",
+        "长 = 面积÷宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "72-9=63",
+          "reason": "乱减",
+          "correction": "72÷9=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "反求"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-ab-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个正方形面积是 64 平方厘米。边长是 ____ 厘米。",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "solution": [
+        "边长×边长 = 64，所以边长 = 8 cm（因为8×8=64）"
+      ],
+      "hints": [
+        "想：几×几=64",
+        "8×8=64"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "64÷4=16",
+          "reason": "用周长公式反求",
+          "correction": "8×8=64",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "反求"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "正方形"
+      ]
+    },
+    {
+      "id": "g3-ab-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形，长 12 厘米，宽比长短 5 厘米。面积是多少平方厘米？",
+      "image": "",
+      "options": [
+        "60",
+        "70",
+        "84",
+        "144"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "宽 = 12-5 = 7 cm",
+        "面积 = 12×7 = 84 平方厘米"
+      ],
+      "hints": [
+        "先求宽",
+        "再算面积"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "12×5=60",
+          "reason": "用差当宽",
+          "correction": "宽=12-5=7",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "两步"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-ab-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个正方形的周长是 36 厘米。它的面积是多少平方厘米？",
+      "image": "",
+      "options": [],
+      "answer": "81",
+      "acceptableAnswers": [
+        "81"
+      ],
+      "solution": [
+        "边长 = 36÷4 = 9 cm",
+        "面积 = 9×9 = 81 平方厘米"
+      ],
+      "hints": [
+        "先求边长 = 周长÷4",
+        "再求面积"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "36×36=1296",
+          "reason": "把周长当边长",
+          "correction": "边长=9",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "周长→面积"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "正方形"
+      ]
+    },
+    {
+      "id": "g3-ab-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一张长方形纸长 18 厘米，宽 12 厘米。剪下一个最大的正方形。正方形的面积是多少平方厘米？",
+      "image": "",
+      "options": [
+        "144",
+        "216",
+        "324",
+        "576"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "最大正方形边长 = 宽 = 12 cm",
+        "面积 = 12×12 = 144 平方厘米"
+      ],
+      "hints": [
+        "最大正方形边长 = 宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "18×18=324",
+          "reason": "用长当边长",
+          "correction": "边长=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "最大正方形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-ab-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形长 20 厘米，宽 15 厘米。周长是 ____ 厘米。",
+      "image": "",
+      "options": [],
+      "answer": "70",
+      "acceptableAnswers": [
+        "70"
+      ],
+      "solution": [
+        "周长 = 2×(20+15) = 70 cm",
+        "面积 = 20×15 = 300 平方厘米"
+      ],
+      "hints": [
+        "周长：2×(长+宽)",
+        "面积：长×宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "周长=35",
+          "reason": "没×2",
+          "correction": "周长=2×35=70",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "周长&面积"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-ab-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形和一个正方形面积相等。长方形长 16 厘米，宽 4 厘米。正方形边长是多少厘米？",
+      "image": "",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "16"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "长方形面积 = 16×4 = 64 平方厘米",
+        "正方形边长×边长 = 64，边长 = 8 cm"
+      ],
+      "hints": [
+        "先算长方形面积",
+        "再想几×几=面积"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "2×(16+4)÷4=10",
+          "reason": "用周长算",
+          "correction": "16×4=64,8×8=64",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "等面积"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "变换"
+      ]
+    },
+    {
+      "id": "g3-ab-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形花坛长 20 米，宽 15 米。如果每平方米种 4 棵花，一共可以种 ____ 棵花。",
+      "image": "",
+      "options": [],
+      "answer": "1200",
+      "acceptableAnswers": [
+        "1200"
+      ],
+      "solution": [
+        "面积 = 20×15 = 300 平方米",
+        "花数 = 300×4 = 1200 棵"
+      ],
+      "hints": [
+        "先算面积",
+        "再×每平方米棵数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "20+15=35",
+          "reason": "乱用加法",
+          "correction": "先算面积再乘",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "花坛"
+      ]
+    },
+    {
+      "id": "g3-ab-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形，如果长增加 3 厘米，面积就增加 18 平方厘米。如果原来的长是 12 厘米，原来长方形的面积是多少平方厘米？",
+      "image": "",
+      "options": [
+        "36",
+        "72",
+        "108",
+        "216"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "增加部分也是长方形：宽不变，新增长=3，面积=18",
+        "原宽 = 18÷3 = 6 cm",
+        "原面积 = 12×6 = 72 平方厘米"
+      ],
+      "hints": [
+        "增加的面积÷增加的长 = 原宽",
+        "画图理解"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "12×3=36",
+          "reason": "直接乘3",
+          "correction": "宽=6,12×6=72",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "变化"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-ab-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个正方形边长 10 厘米，如果边长增加 5 厘米，面积增加多少平方厘米？",
+      "image": "",
+      "options": [],
+      "answer": "125",
+      "acceptableAnswers": [
+        "125"
+      ],
+      "solution": [
+        "原面积 = 10×10 = 100 平方厘米",
+        "新边长 = 10+5 = 15 cm",
+        "新面积 = 15×15 = 225 平方厘米",
+        "增加 = 225-100 = 125 平方厘米"
+      ],
+      "hints": [
+        "先算原面积",
+        "再算新面积",
+        "相减"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "5×5=25",
+          "reason": "只算小正方形增加",
+          "correction": "用新-原",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "变化"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "正方形"
+      ]
+    },
+    {
+      "id": "g3-ab-15",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "用一根长 48 厘米的铁丝，围成一个长 15 厘米的长方形。这个长方形的面积是多少平方厘米？",
+      "image": "",
+      "options": [
+        "135",
+        "180",
+        "225",
+        "540"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "宽 = 48÷2-15 = 24-15 = 9 cm",
+        "面积 = 15×9 = 135 平方厘米"
+      ],
+      "hints": [
+        "先求宽 = 周长÷2-长",
+        "再求面积"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "15×(48-15)=495",
+          "reason": "乱算",
+          "correction": "宽=9",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "周长→面积"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-ab-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个大长方形长 25 厘米，宽 18 厘米。剪下一个最大的正方形后，剩下的图形面积是 ____ 平方厘米。",
+      "image": "",
+      "options": [],
+      "answer": "126",
+      "acceptableAnswers": [
+        "126"
+      ],
+      "solution": [
+        "大长方形面积 = 25×18 = 450 平方厘米",
+        "最大正方形边长 = 18 cm，面积 = 18×18 = 324 平方厘米",
+        "剩下面积 = 450-324 = 126 平方厘米",
+        "或剩下长方形：25-18=7，18×7=126"
+      ],
+      "hints": [
+        "最大正方形边长 = 宽",
+        "剩下=原-正方形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "25×(25-18)=175",
+          "reason": "算错剩下的长宽",
+          "correction": "剩18×7=126",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "剪正方形"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-ab-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个长方形，如果长增加 5 厘米，宽不变，面积增加 40 平方厘米；如果宽增加 4 厘米，长不变，面积增加 60 平方厘米。原来长方形的面积是多少平方厘米？",
+      "image": "",
+      "options": [
+        "80",
+        "100",
+        "120",
+        "150"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "宽 = 40÷5 = 8 cm",
+        "长 = 60÷4 = 15 cm",
+        "原面积 = 15×8 = 120 平方厘米"
+      ],
+      "hints": [
+        "长增加时：增加的面积÷增加的长 = 原宽",
+        "宽增加时：增加的面积÷增加的宽 = 原长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "40+60=100",
+          "reason": "直接加",
+          "correction": "分别求长宽",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "变化"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-ab-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个长方形被分成了 A、B 两个小长方形。A 的面积是 72 平方厘米，宽是 8 厘米；B 的面积是 54 平方厘米。如果 B 的宽和 A 的宽相等，那么原来大长方形的长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "15.75",
+      "acceptableAnswers": [
+        "15.75",
+        "10.5"
+      ],
+      "solution": [
+        "A和B宽相等=8cm",
+        "A的长 = 72÷8 = 9 cm",
+        "B的长 = 54÷8 = 6.75 cm",
+        "两个小长方形并排摆放，大长方形长 = 9+6.75 = 15.75 cm",
+        "检验：大长方形面积 = 15.75×8 = 126，72+54=126 ✓"
+      ],
+      "hints": [
+        "两个小长方形有相同的宽",
+        "先求每个小长方形的长",
+        "大长 = 两小长之和"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "(72+54)÷8=15.75",
+          "reason": "其实这个答案对",
+          "correction": "大长=(72+54)÷8=126÷8=15.75",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "面积",
+        "组合"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g3-ab-19",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "一个长方形的长是 12 厘米，宽是 5 厘米。它的面积是多少平方厘米？",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": ["60", "60平方厘米"],
+      "solution": [
+        "长方形面积 = 长×宽",
+        "= 12×5 = 60 平方厘米"
+      ],
+      "hints": [
+        "面积公式：长×宽",
+        "12×5=60"
+      ],
+      "commonMistakes": [
+        {"mistake": "(12+5)×2=34", "reason": "算成周长了", "correction": "面积=长×宽=60", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2008, "paper": "第六届希望杯三年级"},
+      "knowledgePoints": ["长方形面积"],
+      "estimatedTime": 45,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["面积基础", "竞赛真题"]
+    },
+    {
+      "id": "g3-ab-20",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "一个正方形的周长是 24 厘米，它的面积是多少平方厘米？",
+      "image": "",
+      "options": ["24", "36", "48", "576"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "正方形边长 = 周长÷4 = 24÷4 = 6厘米",
+        "面积 = 边长×边长 = 6×6 = 36平方厘米"
+      ],
+      "hints": [
+        "先求边长：24÷4=6",
+        "面积=6×6=36"
+      ],
+      "commonMistakes": [
+        {"mistake": "选3", "reason": "24×24=576，用周长直接乘", "correction": "先求边长再算面积", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2010, "paper": "2010年迎春杯三年级"},
+      "knowledgePoints": ["正方形面积", "周长"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["面积基础", "竞赛真题"]
+    },
+    {
+      "id": "g3-ab-21",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "一个长方形的面积是 72 平方厘米，长是 9 厘米。宽是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": ["8", "8厘米"],
+      "solution": [
+        "长方形面积 = 长×宽",
+        "宽 = 面积÷长 = 72÷9 = 8厘米",
+        "检验：9×8=72 ✓"
+      ],
+      "hints": [
+        "面积÷长=宽",
+        "72÷9=8"
+      ],
+      "commonMistakes": [
+        {"mistake": "72-9=63", "reason": "乱用减法", "correction": "宽=面积÷长=8", "errorLayer": "L2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2007, "paper": "第十二届华罗庚金杯初赛"},
+      "knowledgePoints": ["长方形面积", "逆运算"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.1, "b": 0.2, "c": 0.25},
+      "tags": ["面积基础", "竞赛真题"]
+    },
+    {
+      "id": "g3-ab-22",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一张长方形纸，长 20 厘米，宽 15 厘米。从这张纸上剪下一个最大的正方形，剩下的图形的面积是多少平方厘米？",
+      "image": "",
+      "options": ["75", "100", "125", "225"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "最大的正方形边长 = 宽 = 15厘米",
+        "正方形面积 = 15×15 = 225平方厘米",
+        "原长方形面积 = 20×15 = 300平方厘米",
+        "剩下面积 = 300-225 = 75平方厘米",
+        "或：剩下的是长方形，长15，宽20-15=5，面积=15×5=75"
+      ],
+      "hints": [
+        "最大正方形边长=长方形的宽=15",
+        "剩下面积=原面积-正方形面积",
+        "20×15-15×15=75"
+      ],
+      "commonMistakes": [
+        {"mistake": "选3", "reason": "算成正方形面积了", "correction": "问的是剩下的面积：75", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2012, "paper": "第十届走美杯三年级"},
+      "knowledgePoints": ["面积", "剪正方形"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.8, "c": 0.25},
+      "tags": ["面积基础", "竞赛真题"]
+    },
+    {
+      "id": "g3-ab-23",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一个长方形，如果长增加 3 厘米，宽不变，面积就增加 24 平方厘米；如果宽增加 2 厘米，长不变，面积就增加 30 平方厘米。这个长方形原来的面积是多少平方厘米？",
+      "image": "",
+      "options": [],
+      "answer": "120",
+      "acceptableAnswers": ["120", "120平方厘米"],
+      "solution": [
+        "长增加3厘米，面积增加24平方厘米 → 宽 = 24÷3 = 8厘米",
+        "宽增加2厘米，面积增加30平方厘米 → 长 = 30÷2 = 15厘米",
+        "原面积 = 长×宽 = 15×8 = 120平方厘米",
+        "检验：15+3=18, 18×8=144, 144-120=24 ✓；8+2=10, 15×10=150, 150-120=30 ✓"
+      ],
+      "hints": [
+        "长增加时：增加的面积÷增加的长=原宽",
+        "宽增加时：增加的面积÷增加的宽=原长",
+        "宽=24÷3=8，长=30÷2=15",
+        "面积=15×8=120"
+      ],
+      "commonMistakes": [
+        {"mistake": "24+30=54", "reason": "直接加增加的面积", "correction": "分别求长和宽再相乘", "errorLayer": "L3"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2013, "paper": "第十一届希望杯三年级"},
+      "knowledgePoints": ["面积", "长和宽变化"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.3, "b": 1.0, "c": 0.25},
+      "tags": ["面积基础", "竞赛真题"]
+    }
+  ]
+}

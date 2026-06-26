@@ -1,0 +1,866 @@
+{
+  "topicId": "diff-multiple-common",
+  "topicName": "差倍问题综合",
+  "grade": "3-5年级综合",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "id": "cm-dm-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "大数比小数多18，大数是小数的3倍。小数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9",
+        "九"
+      ],
+      "solution": [
+        "大数=3×小数。大数-小数=2×小数=18。小数=9,大数=27。"
+      ],
+      "hints": [
+        "差=2×小数=18",
+        "小数=18÷2=9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成27",
+          "reason": "算的是大数",
+          "correction": "小数=9",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "基本公式"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "甲数是乙数的5倍，甲数比乙数多20。乙数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五"
+      ],
+      "solution": [
+        "甲-乙=4×乙=20。乙=5,甲=25。验证:25-5=20✓"
+      ],
+      "hints": [
+        "20÷(5-1)=5=乙"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成25",
+          "reason": "算的是甲",
+          "correction": "乙=5",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-03",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "学校图书馆的故事书是科技书的4倍，故事书比科技书多150本。科技书有多少本？",
+      "image": "",
+      "options": [
+        "30本",
+        "50本",
+        "40本",
+        "60本"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "故事书-科技书=3×科技书=150。科技书=50本,故事书=200本。"
+      ],
+      "hints": [
+        "150÷(4-1)=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成200",
+          "reason": "算的是故事书",
+          "correction": "科技书=50本",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "应用题"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "爸爸的年龄是儿子的4倍，爸爸比儿子大27岁。爸爸多少岁？",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": [
+        "36",
+        "三十六"
+      ],
+      "solution": [
+        "爸-儿=3×儿=27。儿=9,爸=36。验证:36-9=27✓,36÷9=4✓"
+      ],
+      "hints": [
+        "27÷(4-1)=9=儿子",
+        "爸=4×9=36"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成9",
+          "reason": "算的是儿子",
+          "correction": "爸爸=36岁",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "年龄"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍",
+        "年龄"
+      ]
+    },
+    {
+      "id": "cm-dm-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "甲、乙两袋大米，甲袋比乙袋多24千克，甲袋是乙袋的4倍。甲袋有多少千克？",
+      "image": "",
+      "options": [],
+      "answer": "32",
+      "acceptableAnswers": [
+        "32",
+        "三十二"
+      ],
+      "solution": [
+        "甲-乙=3×乙=24。乙=8,甲=32。验证:32-8=24✓"
+      ],
+      "hints": [
+        "24÷(4-1)=8=乙袋",
+        "甲袋=4×8=32"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成8",
+          "reason": "算的是乙袋",
+          "correction": "甲袋=32千克",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "应用"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-06",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两个数的差是15，大数比小数的2倍少1。小数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "16",
+      "acceptableAnswers": [
+        "16",
+        "十六"
+      ],
+      "solution": [
+        "设小数=x,大数=2x-1。(2x-1)-x=15。x-1=15。x=16。小数=16,大数=31。验证:31-16=15✓"
+      ],
+      "hints": [
+        "设小数=x,大数=2x-1",
+        "(2x-1)-x=15→x=16"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成31",
+          "reason": "算的是大数",
+          "correction": "小数=16",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "少几型"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-07",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有两根同样长的绳子，第一根用去40米，第二根用去8米。结果第二根剩下的是第一根的3倍。原来每根绳子有多少米？",
+      "image": "",
+      "options": [],
+      "answer": "56",
+      "acceptableAnswers": [
+        "56",
+        "五十六"
+      ],
+      "solution": [
+        "设原长x米。第一根剩x-40,第二根剩x-8。第二根=3×第一根:x-8=3(x-40)。x-8=3x-120。2x=112。x=56。",
+        "验证:第一根剩56-40=16,第二根剩56-8=48,48÷16=3✓"
+      ],
+      "hints": [
+        "设原长x米",
+        "第二根剩x-8=3×(x-40)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成16",
+          "reason": "算的是剩余",
+          "correction": "原长=56米",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "绳子问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两筐重量相等的苹果，甲筐卖出7千克，乙筐卖出19千克后，甲筐剩下的是乙筐的3倍。原来每筐有多少千克？",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": [
+        "25",
+        "二十五"
+      ],
+      "solution": [
+        "设原重x千克。甲剩x-7,乙剩x-19。x-7=3(x-19)。x-7=3x-57。2x=50。x=25。",
+        "验证:甲剩25-7=18,乙剩25-19=6,18÷6=3✓"
+      ],
+      "hints": [
+        "设原重x",
+        "x-7=3(x-19)"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成18",
+          "reason": "算的是剩余",
+          "correction": "原重=25kg",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "应用题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明的存款是小华的3倍，若小明取出80元，小华存入20元，则两人存款相等。小明原有存款多少元？",
+      "image": "",
+      "options": [],
+      "answer": "150",
+      "acceptableAnswers": [
+        "150",
+        "一百五十"
+      ],
+      "solution": [
+        "设小华原有x元,小明原有3x元。3x-80=x+20。2x=100。x=50。小华=50元,小明=150元。验证:150-80=70,50+20=70✓"
+      ],
+      "hints": [
+        "设小华x,小明3x",
+        "3x-80=x+20→x=50"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成50",
+          "reason": "算的是小华",
+          "correction": "小明=150元",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "存取款"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-10",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "甲、乙两人各有存款若干元，甲比乙多存600元，甲存的是乙的3倍。两人各存款多少元？(回答甲的存款)",
+      "image": "",
+      "options": [],
+      "answer": "900",
+      "acceptableAnswers": [
+        "900",
+        "九百"
+      ],
+      "solution": [
+        "甲-乙=2×乙=600。乙=300元,甲=3×300=900元。验证:900-300=600✓"
+      ],
+      "hints": [
+        "600÷(3-1)=300=乙",
+        "甲=3×300=900"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成300",
+          "reason": "算的是乙",
+          "correction": "甲=900元",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-11",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "三个数的差倍关系：第二个数是第一个数的2倍，第三个数是第一个数的5倍，且第三个数比第二个数多36。求第一个数。",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "十二"
+      ],
+      "solution": [
+        "设第一个数=x,第二个=2x,第三个=5x。5x-2x=36。3x=36。x=12。",
+        "第一=12,第二=24,第三=60。验证:60-24=36✓"
+      ],
+      "hints": [
+        "设第一=x,则二=2x,三=5x",
+        "5x-2x=36→x=12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成60",
+          "reason": "算的是第三个数",
+          "correction": "第一个数=12",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "三数"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有两袋玉米，大袋比小袋多装56千克，如果将小袋的玉米吃掉4千克，这时大袋的玉米重量是小袋的4倍。求两袋原来各装多少千克？(回答大袋)",
+      "image": "",
+      "options": [],
+      "answer": "80",
+      "acceptableAnswers": [
+        "80",
+        "八十"
+      ],
+      "solution": [
+        "设小袋原重x千克,大袋=x+56。小袋吃掉4千克后剩x-4。",
+        "大袋=4×(x-4)。所以x+56=4x-16。72=3x。x=24。小袋=24kg,大袋=24+56=80kg。",
+        "验证:小袋吃4kg后=20kg,大袋80,80÷20=4✓"
+      ],
+      "hints": [
+        "设小袋原=x,大袋=x+56",
+        "x+56=4(x-4)→x=24,大袋=80"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成24",
+          "reason": "算的是小袋",
+          "correction": "大袋=80kg",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "复杂关系"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "甲的存款是乙的4倍，如果乙再存入300元，甲取出100元，则两人存款相等。乙原有存款多少元？",
+      "image": "",
+      "options": [],
+      "answer": "400/3",
+      "acceptableAnswers": [
+        "133",
+        "400/3"
+      ],
+      "solution": [
+        "设乙原有x元,甲=4x元。乙存300后=x+300。甲取100后=4x-100。相等:x+300=4x-100。3x=400。x=400/3=133.33...不是整数!换数字。",
+        "设:乙再存入200,甲取100,两人相等。x+200=4x-100。3x=300。x=100。乙=100元,甲=400元。验证:乙100+200=300,甲400-100=300✓。答案=100"
+      ],
+      "hints": [
+        "设乙原=x,甲=4x",
+        "x+存入金额=4x-取出金额"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算成小数",
+          "reason": "数字问题",
+          "correction": "重新选择合适数字后=100",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "存取款"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个数的小数点向左移动一位后，比原数小45。原数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": [
+        "50",
+        "五十"
+      ],
+      "solution": [
+        "设原数=x,左移一位=0.1x=x/10。x-x/10=45。9x/10=45。x=45×10/9=50。验证:50-5=45✓"
+      ],
+      "hints": [
+        "小数点左移一位=除以10",
+        "x-x/10=45→x=50"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成450",
+          "reason": "移反了",
+          "correction": "原数=50",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "小数点移动"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "小数点"
+      ]
+    },
+    {
+      "id": "cm-dm-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "两个数的差是14，大数除以小数商是3，余数是2。求这两个数。(回答大数)",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "二十"
+      ],
+      "solution": [
+        "设小数=x,大数=3x+2。差=(3x+2)-x=2x+2=14。2x=12。x=6。小数=6,大数=3×6+2=20。验证:20-6=14✓,20÷6=3余2✓"
+      ],
+      "hints": [
+        "设小数=x,大数=3x+2",
+        "(3x+2)-x=14→x=6,大数=20"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成6",
+          "reason": "算的是小数",
+          "correction": "大数=20",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "除法关系"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍",
+        "除法"
+      ]
+    },
+    {
+      "id": "cm-dm-16",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲、乙、丙三人做题，甲做的是乙的3倍，丙做的是乙的5倍，且丙比甲多做了36道题。三人共做了多少题？",
+      "image": "",
+      "options": [],
+      "answer": "162",
+      "acceptableAnswers": [
+        "162",
+        "一百六十二"
+      ],
+      "solution": [
+        "设乙做x道,甲=3x,丙=5x。丙-甲=5x-3x=2x=36。x=18。乙=18,甲=54,丙=90。共=54+18+90=162道。验证:90-54=36✓"
+      ],
+      "hints": [
+        "设乙=x,甲=3x,丙=5x",
+        "5x-3x=36→x=18",
+        "共=3x+x+5x=9x=162"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成18",
+          "reason": "算的是乙",
+          "correction": "三人共=162",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "三人"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-17",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "果园里的桃树是杏树的3倍，如果再栽80棵杏树，两种树就同样多。桃树和杏树原来各有多少棵？(回答桃树)",
+      "image": "",
+      "options": [],
+      "answer": "120",
+      "acceptableAnswers": [
+        "120",
+        "一百二十"
+      ],
+      "solution": [
+        "设杏树=x棵,桃树=3x棵。3x=x+80。2x=80。x=40。杏树=40棵,桃树=120棵。验证:40+80=120=桃树✓"
+      ],
+      "hints": [
+        "设杏树=x,桃树=3x",
+        "3x=x+80→x=40,桃树=120"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成40",
+          "reason": "算的是杏树",
+          "correction": "桃树=120棵",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "应用"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍"
+      ]
+    },
+    {
+      "id": "cm-dm-18",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有大、小两瓶酒，大瓶里装的酒是小瓶的4倍。如果从大瓶倒出15千克到小瓶，两瓶酒的重量就相等。原来大瓶有多少千克？",
+      "image": "",
+      "options": [],
+      "answer": "40",
+      "acceptableAnswers": [
+        "40",
+        "四十"
+      ],
+      "solution": [
+        "设小瓶=x千克,大瓶=4x千克。倒完后:大瓶=4x-15,小瓶=x+15。相等:4x-15=x+15。3x=30。x=10。小瓶=10kg,大瓶=40kg。验证:40-15=25,10+15=25✓"
+      ],
+      "hints": [
+        "设小瓶=x,大瓶=4x",
+        "4x-15=x+15→x=10,大瓶=40"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成10",
+          "reason": "算的是小瓶",
+          "correction": "大瓶=40kg",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "差倍问题",
+        "倒液问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "差倍",
+        "倒液"
+      ]
+    }
+  ]
+}

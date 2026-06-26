@@ -1,0 +1,172 @@
+{
+    "paperId": "huabei-13-g5",
+    "title": "第十三届华罗庚金杯少年数学邀请赛 决赛试卷（小学组）",
+    "grade": 5,
+    "category": "aoshu-hualuogeng",
+    "duration": 90,
+    "totalScore": 150,
+    "difficultyLevel": 4,
+    "year": 2008,
+    "source": "华罗庚金杯少年数学邀请赛组委会",
+    "sections": [
+        {"name": "一、填空题（每题10分，共80分）", "count": 8, "scorePerQuestion": 10},
+        {"name": "二、解答题（每题10分，共40分）", "count": 4, "scorePerQuestion": 10},
+        {"name": "三、详答题（每题15分，共30分）", "count": 2, "scorePerQuestion": 15}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：125 × 48 = ______。",
+            "answer": "6000",
+            "score": 10,
+            "solution": "125×48=125×8×6=1000×6=6000。",
+            "knowledgePoints": ["乘法巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：1/2 + 1/6 + 1/12 + 1/20 = ______。",
+            "answer": "4/5",
+            "score": 10,
+            "solution": "1/2=1-1/2, 1/6=1/2-1/3, 1/12=1/3-1/4, 1/20=1/4-1/5。相加=1-1/5=4/5。",
+            "knowledgePoints": ["分数", "裂项"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数除以7余3，除以8余2。这个数最小是______。",
+            "answer": "58",
+            "score": 10,
+            "solution": "从除以7余3的数中找：3,10,17,24,31,38,45,52,59...找除以8余2的：58。验证：58÷7=8余3，58÷8=7余2✓。",
+            "knowledgePoints": ["余数问题"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "两个质数的和是30，这两个质数的乘积最大是______。",
+            "answer": "221",
+            "score": 10,
+            "solution": "30以内质数：2,3,5,7,11,13,17,19,23,29。和为30：(7,23)=161, (11,19)=209, (13,17)=221。最大221。",
+            "knowledgePoints": ["质数合数"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个三位数 5□4 能被3整除，□中可以填的数字有______个。",
+            "answer": "4",
+            "score": 10,
+            "solution": "能被3整除需各位数字和能被3整除。5+4=9，9+□能被3整除则□=0,3,6,9，共4个。",
+            "knowledgePoints": ["整除"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "把 72 分解质因数：72 = ______。",
+            "answer": "2^3 × 3^2",
+            "score": 10,
+            "solution": "72=8×9=2³×3²。",
+            "knowledgePoints": ["分解质因数"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一个数先加上8，再乘以8，再减去8，再除以8，结果还是8。这个数是______。",
+            "answer": "1",
+            "score": 10,
+            "solution": "逆推：8×8=64，64+8=72，72÷8=9，9-8=1。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "甲、乙两数的和是100，甲是乙的4倍。甲是______。",
+            "answer": "80",
+            "score": 10,
+            "solution": "设乙为x，甲为4x。4x+x=100，5x=100，x=20。甲=80。",
+            "knowledgePoints": ["和倍问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）一项工程，甲单独做12天完成，乙单独做18天完成。两人合做多少天可以完成这项工程的一半？",
+            "answer": "3.6",
+            "score": 10,
+            "solution": "甲效1/12，乙效1/18。合效=1/12+1/18=5/36。完成1/2需(1/2)/(5/36)=18/5=3.6天。",
+            "knowledgePoints": ["工程问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）有浓度为20%的盐水溶液300克，再加入浓度为10%的盐水溶液多少克后，可以配成浓度为15%的盐水溶液？",
+            "answer": "300",
+            "score": 10,
+            "solution": "设加入10%盐水x克。盐=300×20%+x×10%=60+0.1x。总盐水=300+x。浓度=(60+0.1x)/(300+x)=15%。60+0.1x=0.15(300+x)=45+0.15x。15=0.05x，x=300克。",
+            "knowledgePoints": ["浓度问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）某商品按20%的利润定价，然后按八八折卖出，共得利润84元。这件商品的成本是多少元？",
+            "answer": "1500",
+            "score": 10,
+            "solution": "设成本x元。定价=1.2x。售价=0.88×1.2x=1.056x。利润=1.056x-x=0.056x=84。x=84/0.056=1500元。",
+            "knowledgePoints": ["利润问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）甲、乙两车分别从A、B两地同时出发相向而行，相遇点距中点320米。已知甲车的速度是乙车速度的5/6，甲车每分钟行800米。求A、B两地的距离是多少米？",
+            "answer": "7040",
+            "score": 10,
+            "solution": "甲速800米/分，乙速=800/(5/6)=960米/分。速度比甲:乙=5:6，路程比=5:6。乙比甲多走1份=320×2=640米（乙越过中点320，甲距中点320）。全程=11份=11×640=7040米。",
+            "knowledgePoints": ["行程问题", "相遇问题"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 3,
+            "stem": "（详答题）牧场上有一片匀速生长的草地，可供27头牛吃6周，或供23头牛吃9周。那么可供21头牛吃多少周？",
+            "answer": "12",
+            "score": 15,
+            "solution": "设每牛每周吃1份草。27×6=162，23×9=207。3周生长207-162=45份，每周长15份。原有草=162-15×6=72份。21头牛中15头吃新草，6头吃旧草。72/6=12周。",
+            "knowledgePoints": ["牛吃草问题"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 5,
+            "sectionNo": 3,
+            "stem": "（详答题）现在是下午2点整，再过多少分钟时针和分针第一次重合？",
+            "answer": "120/11",
+            "score": 15,
+            "solution": "2点整时针在60°位置，分针在0°。分针每分钟走6°，时针每分钟走0.5°。设x分钟重合：6x=60+0.5x，5.5x=60，x=60/5.5=120/11≈10.91分钟。",
+            "knowledgePoints": ["时钟问题"]
+        }
+    ]
+}

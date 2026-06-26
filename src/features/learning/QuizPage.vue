@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { findByKnowledge, randomPick } from '@/stores/exerciseData'
+import { loadQuestionBank } from '@/services/questionBankLoader'
 import QuizEngine, { type AnswerResult } from '@/components/practice/QuizEngine.vue'
 import type { Exercise } from '@/types/exercise'
 
@@ -13,39 +13,28 @@ const exercises = ref<Exercise[]>([])
 const isComplete = ref(false)
 const results = ref<AnswerResult[]>([])
 const engineKey = ref(0)
+const topicName = ref('题目练习')
+const loading = ref(false)
 
-const topicName = computed(() => {
-  const id = topicId.value
-  const map: Record<string, string> = {
-    'g1-addition-within-20': '20以内加减法',
-    'g1-word-problem-1st': '一年级应用题',
-    'g1-counting-game': '趣味数数',
-    'g2-multiplication-table': '乘法口诀',
-    'g3-sum-multiple': '和倍问题',
-    'g3-diff-multiple': '差倍问题',
-    'g3-sum-diff': '和差问题',
-    'g3-planting-trees': '植树问题',
-    'g3-chicken-rabbit': '鸡兔同笼',
-    'g4-age-problem': '年龄问题',
-    'g4-area-perimeter': '面积与周长',
-    'g5-profit-loss': '利润与亏损',
-    'g5-simple-equation': '简易方程',
-    'g5-fraction-split': '分数的拆分',
-    'g5-fraction-add-sub': '分数加减法',
-    'g5-number-theory': '数论初步',
-    'g5-geometry-model': '几何模型',
-    'g6-travel-problem': '行程问题',
-    'g6-circle-area': '圆的周长与面积'
-  }
-  return map[id] || id
-})
-
-function loadExercises() {
+async function loadExercises() {
   if (!topicId.value) return
-  const pool = findByKnowledge(topicId.value)
-  exercises.value = randomPick(pool, 5)
-  isComplete.value = false
-  results.value = []
+  loading.value = true
+  try {
+    const bank = await loadQuestionBank(topicId.value, true)
+    if (bank && bank.exercises.length > 0) {
+      topicName.value = bank.title || topicId.value
+      exercises.value = bank.exercises.slice(0, Math.min(8, bank.exercises.length))
+      isComplete.value = false
+      results.value = []
+    } else {
+      exercises.value = []
+    }
+  } catch (e) {
+    console.error('加载题库失败:', e)
+    exercises.value = []
+  } finally {
+    loading.value = false
+  }
 }
 
 onMounted(loadExercises)
@@ -74,12 +63,9 @@ const masteryLevel = computed(() => {
 })
 const circleOffset = computed(() => 283 - (283 * accuracy.value) / 100)
 
-function handleRestart() {
-  isComplete.value = false
-  results.value = []
-  const pool = findByKnowledge(topicId.value)
-  exercises.value = randomPick(pool, 5)
+async function handleRestart() {
   engineKey.value++
+  await loadExercises()
 }
 
 function handleBack() {
@@ -199,31 +185,41 @@ function getOptionLabel(ex: Exercise, answer: string): string {
 .quiz-page {
   max-width: 720px;
   margin: 0 auto;
-  padding: var(--space-6) var(--space-4);
+  padding: var(--space-4) var(--space-4) var(--space-6);
 }
 
 .quiz-page__header {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
-  margin-bottom: var(--space-6);
-  padding-bottom: var(--space-4);
-  border-bottom: 1px solid var(--bg-hover);
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: white;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
 .quiz-page__back {
   padding: var(--space-2) var(--space-3);
-  background: var(--bg-hover);
-  color: var(--text-secondary);
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
   border-radius: var(--radius-md);
   font-size: var(--text-sm);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.quiz-page__back:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
 }
 
 .quiz-page__title {
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   font-weight: 700;
   color: var(--text-primary);
   margin: 0;
+  flex: 1;
 }
 
 .quiz-page__empty {

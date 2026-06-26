@@ -1,102 +1,139 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{
-  title?: string
-  content: string
-  hasInteractive?: boolean
-}>()
-
-defineEmits<{
-  (e: 'interaction', data: unknown): void
-}>()
-
-const interacted = ref(false)
+defineProps<{ title?: string; content: string }>()
 </script>
 
 <template>
-  <div class="concept-card" :class="{ 'concept-card--interacted': interacted }">
-    <div class="concept-card__header">
-      <span class="concept-card__icon">💡</span>
-      <h3 v-if="title" class="concept-card__title">{{ title }}</h3>
+  <div class="card-concept">
+    <div class="card-concept__header">
+      <div class="card-concept__icon-wrap">
+        <span class="card-concept__icon">💡</span>
+      </div>
+      <div class="card-concept__title-wrap">
+        <span class="card-concept__label">概念讲解</span>
+        <h2 class="card-concept__title" v-if="title">{{ title }}</h2>
+      </div>
     </div>
-    <div class="concept-card__content" v-html="content"></div>
-    <div v-if="hasInteractive" class="concept-card__interactive">
-      <slot name="interactive"></slot>
-    </div>
-    <div class="concept-card__key-point">
-      <span class="concept-card__key-icon">⭐</span>
-      <span>关键发现</span>
-    </div>
-    <slot name="parent-notes"></slot>
+    <div class="card-concept__body" v-html="content"></div>
   </div>
 </template>
 
 <style scoped>
-.concept-card {
+.card-concept {
   background: var(--bg-card);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  border: 2px solid var(--border-color);
-  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
 }
 
-.concept-card--interacted {
-  border-color: var(--color-success);
-  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
-}
-
-.concept-card__header {
+.card-concept__header {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  margin-bottom: var(--space-4);
+  gap: 18px;
+  padding: 28px 32px 20px;
+  background: linear-gradient(135deg, var(--card-blue-bg) 0%, rgba(199, 210, 254, 0.8) 50%, var(--card-blue-bg) 100%);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.15);
 }
 
-.concept-card__icon {
-  font-size: var(--text-2xl);
+.card-concept__icon-wrap {
+  width: 60px;
+  height: 60px;
+  background: var(--bg-card);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+  flex-shrink: 0;
 }
 
-.concept-card__title {
-  font-size: var(--text-xl);
+.card-concept__icon { font-size: 28px; }
+
+.card-concept__title-wrap { flex: 1; min-width: 0; }
+
+.card-concept__label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+.card-concept__title {
+  font-size: 20px;
+  font-weight: 700;
   color: var(--text-primary);
   margin: 0;
+  line-height: 1.3;
 }
 
-.concept-card__content {
-  color: var(--text-secondary);
-  line-height: var(--leading-relaxed);
+.card-concept__body {
+  padding: 28px 32px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-primary);
 }
 
-.concept-card__content :deep(p) {
-  margin-bottom: var(--space-3);
+.card-concept__body :deep(p) {
+  margin: 0 0 16px;
 }
+.card-concept__body :deep(p:last-child) { margin-bottom: 0; }
 
-.concept-card__content :deep(strong) {
+.card-concept__body :deep(h4) {
+  font-size: 17px;
   color: var(--color-primary);
-  font-weight: 600;
+  margin: 24px 0 12px;
+  font-weight: 700;
+  padding-left: 12px;
+  border-left: 4px solid var(--card-blue-bg);
 }
-
-.concept-card__interactive {
-  background: var(--bg-hover);
-  border-radius: var(--radius-lg);
-  padding: var(--space-4);
-  margin: var(--space-4) 0;
-}
-
-.concept-card__key-point {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-3) var(--space-4);
-  background: rgba(99, 102, 241, 0.1);
-  border-radius: var(--radius-lg);
+.card-concept__body :deep(h5) {
+  font-size: 15px;
   color: var(--color-primary);
-  font-weight: 600;
-  margin-top: var(--space-4);
+  margin: 20px 0 10px;
+  font-weight: 700;
 }
 
-.concept-card__key-icon {
-  font-size: var(--text-lg);
+.card-concept__body :deep(strong) {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.card-concept__body :deep(ul),
+.card-concept__body :deep(ol) {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.card-concept__body :deep(li) {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.card-concept__body :deep(hr) {
+  border: none;
+  border-top: 1px dashed rgba(99, 102, 241, 0.2);
+  margin: 28px 0;
+}
+
+.card-concept__body :deep(code) {
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+@media (max-width: 640px) {
+  .card-concept__header { padding: 22px 22px 16px; }
+  .card-concept__body { padding: 22px; font-size: 14px; }
+  .card-concept__icon-wrap { width: 52px; height: 52px; }
+  .card-concept__title { font-size: 18px; }
 }
 </style>

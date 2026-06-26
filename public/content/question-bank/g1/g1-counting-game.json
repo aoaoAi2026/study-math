@@ -1,0 +1,1688 @@
+{
+  "topicId": "g1-counting-game",
+  "topicName": "数数与找规律",
+  "grade": 1,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g1-cg-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "按规律填数：\n2、4、6、____、10",
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "每个数都比前一个多 2（都是双数）。",
+        "2、4、6、8、10。"
+      ],
+      "hints": [
+        "看看每次多几",
+        "2、4、6每次多2",
+        "6+2=8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 7",
+          "reason": "没看出每次多2",
+          "correction": "每次多2，6+2=8",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "双数",
+        "数列规律"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律",
+        "双数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "按规律填数：\n1、3、5、____、9",
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "七"
+      ],
+      "solution": [
+        "每个数都比前一个多 2（都是单数）。",
+        "1、3、5、7、9。"
+      ],
+      "hints": [
+        "这些都是单数",
+        "5后面的单数是7"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 8",
+          "reason": "混淆单双数",
+          "correction": "5 的下一个单数是 7",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "单数",
+        "数列规律"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律",
+        "单数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-03",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "找规律：\n🍎 🍌 🍎 🍌 🍎 🍌 🍎 ?",
+      "options": [
+        "🍎",
+        "🍌",
+        "🍇",
+        "🍉"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "🍌"
+      ],
+      "solution": [
+        "🍎 和 🍌 一个隔一个排列。",
+        "🍎 之后是 🍌。"
+      ],
+      "hints": [
+        "观察什么在重复",
+        "🍎🍌 两个一组",
+        "前面是 🍎，后面就是 🍌"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 🍎",
+          "reason": "没看清位置",
+          "correction": "最后一个已经是 🍎 了",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "图形规律"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "图形规律"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-04",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "数一数：\n○ ○ ○ ○\n○ ○ ○ ○\n○ ○ ○ ○\n一共有多少个圆？",
+      "options": [
+        "9 个",
+        "10 个",
+        "12 个",
+        "15 个"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "12"
+      ],
+      "solution": [
+        "每行有 4 个，一共 3 行。",
+        "4 + 4 + 4 = 12 个。"
+      ],
+      "hints": [
+        "先数一行有几个",
+        "再数有几行",
+        "3 行 4 个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 9 个",
+          "reason": "数成 3 行 3 列了",
+          "correction": "每行 4 个，3 行共 12 个",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数数",
+        "方阵"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "数数"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-05",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "拔高",
+      "stem": "按规律填数：\n5、10、15、20、____",
+      "answer": "25",
+      "acceptableAnswers": [
+        "25",
+        "二十五"
+      ],
+      "solution": [
+        "每个数都比前一个多 5。",
+        "5、10、15、20、25。",
+        "20 后面就是 25。"
+      ],
+      "hints": [
+        "每次多 5",
+        "5 个 5 个地数",
+        "20+5=25"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 22",
+          "reason": "误以为每次多 2",
+          "correction": "每次多 5，20+5=25",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "5的倍数",
+        "数列规律"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "5的倍数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-06",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "拔高",
+      "stem": "按规律填数：\n20、18、16、14、____",
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "十二"
+      ],
+      "solution": [
+        "从大到小排列，每次少 2。",
+        "20、18、16、14、12。"
+      ],
+      "hints": [
+        "数在变小还是变大",
+        "每次少 2",
+        "14-2=12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 13",
+          "reason": "以为每次少 1",
+          "correction": "每次少 2，14-2=12",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "倒序数",
+        "数列规律"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "倒序"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "找规律，下一个图形是什么？\n△ □ △ □ △ □ ?",
+      "options": [
+        "△",
+        "□",
+        "○",
+        "☆"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "△"
+      ],
+      "solution": [
+        "△ 和 □ 一个隔一个出现。",
+        "□ 后面是 △。"
+      ],
+      "hints": [
+        "△□ 在重复",
+        "最后是 □，后面就是 △"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 □",
+          "reason": "看错位置",
+          "correction": "第 7 个是 △",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "图形规律"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "图形规律"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-08",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "拔高",
+      "stem": "按规律填数：\n1、4、7、10、____",
+      "answer": "13",
+      "acceptableAnswers": [
+        "13",
+        "十三"
+      ],
+      "solution": [
+        "每个数都比前一个多 3。",
+        "1、4、7、10、13。",
+        "10 + 3 = 13。"
+      ],
+      "hints": [
+        "算一算前后差多少",
+        "4-1=3，7-4=3",
+        "每次加 3，10+3=13"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 12",
+          "reason": "以为每次加 2",
+          "correction": "每次加 3，10+3=13",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "等差数列"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "等差数列"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-09",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "拔高",
+      "stem": "数一数：\n□□□□□\n□□□□□\n□□□□□\n一共有多少个小正方形？",
+      "options": [
+        "10 个",
+        "12 个",
+        "15 个",
+        "20 个"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "15"
+      ],
+      "solution": [
+        "每行 5 个，共 3 行。",
+        "5 + 5 + 5 = 15 个。"
+      ],
+      "hints": [
+        "每行几个？几行？",
+        "5+5+5=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 12 个",
+          "reason": "数错行数或列数",
+          "correction": "每行 5 个，3 行共 15 个",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数数",
+        "方阵"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方阵数数"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-10",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "拔高",
+      "stem": "找规律填空：\n1、2、4、5、7、8、10、____、____",
+      "answer": "11",
+      "acceptableAnswers": [
+        "11",
+        "13"
+      ],
+      "solution": [
+        "观察：1→2多1，2→4多2，4→5多1，5→7多2。",
+        "规律是\"多1、多2\"交替出现。",
+        "10 后面多 1 是 11，11 后面多 2 是 13。"
+      ],
+      "hints": [
+        "看每个相邻数的差",
+        "差是 1、2、1、2...",
+        "10+1=11，再加2=13"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 11、12",
+          "reason": "没看出第二个差",
+          "correction": "10→11(+1)，11→13(+2)",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "双重规律"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "双重规律"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "找规律：\n1、1、2、1、1、2、1、1、____",
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "二"
+      ],
+      "solution": [
+        "1、1、2 为一组在重复。",
+        "每组都是 1、1、2。",
+        "第 9 个就是第 3 组的第 3 个，是 2。"
+      ],
+      "hints": [
+        "观察几个数一组在重复",
+        "1、1、2后又是 1、1、2",
+        "第9个是 2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 1",
+          "reason": "没看出三组重复",
+          "correction": "1、1、2 为一组循环",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "周期性规律"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "周期规律"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "数一数：3 个小三角形并排组成一个大三角形。一共有多少个三角形？",
+      "options": [
+        "3 个",
+        "4 个",
+        "5 个",
+        "6 个"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "小三角形有 3 个。",
+        "这 3 个小三角形合起来组成 1 个大三角形。",
+        "3 + 1 = 4 个。"
+      ],
+      "hints": [
+        "先数小的",
+        "再看有没有大的",
+        "3个小 + 1个大 = 4个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 3 个",
+          "reason": "只数了小三角形",
+          "correction": "别忘了大三角形",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "图形计数",
+        "组合图形"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "数图形"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-13",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "按规律填：\n2、3、5、8、12、____",
+      "answer": "17",
+      "acceptableAnswers": [
+        "17",
+        "十七"
+      ],
+      "solution": [
+        "看每两个数之间的差：3-2=1，5-3=2，8-5=3，12-8=4。",
+        "差依次是 1、2、3、4，越来越大。",
+        "下一个差是 5，所以 12 + 5 = 17。"
+      ],
+      "hints": [
+        "算一算前后差多少",
+        "差是 1、2、3、4...",
+        "下一个差是 5，12+5=17"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 16",
+          "reason": "误以为差是 4",
+          "correction": "差是 5，12+5=17",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "差等差规律"
+      ],
+      "estimatedTime": 140,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "二阶等差"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-14",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "拔高",
+      "stem": "找规律：\n1\n1 1\n1 2 1\n1 3 3 1\n1 ? 6 4 1\n问号填多少？",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "这是杨辉三角，每个数等于它\"肩膀\"上两个数之和。",
+        "看第五行：1 和 3 相加 = 4。",
+        "3 + 3 = 6，3 + 1 = 4。所以问号是 4。"
+      ],
+      "hints": [
+        "每个数等于上面两个数相加",
+        "1+3=4",
+        "3+3=6",
+        "3+1=4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 3",
+          "reason": "以为和上一行一样",
+          "correction": "1+3=4",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "杨辉三角",
+        "组合规律"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "杨辉三角"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-15",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "拔高",
+      "stem": "观察：△ □ ○ △ □ ○ △ □ ○ ... 第 20 个图形是什么？",
+      "answer": "正方形",
+      "acceptableAnswers": [
+        "正方形",
+        "□",
+        "方形"
+      ],
+      "solution": [
+        "△ □ ○ 三个一组重复。",
+        "20 ÷ 3 = 6 组余 2。",
+        "第 2 个就是 □。"
+      ],
+      "hints": [
+        "看几个图形一组",
+        "△□○ 三个一组",
+        "20 除以 3 余 2",
+        "第 2 个是 □"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 △",
+          "reason": "余数算错",
+          "correction": "20÷3=6余2，第2个是□",
+          "errorLayer": "L4"
+        }
+      ],
+      "knowledgePoints": [
+        "周期性规律",
+        "除法"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "周期",
+        "拔高"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-cg-16",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1、2、3、4、5、？，问号处填几？",
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "这是从1开始的连续自然数，",
+        "每次增加1。",
+        "1、2、3、4、5，后面就是6。",
+        "所以问号处填6。"
+      ],
+      "hints": [
+        "看看每次增加几",
+        "2比1多1，3比2多1",
+        "每次都加1",
+        "5加1等于6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填5",
+          "reason": "数错了",
+          "correction": "5后面是6",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "数列规律",
+        "自然数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.6,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2008,
+        "paper": "第六届希望杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-17",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：2、4、6、8、？，问号处填几？",
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "这是双数（偶数）的数列，",
+        "每次增加2。",
+        "2、4、6、8，后面就是10。",
+        "所以问号处填10。"
+      ],
+      "hints": [
+        "看看每次加几",
+        "4比2多2，6比4多2",
+        "每次都加2",
+        "8加2等于10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填9",
+          "reason": "以为每次加1",
+          "correction": "每次加2，8+2=10",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "数列规律",
+        "双数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2009,
+        "paper": "迎春杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-18",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1、3、5、7、？，问号处填几？",
+      "answer": "9",
+      "acceptableAnswers": [
+        "9",
+        "九"
+      ],
+      "solution": [
+        "这是单数（奇数）的数列，",
+        "每次增加2。",
+        "1、3、5、7，后面就是9。",
+        "所以问号处填9。"
+      ],
+      "hints": [
+        "看看每次加几",
+        "3比1多2，5比3多2",
+        "每次都加2",
+        "7加2等于9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填8",
+          "reason": "以为每次加1",
+          "correction": "每次加2，7+2=9",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "数列规律",
+        "单数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.4,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2009,
+        "paper": "第七届希望杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-19",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：10、20、30、40、？，问号处填几？",
+      "answer": "50",
+      "acceptableAnswers": [
+        "50",
+        "五十"
+      ],
+      "solution": [
+        "每次增加10。",
+        "10、20、30、40，后面就是50。",
+        "也可以看成：1个十、2个十、3个十、4个十，",
+        "后面就是5个十，也就是50。"
+      ],
+      "hints": [
+        "看看每次加多少",
+        "20比10多10，30比20多10",
+        "每次都加10",
+        "40加10等于50"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填41",
+          "reason": "以为每次加1",
+          "correction": "每次加10，40+10=50",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "数列规律",
+        "整十数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2005,
+        "paper": "第十届华杯赛少年组"
+      }
+    },
+    {
+      "id": "g1-cg-20",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1、2、4、7、11、？，问号处填几？",
+      "answer": "16",
+      "acceptableAnswers": [
+        "16",
+        "十六"
+      ],
+      "solution": [
+        "看看相邻两个数的差：",
+        "2 - 1 = 1",
+        "4 - 2 = 2",
+        "7 - 4 = 3",
+        "11 - 7 = 4",
+        "差依次是1、2、3、4，每次多1。",
+        "下一个差应该是5。",
+        "11 + 5 = 16。",
+        "所以问号处填16。"
+      ],
+      "hints": [
+        "算算每两个数之间差多少",
+        "差分别是1、2、3、4",
+        "差也在变大，每次多1",
+        "下一个差是5，11+5=16"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填15",
+          "reason": "差算错了",
+          "correction": "差是1、2、3、4、5，11+5=16",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数列规律",
+        "二级等差"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.1,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "走美杯",
+        "year": 2010,
+        "paper": "走美杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "有一串珠子按规律排列：白、黑、白、黑、白、黑...，第15个珠子是什么颜色？",
+      "answer": "白色",
+      "acceptableAnswers": [
+        "白色",
+        "白",
+        "白色的"
+      ],
+      "solution": [
+        "珠子是白、黑两个一组重复的。",
+        "第1个：白色（第1个位置，单数）",
+        "第2个：黑色（第2个位置，双数）",
+        "第3个：白色（单数）",
+        "第4个：黑色（双数）",
+        "...",
+        "单数位置是白色，双数位置是黑色。",
+        "15是单数，所以第15个珠子是白色。",
+        "也可以用除法：15 ÷ 2 = 7 组余 1，",
+        "余1就是每组的第1个，白色。"
+      ],
+      "hints": [
+        "几个珠子一组重复？",
+        "白、黑，2个一组",
+        "第15个是单数还是双数？",
+        "15是单数，单数位置是白色"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填黑色",
+          "reason": "搞反了顺序",
+          "correction": "第1个是白色，单数位置都是白色",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "周期规律",
+        "单双数"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.4,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2011,
+        "paper": "迎春杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-22",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1、1、2、3、5、8、？，问号处填几？（提示：从第三个数开始，每个数都是前两个数的和）",
+      "answer": "13",
+      "acceptableAnswers": [
+        "13",
+        "十三"
+      ],
+      "solution": [
+        "这是斐波那契数列，",
+        "从第三个数开始，每个数都是前两个数的和。",
+        "第1个：1",
+        "第2个：1",
+        "第3个：1 + 1 = 2 ✓",
+        "第4个：1 + 2 = 3 ✓",
+        "第5个：2 + 3 = 5 ✓",
+        "第6个：3 + 5 = 8 ✓",
+        "第7个：5 + 8 = 13。",
+        "所以问号处填13。"
+      ],
+      "hints": [
+        "提示说了：每个数是前两个数的和",
+        "看看2是不是等于1+1？是的！",
+        "3是不是等于1+2？是的！",
+        "那8后面就是5+8=13"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填12",
+          "reason": "算错了5+8",
+          "correction": "5+8=13",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数列规律",
+        "斐波那契数列"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.6,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2010,
+        "paper": "第八届希望杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-23",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "小明有10块糖，第一天吃1块，第二天吃2块，第三天吃3块...按这个规律，几天能吃完？",
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "四",
+        "4天"
+      ],
+      "solution": [
+        "每天吃的糖数：1、2、3、4...",
+        "第1天吃完后剩：10 - 1 = 9 块",
+        "第2天吃完后剩：9 - 2 = 7 块",
+        "第3天吃完后剩：7 - 3 = 4 块",
+        "第4天吃4块，4 - 4 = 0 块，正好吃完。",
+        "也可以算：1 + 2 + 3 + 4 = 10，",
+        "所以4天能吃完。"
+      ],
+      "hints": [
+        "一天一天地算",
+        "第1天吃1块，剩9块",
+        "第2天吃2块，剩7块",
+        "第4天吃4块，刚好吃完"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填5",
+          "reason": "算错了",
+          "correction": "1+2+3+4=10，4天吃完",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数列规律",
+        "连加"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "找规律",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2006,
+        "paper": "第十一届华杯赛少年组"
+      }
+    },
+    {
+      "id": "g1-cg-24",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "数一数：下图中一共有多少个正方形？\n（由16个小正方形组成的4×4大正方形）",
+      "answer": "30",
+      "acceptableAnswers": [
+        "30",
+        "三十",
+        "30个"
+      ],
+      "solution": [
+        "按正方形的大小分类来数：",
+        "边长为1的小正方形：4×4 = 16个",
+        "边长为2的正方形：3×3 = 9个",
+        "边长为3的正方形：2×2 = 4个",
+        "边长为4的正方形：1×1 = 1个",
+        "一共：16 + 9 + 4 + 1 = 30个。"
+      ],
+      "hints": [
+        "正方形有大有小，要分类数",
+        "先数最小的正方形，有16个",
+        "再数由4个小正方形组成的正方形，有9个",
+        "还有更大的，加起来一共30个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填16",
+          "reason": "只数了最小的正方形",
+          "correction": "还要数由多个小正方形组成的大正方形",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "填20",
+          "reason": "漏数了边长为3的正方形",
+          "correction": "边长为3的正方形有2×2=4个",
+          "errorLayer": "L4"
+        }
+      ],
+      "knowledgePoints": [
+        "图形计数",
+        "分类计数",
+        "正方形计数"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.0,
+        "c": 0.25
+      },
+      "tags": [
+        "数图形",
+        "分类计数",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2012,
+        "paper": "第十届希望杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-25",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "小朋友们排成一队，从前面数小明排第8个，从后面数小明排第7个。这一队一共有多少个小朋友？",
+      "answer": "14",
+      "acceptableAnswers": [
+        "14",
+        "十四",
+        "14个"
+      ],
+      "solution": [
+        "从前面数小明排第8个，说明小明前面有7个人。",
+        "从后面数小明排第7个，说明小明后面有6个人。",
+        "总人数 = 小明前面的人 + 小明 + 小明后面的人",
+        "= 7 + 1 + 6 = 14个。",
+        "也可以这样算：8 + 7 - 1 = 14个（减1是因为小明被数了两次）。"
+      ],
+      "hints": [
+        "小明被数了两次，要减1",
+        "从前面数到小明有8个",
+        "从后面数到小明有7个",
+        "8+7=15，但小明重复了，所以15-1=14"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填15",
+          "reason": "小明被重复数了，没有减1",
+          "correction": "8+7-1=14，小明被数了两次，要减1",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "填13",
+          "reason": "算错了",
+          "correction": "8+7-1=14",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "排队问题",
+        "重叠计数",
+        "数数技巧"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.05,
+        "b": 0.8,
+        "c": 0.25
+      },
+      "tags": [
+        "排队问题",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2013,
+        "paper": "迎春杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "从一个点出发画3条射线，一共可以组成多少个角？",
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三",
+        "3个"
+      ],
+      "solution": [
+        "把3条射线编号为①、②、③。",
+        "以①为一边的角有2个：①②、①③",
+        "以②为一边的角有1个：②③",
+        "一共：2 + 1 = 3个角。",
+        "规律：n条射线组成的角的个数 = 1+2+...+(n-1)"
+      ],
+      "hints": [
+        "给射线起名字，一条一条地数",
+        "第一条射线和第二条、第三条各组成1个角，共2个",
+        "第二条射线和第三条组成1个角",
+        "2+1=3个角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填2",
+          "reason": "漏数了最大的那个角",
+          "correction": "第一条和第三条射线也组成一个角",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "填6",
+          "reason": "数重复了",
+          "correction": "①②和②①是同一个角，不要重复数",
+          "errorLayer": "L4"
+        }
+      ],
+      "knowledgePoints": [
+        "图形计数",
+        "角的计数",
+        "分类计数"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.1,
+        "c": 0.25
+      },
+      "tags": [
+        "数图形",
+        "角",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "走美杯",
+        "year": 2014,
+        "paper": "走美杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "数一数：下图中一共有多少个长方形？\n（由2行3列共6个小长方形组成的大长方形）",
+      "answer": "18",
+      "acceptableAnswers": [
+        "18",
+        "十八",
+        "18个"
+      ],
+      "solution": [
+        "数长方形的方法：先数横向有几条线段，再数纵向有几条线段，相乘就是总数。",
+        "横向（水平方向）：3条小线段，线段总数 = 3+2+1 = 6条",
+        "纵向（竖直方向）：2条小线段，线段总数 = 2+1 = 3条",
+        "长方形总数 = 6 × 3 = 18个。",
+        "也可以分类数：",
+        "1个小长方形：6个",
+        "2个小长方形组成的：7个",
+        "3个小长方形组成的：2个",
+        "4个小长方形组成的：2个",
+        "6个小长方形组成的：1个",
+        "6+7+2+2+1 = 18个。"
+      ],
+      "hints": [
+        "长方形是由横向和纵向的线段围成的",
+        "横向有多少种选法？3+2+1=6种",
+        "纵向有多少种选法？2+1=3种",
+        "6×3=18个长方形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填6",
+          "reason": "只数了最小的长方形",
+          "correction": "还要数由多个小长方形组成的大长方形",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "填12",
+          "reason": "漏数了一些组合",
+          "correction": "用公式：横向线段数×纵向线段数 = 6×3=18",
+          "errorLayer": "L4"
+        }
+      ],
+      "knowledgePoints": [
+        "图形计数",
+        "长方形计数",
+        "乘法原理"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.1,
+        "b": 1.8,
+        "c": 0.25
+      },
+      "tags": [
+        "数图形",
+        "长方形",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2007,
+        "paper": "第十二届华杯赛少年组"
+      }
+    },
+    {
+      "id": "g1-cg-28",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "小红家住在5楼，她从1楼走到2楼要用2分钟。照这样计算，她从1楼走到5楼一共要用多少分钟？",
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八",
+        "8分钟"
+      ],
+      "solution": [
+        "从1楼到2楼走了1层楼梯，用了2分钟。",
+        "从1楼到5楼要走几层呢？",
+        "1楼→2楼：1层",
+        "2楼→3楼：1层",
+        "3楼→4楼：1层",
+        "4楼→5楼：1层",
+        "一共要走 5 - 1 = 4层楼梯。",
+        "每层用2分钟，4层用 4 × 2 = 8分钟。"
+      ],
+      "hints": [
+        "从1楼到5楼要走几层楼梯？",
+        "1楼到2楼是1层，2楼到3楼是1层...",
+        "5-1=4层楼梯",
+        "每层2分钟，4层就是4×2=8分钟"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填10",
+          "reason": "直接用5×2=10，以为有5层楼梯",
+          "correction": "从1楼到5楼只有4层楼梯，5-1=4，4×2=8",
+          "errorLayer": "L4"
+        },
+        {
+          "mistake": "填7",
+          "reason": "算错了",
+          "correction": "4层楼梯，每层2分钟，4×2=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "植树问题",
+        "楼梯问题",
+        "间隔问题"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.1,
+        "b": 1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "植树问题",
+        "楼梯问题",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2015,
+        "paper": "第十三届希望杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有一列数：1、2、3、4、1、2、3、4、1、2、3、4... 第27个数是几？这27个数的和是多少？",
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三"
+      ],
+      "solution": [
+        "观察发现：1、2、3、4 四个数为一组重复出现。",
+        "27 ÷ 4 = 6 组余 3 个",
+        "第27个数就是第7组的第3个数，是3。",
+        "每组的和是：1 + 2 + 3 + 4 = 10",
+        "6组的和是：6 × 10 = 60",
+        "加上余下的3个数：1 + 2 + 3 = 6",
+        "这27个数的和是：60 + 6 = 66。",
+        "（注：题目只问第27个数是几，答案为3）"
+      ],
+      "hints": [
+        "几个数一组在重复？1、2、3、4，4个一组",
+        "27里面有几组？27÷4=6组余3个",
+        "余3就是每组的第3个，1、2、3...第3个是3",
+        "所以第27个数是3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填1",
+          "reason": "余数算错了，以为余1",
+          "correction": "27÷4=6余3，第3个是3",
+          "errorLayer": "L4"
+        },
+        {
+          "mistake": "填2",
+          "reason": "数错了位置",
+          "correction": "每组第1个是1，第2个是2，第3个是3",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "周期性规律",
+        "除法",
+        "求和"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.1,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "周期问题",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2015,
+        "paper": "迎春杯一年级"
+      }
+    },
+    {
+      "id": "g1-cg-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "数一数：下图中一共有多少个三角形？\n（大三角形被从顶点出发的3条线段分成了4个小三角形）",
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十",
+        "10个"
+      ],
+      "solution": [
+        "给4个小三角形编号为①、②、③、④。",
+        "单个小三角形：4个（①、②、③、④）",
+        "2个小三角形组成的：3个（①②、②③、③④）",
+        "3个小三角形组成的：2个（①②③、②③④）",
+        "4个小三角形组成的：1个（①②③④）",
+        "一共：4 + 3 + 2 + 1 = 10个三角形。",
+        "规律：从顶点出发画n条线，分成(n+1)个小三角形，总个数 = 1+2+...+(n+1)"
+      ],
+      "hints": [
+        "按三角形的大小分类数",
+        "先数单个的小三角形，有4个",
+        "再数2个拼起来的，有3个",
+        "4+3+2+1=10个三角形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "填4",
+          "reason": "只数了小三角形",
+          "correction": "还要数由多个小三角形组成的大三角形",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "填7",
+          "reason": "漏数了3个和4个组成的三角形",
+          "correction": "4+3+2+1=10，要数全所有组合",
+          "errorLayer": "L4"
+        }
+      ],
+      "knowledgePoints": [
+        "图形计数",
+        "三角形计数",
+        "分类计数"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.1,
+        "b": 1.7,
+        "c": 0.25
+      },
+      "tags": [
+        "数图形",
+        "三角形",
+        "竞赛真题"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2008,
+        "paper": "第十三届华杯赛少年组"
+      }
+    }
+  ]
+}

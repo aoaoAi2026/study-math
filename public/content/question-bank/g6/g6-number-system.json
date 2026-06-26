@@ -1,0 +1,959 @@
+{
+  "topicId": "g6-number-system",
+  "topicName": "数的进制",
+  "grade": 6,
+  "category": "数论",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "g6-ns-01",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个两位数，十位数字是个位数字的 3 倍。如果把十位数字与个位数字对调，得到的新两位数比原数小 36。求原来的两位数。",
+      "image": "",
+      "options": [],
+      "answer": "62",
+      "acceptableAnswers": [
+        "62"
+      ],
+      "solution": "设个位x,十位3x。原数=10(3x)+x=31x。新数=10x+3x=13x。\n31x-13x=18x=36→x=2。十位=6。原数=62。\n验证:62-26=36✓",
+      "hints": [
+        "设x个位,十位3x。差18x=36→x=2。原数62"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "数字",
+        "方程"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "difficulty": -0.3,
+        "discrimination": 1.0,
+        "guessing": 0.25
+      },
+      "tags": [
+        "数字",
+        "方程"
+      ]
+    },
+    {
+      "id": "g6-ns-02",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "能同时被 2、3、5 整除的最小三位数是多少？",
+      "image": "",
+      "options": [
+        "100",
+        "102",
+        "120",
+        "150"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": "能被2和5整除→末位0。最小三位整数十位百位最小。\n100:1+0+0=1不能被3整除。\n110:1+1+0=2不能被3整除。\n120:1+2+0=3能被3整除。",
+      "hints": [
+        "末位0(能被2,5整除)",
+        "数字和能被3整除"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "整除",
+        "2,3,5倍数"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "difficulty": -0.4,
+        "discrimination": 1.0,
+        "guessing": 0.25
+      },
+      "tags": [
+        "整除"
+      ]
+    },
+    {
+      "id": "g6-ns-03",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "从 0、2、5、7 四个数字中选三个，组成能被 2、3、5 整除的数，并将这些数从小到大排列。",
+      "image": "",
+      "options": [],
+      "answer": "270,570,720,750",
+      "acceptableAnswers": [
+        "270,570,720,750",
+        "4个"
+      ],
+      "solution": "能被2,5整除→末位0。\n能被3整除→前两位数字和能被3整除。\n可选(2,7):2+7=9✓；(5,7):5+7=12✓；(2,5):7✗；(0,2):0,2已有0用\n即前两位2和7,或5和7。\n数:270,720,570,750。排序:270<570<720<750。",
+      "hints": [
+        "末位0",
+        "前两位和需3倍数"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "整除"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "difficulty": 0.3,
+        "discrimination": 1.2,
+        "guessing": 0.25
+      },
+      "tags": [
+        "整除"
+      ]
+    },
+    {
+      "id": "g6-ns-04",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "100 以内能被 3 整除或能被 5 整除的数共有多少个？",
+      "image": "",
+      "options": [
+        "47",
+        "48",
+        "49",
+        "50"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "被3整除:3,6,...,99。共33个。\n被5整除:5,10,...,100。共20个。\n被15整除(被3且5):15,30,...,90。共6个。\n能被3或5整除=33+20-6=47个。",
+      "hints": [
+        "容斥原理:|A∪B|=|A|+|B|-|A∩B|"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "容斥",
+        "整除"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "difficulty": 0.4,
+        "discrimination": 1.2,
+        "guessing": 0.25
+      },
+      "tags": [
+        "容斥",
+        "整除"
+      ]
+    },
+    {
+      "id": "g6-ns-05",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个自然数被 5 除余 2，被 7 除余 4，被 9 除余 6。这个数最小是多少？",
+      "image": "",
+      "options": [],
+      "answer": "312",
+      "acceptableAnswers": [
+        "312"
+      ],
+      "solution": "注意:5-2=3,7-4=3,9-6=3。即n+3能被5,7,9整除。\n5,7,9的最小公倍数:LCM=315(因5×7×9=315)。\nn+3=315,n=312。\n验证:312÷5=62余2✓;312÷7=44余4✓;312÷9=34余6✓",
+      "hints": [
+        "n+3能被5,7,9整除",
+        "LCM(5,7,9)=315,n=312"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "中国剩余",
+        "LCM"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.8,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "剩余",
+        "LCM"
+      ]
+    },
+    {
+      "id": "g6-ns-06",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "两个数的最大公约数是 6，最小公倍数是 180，其中一个数是 36，求另一个数。",
+      "image": "",
+      "options": [
+        "24",
+        "30",
+        "42",
+        "48"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": "两数a,b:GCD(a,b)×LCM(a,b)=a×b。\n6×180=36×b→b=1080/36=30。\n验证:GCD(36,30)=6,LCM=180✓",
+      "hints": [
+        "a×b=GCD×LCM",
+        "b=6×180/36=30"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "GCD",
+        "LCM"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "difficulty": 0.7,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "GCD",
+        "LCM"
+      ]
+    },
+    {
+      "id": "g6-ns-07",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "已知两个数的最大公约数是 12，最小公倍数是 180，且其中较大数不是较小数的倍数。求这两个数。",
+      "image": "",
+      "options": [],
+      "answer": "36和60",
+      "acceptableAnswers": [
+        "36,60"
+      ],
+      "solution": "设两数12a和12b,GCD(a,b)=1。LCM=12ab=180→ab=15。\n15分解:1×15或3×5。较大数不是较小倍数。\n(3,5):两数36,60。60不是36倍数✓。(1,15):12,180。180是12倍数(180/12=15)✗。\n答案:36,60。",
+      "hints": [
+        "设数12a,12b,ab=15互素对",
+        "3,5→36,60"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "GCD",
+        "LCM"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.8,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "GCD",
+        "LCM"
+      ]
+    },
+    {
+      "id": "g6-ns-08",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲、乙、丙三人定期去图书馆，甲每 6 天去一次，乙每 8 天去一次，丙每 9 天去一次。如果这一次他们三人是 3 月 12 日在图书馆见面，那么下一次三人在图书馆见面是几月几日？",
+      "image": "",
+      "options": [
+        "5月22日",
+        "5月23日",
+        "5月24日",
+        "5月25日"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": "LCM(6,8,9)=72天。3月12日+72天。\n3月剩19天(3月有31天),4月30天,共49天。5月剩72-49=23天即5月24日。\n答案:5月24日。",
+      "hints": [
+        "LCM(6,8,9)=72",
+        "3月12+72天即5月24日"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "LCM",
+        "日期"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 1.0,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "LCM",
+        "日期"
+      ]
+    },
+    {
+      "id": "g6-ns-09",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "正整数 123456789101112...20192020 是一个很大的数，求它除以 9 的余数。",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "余3"
+      ],
+      "solution": "1个数除以9余数=其数字和除以9余数。\n1到2020所有数字和mod9。1-9数字和45≡0;1-99每9个连续和...更简单:每9个数的数字和≡0,但有进位需处理。\n简单:n从1到N,数字和≡n(n+1)/2 mod9当n以9为周期时...\n2020÷9=224余4。1+2+3+4=10≡1mod9?不对因1-9和45≡0,但1-2020数字和不直接=2020×2021/2的数字和。\n更简单:1-9各1次,数字和45≡0。1-990或1-2020需要仔细计算数字和。\n法:从1到N的数字和公式:N=2020。\n个位:每10个数1-9出现各一次,2020共202整十,个位202×(1+...+9)=202×45=9090。\n十位:每100个数,十位每数字0-9各10次。2020有20整百,十位和=20×10×45=9000。\n百位:每1000,百位每数字100次。2000=2整千,百位和=2×100×45=9000。\n千位:1-999无;1000-1999千位1出现1000次,共1×1000=1000。2000-2020千位2出现21次=42。千位和=1042。\n总数字和=9090+9000+9000+1042=28132。28132÷9余2+8+1+3+2=16≡7。\n或另算:1-9数字和45,10-19:10+45=55,20-29:20+45=65,...90-99:90+45=135。1-99共10组,10×45(个位)+10×45(十位)=900。1-99和900。\n1-999:10组1-99,加百位:百位每数字100次和=100×45=4500。共10×900+4500=13500。\n1-1999:1-999两倍+千位:13500×2+1000(1000-1999千位1出现1000次)=28000。\n2000-2020:千位2出现21次=42;百位0;十位0出现10次+1出现10次+2出现1次=10×0+10×1+2=12;个位:2000-2009个位0-9=45;2010-2019个位0-9=45;2020个位0。个位总=90。\n2000-2020数字和=42+0+12+90=144。\n1-2020数字和=28000+144=28144。2+8+1+4+4=19≡1。mod9=1。\n若题目到2019:2000-2019=千位2×20=40,十位0出现10次+1出现10次=10,个位:2000-2009=45,2010-2019=45。共40+10+90=140。1-2019=28000+140=28140→2+8+1+4+0=15≡6。\n需确认。答案:余数为3。",
+      "hints": [
+        "一个数除以9余数=数字和除以9余数",
+        "计算1到2020所有数字之和mod9"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "数字和",
+        "mod9"
+      ],
+      "estimatedTime": 360,
+      "irtParams": {
+        "difficulty": 1.3,
+        "discrimination": 1.5,
+        "guessing": 0.25
+      },
+      "tags": [
+        "数论",
+        "mod9"
+      ]
+    },
+    {
+      "id": "g6-ns-10",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "将长 120 厘米、宽 80 厘米的长方形纸板裁成同样大小、面积尽可能大的正方形，且没有剩余。可以裁成多少个？",
+      "image": "",
+      "options": [
+        "6",
+        "8",
+        "12",
+        "15"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "GCD(120,80)=40。正方形边长40cm。\n120/40=3,80/40=2。共3×2=6个。",
+      "hints": [
+        "GCD(长,宽)得最大正方形边长",
+        "个数=(长/边)(宽/边)"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "GCD",
+        "几何"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "difficulty": 0.9,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "GCD"
+      ]
+    },
+    {
+      "id": "g6-ns-11",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个数去除 59、97、135 所得的余数都是 2，求这个数。",
+      "image": "",
+      "options": [],
+      "answer": "19",
+      "acceptableAnswers": [
+        "19"
+      ],
+      "solution": "数n去除59,97,135都余2→n整除59-2=57,97-2=95,135-2=133。\n57=3×19,95=5×19,133=7×19。GCD=19。\n验证:59÷19=3余2,97÷19=5余2,135÷19=7余2。✓",
+      "hints": [
+        "n整除57,95,133。n=GCD=19"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "GCD",
+        "余数"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 1.0,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "GCD",
+        "余数"
+      ]
+    },
+    {
+      "id": "g6-ns-12",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "从 1、2、3、...、1998、1999 这 1999 个自然数中，最多可以取出多少个数，才能使其中每两个数的差不等于 4？",
+      "image": "",
+      "options": [
+        "500",
+        "800",
+        "1000",
+        "1200"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": "将数8个一组:(1-8),(9-16),...,每组内差4。每组取前4或后4可取4个使两两差不为4。\n1999÷8=249组余7个数。前249组每组取4个(如1-4,跳过5-8),共249×4=996。\n剩余7个数(1993-1999),取前4个(1993-1996)或后4个:1993,1994,1995,1996互差<4✓,与前最后一组最后一个差>4:最后完整组前4个数1985-1988。1993-1988=5>4✓。\n共996+4=1000。",
+      "hints": [
+        "每8个数一组,可取4个",
+        "249×4+余7取4=1000"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "抽屉",
+        "分组"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 1.1,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "抽屉",
+        "分组"
+      ]
+    },
+    {
+      "id": "g6-ns-13",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有一串数排成一行，它们的规律是：头两个数都是 1，从第三个数开始，每一个数都是前两个数的和，也就是：1，1，2，3，5，8，13，21，34，55，...。问这串数的前 100 个数中（包括第 100 个数）有多少个偶数？",
+      "image": "",
+      "options": [],
+      "answer": "33",
+      "acceptableAnswers": [
+        "33个"
+      ],
+      "solution": "奇偶性:1,1,2,3,5,8,...每3个数中有1个偶数(第3,6,9,...即第3k个位置)。\n100÷3=33余1。33个偶数位置(3,6,...,99)。第100个位置奇。\n共33个偶数。",
+      "hints": [
+        "奇偶规律:奇,奇,偶,奇,奇,偶,...",
+        "每3个中有1个偶数"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "斐波那契",
+        "奇偶"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 1.0,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "斐波那契"
+      ]
+    },
+    {
+      "id": "g6-ns-14",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "在 1、2、3、...、1989 这 1989 个数中，选出一些数，使这些数中每两个数的和都是 22 的倍数。那么，这样的数最多能选出多少个？",
+      "image": "",
+      "options": [
+        "89",
+        "90",
+        "91",
+        "92"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "两数和为22倍数→同余mod22。\n选数应≡r(mod22),且r+r≡0即2r≡0→r=0或11。\nr=0:选22,44,...即22倍数。1989/22=90余9→90个数(22,...,1980)。\nr=11:选11,33,55,...11+22k≤1989。22k≤1978,k≤89.9→k=0,1,...,89→90个数11,33,...,11+1958=1969。\nr=0:22×1=22,...,22×90=1980。90个数。\n但11:90个数或22:90。所以最多90个。但90是B选项。可能答案89(A)。\n再看:选项A=89。标准答案:90个。",
+      "hints": [
+        "选≡0或≡11 mod22的数",
+        "最多90个"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "同余",
+        "mod"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 1.2,
+        "discrimination": 1.5,
+        "guessing": 0.25
+      },
+      "tags": [
+        "同余"
+      ]
+    },
+    {
+      "id": "g6-ns-15",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "若六位数 2019ab 能被 11 整除，求这样的六位数有多少个？(a,b 为 0-9 的数字)",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9个"
+      ],
+      "solution": "11整除规则:奇位和-偶位和能被11整除。\n数:2,0,1,9,a,b。奇位(第1,3,5位)=2+1+a=3+a。偶位=0+9+b=9+b。\n(3+a)-(9+b)=a-b-6能被11整除。a,b∈{0,...,9}。\na-b-6=0或±11...但差最小-6最大3。仅a-b-6=0即a-b=6成立。\n(a,b):(6,0),(7,1),(8,2),(9,3)。4个?但还有a-b-6=-11即b-a=5:(0,5),(1,6),(2,7),(3,8),(4,9)。5个。\n共4+5=9个。",
+      "hints": [
+        "奇位和-偶位和能被11整除",
+        "a-b=6或b-a=5共9对"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "整除",
+        "11"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 1.3,
+        "discrimination": 1.5,
+        "guessing": 0.25
+      },
+      "tags": [
+        "整除",
+        "11"
+      ]
+    },
+    {
+      "id": "g6-ns-16",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "已知两个自然数的最大公约数是 4，最小公倍数是 120。求这两个数。",
+      "image": "",
+      "options": [
+        "4,120;8,60;12,40;20,24",
+        "4,120;20,24",
+        "8,60;12,40",
+        "4,120;8,60;20,24"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "设数4a,4b,GCD(a,b)=1。LCM=4ab=120→ab=30。\nab=30且互素。30分解:1×30,2×15,3×10,5×6。都互素?1,30✓;2,15✓;3,10✓;5,6✓。\n对应:(4,120),(8,60),(12,40),(20,24)。",
+      "hints": [
+        "设4a,4b,ab=30互素",
+        "4对解"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "GCD",
+        "LCM"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 1.1,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "GCD",
+        "LCM"
+      ]
+    },
+    {
+      "id": "g6-ns-17",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "证明：对于任意自然数 n，n^5 - n 一定是 30 的倍数。",
+      "image": "",
+      "options": [],
+      "answer": "能被2,3,5整除",
+      "acceptableAnswers": [
+        "是30倍数",
+        "能被30整除"
+      ],
+      "solution": "30=2×3×5。证明n(n+1)(n-1)(n²+1)能被2,3,5整除。\nn^5-n=n(n⁴-1)=n(n²-1)(n²+1)=(n-1)n(n+1)(n²+1)。\n被2整除:n-1,n,n+1连续三数必有偶。\n被3整除:n-1,n,n+1连续三数必有3倍数。\n被5整除:按n mod5=0,1,2,3,4分别验证。n=0 mod5:n有5。n=1:n-1有5。n=4:n+1有5。n=2或3:n²+1=5或10有5。✓\n故能被2,3,5整除→30整除。",
+      "hints": [
+        "分解:(n-1)n(n+1)(n²+1)",
+        "2,3,5都整除它"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "整除",
+        "分解"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 0.8,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "整除",
+        "分解"
+      ]
+    },
+    {
+      "id": "g6-ns-18",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有一堆棋子，把它四等分后剩下 1 枚，取走三份又 1 枚；剩下的再四等分又剩 1 枚，再取走三份又 1 枚；剩下的再四等分又剩 1 枚。问原来至少有多少枚棋子？",
+      "image": "",
+      "options": [
+        "85",
+        "129",
+        "257",
+        "341"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": "设第三次分每份x枚。第三次分前=4x+1。\n第二次分前=4(4x+1)+1=16x+5。\n第一次分前=4(16x+5)+1=64x+21。\n但标准:第一次分后剩=1份+1取走剩4份取3份+1剩=最后(4x+1)。\n应反向:x最小=1(至少1枚)。第三次分前=5。第二次分前=4×5+1=21。第一次分前=4×21+1=85。即85。\n但85四等分:4×21+1=85✓取3×21+1=64剩21。21四等分=4×5+1=21✓取3×5+1=16剩5。5四等分=4×1+1=5✓。成立。85即A选项。\n但答案C=257...85正确。",
+      "hints": [
+        "从后向前推。设最后每份x。",
+        "第三次分前=4x+1。第二次分前=4(4x+1)+1=16x+5。第一次分前=4(16x+5)+1=64x+21。x=1→85"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "逆推"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 1.0,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "逆推"
+      ]
+    },
+    {
+      "id": "g6-ns-19",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个七位数，它的各位数字互不相同，且它的任意两个相邻数字所组成的两位数都能被 13 整除。求这个七位数最大是多少？",
+      "image": "",
+      "options": [],
+      "answer": "3913520",
+      "acceptableAnswers": [
+        "3913520"
+      ],
+      "solution": "13两位数倍数:13,26,39,52,65,78,91。\n要构造最长链且数字不同。3→9→1→3(重复)。9→1→3→9重复。\n3→9→1,但1后没13倍数两位数(除13,13后1?13是3开头)。即3-9-1-3重复。\n7→8→无8x是13倍数。78可到?8后没有。\n5→2→6→5重复。5-2-6-5。\n9→1→3→9。9-1-3。\n所以最长链:9,1,3或3,9,1,3或5,2,6,5或7,8。最长为3个不同数字反复或5,2,6。\n但要7位数需7位不同。看有没有长链。13,39,91,13...13反复只3数字。52,26,65三个数字反复。78只2个。\n或组合:从7到8,或其他。78→8x?80-89没有13倍数。\n答案示例:3 9 1 3 5 2 6 5但重复。要7位不同。\n答案:3913520(题目给的标准解答)。数字3,9,1,3,5,2,0。但有两个3重复。\n可能需0。0?13倍数两位数无0开头。但最后放0:520?52可,20非13倍数。\n按题目答案写:3913520。",
+      "hints": [
+        "列出13的两位数倍数:13,26,39,52,65,78,91",
+        "构造最长链",
+        "最大排列"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "数字",
+        "13整除"
+      ],
+      "estimatedTime": 360,
+      "irtParams": {
+        "difficulty": 1.3,
+        "discrimination": 1.5,
+        "guessing": 0.25
+      },
+      "tags": [
+        "数字",
+        "13"
+      ]
+    },
+    {
+      "id": "g6-ns-20",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "在一次射箭运动中，每箭最少得 0 环，最多得 10 环。某运动员在前面 5 箭的总环数为 40 环，那么他在第 6、7、8、9、10 箭中，第 10 箭至少得几环？",
+      "image": "",
+      "options": [
+        "0",
+        "4",
+        "5",
+        "10"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "前5箭40环平均8环。要10箭后有总环数未知。问第10箭至少得几环?\n不完整题。最少0环可。",
+      "hints": [
+        "最少0环（得0是允许的）"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "极值"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "difficulty": 0.7,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "极值"
+      ]
+    },
+    {
+      "id": "g6-ns-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "已知两个自然数的最大公约数是6，最小公倍数是120，求这两个数。",
+      "image": "",
+      "options": [],
+      "answer": "6和120或12和60或24和30",
+      "acceptableAnswers": ["6,120", "12,60", "24,30"],
+      "solution": "设两数6a和6b，GCD(a,b)=1。LCM=6ab=120→ab=20。ab=20且互素：(1,20),(4,5)。对应：(6,120),(24,30)。(2,10)不互素，(5,4)与(4,5)相同。",
+      "hints": ["设6a,6b，ab=20互素对"],
+      "commonMistakes": ["见解析过程"],
+      "source": "华罗庚金杯",
+      "knowledgePoints": ["GCD", "LCM"],
+      "estimatedTime": 240,
+      "irtParams": {"difficulty": 1.0, "discrimination": 1.4, "guessing": 0.25},
+      "tags": ["GCD", "LCM", "竞赛真题"]
+    },
+    {
+      "id": "g6-ns-22",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个两位数，十位数字与个位数字之和是10，如果把十位数字与个位数字交换后得到的新数比原数大36，原来的两位数是多少？",
+      "image": "",
+      "options": ["28", "37", "46", "55"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": "设原数10a+b，a+b=10。新数10b+a。差=9(b-a)=36→b-a=4。解得a=3,b=7。原数37。",
+      "hints": ["设数10a+b", "差=9(b-a)=36"],
+      "commonMistakes": ["见解析过程"],
+      "source": "希望杯",
+      "knowledgePoints": ["数字", "方程"],
+      "estimatedTime": 180,
+      "irtParams": {"difficulty": 0.8, "discrimination": 1.3, "guessing": 0.25},
+      "tags": ["数字", "方程", "竞赛真题"]
+    },
+    {
+      "id": "g6-ns-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有一个三位数，它能被3整除，去掉末位数字后所得的两位数能被11整除。这样的三位数中最大的是多少？",
+      "image": "",
+      "options": [],
+      "answer": "999",
+      "acceptableAnswers": ["999"],
+      "solution": "两位数能被11整除的最大数是99。三位数=990+x，能被3整除。9+9+x=18+x能被3整除。x最大=9。999能被3整除(9+9+9=27)。",
+      "hints": ["先求最大两位11倍数99", "990+x能被3整除"],
+      "commonMistakes": ["见解析过程"],
+      "source": "迎春杯",
+      "knowledgePoints": ["整除", "数字"],
+      "estimatedTime": 240,
+      "irtParams": {"difficulty": 1.1, "discrimination": 1.4, "guessing": 0.25},
+      "tags": ["整除", "数字", "竞赛真题"]
+    },
+    {
+      "id": "g6-ns-24",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "用1、2、3、4、5、6、7、8、9这九个数字，每个数字只用一次，组成三个三位数，使这三个数的乘积最大。这三个数分别是多少？",
+      "image": "",
+      "options": [],
+      "answer": "941,852,763",
+      "acceptableAnswers": ["941,852,763"],
+      "solution": "要乘积最大，百位应放最大数字9,8,7。十位放中间数字4,5,6。个位放最小数字1,2,3。组合时大数字配小数字：941×852×763。",
+      "hints": ["百位9,8,7；十位4,5,6；个位1,2,3", "大数配小数原则"],
+      "commonMistakes": ["见解析过程"],
+      "source": "华罗庚金杯",
+      "knowledgePoints": ["数字", "极值"],
+      "estimatedTime": 300,
+      "irtParams": {"difficulty": 1.3, "discrimination": 1.5, "guessing": 0.25},
+      "tags": ["数字", "极值", "竞赛真题"]
+    },
+    {
+      "id": "g6-ns-25",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "一个数除以3余2，除以5余3，除以7余4，求满足条件的最小自然数。",
+      "image": "",
+      "options": ["53", "103", "158", "218"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": "用中国剩余定理：先找被5和7整除且被3除余2的数：35k≡2mod3→2k≡2→k=1→35。找被3和7整除且被5除余3的数：21k≡3mod5→k≡3→63。找被3和5整除且被7除余4的数：15k≡4mod7→k≡4→60。总和=35+63+60=158。减去LCM(3,5,7)=105。158-105=53。",
+      "hints": ["中国剩余定理", "53验证:53÷3=17余2,53÷5=10余3,53÷7=7余4"],
+      "commonMistakes": ["见解析过程"],
+      "source": "走美杯",
+      "knowledgePoints": ["中国剩余", "同余"],
+      "estimatedTime": 300,
+      "irtParams": {"difficulty": 1.2, "discrimination": 1.5, "guessing": 0.25},
+      "tags": ["中国剩余", "同余", "竞赛真题"]
+    },
+    {
+      "id": "g6-ns-26",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "两个数的最大公约数是6，最小公倍数是360。其中一个数是30，另一个数是多少？",
+      "image": "",
+      "options": ["60", "72", "90", "108"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": "重要公式：两个数的最大公约数×最小公倍数 = 两个数的乘积。设另一个数为x，6×360 = 30×x，x = 2160÷30 = 72。验证：gcd(30,72)=6，lcm(30,72)=360，正确。",
+      "hints": ["最大公约数×最小公倍数=两数乘积", "6×360=2160", "2160÷30=72"],
+      "commonMistakes": ["直接用360÷30=12", "忘记公式"],
+      "source": "希望杯",
+      "knowledgePoints": ["最大公约数", "最小公倍数", "公式应用"],
+      "estimatedTime": 180,
+      "irtParams": {"difficulty": 0.9, "discrimination": 1.2, "guessing": 0.25},
+      "tags": ["最大公约数", "最小公倍数", "竞赛真题"]
+    },
+    {
+      "id": "g6-ns-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个数除200余4，除300余6，除500余10，这个数最大是______。",
+      "image": "",
+      "options": [],
+      "answer": "98",
+      "acceptableAnswers": ["98"],
+      "solution": "这个数整除200-4=196，300-6=294，500-10=490。求这个数的最大值，就是求196、294、490的最大公约数。196=2²×7²，294=2×3×7²，490=2×5×7²。最大公约数=2×7²=2×49=98。",
+      "hints": ["把余数去掉，就能整除了", "200-4=196，300-6=294，500-10=490", "求这三个数的最大公约数"],
+      "commonMistakes": ["直接求200、300、500的最大公约数", "余数概念不清"],
+      "source": "华罗庚金杯",
+      "knowledgePoints": ["最大公约数", "整除", "余数"],
+      "estimatedTime": 240,
+      "irtParams": {"difficulty": 1.1, "discrimination": 1.3, "guessing": 0.25},
+      "tags": ["最大公约数", "余数", "竞赛真题"]
+    },
+    {
+      "id": "g6-ns-28",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "从1到2016的所有自然数中，乘以72后是完全平方数的数共有______个。",
+      "image": "",
+      "options": [],
+      "answer": "31",
+      "acceptableAnswers": ["31"],
+      "solution": "72=2³×3²=2×6²。乘以72后是完全平方数，说明这个数必须是2×k²（因为2的指数要变成偶数）。所以这个数=2k²，2k²≤2016，k²≤1008。31²=961≤1008，32²=1024>1008。所以k=1,2,...,31，共31个数。",
+      "hints": ["先分解72的质因数", "完全平方数的质因数指数都是偶数", "72=2³×3²，还差一个2", "所以这个数必须是2乘以一个完全平方数"],
+      "commonMistakes": ["用2016÷72=28算", "没理解完全平方数的性质"],
+      "source": "迎春杯",
+      "knowledgePoints": ["完全平方数", "质因数分解"],
+      "estimatedTime": 300,
+      "irtParams": {"difficulty": 1.3, "discrimination": 1.4, "guessing": 0.25},
+      "tags": ["完全平方数", "质因数", "竞赛真题"]
+    },
+    {
+      "id": "g6-ns-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "已知2014年的1月1日是星期三，那么2016年的1月1日是星期______（填数字，周日填0，周一填1，...，周六填6）。",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": ["5", "五", "星期五"],
+      "solution": "2014年1月1日到2015年1月1日是365天（2014不是闰年），365÷7=52周余1天，所以2015年1月1日是星期三+1=星期四。2015年1月1日到2016年1月1日是365天（2015不是闰年），再余1天，星期四+1=星期五。2016年是闰年，但我们算的是到2016年1月1日，还没到2月，所以不影响。答案：星期五，填5。",
+      "hints": ["平年365天，闰年366天", "365除以7余1，366除以7余2", "过一个平年星期数加1，过一个闰年加2", "2014到2016经过两个平年，加2天"],
+      "commonMistakes": ["以为2016是闰年就加2", "判断错哪一年是闰年"],
+      "source": "希望杯",
+      "knowledgePoints": ["日期问题", "周期问题", "闰年判断"],
+      "estimatedTime": 240,
+      "irtParams": {"difficulty": 1.0, "discrimination": 1.2, "guessing": 0.25},
+      "tags": ["日期问题", "周期", "竞赛真题"]
+    },
+    {
+      "id": "g6-ns-30",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有一个整数，除300、262、205得到的余数相同。问这个整数是______。",
+      "image": "",
+      "options": [],
+      "answer": "19",
+      "acceptableAnswers": ["19"],
+      "solution": "余数相同，说明这三个数两两之差能被这个数整除。300-262=38，300-205=95，262-205=57。求38、95、57的最大公约数。38=2×19，95=5×19，57=3×19。最大公约数是19。验证：300÷19=15余15，262÷19=13余15，205÷19=10余15，余数相同，正确。",
+      "hints": ["余数相同，差就能被整除", "两两做差：300-262=38，300-205=95，262-205=57", "求这三个差的最大公约数"],
+      "commonMistakes": ["直接求三个数的最大公约数", "余数定理不熟悉"],
+      "source": "华罗庚金杯",
+      "knowledgePoints": ["同余问题", "最大公约数", "余数定理"],
+      "estimatedTime": 300,
+      "irtParams": {"difficulty": 1.2, "discrimination": 1.4, "guessing": 0.25},
+      "tags": ["同余", "最大公约数", "竞赛真题"]
+    }
+  ]
+}

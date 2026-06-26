@@ -1,93 +1,137 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{
-  title?: string
-  content: string
-}>()
-
-const showTip = ref(false)
+defineProps<{ title?: string; content: string }>()
 </script>
 
 <template>
-  <div class="story-card">
-    <div class="story-card__icon">📖</div>
-    <h3 v-if="title" class="story-card__title">{{ title }}</h3>
-    <div class="story-card__content" v-html="content"></div>
-    <div class="story-card__question">
-      <div class="story-card__question-icon">💭</div>
-      <p class="story-card__question-text">
-        思考一下：你能解决这个故事中的问题吗？
-      </p>
+  <div class="card-story">
+    <div class="card-story__header">
+      <div class="card-story__icon-wrap">
+        <span class="card-story__icon">📖</span>
+      </div>
+      <div class="card-story__title-wrap">
+        <span class="card-story__label">故事引入</span>
+        <h2 class="card-story__title" v-if="title">{{ title }}</h2>
+      </div>
     </div>
-    <button class="story-card__btn" @click="$emit('continue')">
-      开始探索 →
-    </button>
+    <div class="card-story__body" v-html="content"></div>
   </div>
 </template>
 
 <style scoped>
-.story-card {
-  background: linear-gradient(135deg, #fef3c7 0%, #fef9c3 100%);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  border: 2px solid #fcd34d;
+.card-story {
+  background: var(--bg-card);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
 }
 
-.story-card__icon {
-  font-size: 48px;
-  margin-bottom: var(--space-3);
-}
-
-.story-card__title {
-  font-size: var(--text-xl);
-  color: #92400e;
-  margin-bottom: var(--space-3);
-}
-
-.story-card__content {
-  color: #78350f;
-  line-height: var(--leading-relaxed);
-  font-size: var(--text-base);
-}
-
-.story-card__content :deep(p) {
-  margin-bottom: var(--space-3);
-}
-
-.story-card__question {
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: var(--radius-lg);
-  padding: var(--space-4);
-  margin: var(--space-4) 0;
+.card-story__header {
   display: flex;
-  gap: var(--space-3);
-  align-items: flex-start;
+  align-items: center;
+  gap: 18px;
+  padding: 28px 32px 20px;
+  background: linear-gradient(135deg, var(--card-yellow-bg) 0%, rgba(253, 227, 138, 0.8) 50%, var(--card-yellow-bg) 100%);
+  border-bottom: 1px solid rgba(234, 179, 8, 0.15);
 }
 
-.story-card__question-icon {
-  font-size: var(--text-xl);
+.card-story__icon-wrap {
+  width: 60px;
+  height: 60px;
+  background: var(--bg-card);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(180, 83, 9, 0.15);
+  flex-shrink: 0;
 }
 
-.story-card__question-text {
-  color: #92400e;
-  font-weight: 500;
+.card-story__icon { font-size: 28px; }
+
+.card-story__title-wrap { flex: 1; min-width: 0; }
+
+.card-story__label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--card-yellow-text);
+  background: rgba(180, 83, 9, 0.12);
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+.card-story__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--card-yellow-text);
   margin: 0;
+  line-height: 1.3;
 }
 
-.story-card__btn {
-  width: 100%;
-  padding: var(--space-3) var(--space-4);
-  background: linear-gradient(135deg, #f59e0b, #d97706);
-  color: white;
-  border-radius: var(--radius-lg);
-  font-weight: 600;
-  font-size: var(--text-base);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+.card-story__body {
+  padding: 28px 32px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-primary);
 }
 
-.story-card__btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+.card-story__body :deep(p) {
+  margin: 0 0 16px;
+}
+.card-story__body :deep(p:last-child) { margin-bottom: 0; }
+
+.card-story__body :deep(h4) {
+  font-size: 17px;
+  color: var(--card-yellow-text);
+  margin: 24px 0 12px;
+  font-weight: 700;
+}
+.card-story__body :deep(h5) {
+  font-size: 15px;
+  color: var(--card-yellow-text);
+  margin: 20px 0 10px;
+  font-weight: 700;
+}
+
+.card-story__body :deep(strong) {
+  color: var(--card-yellow-text);
+  font-weight: 700;
+}
+
+.card-story__body :deep(ul),
+.card-story__body :deep(ol) {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.card-story__body :deep(li) {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.card-story__body :deep(hr) {
+  border: none;
+  border-top: 1px dashed rgba(180, 83, 9, 0.15);
+  margin: 28px 0;
+}
+
+.card-story__body :deep(code) {
+  background: var(--card-yellow-bg);
+  color: var(--card-yellow-text);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+@media (max-width: 640px) {
+  .card-story__header { padding: 22px 22px 16px; }
+  .card-story__body { padding: 22px; font-size: 14px; }
+  .card-story__icon-wrap { width: 52px; height: 52px; }
+  .card-story__title { font-size: 18px; }
 }
 </style>

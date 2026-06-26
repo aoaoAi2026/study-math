@@ -1,0 +1,182 @@
+{
+    "paperId": "xiwang-2-g1",
+    "title": "第二届小学《希望杯》全国数学邀请赛 一年级（第二试）",
+    "grade": 1,
+    "category": "aoshu-xiwang",
+    "duration": 60,
+    "totalScore": 120,
+    "difficultyLevel": 2,
+    "year": 2004,
+    "source": "希望杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "一、填空题（每题6分，共60分）", "count": 10, "scorePerQuestion": 6},
+        {"name": "二、解答题（每题12分，共60分）", "count": 5, "scorePerQuestion": 12}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：1+2+3+...+10 = ______。",
+            "answer": "55",
+            "score": 6,
+            "solution": "首尾配对：1+10=11，2+9=11，3+8=11，4+7=11，5+6=11，共5对。55+11=55。或者用等差数列公式：(1+10)×10÷2=55。",
+            "knowledgePoints": ["等差数列", "巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "找规律填数：1、4、7、10、______、16。",
+            "answer": "13",
+            "score": 6,
+            "solution": "观察规律：每次加3。1+3=4，4+3=7，7+3=10，10+3=13，13+3=16。所以答案是13。",
+            "knowledgePoints": ["等差数列", "找规律"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "小明有20颗糖，他吃了一半后又吃了2颗，还剩______颗糖。",
+            "answer": "8",
+            "score": 6,
+            "solution": "小明原有20颗糖，先吃一半（20÷2=10颗），剩20-10=10颗；又吃2颗，剩10-2=8颗。",
+            "knowledgePoints": ["简单应用题", "连减"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "把10颗糖平均分给5个小朋友，每个小朋友分到______颗糖。",
+            "answer": "2",
+            "score": 6,
+            "solution": "平均分：10÷5=2颗。每个小朋友分到2颗糖。",
+            "knowledgePoints": ["平均分", "除法"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小明排队买票，他前面有8个人，后面有7个人。这一排一共有______个人。",
+            "answer": "16",
+            "score": 6,
+            "solution": "前面8人+小明1人+后面7人=8+1+7=16人。",
+            "knowledgePoints": ["排队问题"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个三角形有3条边，5个三角形有______条边。",
+            "answer": "15",
+            "score": 6,
+            "solution": "每个三角形有3条边，5个三角形共有5×3=15条边。",
+            "knowledgePoints": ["乘法应用", "图形边数"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "时钟敲3下用了6秒，敲6下用了______秒。",
+            "answer": "15",
+            "score": 6,
+            "solution": "敲3下有2个间隔，用6秒，每个间隔6÷2=3秒。敲6下有5个间隔，用5×3=15秒。",
+            "knowledgePoints": ["植树问题", "间隔问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小华有一些卡片，送给小红5张后还剩8张。小华原来有______张卡片。",
+            "answer": "13",
+            "score": 6,
+            "solution": "送给小红5张后还剩8张，说明原来有8+5=13张。",
+            "knowledgePoints": ["逆向思维", "加法应用"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一筐苹果，第一次吃掉一半，第二次吃掉剩下的一半，还剩3个。原来有______个苹果。",
+            "answer": "12",
+            "score": 6,
+            "solution": "用倒推法：还剩3个是第二次吃掉一半后的，所以第一次吃完后剩3×2=6个。原来有6×2=12个。",
+            "knowledgePoints": ["逆向思维", "倒推法"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小红比小丽多3颗糖，小丽有8颗糖。小红有______颗糖。",
+            "answer": "11",
+            "score": 6,
+            "solution": "小丽8颗，小红比小丽多3颗，所以小红有8+3=11颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 2,
+            "stem": "（解答题）一个盒子里有若干个球，第一次拿出3个，第二次拿出5个，第三次拿出7个，盒子就空了。盒子里原来有多少个球？",
+            "answer": "15",
+            "score": 12,
+            "solution": "三次拿出的球数相加：3+5+7=15个。盒子原来有15个球。",
+            "knowledgePoints": ["连加应用题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）小明有15颗弹珠，给了小刚3颗后，他们两人的弹珠就一样多。原来小刚有多少颗弹珠？",
+            "answer": "9",
+            "score": 12,
+            "solution": "小明给了小刚3颗后还剩15-3=12颗，此时两人一样多（各12颗）。所以小刚原来有12-3=9颗。",
+            "knowledgePoints": ["逆向思维", "等量关系"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）两根绳子一共长18米，第一根比第二根长4米。两根绳子各长多少米？",
+            "answer": "11,7",
+            "score": 12,
+            "solution": "设第二根为x米，则第一根为x+4米。x+(x+4)=18，2x=14，x=7。第二根7米，第一根11米。",
+            "knowledgePoints": ["和差问题", "列方程"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）有一些草莓，装在3个盘子里，每个盘子装5个，还剩2个。原来有多少个草莓？",
+            "answer": "17",
+            "score": 12,
+            "solution": "3个盘子装3×5=15个，加上还剩的2个，原来有15+2=17个。",
+            "knowledgePoints": ["乘法应用", "加法应用"]
+        },
+        {
+            "id": "q15",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）把一根绳子对折一次后，从中间剪开，绳子被剪成几段？",
+            "answer": "3",
+            "score": 12,
+            "solution": "对折一次后，绳子变成2股。从中间剪一刀，由于是环形闭合结构，剪开后共有3段。画图验证：对折绳子中间剪一刀，形成3段。",
+            "knowledgePoints": ["剪绳子问题", "空间想象"]
+        }
+    ]
+}

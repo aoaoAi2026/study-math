@@ -1,0 +1,148 @@
+{
+    "paperId": "yingchun-2019-g3",
+    "title": "2019年迎春杯小学高年级组三年级初赛",
+    "grade": 3,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 3,
+    "year": 2019,
+    "source": "迎春杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共12题，每题8分，共96分）", "count": 12, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：8 × 25 × 125 = ______。",
+            "answer": "25000",
+            "score": 8,
+            "solution": "8×125=1000，1000×25=25000。",
+            "knowledgePoints": ["乘法巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：9999 + 999 + 99 + 9 = ______。",
+            "answer": "11106",
+            "score": 8,
+            "solution": "9999+999+99+9=10000+1000+100+10-4=11110-4=11106。",
+            "knowledgePoints": ["加法巧算"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个数由3个千、5个百和7个一组成，这个数是______。",
+            "answer": "3507",
+            "score": 8,
+            "solution": "3×1000+5×100+7×1=3000+500+7=3507。",
+            "knowledgePoints": ["数的组成"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个长方形的面积是48平方厘米，长是8厘米。周长是______厘米。",
+            "answer": "28",
+            "score": 8,
+            "solution": "宽=48/8=6厘米。周长=2×(8+6)=28厘米。",
+            "knowledgePoints": ["长方形"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小明看一本120页的书，第一天看了30页，第二天看了剩下的1/3，还剩______页没看。",
+            "answer": "60",
+            "score": 8,
+            "solution": "剩下120-30=90页。第二天看90×1/3=30页。还剩90-30=60页。",
+            "knowledgePoints": ["分数应用"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "有48个苹果，平均分给6个小朋友，每个小朋友分4个，还剩______个。",
+            "answer": "0",
+            "score": 8,
+            "solution": "48÷6=8，正好分完。",
+            "knowledgePoints": ["除法"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数先加上8，再乘以8，再减去8，最后除以8，结果是8。这个数是______。",
+            "answer": "1",
+            "score": 8,
+            "solution": "逆推：8×8=64，64+8=72，72÷8=9，9-8=1。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "在一条长80米的路一边种树，每隔10米种一棵，两端都种。一共种______棵。",
+            "answer": "9",
+            "score": 8,
+            "solution": "80/10+1=8+1=9棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "甲有40颗珠子，乙有25颗珠子。甲给乙______颗珠子后，甲比乙还多5颗。",
+            "answer": "10",
+            "score": 8,
+            "solution": "甲比乙多40-25=15颗。要使甲还比乙多5颗，需要甲给乙(15-5)/2=5颗后甲仍多5颗。等等，甲给乙后甲少了，乙多了。设给x颗：40-x=(25+x)+5，40-x=30+x，2x=10，x=5。验证：甲35，乙30，甲比乙多5。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有30只，脚一共有100只。鸡有______只。",
+            "answer": "10",
+            "score": 8,
+            "solution": "假设全是兔：30×4=120脚。实际100脚，少20脚。鸡=20/2=10只，兔=20只。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一桶油，第一次倒出一半，第二次倒出剩下的一半，还剩5千克。桶里原有______千克油。",
+            "answer": "20",
+            "score": 8,
+            "solution": "设原有x千克。第二次倒出后剩x/4=5，x=20千克。",
+            "knowledgePoints": ["一半问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "小华从1楼到3楼用了20秒，照这样计算，他从2楼到7楼需要______秒。",
+            "answer": "50",
+            "score": 8,
+            "solution": "1楼到3楼走了2层，每层10秒。2楼到7楼走5层，10×5=50秒。",
+            "knowledgePoints": ["植树问题"]
+        }
+    ]
+}

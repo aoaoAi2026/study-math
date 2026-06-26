@@ -1,0 +1,882 @@
+{
+  "topicId": "chicken-rabbit",
+  "topicName": "鸡兔同笼",
+  "grade": "经典问题",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "id": "cm-cr-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "鸡和兔在同一笼中，数头有5个，数脚有14只。鸡有多少只？",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三"
+      ],
+      "solution": [
+        "假设都是兔:5×4=20只脚,实际只有14只,多出20-14=6只。",
+        "每把一只兔换成鸡,减少2只脚,所以要换6÷2=3只。",
+        "鸡有3只,兔有5-3=2只。验证:3×2+2×4=14✓"
+      ],
+      "hints": [
+        "假设都是兔",
+        "多出来的脚数÷2=鸡数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成2",
+          "reason": "算出的是兔数",
+          "correction": "鸡=3只",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "假设法"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "假设法"
+      ]
+    },
+    {
+      "id": "cm-cr-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "鸡和兔共有8个头，22只脚。兔有多少只？",
+      "image": "",
+      "options": [],
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三"
+      ],
+      "solution": [
+        "假设都是鸡:8×2=16只脚,实际22只,少22-16=6只。",
+        "每换1只鸡成兔增加2脚,需换6÷2=3只兔。",
+        "兔=3只,鸡=5只。验证:5×2+3×4=22✓"
+      ],
+      "hints": [
+        "假设都是鸡",
+        "少的脚数÷2=兔数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成5",
+          "reason": "算出的是鸡数",
+          "correction": "兔=3只",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "假设法"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "假设法"
+      ]
+    },
+    {
+      "id": "cm-cr-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "有鸡和兔共10只，共有28只脚。问兔有几只？",
+      "image": "",
+      "options": [
+        "2只",
+        "4只",
+        "6只",
+        "8只"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "假设都是鸡:10×2=20只脚,实际28只,少8只。兔=8÷2=4只。",
+        "鸡=10-4=6只。验证:6×2+4×4=28✓"
+      ],
+      "hints": [
+        "(实际脚-10×2)÷2=兔数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选6只",
+          "reason": "算出的是鸡数",
+          "correction": "兔=4只",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "假设法"
+      ]
+    },
+    {
+      "id": "cm-cr-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "停车场有三轮车和小汽车共12辆，共有40个轮子。三轮车有多少辆？",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "三轮车3轮,小汽车4轮。假设都是小汽车:12×4=48个,多48-40=8个。",
+        "三轮车=8÷(4-3)=8辆,小汽车=4辆。验证:8×3+4×4=40✓"
+      ],
+      "hints": [
+        "三轮车3轮,小汽车4轮",
+        "(48-40)÷(4-3)=三轮车数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成4",
+          "reason": "算出的是小汽车数",
+          "correction": "三轮车=8辆",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "变形问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "假设法"
+      ]
+    },
+    {
+      "id": "cm-cr-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "2分和5分硬币共15枚，总值51分。5分硬币有多少枚？",
+      "image": "",
+      "options": [],
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "七"
+      ],
+      "solution": [
+        "假设都是2分:15×2=30分,少51-30=21分。每换1枚2分成5分增加3分。",
+        "5分=21÷3=7枚,2分=8枚。验证:7×5+8×2=35+16=51✓"
+      ],
+      "hints": [
+        "假设都是2分",
+        "(51-30)÷(5-2)=5分数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成8",
+          "reason": "算出的是2分数",
+          "correction": "5分=7枚",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "变形问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "假设法"
+      ]
+    },
+    {
+      "id": "cm-cr-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "数学竞赛共10道题，做对一题得8分，做错一题倒扣4分。小明得了56分。他做对了多少题？",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "假设都做对:10×8=80分,少80-56=24分。做错1题少8+4=12分。",
+        "做错=24÷12=2题。做对=8题。验证:8×8-2×4=56✓"
+      ],
+      "hints": [
+        "每做错1题少12分(8+4)",
+        "(80-56)÷12=做错数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成7",
+          "reason": "(80-56)/8错了",
+          "correction": "要倒扣,每错少12分",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "倒扣问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "倒扣"
+      ]
+    },
+    {
+      "id": "cm-cr-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "有100个和尚吃100个馒头。大和尚一人吃3个，小和尚3人吃一个。小和尚有多少人？",
+      "image": "",
+      "options": [],
+      "answer": "75",
+      "acceptableAnswers": [
+        "75",
+        "七十五"
+      ],
+      "solution": [
+        "把1个大和尚和3个小和尚看作一组,共4人吃4个馒头。100÷4=25组。",
+        "大和尚=25×1=25人,小和尚=25×3=75人。验证:25×3+75÷3=100✓"
+      ],
+      "hints": [
+        "打包:1大+3小=4人吃4个",
+        "100÷4=25组"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成25",
+          "reason": "算成大和尚了",
+          "correction": "小和尚=75人",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "经典问题",
+        "打包法"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "打包法"
+      ]
+    },
+    {
+      "id": "cm-cr-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有一些鸡和兔，共有头20个，脚56只。兔有多少只？",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "假设都是鸡:20×2=40只脚。少56-40=16只。兔=16÷2=8只,鸡=12只。",
+        "验证:12×2+8×4=56✓"
+      ],
+      "hints": [
+        "(实际脚-2×头)÷2=兔数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成12",
+          "reason": "算成鸡数了",
+          "correction": "兔=8只",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "假设法"
+      ]
+    },
+    {
+      "id": "cm-cr-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "蜘蛛有8条腿，蜻蜓有6条腿。现有蜘蛛和蜻蜓共20只，共有136条腿。蜻蜓有多少只？",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "十二"
+      ],
+      "solution": [
+        "假设都是蜘蛛:20×8=160条,多160-136=24条。每换1只蜘蛛成蜻蜓减少2条。",
+        "蜻蜓=24÷2=12只,蜘蛛=8只。验证:12×6+8×8=72+64=136✓"
+      ],
+      "hints": [
+        "蜘蛛8条,蜻蜓6条,差2条",
+        "(160-136)÷2=蜻蜓数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成8",
+          "reason": "算成蜘蛛数了",
+          "correction": "蜻蜓=12只",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "变形问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "假设法"
+      ]
+    },
+    {
+      "id": "cm-cr-10",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "笼子里鸡和兔共30只，鸡比兔多18只脚。问兔有多少只？",
+      "image": "",
+      "options": [],
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "七"
+      ],
+      "solution": [
+        "设兔x只,鸡30-x只。鸡脚=2(30-x),兔脚=4x。2(30-x)-4x=18。",
+        "60-2x-4x=18,60-6x=18,6x=42,x=7。兔=7只,鸡=23只。",
+        "验证:23×2-7×4=46-28=18✓"
+      ],
+      "hints": [
+        "设兔x只,鸡30-x只",
+        "2(30-x)-4x=18"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成23",
+          "reason": "算成鸡数了",
+          "correction": "兔=7只",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "方程法"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "cm-cr-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "1元、5元纸币共20张，总值64元。5元纸币有多少张？",
+      "image": "",
+      "options": [],
+      "answer": "11",
+      "acceptableAnswers": [
+        "11",
+        "十一"
+      ],
+      "solution": [
+        "假设都是1元:20×1=20元,少64-20=44元。每换1张1元成5元增加4元。",
+        "5元=44÷4=11张,1元=9张。验证:11×5+9×1=64✓"
+      ],
+      "hints": [
+        "(64-20)÷(5-1)=5元数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成9",
+          "reason": "算成1元数了",
+          "correction": "5元=11张",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "变形问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "假设法"
+      ]
+    },
+    {
+      "id": "cm-cr-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有若干只鸡和兔，共有头30个，脚88只。问鸡有多少只？",
+      "image": "",
+      "options": [],
+      "answer": "16",
+      "acceptableAnswers": [
+        "16",
+        "十六"
+      ],
+      "solution": [
+        "假设都是兔:30×4=120只脚,多120-88=32只。鸡=32÷2=16只,兔=14只。",
+        "验证:16×2+14×4=32+56=88✓"
+      ],
+      "hints": [
+        "(4×头-实际脚)÷2=鸡数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成14",
+          "reason": "算成兔数了",
+          "correction": "鸡=16只",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "假设法"
+      ]
+    },
+    {
+      "id": "cm-cr-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "学校有象棋和跳棋共20副，恰好可供76个同学同时活动。象棋2人下一副，跳棋6人下一副。象棋有多少副？",
+      "image": "",
+      "options": [],
+      "answer": "11",
+      "acceptableAnswers": [
+        "11",
+        "十一"
+      ],
+      "solution": [
+        "假设都是跳棋:20×6=120人,多120-76=44人。每换1副跳棋成象棋减少6-2=4人。",
+        "象棋=44÷4=11副,跳棋=9副。验证:11×2+9×6=22+54=76✓"
+      ],
+      "hints": [
+        "象棋2人,跳棋6人",
+        "(120-76)÷(6-2)=象棋数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成9",
+          "reason": "算成跳棋数了",
+          "correction": "象棋=11副",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "变形问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "假设法"
+      ]
+    },
+    {
+      "id": "cm-cr-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "数学竞赛共20题，做对得5分，做错或不做倒扣2分。小红得了79分，她做对了多少题？",
+      "image": "",
+      "options": [],
+      "answer": "17",
+      "acceptableAnswers": [
+        "17",
+        "十七"
+      ],
+      "solution": [
+        "假设都做对:20×5=100分,少100-79=21分。每做错1题少5+2=7分。",
+        "做错=21÷7=3题,做对=17题。验证:17×5-3×2=85-6=79✓"
+      ],
+      "hints": [
+        "每错1题少7分(5+2)",
+        "(100-79)÷7=做错数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成16",
+          "reason": "用(100-79)/5错了",
+          "correction": "要倒扣,每错少7分",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "倒扣问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "倒扣"
+      ]
+    },
+    {
+      "id": "cm-cr-15",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有蜘蛛、蜻蜓、蝉三种动物共18只，共有腿118条，翅膀20对。(蜘蛛8条腿；蜻蜓6条腿2对翅膀；蝉6条腿1对翅膀)问蜻蜓有多少只？",
+      "image": "",
+      "options": [],
+      "answer": "7",
+      "acceptableAnswers": [
+        "7",
+        "七"
+      ],
+      "solution": [
+        "先看腿:蜘蛛8条,蜻蜓和蝉都是6条。假设都是6条:18×6=108,实际118,多10条。",
+        "蜘蛛=10÷(8-6)=5只。蜻蜓+蝉=13只。",
+        "再看翅膀:假设13只都是蝉1对翅膀,共13对,实际20对,多7对。每换1只蝉成蜻蜓增加1对。",
+        "蜻蜓=7只,蝉=6只。验证:5×8+7×6+6×6=118;7×2+6×1=20✓"
+      ],
+      "hints": [
+        "两步假设:先腿再翅膀",
+        "(118-108)÷2=蜘蛛数",
+        "蜻蜓+蝉=13只,再算翅膀"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成6",
+          "reason": "算成蝉数了",
+          "correction": "蜻蜓=7只",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "三物问题"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "三物问题"
+      ]
+    },
+    {
+      "id": "cm-cr-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "运输队运2000块玻璃，商定每块运费5角，如损坏一块要赔偿2元5角，结果运输队得运费940元。损坏了多少块玻璃？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "二十"
+      ],
+      "solution": [
+        "假设都没损坏:2000×0.5=1000元,实际940元,少1000-940=60元。",
+        "每损坏1块,少得运费0.5元+赔偿2.5元=3元。损坏=60÷3=20块。",
+        "验证:完好1980块,运费1980×0.5=990元,赔偿20×2.5=50元,实得990-50=940✓"
+      ],
+      "hints": [
+        "每损坏1块少3元",
+        "(1000-940)÷3=损坏块数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成30",
+          "reason": "60÷2错了",
+          "correction": "每损少3元,60÷3=20块",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "运输问题"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "运输赔偿"
+      ]
+    },
+    {
+      "id": "cm-cr-17",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一项工程,甲独做15天完成,乙独做10天完成。两人合做,但甲途中因事离开了几天,结果用了8天完成。问甲离开了几天？",
+      "image": "",
+      "options": [],
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五"
+      ],
+      "solution": [
+        "设甲离开了x天,甲实际做了8-x天。甲每天1/15,乙每天1/10。乙做了8天。",
+        "8/10+(8-x)/15=1。×30:24+2(8-x)=30。24+16-2x=30。40-2x=30。2x=10,x=5。",
+        "验证:乙8天做8/10=4/5,甲做3天=3/15=1/5,共4/5+1/5=1✓"
+      ],
+      "hints": [
+        "设甲离开x天,做8-x天",
+        "乙做全部8天",
+        "(8-x)/15+8/10=1→x=5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3",
+          "reason": "算出的是甲做的天数",
+          "correction": "离开=8-3=5天",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "工程问题",
+        "方程法"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "工程问题"
+      ]
+    },
+    {
+      "id": "cm-cr-18",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有鸡和兔若干只，鸡比兔多13只，兔的脚数比鸡的脚数多16只。鸡有多少只？",
+      "image": "",
+      "options": [],
+      "answer": "34",
+      "acceptableAnswers": [
+        "34",
+        "三十四"
+      ],
+      "solution": [
+        "设兔x只,鸡x+13只。兔脚4x,鸡脚2(x+13)。4x-2(x+13)=16。",
+        "4x-2x-26=16。2x=42。x=21。兔=21只,鸡=21+13=34只。",
+        "验证:21×4-34×2=84-68=16✓"
+      ],
+      "hints": [
+        "设兔x只,鸡x+13只",
+        "4x-2(x+13)=16"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成21",
+          "reason": "算出的是兔数",
+          "correction": "鸡=34只",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "方程法"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    }
+  ]
+}

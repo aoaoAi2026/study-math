@@ -1,0 +1,710 @@
+{
+  "topicId": "g4-operation-laws",
+  "topicName": "运算定律",
+  "grade": 4,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g4-op-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "计算 25×17×4 的简便算法是",
+      "image": "",
+      "options": [
+        "25×(17×4)",
+        "(25×4)×17",
+        "(25+4)×17",
+        "25×17+4"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "25×4=100是整百数,便于计算",
+        "(25×4)×17=100×17=1700"
+      ],
+      "hints": [
+        "先找25×4=100的组合"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "顺序不对",
+          "correction": "先算25×4",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法交换律",
+        "乘法结合律"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "计算 125×25×8×4 最简便的方法是",
+      "image": "",
+      "options": [
+        "125×8×25×4",
+        "(125×8)×(25×4)",
+        "125×25×8×4",
+        "都一样"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "125×8=1000,25×4=100",
+        "=1000×100=100000"
+      ],
+      "hints": [
+        "125找8,25找4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "没有加括号分组",
+          "correction": "应该两两分组",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法结合律"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-03",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "用简便方法计算: 125×88",
+      "image": "",
+      "options": [],
+      "answer": "11000",
+      "acceptableAnswers": [
+        "11000"
+      ],
+      "solution": [
+        "方法一:88=8×11,125×8×11=1000×11=11000",
+        "方法二:88=80+8,125×80+125×8=10000+1000=11000"
+      ],
+      "hints": [
+        "125×8=1000,把88拆成8×11或80+8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成10000",
+          "reason": "漏算125×8",
+          "correction": "10000+1000=11000",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法结合律",
+        "乘法分配律"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-04",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "用简便方法计算: 35×99",
+      "image": "",
+      "options": [],
+      "answer": "3465",
+      "acceptableAnswers": [
+        "3465"
+      ],
+      "solution": [
+        "99=100-1",
+        "35×(100-1)=3500-35=3465"
+      ],
+      "hints": [
+        "把99写成100-1"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3500",
+          "reason": "忘了减35",
+          "correction": "3500-35=3465",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面哪个算式运用了乘法分配律？",
+      "image": "",
+      "options": [
+        "25×4×8=25×8×4",
+        "(40+4)×25=40×25+4×25",
+        "(36×25)×4=36×(25×4)",
+        "125×8=1000"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "乘法分配律:(a+b)×c=a×c+b×c",
+        "(40+4)×25=40×25+4×25"
+      ],
+      "hints": [
+        "有+号,且分别乘的是分配律"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2",
+          "reason": "那是交换或结合律",
+          "correction": "选项2是分配律",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-06",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "计算: 999×222 + 333×334",
+      "image": "",
+      "options": [],
+      "answer": "333000",
+      "acceptableAnswers": [
+        "333000"
+      ],
+      "solution": [
+        "999=333×3",
+        "原式=333×3×222+333×334=333×666+333×334=333×(666+334)=333×1000=333000"
+      ],
+      "hints": [
+        "找公因数333,666+334=1000"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会提取公因数",
+          "correction": "999=3×333",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-07",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "计算: (80+8)×125",
+      "image": "",
+      "options": [],
+      "answer": "11000",
+      "acceptableAnswers": [
+        "11000"
+      ],
+      "solution": [
+        "=80×125+8×125=10000+1000=11000"
+      ],
+      "hints": [
+        "80×125=10000,8×125=1000"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "80+8=88,88×125",
+          "correction": "用分配律更快",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算: 102×35",
+      "image": "",
+      "options": [],
+      "answer": "3570",
+      "acceptableAnswers": [
+        "3570"
+      ],
+      "solution": [
+        "102=100+2",
+        "100×35+2×35=3500+70=3570"
+      ],
+      "hints": [
+        "把102拆成100+2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3500",
+          "reason": "忘了2×35",
+          "correction": "3500+70=3570",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算 25×(4+8) 的简便算法是",
+      "image": "",
+      "options": [
+        "25×4+8",
+        "25×4+25×8",
+        "25×12",
+        "25×4×8"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "乘法分配律:25×4+25×8=100+200=300"
+      ],
+      "hints": [
+        "别漏了25乘8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "漏乘25×8",
+          "correction": "=100+200=300",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-10",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "计算: 38×54 + 46×38",
+      "image": "",
+      "options": [],
+      "answer": "3800",
+      "acceptableAnswers": [
+        "3800"
+      ],
+      "solution": [
+        "提取公因数38:38×(54+46)=38×100=3800"
+      ],
+      "hints": [
+        "54+46=100"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "54+46=100,38×100=3800",
+          "correction": "",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-11",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "计算: 1999 + 999×999",
+      "image": "",
+      "options": [],
+      "answer": "1000000",
+      "acceptableAnswers": [
+        "1000000",
+        "1000000"
+      ],
+      "solution": [
+        "1999=1000+999",
+        "原式=1000+999+999×999=1000+999×1000=1000×(1+999)=1000000"
+      ],
+      "hints": [
+        "把1999拆成1000+999,再提取1000"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会拆",
+          "correction": "1999=1000+999",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-12",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算: 5×17×20",
+      "image": "",
+      "options": [],
+      "answer": "1700",
+      "acceptableAnswers": [
+        "1700"
+      ],
+      "solution": [
+        "5×20=100,5×17×20=100×17=1700"
+      ],
+      "hints": [
+        "先算5×20凑100"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "5×17=85,再×20=1700",
+          "correction": "先凑100更快",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法交换律"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-13",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "计算: 48×125",
+      "image": "",
+      "options": [],
+      "answer": "6000",
+      "acceptableAnswers": [
+        "6000"
+      ],
+      "solution": [
+        "48=6×8",
+        "6×8×125=6×1000=6000"
+      ],
+      "hints": [
+        "8×125=1000,拆48=6×8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "48×1000=48000",
+          "correction": "48=6×8,不是48×1000",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法结合律"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "下列等式成立的是",
+      "image": "",
+      "options": [
+        "(125×5)×8=(125×8)×5",
+        "(125×5)×8=(125×8)×(5×8)",
+        "(125+5)×8=125×8+5",
+        "(125-5)×8=125×8-5"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "选项0:乘法交换律,成立",
+        "选项1:多乘了8,错",
+        "选项2-3:漏乘分配律第二项,错"
+      ],
+      "hints": [
+        "分配律要分别乘,不要漏"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2或3",
+          "reason": "分配律用错",
+          "correction": "(a±b)×c=a×c±b×c",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    },
+    {
+      "id": "g4-op-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "简算: 36×111 + 888×8",
+      "image": "",
+      "options": [],
+      "answer": "11100",
+      "acceptableAnswers": [
+        "11100"
+      ],
+      "solution": [
+        "888=111×8",
+        "36×111+111×8×8=111×36+111×64=111×(36+64)=111×100=11100"
+      ],
+      "hints": [
+        "找公因数111,36+64=100"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会统一因数",
+          "correction": "888=8×111",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "运算定律"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,838 @@
+{
+  "topicId": "g2-sequence-pattern",
+  "topicName": "数列规律",
+  "grade": 2,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g2-sp-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "找规律，填数。2、4、6、8、？",
+      "image": "",
+      "options": ["9", "10", "11", "12"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "观察：4-2=2, 6-4=2, 8-6=2",
+        "每一项比前一项多2。",
+        "所以下一项是 8+2 = 10。"
+      ],
+      "hints": [
+        "观察相邻两数的差",
+        "差都是2，所以8+2=10"
+      ],
+      "commonMistakes": [
+        {"mistake": "选9", "reason": "以为是数数字，下一个是9", "correction": "差是2，8+2=10", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "等差数列"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": -2.0, "c": 0.25 },
+      "tags": ["数列规律", "等差数列"]
+    },
+    {
+      "id": "g2-sp-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "找规律，填数。1、3、5、7、？、？",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": ["9"],
+      "solution": [
+        "观察：3-1=2, 5-3=2, 7-5=2",
+        "每一项比前一项多2。",
+        "所以下两项是 7+2=9, 9+2=11。"
+      ],
+      "hints": [
+        "每一项比前一项多2",
+        "7+2=9, 9+2=11"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成8", "reason": "8是偶数，不符合规律", "correction": "差是2，7+2=9", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "等差数列"],
+      "estimatedTime": 35,
+      "irtParams": { "a": 1.0, "b": -1.8, "c": 0.25 },
+      "tags": ["数列规律"]
+    },
+    {
+      "id": "g2-sp-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "找规律，填数。3、6、9、12、？",
+      "image": "",
+      "options": ["13", "14", "15", "16"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "观察：6-3=3, 9-6=3, 12-9=3",
+        "每一项比前一项多3（3的倍数）。",
+        "所以下一项是 12+3 = 15。"
+      ],
+      "hints": [
+        "每一项比前一项多3",
+        "3×1=3, 3×2=6, 3×3=9, 3×4=12, 3×5=15"
+      ],
+      "commonMistakes": [
+        {"mistake": "选13", "reason": "以为是+2", "correction": "差是3，12+3=15", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "等差数列"],
+      "estimatedTime": 35,
+      "irtParams": { "a": 1.0, "b": -1.5, "c": 0.25 },
+      "tags": ["数列规律"]
+    },
+    {
+      "id": "g2-sp-04",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "找规律，填数。1、4、9、16、？",
+      "image": "",
+      "options": ["20", "24", "25", "36"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "观察：1=1×1, 4=2×2, 9=3×3, 16=4×4",
+        "每一项是 n×n，n从1开始。",
+        "所以下一项是 5×5 = 25。"
+      ],
+      "hints": [
+        "1×1=1, 2×2=4, 3×3=9, 4×4=16",
+        "下一项是5×5=25"
+      ],
+      "commonMistakes": [
+        {"mistake": "选20", "reason": "以为差是1,3,5,7下一个差4", "correction": "差是3,5,7,下一个是9，16+9=25", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "平方数"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 0.3, "c": 0.25 },
+      "tags": ["数列规律", "平方数"]
+    },
+    {
+      "id": "g2-sp-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "找规律，填数。1、2、4、8、16、？",
+      "image": "",
+      "options": [],
+      "answer": "32",
+      "acceptableAnswers": ["32"],
+      "solution": [
+        "观察：2÷1=2, 4÷2=2, 8÷4=2, 16÷8=2",
+        "每一项是前一项的2倍（即每一项×2得下一项）。",
+        "所以下一项是 16×2 = 32。"
+      ],
+      "hints": [
+        "每一项×2得下一项",
+        "16×2=32"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成24", "reason": "8+16=24或算错", "correction": "16×2=32", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "等比数列"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 0.2, "c": 0.25 },
+      "tags": ["数列规律", "倍数"]
+    },
+    {
+      "id": "g2-sp-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "找规律，填数。2、6、12、20、？",
+      "image": "",
+      "options": ["28", "30", "32", "36"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "观察差：6-2=4, 12-6=6, 20-12=8",
+        "差是：4, 6, 8, ? →下一个差是10",
+        "所以下一项是 20+10 = 30。",
+        "另一种观察：2=1×2, 6=2×3, 12=3×4, 20=4×5",
+        "下一项：5×6 = 30。"
+      ],
+      "hints": [
+        "差是4,6,8,10...",
+        "或：1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30"
+      ],
+      "commonMistakes": [
+        {"mistake": "选28", "reason": "差是+4,+6,+8以为下一个+8", "correction": "差是4,6,8,10，20+10=30", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "二阶等差"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 0.5, "c": 0.25 },
+      "tags": ["数列规律", "二阶"]
+    },
+    {
+      "id": "g2-sp-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "找规律，填数。1、1、2、3、5、8、13、？",
+      "image": "",
+      "options": [],
+      "answer": "21",
+      "acceptableAnswers": ["21"],
+      "solution": [
+        "观察：1+1=2, 1+2=3, 2+3=5, 3+5=8, 5+8=13",
+        "每一项是前两项的和！",
+        "所以下一项是 8+13 = 21。"
+      ],
+      "hints": [
+        "每项是前两项的和",
+        "8+13=21"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成18", "reason": "算错8+13", "correction": "8+13=21", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "斐波那契数列"],
+      "estimatedTime": 55,
+      "irtParams": { "a": 1.0, "b": 0.4, "c": 0.25 },
+      "tags": ["数列规律", "斐波那契"]
+    },
+    {
+      "id": "g2-sp-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "找规律，填数。30、25、20、15、？、？",
+      "image": "",
+      "options": ["10、5", "12、10", "8、5", "14、10"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "观察：30-25=5, 25-20=5, 20-15=5",
+        "每一项比前一项少5。",
+        "所以下两项是 15-5=10, 10-5=5。"
+      ],
+      "hints": [
+        "每一项-5得下一项",
+        "15-5=10, 10-5=5"
+      ],
+      "commonMistakes": [
+        {"mistake": "选12,10", "reason": "-3,-2乱算", "correction": "每次-5：15-5=10, 10-5=5", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "递减数列"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.0, "c": 0.25 },
+      "tags": ["数列规律"]
+    },
+    {
+      "id": "g2-sp-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "找规律，填数。1、10、2、20、3、30、？、？",
+      "image": "",
+      "options": ["4、40", "5、50", "31、4", "10、1"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "这是两个数列交替出现！",
+        "奇数位：1, 2, 3, ? → 4",
+        "偶数位：10, 20, 30, ? → 40",
+        "所以答案是 4, 40。"
+      ],
+      "hints": [
+        "看奇数位和偶数位",
+        "奇数位:1,2,3,4；偶数位:10,20,30,40"
+      ],
+      "commonMistakes": [
+        {"mistake": "选5,50", "reason": "没分析清楚，跳了", "correction": "奇数位1,2,3,4；偶数位10,20,30,40", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "双重数列"],
+      "estimatedTime": 55,
+      "irtParams": { "a": 1.0, "b": 0.3, "c": 0.25 },
+      "tags": ["数列规律", "双重"]
+    },
+    {
+      "id": "g2-sp-10",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "找规律，填数。2、3、5、8、12、？",
+      "image": "",
+      "options": ["15", "16", "17", "20"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "观察差：3-2=1, 5-3=2, 8-5=3, 12-8=4",
+        "差是 1, 2, 3, 4, ? → 下一个差是5",
+        "所以下一项是 12+5 = 17。"
+      ],
+      "hints": [
+        "观察相邻两数的差",
+        "差是1,2,3,4,5...",
+        "12+5=17"
+      ],
+      "commonMistakes": [
+        {"mistake": "选16", "reason": "差是+1,+2,+3,+4以为下一个+4", "correction": "差是1,2,3,4,5，12+5=17", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "二阶等差"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 0.8, "c": 0.25 },
+      "tags": ["数列规律", "二阶"]
+    },
+    {
+      "id": "g2-sp-11",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "找规律，填数。100、90、81、73、？",
+      "image": "",
+      "options": [],
+      "answer": "66",
+      "acceptableAnswers": ["66"],
+      "solution": [
+        "观察差：100-90=10, 90-81=9, 81-73=8",
+        "差依次减少1：10, 9, 8, ? → 下一个差是7",
+        "所以下一项是 73-7 = 66。"
+      ],
+      "hints": [
+        "差是10,9,8,7...递减",
+        "73-7=66"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成67", "reason": "差看成是10,9,8,6", "correction": "差是10,9,8,7，73-7=66", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "二阶等差"],
+      "estimatedTime": 65,
+      "irtParams": { "a": 1.0, "b": 1.0, "c": 0.25 },
+      "tags": ["数列规律", "二阶"]
+    },
+    {
+      "id": "g2-sp-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "找规律，填数。1、8、3、10、5、12、？、？",
+      "image": "",
+      "options": ["7、14", "6、13", "7、15", "8、14"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "这是两个数列交替出现！",
+        "奇数位：1, 3, 5, ? → 7（每次+2）",
+        "偶数位：8, 10, 12, ? → 14（每次+2）",
+        "所以答案是 7, 14。"
+      ],
+      "hints": [
+        "分开看奇数位和偶数位",
+        "奇数位:+2；偶数位:+2"
+      ],
+      "commonMistakes": [
+        {"mistake": "选7,15", "reason": "偶数列算错", "correction": "偶数位8,10,12,14", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "双重数列"],
+      "estimatedTime": 65,
+      "irtParams": { "a": 1.0, "b": 0.7, "c": 0.25 },
+      "tags": ["数列规律", "双重"]
+    },
+    {
+      "id": "g2-sp-13",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "找规律，填数。2、5、11、23、47、？",
+      "image": "",
+      "options": [],
+      "answer": "95",
+      "acceptableAnswers": ["95"],
+      "solution": [
+        "观察：5-2=3, 11-5=6, 23-11=12, 47-23=24",
+        "差是 3, 6, 12, 24, ? → 每次×2",
+        "下一个差是 24×2 = 48",
+        "所以下一项是 47+48 = 95。",
+        "另一种观察：5=2×2+1, 11=5×2+1, 23=11×2+1, 47=23×2+1",
+        "每一项=前一项×2+1，所以下一项=47×2+1=95。"
+      ],
+      "hints": [
+        "每一项=前一项×2+1",
+        "47×2+1=95"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成94", "reason": "47×2=94忘了+1", "correction": "47×2+1=95", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "倍差数列"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 1.2, "c": 0.25 },
+      "tags": ["数列规律", "倍差"]
+    },
+    {
+      "id": "g2-sp-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "找规律，填数。1、2、6、24、？",
+      "image": "",
+      "options": ["96", "100", "120", "144"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "观察：2÷1=2, 6÷2=3, 24÷6=4",
+        "每一项=前一项×位置数（1→2是×2，2→3是×3，3→4是×4）",
+        "所以下一项 = 24×5 = 120。",
+        "或观察：1×1=1, 1×2=2, 2×3=6, 6×4=24, 24×5=120"
+      ],
+      "hints": [
+        "每一项×2,×3,×4,×5...",
+        "24×5=120"
+      ],
+      "commonMistakes": [
+        {"mistake": "选96", "reason": "24×4=96", "correction": "24×5=120", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "阶乘数列"],
+      "estimatedTime": 65,
+      "irtParams": { "a": 1.0, "b": 1.1, "c": 0.25 },
+      "tags": ["数列规律", "阶乘"]
+    },
+    {
+      "id": "g2-sp-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "找规律，填数。1、4、3、6、5、8、7、？、？",
+      "image": "",
+      "options": ["10、9", "8、10", "9、11", "10、8"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "这是两个数列交替出现！",
+        "奇数位：1, 3, 5, 7, ? → 9（每次+2）",
+        "偶数位：4, 6, 8, ? → 10（每次+2）",
+        "所以答案是 10, 9。",
+        "原数列：1,4,3,6,5,8,7,10,9"
+      ],
+      "hints": [
+        "分奇偶位看",
+        "奇数位:1,3,5,7,9；偶数位:4,6,8,10"
+      ],
+      "commonMistakes": [
+        {"mistake": "选9,11", "reason": "位置搞反", "correction": "第8位是偶数位→10,第9位是奇数位→9", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "双重数列"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 1.3, "c": 0.25 },
+      "tags": ["数列规律", "双重"]
+    },
+    {
+      "id": "g2-sp-16",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "找规律，填数。1、2、4、5、10、11、22、？、？",
+      "image": "",
+      "options": [],
+      "answer": "23",
+      "acceptableAnswers": ["23"],
+      "solution": [
+        "观察：1→2（×2或+1），2→4（×2），4→5（+1），5→10（×2），10→11（+1），11→22（×2）",
+        "规律是：+1, ×2, +1, ×2, +1, ×2...",
+        "所以22后面是 +1 = 23，",
+        "23后面是 ×2 = 46。",
+        "完整数列：1,2,4,5,10,11,22,23,46"
+      ],
+      "hints": [
+        "+1,×2,+1,×2...交替",
+        "22+1=23, 23×2=46"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成44,45", "reason": "以为×2,×2", "correction": "是+1,×2交替", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "运算交替"],
+      "estimatedTime": 80,
+      "irtParams": { "a": 1.0, "b": 1.5, "c": 0.25 },
+      "tags": ["数列规律", "运算交替"]
+    },
+    {
+      "id": "g2-sp-17",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "找规律，填数。5、9、14、23、37、？",
+      "image": "",
+      "options": ["50", "60", "70", "80"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "观察：5+9=14, 9+14=23, 14+23=37",
+        "每一项等于前两项的和！",
+        "所以下一项是 23+37 = 60。"
+      ],
+      "hints": [
+        "每项=前两项之和",
+        "23+37=60"
+      ],
+      "commonMistakes": [
+        {"mistake": "选70", "reason": "23+37算错", "correction": "23+37=60", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "类斐波那契"],
+      "estimatedTime": 70,
+      "irtParams": { "a": 1.0, "b": 1.4, "c": 0.25 },
+      "tags": ["数列规律", "类斐波那契"]
+    },
+    {
+      "id": "g2-sp-18",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "找规律，填数。2、3、5、7、11、？",
+      "image": "",
+      "options": ["12", "13", "14", "15"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "观察：2, 3, 5, 7, 11, ?",
+        "这些都是质数（只能被1和自己整除的数）！",
+        "2是质数，3是质数，5是质数，7是质数，11是质数，",
+        "下一个质数是 13。",
+        "所以答案是 13。"
+      ],
+      "hints": [
+        "这些数都是质数",
+        "11后面的质数是13"
+      ],
+      "commonMistakes": [
+        {"mistake": "选12", "reason": "+1,+2,+2,+4规律不成立", "correction": "2,3,5,7,11,13都是质数", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["数列规律", "质数数列"],
+      "estimatedTime": 100,
+      "irtParams": { "a": 1.0, "b": 2.0, "c": 0.25 },
+      "tags": ["数列规律", "质数", "综合"]
+    },
+    {
+      "id": "g2-sp-19",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1,4,7,10,13,______。",
+      "image": "",
+      "options": [],
+      "answer": "16",
+      "acceptableAnswers": ["16"],
+      "solution": ["每次加3：1+3=4,4+3=7,7+3=10,10+3=13,13+3=16。"],
+      "hints": ["每次加3"],
+      "commonMistakes": [{"mistake": "15", "reason": "加2", "correction": "16"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2016, "paper": "第十四届希望杯二年级"},
+      "knowledgePoints": ["数列规律", "等差"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.0, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题"]
+    },
+    {
+      "id": "g2-sp-20",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "找规律：2,5,8,11,14,()。",
+      "image": "",
+      "options": ["16", "17", "18", "19"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["每次加3：2+3=5,5+3=8,8+3=11,11+3=14,14+3=17。"],
+      "hints": ["每次加3"],
+      "commonMistakes": [{"mistake": "选0", "reason": "加2", "correction": "17"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2017, "paper": "2017年迎春杯二年级"},
+      "knowledgePoints": ["数列规律", "等差"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.5, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题"]
+    },
+    {
+      "id": "g2-sp-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1,2,4,7,11,______。",
+      "image": "",
+      "options": [],
+      "answer": "16",
+      "acceptableAnswers": ["16"],
+      "solution": ["差递增：1+1=2,2+2=4,4+3=7,7+4=11,11+5=16。"],
+      "hints": ["每次加的数增加1"],
+      "commonMistakes": [{"mistake": "15", "reason": "加4", "correction": "16"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2014, "paper": "第十九届华罗庚金杯初赛"},
+      "knowledgePoints": ["数列规律", "差递增"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题"]
+    },
+    {
+      "id": "g2-sp-22",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "找规律：1,1,2,3,5,8,()。",
+      "image": "",
+      "options": ["10", "11", "12", "13"],
+      "answer": "3",
+      "acceptableAnswers": ["3"],
+      "solution": ["斐波那契数列：每项=前两项之和。1+1=2,1+2=3,2+3=5,3+5=8,5+8=13。"],
+      "hints": ["每项=前两项之和"],
+      "commonMistakes": [{"mistake": "选2", "reason": "加3", "correction": "13"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2015, "paper": "第十三届走美杯二年级"},
+      "knowledgePoints": ["数列规律", "斐波那契"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题"]
+    },
+    {
+      "id": "g2-sp-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1,4,9,16,25,______。",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": ["36"],
+      "solution": ["平方数：1²=1,2²=4,3²=9,4²=16,5²=25,6²=36。"],
+      "hints": ["平方数列：1²,2²,3²..."],
+      "commonMistakes": [{"mistake": "30", "reason": "加5", "correction": "36"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯决赛"},
+      "knowledgePoints": ["数列规律", "平方"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题"]
+    },
+    {
+      "id": "g2-sp-24",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1,3,2,6,3,9,____,____。",
+      "image": "",
+      "options": ["4、12", "5、10", "4、10", "5、12"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "这是两个数列交替出现！",
+        "奇数位：1, 2, 3, ? → 4（每次+1）",
+        "偶数位：3, 6, 9, ? → 12（每次+3）",
+        "所以答案是 4, 12。"
+      ],
+      "hints": [
+        "分开看奇数位和偶数位",
+        "奇数位:+1；偶数位:+3"
+      ],
+      "commonMistakes": [
+        {"mistake": "选2", "reason": "没分清楚奇偶位", "correction": "奇数位1,2,3,4；偶数位3,6,9,12"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2018, "paper": "第十六届希望杯二年级"},
+      "knowledgePoints": ["数列规律", "双重数列"],
+      "estimatedTime": 75,
+      "irtParams": {"a": 1.3, "b": 1.3, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题", "双重数列"]
+    },
+    {
+      "id": "g2-sp-25",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：2,6,18,54,______。",
+      "image": "",
+      "options": [],
+      "answer": "162",
+      "acceptableAnswers": ["162"],
+      "solution": [
+        "观察：6÷2=3, 18÷6=3, 54÷18=3",
+        "每一项是前一项的3倍（即每一项×3得下一项）。",
+        "所以下一项是 54×3 = 162。"
+      ],
+      "hints": [
+        "每一项×3得下一项",
+        "54×3=162"
+      ],
+      "commonMistakes": [
+        {"mistake": "108", "reason": "54×2=108，以为乘2", "correction": "54×3=162"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2016, "paper": "2016年迎春杯二年级"},
+      "knowledgePoints": ["数列规律", "等比数列"],
+      "estimatedTime": 70,
+      "irtParams": {"a": 1.3, "b": 1.2, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题", "等比数列"]
+    },
+    {
+      "id": "g2-sp-26",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1,2,5,14,____。",
+      "image": "",
+      "options": ["23", "32", "41", "50"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "观察差：2-1=1, 5-2=3, 14-5=9",
+        "差是：1, 3, 9, ? → 每次×3",
+        "下一个差是 9×3 = 27",
+        "所以下一项是 14+27 = 41。"
+      ],
+      "hints": [
+        "观察相邻两数的差",
+        "差是1,3,9,27...（×3）",
+        "14+27=41"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1", "reason": "差每次+2，以为下一个差是15", "correction": "差是×3关系，下一个差27，14+27=41"}
+      ],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2019, "paper": "第十四届走美杯二年级"},
+      "knowledgePoints": ["数列规律", "二阶等比"],
+      "estimatedTime": 80,
+      "irtParams": {"a": 1.3, "b": 1.4, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题", "二阶等比"]
+    },
+    {
+      "id": "g2-sp-27",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1,2,3,2,4,6,3,6,9,____,____,____。",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": ["4"],
+      "solution": [
+        "观察：每3个数为一组：",
+        "第一组：1, 2, 3 → 1×1=1, 1×2=2, 1×3=3",
+        "第二组：2, 4, 6 → 2×1=2, 2×2=4, 2×3=6",
+        "第三组：3, 6, 9 → 3×1=3, 3×2=6, 3×3=9",
+        "第四组：4, 8, 12 → 4×1=4, 4×2=8, 4×3=12",
+        "所以答案是 4, 8, 12。"
+      ],
+      "hints": [
+        "每3个数一组来看",
+        "每组第一个数依次是1,2,3,4...",
+        "每组第二、三个数分别是第一个数的2倍、3倍"
+      ],
+      "commonMistakes": [
+        {"mistake": "12", "reason": "没找到分组规律，乱猜", "correction": "每3个一组，每组第一个数依次+1"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2017, "paper": "第二十二届华罗庚金杯初赛"},
+      "knowledgePoints": ["数列规律", "分组数列"],
+      "estimatedTime": 100,
+      "irtParams": {"a": 1.4, "b": 1.8, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题", "分组数列"]
+    },
+    {
+      "id": "g2-sp-28",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有一列数：2,4,6,8,2,4,6,8,2,4,6,8... 第25个数是____。",
+      "image": "",
+      "options": ["2", "4", "6", "8"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "观察：2,4,6,8 这4个数重复出现，周期是4。",
+        "25÷4 = 6（组）……1（个）",
+        "余数是1，说明第25个数是一组中的第1个数。",
+        "一组中第1个数是 2。",
+        "所以第25个数是 2。"
+      ],
+      "hints": [
+        "这列数是有周期的，周期是4",
+        "25÷4=6余1，对应周期中第1个数"
+      ],
+      "commonMistakes": [
+        {"mistake": "选3", "reason": "25是第几个数算错了", "correction": "25÷4=6余1，对应第1个数是2"}
+      ],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2020, "paper": "第十八届希望杯二年级"},
+      "knowledgePoints": ["数列规律", "周期问题"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.4, "b": 1.6, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题", "周期问题"]
+    },
+    {
+      "id": "g2-sp-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1,1,2,4,7,13,______。",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": ["24"],
+      "solution": [
+        "观察：从第4个数开始，每个数等于前三个数的和！",
+        "4 = 1 + 1 + 2",
+        "7 = 1 + 2 + 4",
+        "13 = 2 + 4 + 7",
+        "所以下一个数 = 4 + 7 + 13 = 24。"
+      ],
+      "hints": [
+        "从第4个数开始看规律",
+        "每个数等于它前面三个数的和",
+        "4+7+13=24"
+      ],
+      "commonMistakes": [
+        {"mistake": "20", "reason": "以为是前两项的和", "correction": "是前三项的和，4+7+13=24"}
+      ],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2019, "paper": "2019年迎春杯二年级"},
+      "knowledgePoints": ["数列规律", "三项递推"],
+      "estimatedTime": 110,
+      "irtParams": {"a": 1.4, "b": 2.0, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题", "三项递推"]
+    },
+    {
+      "id": "g2-sp-30",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "找规律填数：1,4,10,22,46,____。",
+      "image": "",
+      "options": ["82", "90", "94", "100"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "观察：4-1=3, 10-4=6, 22-10=12, 46-22=24",
+        "差是：3, 6, 12, 24, ? → 每次×2",
+        "下一个差是 24×2 = 48",
+        "所以下一项是 46+48 = 94。",
+        "另一种方法：每个数=前一个数×2+2",
+        "4=1×2+2, 10=4×2+2, 22=10×2+2, 46=22×2+2",
+        "下一个数=46×2+2=94。"
+      ],
+      "hints": [
+        "观察相邻两数的差",
+        "差是3,6,12,24...（×2）",
+        "或：每个数=前一个数×2+2",
+        "46×2+2=94"
+      ],
+      "commonMistakes": [
+        {"mistake": "选1", "reason": "差每次+3，以为下一个差27", "correction": "差是×2关系，下一个差48，46+48=94"}
+      ],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2015, "paper": "第二十届华罗庚金杯决赛"},
+      "knowledgePoints": ["数列规律", "倍差数列"],
+      "estimatedTime": 100,
+      "irtParams": {"a": 1.5, "b": 2.2, "c": 0.25},
+      "tags": ["数列规律", "竞赛真题", "倍差数列"]
+    }
+  ]
+}

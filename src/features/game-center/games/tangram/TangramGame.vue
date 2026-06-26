@@ -270,8 +270,8 @@ initGame()
   align-items: center; justify-content: center; z-index: 10; animation: tg-fade 0.3s ease;
 }
 .tangram__celebrate-inner {
-  background: #fff; padding: 32px 40px; border-radius: var(--tg-radius-xl);
-  text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2); animation: tg-pop 0.4s ease;
+  background: var(--bg-card); padding: 32px 40px; border-radius: var(--tg-radius-xl);
+  text-align: center; box-shadow: var(--shadow-lg); animation: tg-pop 0.4s ease;
 }
 .tangram__celebrate-inner h2 { margin: 0 0 8px; font-size: 24px; color: var(--tg-color-success); }
 .tangram__celebrate-inner p { margin: 0 0 16px; color: var(--tg-text-secondary); }

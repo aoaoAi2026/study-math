@@ -2,7 +2,6 @@
 import { computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useUserStore } from '@/stores/userStore'
-import AppLayout from '@/components/layout/AppLayout.vue'
 
 const router = useRouter()
 const userStore = useUserStore()
@@ -29,69 +28,67 @@ function goto(path: string) {
 </script>
 
 <template>
-  <AppLayout>
-    <div class="profile-page">
-      <header class="pf-header">
-        <div class="avatar">{{ userStore.nickname?.[0] || '我' }}</div>
-        <div class="info">
-          <h1 class="name">{{ userStore.nickname }}</h1>
-          <div class="level-bar">
-            <div class="level-fill" :style="{ width: (userStore.experience / nextLevelExp * 100) + '%' }"></div>
-          </div>
-          <span class="level-text">Lv.{{ userStore.level }} · {{ userStore.experience }}/{{ nextLevelExp }} EXP</span>
+  <div class="profile-page">
+    <header class="pf-header">
+      <div class="avatar">{{ userStore.nickname?.[0] || '我' }}</div>
+      <div class="info">
+        <h1 class="name">{{ userStore.nickname }}</h1>
+        <div class="level-bar">
+          <div class="level-fill" :style="{ width: (userStore.experience / nextLevelExp * 100) + '%' }"></div>
         </div>
-      </header>
-
-      <div class="stats-grid">
-        <div class="stat-card">
-          <span class="stat-value">{{ userStore.correctTotal }}</span>
-          <span class="stat-label">答对题数</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value">{{ userStore.checkInDays }}</span>
-          <span class="stat-label">学习天数</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value">{{ userStore.gems }}</span>
-          <span class="stat-label">宝石</span>
-        </div>
+        <span class="level-text">Lv.{{ userStore.level }} · {{ userStore.experience }}/{{ nextLevelExp }} EXP</span>
       </div>
+    </header>
 
-      <div class="menu-list">
-        <div class="menu-item" @click="goto('/profile/achievements')">
-          <span class="menu-icon">🏆</span>
-          <span class="menu-label">成就墙</span>
-          <span class="menu-arrow">→</span>
-        </div>
-        <div class="menu-item" @click="goto('/profile/pet')">
-          <span class="menu-icon">{{ petStage.icon }}</span>
-          <span class="menu-label">宠物小π</span>
-          <span class="menu-badge">{{ petStage.name }}</span>
-          <span class="menu-arrow">→</span>
-        </div>
-        <div class="menu-item" @click="goto('/profile/wrong-book')">
-          <span class="menu-icon">📝</span>
-          <span class="menu-label">错题本</span>
-          <span class="menu-arrow">→</span>
-        </div>
-        <div class="menu-item" @click="goto('/profile/report')">
-          <span class="menu-icon">📊</span>
-          <span class="menu-label">学习报告</span>
-          <span class="menu-arrow">→</span>
-        </div>
-        <div class="menu-item" @click="goto('/profile/timeline')">
-          <span class="menu-icon">📜</span>
-          <span class="menu-label">学习历程</span>
-          <span class="menu-arrow">→</span>
-        </div>
-        <div class="menu-item" @click="goto('/profile/theme')">
-          <span class="menu-icon">🎨</span>
-          <span class="menu-label">主题设置</span>
-          <span class="menu-arrow">→</span>
-        </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value">{{ userStore.correctTotal }}</span>
+        <span class="stat-label">答对题数</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">{{ userStore.checkInDays }}</span>
+        <span class="stat-label">学习天数</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">{{ userStore.gems }}</span>
+        <span class="stat-label">宝石</span>
       </div>
     </div>
-  </AppLayout>
+
+    <div class="menu-list">
+      <div class="menu-item" @click="goto('/profile/achievements')">
+        <span class="menu-icon">🏆</span>
+        <span class="menu-label">成就墙</span>
+        <span class="menu-arrow">→</span>
+      </div>
+      <div class="menu-item" @click="goto('/profile/pet')">
+        <span class="menu-icon">{{ petStage.icon }}</span>
+        <span class="menu-label">宠物小π</span>
+        <span class="menu-badge">{{ petStage.name }}</span>
+        <span class="menu-arrow">→</span>
+      </div>
+      <div class="menu-item" @click="goto('/profile/wrong-book')">
+        <span class="menu-icon">📝</span>
+        <span class="menu-label">错题本</span>
+        <span class="menu-arrow">→</span>
+      </div>
+      <div class="menu-item" @click="goto('/profile/report')">
+        <span class="menu-icon">📊</span>
+        <span class="menu-label">学习报告</span>
+        <span class="menu-arrow">→</span>
+      </div>
+      <div class="menu-item" @click="goto('/profile/timeline')">
+        <span class="menu-icon">📜</span>
+        <span class="menu-label">学习历程</span>
+        <span class="menu-arrow">→</span>
+      </div>
+      <div class="menu-item" @click="goto('/profile/theme')">
+        <span class="menu-icon">🎨</span>
+        <span class="menu-label">主题设置</span>
+        <span class="menu-arrow">→</span>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -107,14 +104,14 @@ function goto(path: string) {
   gap: 16px;
   margin-bottom: 24px;
   padding: 20px;
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 16px;
 }
 .avatar {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #4F7DF8, #7B93FF);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   color: white;
   display: flex;
   align-items: center;
@@ -127,24 +124,24 @@ function goto(path: string) {
 }
 .name {
   font-size: 20px;
-  color: #2C3E50;
+  color: var(--text-primary);
   margin-bottom: 8px;
 }
 .level-bar {
   height: 8px;
-  background: #E2E8F0;
+  background: var(--border-color);
   border-radius: 999px;
   overflow: hidden;
   margin-bottom: 4px;
 }
 .level-fill {
   height: 100%;
-  background: linear-gradient(90deg, #4F7DF8, #52C41A);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-success));
   transition: width 0.5s;
 }
 .level-text {
   font-size: 12px;
-  color: #6B7785;
+  color: var(--text-secondary);
 }
 
 .stats-grid {
@@ -154,7 +151,7 @@ function goto(path: string) {
   margin-bottom: 24px;
 }
 .stat-card {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 16px;
   padding: 16px;
   text-align: center;
@@ -163,16 +160,16 @@ function goto(path: string) {
   display: block;
   font-size: 24px;
   font-weight: 700;
-  color: #4F7DF8;
+  color: var(--color-primary);
   margin-bottom: 4px;
 }
 .stat-label {
   font-size: 12px;
-  color: #6B7785;
+  color: var(--text-secondary);
 }
 
 .menu-list {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 16px;
   overflow: hidden;
 }
@@ -183,13 +180,13 @@ function goto(path: string) {
   padding: 16px 20px;
   cursor: pointer;
   transition: background 0.15s;
-  border-bottom: 1px solid #F1F5F9;
+  border-bottom: 1px solid var(--border-color);
 }
 .menu-item:last-child {
   border-bottom: none;
 }
 .menu-item:hover {
-  background: #F8FAFC;
+  background: var(--bg-hover);
 }
 .menu-icon {
   font-size: 24px;
@@ -199,16 +196,16 @@ function goto(path: string) {
 .menu-label {
   flex: 1;
   font-size: 16px;
-  color: #2C3E50;
+  color: var(--text-primary);
 }
 .menu-badge {
   font-size: 12px;
   padding: 4px 10px;
-  background: #FEF3C7;
-  color: #D97706;
+  background: var(--card-yellow-bg);
+  color: var(--card-yellow-text);
   border-radius: 20px;
 }
 .menu-arrow {
-  color: #9AA5B1;
+  color: var(--text-muted);
 }
 </style>

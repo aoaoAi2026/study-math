@@ -1,0 +1,74 @@
+{
+    "paperId": "hmtc-2022-a-g1",
+    "title": "2022 HMTC 国际精英挑战营 一年级 团队战A卷",
+    "grade": 1,
+    "category": "aoshu-hmtc",
+    "duration": 40,
+    "totalScore": 40,
+    "difficultyLevel": 3,
+    "year": 2022,
+    "source": "HMTC 国际精英挑战营组委会",
+    "sections": [
+        {"name": "填空题（共5题）", "count": 5, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "两棵树上共有18只鸟。有3只鸟从第一棵树飞到第二棵树上，这时两棵树上的鸟一样多。第二棵树上原来有________只鸟。",
+            "answer": "6",
+            "score": 8,
+            "solution": "设第二棵树上原来有x只鸟，则第一棵树上有18-x只。飞走3只后，第一棵剩(18-x-3)只，第二棵变成x+3只。两棵相等：(18-x-3)=(x+3)，即15-x=x+3，2x=12，x=6。第二棵原来有6只鸟。",
+            "knowledgePoints": ["等量关系", "逆向思维"]
+        },
+        {
+            "id": "q2",
+            "type": "choice",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "哪个选项是正确的？（　　）<br>A. 1是红色，2是蓝色，3是绿色<br>B. 1是红色，2是绿色，3是蓝色<br>C. 1是蓝色，2是红色，3是绿色<br>D. 1是蓝色，2是绿色，3是红色<br>E. 1是绿色，2是蓝色，3是红色",
+            "options": ["A", "B", "C", "D", "E"],
+            "answer": "E",
+            "score": 8,
+            "solution": "根据图形中各编号对应的颜色关系推断。综合各条件，只有E选项的对应关系与图形完全吻合。",
+            "knowledgePoints": ["图形推理", "逻辑分析"]
+        },
+        {
+            "id": "q3",
+            "type": "choice",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "帆船按编号有规律地停放，有一艘帆船停错位置了，请把它找出来。（　　）<br>A. A　B. B　C. C　D. D　E. E　F. F　G. G",
+            "options": ["A", "B", "C", "D", "E", "F", "G"],
+            "answer": "C",
+            "score": 8,
+            "solution": "观察帆船的排列规律（编号、颜色、方向的循环），找出不符合规律的那一艘船，即为停错位置的船。",
+            "knowledgePoints": ["找规律", "图形识别"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "王老师用贴画装饰教室，贴画排成一列。她先贴了15张冰墩墩，又在每相邻的两张冰墩墩之间插入2张雪容融。王老师一共贴了________张贴画。",
+            "answer": "43",
+            "score": 8,
+            "solution": "15张冰墩墩之间有14个间隔，每个间隔插入2张雪容融，共插入14×2=28张。总共15+28=43张贴画。",
+            "knowledgePoints": ["植树问题", "间隔问题"]
+        },
+        {
+            "id": "q5",
+            "type": "choice",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "如果后天是星期一，那么前天是（　　）。<br>A. 星期一　B. 星期二　C. 星期三　D. 星期四　E. 星期五　F. 星期六　G. 星期日",
+            "options": ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"],
+            "answer": "D",
+            "score": 8,
+            "solution": "后天是星期一，那么今天是星期六，前天是星期四。今天(周六)的两天前是周四。",
+            "knowledgePoints": ["星期推理"]
+        }
+    ]
+}

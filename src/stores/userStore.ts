@@ -30,6 +30,11 @@ export const useUserStore = defineStore('user', {
     checkInDays: 0,
     lastCheckIn: 0,
     correctTotal: 0,
+    wrongTotal: 0,
+    completedTopics: [] as string[],
+    topicProgress: {} as Record<string, number>,
+    badges: [] as string[],
+    createdAt: Date.now(),
     pet: { stage: 'baby' as const, mood: 'happy' as const, hunger: 80, accessories: [] as string[] },
     achievements: DEFAULT_ACHIEVEMENTS.map(a => ({ ...a })),
     inited: false
@@ -43,14 +48,34 @@ export const useUserStore = defineStore('user', {
       this.inited = true
     },
     async save() {
-      const { nickname, grade, experience, level, gems, checkInDays, lastCheckIn, correctTotal, pet, achievements } = this
-      await localDb.setSettings('user', { nickname, grade, experience, level, gems, checkInDays, lastCheckIn, correctTotal, pet, achievements })
+      const { nickname, grade, experience, level, gems, checkInDays, lastCheckIn, correctTotal, wrongTotal, completedTopics, topicProgress, badges, createdAt, pet, achievements } = this
+      await localDb.setSettings('user', { nickname, grade, experience, level, gems, checkInDays, lastCheckIn, correctTotal, wrongTotal, completedTopics, topicProgress, badges, createdAt, pet, achievements })
     },
     addExp(n: number) {
       this.experience += n
       this.level = 1 + Math.floor(this.experience / 100)
       if (n > 0) this.gems += Math.max(1, Math.floor(n / 20))
       this.bumpAchievement('quiz-10', n)
+      this.save()
+    },
+    recordWrong() {
+      this.wrongTotal += 1
+      this.save()
+    },
+    addBadges(badge: string) {
+      if (this.badges.includes(badge)) return
+      this.badges.push(badge)
+      this.save()
+    },
+    getTopicProgress(topicId: string): number {
+      return this.topicProgress[topicId] || 0
+    },
+    setTopicProgress(topicId: string, progress: number) {
+      this.topicProgress[topicId] = progress
+      if (progress >= 100 && !this.completedTopics.includes(topicId)) {
+        this.completedTopics.push(topicId)
+        this.addExp(50)
+      }
       this.save()
     },
     bumpAchievement(id: string, delta = 1) {

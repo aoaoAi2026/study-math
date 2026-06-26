@@ -1,0 +1,1428 @@
+{
+  "topicId": "g3-sum-diff",
+  "topicName": "和差问题",
+  "grade": 3,
+  "category": "olympiad",
+  "version": "1.0",
+  "totalQuestions": 30,
+  "questions": [
+    {
+      "id": "g3-sd-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "两数之和为 20，两数之差为 6。较大数是多少？",
+      "image": "",
+      "options": [
+        "10",
+        "12",
+        "13",
+        "14"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "大数 = (和+差)÷2 = (20+6)÷2 = 26÷2 = 13",
+        "检验：小数 = 20-13 = 7，13-7 = 6 ✓"
+      ],
+      "hints": [
+        "大数公式：(和+差)÷2",
+        "先判断谁是大数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "(20-6)÷2=7",
+          "reason": "误用小数公式",
+          "correction": "求大数用(和+差)÷2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差公式",
+        "线段图"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "和差问题",
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-sd-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "两数之和为 30，两数之差为 10。较小数是 ____。",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "solution": [
+        "小数 = (和-差)÷2 = (30-10)÷2 = 20÷2 = 10",
+        "大数 = 30-10 = 20，检验：20-10 = 10 ✓"
+      ],
+      "hints": [
+        "小数公式：(和-差)÷2",
+        "答案要回代检验"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "(30+10)÷2=20",
+          "reason": "误用大数公式",
+          "correction": "求小数用(和-差)÷2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差公式"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-sd-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "哥哥和弟弟共有 24 颗糖，哥哥比弟弟多 4 颗。弟弟有几颗糖？",
+      "image": "",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "弟弟 = (24-4)÷2 = 20÷2 = 10 颗",
+        "哥哥 = 24-10 = 14 颗",
+        "检验：14-10 = 4 ✓"
+      ],
+      "hints": [
+        "弟弟较少，用小数公式",
+        "(和-差)÷2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "(24+4)÷2=14",
+          "reason": "算成哥哥的",
+          "correction": "题目问弟弟，用小数公式",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "实际应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "糖果"
+      ]
+    },
+    {
+      "id": "g3-sd-04",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "两筐苹果共 40 个，甲筐比乙筐多 10 个。甲筐有多少个？",
+      "image": "",
+      "options": [],
+      "answer": "25",
+      "acceptableAnswers": [
+        "25"
+      ],
+      "solution": [
+        "甲筐 = (40+10)÷2 = 50÷2 = 25 个",
+        "乙筐 = 40-25 = 15 个",
+        "检验：25-15 = 10 ✓"
+      ],
+      "hints": [
+        "甲筐多，是大数，用(和+差)÷2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "40÷2+10=30",
+          "reason": "乱用运算",
+          "correction": "(和+差)÷2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差公式"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "苹果"
+      ]
+    },
+    {
+      "id": "g3-sd-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "学校男生女生共 180 人，男生比女生多 20 人。男生有多少人？",
+      "image": "",
+      "options": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "男生 = (180+20)÷2 = 200÷2 = 100 人",
+        "女生 = 180-100 = 80 人",
+        "检验：100-80 = 20 ✓"
+      ],
+      "hints": [
+        "画线段图：男=长，女=短",
+        "男生是大数"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "180÷2=90",
+          "reason": "直接平均，没考虑差",
+          "correction": "用和差公式",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "线段图"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "学校"
+      ]
+    },
+    {
+      "id": "g3-sd-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小明和小红一共存了 56 元，小明比小红多 12 元。小红存了 ____ 元。",
+      "image": "",
+      "options": [],
+      "answer": "22",
+      "acceptableAnswers": [
+        "22"
+      ],
+      "solution": [
+        "小红 = (56-12)÷2 = 44÷2 = 22 元",
+        "小明 = 56-22 = 34 元",
+        "检验：34-22 = 12 ✓"
+      ],
+      "hints": [
+        "小红存的少，用小数公式"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "(56+12)÷2=34",
+          "reason": "算成小明的",
+          "correction": "题目问小红",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差公式"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "存钱"
+      ]
+    },
+    {
+      "id": "g3-sd-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "两数和为 58，差为 16。较大数是多少？",
+      "image": "",
+      "options": [
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "大数 = (58+16)÷2 = 74÷2 = 37",
+        "小数 = 58-37 = 21",
+        "检验：37-21 = 16 ✓"
+      ],
+      "hints": [
+        "大数 = (和+差)÷2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "58-16=42",
+          "reason": "直接相减",
+          "correction": "要用(和+差)÷2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差公式"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "基础"
+      ]
+    },
+    {
+      "id": "g3-sd-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "书架上下两层共放书 90 本，上层比下层多 18 本。下层有多少本？",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": [
+        "36"
+      ],
+      "solution": [
+        "下层 = (90-18)÷2 = 72÷2 = 36 本",
+        "上层 = 90-36 = 54 本",
+        "检验：54-36 = 18 ✓"
+      ],
+      "hints": [
+        "下层少，用(和-差)÷2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "90-18=72",
+          "reason": "忘记÷2",
+          "correction": "差要先÷2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差公式"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "书架"
+      ]
+    },
+    {
+      "id": "g3-sd-09",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "鸡和兔一共 28 只，鸡比兔多 6 只。兔有多少只？",
+      "image": "",
+      "options": [
+        "8",
+        "11",
+        "14",
+        "17"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "兔 = (28-6)÷2 = 22÷2 = 11 只",
+        "鸡 = 28-11 = 17 只",
+        "检验：17-11 = 6 ✓"
+      ],
+      "hints": [
+        "兔较少，用小数公式"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "(28+6)÷2=17",
+          "reason": "算成鸡的",
+          "correction": "题目问兔",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "动物"
+      ]
+    },
+    {
+      "id": "g3-sd-10",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "甲、乙两人共有铅笔 32 支，甲给乙 4 支后两人一样多。甲原来有 ____ 支。",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "solution": [
+        "甲给乙4支后一样多，说明甲比乙多 4×2 = 8 支",
+        "甲 = (32+8)÷2 = 40÷2 = 20 支",
+        "乙 = 32-20 = 12 支",
+        "检验：20-4 = 16，12+4 = 16 ✓"
+      ],
+      "hints": [
+        "\"给多少一样多\"意味着差=2×给的数",
+        "先找出隐藏的差"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "32÷2=16",
+          "reason": "以为原来就相等",
+          "correction": "甲多乙少，差是8",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "隐藏差"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "铅笔"
+      ]
+    },
+    {
+      "id": "g3-sd-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两桶水共重 50 千克，如果从甲桶倒 6 千克到乙桶，两桶就一样重。甲桶原来有多少千克？",
+      "image": "",
+      "options": [
+        "19",
+        "25",
+        "31",
+        "37"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "甲倒6kg给乙后一样重，说明甲比乙多 6×2 = 12 kg",
+        "甲 = (50+12)÷2 = 62÷2 = 31 kg",
+        "乙 = 50-31 = 19 kg",
+        "检验：31-6=25，19+6=25 ✓"
+      ],
+      "hints": [
+        "先找差：倒的×2",
+        "再用和差公式"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "50÷2=25",
+          "reason": "直接平均",
+          "correction": "甲比乙多12kg",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "隐藏差"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "倒水"
+      ]
+    },
+    {
+      "id": "g3-sd-12",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "两篮水果共 64 个，如果从甲篮拿 8 个放入乙篮，甲篮还比乙篮多 4 个。原来甲篮有 ____ 个。",
+      "image": "",
+      "options": [],
+      "answer": "42",
+      "acceptableAnswers": [
+        "42"
+      ],
+      "solution": [
+        "最后：甲+乙=64，甲-乙=4，现在甲=(64+4)÷2=34",
+        "原来甲=34+8=42",
+        "原来乙=(64-4)÷2-8=22",
+        "检验：42+22=64, 42-8-(22+8)=4 ✓"
+      ],
+      "hints": [
+        "先算现在的状态",
+        "再倒推原来"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "差=8×2=16",
+          "reason": "没考虑最后还多4",
+          "correction": "差=8×2+4=20",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "倒推"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "水果"
+      ]
+    },
+    {
+      "id": "g3-sd-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "今年爸爸和小明年龄和 42 岁，爸爸比小明大 28 岁。5 年后爸爸多少岁？",
+      "image": "",
+      "options": [
+        "35",
+        "38",
+        "40",
+        "42"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "今年爸爸 = (42+28)÷2 = 70÷2 = 35 岁",
+        "5 年后爸爸 = 35+5 = 40 岁",
+        "今年小明 = 42-35 = 7 岁",
+        "检验：35-7=28 ✓"
+      ],
+      "hints": [
+        "年龄差永远不变",
+        "先求今年，再加5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "(42+28)÷2=35",
+          "reason": "忘加5年",
+          "correction": "题目问5年后",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "年龄"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "年龄"
+      ]
+    },
+    {
+      "id": "g3-sd-14",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "三个数的和是 90，第一个数比第二个数多 10，第二个数比第三个数多 10。第三个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20"
+      ],
+      "solution": [
+        "画图：第三=x, 第二=x+10, 第一=x+20",
+        "x+(x+10)+(x+20)=90, 3x+30=90, x=20",
+        "三个数：20, 30, 40",
+        "检验：20+30+40=90 ✓"
+      ],
+      "hints": [
+        "把最小的看作1份",
+        "先把多出的部分减去"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "90÷3=30",
+          "reason": "直接平均",
+          "correction": "三个数不相等",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "多量"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "三个数"
+      ]
+    },
+    {
+      "id": "g3-sd-15",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两个连续自然数的和是 35。较大数是多少？",
+      "image": "",
+      "options": [
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "连续自然数差=1",
+        "大数=(35+1)÷2=36÷2=18",
+        "小数=35-18=17",
+        "检验：17+18=35 ✓"
+      ],
+      "hints": [
+        "连续自然数的差是1",
+        "这是隐藏条件"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "35÷2=17.5",
+          "reason": "没取整",
+          "correction": "用和差公式",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "连续数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.0,
+        "c": 0.25
+      },
+      "tags": [
+        "自然数"
+      ]
+    },
+    {
+      "id": "g3-sd-16",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲、乙、丙三人共有贴纸 72 张。甲比乙多 6 张，乙比丙多 6 张。甲有 ____ 张。",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30"
+      ],
+      "solution": [
+        "丙最少=x, 乙=x+6, 甲=x+12",
+        "x+(x+6)+(x+12)=72, 3x+18=72, x=18",
+        "丙=18, 乙=24, 甲=30",
+        "检验：18+24+30=72 ✓"
+      ],
+      "hints": [
+        "先排序：甲>乙>丙",
+        "用最小的做标准"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "72÷3=24",
+          "reason": "直接平均得乙",
+          "correction": "乙=24, 甲=30",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "多量"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "贴纸"
+      ]
+    },
+    {
+      "id": "g3-sd-17",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一条绳子长 80 米，剪成两段。长段用去 10 米后，还比短段多 6 米。短段原来有多少米？",
+      "image": "",
+      "options": [
+        "28",
+        "32",
+        "36",
+        "40"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "长段-短段=10+6=16 米",
+        "短段=(80-16)÷2=64÷2=32 米",
+        "长段=80-32=48 米",
+        "检验：48-10-32=6 ✓"
+      ],
+      "hints": [
+        "画图理解\"用去10米后多6\"",
+        "长段比短段多16米"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "长-短=10-6=4",
+          "reason": "差算反了",
+          "correction": "差=10+6=16",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "隐藏差"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "绳子"
+      ]
+    },
+    {
+      "id": "g3-sd-18",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "四个数的和是 120，第一个数比第二个多 4，第二个比第三个多 4，第三个比第四个多 4。第一个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": [
+        "36"
+      ],
+      "solution": [
+        "公差为4的等差数列：x, x+4, x+8, x+12",
+        "和=4x+24=120, 4x=96, x=24",
+        "第四=24, 第三=28, 第二=32, 第一=36",
+        "检验：24+28+32+36=120 ✓"
+      ],
+      "hints": [
+        "等差数列的和=项数×(首项+末项)÷2",
+        "或画图平均后调整"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "120÷4=30",
+          "reason": "平均后直接当首项",
+          "correction": "平均=30是中间两数的平均",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版三年级奥数",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "等差数列"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "四个数"
+      ]
+    },
+    {
+      "id": "g3-sd-19",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "小明和小红共有邮票80张，小明比小红多10张。小明有______张邮票。",
+      "image": "",
+      "options": [],
+      "answer": "45",
+      "acceptableAnswers": ["45", "45张"],
+      "solution": ["大数=(和+差)÷2=(80+10)÷2=90÷2=45张。"],
+      "hints": ["和差公式：大数=(和+差)÷2"],
+      "commonMistakes": [{"mistake": "35", "reason": "算成小数", "correction": "45张"}],
+      "source": {"type": "竞赛真题", "name": "希望杯", "year": 2016, "paper": "第十四届希望杯三年级"},
+      "knowledgePoints": ["和差问题", "基础"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.2, "b": 1.4, "c": 0.25},
+      "tags": ["和差", "竞赛真题"]
+    },
+    {
+      "id": "g3-sd-20",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "甲乙两班共有学生98人，从甲班调4人到乙班后，两班人数相等。原来甲班有()人。",
+      "image": "",
+      "options": ["51", "53", "47", "45"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": ["甲比乙多=4×2=8人。甲=(98+8)÷2=106÷2=53人。"],
+      "hints": ["调4人相等，说明甲比乙多8人"],
+      "commonMistakes": [{"mistake": "选0", "reason": "以为多4人", "correction": "多8人，甲=53"}],
+      "source": {"type": "竞赛真题", "name": "迎春杯", "year": 2017, "paper": "2017年迎春杯三年级"},
+      "knowledgePoints": ["和差问题", "隐藏差"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.2, "b": 0.7, "c": 0.25},
+      "tags": ["和差", "竞赛真题"]
+    },
+    {
+      "id": "g3-sd-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "姐姐和妹妹共有糖果60颗，如果姐姐给妹妹5颗，姐姐还比妹妹多2颗。原来姐姐有______颗糖果。",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": ["36", "36颗"],
+      "solution": ["给5颗后还多2颗，说明原来差=5×2+2=12颗。姐姐=(60+12)÷2=36颗。"],
+      "hints": ["原来差=5×2+2=12颗"],
+      "commonMistakes": [{"mistake": "35", "reason": "算错差", "correction": "差12颗，姐姐36"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2014, "paper": "第十九届华罗庚金杯初赛"},
+      "knowledgePoints": ["和差问题", "移动"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["和差", "竞赛真题"]
+    },
+    {
+      "id": "g3-sd-22",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "三个人的年龄和是36岁，甲比乙大2岁，乙比丙大2岁。甲的年龄是()岁。",
+      "image": "",
+      "options": ["10", "12", "14", "16"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": ["丙=x, 乙=x+2, 甲=x+4。和=3x+6=36, x=10。甲=10+4=14岁。"],
+      "hints": ["设丙为x，甲=x+4"],
+      "commonMistakes": [{"mistake": "选1", "reason": "算成乙", "correction": "甲=14岁"}],
+      "source": {"type": "竞赛真题", "name": "走美杯", "year": 2015, "paper": "第十三届走美杯三年级"},
+      "knowledgePoints": ["和差问题", "三人"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.3, "b": 0.7, "c": 0.25},
+      "tags": ["和差", "竞赛真题"]
+    },
+    {
+      "id": "g3-sd-23",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "两根绳子共长40米，第一根剪去6米，第二根剪去4米后，第一根还比第二根长2米。原来第一根绳子长______米。",
+      "image": "",
+      "options": [],
+      "answer": "22",
+      "acceptableAnswers": ["22", "22米"],
+      "solution": ["设第一根=x，第二根=40-x。剪后第一根=x-6，第二根=36-x。(x-6)-(36-x)=2→2x-42=2→2x=44→x=22米。"],
+      "hints": ["剪后第一根比第二根长2米", "列方程求解"],
+      "commonMistakes": [{"mistake": "21", "reason": "算错", "correction": "22米"}],
+      "source": {"type": "竞赛真题", "name": "华罗庚金杯", "year": 2008, "paper": "第十三届华罗庚金杯决赛"},
+      "knowledgePoints": ["和差问题", "剪去"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.4, "b": 1.0, "c": 0.25},
+      "tags": ["和差", "竞赛真题"]
+    },
+    {
+      "id": "g3-sd-24",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "小明和小丽共有图书120本，如果小明给小丽15本，两人图书就一样多。小明原来有多少本图书？",
+      "image": "",
+      "options": ["60", "65", "70", "75"],
+      "answer": "3",
+      "acceptableAnswers": ["3"],
+      "solution": [
+        "小明给小丽15本后一样多，说明小明比小丽多15×2=30本",
+        "小明=(120+30)÷2=150÷2=75本",
+        "小丽=120-75=45本",
+        "检验：75-15=60，45+15=60 ✓"
+      ],
+      "hints": [
+        "给15本相等，说明差=15×2=30本",
+        "小明是大数，用(和+差)÷2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "直接120÷2=60",
+          "correction": "小明比小丽多30本，小明=75本",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "选1",
+          "reason": "以为多15本",
+          "correction": "多30本，不是多15本",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2019,
+        "paper": "第十七届希望杯三年级初赛"
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "隐藏差"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.3,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "竞赛真题",
+        "图书"
+      ]
+    },
+    {
+      "id": "g3-sd-25",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "甲、乙两筐苹果共重90千克，从甲筐取出8千克放入乙筐后，甲筐还比乙筐多4千克。原来甲筐有苹果______千克。",
+      "image": "",
+      "options": [],
+      "answer": "55",
+      "acceptableAnswers": ["55", "55千克"],
+      "solution": [
+        "最后状态：甲+乙=90，甲-乙=4",
+        "现在甲=(90+4)÷2=47千克",
+        "原来甲=47+8=55千克",
+        "原来乙=90-55=35千克",
+        "检验：55-8-(35+8)=47-43=4 ✓"
+      ],
+      "hints": [
+        "先求取出后甲筐的重量",
+        "再倒推原来的重量",
+        "原来差=8×2+4=20千克"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "49",
+          "reason": "差算成8+4=12",
+          "correction": "差=8×2+4=20，甲=55千克",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "47",
+          "reason": "忘了加回8千克",
+          "correction": "现在甲=47，原来甲=47+8=55",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2018,
+        "paper": "2018年迎春杯三年级初赛"
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "移动",
+        "倒推"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.3,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "竞赛真题",
+        "苹果"
+      ]
+    },
+    {
+      "id": "g3-sd-26",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "小强、小华和小亮三人共有压岁钱240元。小强比小华多10元，小华比小亮多10元。小强有多少元压岁钱？",
+      "image": "",
+      "options": [],
+      "answer": "90",
+      "acceptableAnswers": ["90", "90元"],
+      "solution": [
+        "小亮最少=x，小华=x+10，小强=x+20",
+        "x+(x+10)+(x+20)=240",
+        "3x+30=240，3x=210，x=70",
+        "小亮=70元，小华=80元，小强=90元",
+        "检验：70+80+90=240 ✓"
+      ],
+      "hints": [
+        "把最少的小亮看作1份",
+        "先减去多出的部分再平均分",
+        "三人平均=80元，中间的小华就是80元"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "80",
+          "reason": "直接平均得小华，以为是小强",
+          "correction": "小华=80，小强=90元",
+          "errorLayer": "L1"
+        },
+        {
+          "mistake": "70",
+          "reason": "算成小亮的",
+          "correction": "题目问小强，是90元",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "走美杯",
+        "year": 2017,
+        "paper": "第十五届走美杯三年级"
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "三量和差"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.3,
+        "b": 0.7,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "竞赛真题",
+        "压岁钱"
+      ]
+    },
+    {
+      "id": "g3-sd-27",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "有两根同样长的绳子，第一根剪去24米，第二根剪去8米后，第二根的长度是第一根的3倍。两根绳子原来各长多少米？",
+      "image": "",
+      "options": ["28", "30", "32", "36"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "剪后第二根比第一根多：24-8=16米",
+        "剪后第二根是第一根的3倍，说明多2倍对应16米",
+        "剪后第一根=16÷(3-1)=8米",
+        "原来长=8+24=32米",
+        "检验：32-24=8，32-8=24，24÷8=3 ✓"
+      ],
+      "hints": [
+        "两根原来一样长，剪去的差=剩下的差",
+        "差倍问题：差÷(倍数-1)=小数",
+        "最后别忘了加回剪去的长度"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "24+8=32方向错",
+          "correction": "原来长32米，剪后差16米",
+          "errorLayer": "L4"
+        },
+        {
+          "mistake": "选1",
+          "reason": "算错倍数差",
+          "correction": "3-1=2倍对应16米，1倍=8米",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2016,
+        "paper": "第二十一届华罗庚金杯初赛"
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "差倍问题",
+        "还原"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "竞赛真题",
+        "绳子",
+        "差倍"
+      ]
+    },
+    {
+      "id": "g3-sd-28",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "四个数的和是200，第一个数比第二个数多8，第二个数比第三个数多8，第三个数比第四个数多8。第一个数是______。",
+      "image": "",
+      "options": [],
+      "answer": "62",
+      "acceptableAnswers": ["62"],
+      "solution": [
+        "公差为8的等差数列：设第四个数=x",
+        "第三=x+8，第二=x+16，第一=x+24",
+        "和=x+(x+8)+(x+16)+(x+24)=4x+48=200",
+        "4x=152，x=38",
+        "第四=38，第三=46，第二=54，第一=62",
+        "检验：38+46+54+62=200 ✓"
+      ],
+      "hints": [
+        "等差数列，先找最小的数",
+        "四个数的平均=50，是中间两数的平均",
+        "第二+第三=100，第二=54，第三=46"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "50",
+          "reason": "直接平均当作第一个数",
+          "correction": "平均=50是中间值，第一个数=62",
+          "errorLayer": "L3"
+        },
+        {
+          "mistake": "58",
+          "reason": "公差算错",
+          "correction": "第一个数比第四个数多3×8=24",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "希望杯",
+        "year": 2020,
+        "paper": "第十八届希望杯三年级决赛"
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "等差数列",
+        "多量和差"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "竞赛真题",
+        "四个数"
+      ]
+    },
+    {
+      "id": "g3-sd-29",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "甲、乙两筐共有橘子100个，从甲筐取出12个放入乙筐，再从乙筐取出6个放入甲筐，这时甲筐比乙筐多4个。原来甲筐有多少个橘子？",
+      "image": "",
+      "options": [],
+      "answer": "58",
+      "acceptableAnswers": ["58", "58个"],
+      "solution": [
+        "最后状态：甲+乙=100，甲-乙=4",
+        "最后甲=(100+4)÷2=52个，最后乙=48个",
+        "倒推分析：甲筐先减12，再加6，净减少6个",
+        "原来甲=52+6=58个",
+        "原来乙=100-58=42个",
+        "检验：甲58-12+6=52，乙42+12-6=48，52-48=4 ✓"
+      ],
+      "hints": [
+        "先求出最后两筐各有多少个",
+        "甲筐净减少12-6=6个",
+        "原来甲=最后甲+净减少量"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "52",
+          "reason": "只算了最后甲的数量，忘了倒推",
+          "correction": "甲净减少6个，原来甲=52+6=58个",
+          "errorLayer": "L1"
+        },
+        {
+          "mistake": "64",
+          "reason": "倒推时加减搞反，以为净增加",
+          "correction": "甲先拿出去12个又拿回来6个，净减少6个",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "迎春杯",
+        "year": 2019,
+        "paper": "2019年迎春杯三年级决赛"
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "多次移动",
+        "倒推"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "竞赛真题",
+        "橘子",
+        "倒推"
+      ]
+    },
+    {
+      "id": "g3-sd-30",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "三层书架上共有图书180本。如果从第一层拿10本放到第二层，再从第二层拿15本放到第三层，那么三层书架上的书就一样多。原来第二层有多少本书？",
+      "image": "",
+      "options": ["55", "60", "65", "70"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "最后三层一样多，每层=180÷3=60本",
+        "第三层得到15本后是60本，原来第三层=60-15=45本",
+        "第一层拿走10本后是60本，原来第一层=60+10=70本",
+        "第二层：先得到10本，又拿走15本，最后60本",
+        "原来第二层=60+15-10=65本",
+        "检验：70+65+45=180 ✓",
+        "过程：一层70-10=60，二层65+10-15=60，三层45+15=60 ✓"
+      ],
+      "hints": [
+        "先求最后每层有多少本",
+        "再分别倒推每层原来的数量",
+        "第二层：+10-15后=60，原来=60+15-10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1",
+          "reason": "以为原来就是60本",
+          "correction": "60是最后的数量，要倒推",
+          "errorLayer": "L2"
+        },
+        {
+          "mistake": "选0",
+          "reason": "倒推时算成60-15+10=55",
+          "correction": "第二层+10-15=60，所以原来=60+15-10=65",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "竞赛真题",
+        "name": "华罗庚金杯",
+        "year": 2017,
+        "paper": "第二十二届华罗庚金杯决赛"
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "多量",
+        "倒推",
+        "还原问题"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.5,
+        "b": 1.4,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "竞赛真题",
+        "书架",
+        "还原"
+      ]
+    }
+  ]
+}

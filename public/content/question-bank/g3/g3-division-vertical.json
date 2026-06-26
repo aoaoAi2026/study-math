@@ -1,0 +1,470 @@
+{
+  "topicId": "g3-division-vertical",
+  "topicName": "除法竖式",
+  "grade": 3,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g3-dv-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "6 ÷ 2 = ?",
+      "image": "",
+      "options": ["2", "3", "4", "8"],
+      "answer": "1",
+      "acceptableAnswers": ["3"],
+      "solution": [
+        "第一步：想乘法口诀，2 × ? = 6",
+        "第二步：二三得六，所以 6 ÷ 2 = 3"
+      ],
+      "hints": [
+        "想 2 乘几等于 6",
+        "乘法口诀：二三得六",
+        "6 里面有 3 个 2"
+      ],
+      "commonMistakes": [
+        {"mistake": "6÷2=2", "reason": "二二得四，记错了", "correction": "二三得六，所以是3", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["表内除法"],
+      "estimatedTime": 30,
+      "irtParams": {"a": 1.0, "b": -1.5, "c": 0.25},
+      "tags": ["简单除法"]
+    },
+    {
+      "id": "g3-dv-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "48 ÷ 4 = ____",
+      "image": "",
+      "options": [],
+      "answer": "12",
+      "acceptableAnswers": ["12"],
+      "solution": [
+        "第一步：48 = 40 + 8",
+        "第二步：40 ÷ 4 = 10",
+        "第三步：8 ÷ 4 = 2",
+        "第四步：10 + 2 = 12",
+        "或者用竖式：4 除 4 商1，4 除 8 商2，得 12"
+      ],
+      "hints": [
+        "把 48 分成 40 和 8",
+        "分别除以 4",
+        "10+2=12"
+      ],
+      "commonMistakes": [
+        {"mistake": "48÷4=11", "reason": "8÷4算错", "correction": "8÷4=2，10+2=12", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["两位数除以一位数"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -1.4, "c": 0.25},
+      "tags": ["整除"]
+    },
+    {
+      "id": "g3-dv-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "有 36 个苹果，平均分给 3 个小朋友，每人分几个？",
+      "image": "",
+      "options": ["10", "12", "13", "11"],
+      "answer": "1",
+      "acceptableAnswers": ["12"],
+      "solution": [
+        "第一步：36 ÷ 3",
+        "第二步：30 ÷ 3 = 10",
+        "第三步：6 ÷ 3 = 2",
+        "第四步：10 + 2 = 12"
+      ],
+      "hints": [
+        "平均分用除法",
+        "36个 ÷ 3人 = ?",
+        "把 36 拆成 30+6"
+      ],
+      "commonMistakes": [
+        {"mistake": "36÷3=11", "reason": "6÷3算错", "correction": "6÷3=2，10+2=12", "errorLayer": "L1"},
+        {"mistake": "36÷3=13", "reason": "计算错误", "correction": "12个", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["除法应用", "两位数除以一位数"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -1.2, "c": 0.25},
+      "tags": ["水果", "平均分"]
+    },
+    {
+      "id": "g3-dv-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "86 ÷ 2 = ?",
+      "image": "",
+      "options": ["42", "43", "44", "34"],
+      "answer": "1",
+      "acceptableAnswers": ["43"],
+      "solution": [
+        "第一步：80 ÷ 2 = 40",
+        "第二步：6 ÷ 2 = 3",
+        "第三步：40 + 3 = 43",
+        "或竖式：2除8商4，2除6商3，得43"
+      ],
+      "hints": [
+        "把 86 拆成 80+6",
+        "分别除以 2",
+        "40+3=43"
+      ],
+      "commonMistakes": [
+        {"mistake": "86÷2=42", "reason": "6÷2=2算错", "correction": "6÷2=3，40+3=43", "errorLayer": "L1"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["两位数除以一位数"],
+      "estimatedTime": 60,
+      "irtParams": {"a": 1.0, "b": -1.3, "c": 0.25},
+      "tags": ["整除"]
+    },
+    {
+      "id": "g3-dv-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "用竖式计算：75 ÷ 5 = ____",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": ["15"],
+      "solution": [
+        "第一步：列竖式，75 里面，先用 7 除以 5",
+        "第二步：5×1=5，7-5=2，余2",
+        "第三步：把个位的 5 落下来，变成 25",
+        "第四步：25 ÷ 5 = 5，5×5=25，25-25=0",
+        "第五步：商是 15"
+      ],
+      "hints": [
+        "从高位除起，先除十位",
+        "十位余 2，把 5 落下来变成 25",
+        "25÷5=5"
+      ],
+      "commonMistakes": [
+        {"mistake": "75÷5=13", "reason": "25÷5算错", "correction": "25÷5=5，商是15", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["两位数除以一位数", "竖式除法"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.8, "c": 0.25},
+      "tags": ["竖式", "有余数"]
+    },
+    {
+      "id": "g3-dv-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "96 ÷ 4 = ?",
+      "image": "",
+      "options": ["22", "24", "23", "25"],
+      "answer": "1",
+      "acceptableAnswers": ["24"],
+      "solution": [
+        "第一步：9 ÷ 4 = 2 余 1",
+        "第二步：把 6 落下来，变成 16",
+        "第三步：16 ÷ 4 = 4",
+        "第四步：商是 24"
+      ],
+      "hints": [
+        "从高位开始除",
+        "9 除以 4 商 2，余 1",
+        "16 除以 4 商 4"
+      ],
+      "commonMistakes": [
+        {"mistake": "96÷4=23", "reason": "16÷4算错", "correction": "16÷4=4，结果是24", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["两位数除以一位数"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.6, "c": 0.25},
+      "tags": ["竖式"]
+    },
+    {
+      "id": "g3-dv-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "256 ÷ 2 = ?",
+      "image": "",
+      "options": ["128", "126", "138", "118"],
+      "answer": "0",
+      "acceptableAnswers": ["128"],
+      "solution": [
+        "第一步：2 ÷ 2 = 1，百位商 1",
+        "第二步：5 ÷ 2 = 2 余 1，十位商 2",
+        "第三步：把 6 落下来，16 ÷ 2 = 8，个位商 8",
+        "第四步：商是 128"
+      ],
+      "hints": [
+        "三位数除以一位数，从高位开始",
+        "2÷2=1，5÷2=2余1，16÷2=8",
+        "从百位除到个位"
+      ],
+      "commonMistakes": [
+        {"mistake": "256÷2=126", "reason": "16÷2算错", "correction": "16÷2=8", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["三位数除以一位数"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": -0.5, "c": 0.25},
+      "tags": ["三位数"]
+    },
+    {
+      "id": "g3-dv-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "学校买 135 本图书，平均分给 3 个班，每个班分多少本？",
+      "image": "",
+      "options": [],
+      "answer": "45",
+      "acceptableAnswers": ["45"],
+      "solution": [
+        "第一步：135 ÷ 3",
+        "第二步：1÷3 不够除，看前两位 13",
+        "第三步：13 ÷ 3 = 4 余 1，十位商 4",
+        "第四步：把 5 落下来，15 ÷ 3 = 5，个位商 5",
+        "第五步：商是 45"
+      ],
+      "hints": [
+        "从高位除起，百位1不够除3",
+        "看前两位13，13÷3=4余1",
+        "15÷3=5"
+      ],
+      "commonMistakes": [
+        {"mistake": "135÷3=35", "reason": "13÷3算错", "correction": "13÷3=4余1，商是45", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["三位数除以一位数", "应用"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.0, "b": -0.3, "c": 0.25},
+      "tags": ["应用", "图书"]
+    },
+    {
+      "id": "g3-dv-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面哪个算式有余数？",
+      "image": "",
+      "options": ["64 ÷ 4", "75 ÷ 5", "87 ÷ 3", "98 ÷ 4"],
+      "answer": "3",
+      "acceptableAnswers": ["98 ÷ 4"],
+      "solution": [
+        "第一步：64 ÷ 4 = 16，整除",
+        "第二步：75 ÷ 5 = 15，整除",
+        "第三步：87 ÷ 3 = 29，整除",
+        "第四步：98 ÷ 4 = 24 余 2，有余数",
+        "所以选第四个"
+      ],
+      "hints": [
+        "分别计算每道题",
+        "看哪个不能正好分完",
+        "98÷4=24余2"
+      ],
+      "commonMistakes": [
+        {"mistake": "选87÷3", "reason": "算错了87÷3=29是整除", "correction": "98÷4有余数", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["有余数除法"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.0, "b": 0.0, "c": 0.25},
+      "tags": ["余数", "判断"]
+    },
+    {
+      "id": "g3-dv-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "67 ÷ 3 = ____ 余 ____",
+      "image": "",
+      "options": [],
+      "answer": "22余1",
+      "acceptableAnswers": ["22余1", "22...1", "22 1"],
+      "solution": [
+        "第一步：6 ÷ 3 = 2，十位商 2",
+        "第二步：7 ÷ 3 = 2 余 1，个位商 2，余 1",
+        "第三步：商是 22，余数是 1",
+        "第四步：验证：22×3+1 = 66+1 = 67 ✓"
+      ],
+      "hints": [
+        "余数一定要比除数小",
+        "6÷3=2，7÷3=2余1",
+        "商×除数+余数=被除数"
+      ],
+      "commonMistakes": [
+        {"mistake": "商21余4", "reason": "余数4大于3，不对", "correction": "余数必须小于除数", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["有余数除法"],
+      "estimatedTime": 90,
+      "irtParams": {"a": 1.0, "b": 0.2, "c": 0.25},
+      "tags": ["余数"]
+    },
+    {
+      "id": "g3-dv-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "525 ÷ 5 = ?",
+      "image": "",
+      "options": ["105", "103", "15", "115"],
+      "answer": "0",
+      "acceptableAnswers": ["105"],
+      "solution": [
+        "第一步：5 ÷ 5 = 1，百位商 1",
+        "第二步：2 ÷ 5 不够除，十位商 0（占位）",
+        "第三步：把 5 落下来，25 ÷ 5 = 5，个位商 5",
+        "第四步：商是 105"
+      ],
+      "hints": [
+        "注意中间不够除时要商0",
+        "2 不够除 5，商 0",
+        "然后用 25 除 5 得 5"
+      ],
+      "commonMistakes": [
+        {"mistake": "525÷5=15", "reason": "漏掉十位的0", "correction": "十位要商0，商是105", "errorLayer": "L3"},
+        {"mistake": "525÷5=115", "reason": "中间计算错误", "correction": "2不够除5，应该商0", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["三位数除以一位数", "商中间有0"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 0.5, "c": 0.25},
+      "tags": ["商0"]
+    },
+    {
+      "id": "g3-dv-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一辆汽车 3 小时行驶 144 千米，平均每小时行驶多少千米？",
+      "image": "",
+      "options": ["42", "48", "38", "58"],
+      "answer": "1",
+      "acceptableAnswers": ["48"],
+      "solution": [
+        "第一步：速度 = 路程 ÷ 时间",
+        "第二步：144 ÷ 3",
+        "第三步：1÷3 不够，看 14，14÷3=4余2",
+        "第四步：把 4 落下来，24÷3=8",
+        "第五步：商是 48"
+      ],
+      "hints": [
+        "速度 = 路程 ÷ 时间",
+        "144 ÷ 3",
+        "14÷3=4余2，24÷3=8"
+      ],
+      "commonMistakes": [
+        {"mistake": "144÷3=42", "reason": "24÷3算错", "correction": "24÷3=8，商是48", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["除法应用", "行程问题"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.0, "b": 0.8, "c": 0.25},
+      "tags": ["行程", "汽车"]
+    },
+    {
+      "id": "g3-dv-13",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把 647 颗糖平均装在 6 个袋子里，每个袋子装 ____ 颗，还剩 ____ 颗。",
+      "image": "",
+      "options": [],
+      "answer": "107余5",
+      "acceptableAnswers": ["107余5", "107...5", "107 5"],
+      "solution": [
+        "第一步：647 ÷ 6",
+        "第二步：6÷6=1，百位商 1",
+        "第三步：4÷6 不够，十位商 0，把7落下变47",
+        "第四步：47÷6=7余5，个位商 7，余 5",
+        "第五步：商是 107，余数是 5",
+        "第六步：验证：107×6+5 = 642+5 = 647 ✓"
+      ],
+      "hints": [
+        "从高位开始除",
+        "十位4不够除6，商0",
+        "47÷6=7余5"
+      ],
+      "commonMistakes": [
+        {"mistake": "商17余5", "reason": "漏了十位的0", "correction": "商应该是107", "errorLayer": "L3"},
+        {"mistake": "商106余11", "reason": "余数11大于6，还能再分", "correction": "余数要小于除数", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["三位数除以一位数", "有余数"],
+      "estimatedTime": 150,
+      "irtParams": {"a": 1.2, "b": 1.0, "c": 0.25},
+      "tags": ["有余数", "应用"]
+    },
+    {
+      "id": "g3-dv-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个数除以 4，商是 23，余数是 2，这个数是多少？",
+      "image": "",
+      "options": ["92", "94", "88", "90"],
+      "answer": "1",
+      "acceptableAnswers": ["94"],
+      "solution": [
+        "第一步：被除数 = 商 × 除数 + 余数",
+        "第二步：被除数 = 23 × 4 + 2",
+        "第三步：23 × 4 = 92",
+        "第四步：92 + 2 = 94"
+      ],
+      "hints": [
+        "除法关系式：被除数 = 商 × 除数 + 余数",
+        "23 × 4 = ?",
+        "再加余数 2"
+      ],
+      "commonMistakes": [
+        {"mistake": "23×4=92，忘了加余数", "reason": "没有加余数2", "correction": "92+2=94", "errorLayer": "L2"},
+        {"mistake": "23+4+2=29", "reason": "公式记错", "correction": "应该是商×除数+余数", "errorLayer": "L3"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["除法各部分关系"],
+      "estimatedTime": 120,
+      "irtParams": {"a": 1.2, "b": 1.2, "c": 0.25},
+      "tags": ["逆运算"]
+    },
+    {
+      "id": "g3-dv-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小马虎在做除法时，把除数 6 看成了 9，结果得到商 8 余 2，正确的商和余数是多少？",
+      "image": "",
+      "options": ["商12余2", "商11余4", "商10余5", "商13余1"],
+      "answer": "0",
+      "acceptableAnswers": ["商12余2"],
+      "solution": [
+        "第一步：先求正确的被除数：被除数 = 8 × 9 + 2 = 72 + 2 = 74",
+        "第二步：用正确的除数计算：74 ÷ 6",
+        "第三步：6×12 = 72，74-72 = 2",
+        "第四步：正确的商是 12，余数是 2"
+      ],
+      "hints": [
+        "先根据错误的除数算出被除数",
+        "被除数 = 商×除数+余数 = 8×9+2",
+        "再用正确的除数6去除"
+      ],
+      "commonMistakes": [
+        {"mistake": "直接用8×6=48当被除数", "reason": "没理解被除数没变", "correction": "被除数=8×9+2=74", "errorLayer": "L4"},
+        {"mistake": "74÷6算错", "reason": "计算错误", "correction": "74÷6=12余2", "errorLayer": "L2"}
+      ],
+      "source": {"type": "textbook", "name": "人教版三年级奥数", "year": 2023},
+      "knowledgePoints": ["错中求解", "除法关系"],
+      "estimatedTime": 180,
+      "irtParams": {"a": 1.5, "b": 1.8, "c": 0.25},
+      "tags": ["错中求解", "拔高"]
+    }
+  ]
+}

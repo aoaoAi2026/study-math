@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, defineAsyncComponent } from 'vue'
 import { useRoute } from 'vue-router'
-import AppLayout from '@/components/layout/AppLayout.vue'
 import SegmentDiagram from './tools/SegmentDiagram.vue'
 import GeoBoard from './tools/GeoBoard.vue'
 
@@ -36,17 +35,15 @@ const toolInfo = computed(() => {
 </script>
 
 <template>
-  <AppLayout>
-    <div class="tool-page">
-      <component :is="currentTool" v-if="currentTool" />
-      <div v-else class="tool-placeholder">
-        <div class="placeholder-icon">{{ toolInfo.icon }}</div>
-        <h2>{{ toolInfo.name }}</h2>
-        <p>教具开发中，敬请期待...</p>
-        <button class="back-btn" @click="$router.push('/tools')">返回工具箱</button>
-      </div>
+  <div class="tool-page">
+    <component :is="currentTool" v-if="currentTool" />
+    <div v-else class="tool-placeholder">
+      <div class="placeholder-icon">{{ toolInfo.icon }}</div>
+      <h2>{{ toolInfo.name }}</h2>
+      <p>教具开发中，敬请期待...</p>
+      <button class="back-btn" @click="$router.push('/tools')">返回工具箱</button>
     </div>
-  </AppLayout>
+  </div>
 </template>
 
 <style scoped>

@@ -1,0 +1,788 @@
+{
+  "topicId": "g1-clock-time",
+  "topicName": "认识钟表",
+  "grade": 1,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g1-ct-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "钟面上有几根针？",
+      "options": [
+        "1 根",
+        "2 根",
+        "3 根",
+        "4 根"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "钟面上有两根针：短的是时针，长的是分针。",
+        "有的钟还有一根秒针，但一年级主要认时针和分针。"
+      ],
+      "hints": [
+        "短针叫时针",
+        "长针叫分针",
+        "一共2根"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 3 根",
+          "reason": "把秒针也算上了",
+          "correction": "一年级主要认时针和分针2根",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "钟表的认识"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "钟表"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "时针指向 3，分针指向 12，现在是 ____ 时。",
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三",
+        "3点",
+        "三点"
+      ],
+      "solution": [
+        "分针指向 12 表示整点。",
+        "时针指向 3 就是 3 时。"
+      ],
+      "hints": [
+        "分针指12是整点",
+        "时针指几就是几点",
+        "时针指3，所以是3点"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 12",
+          "reason": "把分针当成时针了",
+          "correction": "短针指3，是3点",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "整点认识"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "整点"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下面哪个时间是上午 8 点上课的时间？",
+      "options": [
+        "时针指向 8，分针指向 12",
+        "时针指向 12，分针指向 8",
+        "时针指向 6，分针指向 12",
+        "时针指向 8，分针指向 6"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "时针指向8，分针指向12"
+      ],
+      "solution": [
+        "8 点是整点，分针应该指向 12。",
+        "时针应该指向 8。",
+        "所以时针指向 8，分针指向 12 就是 8 时。"
+      ],
+      "hints": [
+        "整点时分针指12",
+        "8点时针指8",
+        "分针指12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 时针12分针8",
+          "reason": "时针分针搞反了",
+          "correction": "时针短，指小时数",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "整点识别"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "整点"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-04",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "钟面上一共有 ____ 个数字。",
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "十二"
+      ],
+      "solution": [
+        "钟面上有 1、2、3、4、5、6、7、8、9、10、11、12 共 12 个数字。",
+        "这些数字表示小时。"
+      ],
+      "hints": [
+        "数一数钟面上的数字",
+        "1 到 12 共 12 个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 60",
+          "reason": "把分钟数当成数字数了",
+          "correction": "12个数字代表小时",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "钟面结构"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "钟面"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "时针从 2 走到 5，走了几小时？",
+      "options": [
+        "2 小时",
+        "3 小时",
+        "4 小时",
+        "5 小时"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "5 - 2 = 3。",
+        "时针从 2 走到 5，走了 3 个大格，是 3 小时。"
+      ],
+      "hints": [
+        "数一数走了几个大格",
+        "2→3→4→5，走了3格",
+        "每格1小时"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 2小时或4小时",
+          "reason": "数错了格数",
+          "correction": "5-2=3",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "时针",
+        "经过时间"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "经过时间"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "分针走一圈是 ____ 分钟，也就是 ____ 小时。",
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "1",
+        "60和1",
+        "60分钟1小时"
+      ],
+      "solution": [
+        "分针走一圈经过 60 个小格，每个小格 1 分钟。",
+        "所以是 60 分钟。",
+        "60 分钟就是 1 小时。"
+      ],
+      "hints": [
+        "分针走1小格是1分钟",
+        "一圈有60小格",
+        "60分钟=1小时"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 12",
+          "reason": "把小时数当成分钟数了",
+          "correction": "分针一圈是60分钟不是12分钟",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "分针",
+        "时间单位换算"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "时间换算"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "现在是 7:30，再过半小时是几点？",
+      "options": [
+        "7:00",
+        "8:00",
+        "8:30",
+        "9:00"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "8:00"
+      ],
+      "solution": [
+        "半小时就是 30 分钟。",
+        "7:30 再过 30 分钟是 7:60。",
+        "60 分钟就是 1 小时，所以 7:60 变成 8:00。"
+      ],
+      "hints": [
+        "30 + 30 = 60 分钟",
+        "60 分钟等于 1 小时",
+        "7点加1小时是8点"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 8:30",
+          "reason": "多加了30分钟",
+          "correction": "7:30+30分=8:00",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "经过时间",
+        "半点"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "半点"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1 小时 = ____ 分钟。",
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "六十"
+      ],
+      "solution": [
+        "1 小时等于 60 分钟。",
+        "时针走一大格，分针正好走一圈（60小格）。"
+      ],
+      "hints": [
+        "1时=60分",
+        "牢记这个换算"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 12 或 100",
+          "reason": "和其他数字混了",
+          "correction": "1时=60分",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "时间单位换算"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "换算"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "分针指向 6，时针在 4 和 5 之间，现在是几点？",
+      "options": [
+        "4:00",
+        "4:30",
+        "5:00",
+        "5:30"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "4:30"
+      ],
+      "solution": [
+        "分针指向 6 表示走了 30 分钟（半点）。",
+        "时针在 4 和 5 之间说明是 4 点多。",
+        "所以是 4:30。"
+      ],
+      "hints": [
+        "分针指6是30分",
+        "时针在4和5之间是4点多",
+        "所以是4点半，即4:30"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 5:30",
+          "reason": "看时针时看错了",
+          "correction": "时针没到5，是4点多",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "半点认识"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "半点"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小明从家到学校要用 20 分钟，如果他 7:30 从家出发，____ 时 ____ 分到校。",
+      "answer": "7",
+      "acceptableAnswers": [
+        "7:50",
+        "7时50分",
+        "7和50"
+      ],
+      "solution": [
+        "7:30 出发，经过 20 分钟。",
+        "30 + 20 = 50 分。",
+        "所以到校时间是 7 时 50 分，即 7:50。"
+      ],
+      "hints": [
+        "分钟加分钟",
+        "30+20=50",
+        "小时不变还是7",
+        "所以是7:50"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 7:30或8:00",
+          "reason": "没计算或计算错",
+          "correction": "30+20=50，是7:50",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "经过时间",
+        "时间计算"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "时间计算"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "妈妈每天 8:00 上班，中午 12:00 下班。妈妈上午工作了几小时？",
+      "options": [
+        "3 小时",
+        "4 小时",
+        "5 小时",
+        "12 小时"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "12:00 - 8:00 = 4 小时。",
+        "从 8 点到 12 点经过了 4 个小时。"
+      ],
+      "hints": [
+        "下班时间减上班时间",
+        "12-8=4",
+        "就是4小时"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 3小时或5小时",
+          "reason": "计算错误",
+          "correction": "12-8=4",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "经过时间"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "经过时间"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一节课 40 分钟，课间休息 10 分钟，再加上 ____ 分钟就是 1 小时。",
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "1 小时 = 60 分钟。",
+        "已经有 40 + 10 = 50 分钟了。",
+        "还差 60 - 50 = 10 分钟。"
+      ],
+      "hints": [
+        "先把1小时换算成60分钟",
+        "40+10=50分钟",
+        "60-50=10分钟"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 20或50",
+          "reason": "计算过程错了",
+          "correction": "60-50=10",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "时间换算",
+        "经过时间"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "时间计算"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小红每天晚上 9:00 睡觉，早上 6:00 起床。她睡了几小时？",
+      "options": [
+        "7 小时",
+        "8 小时",
+        "9 小时",
+        "10 小时"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "晚上 9:00 到晚上 12:00 经过 3 小时。",
+        "晚上 12:00（第二天凌晨 0:00）到早上 6:00 经过 6 小时。",
+        "3 + 6 = 9 小时。"
+      ],
+      "hints": [
+        "分两段算",
+        "第一段：晚9点到12点=3小时",
+        "第二段：凌晨0点到6点=6小时",
+        "3+6=9小时"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 3小时或6小时",
+          "reason": "只算了一段",
+          "correction": "两段都要加起来",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "经过时间",
+        "跨午夜"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "跨天计算"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-14",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "电影院电影 7:50 开场，8:35 结束。这场电影放映了 ____ 分钟。",
+      "answer": "45",
+      "acceptableAnswers": [
+        "45",
+        "四十五"
+      ],
+      "solution": [
+        "7:50 到 8:00 是 10 分钟。",
+        "8:00 到 8:35 是 35 分钟。",
+        "一共 10 + 35 = 45 分钟。"
+      ],
+      "hints": [
+        "凑整算更简单",
+        "到下一个整点是10分钟",
+        "再加上后面的35分钟",
+        "10+35=45"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 45以外的数",
+          "reason": "计算时出错",
+          "correction": "8:35-7:50=45分钟",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "经过时间",
+        "分钟计算"
+      ],
+      "estimatedTime": 140,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "时间差"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-ct-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "爸爸骑自行车从家到公司用了 45 分钟，如果他想 8:10 到达公司，他应该几点从家出发？",
+      "options": [
+        "7:15",
+        "7:25",
+        "7:35",
+        "7:45"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "7:25"
+      ],
+      "solution": [
+        "到达时间 8:10，往回推 45 分钟。",
+        "8:10 先往回推 10 分钟到 8:00。",
+        "再往回推 35 分钟到 7:25。",
+        "所以爸爸应该 7:25 从家出发。"
+      ],
+      "hints": [
+        "到达时间往前推45分钟",
+        "8:10-10分=8:00",
+        "8:00-35分=7:25",
+        "总共推了45分钟"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 7:35",
+          "reason": "往回推的时间错了",
+          "correction": "8:10-45分=7:25",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "开始时间",
+        "倒推计算"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "倒推",
+        "拔高"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    }
+  ]
+}

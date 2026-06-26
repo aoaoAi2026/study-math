@@ -1,0 +1,766 @@
+{
+  "topicId": "g5-probability",
+  "topicName": "概率",
+  "grade": 5,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g5-pb-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "抛一枚硬币,正面朝上的可能性是()。",
+      "image": "",
+      "options": [
+        "1/4",
+        "1/3",
+        "1/2",
+        "1"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "硬币有2个面(正、反)",
+        "正面朝上1种情况",
+        "可能性=1/2"
+      ],
+      "hints": [
+        "可能性=所求情况数÷总情况数",
+        "1÷2=1/2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选3",
+          "reason": "硬币一定正面朝上错了",
+          "correction": "只有1/2可能",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "可能性"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": "g5-pb-02",
+      "type": "input",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个骰子(6个面分别标有1到6),掷出偶数的可能性是多少?",
+      "image": "",
+      "options": [],
+      "answer": "1/2",
+      "acceptableAnswers": [
+        "1/2",
+        "3/6"
+      ],
+      "solution": [
+        "偶数有:2、4、6共3个",
+        "总共6种情况",
+        "可能性=3/6=1/2"
+      ],
+      "hints": [
+        "偶数占一半",
+        "3/6=1/2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写3/6",
+          "reason": "应约分为1/2",
+          "correction": "1/2",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "可能性"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": "g5-pb-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "袋子里有3个红球和2个白球,任意摸一个,摸到红球的可能性是()。",
+      "image": "",
+      "options": [
+        "2/5",
+        "3/5",
+        "1/3",
+        "1/5"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "总球数=3+2=5",
+        "红球3个",
+        "可能性=3/5"
+      ],
+      "hints": [
+        "红球数÷总球数",
+        "3÷5=3/5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "摸白算红了",
+          "correction": "3/5",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "可能性"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "概率"
+      ]
+    },
+    {
+      "id": "g5-pb-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下列事件中,一定发生的是()。",
+      "image": "",
+      "options": [
+        "明天会下雨",
+        "抛硬币正面朝上",
+        "地球绕着太阳转",
+        "掷骰子掷出6"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "一定发生:必然事件,可能性=1",
+        "明天会下雨是不确定事件",
+        "地球绕太阳转是必然事件"
+      ],
+      "hints": [
+        "必然事件可能性=1",
+        "地球绕太阳转是必然"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选其他",
+          "reason": "分不清必然与偶然",
+          "correction": "地球绕太阳转是必然",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "事件判断"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "必然"
+      ]
+    },
+    {
+      "id": "g5-pb-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "袋子里有5个红球,3个黄球,2个白球,任意摸一个,摸到()球的可能性最大。",
+      "image": "",
+      "options": [
+        "红",
+        "黄",
+        "白",
+        "一样大"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "数量越多可能性越大",
+        "红球5个>黄球3个>白球2个",
+        "红球可能性最大"
+      ],
+      "hints": [
+        "数量多的可能性大",
+        "5>3>2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "可能性最小的选成最大",
+          "correction": "红球最多",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "可能性大小"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "比较"
+      ]
+    },
+    {
+      "id": "g5-pb-06",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一副扑克牌(去掉大小王共52张),任意抽一张,抽到红桃的可能性是多少?",
+      "image": "",
+      "options": [],
+      "answer": "1/4",
+      "acceptableAnswers": [
+        "1/4",
+        "13/52"
+      ],
+      "solution": [
+        "红桃有13张,共52张",
+        "13/52=1/4"
+      ],
+      "hints": [
+        "4种花色各13张",
+        "13/52=1/4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写13/52",
+          "reason": "要约分",
+          "correction": "1/4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "可能性"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "扑克牌"
+      ]
+    },
+    {
+      "id": "g5-pb-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "同时掷两枚硬币,两枚都正面朝上的可能性是()。",
+      "image": "",
+      "options": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "2/3"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "可能情况:正正、正反、反正、反反共4种",
+        "两枚都正面只有1种",
+        "可能性=1/4"
+      ],
+      "hints": [
+        "列出所有可能",
+        "1÷4=1/4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "没考虑两枚独立",
+          "correction": "1/2×1/2=1/4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "组合概率"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "组合"
+      ]
+    },
+    {
+      "id": "g5-pb-08",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个袋子里有4个红球,6个蓝球。要使摸到红球和蓝球的可能性相等,需要再加入几个红球?",
+      "image": "",
+      "options": [],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "2个"
+      ],
+      "solution": [
+        "可能性相等意味着数量相等",
+        "蓝比红多6-4=2个",
+        "需要再加入2个红球"
+      ],
+      "hints": [
+        "使红球数=蓝球数",
+        "红需要=6,已有4,差2"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "加6个",
+          "reason": "让红=蓝,只需加2",
+          "correction": "加2个",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "可能性相等"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "等量"
+      ]
+    },
+    {
+      "id": "g5-pb-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个转盘被平均分成8份,红色3份,黄色2份,蓝色3份,指针转到黄色的可能性是()。",
+      "image": "",
+      "options": [
+        "1/4",
+        "1/3",
+        "3/8",
+        "1/8"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "总份数8,黄色占2份",
+        "可能性=2/8=1/4"
+      ],
+      "hints": [
+        "黄色份数÷总份数",
+        "2/8=1/4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "看红色占比了",
+          "correction": "2/8=1/4",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "可能性"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "转盘"
+      ]
+    },
+    {
+      "id": "g5-pb-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下列事件中,属于不可能事件的是()。",
+      "image": "",
+      "options": [
+        "太阳从东方升起",
+        "掷骰子掷出5",
+        "从全是白球的袋子里摸出红球",
+        "抛硬币反面朝上"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "不可能事件:一定不发生,可能性=0",
+        "袋子里全是白球,不可能摸出红球"
+      ],
+      "hints": [
+        "不可能事件可能性=0",
+        "全白袋子摸不出红球"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1或3",
+          "reason": "混淆事件类型",
+          "correction": "白球袋不可能摸出红球",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "不可能事件"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "事件"
+      ]
+    },
+    {
+      "id": "g5-pb-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "袋子里有一些红球和白球共20个,小明摸了40次(每次摸一个记录后放回),摸到红球30次,白球10次。你估计袋子里红球和白球各有多少个?",
+      "image": "",
+      "options": [],
+      "answer": "15,5",
+      "acceptableAnswers": [
+        "15,5",
+        "15 5"
+      ],
+      "solution": [
+        "摸到红球频率=30/40=3/4,白球=10/40=1/4",
+        "估计红球占3/4,白球占1/4",
+        "红球=20×3/4=15个,白球=20×1/4=5个"
+      ],
+      "hints": [
+        "用频率估计概率",
+        "红球≈20×30/40=15"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "不会估计",
+          "reason": "红球≈20×3/4=15,白球=5",
+          "correction": "红球≈20×3/4=15,白球=5",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "频率估计概率"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "估计"
+      ]
+    },
+    {
+      "id": "g5-pb-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "掷一个骰子两次,两次点数之和是7的可能性是()。",
+      "image": "",
+      "options": [
+        "1/6",
+        "5/36",
+        "6/36",
+        "7/36"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "总情况=6×6=36种",
+        "和为7的情况:(1,6)(2,5)(3,4)(4,3)(5,2)(6,1)共6种",
+        "可能性=6/36=1/6"
+      ],
+      "hints": [
+        "列出来:和为7的有6种",
+        "6÷36=1/6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "约分后也是1/6,但6/36更直接",
+          "correction": "6/36",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "组合概率"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和"
+      ]
+    },
+    {
+      "id": "g5-pb-13",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个盒子里有2个红球、3个黄球、5个绿球,任意摸一个,不是红球的可能性是多少?",
+      "image": "",
+      "options": [],
+      "answer": "4/5",
+      "acceptableAnswers": [
+        "4/5",
+        "8/10"
+      ],
+      "solution": [
+        "总球数=2+3+5=10个",
+        "不是红球即黄或绿共3+5=8个",
+        "可能性=8/10=4/5",
+        "或:1-2/10=8/10=4/5"
+      ],
+      "hints": [
+        "1-红球可能性",
+        "(3+5)/10=4/5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3/5",
+          "reason": "忘算绿球了",
+          "correction": "(3+5)/10=4/5",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "可能性"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "对立事件"
+      ]
+    },
+    {
+      "id": "g5-pb-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "下列说法正确的是()。",
+      "image": "",
+      "options": [
+        "可能性大的事件一定发生",
+        "可能性小的事件不可能发生",
+        "可能性为1的事件一定发生",
+        "可能性为0的事件可能发生"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "可能性大不代表一定发生",
+        "可能性小不代表不可能发生",
+        "可能性=1的是必然事件,一定发生",
+        "可能性=0的是不可能事件,不可能发生"
+      ],
+      "hints": [
+        "可能性=1必然,可能性=0不可能",
+        "其他只是可能"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1或3",
+          "reason": "混淆可能与必然",
+          "correction": "只有可能性=1才一定发生",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "事件判断"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "概念"
+      ]
+    },
+    {
+      "id": "g5-pb-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小明和小红玩掷骰子游戏,规定:掷出的点数大于3小明赢,小于3小红赢,等于3重新掷。这个游戏公平吗?如果不公平,谁赢的可能性大?请说明理由。",
+      "image": "",
+      "options": [],
+      "answer": "不公平,小明",
+      "acceptableAnswers": [
+        "不公平,小明",
+        "不公平小明",
+        "不公平,小明赢"
+      ],
+      "solution": [
+        "点数大于3:4、5、6共3种,可能性=3/6=1/2",
+        "点数小于3:1、2共2种,可能性=2/6=1/3",
+        "因为1/2>1/3,所以不公平,小明赢的可能性大"
+      ],
+      "hints": [
+        "分别计算两人赢的可能性",
+        "大于3有3个,小于3有2个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "认为等于3算小红赢",
+          "reason": "等于3重新掷,不影响胜负",
+          "correction": "不公平,小明",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版五年级",
+        "year": 2024
+      },
+      "knowledgePoints": [
+        "游戏公平性"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "公平"
+      ]
+    }
+  ]
+}

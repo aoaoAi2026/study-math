@@ -1,0 +1,36 @@
+{
+    "paperId": "xiwang-3-g2",
+    "title": "第三届小学《希望杯》全国数学邀请赛 二年级（第二试）",
+    "grade": 2,
+    "category": "aoshu-xiwang",
+    "duration": 60,
+    "totalScore": 120,
+    "difficultyLevel": 2,
+    "year": 2006,
+    "source": "希望杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共20题，每题6分）", "count": 20, "scorePerQuestion": 6}
+    ],
+    "questions": [
+        {"id": "q1", "type": "fill", "difficulty": 1, "sectionNo": 1, "stem": "计算：1+2+3+...+20 = ______。", "answer": "210", "score": 6, "solution": "等差数列求和：(1+20)×20÷2=210。", "knowledgePoints": ["等差数列", "巧算"]},
+        {"id": "q2", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "找规律填数：2、6、10、14、______、22。", "answer": "18", "score": 6, "solution": "每次加4。2+4=6，6+4=10，10+4=14，14+4=18。", "knowledgePoints": ["等差数列"]},
+        {"id": "q3", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "小明有20颗糖，他吃了一半后又吃了2颗，还剩______颗糖。", "answer": "8", "score": 6, "solution": "吃一半：20÷2=10颗剩10颗，再吃2颗：10-2=8颗。", "knowledgePoints": ["连减"]},
+        {"id": "q4", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "一个盒子里有18个球，第一次拿出5个，第二次拿出7个，还剩______个球。", "answer": "6", "score": 6, "solution": "18-5-7=6个。", "knowledgePoints": ["连减"]},
+        {"id": "q5", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "把10颗糖平均分给5个小朋友，每个小朋友分到______颗糖。", "answer": "2", "score": 6, "solution": "10÷5=2颗。", "knowledgePoints": ["平均分"]},
+        {"id": "q6", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "小明排队买票，他前面有8个人，后面有7个人。这一排一共有______个人。", "answer": "16", "score": 6, "solution": "8+1+7=16人。", "knowledgePoints": ["排队问题"]},
+        {"id": "q7", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "一个三角形有3条边，5个三角形有______条边。", "answer": "15", "score": 6, "solution": "5×3=15条边。", "knowledgePoints": ["乘法应用"]},
+        {"id": "q8", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "时钟敲3下用了6秒，敲6下用了______秒。", "answer": "15", "score": 6, "solution": "敲3下有2个间隔，每间隔3秒。敲6下有5个间隔，5×3=15秒。", "knowledgePoints": ["间隔问题"]},
+        {"id": "q9", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "小华有一些卡片，送给小红5张后还剩8张。小华原来有______张卡片。", "answer": "13", "score": 6, "solution": "8+5=13张。", "knowledgePoints": ["逆向思维"]},
+        {"id": "q10", "type": "fill", "difficulty": 2, "sectionNo": 1, "stem": "小红比小丽多3颗糖，小丽有8颗糖。小红有______颗糖。", "answer": "11", "score": 6, "solution": "8+3=11颗。", "knowledgePoints": ["和差问题"]},
+        {"id": "q11", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "一根绳子对折一次后，从中间剪开，绳子被剪成______段。", "answer": "3", "score": 6, "solution": "对折一次变2股，剪开后有3段。", "knowledgePoints": ["剪绳子"]},
+        {"id": "q12", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "一个盒子里有若干个球，第一次拿出3个，第二次拿出5个，第三次拿出7个，盒子就空了。盒子里原来有多少个球？", "answer": "15", "score": 6, "solution": "3+5+7=15个球。", "knowledgePoints": ["连加"]},
+        {"id": "q13", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "把一根绳子剪成5段，需要剪______次。", "answer": "4", "score": 6, "solution": "剪成5段需剪4次。", "knowledgePoints": ["剪绳子"]},
+        {"id": "q14", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "一筐苹果，第一次吃掉一半，第二次吃掉剩下的一半，还剩3个。原来有______个苹果。", "answer": "12", "score": 6, "solution": "倒推：3×2×2=12个。", "knowledgePoints": ["倒推法"]},
+        {"id": "q15", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "把12个苹果装进盒子里，每个盒子装4个，需要______个盒子。", "answer": "3", "score": 6, "solution": "12÷4=3个盒子。", "knowledgePoints": ["除法应用"]},
+        {"id": "q16", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "小明有15颗弹珠，给了小刚3颗后，他们两人的弹珠就一样多。原来小刚有多少颗弹珠？", "answer": "9", "score": 6, "solution": "小明给3颗后剩12颗，两人各12颗，小刚原有12-3=9颗。", "knowledgePoints": ["等量关系"]},
+        {"id": "q17", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "两根绳子一共长18米，第一根比第二根长4米。两根绳子各长多少米？", "answer": "11,7", "score": 6, "solution": "设第二根为x米，则第一根为x+4米。x+(x+4)=18，2x=14，x=7。第二根7米，第一根11米。", "knowledgePoints": ["和差问题"]},
+        {"id": "q18", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "有一些草莓，装在3个盘子里，每个盘子装5个，还剩2个。原来有多少个草莓？", "answer": "17", "score": 6, "solution": "3×5+2=17个。", "knowledgePoints": ["乘法应用"]},
+        {"id": "q19", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "把一根绳子对折两次后，从中间剪开，绳子被剪成______段。", "answer": "5", "score": 6, "solution": "对折两次变成4股，剪开后有5段。", "knowledgePoints": ["剪绳子"]},
+        {"id": "q20", "type": "fill", "difficulty": 3, "sectionNo": 1, "stem": "把20颗糖装进盒子里，每个盒子装6颗，需要______个盒子？还剩______颗？", "answer": "3,2", "score": 6, "solution": "20÷6=3个……2颗，需要3个盒子，还剩2颗。", "knowledgePoints": ["有余数除法"]}
+    ]
+}

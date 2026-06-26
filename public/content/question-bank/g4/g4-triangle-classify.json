@@ -1,0 +1,714 @@
+{
+  "topicId": "g4-triangle-classify",
+  "topicName": "三角形分类",
+  "grade": 4,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g4-tc-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "三个角都是锐角的三角形叫做",
+      "image": "",
+      "options": [
+        "直角三角形",
+        "钝角三角形",
+        "锐角三角形",
+        "等边三角形"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "三个角都是锐角(小于90度)的三角形叫锐角三角形"
+      ],
+      "hints": [
+        "锐角三角形:三个角都是锐角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1",
+          "reason": "混淆类型",
+          "correction": "锐角三角形",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "按角分类"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "有一个角是直角的三角形叫做",
+      "image": "",
+      "options": [
+        "锐角三角形",
+        "直角三角形",
+        "钝角三角形",
+        "等腰三角形"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "有一个角是90度的三角形是直角三角形"
+      ],
+      "hints": [
+        "直角三角形:有一个直角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2",
+          "reason": "混淆类型",
+          "correction": "直角三角形",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "按角分类"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-03",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个三角形中,最多有几个直角？最多有几个钝角？(逗号分隔)",
+      "image": "",
+      "options": [],
+      "answer": "1,1",
+      "acceptableAnswers": [
+        "1,1",
+        "1 1"
+      ],
+      "solution": [
+        "三角形内角和=180度,如果有两个直角或钝角,和就会大于180度,所以最多各1个"
+      ],
+      "hints": [
+        "内角和180度,最多一个直角或一个钝角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "以为可以有2个",
+          "correction": "实际最多1个",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "三角形内角和"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-04",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "两条边相等的三角形叫做",
+      "image": "",
+      "options": [
+        "等边三角形",
+        "等腰三角形",
+        "锐角三角形",
+        "直角三角形"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "有两条边相等的三角形叫等腰三角形,相等的边叫腰"
+      ],
+      "hints": [
+        "等腰三角形:两条边相等"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "等边是特殊的等腰",
+          "correction": "等腰是两条边相等",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "按边分类"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-05",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "等边三角形每个角是多少度？",
+      "image": "",
+      "options": [],
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "60度"
+      ],
+      "solution": [
+        "等边三角形三边相等,三个角也相等,每个角=180÷3=60度"
+      ],
+      "hints": [
+        "180÷3=60度"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成90",
+          "reason": "与直角混淆",
+          "correction": "每个角60度",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "等边三角形"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-06",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个三角形中有一个角是105度,按角分类这是什么三角形？",
+      "image": "",
+      "options": [],
+      "answer": "钝角三角形",
+      "acceptableAnswers": [
+        "钝角三角形",
+        "钝角"
+      ],
+      "solution": [
+        "105度大于90度是钝角,有一个钝角的三角形叫钝角三角形"
+      ],
+      "hints": [
+        "有一个钝角的三角形叫钝角三角形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成锐角",
+          "reason": "105度是钝角",
+          "correction": "钝角三角形",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "按角分类"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-07",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个等腰三角形的顶角是80度,它的一个底角是多少度？",
+      "image": "",
+      "options": [
+        "40度",
+        "50度",
+        "60度",
+        "80度"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "等腰三角形两底角相等,底角=(180-80)÷2=50度"
+      ],
+      "hints": [
+        "(180-顶角)÷2=底角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "(180-80)÷2=50",
+          "correction": "不是40",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "等腰三角形角"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-08",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个三角形两条边的长度分别是3厘米和5厘米,第三条边最长是多少厘米？最短是多少厘米？(取整厘米数,先长后短,逗号分隔)",
+      "image": "",
+      "options": [],
+      "answer": "7,3",
+      "acceptableAnswers": [
+        "7,3",
+        "7 3"
+      ],
+      "solution": [
+        "两边之差<第三边<两边之和,即2<第三边<8,最长7厘米,最短3厘米"
+      ],
+      "hints": [
+        "5-3<第三边<5+3,2<x<8,取整最长7,最短3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "没考虑取整",
+          "correction": "7和3",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "三角形三边关系"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "直角三角形中的两个锐角之和是多少度？",
+      "image": "",
+      "options": [],
+      "answer": "90",
+      "acceptableAnswers": [
+        "90",
+        "90度"
+      ],
+      "solution": [
+        "直角=90度,两锐角和=180-90=90度"
+      ],
+      "hints": [
+        "直角三角形两锐角互余"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "180÷3=60",
+          "correction": "180-90=90",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "直角三角形"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-10",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个三角形的三个角分别是70度、65度、45度。这是什么三角形？",
+      "image": "",
+      "options": [
+        "锐角三角形",
+        "直角三角形",
+        "钝角三角形",
+        "等腰三角形"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "三个角都小于90度,都是锐角,所以是锐角三角形"
+      ],
+      "hints": [
+        "都小于90度→锐角三角形"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2或3",
+          "reason": "判断错角大小",
+          "correction": "都是锐角",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "按角分类"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个等腰三角形的一条边长5厘米,另一条边长11厘米。它的周长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "27",
+      "acceptableAnswers": [
+        "27",
+        "27厘米"
+      ],
+      "solution": [
+        "两边5,5,11:5+5=10<11,不成立",
+        "三边5,11,11:5+11>11,成立",
+        "周长=5+11+11=27厘米"
+      ],
+      "hints": [
+        "考虑三边关系,5,5,11不成立(5+5<11),只有5,11,11"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成21",
+          "reason": "忘了三边关系",
+          "correction": "5+11+11=27",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "三角形三边关系"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-12",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "等边三角形的周长是18厘米,它的每条边长是多少厘米？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "6厘米"
+      ],
+      "solution": [
+        "三边相等,边长=18÷3=6厘米"
+      ],
+      "hints": [
+        "周长÷3=边长"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "18÷3=6",
+          "correction": "",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "等边三角形周长"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-13",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个等腰三角形,其中一个角是40度,另外两个角可能是？",
+      "image": "",
+      "options": [
+        "40度和100度",
+        "70度和70度",
+        "40度,100度 或 70度,70度",
+        "都不对"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "40度是顶角:底角=(180-40)÷2=70度,两角70,70",
+        "40度是底角:顶角=180-40×2=100度,两角40,100",
+        "两种都可能"
+      ],
+      "hints": [
+        "分两种情况讨论:40度是顶角或底角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1",
+          "reason": "漏了一种情况",
+          "correction": "两种都可能",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "等腰三角形多解"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-14",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个三角形的两条边分别是4厘米和7厘米,第三条边可能是多少厘米？(写出所有整厘米数,逗号分隔)",
+      "image": "",
+      "options": [],
+      "answer": "4,5,6,7,8,9,10",
+      "acceptableAnswers": [
+        "4,5,6,7,8,9,10",
+        "4 5 6 7 8 9 10"
+      ],
+      "solution": [
+        "7-4<第三边<7+4,即3<x<11,可取4,5,6,7,8,9,10厘米"
+      ],
+      "hints": [
+        "两边之差<第三边<两边之和,3<x<11,x=4~10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成3或11",
+          "reason": "忘了不含等于",
+          "correction": "4到10共7个",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "三角形三边关系"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    },
+    {
+      "id": "g4-tc-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个直角三角形的一个锐角是另一个锐角的2倍。这两个锐角分别是多少度？(从小到大,逗号分隔)",
+      "image": "",
+      "options": [],
+      "answer": "30,60",
+      "acceptableAnswers": [
+        "30,60",
+        "30 60"
+      ],
+      "solution": [
+        "直角三角形两锐角和=90度,设较小=x,较大=2x,x+2x=90,3x=90,x=30",
+        "两角30度和60度"
+      ],
+      "hints": [
+        "设较小角为x,x+2x=90,x=30"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会列方程",
+          "correction": "30度和60度",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "直角三角形角关系"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "三角形"
+      ]
+    }
+  ]
+}

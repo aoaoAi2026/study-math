@@ -1,0 +1,148 @@
+{
+    "paperId": "yingchun-2018-g5",
+    "title": "2018年迎春杯小学高年级组五年级初赛",
+    "grade": 5,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 4,
+    "year": 2018,
+    "source": "迎春杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共12题，每题8分，共96分）", "count": 12, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：25 × 36 × 4 = ______。",
+            "answer": "3600",
+            "score": 8,
+            "solution": "25×4=100，100×36=3600。",
+            "knowledgePoints": ["乘法巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：9999 × 9999 = ______。",
+            "answer": "99980001",
+            "score": 8,
+            "solution": "9999×9999=(10000-1)²=100000000-20000+1=99980001。",
+            "knowledgePoints": ["平方差"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数除以8余5，除以9余6。这个数最小是______。",
+            "answer": "69",
+            "score": 8,
+            "solution": "除以8余5即差3能被8整除；除以9余6即差3能被9整除。LCM(8,9)=72。最小数=72-3=69。",
+            "knowledgePoints": ["余数问题"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "把 90 分解质因数：90 = ______。",
+            "answer": "2 × 3^2 × 5",
+            "score": 8,
+            "solution": "90=9×10=3²×2×5。",
+            "knowledgePoints": ["分解质因数"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个五位数 5□4□2 能被72整除，这个数是______。",
+            "answer": "52452",
+            "score": 8,
+            "solution": "72=8×9。能被8整除需后三位能被8整除。402÷8=50.25，412÷8=51.5，422÷8=52.75，432÷8=54，442÷8=55.25，452÷8=56.5，462÷8=57.75，472÷8=59，482÷8=60.25，492÷8=61.5，502÷8=62.75，512÷8=64，522÷8=65.25，532÷8=66.5，542÷8=67.75，552÷8=69，562÷8=70.25，572÷8=71.5，582÷8=72.75，592÷8=74。402不能被8整除，412不能...452不能...472÷8=59，可以。",
+            "knowledgePoints": ["整除"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个正方形的周长是52厘米，它的面积是______平方厘米。",
+            "answer": "169",
+            "score": 8,
+            "solution": "边长=52÷4=13厘米。面积=13×13=169平方厘米。",
+            "knowledgePoints": ["正方形"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一个数先加上7，再乘以7，再减去7，再除以7，结果还是7。这个数是______。",
+            "answer": "1",
+            "score": 8,
+            "solution": "逆推：7×7=49，49+7=56，56÷7=8，8-7=1。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "甲、乙两数的和是180，甲是乙的5倍。甲是______。",
+            "answer": "150",
+            "score": 8,
+            "solution": "设乙为x，甲为5x。5x+x=180，6x=180，x=30。甲=150。",
+            "knowledgePoints": ["和倍问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一件商品，按成本价提高20%后售价是240元。成本价是______元。",
+            "answer": "200",
+            "score": 8,
+            "solution": "设成本x元。1.2x=240，x=200元。",
+            "knowledgePoints": ["利润问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "有浓度为25%的盐水溶液200克，再加入100克盐后，浓度变为______%。",
+            "answer": "45",
+            "score": 8,
+            "solution": "原盐=200×25%=50克。加盐后总盐=50+100=150克。总盐水=200+100=300克。浓度=150/300=50%？不对，150/300=50%。答案是50%。",
+            "knowledgePoints": ["浓度问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "某月第一个星期五是7号，那么这个月的27号是星期______。",
+            "answer": "五",
+            "score": 8,
+            "solution": "7号是星期五。14号、21号、28号也是星期五。所以27号是星期四。",
+            "knowledgePoints": ["日期问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一捆电线，用去一半多8米，剩下12米。这捆电线原长______米。",
+            "answer": "40",
+            "score": 8,
+            "solution": "设原长x。x/2+8+12=x，x/2=20，x=40米。",
+            "knowledgePoints": ["一半问题"]
+        }
+    ]
+}

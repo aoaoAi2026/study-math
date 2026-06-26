@@ -1,0 +1,457 @@
+{
+  "topicId": "g2-angle-intro",
+  "topicName": "角的认识",
+  "grade": 2,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g2-ang-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个角有几个顶点？",
+      "image": "",
+      "options": ["1个", "2个", "3个", "0个"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "一个角有1个顶点和2条边。",
+        "顶点是两条边相交的地方。",
+        "所以一个角有1个顶点。"
+      ],
+      "hints": [
+        "角是由1个顶点和2条边组成的",
+        "想一想角的样子"
+      ],
+      "commonMistakes": [
+        {"mistake": "选2个", "reason": "把顶点和边搞混了", "correction": "角有1个顶点和2条边", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "角的各部分名称"],
+      "estimatedTime": 15,
+      "irtParams": { "a": 1.0, "b": -2.0, "c": 0.25 },
+      "tags": ["角的认识", "角的各部分"]
+    },
+    {
+      "id": "g2-ang-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一个角有几条边？",
+      "image": "",
+      "options": ["1条", "2条", "3条", "4条"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "一个角由1个顶点和2条边组成。",
+        "这两条边都是从顶点出发的。",
+        "所以一个角有2条边。"
+      ],
+      "hints": [
+        "角有几条直的边？",
+        "角的两条边都从一个点出发"
+      ],
+      "commonMistakes": [
+        {"mistake": "选3条", "reason": "和三角形的边数搞混了", "correction": "一个角只有2条边", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "角的各部分名称"],
+      "estimatedTime": 15,
+      "irtParams": { "a": 1.0, "b": -1.8, "c": 0.25 },
+      "tags": ["角的认识", "角的各部分"]
+    },
+    {
+      "id": "g2-ang-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "下面哪种说法是对的？",
+      "image": "",
+      "options": ["角的边越长，角越大", "角的大小与两条边张开的大小有关", "所有的角都一样大", "角的边是弯的"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "角的大小与两条边张开的程度有关，与边的长短无关。",
+        "两条边张开得越大，角就越大；张开得越小，角就越小。",
+        "角的两条边是直的，不是弯的。",
+        "所以正确的说法是：角的大小与两条边张开的大小有关。"
+      ],
+      "hints": [
+        "角的大小看什么？",
+        "两条边张开得越开，角就越大"
+      ],
+      "commonMistakes": [
+        {"mistake": "选\"角的边越长，角越大\"", "reason": "以为边长就角大", "correction": "角的大小与边的长短无关，与两条边张开的大小有关", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "角的大小"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": -1.5, "c": 0.25 },
+      "tags": ["角的认识", "角的大小"]
+    },
+    {
+      "id": "g2-ang-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "直角是多少度？",
+      "image": "",
+      "options": ["45度", "60度", "90度", "180度"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "直角是一种特殊的角，它的两条边正好垂直。",
+        "直角等于90度。",
+        "我们用的三角板上就有一个直角。"
+      ],
+      "hints": [
+        "想一想你的三角板上的直角",
+        "90度的角就是直角"
+      ],
+      "commonMistakes": [
+        {"mistake": "选180度", "reason": "和其他度数搞混了", "correction": "直角是90度，180度是平角", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "直角的认识"],
+      "estimatedTime": 15,
+      "irtParams": { "a": 1.0, "b": -1.2, "c": 0.25 },
+      "tags": ["角的认识", "直角"]
+    },
+    {
+      "id": "g2-ang-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "比直角大的角叫做：",
+      "image": "",
+      "options": ["锐角", "直角", "钝角", "都不对"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "我们学习了三种角：锐角、直角、钝角。",
+        "锐角：比直角小的角（小于90度）。",
+        "直角：正好90度。",
+        "钝角：比直角大的角（大于90度）。",
+        "所以比直角大的角是钝角。"
+      ],
+      "hints": [
+        "锐角比直角小",
+        "钝角比直角大"
+      ],
+      "commonMistakes": [
+        {"mistake": "选锐角", "reason": "把锐角和钝角搞混了", "correction": "锐角比直角小，钝角比直角大", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "锐角、直角、钝角"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": 0.0, "c": 0.25 },
+      "tags": ["角的认识", "钝角"]
+    },
+    {
+      "id": "g2-ang-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面哪个物体的表面上有直角？",
+      "image": "",
+      "options": ["数学课本的封面", "圆球", "碗", "圆盘子"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "数学课本的封面是长方形的，长方形的4个角都是直角。",
+        "圆球、碗、圆盘子都是圆形的，表面是弯曲的，没有直角。",
+        "所以数学课本的封面上有直角。"
+      ],
+      "hints": [
+        "找有四个方角的东西",
+        "长方形和正方形都有4个直角"
+      ],
+      "commonMistakes": [
+        {"mistake": "选圆球", "reason": "不理解直角是什么", "correction": "圆球是圆形的，没有直角；长方形才有直角", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "生活中的直角"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": 0.2, "c": 0.25 },
+      "tags": ["角的认识", "生活中的角"]
+    },
+    {
+      "id": "g2-ang-07",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个长方形有______个直角。",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": ["4", "四"],
+      "solution": [
+        "长方形有4个角，每个角都是直角。",
+        "所以一个长方形有4个直角。"
+      ],
+      "hints": [
+        "长方形有几个角？",
+        "长方形的每个角都是直角"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成2", "reason": "数错了角的个数", "correction": "长方形有4个角，都是直角", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "长方形中的直角"],
+      "estimatedTime": 20,
+      "irtParams": { "a": 1.0, "b": 0.3, "c": 0.25 },
+      "tags": ["角的认识", "直角", "长方形"]
+    },
+    {
+      "id": "g2-ang-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "比直角小的角叫做：",
+      "image": "",
+      "options": ["锐角", "直角", "钝角", "都不对"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "锐角：比直角小的角（小于90度）。",
+        "直角：正好90度。",
+        "钝角：比直角大的角（大于90度）。",
+        "所以比直角小的角是锐角。"
+      ],
+      "hints": [
+        "锐角尖尖的，比较小",
+        "钝角张得开，比较大"
+      ],
+      "commonMistakes": [
+        {"mistake": "选钝角", "reason": "把锐角和钝角搞反了", "correction": "锐角<直角<钝角，所以锐角比直角小", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "锐角"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": 0.4, "c": 0.25 },
+      "tags": ["角的认识", "锐角"]
+    },
+    {
+      "id": "g2-ang-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "把下列角按从小到大的顺序排列：锐角、钝角、直角。排第一的是：",
+      "image": "",
+      "options": ["锐角", "直角", "钝角", "一样大"],
+      "answer": "0",
+      "acceptableAnswers": ["0"],
+      "solution": [
+        "三种角的大小关系是：锐角 < 直角 < 钝角。",
+        "锐角是小于90度的角。",
+        "直角正好是90度。",
+        "钝角是大于90度的角。",
+        "所以最小的是锐角，排第一。"
+      ],
+      "hints": [
+        "锐角最小，钝角最大",
+        "直角在锐角和钝角之间"
+      ],
+      "commonMistakes": [
+        {"mistake": "选直角", "reason": "不知道哪种角最小", "correction": "锐角 < 直角 < 钝角，所以锐角最小", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "角的大小比较"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": 0.5, "c": 0.25 },
+      "tags": ["角的认识", "角的大小比较"]
+    },
+    {
+      "id": "g2-ang-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个正方形有______个直角。",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": ["4", "四"],
+      "solution": [
+        "正方形有4条边和4个角。",
+        "正方形的4个角都是直角。",
+        "所以一个正方形有4个直角。"
+      ],
+      "hints": [
+        "正方形有几个角？",
+        "每个角都是直角"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成2", "reason": "数错了角的个数", "correction": "正方形有4个角，都是直角", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "正方形中的直角"],
+      "estimatedTime": 20,
+      "irtParams": { "a": 1.0, "b": 0.6, "c": 0.25 },
+      "tags": ["角的认识", "直角", "正方形"]
+    },
+    {
+      "id": "g2-ang-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "下面图形中有几个直角？（一个长方形和一个三角形拼在一起，长方形在下，三角形在上，三角形的底边与长方形的上边重合）",
+      "image": "",
+      "options": ["3个", "4个", "5个", "6个"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "这是一个组合图形：一个长方形（下面）和一个三角形（上面）拼在一起。",
+        "长方形本身有4个直角。",
+        "但三角形和长方形拼在一起后，长方形上面的两个角被遮住了一部分。",
+        "实际上，长方形还保留着下面的2个直角，上面还有两个新的直角（在三角形底边和长方形上边的左右两侧）。",
+        "同时，三角形和长方形拼接后，三角形底边两侧各形成1个直角，加上长方形下方2个直角，共4个直角。",
+        "让我们重新仔细分析：长方形有4个直角，三角形如果是直角三角形的话可能有1个直角，但因为三角形的底边与长方形的上边重合，长方形上方的2个直角被破坏了。",
+        "所以长方形还剩下面的2个直角。三角形如果是直角三角形，顶点处有1个直角。再加上底边与长方形上边的组合形成2个直角。",
+        "所以一共2+1+2=5个直角。"
+      ],
+      "hints": [
+        "先数长方形剩下的直角",
+        "再数三角形的直角",
+        "注意两个图形拼在一起后有没有新形成的直角"
+      ],
+      "commonMistakes": [
+        {"mistake": "选4个", "reason": "只算了长方形原来的4个直角，没考虑拼接后的变化", "correction": "两个图形拼在一起后，原来的直角可能会变化，要重新数", "errorLayer": "L2"},
+        {"mistake": "选3个", "reason": "漏数了拼接后新形成的直角", "correction": "仔细看，拼接后会在原来长方形的上方左右各形成1个直角", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "数直角", "组合图形"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 1.0, "c": 0.25 },
+      "tags": ["角的认识", "数角", "组合图形"]
+    },
+    {
+      "id": "g2-ang-12",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "用两根小棒（把一端重合在一起）能摆出几种不同的角？（不考虑具体角度，只考虑大小关系）",
+      "image": "",
+      "options": ["只能摆出1种", "可以摆出2种", "可以摆出3种（锐角、直角、钝角）", "不能摆出角"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "两根小棒，把一端重合在一起，就形成了一个角。",
+        "我们可以通过改变两根小棒张开的程度来摆出不同大小的角。",
+        "当两根小棒张开得比较小的时候，形成的是锐角。",
+        "当两根小棒张开得正好垂直时，形成的是直角。",
+        "当两根小棒张开得比较大的时候，形成的是钝角。",
+        "所以可以摆出3种不同的角：锐角、直角、钝角。"
+      ],
+      "hints": [
+        "角的大小与两条边张开的程度有关",
+        "张开小→锐角，正好垂直→直角，张开大→钝角"
+      ],
+      "commonMistakes": [
+        {"mistake": "选只能摆出1种", "reason": "没有想到可以改变两根小棒的位置", "correction": "改变两根小棒张开的程度，就可以摆出不同大小的角", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "用小棒摆角"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.9, "c": 0.25 },
+      "tags": ["角的认识", "动手操作"]
+    },
+    {
+      "id": "g2-ang-13",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个三角形中最少有______个锐角。",
+      "image": "",
+      "options": [],
+      "answer": "2",
+      "acceptableAnswers": ["2", "两"],
+      "solution": [
+        "三角形有3个角。",
+        "三角形按角分可以分为三类：锐角三角形、直角三角形、钝角三角形。",
+        "锐角三角形：3个角都是锐角（3个锐角）。",
+        "直角三角形：有1个直角和2个锐角（2个锐角）。",
+        "钝角三角形：有1个钝角和2个锐角（2个锐角）。",
+        "所以一个三角形中最少有2个锐角（直角三角形和钝角三角形）。"
+      ],
+      "hints": [
+        "三角形的三个内角加起来是180度",
+        "直角=90度，钝角>90度，所以剩下的两个角都必须小于90度（也就是锐角）"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成1", "reason": "以为只有1个锐角", "correction": "一个三角形最少有2个锐角（直角三角形和钝角三角形）", "errorLayer": "L2"},
+        {"mistake": "答案写成3", "reason": "以为锐角三角形是最少的情况", "correction": "锐角三角形是3个锐角，但直角三角形只有2个锐角，是最少的情况", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "三角形中的角"],
+      "estimatedTime": 50,
+      "irtParams": { "a": 1.0, "b": 1.1, "c": 0.25 },
+      "tags": ["角的认识", "三角形", "锐角"]
+    },
+    {
+      "id": "g2-ang-14",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小红说：\"我有一个角，它比直角大。\"这个角是：",
+      "image": "",
+      "options": ["锐角", "直角", "钝角", "无法判断"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "我们知道三种角的大小关系：锐角 < 直角 < 钝角。",
+        "比直角小的是锐角。",
+        "等于90度的是直角。",
+        "比直角大的是钝角。",
+        "所以比直角大的角是钝角。"
+      ],
+      "hints": [
+        "比直角大的角是什么角？",
+        "钝角张开得比直角大"
+      ],
+      "commonMistakes": [
+        {"mistake": "选锐角", "reason": "把锐角和钝角搞反了", "correction": "锐角比直角小，钝角比直角大", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "钝角"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": 1.2, "c": 0.25 },
+      "tags": ["角的认识", "钝角"]
+    },
+    {
+      "id": "g2-ang-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "3时整，钟面上时针和分针形成的角是：",
+      "image": "",
+      "options": ["锐角", "直角", "钝角", "平角"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "钟面是一个圆形，360度，分成12个大格。",
+        "每个大格是360÷12=30度。",
+        "3时整，时针指向3，分针指向12。",
+        "从12到3共有3个大格。",
+        "3×30=90度。",
+        "90度正好是直角。",
+        "所以3时整，时针和分针形成的角是直角。"
+      ],
+      "hints": [
+        "3时整，时针指着3，分针指着12",
+        "12到3之间有几个大格？",
+        "90度的角就是直角"
+      ],
+      "commonMistakes": [
+        {"mistake": "选锐角", "reason": "不会看钟面", "correction": "3时整，时针和分针正好形成90度，是直角", "errorLayer": "L2"},
+        {"mistake": "选钝角", "reason": "估计错误", "correction": "3时整，12和3正好垂直，形成直角", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["角的认识", "钟面上的角", "直角"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 1.8, "c": 0.25 },
+      "tags": ["角的认识", "钟面", "直角"]
+    }
+  ]
+}

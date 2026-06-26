@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, computed, watch } from 'vue'
-import AppLayout from '@/components/layout/AppLayout.vue'
+import { ref, computed, watch, onMounted } from 'vue'
+import { useUserStore } from '@/stores/userStore'
 
 type Stage = 'egg' | 'baby' | 'teen' | 'adult' | 'master'
 type Mood = 'happy' | 'sleepy' | 'excited' | 'sad' | 'idle'
@@ -20,14 +20,14 @@ interface PetState {
   diary: DiaryEntry[]
 }
 
-const STORAGE_KEY = 'pet-companion-data'
+const STORAGE_KEY = 'pet-companion-data-v2'
 
-const stageConfig: Record<Stage, { emoji: string; label: string; expMax: number }> = {
-  egg:   { emoji: '🥚', label: '蛋',   expMax: 100 },
-  baby:  { emoji: '🐣', label: '幼年', expMax: 250 },
-  teen:  { emoji: '🐥', label: '少年', expMax: 500 },
-  adult: { emoji: '🐔', label: '成年', expMax: 999 },
-  master:{ emoji: '🦅', label: '大师', expMax: 999 },
+const stageConfig: Record<Stage, { emoji: string; label: string; expMax: number; hungerDecay: number }> = {
+  egg:   { emoji: '🥚', label: '蛋蛋期', expMax: 50, hungerDecay: 0 },
+  baby:  { emoji: '🐣', label: '幼年', expMax: 150, hungerDecay: 2 },
+  teen:  { emoji: '🐥', label: '少年', expMax: 300, hungerDecay: 3 },
+  adult: { emoji: '🐔', label: '成年', expMax: 600, hungerDecay: 4 },
+  master:{ emoji: '🦅', label: '大师', expMax: 9999, hungerDecay: 1 },
 }
 
 const moodEmoji: Record<Mood, string> = {
@@ -38,58 +38,108 @@ const moodLabel: Record<Mood, string> = {
   happy: '开心', sleepy: '困了', excited: '兴奋', sad: '难过', idle: '发呆',
 }
 
+const userStore = useUserStore()
+
 function defaultPet(): PetState {
-  return { name: '小π', stage: 'egg', mood: 'idle', hunger: 60, exp: 0, diary: [] }
+  return {
+    name: '小π',
+    stage: 'egg',
+    mood: 'idle',
+    hunger: 80,
+    exp: 0,
+    diary: [{
+      time: formatTime(new Date()),
+      action: '诞生',
+      detail: '你好！我是小π，让我们一起学习数学吧！'
+    }]
+  }
 }
 
 function loadPet(): PetState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    if (raw) return JSON.parse(raw) as PetState
+    if (raw) {
+      const parsed = JSON.parse(raw) as PetState
+      // 饥饿值随时间衰减
+      const now = Date.now()
+      const lastSave = parsed.diary?.[0]?.time ? new Date(parsed.diary[0].time).getTime() : now
+      const hours = Math.max(0, (now - lastSave) / (1000 * 60 * 60))
+      if (hours > 0) {
+        const cfg = stageConfig[parsed.stage]
+        parsed.hunger = Math.max(0, parsed.hunger - hours * cfg.hungerDecay)
+      }
+      return parsed
+    }
   } catch { /* ignore */ }
   return defaultPet()
 }
 
 const pet = ref<PetState>(loadPet())
 
+// 跟踪 userStore 的经验值变化
+watch(() => userStore.experience, (newVal, oldVal) => {
+  if (newVal > (oldVal || 0)) {
+    const gain = newVal - (oldVal || 0)
+    pet.value.exp += gain
+    pet.value.mood = 'excited'
+    addDiary('学习', `学习获得了 ${gain} 经验值！`)
+    checkLevelUp()
+  }
+}, { immediate: true })
+
 watch(pet, (val) => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(val))
 }, { deep: true })
 
 const currentStage = computed(() => stageConfig[pet.value.stage])
-const expPercent = computed(() => {
-  const max = currentStage.value.expMax
-  return pet.value.stage === 'master' ? 100 : Math.min((pet.value.exp / max) * 100, 100)
+const stageProgressPct = computed(() => {
+  if (pet.value.stage === 'master') return 100
+  return Math.min(Math.round((pet.value.exp / currentStage.value.expMax) * 100), 100)
+})
+const nextStage = computed(() => {
+  const stages: Stage[] = ['egg', 'baby', 'teen', 'adult', 'master']
+  const idx = stages.indexOf(pet.value.stage)
+  if (idx >= stages.length - 1) return null
+  return stages[idx + 1]
+})
+const expToNext = computed(() => {
+  if (pet.value.stage === 'master') return 0
+  return currentStage.value.expMax - pet.value.exp
 })
 
-function addDiary(action: string, detail: string) {
-  const now = new Date()
+function formatTime(d: Date): string {
   const pad = (n: number) => String(n).padStart(2, '0')
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`
+}
+
+function addDiary(action: string, detail: string) {
   pet.value.diary.unshift({
-    time: `${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}`,
+    time: formatTime(new Date()),
     action,
     detail,
   })
-  if (pet.value.diary.length > 50) pet.value.diary.length = 50
+  if (pet.value.diary.length > 20) pet.value.diary.length = 20
 }
 
 function checkLevelUp() {
-  const stages: Stage[] = ['egg', 'baby', 'teen', 'adult', 'master']
-  const idx = stages.indexOf(pet.value.stage)
-  if (idx >= stages.length - 1) return
-  const cfg = stageConfig[pet.value.stage]
-  if (pet.value.exp >= cfg.expMax) {
+  if (pet.value.stage === 'master') return
+  if (pet.value.exp >= currentStage.value.expMax) {
+    const stages: Stage[] = ['egg', 'baby', 'teen', 'adult', 'master']
+    const idx = stages.indexOf(pet.value.stage)
     pet.value.stage = stages[idx + 1]
     pet.value.mood = 'excited'
-    addDiary('进化', `恭喜！${pet.value.name} 进化到了 ${stageConfig[pet.value.stage].label} 阶段！`)
+    const newStage = stageConfig[pet.value.stage]
+    addDiary('进化', `恭喜！${pet.value.name} 进化到了 ${newStage.label}（${newStage.emoji}）！`)
+    pet.value.hunger = Math.min(pet.value.hunger + 10, 100)
+    userStore.addBadges('pet-' + pet.value.stage)
   }
 }
 
 function feed() {
-  pet.value.hunger = Math.min(pet.value.hunger + 20, 100)
-  pet.value.exp += 10
+  pet.value.hunger = Math.min(pet.value.hunger + 25, 100)
+  pet.value.exp += 5
   pet.value.mood = 'happy'
-  addDiary('喂食', '饱食度 +20，经验 +10')
+  addDiary('喂食', `饱食度 +25，心情变好啦！`)
   checkLevelUp()
 }
 
@@ -97,145 +147,286 @@ function play() {
   pet.value.hunger = Math.max(pet.value.hunger - 10, 0)
   pet.value.exp += 15
   pet.value.mood = 'excited'
-  addDiary('陪玩', '饱食度 -10，经验 +15')
+  addDiary('陪玩', `一起玩耍真开心，经验 +15！`)
   checkLevelUp()
 }
 
 function study() {
   pet.value.hunger = Math.max(pet.value.hunger - 5, 0)
-  pet.value.exp += 20
+  pet.value.exp += 25
   pet.value.mood = pet.value.hunger < 20 ? 'sleepy' : 'happy'
-  addDiary('学习', '饱食度 -5，经验 +20')
+  addDiary('学习', `认真学习中，经验 +25！`)
   checkLevelUp()
 }
+
+function rest() {
+  pet.value.hunger = Math.max(pet.value.hunger - 3, 0)
+  pet.value.mood = 'sleepy'
+  addDiary('休息', `休息一下，恢复精力~`)
+}
+
+function rename(newName: string) {
+  if (newName.trim() && newName.trim() !== pet.value.name) {
+    const oldName = pet.value.name
+    pet.value.name = newName.trim()
+    addDiary('改名', `名字从 "${oldName}" 改为 "${pet.value.name}"`)
+  }
+}
+
+// 用户统计
+const userStats = computed(() => ({
+  totalExp: userStore.experience,
+  correctTotal: userStore.correctTotal || 0,
+  wrongTotal: userStore.wrongTotal || 0,
+  completedTopics: userStore.completedTopics?.length || 0,
+  badges: userStore.badges?.length || 0,
+  daysSinceCreate: userStore.createdAt
+    ? Math.floor((Date.now() - new Date(userStore.createdAt).getTime()) / (1000 * 60 * 60 * 24)) + 1
+    : 1,
+}))
+
+onMounted(() => {
+  userStore.init()
+  // 初始化 pet 经验
+  if (pet.value.exp === 0 && userStore.experience > 0) {
+    pet.value.exp = Math.floor(userStore.experience / 2)
+  }
+})
 </script>
 
 <template>
-  <AppLayout>
-    <div class="pet-companion">
-      <!-- 宠物展示区 -->
-      <div class="pet-companion__display">
-        <div class="pet-companion__badge">{{ currentStage.label }}</div>
-        <div class="pet-companion__avatar">{{ currentStage.emoji }}</div>
-        <div class="pet-companion__mood">{{ moodEmoji[pet.mood] }} {{ moodLabel[pet.mood] }}</div>
-        <h2 class="pet-companion__name">{{ pet.name }}</h2>
-      </div>
+  <div class="pc">
+    <header class="pc-header">
+      <h1 class="pc-title">🐾 学习宠物</h1>
+      <p class="pc-subtitle">你的学习伙伴，每次进步都会让它成长</p>
+    </header>
 
-      <!-- 属性条 -->
-      <div class="pet-companion__stats">
-        <div class="pet-companion__stat">
-          <span class="pet-companion__label">🍖 饱食度</span>
-          <div class="pet-companion__bar">
-            <div class="pet-companion__fill" :style="{ width: pet.hunger + '%' }" />
-          </div>
-          <span class="pet-companion__value">{{ pet.hunger }}</span>
+    <div class="pc-main">
+      <!-- 宠物展示 -->
+      <div class="pc-display">
+        <div class="pc-stage-label">
+          {{ currentStage.label }}
+          <span v-if="nextStage" class="pc-next-stage">→ {{ stageConfig[nextStage].label }}</span>
         </div>
-        <div class="pet-companion__stat">
-          <span class="pet-companion__label">⭐ 经验值</span>
-          <div class="pet-companion__bar">
-            <div class="pet-companion__fill pet-companion__fill--exp" :style="{ width: expPercent + '%' }" />
+
+        <div class="pc-avatar-wrap">
+          <div class="pc-avatar" :class="{ 'pc-avatar--excited': pet.mood === 'excited' }">
+            {{ currentStage.emoji }}
           </div>
-          <span class="pet-companion__value">{{ pet.exp }}/{{ currentStage.expMax }}</span>
+          <div class="pc-mood">{{ moodEmoji[pet.mood] }} {{ moodLabel[pet.mood] }}</div>
+        </div>
+
+        <h2 class="pc-name">{{ pet.name }}</h2>
+
+        <div class="pc-stats">
+          <div class="pc-stat">
+            <span class="pc-stat-label">⭐ 成长经验</span>
+            <div class="pc-stat-bar">
+              <div class="pc-stat-fill pc-stat-fill--exp" :style="{ width: stageProgressPct + '%' }"></div>
+            </div>
+            <span class="pc-stat-value">
+              {{ pet.exp }} / {{ currentStage.expMax }}
+            </span>
+          </div>
+          <div class="pc-stat">
+            <span class="pc-stat-label">🍖 饱食度</span>
+            <div class="pc-stat-bar">
+              <div class="pc-stat-fill" :style="{ width: pet.hunger + '%' }" :class="{
+                'pc-stat-fill--low': pet.hunger < 30,
+                'pc-stat-fill--warn': pet.hunger >= 30 && pet.hunger < 60
+              }"></div>
+            </div>
+            <span class="pc-stat-value">{{ pet.hunger }}%</span>
+          </div>
+        </div>
+
+        <!-- 互动按钮 -->
+        <div class="pc-actions">
+          <button class="pc-action pc-action--feed" @click="feed">
+            <span class="pc-action-icon">🍖</span>
+            <span class="pc-action-label">喂食</span>
+            <span class="pc-action-effect">+25 饱食 +5 经验</span>
+          </button>
+          <button class="pc-action pc-action--play" @click="play">
+            <span class="pc-action-icon">🎮</span>
+            <span class="pc-action-label">陪玩</span>
+            <span class="pc-action-effect">+15 经验 -10 饱食</span>
+          </button>
+          <button class="pc-action pc-action--study" @click="study">
+            <span class="pc-action-icon">📚</span>
+            <span class="pc-action-label">学习</span>
+            <span class="pc-action-effect">+25 经验 -5 饱食</span>
+          </button>
+          <button class="pc-action pc-action--rest" @click="rest">
+            <span class="pc-action-icon">😴</span>
+            <span class="pc-action-label">休息</span>
+            <span class="pc-action-effect">恢复心情</span>
+          </button>
         </div>
       </div>
 
-      <!-- 互动按钮 -->
-      <div class="pet-companion__actions">
-        <button class="pet-companion__action" @click="feed">🍖 喂食</button>
-        <button class="pet-companion__action" @click="play">🎮 陪玩</button>
-        <button class="pet-companion__action" @click="study">📖 学习</button>
-      </div>
-
-      <!-- 宠物日记 -->
-      <div class="pet-companion__diary">
-        <h3 class="pet-companion__diary-title">🐾 宠物日记</h3>
-        <div v-if="pet.diary.length === 0" class="pet-companion__diary-empty">还没有互动记录，快去和宠物玩吧！</div>
-        <ul v-else class="pet-companion__diary-list">
-          <li v-for="(entry, i) in pet.diary" :key="i" class="pet-companion__diary-item">
-            <span class="pet-companion__diary-time">{{ entry.time }}</span>
-            <span class="pet-companion__diary-tag">{{ entry.action }}</span>
-            <span class="pet-companion__diary-detail">{{ entry.detail }}</span>
-          </li>
-        </ul>
+      <!-- 成就与统计 -->
+      <div class="pc-achievements">
+        <h3 class="pc-section-title">📊 学习统计</h3>
+        <div class="pc-user-stats">
+          <div class="pc-user-stat">
+            <span class="pc-user-stat-value">{{ userStats.totalExp }}</span>
+            <span class="pc-user-stat-label">总经验</span>
+          </div>
+          <div class="pc-user-stat">
+            <span class="pc-user-stat-value pc-user-stat-value--green">{{ userStats.correctTotal }}</span>
+            <span class="pc-user-stat-label">答对题数</span>
+          </div>
+          <div class="pc-user-stat">
+            <span class="pc-user-stat-value pc-user-stat-value--red">{{ userStats.wrongTotal }}</span>
+            <span class="pc-user-stat-label">答错题数</span>
+          </div>
+          <div class="pc-user-stat">
+            <span class="pc-user-stat-value">{{ userStats.completedTopics }}</span>
+            <span class="pc-user-stat-label">掌握专题</span>
+          </div>
+          <div class="pc-user-stat">
+            <span class="pc-user-stat-value">{{ userStats.daysSinceCreate }}</span>
+            <span class="pc-user-stat-label">学习天数</span>
+          </div>
+          <div class="pc-user-stat">
+            <span class="pc-user-stat-value pc-user-stat-value--yellow">{{ userStats.badges }}</span>
+            <span class="pc-user-stat-label">获得徽章</span>
+          </div>
+        </div>
       </div>
     </div>
-  </AppLayout>
+
+    <!-- 日记 -->
+    <div class="pc-diary">
+      <h3 class="pc-section-title">📖 成长日记</h3>
+      <div v-if="pet.diary.length === 0" class="pc-diary-empty">
+        还没有互动记录，快去和你的宠物玩耍吧！
+      </div>
+      <ul v-else class="pc-diary-list">
+        <li v-for="(entry, i) in pet.diary" :key="i" class="pc-diary-item">
+          <span class="pc-diary-time">{{ entry.time }}</span>
+          <span class="pc-diary-tag">{{ entry.action }}</span>
+          <span class="pc-diary-detail">{{ entry.detail }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-.pet-companion {
-  max-width: 420px;
-  margin: 0 auto;
+.pc { max-width: 1100px; margin: 0 auto; padding: var(--space-4); }
+
+.pc-header {
   text-align: center;
-}
-
-.pet-companion__display {
-  background: var(--bg-card);
-  border-radius: var(--radius-xl);
-  padding: var(--space-8) var(--space-6);
   margin-bottom: var(--space-6);
-  box-shadow: var(--shadow-md);
 }
 
-.pet-companion__badge {
-  display: inline-block;
-  font-size: var(--text-xs);
-  color: var(--color-primary);
-  background: var(--bg-hover);
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full);
-  margin-bottom: var(--space-3);
-}
-
-.pet-companion__avatar {
-  font-size: 96px;
-  line-height: 1.1;
-  margin-bottom: var(--space-2);
-  transition: transform var(--transition-normal);
-}
-
-.pet-companion__avatar:hover {
-  transform: scale(1.1);
-}
-
-.pet-companion__mood {
-  font-size: var(--text-sm);
-  color: var(--text-secondary);
-  margin-bottom: var(--space-1);
-}
-
-.pet-companion__name {
-  font-size: var(--text-xl);
+.pc-title {
+  font-size: var(--text-2xl);
   color: var(--text-primary);
+  margin: 0 0 var(--space-1);
+}
+
+.pc-subtitle {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
   margin: 0;
 }
 
-.pet-companion__stats {
-  background: var(--bg-card);
-  border-radius: var(--radius-xl);
-  padding: var(--space-4) var(--space-5);
+.pc-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
   margin-bottom: var(--space-6);
-  box-shadow: var(--shadow-sm);
 }
 
-.pet-companion__stat {
+/* 宠物展示 */
+.pc-display {
+  background: var(--bg-card);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-6);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.pc-stage-label {
+  display: inline-block;
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  background: rgba(99, 102, 241, 0.1);
+  padding: var(--space-1) var(--space-4);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+  font-weight: 600;
+}
+
+.pc-next-stage {
+  color: var(--text-tertiary);
+  font-size: var(--text-xs);
+  font-weight: 400;
+}
+
+.pc-avatar-wrap {
+  padding: var(--space-4) 0;
+}
+
+.pc-avatar {
+  font-size: 120px;
+  line-height: 1;
+  margin-bottom: var(--space-2);
+  animation: float 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.pc-avatar--excited {
+  animation: bounce 0.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+.pc-mood {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+}
+
+.pc-name {
+  font-size: var(--text-xl);
+  color: var(--text-primary);
+  font-weight: 700;
+  margin: var(--space-3) 0 var(--space-4);
+}
+
+.pc-stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.pc-stat {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  margin-bottom: var(--space-3);
 }
 
-.pet-companion__stat:last-child {
-  margin-bottom: 0;
-}
-
-.pet-companion__label {
+.pc-stat-label {
+  min-width: 90px;
   font-size: var(--text-sm);
   color: var(--text-secondary);
-  white-space: nowrap;
+  font-weight: 500;
 }
 
-.pet-companion__bar {
+.pc-stat-bar {
   flex: 1;
   height: 8px;
   background: var(--bg-hover);
@@ -243,106 +434,175 @@ function study() {
   overflow: hidden;
 }
 
-.pet-companion__fill {
+.pc-stat-fill {
   height: 100%;
   background: var(--color-primary);
   border-radius: var(--radius-full);
   transition: width var(--transition-normal);
 }
 
-.pet-companion__fill--exp {
-  background: var(--color-success);
+.pc-stat-fill--exp { background: linear-gradient(90deg, var(--color-warning), var(--color-warning-dark)); }
+.pc-stat-fill--low { background: var(--color-error); }
+.pc-stat-fill--warn { background: var(--color-warning); }
+
+.pc-stat-value {
+  min-width: 80px;
+  text-align: right;
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
-.pet-companion__value {
+/* 互动按钮 */
+.pc-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.pc-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-4) var(--space-3);
+  background: var(--bg-hover);
+  border: 2px solid transparent;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: var(--text-primary);
+}
+
+.pc-action:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary-light);
+  background: var(--bg-card);
+}
+
+.pc-action-icon {
+  font-size: 28px;
+}
+
+.pc-action-label {
+  font-weight: 600;
+  font-size: var(--text-base);
+}
+
+.pc-action-effect {
   font-size: var(--text-xs);
   color: var(--text-tertiary);
-  min-width: 60px;
-  text-align: right;
 }
 
-.pet-companion__actions {
-  display: flex;
-  gap: var(--space-3);
-  margin-bottom: var(--space-6);
-}
+.pc-action--feed:hover { border-color: var(--color-success); }
+.pc-action--play:hover { border-color: var(--color-info); }
+.pc-action--study:hover { border-color: var(--color-primary); }
+.pc-action--rest:hover { border-color: var(--color-warning); }
 
-.pet-companion__action {
-  flex: 1;
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-primary);
-  color: var(--text-inverse);
-  border: none;
-  border-radius: var(--radius-lg);
-  font-size: var(--text-sm);
-  font-weight: 600;
-  cursor: pointer;
-  transition: background var(--transition-fast), transform var(--transition-fast);
-}
-
-.pet-companion__action:hover {
-  background: var(--color-primary-dark);
-  transform: translateY(-1px);
-}
-
-.pet-companion__action:active {
-  transform: translateY(0);
-}
-
-.pet-companion__diary {
+/* 成就 */
+.pc-achievements {
   background: var(--bg-card);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-2xl);
   padding: var(--space-5);
   box-shadow: var(--shadow-sm);
-  text-align: left;
+  border: 1px solid var(--border-color);
 }
 
-.pet-companion__diary-title {
-  font-size: var(--text-base);
+.pc-section-title {
+  font-size: var(--text-lg);
   color: var(--text-primary);
-  margin: 0 0 var(--space-3);
+  margin: 0 0 var(--space-4);
+  font-weight: 600;
 }
 
-.pet-companion__diary-empty {
-  font-size: var(--text-sm);
-  color: var(--text-tertiary);
+.pc-user-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.pc-user-stat {
+  background: var(--bg-hover);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
   text-align: center;
-  padding: var(--space-4) 0;
 }
 
-.pet-companion__diary-list {
+.pc-user-stat-value {
+  display: block;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-1);
+}
+
+.pc-user-stat-label {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+.pc-user-stat-value--green { color: var(--color-success); }
+.pc-user-stat-value--red { color: var(--color-error); }
+.pc-user-stat-value--yellow { color: var(--color-warning); }
+
+/* 日记 */
+.pc-diary {
+  background: var(--bg-card);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.pc-diary-empty {
+  text-align: center;
+  color: var(--text-tertiary);
+  padding: var(--space-8) 0;
+}
+
+.pc-diary-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 240px;
+  max-height: 500px;
   overflow-y: auto;
 }
 
-.pet-companion__diary-item {
+.pc-diary-item {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) 0;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-2);
   border-bottom: 1px solid var(--border-color-light);
   font-size: var(--text-sm);
 }
 
-.pet-companion__diary-item:last-child {
-  border-bottom: none;
-}
+.pc-diary-item:last-child { border-bottom: none; }
 
-.pet-companion__diary-time {
+.pc-diary-time {
+  font-size: var(--text-xs);
   color: var(--text-tertiary);
-  white-space: nowrap;
+  min-width: 110px;
 }
 
-.pet-companion__diary-tag {
-  color: var(--color-primary);
-  font-weight: 600;
-  white-space: nowrap;
+.pc-diary-tag {
+  background: var(--color-primary);
+  color: var(--text-inverse);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  min-width: 40px;
+  text-align: center;
 }
 
-.pet-companion__diary-detail {
-  color: var(--text-secondary);
+.pc-diary-detail {
+  color: var(--text-primary);
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .pc-main { grid-template-columns: 1fr; }
+  .pc-user-stats { grid-template-columns: repeat(3, 1fr); }
 }
 </style>

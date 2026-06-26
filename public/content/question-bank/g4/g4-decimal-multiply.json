@@ -1,0 +1,704 @@
+{
+  "topicId": "g4-decimal-multiply",
+  "topicName": "小数乘法",
+  "grade": 4,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g4-dm-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "0.7×0.5 的结果是",
+      "image": "",
+      "options": [
+        "3.5",
+        "0.35",
+        "0.035",
+        "35"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "先算7×5=35,两个因数共2位小数,所以0.35"
+      ],
+      "hints": [
+        "先整数乘,再点小数点",
+        "小数位数相加"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "忘了有小数",
+          "correction": "共2位小数,0.35",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法"
+      ],
+      "estimatedTime": 15,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "3.2×5 的结果是",
+      "image": "",
+      "options": [
+        "16.0",
+        "16",
+        "1.6",
+        "15"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "32×5=160,有1位小数,16.0即16"
+      ],
+      "hints": [
+        "小数末尾的0可以去掉"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选2",
+          "reason": "点错小数点",
+          "correction": "=16",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法"
+      ],
+      "estimatedTime": 15,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-03",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算: 2.5×0.4",
+      "image": "",
+      "options": [],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1",
+        "1.0"
+      ],
+      "solution": [
+        "25×4=100,共有2位小数,100→1.00=1"
+      ],
+      "hints": [
+        "2.5×0.4=1是常用算式"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成10",
+          "reason": "25×4=100,有2位小数",
+          "correction": "=1",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-04",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算: 1.25×8",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "10.0"
+      ],
+      "solution": [
+        "125×8=1000,有2位小数,10.00=10"
+      ],
+      "hints": [
+        "1.25×8=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "125×8=1000,2位小数",
+          "correction": "=10",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-05",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形长8.5米,宽6.4米,它的面积是多少平方米？",
+      "image": "",
+      "options": [],
+      "answer": "54.4",
+      "acceptableAnswers": [
+        "54.4",
+        "54.40"
+      ],
+      "solution": [
+        "85×64=5440,有2位小数,54.40=54.4平方米"
+      ],
+      "hints": [
+        "面积=长×宽"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "85×64=5440,2位小数",
+          "correction": "=54.4",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-06",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面各式结果最大的是",
+      "image": "",
+      "options": [
+        "0.9×0.9",
+        "0.9×1",
+        "0.9×1.1",
+        "0.9×0.1"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "一个数乘大于1的数,积比原数大",
+        "0.9×1.1=0.99最大"
+      ],
+      "hints": [
+        "乘大于1的数变大,乘小于1的数变小"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1",
+          "reason": "不会比大小",
+          "correction": "乘越大的数结果越大",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法比大小"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-07",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算: 0.25×4.78×4",
+      "image": "",
+      "options": [],
+      "answer": "4.78",
+      "acceptableAnswers": [
+        "4.78"
+      ],
+      "solution": [
+        "0.25×4=1,所以=1×4.78=4.78"
+      ],
+      "hints": [
+        "乘法交换律,先算0.25×4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "0.25×4=1",
+          "correction": "=4.78",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法简算"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-08",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "妈妈买了2.5千克苹果,每千克8.6元,一共花了多少元？",
+      "image": "",
+      "options": [],
+      "answer": "21.5",
+      "acceptableAnswers": [
+        "21.5",
+        "21.50"
+      ],
+      "solution": [
+        "25×86=2150,有2位小数,21.5元"
+      ],
+      "hints": [
+        "单价×数量=总价"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "25×86=2150,2位小数",
+          "correction": "=21.5",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-09",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "0.05×0.03 的积是",
+      "image": "",
+      "options": [
+        "0.15",
+        "0.015",
+        "0.0015",
+        "0.00015"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "5×3=15,共有4位小数,=0.0015"
+      ],
+      "hints": [
+        "两位小数×两位小数=四位小数,前面补0"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选1",
+          "reason": "小数位数不够",
+          "correction": "0.0015",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法位数"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-10",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "计算: 12.5×0.8",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "solution": [
+        "125×8=1000,有2位小数,=10"
+      ],
+      "hints": [
+        "12.5×0.8=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "125×8=1000,2位小数",
+          "correction": "=10",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法凑整"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在□里填数: 0.8×□ = 0.8×10 + 0.8×0.5",
+      "image": "",
+      "options": [],
+      "answer": "10.5",
+      "acceptableAnswers": [
+        "10.5"
+      ],
+      "solution": [
+        "右边=0.8×(10+0.5)=0.8×10.5,所以□=10.5"
+      ],
+      "hints": [
+        "乘法分配律a×b+a×c=a×(b+c)",
+        "10+0.5=10.5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成50或其他",
+          "reason": "10+0.5=10.5",
+          "correction": "",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "乘法分配律"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-12",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "计算: 3.6×4.5",
+      "image": "",
+      "options": [],
+      "answer": "16.2",
+      "acceptableAnswers": [
+        "16.2",
+        "16.20"
+      ],
+      "solution": [
+        "36×45=1620,有2位小数,=16.2"
+      ],
+      "hints": [
+        "先整数乘,再点小数点"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "36×45=1620,2位小数",
+          "correction": "=16.2",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个正方形边长2.5厘米,它的面积是多少平方厘米？",
+      "image": "",
+      "options": [
+        "5",
+        "6.25",
+        "5.0",
+        "62.5"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "面积=边长×边长=2.5×2.5=6.25平方厘米"
+      ],
+      "hints": [
+        "面积=边长的平方"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或3",
+          "reason": "2.5+2.5或25×2.5",
+          "correction": "=6.25",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "正方形面积"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-14",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "用简便方法计算: 1.25×3.2×0.25",
+      "image": "",
+      "options": [],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "3.2=8×0.4,1.25×8=10,0.4×0.25=0.1,10×0.1=1"
+      ],
+      "hints": [
+        "把3.2拆成8×0.4,让1.25找8,0.25找0.4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "3.2=8×0.4,1.25×8=10,0.4×0.25=0.1",
+          "correction": "=1",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法简算"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    },
+    {
+      "id": "g4-dm-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一辆汽车每小时行驶68.5千米,从甲地到乙地行驶了2.4小时。甲乙两地相距多少千米？",
+      "image": "",
+      "options": [],
+      "answer": "164.4",
+      "acceptableAnswers": [
+        "164.4"
+      ],
+      "solution": [
+        "路程=速度×时间=68.5×2.4",
+        "685×24=16440,2位小数=164.4"
+      ],
+      "hints": [
+        "路程=速度×时间"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "685×24=16440,2位小数",
+          "correction": "=164.4",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "小数乘法应用"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "小数乘法"
+      ]
+    }
+  ]
+}

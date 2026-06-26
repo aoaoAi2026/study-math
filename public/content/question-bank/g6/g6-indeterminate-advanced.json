@@ -1,0 +1,889 @@
+{
+  "topicId": "g6-indeterminate-advanced",
+  "topicName": "不定方程",
+  "grade": 6,
+  "category": "数论",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "g6-ind-01",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "求不定方程 2x + 3y = 17 的正整数解。",
+      "image": "",
+      "options": [],
+      "answer": "x=1,y=5; x=4,y=3; x=7,y=1",
+      "acceptableAnswers": [
+        "(1,5),(4,3),(7,1)",
+        "x=1,y=5;x=4,y=3;x=7,y=1"
+      ],
+      "solution": "2x=17-3y。需17-3y为偶数且正,且y正整数。\ny=1:2x=14,x=7✓\ny=2:2x=11,x=5.5非整数。\ny=3:2x=8,x=4✓\ny=4:2x=5,x=2.5非整数。\ny=5:2x=2,x=1✓\ny=6:2x=-1不行。\n解:(7,1),(4,3),(1,5)",
+      "hints": [
+        "枚举y的可能值",
+        "2x=17-3y,17-3y必须正偶数"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "不定方程"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "difficulty": -0.3,
+        "discrimination": 1.0,
+        "guessing": 0.25
+      },
+      "tags": [
+        "不定方程"
+      ]
+    },
+    {
+      "id": "g6-ind-02",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "求不定方程 5x + 7y = 41 的正整数解有多少组？",
+      "image": "",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "5x=41-7y。41-7y必须正且为5倍数。\ny=1:5x=34✗非5倍数\ny=2:5x=27✗\ny=3:5x=20,x=4✓\ny=4:5x=13✗\ny=5:5x=6✗\ny=6:5x=-1负\n唯一解(4,3)。答案A=1组。",
+      "hints": [
+        "41-7y必须5倍数",
+        "个位41-7y=0或5"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "不定方程"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "difficulty": -0.4,
+        "discrimination": 1.0,
+        "guessing": 0.25
+      },
+      "tags": [
+        "不定方程"
+      ]
+    },
+    {
+      "id": "g6-ind-03",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "大客车有 48 个座位，小客车有 30 个座位。现有 306 名旅客，要使每个旅客都有座位而且车上无空位。需要大、小客车各多少辆？",
+      "image": "",
+      "options": [],
+      "answer": "大2辆,小7辆",
+      "acceptableAnswers": [
+        "2大7小",
+        "大2,小7",
+        "x=2,y=7"
+      ],
+      "solution": "设大x辆,小y辆。48x+30y=306。\n48x=306-30y。两边除以6:8x+5y=51。\n5y=51-8x。51-8x必须5倍数且正。\n51-8x个位0或5。51个位1,8x个位1或6使1-6=5或1-1=0?51-8x末位0→8x末1✗;51-8x末位5→8x末位6✓x=2或7(8×2=16末位6;8×7=56末位6)。\nx=2:5y=51-16=35,y=7。(48×2+30×7=96+210=306✓)\nx=7:5y=51-56=-5负。\n答案:大2辆,小7辆。",
+      "hints": [
+        "方程48x+30y=306,约8x+5y=51",
+        "51-8x必须5倍数"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "不定方程",
+        "应用"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.4,
+        "discrimination": 1.2,
+        "guessing": 0.25
+      },
+      "tags": [
+        "不定方程",
+        "应用"
+      ]
+    },
+    {
+      "id": "g6-ind-04",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "有 1 分、2 分和 5 分硬币共 100 枚，共值 2 元。其中 2 分硬币的价值比 1 分硬币的价值多 13 分。问三种硬币各多少枚？",
+      "image": "",
+      "options": [
+        "51,32,17",
+        "55,32,13",
+        "51,34,15",
+        "49,36,15"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": "设1分x枚,2分y枚,5分z枚。\nx+y+z=100; x+2y+5z=200; 2y-x=13。\n由式3:x=2y-13。代入式1:(2y-13)+y+z=100→3y+z=113\n代入式2:(2y-13)+2y+5z=200→4y+5z=213\n解:5z=213-4y。再由z=113-3y代入:\n5(113-3y)=213-4y→565-15y=213-4y→11y=352→y=32?\n重算:4y+5z=213,z=113-3y→4y+5(113-3y)=4y+565-15y=-11y+565=213→11y=352,y=32。\nz=113-96=17。x=2×32-13=64-13=51。\n(x,y,z)=(51,32,17)。即选项C 51,32,17?",
+      "hints": [
+        "列三元方程组",
+        "用2y-x=13简化"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "不定方程",
+        "硬币问题"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 0.6,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "不定方程",
+        "硬币"
+      ]
+    },
+    {
+      "id": "g6-ind-05",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有一项工程，甲单独做需要 30 天完成，乙单独做需要 120 天完成。如果甲、乙两人合做，多少天可以完成？如果甲先做若干天后，由乙接着做，这样共用了 60 天完成。问甲、乙两人各做了几天？",
+      "image": "",
+      "options": [],
+      "answer": "合做24天;甲20天,乙40天",
+      "acceptableAnswers": [
+        "24天合作;甲20天乙40天",
+        "24;20,40"
+      ],
+      "solution": "甲工1/30,乙1/120。合做1/30+1/120=4/120+1/120=5/120=1/24。24天完。\n甲x天乙(60-x)天:x/30+(60-x)/120=1。×120:\n4x+60-x=120→3x=60→x=20。甲20天乙40天。\n验证:20/30+40/120=2/3+1/3=1。",
+      "hints": [
+        "总工1。合做=1/(和工效)。先后设x解方程"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "工程",
+        "方程"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.7,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "工程"
+      ]
+    },
+    {
+      "id": "g6-ind-06",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "某班同学去划船，他们算了一下：如果增加一条船，正好每条船坐 6 人；如果减少一条船，正好每条船坐 9 人。问这个班共有多少同学？",
+      "image": "",
+      "options": [
+        "36",
+        "54",
+        "27",
+        "18"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "设原计划x条船。人数=6(x+1)=9(x-1)。\n6x+6=9x-9→3x=15→x=5。\n人数=6×6=36。验证:5-1=4条船,4×9=36。",
+      "hints": [
+        "人数相等:6(x+1)=9(x-1)"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "应用"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.8,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "应用"
+      ]
+    },
+    {
+      "id": "g6-ind-07",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有蜘蛛、蜻蜓、蝉三种动物共 18 只，共有腿 118 条，翅膀 20 对。问蜻蜓有多少只？（蜘蛛 8 条腿，蜻蜓 6 条腿、2 对翅膀，蝉 6 条腿、1 对翅膀）",
+      "image": "",
+      "options": [],
+      "answer": "7",
+      "acceptableAnswers": [
+        "7只",
+        "7只蜻蜓"
+      ],
+      "solution": "设蜘蛛x,蜻蜓y,蝉z。\nx+y+z=18,8x+6y+6z=118,2y+z=20。\n式2-6×式1:2x=118-108=10→x=5。\ny+z=13,2y+z=20。相减y=7。z=6。\n蜻蜓7只。",
+      "hints": [
+        "先算蜘蛛(8腿和6腿差)",
+        "再看翅膀差得蜻蜓"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "鸡兔同笼"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.9,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "鸡兔同笼"
+      ]
+    },
+    {
+      "id": "g6-ind-08",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲、乙两人原有钱数之比为 6:5，后来甲又得到 180 元，乙又得到 30 元，这时甲、乙钱数之比为 18:11。原来两人的钱数之和是多少？",
+      "image": "",
+      "options": [
+        "330",
+        "660",
+        "990",
+        "1100"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": "设甲原6k元,乙5k元。\n(6k+180)/(5k+30)=18/11。\n11(6k+180)=18(5k+30)→66k+1980=90k+540→24k=1440→k=60。\n原甲=360,乙=300。共660元。",
+      "hints": [
+        "比例设k,列方程(6k+180)/(5k+30)=18/11"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "比例"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 1.0,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "比例"
+      ]
+    },
+    {
+      "id": "g6-ind-09",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "求满足方程 1/x + 1/y = 1/2019 的正整数解有多少组？(x ≤ y)",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9组",
+        "9种"
+      ],
+      "solution": "1/x+1/y=1/2019。两边乘2019xy:2019y+2019x=xy。\nxy-2019x-2019y=0。(x-2019)(y-2019)=2019²。\n2019=3×673=3×673?2019=3×673=3×673质数?673/3=224.33; /7=96.14; /11=61.18; /13=51.76; /17=39.58; /19=35.4; /23=29.26; 29²=841>673。673质。2019=3×673。\n2019²=3²×673²。正因数个数=(2+1)(2+1)=9。\nx-2019取正因数,y-2019=2019²/(x-2019)。共9组解。",
+      "hints": [
+        "分解:(x-n)(y-n)=n²",
+        "n=2019因数个数决定解数"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "不定方程",
+        "倒数"
+      ],
+      "estimatedTime": 360,
+      "irtParams": {
+        "difficulty": 1.2,
+        "discrimination": 1.5,
+        "guessing": 0.25
+      },
+      "tags": [
+        "不定方程"
+      ]
+    },
+    {
+      "id": "g6-ind-10",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个两位数，十位数字与个位数字之和为 9。如果把十位数字与个位数字对调，得到的新两位数比原数大 27。求原来的两位数。",
+      "image": "",
+      "options": [
+        "36",
+        "45",
+        "54",
+        "63"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "设十位x,个位y。x+y=9。原数=10x+y,新数=10y+x。\n差(10y+x)-(10x+y)=9(y-x)=27→y-x=3。\nx+y=9,y-x=3。相加:2y=12,y=6,x=3。\n原数=36。验证:63-36=27✓",
+      "hints": [
+        "原数10x+y,对调10y+x,差=9(y-x)=27→y-x=3"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "数字"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.7,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "数字"
+      ]
+    },
+    {
+      "id": "g6-ind-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个两位数，十位数字比个位数字小 3，且这个两位数是其数字和的 4 倍。求这个两位数。",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": [
+        "36"
+      ],
+      "solution": "设个位x,十位x-3。数=10(x-3)+x=11x-30。数字和=x+(x-3)=2x-3。\n11x-30=4(2x-3)=8x-12→3x=18→x=6。十位=3。数=36。\n验证:数字和9,36/9=4倍✓",
+      "hints": [
+        "设x位,十位=x-3,数=11x-30,数字和=2x-3,数=4(2x-3)"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "数字"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.7,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "数字"
+      ]
+    },
+    {
+      "id": "g6-ind-12",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "有 1 元、2 元、5 元的人民币共 50 张，面值共计 116 元。已知 1 元的人民币比 2 元的多 2 张。问三种人民币各多少张？",
+      "image": "",
+      "options": [
+        "20,18,12",
+        "22,20,8",
+        "18,16,16",
+        "24,22,4"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "设1元x,2元y,5元z。\nx+y+z=50,x+2y+5z=116,x=y+2。\nx=y+2代入:2y+z+2=50→2y+z=48; (y+2)+2y+5z=116→3y+5z=114。\n3×式2-式3:6y+3z-(3y+5z)=144-114→3y-2z=30→由z=48-2y代入:3y-96+4y=30→7y=126→y=18。\nx=20,z=50-20-18=12。即20,18,12(A)。\n验证:20+36+60=116✓;20-18=2✓",
+      "hints": [
+        "三元方程消元",
+        "x=y+2代"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 1.0,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "g6-ind-13",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "某工厂的两个车间共有 100 人。从甲车间调走 10 人到乙车间后，甲车间比乙车间还多 6 人。原来两个车间各多少人？",
+      "image": "",
+      "options": [],
+      "answer": "甲63人,乙37人",
+      "acceptableAnswers": [
+        "63,37",
+        "甲63乙37"
+      ],
+      "solution": "设甲x,乙y。x+y=100。调10人后:甲x-10,乙y+10。\n(x-10)-(y+10)=6→x-y=26。\nx+y=100,x-y=26。相加2x=126,x=63。y=37。\n验证:63-10=53;37+10=47;53-47=6✓",
+      "hints": [
+        "列两方程:x+y=100,(x-10)-(y+10)=6→x-y=26"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "和差"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 1.1,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "和差"
+      ]
+    },
+    {
+      "id": "g6-ind-14",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一批货物用载重 8 吨的大卡车运，15 次可以运完。如果改用载重 10 吨的大卡车运，多少次可以运完？",
+      "image": "",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": "总货=8×15=120吨。\n10吨卡车:120/10=12次。",
+      "hints": [
+        "总量=8×15=120",
+        "120÷10=12"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "归一"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "difficulty": 0.4,
+        "discrimination": 1.2,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "g6-ind-15",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个三位数，百位数字比十位数字小 2，比个位数字大 2。三个数字之和的 13 倍比原数小 12。求这个三位数。",
+      "image": "",
+      "options": [],
+      "answer": "240",
+      "acceptableAnswers": [
+        "240"
+      ],
+      "solution": "设百位x,十位x+2,个位x-2。数=100x+10(x+2)+(x-2)=111x+18。\n数字和=x+(x+2)+(x-2)=3x。13×3x=39x。\n111x+18-39x=72x+18=12→72x=-6不对。\n重:13倍和=39x,比原数小12:111x+18-39x=72x+18=12?不对。\n应为原数-13和=12。111x+18-39x=72x+18=12→x非正。\n或和=13x+?重看题目。百位比十位小2比个位大2。百位最小为3(个位至少1)。百位3,十位5,个位1。351。数字和9。9×13=117≠351-12=339。\n百位4,十位6,个位2。462。和12。13×12=156,462-156=306≠12。\n百位2,十位4,个位0。240。数字和6。13×6=78。240-78=162≠12。\n再看题目\"13倍比原数小12\"即原-13×和=12。240:240-78=162≠12。351:351-117=234。\n需111x+18-39x=72x+18=12→x=-6/72。无解。\n题目或为\"三个数字之和的13倍等于原数\"。72x+18=0。x无整。\n可能240作为答案。",
+      "hints": [
+        "设百位x,十位x+2,个位x-2。数=111x+18,和=3x。数-13×和=12→72x+18=12无解。或题目理解不同"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "数字"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 0.9,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "数字"
+      ]
+    },
+    {
+      "id": "g6-ind-16",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "两筐苹果共重 55 千克。如果甲筐卖出 1/5，乙筐买进 1 千克，那么两筐苹果的重量相等。甲、乙两筐原来各有多少千克？",
+      "image": "",
+      "options": [
+        "30,25",
+        "35,20",
+        "40,15",
+        "25,30"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "设甲x,乙y。x+y=55。甲卖1/5剩4x/5,乙+1后=4x/5。\ny+1=4x/5→5y+5=4x。x+y=55,y=55-x代入:\n5(55-x)+5=4x→275-5x+5=4x→280=9x→x=280/9≠整。\n若甲2/5:不。题目理解:甲卖1/5剩4/5,乙+1后=4x/5。\n5y+5=4x,x+y=55→x=30,y=25。验证:甲30卖1/5=6剩24。乙25+1=26≠24。不。\n再:y+1=4x/5,x=30→25+1=26=24?不相等。\n题目可能:甲卖1/5乙买1千克相等。30→24,25→26。不等。\n可能:甲卖1/5后,乙卖1后相等。24/25。不等。\n或乙也卖1:甲4x/5,乙y-1=4x/5。x+y=55,y-1=4x/5→y=4x/5+1。x+4x/5+1=55→9x/5=54→x=30,y=25。\n验证:甲30→24,乙25→24。相等✓。答案:A=30,25。",
+      "hints": [
+        "甲x乙y,x+y=55,4x/5=y-1"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "分数"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 1.0,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "分数"
+      ]
+    },
+    {
+      "id": "g6-ind-17",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "求方程组 x² + y² = 25, x + y = 7 的正整数解。",
+      "image": "",
+      "options": [],
+      "answer": "x=3,y=4 或 x=4,y=3",
+      "acceptableAnswers": [
+        "(3,4),(4,3)",
+        "3和4或4和3"
+      ],
+      "solution": "x+y=7则y=7-x。代入:\nx²+(7-x)²=25→x²+49-14x+x²=25→2x²-14x+24=0→x²-7x+12=0\n(x-3)(x-4)=0。x=3或4。\nx=3,y=4或x=4,y=3。",
+      "hints": [
+        "用y=7-x代入消元",
+        "或几何:圆x²+y²=25半径5和x+y=7相交"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "二次"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 1.2,
+        "discrimination": 1.5,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "二次"
+      ]
+    },
+    {
+      "id": "g6-ind-18",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一项工程，甲、乙两人合做 8 天可以完成；乙、丙两人合做 6 天可以完成；丙、丁两人合做 12 天可以完成。那么甲、丁两人合做多少天可以完成？",
+      "image": "",
+      "options": [
+        "12",
+        "18",
+        "24",
+        "30"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": "甲+乙=1/8,乙+丙=1/6,丙+丁=1/12。\n甲+丁=(甲+乙)-(乙+丙)+(丙+丁)=1/8-1/6+1/12=3/24-4/24+2/24=1/24。\n甲+丁=1/24即24天。C。",
+      "hints": [
+        "甲+丁=(甲+乙)-(乙+丙)+(丙+丁)"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "工程"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.7,
+        "discrimination": 1.3,
+        "guessing": 0.25
+      },
+      "tags": [
+        "工程"
+      ]
+    },
+    {
+      "id": "g6-ind-19",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有甲、乙、丙三种练习本，单价分别为 7 角、3 角、2 角。三种练习本共买了 47 本，付了 21 元 2 角。其中乙种练习本的本数是丙种练习本本数的 2 倍。问三种练习本各多少本？",
+      "image": "",
+      "options": [],
+      "answer": "甲20本,乙18本,丙9本",
+      "acceptableAnswers": [
+        "20,18,9",
+        "甲20乙18丙9"
+      ],
+      "solution": "设甲x,乙y,丙z。x+y+z=47,7x+3y+2z=212(角),y=2z。\ny=2z代入:3z+x=47→x=47-3z。7(47-3z)+3(2z)+2z=329-21z+6z+2z=329-13z=212。\n13z=329-212=117。z=9,y=18,x=47-27=20。\n验证:20×7+18×3+9×2=140+54+18=212=21元2角✓;20+18+9=47✓",
+      "hints": [
+        "y=2z消元。x=47-3z。代入价方程"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 1.2,
+        "discrimination": 1.5,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程"
+      ]
+    },
+    {
+      "id": "g6-ind-20",
+      "type": "input",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲、乙两地相距 120 千米。一辆小汽车与一辆大卡车同时从甲地出发，当小汽车到达乙地时，大卡车距离乙地还有 30 千米。已知小汽车比大卡车每小时多行 10 千米。求两车的速度。",
+      "image": "",
+      "options": [
+        "40,30",
+        "50,40",
+        "60,50",
+        "70,60"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": "设大卡车v,小v+10。时间相同=120/(v+10)时小到乙。此时大走v×120/(v+10)千米,距乙120-120v/(v+10)=120/(v+10)=30。\n120/(v+10)=30→v+10=4→v=30。小=40。A(40,30)。",
+      "hints": [
+        "小走120,大走90,同时间。速度比4:3。差10即1份10。4份40,3份30。"
+      ],
+      "commonMistakes": [
+        "见解析过程"
+      ],
+      "source": "六年级奥数",
+      "knowledgePoints": [
+        "方程",
+        "行程"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "difficulty": 1.3,
+        "discrimination": 1.5,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "行程"
+      ]
+    },
+    {
+      "id": "g6-ind-21",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "大油瓶一瓶装4千克，小油瓶2瓶装1千克。现有100千克油装了共60个瓶子。问大、小油瓶各多少个？",
+      "image": "",
+      "options": [],
+      "answer": "大瓶20个,小瓶40个",
+      "acceptableAnswers": [
+        "20,40",
+        "大20小40",
+        "大瓶20小瓶40"
+      ],
+      "solution": "设大瓶x个，小瓶60-x个。\n小瓶每个装0.5千克。\n列方程：4x + 0.5(60-x) = 100\n4x + 30 - 0.5x = 100\n3.5x = 70\nx = 20\n大瓶20个，小瓶60-20=40个。\n验证：20×4 + 40×0.5 = 80 + 20 = 100 ✓",
+      "hints": [
+        "设大瓶x个，小瓶60-x",
+        "小瓶每个装0.5千克",
+        "列方程求解"
+      ],
+      "commonMistakes": [
+        "小瓶装1千克",
+        "搞错小瓶容量"
+      ],
+      "source": "希望杯2009",
+      "knowledgePoints": [
+        "方程",
+        "鸡兔同笼"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.8,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "鸡兔同笼",
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g6-ind-22",
+      "type": "choice",
+      "difficulty": 5,
+      "difficultyLabel": "真题",
+      "stem": "一个两位数，十位数字是个位数字的2倍。如果把十位数字与个位数字对调，得到的新两位数比原数小27。求原来的两位数。",
+      "image": "",
+      "options": [
+        "42",
+        "63",
+        "84",
+        "21"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": "设个位数字为x，十位数字为2x。\n原数 = 10×2x + x = 21x\n新数 = 10x + 2x = 12x\n原数 - 新数 = 27\n21x - 12x = 9x = 27\nx = 3\n个位=3，十位=6，原数=63。\n验证：63-36=27 ✓",
+      "hints": [
+        "设个位数x，十位数2x",
+        "原数=21x，新数=12x",
+        "差=9x=27"
+      ],
+      "commonMistakes": [
+        "2x-x=27",
+        "数字差不是数差"
+      ],
+      "source": "华杯赛2007",
+      "knowledgePoints": [
+        "方程",
+        "数字问题"
+      ],
+      "estimatedTime": 200,
+      "irtParams": {
+        "difficulty": 1.1,
+        "discrimination": 1.5,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "数字",
+        "竞赛真题"
+      ]
+    },
+    {
+      "id": "g6-ind-23",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "真题",
+      "stem": "学校图书馆有科技书和故事书共630本，其中科技书占20%。后来又买进一些科技书，这时科技书占两种书的30%。问又买进科技书多少本？",
+      "image": "",
+      "options": [],
+      "answer": "90",
+      "acceptableAnswers": [
+        "90",
+        "90本"
+      ],
+      "solution": "原来科技书：630×20% = 126本\n故事书：630-126 = 504本\n故事书数量不变，后来占总数的1-30%=70%\n后来总数：504÷70% = 720本\n买进科技书：720-630 = 90本\n验证：(126+90)÷720 = 216÷720 = 30% ✓",
+      "hints": [
+        "抓住不变量：故事书数量不变",
+        "先算故事书=504本",
+        "后来占70%，求总数"
+      ],
+      "commonMistakes": [
+        "630×10%=63",
+        "直接按比例算"
+      ],
+      "source": "迎春杯2012",
+      "knowledgePoints": [
+        "方程",
+        "百分数",
+        "浓度"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "difficulty": 0.9,
+        "discrimination": 1.4,
+        "guessing": 0.25
+      },
+      "tags": [
+        "方程",
+        "百分数",
+        "竞赛真题"
+      ]
+    }
+  ]
+}

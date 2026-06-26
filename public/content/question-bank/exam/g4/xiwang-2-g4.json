@@ -1,0 +1,193 @@
+
+{
+    "paperId": "g4-xiwang-2-g4",
+    "title": "第二届小学《希望杯》全国数学邀请赛 四年级（第二试）",
+    "grade": 4,
+    "category": "aoshu-xiwang",
+    "duration": 90,
+    "totalScore": 120,
+    "difficultyLevel": 3,
+    "year": 2004,
+    "source": "希望杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "一、填空题（每题5分，共60分）", "count": 12, "scorePerQuestion": 5},
+        {"name": "二、解答题（每题15分，共60分）", "count": 4, "scorePerQuestion": 15}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：25 × 4 × 8 = ______。",
+            "answer": "800",
+            "score": 5,
+            "solution": "25×4=100，100×8=800。",
+            "knowledgePoints": ["巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "在下面的算式中填上适当的数：24 × ______ = 12 × 10。",
+            "answer": "5",
+            "score": 5,
+            "solution": "12×10=120。120/24=5。",
+            "knowledgePoints": ["乘除"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个数的3倍是156，这个数是______。",
+            "answer": "52",
+            "score": 5,
+            "solution": "156÷3=52。",
+            "knowledgePoints": ["除法"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个长方形的长是12厘米，比宽长3厘米。这个长方形的面积是______平方厘米。",
+            "answer": "108",
+            "score": 5,
+            "solution": "宽=12-3=9厘米。面积=12×9=108平方厘米。",
+            "knowledgePoints": ["长方形面积"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "在1，2，3，4，5，6，7，8，9这九个数中，所有的奇数之和是______。",
+            "answer": "25",
+            "score": 5,
+            "solution": "1+3+5+7+9=25。",
+            "knowledgePoints": ["奇数"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小明有5元和10元人民币共8张，合计65元。5元有______张。",
+            "answer": "3",
+            "score": 5,
+            "solution": "假设全是10元：8×10=80。差80-65=15元。每张5元与10元差5元。5元张数=15/5=3张。10元=8-3=5张。验证：3×5+5×10=15+50=65✓。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "把一根钢管锯成4段需要12分钟。如果用同样的速度锯成6段需要______分钟。",
+            "answer": "20",
+            "score": 5,
+            "solution": "锯4段需3次，每次12/3=4分钟。锯6段需5次，共5×4=20分钟。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "被除数、除数、商的和是89，已知商是9，被除数是______。",
+            "answer": "72",
+            "score": 5,
+            "solution": "设除数为x，则被除数=9x。9x+x+9=89，10x=80，x=8。被除数=72。验证：72÷8=9，72+8+9=89✓。",
+            "knowledgePoints": ["整除"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "甲乙两船从相距120千米的两地同时相向而行，甲船每小时行25千米，乙船每小时行15千米。______小时后两船相遇。",
+            "answer": "3",
+            "score": 5,
+            "solution": "相遇时间=120/(25+15)=120/40=3小时。",
+            "knowledgePoints": ["相遇问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "用数字1、2、3、4可以组成______个没有重复数字的两位数。",
+            "answer": "12",
+            "score": 5,
+            "solution": "十位有4种选择，个位有3种选择。共4×3=12个。",
+            "knowledgePoints": ["排列组合"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个商店上午卖出10个同样的足球，下午卖出同样的15个足球，下午比上午多卖了100元。每个足球______元。",
+            "answer": "20",
+            "score": 5,
+            "solution": "下午多卖15-10=5个，多100元。每个=100/5=20元。",
+            "knowledgePoints": ["单价问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一本书共200页，编这本书的页码共用了______个数字。",
+            "answer": "492",
+            "score": 5,
+            "solution": "1-9：9个。10-99：90×2=180个。100-200：101×3=303个。共9+180+303=492个。",
+            "knowledgePoints": ["页码问题"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）甲、乙两个仓库共存粮450吨。如果从甲仓库运走30吨后，乙仓库的粮食正好是甲仓库的2倍。甲、乙两仓库原来各有多少吨粮食？",
+            "answer": "170",
+            "score": 15,
+            "solution": "设甲原有x吨，乙450-x吨。运走后甲=x-30，乙=450-x。2(x-30)=450-x，2x-60=450-x，3x=510，x=170。甲原170吨，乙280吨。验证：甲170-30=140，2×140=280✓。",
+            "knowledgePoints": ["方程"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）一辆汽车从A地到B地，前2小时每小时行75千米，后3小时每小时行60千米。这辆汽车从A地到B地的平均速度是多少？",
+            "answer": "66",
+            "score": 15,
+            "solution": "总路程=2×75+3×60=150+180=330千米。总时间=5小时。平均速度=330/5=66千米/小时。",
+            "knowledgePoints": ["平均速度"]
+        },
+        {
+            "id": "q15",
+            "type": "fill",
+            "difficulty": 5,
+            "sectionNo": 2,
+            "stem": "（解答题）今年爸爸的年龄是儿子的5倍，6年后爸爸的年龄是儿子的3倍。父子两人今年各多少岁？",
+            "answer": "30",
+            "score": 15,
+            "solution": "设儿子今年x岁，爸爸5x岁。6年后：5x+6=3(x+6)，5x+6=3x+18，2x=12，x=6。儿子6岁，爸爸30岁。验证6年后：12和36，36=3×12✓。",
+            "knowledgePoints": ["年龄问题"]
+        },
+        {
+            "id": "q16",
+            "type": "fill",
+            "difficulty": 5,
+            "sectionNo": 2,
+            "stem": "（解答题）一个蓄水池有两根进水管。单开甲管6小时可注满，单开乙管8小时可注满。现在先开乙管注水2小时，然后再打开甲管一起注水。还需要多少小时可注满？",
+            "answer": "18/7",
+            "score": 15,
+            "solution": "甲效1/6，乙效1/8。乙先2小时注2/8=1/4。剩1-1/4=3/4。两管合效=1/6+1/8=7/24。需时=(3/4)/(7/24)=3/4×24/7=18/7小时。"
+        }
+    ]
+}

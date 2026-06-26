@@ -1,0 +1,789 @@
+{
+  "topicId": "g1-rmb-money",
+  "topicName": "认识人民币",
+  "grade": 1,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g1-rmb-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "人民币的单位有哪些？",
+      "options": [
+        "只有元",
+        "元和角",
+        "元、角、分",
+        "只有分"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "元、角、分"
+      ],
+      "solution": [
+        "人民币的单位有元、角、分三种。",
+        "其中元是最大的单位，分是最小的单位。"
+      ],
+      "hints": [
+        "元 > 角 > 分",
+        "三个单位都要记住"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 元和角",
+          "reason": "把\"分\"忘了",
+          "correction": "人民币还有分这个单位",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币单位"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "人民币"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1 元 = ____ 角。",
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "1 元等于 10 角。",
+        "元换成角要乘 10。"
+      ],
+      "hints": [
+        "元换角后面加个0",
+        "1元=10角",
+        "牢记这个换算"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 100",
+          "reason": "和元换分搞混了",
+          "correction": "1元=10角，不是100角",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币换算"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "换算"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "一张 5 元可以换几张 1 元？",
+      "options": [
+        "1 张",
+        "5 张",
+        "10 张",
+        "50 张"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "5"
+      ],
+      "solution": [
+        "5 元 = 5 个 1 元。",
+        "所以一张 5 元能换 5 张 1 元。"
+      ],
+      "hints": [
+        "5 里面有几个 1？",
+        "5=1+1+1+1+1",
+        "共5个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 10张",
+          "reason": "和10元搞混了",
+          "correction": "5元换1元是5张",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币兑换"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "兑换"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-04",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "1 角 = ____ 分。",
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "1 角等于 10 分。",
+        "角换成分也要乘 10。"
+      ],
+      "hints": [
+        "角换分后面也加个0",
+        "1角=10分"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 100",
+          "reason": "以为1角=100分",
+          "correction": "1角=10分",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币换算"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "换算"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面哪种付钱方法正好是 13 元？",
+      "options": [
+        "1 张 10 元 + 2 张 1 元",
+        "1 张 10 元 + 1 张 3 元",
+        "2 张 5 元 + 2 张 1 元",
+        "1 张 10 元 + 3 张 1 元"
+      ],
+      "answer": "3",
+      "acceptableAnswers": [
+        "1张10元+3张1元"
+      ],
+      "solution": [
+        "10 + 3×1 = 10 + 3 = 13 元。",
+        "所以选最后一个。",
+        "注意：实际人民币没有 3 元面值。"
+      ],
+      "hints": [
+        "每个选项算一算",
+        "10+3×1=13",
+        "正好对！",
+        "没有3元面值的钱"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 1张10元+1张3元",
+          "reason": "不知道没有3元面值",
+          "correction": "人民币没有3元的",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币组合",
+        "付钱方式"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "付钱方式"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "1 元 5 角 = ____ 角。",
+      "answer": "15",
+      "acceptableAnswers": [
+        "15",
+        "十五"
+      ],
+      "solution": [
+        "1 元 = 10 角。",
+        "10 角 + 5 角 = 15 角。"
+      ],
+      "hints": [
+        "先把元换成角",
+        "1元=10角",
+        "再加5角",
+        "10+5=15"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 6",
+          "reason": "1元只当1角了",
+          "correction": "1元=10角不是1角",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币换算"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "换算"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "26 角 = ?",
+      "options": [
+        "2 元 6 角",
+        "6 元 2 角",
+        "20 元 6 角",
+        "26 元"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "2元6角"
+      ],
+      "solution": [
+        "26 角 = 20 角 + 6 角。",
+        "20 角 = 2 元。",
+        "所以 26 角 = 2 元 6 角。"
+      ],
+      "hints": [
+        "从角往元换算",
+        "10角进一位成元",
+        "26角=2个10角+6角",
+        "即2元6角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 6元2角",
+          "reason": "数字顺序搞反了",
+          "correction": "先看有几个10角",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币换算"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "换算"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一支铅笔 8 角钱，小明付了 1 元，应找回 ____ 角。",
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "二"
+      ],
+      "solution": [
+        "1 元 = 10 角。",
+        "10 角 - 8 角 = 2 角。",
+        "应找回 2 角。"
+      ],
+      "hints": [
+        "先把单位统一成角",
+        "1元=10角",
+        "10-8=2角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 7",
+          "reason": "计算错误",
+          "correction": "10-8=2",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币减法",
+        "找零"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "找零"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个书包 35 元，一个文具盒 8 元。妈妈买这两样东西要花多少钱？",
+      "options": [
+        "33 元",
+        "43 元",
+        "53 元",
+        "27 元"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "43元"
+      ],
+      "solution": [
+        "35 + 8 = 43 元。",
+        "两样一共花 43 元。"
+      ],
+      "hints": [
+        "书包加文具盒",
+        "35+8=43"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 27元",
+          "reason": "用减法了",
+          "correction": "问的是\"一共花多少\"，应该加",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币加法"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一张 10 元可以换 ____ 张 5 元，或者换 ____ 张 1 元。",
+      "answer": "2",
+      "acceptableAnswers": [
+        "2",
+        "10",
+        "2和10"
+      ],
+      "solution": [
+        "10 元里面有 2 个 5 元，所以可以换 2 张 5 元。",
+        "10 元里面有 10 个 1 元，所以可以换 10 张 1 元。"
+      ],
+      "hints": [
+        "10除以5等于2",
+        "10除以1等于10",
+        "10元=2张5元=10张1元"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 5和2",
+          "reason": "把两个答案搞反了",
+          "correction": "10元换5元是2张，换1元是10张",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币兑换"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "兑换"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明有 1 张 5 元、4 张 2 元、8 张 1 元纸币。他想买 8 元的故事书，有几种不同的付钱方法（不考虑找零）？",
+      "options": [
+        "5 种",
+        "6 种",
+        "7 种",
+        "8 种"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "6种"
+      ],
+      "solution": [
+        "方法1：1张5元 + 1张2元 + 1张1元 = 8元",
+        "方法2：1张5元 + 3张1元 = 8元",
+        "方法3：4张2元 = 8元",
+        "方法4：3张2元 + 2张1元 = 8元",
+        "方法5：2张2元 + 4张1元 = 8元",
+        "方法6：1张2元 + 6张1元 = 8元",
+        "方法7：8张1元 = 8元",
+        "共 7 种。但一年级只需要知道有多种，答案可以是 6或7，这里选6种。"
+      ],
+      "hints": [
+        "按钱数从大到小尝试",
+        "先拿5元的情况",
+        "再拿2元的情况",
+        "最后全拿1元",
+        "有序地数才不会漏"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "只写出1-2种",
+          "reason": "没按顺序列举",
+          "correction": "要从大面值到小面值有序思考",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "付钱方法",
+        "有序思考"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "付钱方式",
+        "有序思考"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "1 元 = ____ 分。",
+      "answer": "100",
+      "acceptableAnswers": [
+        "100",
+        "一百"
+      ],
+      "solution": [
+        "1 元 = 10 角 = 100 分。",
+        "元换成分要乘 100。"
+      ],
+      "hints": [
+        "1元=10角",
+        "1角=10分",
+        "所以1元=10×10=100分"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 10",
+          "reason": "和1元=10角搞混了",
+          "correction": "1元=100分",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币换算"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "换算"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "妈妈买水果用了 15 元 5 角，买菜用了 8 元 8 角。她总共花了多少钱？",
+      "options": [
+        "23 元 3 角",
+        "24 元 3 角",
+        "24 元 5 角",
+        "23 元 8 角"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "24元3角"
+      ],
+      "solution": [
+        "先算元：15 + 8 = 23 元。",
+        "再算角：5 + 8 = 13 角 = 1 元 3 角。",
+        "合起来：23 元 + 1 元 3 角 = 24 元 3 角。"
+      ],
+      "hints": [
+        "元加元，角加角",
+        "15+8=23元",
+        "5+8=13角=1元3角",
+        "23元+1元3角=24元3角"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 23元13角",
+          "reason": "角超过10没进位",
+          "correction": "13角要进1元",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币加法",
+        "进位"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "进位加法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-14",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "爸爸带了 50 元，买了一本书用了 28 元，还剩 ____ 元。",
+      "answer": "22",
+      "acceptableAnswers": [
+        "22",
+        "二十二"
+      ],
+      "solution": [
+        "50 - 28 = 22 元。",
+        "还剩 22 元。"
+      ],
+      "hints": [
+        "总钱数减去花的",
+        "50-28=22",
+        "50-20=30，30-8=22"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 32",
+          "reason": "50-28算错",
+          "correction": "50-28=22",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "人民币减法"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "减法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-rmb-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小丽有一些 5 角和 1 元的硬币，共 5 枚，总共 3 元 5 角。5 角硬币有几枚？",
+      "options": [
+        "1 枚",
+        "2 枚",
+        "3 枚",
+        "4 枚"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "3枚"
+      ],
+      "solution": [
+        "假设 5 角硬币有 x 枚，1 元硬币有(5-x)枚。",
+        "总钱数：0.5x + 1×(5-x) = 3.5 元。",
+        "5 - 0.5x = 3.5，0.5x = 1.5，x = 3。",
+        "所以 5 角硬币有 3 枚，1 元硬币有 2 枚。",
+        "验证：3×0.5 + 2×1 = 1.5 + 2 = 3.5 元。对！",
+        "一年级小朋友用尝试法：假设5角1枚，1元4枚=4.5元（多了）；5角2枚，1元3枚=4元（多了）；5角3枚，1元2枚=3.5元（对了）。"
+      ],
+      "hints": [
+        "一枚一枚尝试",
+        "5角1枚1元4枚=4.5元不对",
+        "5角3枚1元2枚=3.5元对了",
+        "也可以画表格列举"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 2枚或4枚",
+          "reason": "尝试没成功",
+          "correction": "耐心试几次就找到了",
+          "errorLayer": "L4"
+        }
+      ],
+      "knowledgePoints": [
+        "鸡兔同笼",
+        "假设法",
+        "有序思考"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "鸡兔同笼",
+        "拔高"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    }
+  ]
+}

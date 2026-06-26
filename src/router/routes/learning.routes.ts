@@ -7,7 +7,7 @@ const learningRoutes: RouteRecordRaw[] = [
     component: () => import('@/features/learning/LearningPage.vue')
   },
   {
-    path: '/learning/:id',
+    path: '/learning/topic/:topicId',
     name: 'topic',
     component: () => import('@/features/learning/TopicDetail.vue')
   }

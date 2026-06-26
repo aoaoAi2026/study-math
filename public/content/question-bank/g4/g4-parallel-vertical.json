@@ -1,0 +1,712 @@
+{
+  "topicId": "g4-parallel-vertical",
+  "topicName": "平行与垂直",
+  "grade": 4,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g4-pv-01",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "在同一平面内,不相交的两条直线叫做",
+      "image": "",
+      "options": [
+        "垂线",
+        "平行线",
+        "相交线",
+        "线段"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "同一平面内不相交的两条直线叫做平行线"
+      ],
+      "hints": [
+        "平行线:同一平面内不相交"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "混淆垂直",
+          "correction": "垂线是相交成直角的",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平行线定义"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行"
+      ]
+    },
+    {
+      "id": "g4-pv-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "两条直线相交成直角时,这两条直线",
+      "image": "",
+      "options": [
+        "互相平行",
+        "互相垂直",
+        "相交",
+        "重合"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "相交成直角就说互相垂直"
+      ],
+      "hints": [
+        "垂直=相交成90度"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "混淆平行",
+          "correction": "垂直是相交成直角",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "垂直定义"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "垂直"
+      ]
+    },
+    {
+      "id": "g4-pv-03",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在同一平面内,过直线外一点可以画几条直线与已知直线平行？",
+      "image": "",
+      "options": [],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1",
+        "一条"
+      ],
+      "solution": [
+        "在同一平面内,过直线外一点有且只有一条直线与已知直线平行"
+      ],
+      "hints": [
+        "有且只有一条"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "误以为无数条",
+          "correction": "只有1条",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平行公理"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行"
+      ]
+    },
+    {
+      "id": "g4-pv-04",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "长方形的对边互相",
+      "image": "",
+      "options": [
+        "垂直",
+        "平行",
+        "相交",
+        "既平行又垂直"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "长方形对边平行且相等,邻边互相垂直"
+      ],
+      "hints": [
+        "对边平行,邻边垂直"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0",
+          "reason": "邻边才垂直",
+          "correction": "对边平行",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "长方形性质"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行"
+      ]
+    },
+    {
+      "id": "g4-pv-05",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在同一平面内,如果两条直线都和第三条直线垂直,那么这两条直线是什么关系？",
+      "image": "",
+      "options": [],
+      "answer": "平行",
+      "acceptableAnswers": [
+        "平行",
+        "互相平行"
+      ],
+      "solution": [
+        "在同一平面内,都垂直于同一条直线的两条直线互相平行"
+      ],
+      "hints": [
+        "都垂直于同一条线→平行"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成垂直",
+          "reason": "误解",
+          "correction": "实际平行",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "垂直判定平行"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行"
+      ]
+    },
+    {
+      "id": "g4-pv-06",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "从直线外一点到这条直线所画的所有线段中,最短的是哪一条？",
+      "image": "",
+      "options": [],
+      "answer": "垂线段",
+      "acceptableAnswers": [
+        "垂线段",
+        "垂线"
+      ],
+      "solution": [
+        "垂线段最短,它的长度叫点到直线的距离"
+      ],
+      "hints": [
+        "垂线段最短,长度叫距离"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他线段",
+          "reason": "斜线段更长",
+          "correction": "垂线段最短",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "点到直线距离"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "距离"
+      ]
+    },
+    {
+      "id": "g4-pv-07",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "下面说法正确的是",
+      "image": "",
+      "options": [
+        "两条直线不平行就相交",
+        "两条直线只有平行和相交",
+        "在同一平面内,两条直线不平行就相交",
+        "垂直的两条线不一定相交"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "必须强调同一平面内,否则可能异面(既不平行也不相交)"
+      ],
+      "hints": [
+        "注意同一平面内这个前提"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1",
+          "reason": "没考虑异面",
+          "correction": "同一平面内才成立",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平面内两直线"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行"
+      ]
+    },
+    {
+      "id": "g4-pv-08",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小明画了两条直线,这两条直线都和同一条直线垂直。这两条直线是什么关系？",
+      "image": "",
+      "options": [],
+      "answer": "平行",
+      "acceptableAnswers": [
+        "平行",
+        "互相平行"
+      ],
+      "solution": [
+        "同一平面内,垂直于同一条直线的两条直线互相平行"
+      ],
+      "hints": [
+        "都垂直于同一直线→互相平行"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成垂直",
+          "reason": "误解",
+          "correction": "平行",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平行判定"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行"
+      ]
+    },
+    {
+      "id": "g4-pv-09",
+      "type": "input",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "平行线间的距离处处",
+      "image": "",
+      "options": [],
+      "answer": "相等",
+      "acceptableAnswers": [
+        "相等",
+        "一样"
+      ],
+      "solution": [
+        "平行线间的距离处处相等,可以画无数条垂线段,长度都相等"
+      ],
+      "hints": [
+        "平行线间距离相等"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "误以为不相等",
+          "correction": "距离处处相等",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平行线间距离"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行"
+      ]
+    },
+    {
+      "id": "g4-pv-10",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "正方形有几组平行线？有几组垂线？",
+      "image": "",
+      "options": [
+        "1组平行,2组垂直",
+        "2组平行,4组垂直",
+        "2组平行,2组垂直",
+        "4组平行,4组垂直"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "正方形两组对边分别平行(上下、左右)→2组平行线",
+        "四个顶点处各有一组垂线→4组"
+      ],
+      "hints": [
+        "对边2组平行,邻边4组垂直"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或2",
+          "reason": "数错",
+          "correction": "2组平行,4组垂直",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "正方形平行垂直"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行"
+      ]
+    },
+    {
+      "id": "g4-pv-11",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "过直线上一点画这条直线的垂线,可以画几条？",
+      "image": "",
+      "options": [],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1",
+        "一条"
+      ],
+      "solution": [
+        "过直线上一点有且只有一条直线与已知直线垂直"
+      ],
+      "hints": [
+        "有且只有一条"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "以为多条",
+          "correction": "只有1条",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "垂线唯一"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "垂直"
+      ]
+    },
+    {
+      "id": "g4-pv-12",
+      "type": "input",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在同一平面内,如果两条直线都平行于第三条直线,那么这两条直线是什么关系？",
+      "image": "",
+      "options": [],
+      "answer": "平行",
+      "acceptableAnswers": [
+        "平行",
+        "互相平行"
+      ],
+      "solution": [
+        "平行于同一条直线的两条直线互相平行,这是平行的传递性"
+      ],
+      "hints": [
+        "都平行于同一条→互相平行"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成相交",
+          "reason": "误解",
+          "correction": "平行",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "平行传递性"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "平行"
+      ]
+    },
+    {
+      "id": "g4-pv-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一张长方形纸对折两次后(沿不同方向),折痕的关系是",
+      "image": "",
+      "options": [
+        "平行",
+        "垂直",
+        "可能平行可能垂直",
+        "既不平行也不垂直"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "方向相同折→平行,方向不同折(如先上下后左右)→垂直"
+      ],
+      "hints": [
+        "方向相同→平行,方向不同→垂直"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选0或1",
+          "reason": "只考虑一种",
+          "correction": "两种情况都可能",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "折叠平行垂直"
+      ],
+      "estimatedTime": 30,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "折叠"
+      ]
+    },
+    {
+      "id": "g4-pv-14",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个长方形长8厘米,宽5厘米。画一条线段分成一个最大的正方形和一个小长方形。小长方形的长和宽各是多少厘米？(先长后宽,逗号分隔)",
+      "image": "",
+      "options": [],
+      "answer": "5,3",
+      "acceptableAnswers": [
+        "5,3",
+        "5 3"
+      ],
+      "solution": [
+        "最大正方形边长=长方形宽=5厘米",
+        "小长方形长=5厘米,宽=8-5=3厘米"
+      ],
+      "hints": [
+        "最大正方形边长=宽,5厘米正方形,剩余长5宽3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会分析",
+          "correction": "最大正方形边长=宽=5",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "长方形分正方形"
+      ],
+      "estimatedTime": 45,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "长方形"
+      ]
+    },
+    {
+      "id": "g4-pv-15",
+      "type": "input",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一张长20厘米、宽12厘米的长方形纸裁成同样大小、面积尽可能大的正方形,纸无剩余。至少可以裁多少个？每个正方形边长多少厘米？(先个数后边长,逗号分隔)",
+      "image": "",
+      "options": [],
+      "answer": "15,4",
+      "acceptableAnswers": [
+        "15,4",
+        "15 4"
+      ],
+      "solution": [
+        "边长是20和12的最大公因数,gcd(20,12)=4厘米",
+        "每行20÷4=5个,每列12÷4=3个,共5×3=15个"
+      ],
+      "hints": [
+        "求长和宽的最大公因数,gcd(20,12)=4,5×3=15个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成其他",
+          "reason": "不会用最大公因数",
+          "correction": "gcd(20,12)=4",
+          "errorLayer": "L4"
+        }
+      ],
+      "source": {
+        "type": "textbook",
+        "name": "人教版四年级",
+        "year": 2023
+      },
+      "knowledgePoints": [
+        "裁正方形"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "最大公因数"
+      ]
+    }
+  ]
+}

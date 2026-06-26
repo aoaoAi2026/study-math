@@ -1,0 +1,791 @@
+{
+  "topicId": "g1-addition-subtraction-100",
+  "topicName": "100以内加减法",
+  "grade": 1,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g1-as100-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "25 + 3 = ____",
+      "answer": "28",
+      "acceptableAnswers": [
+        "28",
+        "二十八"
+      ],
+      "solution": [
+        "5 + 3 = 8（个位加个位）。",
+        "十位不变，还是 2。",
+        "25 + 3 = 28。"
+      ],
+      "hints": [
+        "先算个位 5+3",
+        "再把十位写上",
+        "25+3=28"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 55",
+          "reason": "把 3 加在十位上了",
+          "correction": "3 是 3 个一，应该加在个位",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "两位数加一位数",
+        "不进位"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "不进位加法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "40 + 20 = ?",
+      "options": [
+        "60",
+        "70",
+        "50",
+        "80"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "60"
+      ],
+      "solution": [
+        "4 个十 + 2 个十 = 6 个十。",
+        "6 个十就是 60。"
+      ],
+      "hints": [
+        "想 4+2=6",
+        "后面加个 0",
+        "40+20=60"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 70",
+          "reason": "4+2算错",
+          "correction": "4+2=6，所以是60",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "整十数加法"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "整十数加法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "38 - 5 = ____",
+      "answer": "33",
+      "acceptableAnswers": [
+        "33",
+        "三十三"
+      ],
+      "solution": [
+        "8 - 5 = 3（个位减个位）。",
+        "十位不变，还是 3。",
+        "38 - 5 = 33。"
+      ],
+      "hints": [
+        "先算个位 8-5",
+        "十位还是 3",
+        "38-5=33"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 23",
+          "reason": "十位也减了 1",
+          "correction": "5 是 5 个一，只减个位",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "两位数减一位数",
+        "不退位"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "不退位减法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "70 - 30 = ?",
+      "options": [
+        "30",
+        "40",
+        "50",
+        "20"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "40"
+      ],
+      "solution": [
+        "7 个十 - 3 个十 = 4 个十。",
+        "4 个十 = 40。"
+      ],
+      "hints": [
+        "7-3=4",
+        "后面加个 0",
+        "70-30=40"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 30",
+          "reason": "7-3算错",
+          "correction": "7-3=4，所以是40",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "整十数减法"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "整十数减法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "27 + 8 = ____",
+      "answer": "35",
+      "acceptableAnswers": [
+        "35",
+        "三十五"
+      ],
+      "solution": [
+        "个位：7 + 8 = 15，个位写 5，向十位进 1。",
+        "十位：2 + 1（进位）= 3。",
+        "27 + 8 = 35。"
+      ],
+      "hints": [
+        "个位 7+8=15，超过10",
+        "个位写 5，进 1 给十位",
+        "2+1=3，所以是 35"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 25",
+          "reason": "忘记进位了",
+          "correction": "个位满10要向十位进1",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "两位数加一位数",
+        "进位加法"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "进位加法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "42 - 7 = ____",
+      "answer": "35",
+      "acceptableAnswers": [
+        "35",
+        "三十五"
+      ],
+      "solution": [
+        "个位 2 减 7 不够，从十位借 1 变成 12。",
+        "12 - 7 = 5（个位）。",
+        "十位原本是 4，借出 1 剩 3。",
+        "42 - 7 = 35。"
+      ],
+      "hints": [
+        "个位不够减，向十位借 1",
+        "借 1 变成 12",
+        "12-7=5，十位 4→3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 45",
+          "reason": "忘了十位借了 1",
+          "correction": "十位4变成3",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "两位数减一位数",
+        "退位减法"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "退位减法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "36 + 40 = ?",
+      "options": [
+        "66",
+        "76",
+        "86",
+        "56"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "76"
+      ],
+      "solution": [
+        "十位：3 + 4 = 7。",
+        "个位：6 + 0 = 6。",
+        "36 + 40 = 76。"
+      ],
+      "hints": [
+        "十位加十位",
+        "个位加个位",
+        "36+40=76"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 66",
+          "reason": "3+4算错",
+          "correction": "3+4=7，所以是76",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "两位数加整十数"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "加整十数"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "85 - 50 = ?",
+      "options": [
+        "35",
+        "45",
+        "25",
+        "15"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "35"
+      ],
+      "solution": [
+        "十位：8 - 5 = 3。",
+        "个位：5 - 0 = 5。",
+        "85 - 50 = 35。"
+      ],
+      "hints": [
+        "十位减十位",
+        "个位减个位",
+        "85-50=35"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 45",
+          "reason": "8-5算错",
+          "correction": "8-5=3，所以是35",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "两位数减整十数"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "减整十数"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-09",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "28 + 15 = ____",
+      "answer": "43",
+      "acceptableAnswers": [
+        "43",
+        "四十三"
+      ],
+      "solution": [
+        "个位：8 + 5 = 13，写 3 进 1。",
+        "十位：2 + 1 + 1（进位）= 4。",
+        "28 + 15 = 43。"
+      ],
+      "hints": [
+        "先算个位",
+        "再算十位",
+        "别忘记进位",
+        "8+5=13,2+1+1=4"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 33",
+          "reason": "忘记进位 1",
+          "correction": "2+1+1=4，十位是 4",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "两位数加两位数",
+        "进位"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "进位加法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "63 - 28 = ____",
+      "answer": "35",
+      "acceptableAnswers": [
+        "35",
+        "三十五"
+      ],
+      "solution": [
+        "个位：3 减 8 不够，向十位借 1 变成 13，13-8=5。",
+        "十位：6 被借走 1 剩 5，5 - 2 = 3。",
+        "63 - 28 = 35。"
+      ],
+      "hints": [
+        "个位不够减向十位借 1",
+        "13-8=5",
+        "十位 6→5，5-2=3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 45",
+          "reason": "十位没减 1",
+          "correction": "十位 6 借出 1 后剩 5，5-2=3",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "两位数减两位数",
+        "退位"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "退位减法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "45 + 38 + 12 = ?",
+      "options": [
+        "85",
+        "95",
+        "105",
+        "75"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "95"
+      ],
+      "solution": [
+        "先算 45 + 38 = 83。",
+        "再算 83 + 12 = 95。",
+        "或者巧算：38 + 12 = 50，45 + 50 = 95。"
+      ],
+      "hints": [
+        "先算能凑整的",
+        "38+12=50",
+        "45+50=95"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 85",
+          "reason": "中间步骤算错",
+          "correction": "45+38=83，83+12=95",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "连加",
+        "巧算"
+      ],
+      "estimatedTime": 130,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "连加",
+        "巧算"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "92 - 37 - 28 = ____",
+      "answer": "27",
+      "acceptableAnswers": [
+        "27",
+        "二十七"
+      ],
+      "solution": [
+        "先算 92 - 37 = 55。",
+        "再算 55 - 28 = 27。"
+      ],
+      "hints": [
+        "从左往右算",
+        "先 92-37=55",
+        "再 55-28=27"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 37",
+          "reason": "某一步退位出错",
+          "correction": "92-37=55，55-28=27",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "连减"
+      ],
+      "estimatedTime": 130,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "连减"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在□里填上合适的数字：\n45 + □8 = 83",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "3"
+      ],
+      "solution": [
+        "个位：5 + 8 = 13，个位是 3，和的个位是 3，正好对。",
+        "十位：4 + □ + 1（进位）= 8。",
+        "□ = 8 - 4 - 1 = 3。",
+        "检验：45 + 38 = 83，对！"
+      ],
+      "hints": [
+        "先看个位",
+        "再看十位",
+        "别忘了进位",
+        "4+□+1=8，□=3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 4",
+          "reason": "忘了进位",
+          "correction": "还要加进位的 1",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "求未知数",
+        "竖式推理"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "填空",
+        "推理"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-14",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "____ - 25 = 36",
+      "answer": "61",
+      "acceptableAnswers": [
+        "61",
+        "六十一"
+      ],
+      "solution": [
+        "什么数减 25 等于 36？",
+        "就是 25 + 36 = ?。",
+        "25 + 36 = 61。",
+        "检验：61 - 25 = 36，对！"
+      ],
+      "hints": [
+        "求被减数 = 减数 + 差",
+        "25+36=?",
+        "25+30=55，55+6=61"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 11",
+          "reason": "用 36-25了",
+          "correction": "应该是 25+36，不是减",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "求未知数",
+        "加减法关系"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "求未知数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-as100-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个数先加上 18，再减去 25，结果是 57。这个数是多少？",
+      "options": [
+        "50",
+        "64",
+        "70",
+        "80"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "64"
+      ],
+      "solution": [
+        "用倒推法，从结果出发。",
+        "原来是加，倒推就变成减；原来是减，倒推就变成加。",
+        "57 + 25 = 82（把减去的 25 加回来）。",
+        "82 - 18 = 64（把加上的 18 减掉）。",
+        "检验：64 + 18 = 82，82 - 25 = 57。对！"
+      ],
+      "hints": [
+        "倒推是个好方法",
+        "从结果 57 出发",
+        "+25 得 82",
+        "-18 得 64"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 50",
+          "reason": "倒推时加减搞反了",
+          "correction": "57+25=82，82-18=64",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "倒推法",
+        "还原问题"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "倒推",
+        "拔高"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    }
+  ]
+}

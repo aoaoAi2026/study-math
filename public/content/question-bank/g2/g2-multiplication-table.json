@@ -1,0 +1,465 @@
+{
+  "topicId": "g2-multiplication-table",
+  "topicName": "乘法口诀",
+  "grade": 2,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g2-mt-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "根据乘法口诀填空：二三得（______）",
+      "image": "",
+      "options": [],
+      "answer": "六",
+      "acceptableAnswers": ["六", "6"],
+      "solution": [
+        "乘法口诀是我们计算乘法的好帮手。",
+        "题目问的是：二三得（ ）。",
+        "口诀\"二三得六\"告诉我们：2×3=6。",
+        "所以答案是：六（或数字6）。"
+      ],
+      "hints": [
+        "回忆2的乘法口诀",
+        "想：2个3是多少？"
+      ],
+      "commonMistakes": [
+        {"mistake": "写成\"五\"", "reason": "把加法和乘法混淆了，2+3=5", "correction": "乘法是几个几相加，2个3是6", "errorLayer": "L1"},
+        {"mistake": "写成\"五\"", "reason": "记错了乘法口诀", "correction": "多背诵乘法口诀表，特别注意乘法结果", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "2的乘法口诀"],
+      "estimatedTime": 15,
+      "irtParams": { "a": 1.0, "b": -2.0, "c": 0.25 },
+      "tags": ["乘法口诀", "基础"]
+    },
+    {
+      "id": "g2-mt-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "小明有3盒铅笔，每盒有4支。一共有多少支铅笔？",
+      "image": "",
+      "options": ["7支", "10支", "12支", "15支"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "题目告诉我们：有3盒铅笔，每盒有4支。",
+        "求一共有多少支，就是求3个4是多少。",
+        "3个4相加：4+4+4=12。",
+        "用乘法计算：3×4=12（支）。",
+        "所以正确答案是12支。"
+      ],
+      "hints": [
+        "\"每盒\"说明每一盒都是一样多的",
+        "求几个几的问题可以用乘法"
+      ],
+      "commonMistakes": [
+        {"mistake": "选7支", "reason": "把3和4直接相加了", "correction": "应该是3个4相加，也就是3×4", "errorLayer": "L1"},
+        {"mistake": "选10支", "reason": "计算错误，4+4+4算成了10", "correction": "认真计算：4+4=8，8+4=12", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "乘法的意义", "3的乘法口诀", "4的乘法口诀"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": -1.5, "c": 0.25 },
+      "tags": ["乘法口诀", "应用题", "基础"]
+    },
+    {
+      "id": "g2-mt-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "计算：5×2=（　　）",
+      "image": "",
+      "options": ["7", "10", "12", "15"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "乘法口诀：二五一十。",
+        "5×2表示5个2相加或2个5相加。",
+        "2+2+2+2+2=10，所以5×2=10。"
+      ],
+      "hints": [
+        "回忆\"二五\"开头的口诀",
+        "2个5相加等于多少？"
+      ],
+      "commonMistakes": [
+        {"mistake": "选7", "reason": "把乘法做成了加法", "correction": "5×2是5个2相加，不是5+2", "errorLayer": "L1"},
+        {"mistake": "选12", "reason": "记错了乘法口诀", "correction": "记住：二五一十", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "5的乘法口诀"],
+      "estimatedTime": 15,
+      "irtParams": { "a": 1.0, "b": -1.8, "c": 0.25 },
+      "tags": ["乘法口诀", "计算"]
+    },
+    {
+      "id": "g2-mt-04",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "把加法算式改写成乘法算式：3+3+3+3+3=______×______",
+      "image": "",
+      "options": [],
+      "answer": "5×3",
+      "acceptableAnswers": ["5×3", "3×5", "5×3=15", "3×5=15"],
+      "solution": [
+        "算式中有5个3相加。",
+        "几个相同的数相加，可以用乘法表示。",
+        "5个3相加，写成乘法就是5×3或3×5。"
+      ],
+      "hints": [
+        "数一数有几个3相加？",
+        "几个几相加 = 几×几"
+      ],
+      "commonMistakes": [
+        {"mistake": "写成3×3", "reason": "数错了3的个数", "correction": "仔细数一数：3出现了5次", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法的意义", "乘法算式改写"],
+      "estimatedTime": 25,
+      "irtParams": { "a": 1.0, "b": -1.2, "c": 0.25 },
+      "tags": ["乘法口诀", "改写"]
+    },
+    {
+      "id": "g2-mt-05",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面哪个算式的得数最大？",
+      "image": "",
+      "options": ["6×3", "4×5", "2×9", "7×2"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "我们先把每个算式都算出来：",
+        "6×3 = 18（三六十八）",
+        "4×5 = 20（四五二十）",
+        "2×9 = 18（二九十八）",
+        "7×2 = 14（二七十四）",
+        "比较大小：20最大，所以选 4×5。"
+      ],
+      "hints": [
+        "先把每个算式都算出来",
+        "把答案都求出来再比较"
+      ],
+      "commonMistakes": [
+        {"mistake": "选2×9", "reason": "看到9就觉得最大，没计算", "correction": "必须认真计算每道题的结果再比较", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "比较大小"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.0, "c": 0.25 },
+      "tags": ["乘法口诀", "比较"]
+    },
+    {
+      "id": "g2-mt-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "一个星期有7天，6个星期有多少天？答：______天。",
+      "image": "",
+      "options": [],
+      "answer": "42",
+      "acceptableAnswers": ["42", "42天"],
+      "solution": [
+        "题目告诉我们：一个星期有7天，求6个星期有多少天。",
+        "这就是求6个7是多少，用乘法计算。",
+        "6×7=42（天）。",
+        "所以6个星期有42天。"
+      ],
+      "hints": [
+        "一个星期有7天",
+        "6个星期就是6个7"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成49", "reason": "错用了七七四十九", "correction": "应该用六七四十二", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "7的乘法口诀", "解决实际问题"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": 0.2, "c": 0.25 },
+      "tags": ["乘法口诀", "应用题"]
+    },
+    {
+      "id": "g2-mt-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "小红买了8块橡皮，每块橡皮5角钱。一共花了多少钱？",
+      "image": "",
+      "options": ["13角", "30角", "40角", "45角"],
+      "answer": "2",
+      "acceptableAnswers": ["2"],
+      "solution": [
+        "每块橡皮5角，买了8块。",
+        "求一共花多少钱，就是求8个5是多少。",
+        "8×5=40（角）。",
+        "所以一共花了40角（也就是4元）。"
+      ],
+      "hints": [
+        "\"每块\"5角，就是每一块都是5角",
+        "8块就是8个5角"
+      ],
+      "commonMistakes": [
+        {"mistake": "选13角", "reason": "把8和5直接相加", "correction": "应该用乘法：8×5=40", "errorLayer": "L1"},
+        {"mistake": "选30角", "reason": "数错了或者计算错误", "correction": "记住五八四十", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "8的乘法口诀", "解决实际问题"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.3, "c": 0.25 },
+      "tags": ["乘法口诀", "应用题", "购物"]
+    },
+    {
+      "id": "g2-mt-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "根据乘法口诀写算式：\n六八四十八\n乘法算式：______×______=______",
+      "image": "",
+      "options": [],
+      "answer": "6×8=48",
+      "acceptableAnswers": ["6×8=48", "8×6=48"],
+      "solution": [
+        "口诀\"六八四十八\"告诉我们6和8相乘等于48。",
+        "所以可以写成：6×8=48或8×6=48。",
+        "两个算式都对，因为两个数相乘，交换位置积不变。"
+      ],
+      "hints": [
+        "口诀里的两个数就是乘数",
+        "最后面的数是积"
+      ],
+      "commonMistakes": [
+        {"mistake": "写成6+8=14", "reason": "把乘法符号写错成加号", "correction": "乘法口诀是用乘法的，应该写×", "errorLayer": "L1"},
+        {"mistake": "写成6×8=46", "reason": "计算错误", "correction": "记住六八四十八，积是48", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "6的乘法口诀", "8的乘法口诀"],
+      "estimatedTime": 30,
+      "irtParams": { "a": 1.0, "b": 0.1, "c": 0.25 },
+      "tags": ["乘法口诀"]
+    },
+    {
+      "id": "g2-mt-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "在括号里填上最大的数：6×（　　）< 40",
+      "image": "",
+      "options": ["5", "6", "7", "8"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "我们来找找哪个数乘6比40小，但再大1就超过了。",
+        "6×6=36，36<40 ✓",
+        "6×7=42，42>40 ✗",
+        "所以括号里最大能填6。"
+      ],
+      "hints": [
+        "想想6的乘法口诀",
+        "从较小的数开始试"
+      ],
+      "commonMistakes": [
+        {"mistake": "选7", "reason": "没注意题目要求小于40", "correction": "6×7=42>40，不行", "errorLayer": "L2"},
+        {"mistake": "选5", "reason": "找到一个可以的就停了，没找最大的", "correction": "题目要填最大的，要一直试到超界为止", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "比较大小", "括号最大能填几"],
+      "estimatedTime": 45,
+      "irtParams": { "a": 1.0, "b": 0.5, "c": 0.25 },
+      "tags": ["乘法口诀", "比较"]
+    },
+    {
+      "id": "g2-mt-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "果园里有9棵苹果树，每棵树上有4个苹果。一共有多少个苹果？答：______个。",
+      "image": "",
+      "options": [],
+      "answer": "36",
+      "acceptableAnswers": ["36", "36个"],
+      "solution": [
+        "每棵树有4个苹果，有9棵树。",
+        "求一共多少个苹果，就是求9个4是多少。",
+        "9×4=36（个），或者4×9=36（个）。",
+        "所以一共有36个苹果。"
+      ],
+      "hints": [
+        "有9棵树，每棵4个苹果",
+        "求9个4是多少用乘法"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成32", "reason": "用错了乘法口诀，把四九三十六记错了", "correction": "记住：四九三十六", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "9的乘法口诀", "解决实际问题"],
+      "estimatedTime": 40,
+      "irtParams": { "a": 1.0, "b": 0.4, "c": 0.25 },
+      "tags": ["乘法口诀", "应用题"]
+    },
+    {
+      "id": "g2-mt-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一辆自行车有2个轮子，8辆自行车和5辆三轮车一共有多少个轮子？",
+      "image": "",
+      "options": ["16个", "31个", "15个", "30个"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "我们需要分别算出自行车和三轮车的轮子数。",
+        "自行车：8辆×2个轮子=16个轮子",
+        "三轮车：5辆×3个轮子=15个轮子",
+        "一共：16+15=31个轮子。"
+      ],
+      "hints": [
+        "先分别算出两种车的轮子数",
+        "三轮车有3个轮子不要忘记",
+        "最后把轮子数加起来"
+      ],
+      "commonMistakes": [
+        {"mistake": "选16个", "reason": "只算了自行车的轮子，没算三轮车", "correction": "题目问的是一共，需要把两种车都算上", "errorLayer": "L2"},
+        {"mistake": "选15个", "reason": "只算了三轮车的轮子", "correction": "应该把自行车和三轮车都算进去", "errorLayer": "L2"},
+        {"mistake": "选30个", "reason": "计算16+15=31时算错", "correction": "16+15=31，认真计算", "errorLayer": "L1"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "解决实际问题", "乘加问题"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 1.0, "c": 0.25 },
+      "tags": ["乘法口诀", "应用题", "综合"]
+    },
+    {
+      "id": "g2-mt-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个长方形，长是7厘米，宽是5厘米。它的周长是多少厘米？答：______厘米。",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": ["24", "24厘米"],
+      "solution": [
+        "长方形有2条长和2条宽。",
+        "周长就是把四条边都加起来。",
+        "7+5+7+5=24（厘米）",
+        "也可以这样算：(7+5)×2=12×2=24（厘米）。",
+        "所以周长是24厘米。"
+      ],
+      "hints": [
+        "长方形有几条边？",
+        "周长就是把所有边加起来",
+        "长有2条，宽有2条"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成12", "reason": "只算了一条长和一条宽", "correction": "长方形各有2条长和宽，应该是(7+5)×2", "errorLayer": "L2"},
+        {"mistake": "答案写成35", "reason": "算成了面积", "correction": "周长是四边之和，不是长×宽", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "长方形周长", "解决实际问题"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 1.2, "c": 0.25 },
+      "tags": ["乘法口诀", "周长", "几何"]
+    },
+    {
+      "id": "g2-mt-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小朋友们排队做操，每行站8人，站了6行还多出3人。一共有多少个小朋友？",
+      "image": "",
+      "options": ["48人", "51人", "45人", "54人"],
+      "answer": "1",
+      "acceptableAnswers": ["1"],
+      "solution": [
+        "每行8人，6行就是6个8。",
+        "6×8=48（人）",
+        "还多出3人，所以再加3。",
+        "48+3=51（人）。",
+        "一共51个小朋友。"
+      ],
+      "hints": [
+        "先算6行有多少人",
+        "多出来的人也要加上"
+      ],
+      "commonMistakes": [
+        {"mistake": "选48人", "reason": "只算了6行的人，忘了多出的3人", "correction": "多出的人也要加上", "errorLayer": "L2"},
+        {"mistake": "选45人", "reason": "用6×8计算错误", "correction": "六八四十八不是四十五", "errorLayer": "L2"},
+        {"mistake": "选54人", "reason": "把多出的3人当成了3行", "correction": "多出3人是加3，不是再加一行", "errorLayer": "L3"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "乘加混合", "解决实际问题"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 1.1, "c": 0.25 },
+      "tags": ["乘法口诀", "应用题", "排队"]
+    },
+    {
+      "id": "g2-mt-14",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "小松鼠有3袋松果，每袋有8个。它吃了6个，还剩多少个松果？答：______个。",
+      "image": "",
+      "options": [],
+      "answer": "18",
+      "acceptableAnswers": ["18", "18个"],
+      "solution": [
+        "先算一共有多少个松果。",
+        "3×8=24（个）",
+        "吃了6个，就从总数里减去6。",
+        "24-6=18（个）。",
+        "所以还剩18个松果。"
+      ],
+      "hints": [
+        "先算原来有多少个松果",
+        "吃了的要从总数里减去"
+      ],
+      "commonMistakes": [
+        {"mistake": "答案写成24", "reason": "只算了总数，没有减去吃了的", "correction": "吃了6个要减去：24-6=18", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "乘减混合", "解决实际问题"],
+      "estimatedTime": 60,
+      "irtParams": { "a": 1.0, "b": 0.9, "c": 0.25 },
+      "tags": ["乘法口诀", "应用题"]
+    },
+    {
+      "id": "g2-mt-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "老师给6个小朋友发糖果，每人发5颗，还剩下4颗。如果老师想给每个小朋友发7颗，还差多少颗糖果？",
+      "image": "",
+      "options": ["还差5颗", "还差6颗", "还差7颗", "还差8颗"],
+      "answer": "3",
+      "acceptableAnswers": ["3"],
+      "solution": [
+        "先算老师原来有多少颗糖果。",
+        "6×5+4=30+4=34（颗）",
+        "如果每人发7颗，一共需要多少颗？",
+        "6×7=42（颗）",
+        "还差多少颗？42-34=8（颗）。",
+        "所以还差8颗糖果。"
+      ],
+      "hints": [
+        "先算出老师现在有多少颗糖",
+        "再算发7颗需要多少颗糖",
+        "两者的差就是还差的"
+      ],
+      "commonMistakes": [
+        {"mistake": "选还差6颗", "reason": "只算了每人多发2颗，6×2=12，减去剩下的4颗得8，方法不同但要仔细计算", "correction": "每人多发2颗：6×2=12颗，但老师剩4颗，还差12-4=8颗", "errorLayer": "L2"},
+        {"mistake": "选还差5颗", "reason": "中间步骤计算错误", "correction": "6×7=42，42-34=8", "errorLayer": "L2"}
+      ],
+      "source": { "type": "textbook", "name": "人教版二年级练习", "year": 2023 },
+      "knowledgePoints": ["乘法口诀", "乘加乘减", "较复杂的应用题"],
+      "estimatedTime": 90,
+      "irtParams": { "a": 1.0, "b": 1.8, "c": 0.25 },
+      "tags": ["乘法口诀", "应用题", "综合"]
+    }
+  ]
+}

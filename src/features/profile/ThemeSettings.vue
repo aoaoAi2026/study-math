@@ -44,6 +44,12 @@ function previewColors(theme: ThemeConfig) {
       >
         <!-- 色块预览 -->
         <div class="color-preview" :style="{ background: previewColors(theme).bgCard }">
+          <!-- 夜间模式特殊标识 -->
+          <div v-if="theme.name === 'dark-mode'" class="dark-mode-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </div>
           <div class="color-bar">
             <span class="swatch" :style="{ background: previewColors(theme).primaryDark }"></span>
             <span class="swatch" :style="{ background: previewColors(theme).primary }"></span>
@@ -137,6 +143,16 @@ function previewColors(theme: ThemeConfig) {
   flex: 1;
   height: 16px;
   border-radius: var(--radius-sm);
+}
+
+.dark-mode-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #fbbf24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mock-text {

@@ -1,0 +1,182 @@
+{
+    "paperId": "xiwang-1-g1",
+    "title": "第一届小学《希望杯》全国数学邀请赛 一年级（第二试）",
+    "grade": 1,
+    "category": "aoshu-xiwang",
+    "duration": 60,
+    "totalScore": 120,
+    "difficultyLevel": 1,
+    "year": 2003,
+    "source": "希望杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "一、填空题（每题6分，共60分）", "count": 10, "scorePerQuestion": 6},
+        {"name": "二、解答题（每题12分，共60分）", "count": 5, "scorePerQuestion": 12}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = ______。",
+            "answer": "45",
+            "score": 6,
+            "solution": "首尾配对：(1+9)+(2+8)+(3+7)+(4+6)+5=10+10+10+10+5=45。",
+            "knowledgePoints": ["连加", "巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "计算：2 + 4 + 6 + 8 + 10 + 12 = ______。",
+            "answer": "42",
+            "score": 6,
+            "solution": "(2+12)+(4+10)+(6+8)=14+14+14=42。",
+            "knowledgePoints": ["连加", "偶数"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "找规律填数：1、3、5、7、______、11。",
+            "answer": "9",
+            "score": 6,
+            "solution": "每次加2：1+2=3，3+2=5，5+2=7，7+2=9。",
+            "knowledgePoints": ["找规律", "奇数"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "找规律填数：2、5、8、11、______、17。",
+            "answer": "14",
+            "score": 6,
+            "solution": "每次加3：2+3=5，5+3=8，8+3=11，11+3=14。",
+            "knowledgePoints": ["找规律", "等差数列"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 1,
+            "sectionNo": 1,
+            "stem": "小明有15颗糖，给了弟弟6颗，又从妈妈那里得到8颗。小明现在有______颗糖。",
+            "answer": "17",
+            "score": 6,
+            "solution": "15-6+8=17颗。",
+            "knowledgePoints": ["加减法应用"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个正方形有______条边，______个角。",
+            "answer": "4",
+            "score": 6,
+            "solution": "正方形有4条相等的边和4个直角。",
+            "knowledgePoints": ["认识图形"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "在下面的算式中，相同的图形代表相同的数。如果△ + △ = 10，那么△ = ______。",
+            "answer": "5",
+            "score": 6,
+            "solution": "两个相同的数相加等于10，10÷2=5，所以△=5。",
+            "knowledgePoints": ["图形代数"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "小红前面有5个人，后面有4个人。这一排一共有______个人。",
+            "answer": "10",
+            "score": 6,
+            "solution": "5+1+4=10人（别忘了小红自己）。",
+            "knowledgePoints": ["排队问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "时钟上，时针指向3，分针指向12，此时是______时。",
+            "answer": "3",
+            "score": 6,
+            "solution": "分针指向12时是整点，时针指向3就是3时。",
+            "knowledgePoints": ["认识时钟"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "把一根绳子对折后从中间剪断，绳子被剪成了______段。",
+            "answer": "3",
+            "score": 6,
+            "solution": "对折后剪一刀，有3个端点就有3段。画图验证：中间剪一刀，变成3段。",
+            "knowledgePoints": ["剪绳子问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 2,
+            "stem": "（解答题）小朋友排队，小刚前面有6个人，后面有8个人。这一队共有多少个小朋友？",
+            "answer": "15",
+            "score": 12,
+            "solution": "前面6人+小刚1人+后面8人=6+1+8=15人。",
+            "knowledgePoints": ["排队问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）学校有篮球和足球共20个，其中篮球比足球多4个。篮球和足球各有多少个？",
+            "answer": "12",
+            "score": 12,
+            "solution": "篮球=(20+4)÷2=12个，足球=20-12=8个。验证：12+8=20，12-8=4。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）一本书共100页，小华每天读10页，读了3天后。还剩多少页没读？",
+            "answer": "70",
+            "score": 12,
+            "solution": "3天读了3×10=30页，还剩100-30=70页。",
+            "knowledgePoints": ["应用题"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）鸡和兔关在一个笼子里，共有8个头，20只脚。问鸡有多少只？",
+            "answer": "6",
+            "score": 12,
+            "solution": "假设全是兔：8×4=32脚。实际20脚，多出12脚。每换一只鸡少2脚，鸡=12÷2=6只。验证：6×2+2×4=12+8=20。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q15",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）小红今年7岁，妈妈今年31岁。多少年后，妈妈的年龄是小红的3倍？",
+            "answer": "5",
+            "score": 12,
+            "solution": "年龄差=31-7=24岁。当妈妈是小红3倍时，差2倍对应24岁，小红=12岁。12-7=5年后。验证：5年后小红12岁，妈妈36岁，36÷12=3。",
+            "knowledgePoints": ["年龄问题"]
+        }
+    ]
+}

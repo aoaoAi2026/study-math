@@ -139,19 +139,37 @@ const filteredArticles = computed(() =>
 function toggleArticle(id: number) {
   expandedId.value = expandedId.value === id ? null : id
 }
+
+function formatContent(content: string): string {
+  return content
+    .replace(/\n/g, '<br>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/^(\d+\.\s)/gm, '<span class="academy__list-num">$1</span>')
+}
+
+const categoryColors: Record<Exclude<Category, '全部'>, { bg: string; text: string; border: string }> = {
+  '辅导方法': { bg: 'rgba(59, 130, 246, 0.15)', text: '#60a5fa', border: '#3b82f6' },
+  '心理建设': { bg: 'rgba(236, 72, 153, 0.15)', text: '#f472b6', border: '#ec4899' },
+  '习惯培养': { bg: 'rgba(34, 197, 94, 0.15)', text: '#4ade80', border: '#22c55e' },
+  '奥数入门': { bg: 'rgba(251, 191, 36, 0.15)', text: '#fcd34d', border: '#f59e0b' }
+}
 </script>
 
 <template>
   <div class="academy">
     <header class="academy__header">
-      <h1>家长学院</h1>
-      <p>教育指南与辅导方法，陪伴孩子快乐学数学</p>
+      <div class="academy__hero">
+        <div class="academy__icon">📚</div>
+        <h1 class="academy__title">家长学院</h1>
+        <p class="academy__subtitle">Parent Academy</p>
+        <p class="academy__desc">教育指南与辅导方法，陪伴孩子快乐学数学</p>
+      </div>
     </header>
 
     <nav class="academy__tabs">
       <button
         v-for="cat in categories" :key="cat"
-        class="pill"
+        class="academy__tab"
         :class="{ active: activeCategory === cat }"
         @click="activeCategory = cat"
       >{{ cat }}</button>
@@ -165,13 +183,25 @@ function toggleArticle(id: number) {
         @click="toggleArticle(item.id)"
       >
         <div class="academy__card-header">
-          <span class="academy__tag" :class="`tag--${item.category}`">{{ item.category }}</span>
-          <h3>{{ item.title }}</h3>
-          <p class="academy__summary">{{ item.summary }}</p>
-          <span class="academy__toggle">{{ expandedId === item.id ? '收起' : '展开详情' }}</span>
+          <div class="academy__card-tag">
+            <span 
+              class="academy__tag"
+              :style="{ 
+                background: categoryColors[item.category].bg,
+                color: categoryColors[item.category].text,
+                borderColor: categoryColors[item.category].border
+              }"
+            >{{ item.category }}</span>
+          </div>
+          <h3 class="academy__card-title">{{ item.title }}</h3>
+          <p class="academy__card-summary">{{ item.summary }}</p>
+          <div class="academy__card-toggle">
+            <span class="academy__toggle-text">{{ expandedId === item.id ? '收起' : '展开详情' }}</span>
+            <span class="academy__toggle-icon" :class="{ rotated: expandedId === item.id }">▼</span>
+          </div>
         </div>
-        <div v-if="expandedId === item.id" class="academy__detail" @click.stop>
-          <div class="academy__content" v-html="item.content.replace(/\n/g, '<br>')" />
+        <div v-if="expandedId === item.id" class="academy__card-detail" @click.stop>
+          <div class="academy__content" v-html="formatContent(item.content)" />
         </div>
       </article>
     </div>
@@ -180,94 +210,200 @@ function toggleArticle(id: number) {
 
 <style scoped>
 .academy {
-  max-width: 720px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: var(--space-4);
+  padding: 24px 0;
 }
+
 .academy__header {
   text-align: center;
-  margin-bottom: var(--space-5);
+  margin-bottom: 32px;
 }
-.academy__header h1 {
-  font-size: var(--text-3xl);
-  color: var(--text-primary);
-  margin-bottom: var(--space-1);
+
+.academy__hero {
+  padding: 24px;
 }
-.academy__header p {
+
+.academy__icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.academy__title {
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #f472b6, #7c3aed, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 4px;
+}
+
+.academy__subtitle {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  letter-spacing: 4px;
+  margin-bottom: 12px;
+}
+
+.academy__desc {
   color: var(--text-secondary);
-  font-size: var(--text-sm);
+  font-size: 14px;
 }
+
 .academy__tabs {
   display: flex;
-  gap: var(--space-2);
+  gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: var(--space-5);
+  margin-bottom: 32px;
 }
-.pill {
-  padding: var(--space-2) var(--space-4);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-full);
+
+.academy__tab {
+  padding: 12px 24px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 30px;
   background: var(--bg-card);
   color: var(--text-secondary);
-  font-size: var(--text-sm);
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
 }
-.pill:hover { border-color: var(--color-primary-light); color: var(--color-primary); }
-.pill.active { background: var(--color-primary); color: var(--text-inverse); border-color: var(--color-primary); }
+
+.academy__tab:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  color: var(--color-primary);
+}
+
+.academy__tab.active {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+}
+
+.academy__list {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 .academy__card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  margin-bottom: var(--space-3);
+  border-radius: 20px;
+  margin-bottom: 16px;
   cursor: pointer;
-  transition: all 0.25s;
+  transition: all 0.3s ease;
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
-.academy__card:hover { border-color: var(--color-primary-light); }
-.academy__card.expanded { border-color: var(--color-primary); }
+
+.academy__card:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+  background: var(--bg-hover);
+}
+
+.academy__card.expanded {
+  border-color: rgba(99, 102, 241, 0.5);
+}
 
 .academy__card-header {
-  padding: var(--space-4);
+  padding: 20px 24px;
 }
+
+.academy__card-tag {
+  margin-bottom: 12px;
+}
+
 .academy__tag {
   display: inline-block;
-  padding: 2px 10px;
-  border-radius: var(--radius-full);
+  padding: 6px 14px;
+  border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
-  margin-bottom: var(--space-2);
+  border: 1px solid;
 }
-.tag--辅导方法 { background: #dbeafe; color: #1d4ed8; }
-.tag--心理建设 { background: #fce7f3; color: #be185d; }
-.tag--习惯培养 { background: #d1fae5; color: #047857; }
-.tag--奥数入门 { background: #fef3c7; color: #b45309; }
 
-.academy__card-header h3 {
-  font-size: var(--text-lg);
+.academy__card-title {
+  font-size: 18px;
+  font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: var(--space-1);
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
-.academy__summary {
+
+.academy__card-summary {
   color: var(--text-secondary);
-  font-size: var(--text-sm);
-  margin-bottom: var(--space-2);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
 }
-.academy__toggle {
+
+.academy__card-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.academy__toggle-text {
+  font-size: 13px;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.academy__toggle-icon {
   font-size: 12px;
   color: var(--color-primary);
+  transition: transform 0.3s ease;
 }
-.academy__detail {
-  padding: 0 var(--space-4) var(--space-4);
-  border-top: 1px solid var(--border-color-light);
-  margin-top: var(--space-2);
-  padding-top: var(--space-3);
+
+.academy__toggle-icon.rotated {
+  transform: rotate(180deg);
 }
+
+.academy__card-detail {
+  padding: 0 24px 24px;
+  border-top: 1px solid var(--border-color);
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .academy__content {
-  color: var(--text-primary);
-  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  font-size: 14px;
   line-height: 1.8;
+  padding-top: 20px;
+}
+
+.academy__content strong {
+  color: var(--color-primary-light);
+  font-weight: 600;
+}
+
+.academy__list-num {
+  color: var(--color-info);
+  font-weight: 600;
+}
+
+.academy__content br {
+  display: block;
+  margin: 12px 0;
 }
 </style>

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import AppLayout from '@/components/layout/AppLayout.vue'
 
 const router = useRouter()
 
@@ -64,42 +63,40 @@ function useTool(id: string) {
 </script>
 
 <template>
-  <AppLayout>
-    <div class="toolbox-page">
-      <header class="tb-header">
-        <h1>🛠️ 教具工具箱</h1>
-        <p class="muted">数学学习的好帮手</p>
-      </header>
+  <div class="toolbox-page">
+    <header class="tb-header">
+      <h1>🛠️ 教具工具箱</h1>
+      <p class="muted">数学学习的好帮手</p>
+    </header>
 
-      <div class="category-tabs">
-        <button
-          v-for="c in categories"
-          :key="c.id"
-          class="category-tab"
-          :class="{ active: selectedCategory === c.id }"
-          @click="selectedCategory = c.id"
-        >
-          {{ c.label }}
-        </button>
-      </div>
+    <div class="category-tabs">
+      <button
+        v-for="c in categories"
+        :key="c.id"
+        class="category-tab"
+        :class="{ active: selectedCategory === c.id }"
+        @click="selectedCategory = c.id"
+      >
+        {{ c.label }}
+      </button>
+    </div>
 
-      <div class="tools-grid">
-        <div
-          v-for="tool in filteredTools"
-          :key="tool.id"
-          class="tool-card"
-          @click="useTool(tool.id)"
-        >
-          <div class="tool-icon">{{ tool.icon }}</div>
-          <div class="tool-info">
-            <h3 class="tool-name">{{ tool.name }}</h3>
-            <p class="tool-desc">{{ tool.desc }}</p>
-          </div>
-          <button class="use-btn">使用</button>
+    <div class="tools-grid">
+      <div
+        v-for="tool in filteredTools"
+        :key="tool.id"
+        class="tool-card"
+        @click="useTool(tool.id)"
+      >
+        <div class="tool-icon">{{ tool.icon }}</div>
+        <div class="tool-info">
+          <h3 class="tool-name">{{ tool.name }}</h3>
+          <p class="tool-desc">{{ tool.desc }}</p>
         </div>
+        <button class="use-btn">使用</button>
       </div>
     </div>
-  </AppLayout>
+  </div>
 </template>
 
 <style scoped>
@@ -130,16 +127,16 @@ function useTool(id: string) {
 }
 .category-tab {
   padding: 10px 20px;
-  border: 2px solid #E2E8F0;
+  border: 2px solid var(--border-color);
   border-radius: 12px;
-  background: #fff;
+  background: var(--bg-card);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.15s;
 }
 .category-tab.active {
-  background: #4F7DF8;
-  border-color: #4F7DF8;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: white;
 }
 
@@ -149,10 +146,10 @@ function useTool(id: string) {
   gap: 16px;
 }
 .tool-card {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 16px;
   padding: 20px;
-  border: 2px solid #E2E8F0;
+  border: 2px solid var(--border-color);
   display: flex;
   align-items: center;
   gap: 16px;
@@ -160,9 +157,9 @@ function useTool(id: string) {
   transition: all 0.15s;
 }
 .tool-card:hover {
-  border-color: #4F7DF8;
+  border-color: var(--color-primary);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  box-shadow: var(--shadow-md);
 }
 .tool-icon {
   font-size: 40px;
@@ -171,7 +168,7 @@ function useTool(id: string) {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #F8FAFC;
+  background: var(--bg-hover);
   border-radius: 14px;
 }
 .tool-info {
@@ -179,16 +176,16 @@ function useTool(id: string) {
 }
 .tool-name {
   font-size: 16px;
-  color: #2C3E50;
+  color: var(--text-primary);
   margin-bottom: 4px;
 }
 .tool-desc {
   font-size: 13px;
-  color: #6B7785;
+  color: var(--text-secondary);
 }
 .use-btn {
   padding: 8px 16px;
-  background: #4F7DF8;
+  background: var(--color-primary);
   color: white;
   border-radius: 10px;
   font-weight: 500;

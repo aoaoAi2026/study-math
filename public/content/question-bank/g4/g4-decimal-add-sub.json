@@ -1,0 +1,233 @@
+{
+    "topicId": "g4-decimal-add-sub",
+    "title": "小数加减法",
+    "grade": 4,
+    "category": "基础",
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 1,
+            "stem": "计算：0.5 + 0.3 = ______",
+            "answer": "0.8",
+            "solution": "小数加法：对齐小数点，5+3=8，所以0.5+0.3=0.8",
+            "knowledgePoints": ["小数加法", "小数点对齐"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 1,
+            "stem": "计算：1.2 + 0.8 = ______",
+            "answer": "2",
+            "solution": "1.2+0.8=2.0，小数末尾的0可以省略，所以结果是2",
+            "knowledgePoints": ["小数加法", "进位"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 1,
+            "stem": "计算：0.9 - 0.4 = ______",
+            "answer": "0.5",
+            "solution": "小数减法：对齐小数点，9-4=5，所以0.9-0.4=0.5",
+            "knowledgePoints": ["小数减法", "小数点对齐"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "计算：3.5 + 2.4 = ______",
+            "answer": "5.9",
+            "solution": "3+2=5，0.5+0.4=0.9，合起来是5.9",
+            "knowledgePoints": ["小数加法", "整数小数分开算"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "计算：5.6 - 3.2 = ______",
+            "answer": "2.4",
+            "solution": "5-3=2，0.6-0.2=0.4，合起来是2.4",
+            "knowledgePoints": ["小数减法", "整数小数分开算"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "计算：10.5 + 8.3 = ______",
+            "answer": "18.8",
+            "solution": "10+8=18，0.5+0.3=0.8，合起来是18.8",
+            "knowledgePoints": ["小数加法", "整数部分相加"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "计算：15.6 - 7.4 = ______",
+            "answer": "8.2",
+            "solution": "15-7=8，0.6-0.4=0.2，合起来是8.2",
+            "knowledgePoints": ["小数减法", "整数部分相减"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "计算：2.75 + 1.25 = ______",
+            "answer": "4",
+            "solution": "2+1=3，0.75+0.25=1，3+1=4",
+            "knowledgePoints": ["小数加法", "两位小数"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "计算：5.36 - 2.14 = ______",
+            "answer": "3.22",
+            "solution": "5-2=3，0.36-0.14=0.22，合起来是3.22",
+            "knowledgePoints": ["小数减法", "两位小数"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "计算：12.8 + 3.75 = ______",
+            "answer": "16.55",
+            "solution": "12+3=15，0.8+0.75=1.55，15+1.55=16.55",
+            "knowledgePoints": ["小数加法", "位数不同"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "计算：8.4 - 5.67 = ______",
+            "answer": "2.73",
+            "solution": "8.40-5.67=2.73（注意补0）",
+            "knowledgePoints": ["小数减法", "位数不同"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "小明有5.8元，小红有3.6元，两人一共有______元。",
+            "answer": "9.4",
+            "solution": "5.8+3.6=9.4元",
+            "knowledgePoints": ["小数加法应用题"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "计算：10 - 3.25 = ______",
+            "answer": "6.75",
+            "solution": "10.00-3.25=6.75",
+            "knowledgePoints": ["小数减法", "整数减小数"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "一根绳子长15.2米，用去了7.8米，还剩______米。",
+            "answer": "7.4",
+            "solution": "15.2-7.8=7.4米",
+            "knowledgePoints": ["小数减法应用题"]
+        },
+        {
+            "id": "q15",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "计算：2.35 + 4.65 - 3.2 = ______",
+            "answer": "3.8",
+            "solution": "先算2.35+4.65=7，再算7-3.2=3.8",
+            "knowledgePoints": ["小数混合运算"]
+        },
+        {
+            "id": "q16",
+            "type": "fill",
+            "difficulty": 1,
+            "stem": "计算：0.6 + 0.4 = ______",
+            "answer": "1",
+            "solution": "0.6+0.4=1.0，小数末尾的0可以省略，所以结果是1",
+            "knowledgePoints": ["小数加法", "进位"]
+        },
+        {
+            "id": "q17",
+            "type": "fill",
+            "difficulty": 1,
+            "stem": "计算：1.4 - 0.2 = ______",
+            "answer": "1.2",
+            "solution": "1.4-0.2=1.2",
+            "knowledgePoints": ["小数减法"]
+        },
+        {
+            "id": "q18",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "计算：7.3 + 2.6 = ______",
+            "answer": "9.9",
+            "solution": "7+2=9，0.3+0.6=0.9，合起来是9.9",
+            "knowledgePoints": ["小数加法"]
+        },
+        {
+            "id": "q19",
+            "type": "fill",
+            "difficulty": 2,
+            "stem": "计算：6.8 - 4.5 = ______",
+            "answer": "2.3",
+            "solution": "6-4=2，0.8-0.5=0.3，合起来是2.3",
+            "knowledgePoints": ["小数减法"]
+        },
+        {
+            "id": "q20",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "计算：3.456 + 2.544 = ______",
+            "answer": "6",
+            "solution": "3.456+2.544=6.000，可以简写为6",
+            "knowledgePoints": ["小数加法", "三位小数"]
+        },
+        {
+            "id": "q21",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "计算：9.001 + 0.999 = ______",
+            "answer": "10",
+            "solution": "9.001+0.999=10.000，可以简写为10",
+            "knowledgePoints": ["小数加法", "进位"]
+        },
+        {
+            "id": "q22",
+            "type": "fill",
+            "difficulty": 3,
+            "stem": "水果店上午卖了4.5千克苹果，下午卖了3.8千克苹果，一共卖了______千克。",
+            "answer": "8.3",
+            "solution": "4.5+3.8=8.3千克",
+            "knowledgePoints": ["小数加法应用题"]
+        },
+        {
+            "id": "q23",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "一根铁丝长20米，第一次用去6.75米，第二次用去5.25米，还剩______米。",
+            "answer": "8",
+            "solution": "20-6.75-5.25=20-12=8米",
+            "knowledgePoints": ["小数连减应用题"]
+        },
+        {
+            "id": "q24",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "计算：15.6 + 7.85 - 3.45 = ______",
+            "answer": "20",
+            "solution": "先算15.6+7.85=23.45，再减3.45等于20",
+            "knowledgePoints": ["小数混合运算"]
+        },
+        {
+            "id": "q25",
+            "type": "fill",
+            "difficulty": 4,
+            "stem": "小明买了三本书，价格分别是12.5元、8.75元和6.25元，一共花了______元。",
+            "answer": "27.5",
+            "solution": "12.5+8.75+6.25=27.5元",
+            "knowledgePoints": ["小数连加应用题"]
+        }
+    ]
+}

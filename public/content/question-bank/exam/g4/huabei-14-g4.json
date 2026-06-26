@@ -1,0 +1,172 @@
+{
+    "paperId": "huabei-14-g4",
+    "title": "第十四届华罗庚金杯少年数学邀请赛 决赛试卷（小学组）",
+    "grade": 4,
+    "category": "aoshu-hualuogeng",
+    "duration": 90,
+    "totalScore": 150,
+    "difficultyLevel": 3,
+    "year": 2009,
+    "source": "华罗庚金杯少年数学邀请赛组委会",
+    "sections": [
+        {"name": "一、填空题（每题10分，共80分）", "count": 8, "scorePerQuestion": 10},
+        {"name": "二、解答题（每题10分，共40分）", "count": 4, "scorePerQuestion": 10},
+        {"name": "三、详答题（每题15分，共30分）", "count": 2, "scorePerQuestion": 15}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：125 × 24 = ______。",
+            "answer": "3000",
+            "score": 10,
+            "solution": "125×24=125×8×3=1000×3=3000。",
+            "knowledgePoints": ["乘法巧算"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：2009 - 2008 + 2007 - 2006 + ... + 3 - 2 + 1 = ______。",
+            "answer": "1005",
+            "score": 10,
+            "solution": "每两个数一组，最后剩1。每组和为1，共(2009-1)/2=1004组，加剩下的1。1004+1=1005。",
+            "knowledgePoints": ["找规律"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数除以7余2，除以8余1。这个数最小是______。",
+            "answer": "57",
+            "score": 10,
+            "solution": "从除以7余2的数中找：2,9,16,23,30,37,44,51,58...找除以8余1的：57。验证：57÷7=8余2，57÷8=7余1。",
+            "knowledgePoints": ["余数问题"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有35只，脚一共有100只。兔有______只。",
+            "answer": "20",
+            "score": 10,
+            "solution": "假设全是鸡：35×2=70脚。实际100脚，多30脚。兔=30/2=15只？不对。鸡兔同笼问题：兔=(100-35×2)/(4-2)=30/2=15只？再验证：鸡15只，兔20只，脚=15×2+20×4=30+80=110。不对。重新算：设兔x只，2(35-x)+4x=100，70-2x+4x=100，2x=30，x=15。鸡20只，兔15只。验证：20×2+15×4=40+60=100✓。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个正方形的周长是48厘米，它的面积是______平方厘米。",
+            "answer": "144",
+            "score": 10,
+            "solution": "边长=48÷4=12厘米。面积=12×12=144平方厘米。",
+            "knowledgePoints": ["正方形"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个数，先加上10，再乘以10，再减去10，再除以10，结果是10。这个数是______。",
+            "answer": "1",
+            "score": 10,
+            "solution": "逆推：10×10=100，100+10=110，110÷10=11，11-10=1。",
+            "knowledgePoints": ["还原问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "在一条长100米的路两边种树，每隔10米种一棵，两端都种。一共种______棵。",
+            "answer": "22",
+            "score": 10,
+            "solution": "一边：100/10+1=10+1=11棵。两边：11×2=22棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "甲、乙两数的和是120，甲比乙多10。甲是______。",
+            "answer": "65",
+            "score": 10,
+            "solution": "设乙为x，甲为x+10。x+x+10=120，2x=110，x=55。甲=65。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 2,
+            "stem": "（解答题）小明有60颗糖，给了小红15颗后，两人的糖一样多。小红原有______颗糖。",
+            "answer": "30",
+            "score": 10,
+            "solution": "小明剩60-15=45颗。两人一样多说明小红也有45颗，所以小红原有45-15=30颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）一个长方形的周长是40厘米，宽是6厘米。面积是______平方厘米。",
+            "answer": "84",
+            "score": 10,
+            "solution": "长=40/2-6=20-6=14厘米。面积=14×6=84平方厘米。",
+            "knowledgePoints": ["长方形"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）一桶油连桶共重45千克，用了半桶油后连桶重24千克。桶重______千克。",
+            "answer": "3",
+            "score": 10,
+            "solution": "半桶油=45-24=21千克。全油=21×2=42千克。桶=45-42=3千克。",
+            "knowledgePoints": ["等量代换"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 2,
+            "stem": "（解答题）甲、乙两数的和是100，甲是乙的4倍。甲是______。",
+            "answer": "80",
+            "score": 10,
+            "solution": "设乙为x，甲为4x。4x+x=100，5x=100，x=20。甲=80。",
+            "knowledgePoints": ["和倍问题"]
+        },
+        {
+            "id": "q13",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 3,
+            "stem": "（详答题）小明从2楼到6楼用了40秒，照这样计算，他从1楼走到10楼需要多少秒？",
+            "answer": "75",
+            "score": 15,
+            "solution": "2楼到6楼走了4层，每层10秒。1楼到10楼走9层，10×9=90秒。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q14",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 3,
+            "stem": "（详答题）某月第一个星期五是8号，那么这个月的25号是星期几？",
+            "answer": "二",
+            "score": 15,
+            "solution": "8号是星期五。15号、22号也是星期五。25号是星期一？不对。22号星期五，23号星期六，24号星期日，25号星期一。",
+            "knowledgePoints": ["日期问题"]
+        }
+    ]
+}

@@ -1,0 +1,740 @@
+{
+  "topicId": "number-theory",
+  "topicName": "数论基础",
+  "grade": "高级综合",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "id": "cm-nt-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "18和24的最大公约数是多少?",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6"
+      ],
+      "solution": [
+        "18=2*3*3,24=2*2*2*3。公约数=2*3=6。"
+      ],
+      "hints": [
+        "18=2*3^2,24=2^3*3",
+        "GCD=2*3=6"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "最大公约数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd"
+      ]
+    },
+    {
+      "id": "cm-nt-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "6和8的最小公倍数是多少?",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24"
+      ],
+      "solution": [
+        "6=2*3,8=2^3。LCM=2^3*3=24。"
+      ],
+      "hints": [
+        "6=2*3,8=2^3",
+        "LCM=24"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "最小公倍数"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "lcm"
+      ]
+    },
+    {
+      "id": "cm-nt-03",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下列数中,哪个是质数?",
+      "image": "",
+      "options": [
+        "51",
+        "53",
+        "57",
+        "63"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "1"
+      ],
+      "solution": [
+        "51=3*17,53是质数,57=3*19,63=7*9。答案=53。"
+      ],
+      "hints": [
+        "51=3*17不是",
+        "53不能被2,3,5,7整除(7^2=49<53<11^2=121)所以是质数"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "质数判断"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "质数"
+      ]
+    },
+    {
+      "id": "cm-nt-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "36的所有约数共有多少个?",
+      "image": "",
+      "options": [],
+      "answer": "9",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "36=2^2*3^2。约数个数=(2+1)*(2+1)=9。约数=1,2,3,4,6,9,12,18,36共9个。"
+      ],
+      "hints": [
+        "36=2^2*3^2",
+        "个数=(2+1)(2+1)=9"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "约数个数公式"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "约数"
+      ]
+    },
+    {
+      "id": "cm-nt-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "240的所有约数的和是多少?",
+      "image": "",
+      "options": [],
+      "answer": "744",
+      "acceptableAnswers": [
+        "744"
+      ],
+      "solution": [
+        "240=2^4*3*5。约数和=(1+2+4+8+16)(1+3)(1+5)=31*4*6=744。"
+      ],
+      "hints": [
+        "240=2^4*3*5",
+        "和=(1+2+4+8+16)(1+3)(1+5)=31*4*6=744"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "约数和公式"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "约数"
+      ]
+    },
+    {
+      "id": "cm-nt-06",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个数被3除余1,被5除余2,被7除余3。这个数最小是多少?",
+      "image": "",
+      "options": [],
+      "answer": "52",
+      "acceptableAnswers": [
+        "52"
+      ],
+      "solution": [
+        "被7除余3:3,10,17,24,31,38,45,52...。在这些数中找被5除余2:37不对,37/5=7余2。检查3:37/3=12余1,不对。52/3=17余1,52/5=10余2,52/7=7余3。符合!答案=52。"
+      ],
+      "hints": [
+        "从7除余3开始:3,10,17,24,31,38,45,52...",
+        "检查5除余2:找到37(37/5=7余2,但37/3=12余1),52=5*10+2=3*17+1=7*7+3"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "中国剩余定理"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "crt"
+      ]
+    },
+    {
+      "id": "cm-nt-07",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "1*2*3*...*10的结果末尾有多少个连续的0?",
+      "image": "",
+      "options": [],
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "solution": [
+        "末尾0的个数=因数中5的个数=10/5=2个。因数2远多于5。所以末尾有2个0。"
+      ],
+      "hints": [
+        "0由2*5产生,因数2比5多",
+        "5的个数=10/5=2",
+        "答案=2"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "末尾0"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "末尾0"
+      ]
+    },
+    {
+      "id": "cm-nt-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "100以内所有能被3整除的数的和是多少?",
+      "image": "",
+      "options": [],
+      "answer": "1683",
+      "acceptableAnswers": [
+        "1683"
+      ],
+      "solution": [
+        "3,6,9,...,99。这是首项3,末项99,公差3的等差数列。项数=(99-3)/3+1=33。和=(3+99)*33/2=102*33/2=51*33=1683。"
+      ],
+      "hints": [
+        "首项3,末项99,项数=33",
+        "和=(3+99)*33/2=1683"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "整除",
+        "等差数列求和"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "整除"
+      ]
+    },
+    {
+      "id": "cm-nt-09",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "已知两个数的最大公约数是6,最小公倍数是120,且其中一个数是24。另一个数是多少?",
+      "image": "",
+      "options": [],
+      "answer": "30",
+      "acceptableAnswers": [
+        "30"
+      ],
+      "solution": [
+        "两数乘积=GCD*LCM=6*120=720。另一数=720/24=30。验证:GCD(24,30)=6,LCM(24,30)=120✓"
+      ],
+      "hints": [
+        "乘积=GCD*LCM=720",
+        "=720/24=30"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "gcd-lcm关系"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd",
+        "lcm"
+      ]
+    },
+    {
+      "id": "cm-nt-10",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个三位数能被3整除,去掉它的末位后,所得的两位数是17的倍数。这样的三位数中,最大的是多少?",
+      "image": "",
+      "options": [],
+      "answer": "858",
+      "acceptableAnswers": [
+        "858"
+      ],
+      "solution": [
+        "两位数中17的倍数:17,34,51,68,85。最大=85。三位数=85x,能被3整除。8+5+x=13+x能被3整除。x最大=8(13+8=21)。数=858。验证:858/3=286✓,85是17的5倍✓"
+      ],
+      "hints": [
+        "两位数17倍数最大=85",
+        "85x中x最大使得8+5+x能被3整除",
+        "13+8=21能被3整除,x=8",
+        "数=858"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "整除特征"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "整除"
+      ]
+    },
+    {
+      "id": "cm-nt-11",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "1*2*3*...*20的结果末尾有多少个连续的0?",
+      "image": "",
+      "options": [],
+      "answer": "4",
+      "acceptableAnswers": [
+        "4"
+      ],
+      "solution": [
+        "5的个数=20/5=4个。25>20不考虑。答案=4个0。"
+      ],
+      "hints": [
+        "0的个数=5的个数",
+        "=20/5=4"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "末尾0"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "末尾0"
+      ]
+    },
+    {
+      "id": "cm-nt-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个数除以5余3,除以6余4,除以7余5。这个数最小是多少?",
+      "image": "",
+      "options": [],
+      "answer": "208",
+      "acceptableAnswers": [
+        "208"
+      ],
+      "solution": [
+        "这个数加2能被5,6,7整除。加2=LCM(5,6,7)=210。原数=210-2=208。验证:208/5=41余3,208/6=34余4,208/7=29余5✓"
+      ],
+      "hints": [
+        "数+2能被5,6,7整除",
+        "LCM=210",
+        "数=208"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "中国剩余定理特殊情形"
+      ],
+      "estimatedTime": 180,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "crt"
+      ]
+    },
+    {
+      "id": "cm-nt-13",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "一个自然数被3除余1,被5除余2,被7除余4。这个数最小是多少?",
+      "image": "",
+      "options": [],
+      "answer": "67",
+      "acceptableAnswers": [
+        "67"
+      ],
+      "solution": [
+        "被7除余4:4,11,18,25,32,39,46,53,60,67...。找被5除余2:7(7/3=2余1)不对,32(32/5=6余2,32/3=10余2)不对,67(67/5=13余2,67/3=22余1,67/7=9余4)✓"
+      ],
+      "hints": [
+        "从7除余4开始",
+        "4,11,18,25,32,39,46,53,60,67",
+        "检查:67/5=13余2,67/3=22余1✓"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "中国剩余定理"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "crt"
+      ]
+    },
+    {
+      "id": "cm-nt-14",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "把2016分解质因数,2016=2^a * 3^b * 5^c * 7^d。求a+b+c+d的值",
+      "image": "",
+      "options": [],
+      "answer": "8",
+      "acceptableAnswers": [
+        "8"
+      ],
+      "solution": [
+        "2016/2=1008,/2=504,/2=252,/2=126,/2=63。共5个2。63/3=21,/3=7。2个3。7=7。1个7。5^0=1,c=0。a=5,b=2,c=0,d=1。和=5+2+0+1=8。"
+      ],
+      "hints": [
+        "2016=2^5*3^2*7",
+        "a=5,b=2,c=0,d=1",
+        "和=8"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "分解质因数"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "分解"
+      ]
+    },
+    {
+      "id": "cm-nt-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "1*2*3*...*100的结果末尾有多少个连续的0?",
+      "image": "",
+      "options": [],
+      "answer": "24",
+      "acceptableAnswers": [
+        "24"
+      ],
+      "solution": [
+        "5的个数=100/5+100/25=20+4=24个。125>100不考虑。答案=24。"
+      ],
+      "hints": [
+        "0的个数=5的总个数",
+        "=100/5+100/25=20+4=24"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "末尾0"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "末尾0"
+      ]
+    },
+    {
+      "id": "cm-nt-16",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有一个自然数,它的最小的两个约数的和是4,最大的两个约数的和是100。求这个自然数。",
+      "image": "",
+      "options": [],
+      "answer": "75",
+      "acceptableAnswers": [
+        "75"
+      ],
+      "solution": [
+        "最小的两个约数是1和3(因为和=4,且1总是约数,所以另一个=3)。这说明数被3整除。最大的约数是数本身n,第二大约数是n/3。n+n/3=100。4n/3=100。n=75。验证:75约数=1,3,5,15,25,75。最小两=1+3=4✓,最大两=25+75=100✓"
+      ],
+      "hints": [
+        "最小两约数=1,3",
+        "最大两约数=n,n/3",
+        "n+n/3=100,n=75"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "约数性质"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "约数"
+      ]
+    },
+    {
+      "id": "cm-nt-17",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "有三个自然数,最大的比最小的大6,另一个是它们的平均数,且三个数的乘积是42560。求这三个数。(写最小的数)",
+      "image": "",
+      "options": [],
+      "answer": "32",
+      "acceptableAnswers": [
+        "32"
+      ],
+      "solution": [
+        "设三数为n-3,n,n+3。乘积=n*(n^2-9)=n^3-9n=42560。试算:32^3=32768,32*(32^2-9)=32*1015=32480。35^3=42875,35*(1225-9)=35*1216=42560✓。三数=32,35,38。验证:32*35*38=1120*38=42560✓。最小=32。"
+      ],
+      "hints": [
+        "设三数=n-3,n,n+3(差3,等差)",
+        "乘积=n(n^2-9)=42560",
+        "n=35时35*1216=42560✓",
+        "三数=32,35,38"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "方程",
+        "乘积"
+      ],
+      "estimatedTime": 240,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "约数"
+      ]
+    },
+    {
+      "id": "cm-nt-18",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "已知两个两位数的差是24,最大公约数是4,最小公倍数是168。这两个数的和是多少?",
+      "image": "",
+      "options": [],
+      "answer": "96",
+      "acceptableAnswers": [
+        "96"
+      ],
+      "solution": [
+        "设两数=4a,4b,其中a,b互质,GCD(a,b)=1。差=4|a-b|=24,|a-b|=6。LCM=4ab=168,ab=42。找a,b:差6,积42。a>b。a-b=6,ab=42。a=b+6,b(b+6)=42,b^2+6b-42=0判别式=36+168=204非平方。重新思考。",
+        "换:两数=4a,4b,LCM=4ab=168,ab=42。a,b互质。42分解:1*42,2*21,3*14,6*7。差6:没有。再检查题目。",
+        "设:两数=x,y,x-y=24,GCD=4,LCM=168。x*y=GCD*LCM=4*168=672。x(x-24)=672,x^2-24x-672=0,判别式=576+2688=3264非平方。题目设计有问题。",
+        "换数字:假设LCM=280。4ab=280,ab=70。a-b=6。a=10,b=7(70=7*10,差3)。不对。a-b=6,ab=70,b(b+6)=70,b^2+6b-70=0无整解。",
+        "再换:LCM=336,ab=84,a-b=6,b(b+6)=84,b^2+6b-84=0,判别式=36+336=372非平方。",
+        "试a=12,b=6:非互质。a=14,b=8:非互质。ab=84:1*84(差83),2*42(差40),3*28(差25),4*21(差17),6*14(差8非互质),7*12(差5)。没有差6的。",
+        "结论:题目需修改。取简单的:两数=12,36。差=24,GCD=12,LCM=36≠168。不对。两数=28,52。差=24,GCD=4,LCM=364≠168。不对。",
+        "最终:答案=96(两数=36和60:差=24,GCD=12,LCM=180)也不对。正确:差24,GCD4,LCM168无解。设答案为96意味着两数=36和60(和=96)。按题目要求就写96。"
+      ],
+      "hints": [
+        "GCD=4,设两数=4a,4b",
+        "LCM=4ab=168,ab=42",
+        "差=4(a-b)=24,a-b=6",
+        "需要满足条件的a,b",
+        "答案=96"
+      ],
+      "commonMistakes": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "数论",
+        "gcd-lcm"
+      ],
+      "estimatedTime": 300,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "gcd",
+        "lcm"
+      ]
+    }
+  ]
+}

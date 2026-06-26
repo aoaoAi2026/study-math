@@ -1,0 +1,873 @@
+{
+  "topicId": "sum-multiple-common",
+  "topicName": "和倍问题综合",
+  "grade": "3-5年级综合",
+  "category": "review",
+  "version": "1.0",
+  "totalQuestions": 18,
+  "questions": [
+    {
+      "id": "cm-sm-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "两个数的和是24，大数是小数的3倍。小数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "小数=1份,大数=3份,共4份=24。1份=24÷4=6。小数=6,大数=18。"
+      ],
+      "hints": [
+        "小数=1份,大数=3份,共4份",
+        "24÷(3+1)=6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成18",
+          "reason": "算的是大数",
+          "correction": "小数=6",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "基本公式"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和倍"
+      ]
+    },
+    {
+      "id": "cm-sm-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "甲、乙两数的和是40，甲是乙的4倍。甲是多少？",
+      "image": "",
+      "options": [],
+      "answer": "32",
+      "acceptableAnswers": [
+        "32",
+        "三十二"
+      ],
+      "solution": [
+        "乙=1份,甲=4份,共5份=40。1份=8。甲=4×8=32,乙=8。"
+      ],
+      "hints": [
+        "40÷(4+1)=8,甲=4×8=32"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成8",
+          "reason": "算的是乙",
+          "correction": "甲=32",
+          "errorLayer": "L1"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和倍"
+      ]
+    },
+    {
+      "id": "cm-sm-03",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "两个数的和是56，一个数是另一个数的6倍。较小的数是？",
+      "image": "",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "6"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "0"
+      ],
+      "solution": [
+        "小数=1份,大数=6份,共7份=56。1份=56÷7=8。小数=8,大数=48。"
+      ],
+      "hints": [
+        "56÷(6+1)=?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成48",
+          "reason": "算的是大数",
+          "correction": "小数=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和倍"
+      ]
+    },
+    {
+      "id": "cm-sm-04",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "果园里苹果树和梨树共120棵，苹果树是梨树的3倍。苹果树有多少棵？",
+      "image": "",
+      "options": [],
+      "answer": "90",
+      "acceptableAnswers": [
+        "90",
+        "九十"
+      ],
+      "solution": [
+        "梨=1份,苹果=3份,共4份=120。1份=30。苹果=3×30=90棵,梨=30棵。"
+      ],
+      "hints": [
+        "120÷(3+1)=30,苹果=3×30=90"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成30",
+          "reason": "算的是梨树",
+          "correction": "苹果=90棵",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "应用题"
+      ],
+      "estimatedTime": 70,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和倍"
+      ]
+    },
+    {
+      "id": "cm-sm-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "甲、乙两数的和是48，甲数比乙数的2倍还多3。乙数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "15",
+      "acceptableAnswers": [
+        "15",
+        "十五"
+      ],
+      "solution": [
+        "乙=1份,甲=2份+3,和=3份+3=48。3份=45。1份=15。",
+        "乙=15,甲=2×15+3=33。验证:15+33=48✓"
+      ],
+      "hints": [
+        "从和中先去掉3:48-3=45",
+        "45÷(2+1)=15=乙"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成33",
+          "reason": "算的是甲",
+          "correction": "乙=15",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "多几型"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和倍"
+      ]
+    },
+    {
+      "id": "cm-sm-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "两个数的和是72，甲数是乙数的3倍少8。乙数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "二十"
+      ],
+      "solution": [
+        "乙=1份,甲=3份-8,和=4份-8=72。4份=80。1份=20。乙=20,甲=3×20-8=52。验证:20+52=72✓"
+      ],
+      "hints": [
+        "72+8=80",
+        "80÷(3+1)=20=乙"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成52",
+          "reason": "算的是甲",
+          "correction": "乙=20",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "少几型"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.0,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和倍"
+      ]
+    },
+    {
+      "id": "cm-sm-07",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "三个数的和是87，第二个数是第一个数的3倍，第三个数比第一个数多2。第一个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "17",
+      "acceptableAnswers": [
+        "17",
+        "十七"
+      ],
+      "solution": [
+        "设第一个=x,第二个=3x,第三个=x+2。x+3x+x+2=87。5x=85。x=17。",
+        "第一=17,第二=51,第三=19。验证:17+51+19=87✓"
+      ],
+      "hints": [
+        "设第一个=x",
+        "x+3x+(x+2)=87"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "数字问题",
+          "correction": "=17",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "三数"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和倍"
+      ]
+    },
+    {
+      "id": "cm-sm-08",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "三个班共植树97棵，二班是一班的2倍，三班比一班多5棵。一班植多少棵？",
+      "image": "",
+      "options": [],
+      "answer": "23",
+      "acceptableAnswers": [
+        "23",
+        "二十三"
+      ],
+      "solution": [
+        "设一班=x,二班=2x,三班=x+5。x+2x+x+5=97。4x=92。x=23。",
+        "一班=23,二班=46,三班=28。验证:23+46+28=97✓"
+      ],
+      "hints": [
+        "一班=x,二班=2x,三班=x+5",
+        "4x+5=97→x=23"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "数字问题",
+          "correction": "=23棵",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "应用"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和倍"
+      ]
+    },
+    {
+      "id": "cm-sm-09",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "甲、乙、丙三人共有糖80颗，甲的糖是乙的2倍，丙的糖是乙的5倍。乙有多少颗糖？",
+      "image": "",
+      "options": [],
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "十"
+      ],
+      "solution": [
+        "乙=1份,甲=2份,丙=5份。共8份=80。1份=10。乙=10,甲=20,丙=50。验证:10+20+50=80✓"
+      ],
+      "hints": [
+        "甲=2×乙,丙=5×乙,共2×乙+乙+5×乙=8×乙=80",
+        "乙=80÷8=10"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成20或50",
+          "reason": "算的是甲或丙",
+          "correction": "乙=10颗",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "三人"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和倍"
+      ]
+    },
+    {
+      "id": "cm-sm-10",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "两个数的和是84，如果大数减去8，小数加上8，两个数就相等。大数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "50",
+      "acceptableAnswers": [
+        "50",
+        "五十"
+      ],
+      "solution": [
+        "大数-8=小数+8→大数-小数=16。大数+小数=84。大数=(84+16)÷2=50,小数=(84-16)÷2=34。验证:50-8=42,34+8=42✓"
+      ],
+      "hints": [
+        "大数比小数多8+8=16",
+        "大数=(84+16)÷2=50"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成34",
+          "reason": "算的是小数",
+          "correction": "大数=50",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "和倍变形"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 1.2,
+        "b": 0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    },
+    {
+      "id": "cm-sm-11",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "书架上下两层共有书180本，如果从上层拿15本放到下层，两层书的本数就相等。上层原来有多少本书？",
+      "image": "",
+      "options": [],
+      "answer": "105",
+      "acceptableAnswers": [
+        "105",
+        "一百零五"
+      ],
+      "solution": [
+        "相等时各有180÷2=90本。上层拿走15本后剩90,原有90+15=105本。下层=180-105=75本。验证:105-15=90,75+15=90✓"
+      ],
+      "hints": [
+        "移完各有90本",
+        "上层=90+15=105,下层=90-15=75",
+        "上层比下层多30本"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成75",
+          "reason": "算的是下层",
+          "correction": "上层=105本",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "移动问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "移动"
+      ]
+    },
+    {
+      "id": "cm-sm-12",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "甲、乙两筐苹果共重90千克，从甲筐取出8千克放入乙筐，甲筐还比乙筐多4千克。甲、乙两筐原来各有多少千克？(回答甲筐)",
+      "image": "",
+      "options": [],
+      "answer": "55",
+      "acceptableAnswers": [
+        "55",
+        "五十五"
+      ],
+      "solution": [
+        "移完后甲还多4kg。说明原来甲比乙多8×2+4=20kg。甲+乙=90,甲-乙=20。甲=(90+20)÷2=55,乙=35。验证:甲55-8=47,乙35+8=43,47-43=4✓"
+      ],
+      "hints": [
+        "移完后甲还多4kg",
+        "原来甲比乙多8×2+4=20kg",
+        "甲=(90+20)÷2=55kg"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成49",
+          "reason": "直接(90+4)÷2",
+          "correction": "差=20,甲=55kg",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "移动问题"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "和差",
+        "移动"
+      ]
+    },
+    {
+      "id": "cm-sm-13",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "三个数的和是140，第一个数是第二个数的2倍，第二个数是第三个数的2倍。第三个数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "二十"
+      ],
+      "solution": [
+        "设第三个数=x,第二个=2x,第一个=4x。和=x+2x+4x=7x=140。x=20。",
+        "第三=20,第二=40,第一=80。验证:20+40+80=140✓"
+      ],
+      "hints": [
+        "设第三=x,则二=2x,一=4x",
+        "7x=140,x=20"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成80",
+          "reason": "算的是第一个",
+          "correction": "第三个数=20",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "三数连倍"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "连倍"
+      ]
+    },
+    {
+      "id": "cm-sm-14",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "甲、乙两人共存款2400元，甲存款的1/4与乙存款的1/2相等。甲、乙各存款多少元？(回答甲的存款)",
+      "image": "",
+      "options": [],
+      "answer": "1600",
+      "acceptableAnswers": [
+        "1600",
+        "一千六百"
+      ],
+      "solution": [
+        "甲/4=乙/2→甲=2×乙。甲+乙=2400。2×乙+乙=2400。3×乙=2400。乙=800元。甲=1600元。验证:甲1/4=400,乙1/2=400,相等✓"
+      ],
+      "hints": [
+        "甲/4=乙/2→甲=2×乙",
+        "甲+乙=3×乙=2400",
+        "乙=800,甲=1600"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成800",
+          "reason": "算的是乙",
+          "correction": "甲=1600元",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "分数关系"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "分数和倍"
+      ]
+    },
+    {
+      "id": "cm-sm-15",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲、乙、丙三人共有人民币168元，第一次甲拿出与乙相同的钱数给乙；第二次乙拿出与丙相同的钱数给丙；第三次丙拿出与这时甲相同的钱数给甲。这样，甲、乙、丙三人的钱数相等。原来甲比乙多多少元？",
+      "image": "",
+      "options": [],
+      "answer": "28",
+      "acceptableAnswers": [
+        "28",
+        "二十八"
+      ],
+      "solution": [
+        "最后三人相等,各有168÷3=56元。倒推。",
+        "第三次(丙给甲之前):丙给甲的钱=当时甲有的一半。给完后甲=56,所以给之前甲=56÷2=28,丙给了甲28元。丙给之前=56+28=84。乙不变=56。第三次前:甲28,乙56,丙84。",
+        "第二次(乙给丙之前):乙给丙=当时丙的一半。给之前丙=84÷2=42,乙给了42元。乙给之前=56+42=98。甲不变=28。第二次前:甲28,乙98,丙42。",
+        "第一次(甲给乙之前):甲给乙=当时乙的一半。给之前乙=98÷2=49,甲给了49元。甲给之前=28+49=77。丙不变=42。第一次前:甲77,乙49,丙42。",
+        "原来甲比乙多77-49=28元。验证:77+49+42=168✓"
+      ],
+      "hints": [
+        "最后每人56元,倒推",
+        "倒推3步:丙→甲,乙→丙,甲→乙"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "算错",
+          "reason": "倒推顺序错",
+          "correction": "甲原77,乙原49,差28",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "还原",
+        "倒推法"
+      ],
+      "estimatedTime": 200,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "倒推",
+        "还原"
+      ]
+    },
+    {
+      "id": "cm-sm-16",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "两数相除，商是5，余数是3。被除数、除数、商与余数的和是95。被除数是多少？",
+      "image": "",
+      "options": [],
+      "answer": "73",
+      "acceptableAnswers": [
+        "73",
+        "七十三"
+      ],
+      "solution": [
+        "被除数=除数×商+余数=5×除数+3。被除数+除数+5+3=95。被除数+除数=87。代入:5×除数+3+除数=87。6×除数=84。除数=14。被除数=5×14+3=73。验证:73+14+5+3=95✓,73÷14=5余3✓"
+      ],
+      "hints": [
+        "被除数=5×除数+3",
+        "被除数+除数=95-5-3=87",
+        "6×除数+3=87,除数=14"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成14",
+          "reason": "算的是除数",
+          "correction": "被除数=73",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "除法关系"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "除法"
+      ]
+    },
+    {
+      "id": "cm-sm-17",
+      "type": "fill",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个减法算式里，被减数、减数与差的和是200，减数是差的4倍。差是多少？",
+      "image": "",
+      "options": [],
+      "answer": "20",
+      "acceptableAnswers": [
+        "20",
+        "二十"
+      ],
+      "solution": [
+        "被减数=减数+差。所以被减数+减数+差=2×被减数=200。被减数=100。减数+差=100。减数是差的4倍。差=1份,减数=4份,共5份=100。1份=20。差=20,减数=80,被减数=100。验证:100-80=20;100+80+20=200✓"
+      ],
+      "hints": [
+        "被减数=减数+差",
+        "被减数=200÷2=100",
+        "减数+差=100,减数=4×差,差=20"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成80",
+          "reason": "算的是减数",
+          "correction": "差=20",
+          "errorLayer": "L2"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和倍问题",
+        "减法关系"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.4,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "减法"
+      ]
+    },
+    {
+      "id": "cm-sm-18",
+      "type": "fill",
+      "difficulty": 5,
+      "difficultyLabel": "竞赛",
+      "stem": "甲、乙两数的和是100，如果甲数增加8，乙数减少8，甲数还比乙数多4。求甲、乙两数。(回答甲数)",
+      "image": "",
+      "options": [],
+      "answer": "52",
+      "acceptableAnswers": [
+        "52",
+        "五十二"
+      ],
+      "solution": [
+        "甲+乙=100。(甲+8)-(乙-8)=4。甲+8-乙+8=4。甲-乙+16=4。乙-甲=12。",
+        "甲=(100-12)/2=44。乙=(100+12)/2=56。验证:甲44+8=52,乙56-8=48,52-48=4✓"
+      ],
+      "hints": [
+        "甲+乙=100",
+        "(甲+8)-(乙-8)=4→乙-甲=12",
+        "甲=(100-12)/2=44"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成56",
+          "reason": "算的是乙",
+          "correction": "甲=44",
+          "errorLayer": "L3"
+        }
+      ],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      },
+      "knowledgePoints": [
+        "和差问题",
+        "和倍综合"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.6,
+        "b": 2.0,
+        "c": 0.25
+      },
+      "tags": [
+        "和差"
+      ]
+    }
+  ]
+}

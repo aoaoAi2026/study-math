@@ -1,0 +1,148 @@
+{
+    "paperId": "zoumei-2017-g3",
+    "title": "2017年走美杯小学三年级初赛",
+    "grade": 3,
+    "category": "aoshu-zoumei",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 3,
+    "year": 2017,
+    "source": "走美杯全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共12题，每题8分，共96分）", "count": 12, "scorePerQuestion": 8}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：50 × 7 × 2 = ______。",
+            "answer": "700",
+            "score": 8,
+            "solution": "50×2=100，100×7=700。",
+            "knowledgePoints": ["乘法"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：555 + 445 = ______。",
+            "answer": "1000",
+            "score": 8,
+            "solution": "555+445=1000。",
+            "knowledgePoints": ["加法"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "在除法算式中，被除数是72，商是8，除数是______。",
+            "answer": "9",
+            "score": 8,
+            "solution": "除数=72÷8=9。",
+            "knowledgePoints": ["除法"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个正方形的周长是40厘米，它的面积是______平方厘米。",
+            "answer": "100",
+            "score": 8,
+            "solution": "边长=40÷4=10厘米。面积=10×10=100平方厘米。",
+            "knowledgePoints": ["正方形"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小明有45颗糖，给了小红12颗后，两人的糖一样多。小红原有______颗。",
+            "answer": "21",
+            "score": 8,
+            "solution": "小明剩45-12=33颗。两人一样多说明小红也有33颗，所以小红原有33-12=21颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "在一条长60米的路一边种树，每隔10米种一棵，两端都种。需要______棵。",
+            "answer": "7",
+            "score": 8,
+            "solution": "60÷10+1=6+1=7棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "计算：7 + 77 + 777 + 7777 = ______。",
+            "answer": "8638",
+            "score": 8,
+            "solution": "7+77=84，84+777=861，861+7777=8638。",
+            "knowledgePoints": ["加法"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "甲、乙两数的和是60，乙是甲的4倍。甲是______。",
+            "answer": "12",
+            "score": 8,
+            "solution": "设甲为x，乙为4x。x+4x=60，5x=60，x=12。",
+            "knowledgePoints": ["和倍问题"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "鸡和兔一共有15只，脚一共有40只。鸡有______只。",
+            "answer": "10",
+            "score": 8,
+            "solution": "假设全是兔：15×4=60脚。实际40脚，少20脚。鸡=20/2=10只。",
+            "knowledgePoints": ["鸡兔同笼"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一个数，除以5余3，除以7余5。这个数最小是______。",
+            "answer": "33",
+            "score": 8,
+            "solution": "除以5余3即差2能被5整除；除以7余5即差2能被7整除。LCM(5,7)=35。最小数=35-2=33。",
+            "knowledgePoints": ["余数问题"]
+        },
+        {
+            "id": "q11",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "一桶油，第一次倒出一半，第二次倒出剩下的一半，还剩6千克。原有______千克。",
+            "answer": "24",
+            "score": 8,
+            "solution": "设原有x千克。第二次倒出后剩x/4=6，x=24千克。",
+            "knowledgePoints": ["一半问题"]
+        },
+        {
+            "id": "q12",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "小华看一本故事书，每天看8页，看了6天，还剩10页。这本书共有______页。",
+            "answer": "58",
+            "score": 8,
+            "solution": "已看8×6=48页。共48+10=58页。",
+            "knowledgePoints": ["乘法应用"]
+        }
+    ]
+}

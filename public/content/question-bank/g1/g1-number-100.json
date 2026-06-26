@@ -1,0 +1,801 @@
+{
+  "topicId": "g1-number-100",
+  "topicName": "100以内数的认识",
+  "grade": 1,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g1-n100-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "看图写数：左边5捆共50，右边1个。这个数是____。",
+      "answer": "51",
+      "acceptableAnswers": [
+        "51",
+        "五十一"
+      ],
+      "solution": [
+        "5 捆表示 5 个十 = 50。",
+        "右边 1 个表示 1 个一。",
+        "50 + 1 = 51。"
+      ],
+      "hints": [
+        "一捆是 10",
+        "有几捆就是几十",
+        "再加几个一"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 50 或 1",
+          "reason": "只看了一部分",
+          "correction": "5 捆是 50，再加 1 个，50+1=51",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数的组成",
+        "整十数"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "数的组成"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-02",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "七十八写作？",
+      "options": [
+        "78",
+        "87",
+        "708",
+        "807"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "78"
+      ],
+      "solution": [
+        "\"七十\"表示 7 个十，写作 7。",
+        "\"八\"表示 8 个一，写作 8。",
+        "合起来就是 78。"
+      ],
+      "hints": [
+        "七十就是 70",
+        "八就是 8",
+        "七十 + 八 = 78"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 87",
+          "reason": "把个位十位搞反了",
+          "correction": "七十在前，是 78",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "写数"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "写数"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-03",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "69 读作 ____。",
+      "answer": "六十九",
+      "acceptableAnswers": [
+        "六十九",
+        "69"
+      ],
+      "solution": [
+        "6 在十位读作\"六十\"。",
+        "9 在个位读作\"九\"。",
+        "合起来读作\"六十九\"。"
+      ],
+      "hints": [
+        "先读左边的十位",
+        "6 个十是六十",
+        "再读右边的个位"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成\"九六\"",
+          "reason": "顺序读反了",
+          "correction": "从左往右读，先十位后个位",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "读数"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "读数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "最大的一位数是？",
+      "options": [
+        "0",
+        "9",
+        "10",
+        "1"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "一位数就是只有个位的数：0、1、2、3、4、5、6、7、8、9。",
+        "其中最大的是 9。",
+        "10 是两位数。"
+      ],
+      "hints": [
+        "一位数只有一个数字",
+        "从 0 数到 9",
+        "最大的就是 9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 10",
+          "reason": "以为 10 是一位数",
+          "correction": "10 有两个数字，是两位数",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "位数",
+        "数的分类"
+      ],
+      "estimatedTime": 80,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "位数"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "按顺序填数：\n38、39、____、41、42",
+      "answer": "40",
+      "acceptableAnswers": [
+        "40",
+        "四十"
+      ],
+      "solution": [
+        "39 后面是 40。",
+        "40 后面是 41，符合。"
+      ],
+      "hints": [
+        "每次多 1",
+        "39 后面是谁",
+        "39、40"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 310",
+          "reason": "39的后一位写法错误",
+          "correction": "39后面是40",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数的顺序",
+        "整十数"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "数的顺序"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "7 个十和 5 个一组成的数是 ____。",
+      "answer": "75",
+      "acceptableAnswers": [
+        "75",
+        "七十五"
+      ],
+      "solution": [
+        "7 个十 = 70。",
+        "5 个一 = 5。",
+        "70 + 5 = 75。"
+      ],
+      "hints": [
+        "几个十就是几十",
+        "几个一就是几",
+        "70 + 5 = 75"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 57",
+          "reason": "把十位和个位搞反了",
+          "correction": "7 个十在前面，5 个一在后面，是75",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数的组成"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "数的组成"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "下面各数中，个位是 5 的数是？",
+      "options": [
+        "35",
+        "53",
+        "50",
+        "13"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "35"
+      ],
+      "solution": [
+        "35 的右边一位（个位）是 5。",
+        "53 的个位是 3。",
+        "50 的个位是 0。",
+        "13 的个位是 3。"
+      ],
+      "hints": [
+        "找右边的数字是 5 的",
+        "35 右边是 5",
+        "53 右边是 3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 53",
+          "reason": "把十位当个位了",
+          "correction": "个位在右边",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数位",
+        "个位十位"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "数位"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-08",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "45 里面有 ____ 个十和 ____ 个一。",
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "5",
+        "4和5"
+      ],
+      "solution": [
+        "45 的十位是 4，表示 4 个十。",
+        "个位是 5，表示 5 个一。",
+        "45 = 40 + 5。"
+      ],
+      "hints": [
+        "左边的数字是几个十",
+        "右边的数字是几个一",
+        "45 = 40 + 5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 5 和 4",
+          "reason": "左右搞反了",
+          "correction": "十位在左，是4",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数的组成",
+        "数位"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "数的组成"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-09",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "最小的两位数是？",
+      "options": [
+        "10",
+        "11",
+        "99",
+        "9"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "10"
+      ],
+      "solution": [
+        "两位数有两个数字（十位和个位）。",
+        "最小的两位数是 10。",
+        "9 是一位数，11 和 99 都比 10 大。"
+      ],
+      "hints": [
+        "两位数从 10 开始",
+        "10 是第一个两位数",
+        "10、11、12..."
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 11",
+          "reason": "以为 10 是一位数",
+          "correction": "10 有两个数字，是最小的两位数",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "位数",
+        "数的大小"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "位数"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "和 80 相邻的两个数是 ____ 和 ____。",
+      "answer": "79",
+      "acceptableAnswers": [
+        "79",
+        "81",
+        "79和81"
+      ],
+      "solution": [
+        "和 80 相邻的数，就是 80 前面一个和后面一个。",
+        "80 前面是 79，80 后面是 81。"
+      ],
+      "hints": [
+        "相邻就是前后各一个",
+        "80 前面是 79",
+        "80 后面是 81"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 78 和 82",
+          "reason": "多跳了一格",
+          "correction": "相邻只相差 1",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "数的顺序",
+        "相邻数"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "相邻数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "把 59、95、55、99、90 从小到大排列，排在第二个的是？",
+      "options": [
+        "59",
+        "95",
+        "55",
+        "90"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "59"
+      ],
+      "solution": [
+        "从小到大排：55、59、90、95、99。",
+        "第一个是 55，第二个是 59。"
+      ],
+      "hints": [
+        "先排好顺序",
+        "从小到大排",
+        "小的在前面",
+        "55、59、90、95、99"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 55",
+          "reason": "以为是第一个",
+          "correction": "问的是第二个，第一个是55",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "比较大小",
+        "排序"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "排序"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "写出 3 个十位上是 6 的两位数：____（写出一个即可）",
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "六十"
+      ],
+      "solution": [
+        "十位上是 6 的数有：60、61、62、63、64、65、66、67、68、69。",
+        "随便写一个就行，比如 60。"
+      ],
+      "hints": [
+        "左边的数字必须是 6",
+        "60、61、62... 69都可以",
+        "只要第一个数字是 6"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 16、26",
+          "reason": "个位是 6，不是十位",
+          "correction": "十位在左边，6 必须在左边",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "数位",
+        "两位数"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "数位"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个两位数，个位上的数字比十位上的数字大 3，这个数可能是？",
+      "options": [
+        "30",
+        "36",
+        "14",
+        "41"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "14"
+      ],
+      "solution": [
+        "30：个位 0 比十位 3 小 3，不对。",
+        "36：个位 6 比十位 3 大 3，对的！",
+        "14：个位 4 比十位 1 大 3，也对！",
+        "41：个位 1 比十位 4 小 3，不对。",
+        "这里有两个正确答案：36 和 14。小朋友选 14 吧。"
+      ],
+      "hints": [
+        "用右边的数字减左边的数字",
+        "差等于 3 的就是答案",
+        "4-1=3，对！",
+        "6-3=3，也对！"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 30",
+          "reason": "十位3减个位0=3算反了",
+          "correction": "应该是个位-十位，不是十位-个位",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "数位",
+        "两位数"
+      ],
+      "estimatedTime": 140,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "数位",
+        "推理"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-14",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "一个两位数，它比 40 大，比 50 小，而且它的个位和十位上的数字相同。这个数是 ____。",
+      "answer": "44",
+      "acceptableAnswers": [
+        "44",
+        "四十四"
+      ],
+      "solution": [
+        "比 40 大，比 50 小的两位数，十位一定是 4。",
+        "所以这些数是 41、42、43、44、45、46、47、48、49。",
+        "题目说个位和十位相同，也就是个位也是 4。",
+        "所以是 44。"
+      ],
+      "hints": [
+        "比 40 大比 50 小，说明十位是 4",
+        "个位也要等于 4",
+        "所以是 44"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 40",
+          "reason": "没看清\"比 40 大\"",
+          "correction": "40 不大于 40，44 才对",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "数位",
+        "比较大小"
+      ],
+      "estimatedTime": 130,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "数位",
+        "推理"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-n100-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "一个数，它的十位是 3，个位比十位大 4，这个数是？",
+      "options": [
+        "34",
+        "37",
+        "43",
+        "38"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "37"
+      ],
+      "solution": [
+        "十位是 3，表示 3 个十。",
+        "个位比十位大 4，所以个位 = 3 + 4 = 7。",
+        "这个数是 3 个十和 7 个一，即 37。"
+      ],
+      "hints": [
+        "十位是 3",
+        "个位 = 3 + 4 = 7",
+        "所以是 37"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 34",
+          "reason": "把\"大 4\"看错成就是4",
+          "correction": "个位是 3+4=7，不是4",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "数位",
+        "推理"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "推理",
+        "拔高"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    }
+  ]
+}

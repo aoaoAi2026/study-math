@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { useSettingsStore } from '@/stores/settingsStore'
+import { useTheme } from '@/assets/styles/themes/theme-manager'
 
 const settingsStore = useSettingsStore()
+useTheme() // 主题自动初始化
 
 onMounted(() => {
   settingsStore.init()

@@ -1,0 +1,760 @@
+{
+  "topicId": "g1-addition-within-20",
+  "topicName": "20以内加减法",
+  "grade": 1,
+  "category": "basic",
+  "version": "1.0",
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "g1-aw20-01",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "3 + 2 = ____",
+      "answer": "5",
+      "acceptableAnswers": [
+        "5",
+        "五"
+      ],
+      "solution": [
+        "3 个加上 2 个，一起数：1、2、3、4、5。",
+        "3 + 2 = 5。"
+      ],
+      "hints": [
+        "用手指头数一数",
+        "3 后面再数 2 个"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 4",
+          "reason": "少数了一个",
+          "correction": "3 后面是 4、5，共两个",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "10以内加法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-02",
+      "type": "fill",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "7 - 4 = ____",
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三"
+      ],
+      "solution": [
+        "7 个去掉 4 个，还剩 3。",
+        "7 - 4 = 3。"
+      ],
+      "hints": [
+        "从 7 往回数 4 个",
+        "也可以想 4 + ? = 7"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 4",
+          "reason": "算成加法了",
+          "correction": "题目是减号",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "10以内减法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "减法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-03",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "4 + 5 = ?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "7"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "4 往后数 5 个：5、6、7、8、9。",
+        "4 + 5 = 9。"
+      ],
+      "hints": [
+        "数数看",
+        "4、5、6、7、8、9"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 8",
+          "reason": "数错了一个",
+          "correction": "认真数 5 下",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "10以内加法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "加法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-04",
+      "type": "choice",
+      "difficulty": 1,
+      "difficultyLabel": "入门",
+      "stem": "10 - 3 = ?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "5"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "7"
+      ],
+      "solution": [
+        "从 10 往回数 3 个：9、8、7。",
+        "10 - 3 = 7。"
+      ],
+      "hints": [
+        "往回数 3",
+        "10、9、8、7"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 6",
+          "reason": "多数了一次",
+          "correction": "10-3=7",
+          "errorLayer": "L1"
+        }
+      ],
+      "knowledgePoints": [
+        "10以内减法"
+      ],
+      "estimatedTime": 60,
+      "irtParams": {
+        "a": 0.9,
+        "b": -1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "减法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-05",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "8 + 5 = ____",
+      "answer": "13",
+      "acceptableAnswers": [
+        "13",
+        "十三"
+      ],
+      "solution": [
+        "用凑十法：8 要 2 个变成 10。",
+        "把 5 分成 2 和 3，先算 8 + 2 = 10，再算 10 + 3 = 13。"
+      ],
+      "hints": [
+        "凑十法：8 找 2",
+        "把 5 分成 2 和 3",
+        "8+2=10，10+3=13"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 12",
+          "reason": "分解 5 时分错了",
+          "correction": "5 = 2 + 3，8 + 2 = 10，10 + 3 = 13",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "20以内进位加法",
+        "凑十法"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "凑十法"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-06",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "15 - 7 = ____",
+      "answer": "8",
+      "acceptableAnswers": [
+        "8",
+        "八"
+      ],
+      "solution": [
+        "15 减 7：可以想 7 + ? = 15。",
+        "7 + 8 = 15，所以 15 - 7 = 8。"
+      ],
+      "hints": [
+        "想加算减",
+        "7 加几等于 15",
+        "或用 10 先减 7"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 7",
+          "reason": "想加算减时算错了",
+          "correction": "7+8=15",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "20以内退位减法"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "退位减"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-07",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "9 + 4 = ?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "11"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "13"
+      ],
+      "solution": [
+        "9 + 1 = 10，把 4 分成 1 和 3。",
+        "10 + 3 = 13。"
+      ],
+      "hints": [
+        "9 找 1 凑十",
+        "4 里拿出 1 给 9",
+        "剩下 3，10+3=13"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 12",
+          "reason": "计算错误",
+          "correction": "9+1=10，10+3=13",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "20以内进位加法"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "凑十法"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-08",
+      "type": "choice",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "18 - 9 = ?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "7"
+      ],
+      "answer": "1",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "solution": [
+        "方法一：想 9 + ? = 18，9 + 9 = 18。",
+        "所以 18 - 9 = 9。"
+      ],
+      "hints": [
+        "想加算减",
+        "9 + 9 = ?"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 8",
+          "reason": "没认真计算",
+          "correction": "18-9=9",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "20以内退位减法"
+      ],
+      "estimatedTime": 90,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "退位减"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-09",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "____ + 6 = 12",
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "什么数加上 6 等于 12？",
+        "用 12 - 6 来算：12 - 6 = 6。"
+      ],
+      "hints": [
+        "想 12 减 6",
+        "6 + 6 = 12"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 18",
+          "reason": "把加看成了 12+6",
+          "correction": "12-6=6",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "求未知数",
+        "加减法关系"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "求未知数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-10",
+      "type": "fill",
+      "difficulty": 2,
+      "difficultyLabel": "基础",
+      "stem": "14 - ____ = 8",
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "六"
+      ],
+      "solution": [
+        "14 减去多少等于 8？",
+        "14 - 8 = 6。"
+      ],
+      "hints": [
+        "14 减 8 是多少",
+        "8 + ? = 14"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 8",
+          "reason": "没弄清题意",
+          "correction": "14-6=8",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "求未知数",
+        "加减法关系"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 0.9500000000000001,
+        "b": -0.5,
+        "c": 0.25
+      },
+      "tags": [
+        "求未知数"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-11",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "17 - 8 + 5 = ?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "14"
+      ],
+      "solution": [
+        "先算 17 - 8 = 9。",
+        "再算 9 + 5 = 14。"
+      ],
+      "hints": [
+        "从左往右算",
+        "先算 17-8",
+        "结果再加 5"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 13",
+          "reason": "17 - 8 算错成 8",
+          "correction": "17-8=9，9+5=14",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "连加连减"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "连加连减"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-12",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "在□里填上合适的数：\n8 + □ = 16 - 5",
+      "answer": "3",
+      "acceptableAnswers": [
+        "3",
+        "三"
+      ],
+      "solution": [
+        "先算右边：16 - 5 = 11。",
+        "等式变成 8 + □ = 11。",
+        "11 - 8 = 3，所以□填 3。"
+      ],
+      "hints": [
+        "先算出右边的得数",
+        "再想 8 加几等于那个数",
+        "16-5=11，11-8=3"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 11",
+          "reason": "只算了右边",
+          "correction": "右边是 11，还要 11-8=3",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "等式",
+        "加减法关系"
+      ],
+      "estimatedTime": 120,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "等式"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-13",
+      "type": "choice",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "下面算式中，得数最大的是？",
+      "options": [
+        "7 + 6",
+        "9 + 5",
+        "8 + 7",
+        "10 + 4"
+      ],
+      "answer": "2",
+      "acceptableAnswers": [
+        "8+7"
+      ],
+      "solution": [
+        "分别计算：7+6=13，9+5=14，8+7=15，10+4=14。",
+        "15 最大，所以选 8+7。"
+      ],
+      "hints": [
+        "每个都算一遍",
+        "再比大小",
+        "8+7=15最大"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "选 9+5",
+          "reason": "9+5=14，不是最大",
+          "correction": "8+7=15 最大",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "加法",
+        "比较大小"
+      ],
+      "estimatedTime": 110,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "比较"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-14",
+      "type": "fill",
+      "difficulty": 3,
+      "difficultyLabel": "进阶",
+      "stem": "9 + 3 + 4 = ____",
+      "answer": "16",
+      "acceptableAnswers": [
+        "16",
+        "十六"
+      ],
+      "solution": [
+        "先算 9 + 3 = 12。",
+        "再算 12 + 4 = 16。"
+      ],
+      "hints": [
+        "从左到右一步一步",
+        "9+3=12",
+        "12+4=16"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "写成 15",
+          "reason": "中间步骤算错",
+          "correction": "9+3=12，12+4=16",
+          "errorLayer": "L2"
+        }
+      ],
+      "knowledgePoints": [
+        "连加"
+      ],
+      "estimatedTime": 100,
+      "irtParams": {
+        "a": 1.0,
+        "b": 0.3,
+        "c": 0.25
+      },
+      "tags": [
+        "连加"
+      ],
+      "image": "",
+      "options": [],
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    },
+    {
+      "id": "g1-aw20-15",
+      "type": "choice",
+      "difficulty": 4,
+      "difficultyLabel": "拔高",
+      "stem": "小明把 15 - □ = 7 中的□算成了 7，错在哪里？",
+      "options": [
+        "正确答案是 8，因为 15 - 7 = 8",
+        "正确答案是 7，没错",
+        "正确答案是 9",
+        "正确答案是 6"
+      ],
+      "answer": "0",
+      "acceptableAnswers": [
+        "正确答案是 8"
+      ],
+      "solution": [
+        "15 - □ = 7，说明□ = 15 - 7 = 8。",
+        "所以□应该是 8，小明算成 7 错了。",
+        "验证：15 - 8 = 7。对的！"
+      ],
+      "hints": [
+        "求减数 = 被减数 - 差",
+        "15 - 7 = ?",
+        "15-7=8"
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "以为答案就是 7",
+          "reason": "把差当成了减数",
+          "correction": "差是 7，减数应该是 8",
+          "errorLayer": "L3"
+        }
+      ],
+      "knowledgePoints": [
+        "求未知数",
+        "加减法关系"
+      ],
+      "estimatedTime": 150,
+      "irtParams": {
+        "a": 1.05,
+        "b": 1.2,
+        "c": 0.25
+      },
+      "tags": [
+        "纠错",
+        "拔高"
+      ],
+      "image": "",
+      "source": {
+        "type": "原创",
+        "name": "内部题库",
+        "year": 2026
+      }
+    }
+  ]
+}

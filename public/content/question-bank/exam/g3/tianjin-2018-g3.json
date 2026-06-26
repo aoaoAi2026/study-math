@@ -1,0 +1,126 @@
+{
+    "paperId": "tianjin-2018-g3",
+    "title": "2018年数学花园探秘（小低组）三年级决赛",
+    "grade": 3,
+    "category": "aoshu-yingchun",
+    "duration": 60,
+    "totalScore": 100,
+    "difficultyLevel": 3,
+    "year": 2018,
+    "source": "数学花园探秘全国数学邀请赛组委会",
+    "sections": [
+        {"name": "填空题（共10题，每题10分，共100分）", "count": 10, "scorePerQuestion": 10}
+    ],
+    "questions": [
+        {
+            "id": "q1",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：1234 + 234 + 34 + 4 = ______。",
+            "answer": "1506",
+            "score": 10,
+            "solution": "1234+234=1468，1468+34=1502，1502+4=1506。",
+            "knowledgePoints": ["加法"]
+        },
+        {
+            "id": "q2",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "计算：37 × 9 = ______。",
+            "answer": "333",
+            "score": 10,
+            "solution": "37×9=37×10-37=370-37=333。",
+            "knowledgePoints": ["乘法"]
+        },
+        {
+            "id": "q3",
+            "type": "fill",
+            "difficulty": 2,
+            "sectionNo": 1,
+            "stem": "一个数除以7余2，除以8余1，这个数最小是______。",
+            "answer": "57",
+            "score": 10,
+            "solution": "从除以7余2的数中找：2,9,16,23,30,37,44,51,58...找除以8余1的：57。验证：57÷7=8余2，57÷8=7余1。",
+            "knowledgePoints": ["余数问题"]
+        },
+        {
+            "id": "q4",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "小红看一本书，每天看12页，看了5天，还剩20页没看。这本书共有______页。",
+            "answer": "80",
+            "score": 10,
+            "solution": "已看12×5=60页。共60+20=80页。",
+            "knowledgePoints": ["乘法应用"]
+        },
+        {
+            "id": "q5",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一个正方形的面积是49平方厘米，它的边长是______厘米。",
+            "answer": "7",
+            "score": 10,
+            "solution": "边长×边长=49，7×7=49。",
+            "knowledgePoints": ["正方形"]
+        },
+        {
+            "id": "q6",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "在一条长30米的路一边种树，每隔6米种一棵，两端都种。需要______棵。",
+            "answer": "6",
+            "score": 10,
+            "solution": "30/6+1=5+1=6棵。",
+            "knowledgePoints": ["植树问题"]
+        },
+        {
+            "id": "q7",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "甲、乙两数的和是80，甲是乙的3倍。甲是______。",
+            "answer": "60",
+            "score": 10,
+            "solution": "设乙为x，甲为3x。3x+x=80，4x=80，x=20。甲=60。",
+            "knowledgePoints": ["和倍问题"]
+        },
+        {
+            "id": "q8",
+            "type": "fill",
+            "difficulty": 3,
+            "sectionNo": 1,
+            "stem": "一根绳子长20米，对折2次后，每段长______米。",
+            "answer": "5",
+            "score": 10,
+            "solution": "对折1次：2段，每段10米。对折2次：4段，每段5米。",
+            "knowledgePoints": ["等分"]
+        },
+        {
+            "id": "q9",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "小明有36颗珠子，小红有20颗珠子。小明给小红______颗珠子后，两人的珠子数相等。",
+            "answer": "8",
+            "score": 10,
+            "solution": "差36-20=16颗。给8颗后都是28颗。",
+            "knowledgePoints": ["和差问题"]
+        },
+        {
+            "id": "q10",
+            "type": "fill",
+            "difficulty": 4,
+            "sectionNo": 1,
+            "stem": "有一堆苹果，每次拿走一半又2个，3次正好拿完。这堆苹果原有______个。",
+            "answer": "28",
+            "score": 10,
+            "solution": "逆推：第3次拿完说明第2次后剩2×2=4个。第2次拿前有(4+2)×2=12个。第1次拿前有(12+2)×2=28个。",
+            "knowledgePoints": ["还原问题"]
+        }
+    ]
+}
